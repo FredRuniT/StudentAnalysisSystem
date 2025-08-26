@@ -302,7 +302,8 @@ public actor EnhancedDataProcessor {
         
         // Confidence is based on interval width
         let intervalWidth = upperR - lowerR
-        return max(0, min(1, 1 - intervalWidth))
+        let confidence = max(0, min(1, 1 - intervalWidth))
+        return confidence.isNaN ? 0.0 : confidence
     }
 }
 
