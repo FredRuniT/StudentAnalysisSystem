@@ -22,6 +22,19 @@ public struct StudentLongitudinalData: Sendable {
         public let proficiencyLevel: String?
         public let pass: Bool?
         
+        public init(year: Int, grade: Int, season: String?, subject: String, testProvider: TestProvider,
+                    componentScores: [String: Double], overallScore: Double?, proficiencyLevel: String?, pass: Bool?) {
+            self.year = year
+            self.grade = grade
+            self.season = season
+            self.subject = subject
+            self.testProvider = testProvider
+            self.componentScores = componentScores
+            self.overallScore = overallScore
+            self.proficiencyLevel = proficiencyLevel
+            self.pass = pass
+        }
+        
         public var hasCompleteData: Bool {
             !componentScores.isEmpty && overallScore != nil
         }
@@ -49,11 +62,25 @@ public struct StudentAssessmentData: Sendable {
     public let grade: Int
     public let assessments: [SubjectAssessment]
     
+    public init(studentInfo: StudentInfo, year: Int, grade: Int, assessments: [SubjectAssessment]) {
+        self.studentInfo = studentInfo
+        self.year = year
+        self.grade = grade
+        self.assessments = assessments
+    }
+    
     public struct StudentInfo: Sendable {
         public let msis: String
         public let name: String
         public let school: String
         public let district: String
+        
+        public init(msis: String, name: String, school: String, district: String) {
+            self.msis = msis
+            self.name = name
+            self.school = school
+            self.district = district
+        }
     }
     
     public struct SubjectAssessment: Sendable {
@@ -62,6 +89,14 @@ public struct StudentAssessmentData: Sendable {
         public let componentScores: [String: Double]
         public let overallScore: Double
         public let proficiencyLevel: String
+        
+        public init(subject: String, testProvider: TestProvider, componentScores: [String: Double], overallScore: Double, proficiencyLevel: String) {
+            self.subject = subject
+            self.testProvider = testProvider
+            self.componentScores = componentScores
+            self.overallScore = overallScore
+            self.proficiencyLevel = proficiencyLevel
+        }
     }
     
     public var componentScores: [String: Double] {

@@ -1,4 +1,5 @@
 import Foundation
+import AnalysisCore
 import IndividualLearningPlan
 import PredictiveModeling
 
@@ -14,13 +15,13 @@ public actor CSVExporter {
                 plan.studentInfo.name.escaped(),
                 String(plan.studentInfo.grade),
                 plan.assessmentDate.formatted(date: .abbreviated, time: .omitted),
-                plan.predictedOutcomes.first?.riskLevel.rawValue.escaped() ?? "Unknown",
-                plan.targetStandards.prefix(3).map(\.standard.id).joined(separator: ";").escaped(),
-                plan.interventionStrategies.first?.tier.rawValue.escaped() ?? "1",
+                plan.predictedOutcomes.first?.riskLevel.escaped() ?? "Unknown",
+                plan.targetStandards.prefix(3).map(\.standardId).joined(separator: ";").escaped(),
+                String(plan.interventionStrategies.first?.tier.rawValue ?? 1),
                 plan.learningObjectives.flatMap(\.knowledgeObjectives).count.description,
                 plan.learningObjectives.flatMap(\.understandingObjectives).count.description,
                 plan.learningObjectives.flatMap(\.skillsObjectives).count.description,
-                plan.timeline.description.escaped()
+                "\(plan.timeline.milestones.count) milestones".escaped()
             ]
             
             csv += row.joined(separator: ",") + "\n"
@@ -31,7 +32,7 @@ public actor CSVExporter {
     
     public func exportCorrelations(_ correlations: [ComponentCorrelationMap]) async throws -> String {
         var csv = "Source_Grade,Source_Subject,Source_Component,Target_Grade,Target_Subject,Target_Component,"
-        csv += "Correlation,P_Value,Sample_Size,Confidence,Time_Gap_Years\n"
+        csv += "Correlation,Sample_Size,Confidence\n"
         
         for map in correlations {
             for correlation in map.correlations {
@@ -43,10 +44,8 @@ public actor CSVExporter {
                     correlation.target.subject.escaped(),
                     correlation.target.component.escaped(),
                     String(format: "%.4f", correlation.correlation),
-                    String(format: "%.6f", 1.0 - correlation.confidence),
                     String(correlation.sampleSize),
-                    String(format: "%.2f%%", correlation.confidence * 100),
-                    String(correlation.timeGap)
+                    String(format: "%.2f%%", correlation.confidence * 100)
                 ]
                 
                 csv += row.joined(separator: ",") + "\n"
@@ -90,7 +89,7 @@ public actor CSVExporter {
         csv += "Precision,\(String(format: "%.4f", results.precision))\n"
         csv += "Recall,\(String(format: "%.4f", results.recall))\n"
         csv += "F1_Score,\(String(format: "%.4f", results.f1Score))\n"
-        csv += "Sample_Size,\(results.sampleSize)\n"
+        csv += "Sample_Size,\(results.confusionMatrix.truePositives + results.confusionMatrix.trueNegatives + results.confusionMatrix.falsePositives + results.confusionMatrix.falseNegatives)\n"
         csv += "\n"
         csv += "Confusion Matrix\n"
         csv += ",Predicted_Positive,Predicted_Negative\n"

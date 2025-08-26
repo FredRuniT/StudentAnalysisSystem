@@ -2,6 +2,8 @@ import Foundation
 
 public actor QUESTARParser: AssessmentParser {
     
+    public init() {}
+    
     public func parseComponents(from frame: OptimizedDataFrame) async -> [AssessmentComponent] {
         var components: [AssessmentComponent] = []
         
@@ -23,17 +25,17 @@ public actor QUESTARParser: AssessmentParser {
             
             // Extract RC scores (RC1OP through RC5OP)
             for rc in 1...5 {
-                if let score = frame["RC\(rc)OP", i] as? Double {
-                    scores["RC\(rc)OP"] = score
+                if let score = frame["RC\(rc)OP", i] {
+                    scores["RC\(rc)OP"] = parseScore(score)
                 }
             }
             
             // Extract other scores
-            if let totalRS = frame["TOT_RS", i] as? Double {
-                scores["TOT_RS"] = totalRS
+            if let totalRS = frame["TOT_RS", i] {
+                scores["TOT_RS"] = parseScore(totalRS)
             }
-            if let scaleScore = frame["SCALE_SCORE", i] as? Double {
-                scores["SCALE_SCORE"] = scaleScore
+            if let scaleScore = frame["SCALE_SCORE", i] {
+                scores["SCALE_SCORE"] = parseScore(scaleScore)
             }
             
             // Extract writing dimensions if present
@@ -46,6 +48,9 @@ public actor QUESTARParser: AssessmentParser {
             // Extract demographics
             let demographics = extractDemographics(from: frame, row: i)
             
+            // Extract proficiency level
+            let profLevel = frame["PROF_LVL", i] as? String
+            
             let component = AssessmentComponent(
                 studentID: msis,
                 year: extractYear(from: frame, row: i),
@@ -54,7 +59,8 @@ public actor QUESTARParser: AssessmentParser {
                 subject: normalizeSubject(subject),
                 season: frame["TERM", i] as? String,
                 componentScores: scores,
-                demographics: demographics
+                demographics: demographics,
+                proficiencyLevel: profLevel
             )
             
             components.append(component)

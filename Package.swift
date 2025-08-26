@@ -8,6 +8,10 @@ let package = Package(
         .iOS(.v18)
     ],
     products: [
+        .executable(
+            name: "StudentAnalysisSystem",
+            targets: ["StudentAnalysisSystemMain"]
+        ),
         .library(
             name: "AnalysisCore",
             targets: ["AnalysisCore"]
@@ -77,6 +81,16 @@ let package = Package(
         .testTarget(
             name: "AnalysisCoreTests",
             dependencies: ["AnalysisCore"]
+        ),
+        .executableTarget(
+            name: "StudentAnalysisSystemMain",
+            dependencies: [
+                "AnalysisCore",
+                "StatisticalEngine",
+                "PredictiveModeling",
+                "IndividualLearningPlan",
+                "ReportGeneration"
+            ]
         )
     ]
 )

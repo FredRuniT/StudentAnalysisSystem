@@ -11,6 +11,9 @@ public actor AssessmentComponent: Sendable {
     // Component scores (RC1OP-RC5OP or D1OP-D8OP with OP/PP/PC variants)
     private var componentScores: [String: Double]
     
+    // Proficiency level (PL1-PL5)
+    public let proficiencyLevel: String?
+    
     // Demographics and factors
     public let demographics: StudentDemographics?
     
@@ -22,7 +25,8 @@ public actor AssessmentComponent: Sendable {
         subject: String,
         season: String? = nil,
         componentScores: [String: Double],
-        demographics: StudentDemographics? = nil
+        demographics: StudentDemographics? = nil,
+        proficiencyLevel: String? = nil
     ) {
         self.studentID = studentID
         self.year = year
@@ -32,6 +36,7 @@ public actor AssessmentComponent: Sendable {
         self.season = season
         self.componentScores = componentScores
         self.demographics = demographics
+        self.proficiencyLevel = proficiencyLevel
     }
     
     public func getScore(for component: String) -> Double? {
@@ -72,7 +77,7 @@ public enum TestProvider: String, Codable, Sendable {
 }
 
 // Core type definitions
-public struct ComponentIdentifier: Hashable, Sendable, CustomStringConvertible {
+public struct ComponentIdentifier: Hashable, Sendable, CustomStringConvertible, Codable {
     public let grade: Int
     public let subject: String
     public let component: String

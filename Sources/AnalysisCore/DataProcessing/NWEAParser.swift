@@ -2,12 +2,14 @@ import Foundation
 
 public actor NWEAParser: AssessmentParser {
     
+    public init() {}
+    
     public func parseComponents(from frame: OptimizedDataFrame) async -> [AssessmentComponent] {
         var components: [AssessmentComponent] = []
         
         guard let msisColumn = frame["MSIS_ID"] ?? frame["MSIS"],
               let gradeColumn = frame["GRADE"],
-              let contentColumn = frame["CONTENT_AREA"] else {
+              let contentColumn = frame["CONTENT_AREA"] ?? frame["SUBJECT"] else {
             return components
         }
         
@@ -24,26 +26,29 @@ public actor NWEAParser: AssessmentParser {
             // Extract Domain scores (D1-D8 with OP, PP, PC variants)
             for domain in 1...8 {
                 // Overall Performance
-                if let op = frame["D\(domain)OP", i] as? Double {
-                    scores["D\(domain)OP"] = op
+                if let op = frame["D\(domain)OP", i] {
+                    scores["D\(domain)OP"] = parseScore(op)
                 }
                 // Performance Percentile
-                if let pp = frame["D\(domain)PP", i] as? Double {
-                    scores["D\(domain)PP"] = pp
+                if let pp = frame["D\(domain)PP", i] {
+                    scores["D\(domain)PP"] = parseScore(pp)
                 }
                 // Percent Correct
-                if let pc = frame["D\(domain)PC", i] as? Double {
-                    scores["D\(domain)PC"] = pc
+                if let pc = frame["D\(domain)PC", i] {
+                    scores["D\(domain)PC"] = parseScore(pc)
                 }
             }
             
             // Extract total scores
-            if let dtop = frame["DTOP", i] as? Double {
-                scores["DTOP"] = dtop
+            if let dtop = frame["DTOP", i] {
+                scores["DTOP"] = parseScore(dtop)
             }
-            if let scaleScore = frame["SCALE_SCORE", i] as? Double {
-                scores["SCALE_SCORE"] = scaleScore
+            if let scaleScore = frame["SCALE_SCORE", i] {
+                scores["SCALE_SCORE"] = parseScore(scaleScore)
             }
+            
+            // Extract proficiency level
+            let profLevel = frame["PROF_LVL", i] as? String
             
             // Extract writing performance components if present
             for wpc in 1...4 {
@@ -63,7 +68,8 @@ public actor NWEAParser: AssessmentParser {
                 subject: normalizeContent(content),
                 season: frame["SEASON", i] as? String,
                 componentScores: scores,
-                demographics: demographics
+                demographics: demographics,
+                proficiencyLevel: profLevel
             )
             
             components.append(component)

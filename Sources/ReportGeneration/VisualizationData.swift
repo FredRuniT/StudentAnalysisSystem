@@ -1,4 +1,5 @@
 import Foundation
+import AnalysisCore
 
 public struct VisualizationData {
     

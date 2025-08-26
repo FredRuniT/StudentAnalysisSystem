@@ -1,7 +1,7 @@
 import Foundation
 import AnalysisCore
 
-public struct ValidationResults: Sendable {
+public struct ValidationResults: Sendable, Codable {
     public let accuracy: Double
     public let precision: Double
     public let recall: Double
@@ -22,7 +22,7 @@ public struct ValidationResults: Sendable {
         self.confusionMatrix = confusionMatrix
     }
     
-    public struct ConfusionMatrix: Sendable {
+    public struct ConfusionMatrix: Sendable, Codable {
         public let truePositives: Int
         public let trueNegatives: Int
         public let falsePositives: Int
@@ -43,20 +43,20 @@ public struct ValidationResults: Sendable {
 }
 
 // Model that has been validated for use in production
-public struct ValidatedCorrelationModel: Sendable {
+public struct ValidatedCorrelationModel: Sendable, Codable {
     public let correlations: [ComponentCorrelationMap]
-    public let validationMetrics: ValidationMetrics
+    public let validationResults: ValidationResults
     public let confidenceThreshold: Double
     public let trainedDate: Date
     
     public init(
         correlations: [ComponentCorrelationMap],
-        validationMetrics: ValidationMetrics,
+        validationResults: ValidationResults,
         confidenceThreshold: Double,
         trainedDate: Date
     ) {
         self.correlations = correlations
-        self.validationMetrics = validationMetrics
+        self.validationResults = validationResults
         self.confidenceThreshold = confidenceThreshold
         self.trainedDate = trainedDate
     }

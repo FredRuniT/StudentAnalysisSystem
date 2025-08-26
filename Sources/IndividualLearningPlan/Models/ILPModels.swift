@@ -108,7 +108,7 @@ public struct PerformanceAnalysis: Codable, Sendable {
     public let weakAreas: [String]
 }
 
-public struct WeakArea: Codable, Sendable {
+public struct WeakArea: Codable, Sendable, Equatable {
     public let component: String
     public let score: Double
     public let gap: Double

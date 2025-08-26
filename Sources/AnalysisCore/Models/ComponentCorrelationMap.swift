@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ComponentCorrelationMap: Sendable {
+public struct ComponentCorrelationMap: Sendable, Codable {
     public let sourceComponent: ComponentIdentifier
     public let correlations: [ComponentCorrelation]
     
@@ -10,7 +10,7 @@ public struct ComponentCorrelationMap: Sendable {
     }
 }
 
-public struct ComponentCorrelation: Sendable {
+public struct ComponentCorrelation: Sendable, Codable {
     public let target: ComponentIdentifier
     public let correlation: Double
     public let confidence: Double

@@ -1,8 +1,8 @@
 import Foundation
 
-public struct ValidationMetrics: Sendable {
+public struct ValidationMetrics: Sendable, Codable {
     
-    public struct ConfusionMatrix: Sendable {
+    public struct ConfusionMatrix: Sendable, Codable {
         public let truePositives: Int
         public let falsePositives: Int
         public let trueNegatives: Int
@@ -49,7 +49,7 @@ public struct ValidationMetrics: Sendable {
         }
     }
     
-    public struct CrossValidationResult: Sendable {
+    public struct CrossValidationResult: Sendable, Codable {
         public let folds: Int
         public let meanAccuracy: Double
         public let stdAccuracy: Double
@@ -58,7 +58,7 @@ public struct ValidationMetrics: Sendable {
         public let meanF1: Double
         public let foldResults: [FoldResult]
         
-        public struct FoldResult: Sendable {
+        public struct FoldResult: Sendable, Codable {
             public let foldIndex: Int
             public let accuracy: Double
             public let precision: Double
