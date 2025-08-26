@@ -1,4 +1,5 @@
 import Foundation
+import AnalysisCore
 
 public struct ValidationResults: Sendable {
     public let accuracy: Double
@@ -38,5 +39,25 @@ public struct ValidationResults: Sendable {
             self.falsePositives = falsePositives
             self.falseNegatives = falseNegatives
         }
+    }
+}
+
+// Model that has been validated for use in production
+public struct ValidatedCorrelationModel: Sendable {
+    public let correlations: [ComponentCorrelationMap]
+    public let validationMetrics: ValidationMetrics
+    public let confidenceThreshold: Double
+    public let trainedDate: Date
+    
+    public init(
+        correlations: [ComponentCorrelationMap],
+        validationMetrics: ValidationMetrics,
+        confidenceThreshold: Double,
+        trainedDate: Date
+    ) {
+        self.correlations = correlations
+        self.validationMetrics = validationMetrics
+        self.confidenceThreshold = confidenceThreshold
+        self.trainedDate = trainedDate
     }
 }

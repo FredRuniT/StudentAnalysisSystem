@@ -1,0 +1,1367 @@
+[
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "8.NS.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Real numbers are the set of rational numbers together with the set of irrational numbers.",
+            "A rational number is a number expressed in the form a/b or -a/b for some fraction a/b. The rational numbers include the integers.",
+            "An irrational number is a number that cannot be expressed as the ratio a/b, where a and b are integers and b ≠ 0.",
+            "The decimal form of a fraction is called a repeating or terminating decimal.",
+            "A repeating decimal is the decimal form of a rational number. Repeating decimals can be represented using bar notation where a bar is drawn only over the digit(s) that repeat. For example,",
+            "A decimal is called terminating if its repeating digit is 0. For example, 0.250� is typically written 0.25."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Real numbers are either rational or irrational.",
+            "That the set of real numbers can be represented with a Venn diagram."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write a fraction or mixed number as a repeating decimal by showing, filling in, or otherwise producing the steps of long division.",
+            "Write a repeating decimal as a fraction or mixed number in simplest form.",
+            "Name all sets of numbers to which a given real number belongs.",
+            "Convert a repeating decimal into a rational number."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "8.NS.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The square root of a number is one of its two equal factors. If a2 = b, then a = ± √𝑏𝑏.",
+            "A perfect square is a rational number whose square root is a whole number. For example, 36 is a perfect square because its square root is 6.",
+            "The cube root of a number is one of three equal factors of a number. If a3 = b, then a =√𝑏𝑏3.",
+            "Real numbers is the set of rational numbers together with the set of irrational numbers.",
+            "A rational number is a number expressed in the form a/b or -a/b for some fraction a/b. The rational numbers include the integers.",
+            "An irrational number is a number that cannot be expressed as the ratio a/b, where a and b are integers and b ≠ 0.",
+            "The decimal form of a fraction is called a repeating or terminating decimal."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Every positive number has both a positive and negative square root. In real-world situations, only the positive or principal square root is considered.",
+            "How to compare and order rational and irrational numbers.",
+            "The value of a square root can be approximated between integers.",
+            "The square root of a non-perfect square is irrational.",
+            "Square roots may be negative and written as -√24.",
+            "How to plot irrational numbers on a number line."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Find the square and cube roots of numbers.",
+            "Estimate square roots and cube roots to the nearest integer using perfect squares and perfect cubes.",
+            "Estimate square roots and cube roots to an appropriate approximation by truncating, or dropping, the digits after the first decimal place, then after the second decimal place and so on.",
+            "Compare and order rational and irrational numbers using a number line.",
+            "Use the estimated value of an irrational number to evaluate an expression."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A power is a product of repeated factors using an exponent and a base.",
+            "The base in a power is the number that is the common factor.",
+            "The exponent in a power is the number of times the base is used as a factor.",
+            "A monomial is a number, a variable, or a product of a number and one or more variables.",
+            "How to multiply powers with the same base, add their exponents (product of powers) 𝑎𝑎𝑚𝑚×𝑎𝑎𝑛𝑛 =𝑎𝑎𝑚𝑚+𝑛𝑛",
+            "How to divide powers with the same base, subtract their exponents. (quotient of powers) 𝑎𝑎𝑚𝑚𝑎𝑎𝑛𝑛= 𝑎𝑎𝑚𝑚−𝑛𝑛",
+            "How to find the power of a power, multiply the exponents. (power of a power) (𝑎𝑎𝑚𝑚 )𝑛𝑛= 𝑎𝑎𝑚𝑚×𝑛𝑛",
+            "How to find the power of a product, find the power of each factor, and multiply. (power of a product) (ab)m = ambm",
+            "Any nonzero number to the zero power is 1. 𝑥𝑥0 = 1, x ≠0.",
+            "Any nonzero number to the negative n power is the multiplicative inverse of its nth power, 𝑥𝑥−𝑛𝑛 = 1𝑥𝑥𝑛𝑛, x ≠0."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "All operations involving the properties of addition and the distributive property of multiplication over addition can be used to simplify expressions.",
+            "Variables can be used to represent quantities in a real-world or mathematical problem.",
+            "Expressions are powerful tools for exploring, reasoning about, and representing situations.",
+            "Two or more expressions may be equivalent even when their symbolic forms differ."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write an expression using exponents.",
+            "Evaluate an expression containing exponents.",
+            "Simplify expressions involving one, two, or three properties using the laws of exponents.",
+            "Write an expression using a positive exponent.",
+            "Write a fraction as an expression using a negative exponent other than -1.",
+            "Multiply and divide with negative exponents.",
+            "Classify expressions by their equivalence to a given expression."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Scientific notation is when you express a number as the product of two factors. The first factor must be greater than or equal to one but less than 10 and the second factor is a power of 10. For example, 𝑎𝑎 × 10𝑛𝑛 ,",
+            "How to write a number in scientific notation from standard form.",
+            "How to write a number in standard form from scientific notation.",
+            "Exponential and standard forms of powers of 10. For example, 0.1 is 10-1."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Scientific notation is used to express very large or very small numbers.",
+            "When looking at a number in scientific notation, if the exponent increases by one, the value increases 10 times.",
+            "When looking at a number in scientific notation, if the exponent decreases by one, the value decreases 10 times."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Compare and interpret scientific notation quantities in the context of the situation.",
+            "Evaluate expressions involving addition, subtraction, multiplication, or division and express the answer in scientific notation."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Scientific notation is when you express a number as the product of two factors. The first factor must be greater than or equal to one but less than ten and the second factor is a power of ten. For example, 𝑎𝑎 × 10𝑛𝑛 , 𝑤𝑤ℎ𝑒𝑒𝑒𝑒𝑒𝑒 1≤𝑎𝑎<10 and n is an integer",
+            "How to write a number in scientific notation from standard form.",
+            "How to write a number in standard form from scientific notation.",
+            "Exponential and standard forms of powers of 10. For example, 0.1 is 10-1.",
+            "How to convert a number from standard form to scientific notation with and without the use of technology."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Scientific notation is used to express very large or very small numbers.",
+            "How to compare and interpret scientific notation quantities in the context of the situation with or without a scientific calculator.",
+            "When looking at a number in scientific notation, if the exponent increases by one, the value increases 10 times.",
+            "When looking at a number in scientific notation, if the exponent decreases by one, the value decreases 10 times.",
+            "How to read a number that is written in scientific notation using technology. For example, 3.7E-2 is 3.7 x 10-2."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Perform operations with numbers expressed in both decimal and scientific notation and express the answer in scientific notation without a scientific calculator.",
+            "Compare and order numbers expressed as decimals and scientific notation without a calculator.",
+            "Choose a meaningful unit of measure in the context of the situation with and without a scientific calculator.",
+            "Interpret scientific notation that has been generated by a scientific calculator."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Students build on their work with ratios, unit rates, and proportional relationships from 6th and 7th grade.",
+            "A rate is a ratio that compares two quantities with different kinds of units.",
+            "A unit rate is a rate that has a denominator of one unit.",
+            "A proportional relationship exists when the rate is constant.",
+            "Constant rate of change is when the rate of change between any two points is the same.",
+            "How to identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships.",
+            "Constant of proportionality (unit rate) is the constant ratio in a proportional linear relationship."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A linear relationship has a constant rate of change and a straight line graph.",
+            "Slope is the rate of change between any two points on a line. The ratio of the rise, or vertical change, to the run, or horizontal change.",
+            "The rise is the vertical change between any two points on a line.",
+            "The run is the horizontal change between any two points on a line.",
+            "Slope = 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟",
+            "A linear relationship is a direct variation when the ratio of y to x is a constant, m. We say y varies directly with x.",
+            "In a direct variation equation y = mx, m represents the constant of variation, the constant of proportionality, the slope, and the unit rate."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Graph real-world proportional relationships such as earnings per hour.",
+            "Determine whether the relationship between two quantities is linear.",
+            "Find the constant rate of change in a linear relationship.",
+            "Compare the proportional relationship between two different quantities represented in different forms.",
+            "Find the slope of a line using a table, graph, equation, diagram, and verbal description.",
+            "Find the slope of a line that passes through two given points.",
+            "Given an equation of a proportional relationship, graph the relationship and recognize that the unit rate is the coefficient of x."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Similar triangles have the sameshape.",
+            "The ratio of the rise to the run of twoslope triangles formed by a line isequal to the slope of the line.",
+            "The slope m of a line passingthrough points (x1, y1) and"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Since the ratios of the rise to the runof two similar triangles are the sameas the slope of the line, the slope mof a line is the same between anytwo distinct points on a non-verticalline in the coordinate plane.",
+            "The ratio of the vertical leg to thehorizontal leg of given similar slopetriangles formed by a line isequivalent to the absolute value ofthe slope of the line.",
+            "How to use the slope formula, point(x,y) and the origin (0,0) to derivethe equation y = mx.",
+            "How to use the slope formula, point(x,y), and point (0,b) to derive y =mx + b."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Graph two triangles given thevertices of both and determine ifthey are similar.",
+            "Graph a pair of similar triangles,write a proportion comparing therise to the run for each of thesimilar slope triangles, and find thenumeric value.",
+            "Given the hypotenuse of a righttriangle in a coordinate plane,choose two pairs of points andrecord the rise, run, and sloperelative to each pair and verify thatthey are the same."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.7a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The product of a number and its multiplicative inverse is 1. 𝑎𝑎𝑏𝑏×𝑏𝑏𝑎𝑎=1, where a ≠0 and b ≠0.",
+            "The coefficient is the numerical factor of a term that contains a variable.",
+            "An equation is a sentence stating that two quantities are equal.",
+            "The solution of an equation is the value of a variable that makes the equation true.",
+            "Addition property of equality.",
+            "Subtraction property of equality",
+            "Multiplication property of equality.",
+            "Division property of equality.",
+            "A two-step equation contains two operations.",
+            "How to solve simple one-step equations."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to find the multiplicative inverse of a number.",
+            "To solve an equation in which the coefficient is not 1, you must multiply or divide each side by the coefficient of the variable. For example, in the equation -3x = 12, you must divide both sides by -3. A common error in problems of this type is for students to divide both sides by 3.",
+            "Some equations have variables on each side of the equals sign. To solve, use the properties of equality to write an equivalent equation with the variables on one side of the equal sign and then solve the equation.",
+            "Some equations have no solution. When this occurs, the solution is the null set or empty set and is shown by the symbol ∅ or { }. After solving the equation, the solution will look like a = b, where a and b are different numbers.",
+            "Other equations may have every number as their solution. An equation that is true for every value of the variable is called an identity. After solving the equation, the solution will look like a = a."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve an equation using the multiplicative inverse.",
+            "Solve an equation using the addition, subtraction, multiplication, or division properties of equality to justify the steps to the solution.",
+            "Solve multistep equations in which coefficients and constants may be any rational number.",
+            "Translate a word phrase or real-world problem into an equation.",
+            "Solve equations with variables on both sides of the equal sign.",
+            "Determine if an equation has no solution.",
+            "Determine if an equation is an identity with infinitely many solutions.",
+            "Create equations that have one solution, infinitely many solutions, or no solution.",
+            "Classify equations by the number of solutions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.7b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The product of a number and its multiplicative inverse is 1. ab×ba=1, where a ≠0 and b ≠0",
+            "The coefficient is the numerical factor of a term that contains a variable.",
+            "An equation is a sentence stating that two quantities are equal.",
+            "An inequality is a statement that two quantities are not equal. The symbols >, <, >, and < are used to express inequalities.",
+            "The solution of an equation or inequality is the value of a variable that makes the equation or inequality true.",
+            "Addition property of equality.",
+            "Subtraction property of equality",
+            "Multiplication property of equality.",
+            "Division property of equality.",
+            "Properties of inequality.",
+            "How to solve simple one-step equations and inequalities."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to find the multiplicative inverse of a number.",
+            "To solve an equation or inequality in which the coefficient is not 1, you must multiply or divide each side by the coefficient of the variable. For example, in the equation -3x = 12, both sides must be divided by -3.",
+            "Multiplying or dividing an inequality by a negative number coefficient results in a reversed inequality symbol. If 𝑎𝑎>𝑏𝑏 and 𝑐𝑐<0, then 𝑎𝑎×𝑐𝑐<𝑏𝑏×𝑐𝑐. If 𝑎𝑎>𝑏𝑏 and 𝑐𝑐<0, then 𝑎𝑎÷𝑐𝑐<𝑏𝑏÷𝑐𝑐",
+            "Some equations have variables on each side of the equal sign. To solve, use the properties of equality to write an equivalent equation with the variables on one side of the equal sign and then solve the equation.",
+            "Some inequalities have variables on each of the inequality symbol. To solve, use the properties of inequality to write an equivalent inequality with variables on one side of the inequality symbol and then solve the inequality.",
+            "How to use the distributive property. For example, 3(x+2) is equivalent to 3x+6.",
+            "How to combine like terms. For example, 2r+r+5r = 8r."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve an equation or inequality using the multiplicative inverse.",
+            "Solve an equation using the addition, subtraction, multiplication, or division properties of equality to justify the steps to the solution.",
+            "Solve an inequality using the properties of inequality to justify the steps to the solution.",
+            "Solve multistep equations and inequalities with rational number coefficients and constants.",
+            "Create equivalent expressions by combining like terms and using the distributive property.",
+            "Translate a word phrase or real-world problem into an equation or inequality.",
+            "Solve equations and inequalities with variables on both sides of the equal sign or inequality symbol.",
+            "Solve equations and inequalities containing grouping symbols."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.8a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A line represents the infinite number of solutions to a linear equation with two variables.",
+            "Linear equations graph a straight line.",
+            "Solutions of an equation are the values of the variables that make the equation true.",
+            "A system of linear equations is two or more linear equations that represent constraints on the variables used.",
+            "The point of intersection is the point where two lines intersect.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The points (x, y) on a nonvertical line are the solutions of the equation y = mx + b.",
+            "The relationship between equivalent forms of linear equations.",
+            "Three solutions to systems of two linear equations: one solution, no solution, and infinitely many solutions.",
+            "When there is no solution, the lines are parallel, the slopes are the same, and the y-intercepts are different.",
+            "When there are an infinite number of solutions, the lines are the same, and both the slopes and y-intercepts are the same.",
+            "When there is only one solution, the lines intersect, and both the slopes and y-intercepts are different."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Graph lines in a plane.",
+            "Use graphs and tables and relate them to equations.",
+            "Interpret a point as an ordered pair (x, y).",
+            "Identify the point of intersection of two lines as the solution to the system.",
+            "Verify by computation that a point of intersection is a solution to each equation in the system.",
+            "Determine the number of solutions using the slope and y-intercepts.",
+            "Write a second equation to create a specified solution."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.8b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A system of linear equations is two or more linear equations that represent constraints on the variables used.",
+            "Solutions of an equation are the values of the variables that make the equation true.",
+            "Expressions in different forms can be equivalent.",
+            "Coordinates are ordered pairs of numbers used to locate a point on a coordinate grid.",
+            "How to solve linear equations with one variable.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Pairs of lines in a plane intersect, are parallel, or are the same line.",
+            "The relationship between linear equations in two variables and lines in a plane.",
+            "The relationship between equivalent forms of linear equations.",
+            "Three solutions to systems of two linear equations: one solution, no solution, and infinitely many solutions.",
+            "Point-slope form:",
+            "Standard form: Ax+By = C.",
+            "Slope-intercept form: y = mx + b.",
+            "Substitution is an algebraic model that can be used to find the exact solution of a system of equations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Decide whether two quantities are in a proportional relationship, and identify the constant of proportionality.",
+            "Use algebraic and mathematical reasoning.",
+            "Solve pairs of simultaneous linear equations using various methods such as substitution.",
+            "Use properties of equality.",
+            "Use technology to graph two linear equations to estimate the solution of the system.",
+            "Perform operations with a zero coefficient, and with non-zero rational coefficients."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.8c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A line represents the infinite number of solutions to a linear equation with two variables.",
+            "The x-intercept is the point where the graph crosses the x-axis.",
+            "The y-intercept is the point where the graph crosses the y-axis.",
+            "Coordinates are ordered pairs of numbers used to locate a point on a coordinate grid.",
+            "The slope is the ratio of the vertical change to the horizontal change between any two points on a line.",
+            "The slope formula: m = (y2 - y1) / (x2 - x1).",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Algebraic expressions and equations are used to model real-world problems and represent quantitative relationships.",
+            "In the equation y = mx + b, m is the slope of the line as well as the unit rate of a proportional relationship (in this case, b = 0).",
+            "The slope of a line is a constant rate of change.",
+            "The relationship between the slope formula and point-slope form of a linear equation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Analyze the relationship between the dependent and independent variables.",
+            "Use variables to represent two quantities in a real-world problem.",
+            "Write an equation to express one quantity in terms of the other quantity.",
+            "Represent proportional relationships by equations.",
+            "Explain what a point on the graph of a proportional relationship means in terms of the situation.",
+            "Interpret solutions in the context of the problem.",
+            "Graph two linear equations on the coordinate grid and find their intersection point."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Functions",
+    "reporting_category": "Functions",
+    "standard": {
+      "id": "8.F.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Input is the number or piece of data that is put into a function.",
+            "Output is the number or piece of data that is the result of an input of a function.",
+            "A rule is a summary of a predictable relationship that tells how to find the value of a variable.",
+            "This standard extends the understanding of constant rate.",
+            "How to reason abstractly and quantitatively.",
+            "The parts of the coordinate plane."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Functions are useful in making sense of patterns and making predictions.",
+            "Functions describe situations where one quantity determines another.",
+            "A function represents a relationship between an input and an output, where the output depends on the input; therefore, there can be only one output for each input.",
+            "How to graph ordered pairs.",
+            "How to name ordered pairs from a graph."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine functions from non-numerical data.",
+            "Graph inputs and outputs as ordered pairs in the coordinate plane.",
+            "Graph functions in the coordinate plane.",
+            "Read inputs and outputs from the graph of a function in the coordinate plane.",
+            "Tell whether a set of points in the plane represent a function."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Functions",
+    "reporting_category": "Functions",
+    "standard": {
+      "id": "8.F.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Rate of change is the amount of change in the dependent variable produced by a given change in the independent variable.",
+            "A function is a rule that assigns to each input exactly one output.",
+            "A linear function is a function whose graph is a line.",
+            "The y-intercept is the point where the graph crosses the y-axis.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The slope (m) of a line is a constant rate of change.",
+            "Functions can be represented in a table, as a rule, as a formula or equation, as a graph, or as a verbal description.",
+            "Functions describe situations where one quantity determines another.",
+            "How to determine the rate of change (slope) from an equation, a graph, a table, and a verbal description.",
+            "How to find the y-intercept."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Translate among representations and partial representations of functions.",
+            "Determine the properties of a function from a verbal description, table, graph, or algebraic form.",
+            "Make comparisons between the properties of two functions represented differently."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Functions",
+    "reporting_category": "Functions",
+    "standard": {
+      "id": "8.F.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A linear function graphs a straight line.",
+            "In the equation y = mx + b, m is the slope of the line, and b is the y-intercept of the line.",
+            "Functions that are not linear will not graph straight lines.",
+            "Interpretation means to communicate symbolically, numerically, abstractly, and/or with a model.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Functions are described in terms of their inputs and outputs.",
+            "Linear functions may not always be in the form y = mx + b.",
+            "The slope and y-intercept in relation to the function represented by the equation y = mx + b.",
+            "Constant rates and proportional relationships can be described by a function.",
+            "Non-linear functions do not have a constant rate of change.",
+            "A function machine may use y as an input and x as an output or vice versa."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify the rate of change between input and output values.",
+            "Provide examples of relationships that are non-linear functions.",
+            "Create a table of values that can be defined as non-linear functions.",
+            "Analyze rates of change to determine linear and non-linear functions.",
+            "Determine rate of change from equations in forms other than the slope-intercept form."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Functions",
+    "reporting_category": "Functions",
+    "standard": {
+      "id": "8.F.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The equation y = mx + b defines a linear function whose graph is a line.",
+            "Rate of change is the amount of change in the dependent variable produced by a given change in the independent variable.",
+            "The y-intercept is the point where the graph crosses the y-axis.",
+            "The initial value of a linear function is the value of the y-variable when the x value is zero.",
+            "How to reason abstractly and quantitatively.",
+            "How to model with mathematics."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Functions describe situations where one quantity determines another.",
+            "Functions are useful in solving problems involving quantitative relationships.",
+            "In the linear equation y = mx + b, the slope m represents the rate of change and the y-intercept b represents the initial value.",
+            "Linear functions can have discrete rates and continuous rates."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use variables to represent quantities in a real-world or mathematical problem.",
+            "Analyze a variety of function representations such as verbal description, table, two (x,y) values, graph, and equation.",
+            "Write a linear function modeling a situation.",
+            "Find the initial value of the function in relation to the situation.",
+            "Find the rate of change in relation to the situation.",
+            "Find the y-intercept in relation to the situation.",
+            "Explain constraints on the domain in relation to the situation."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Functions",
+    "reporting_category": "Functions",
+    "standard": {
+      "id": "8.F.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Qualitative graphs are graphs used to represent situations that may not have numerical values or graphs in which numerical values are not included.",
+            "A positive rate of change indicates that a linear function is increasing.",
+            "A negative rate of change indicates that a linear function is decreasing.",
+            "A linear function graphs a straight line.",
+            "A non-linear function does not graph a straight line.",
+            "How to reason abstractly and quantitatively.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Functions describe situations where one quantity determines another.",
+            "The slope of a line can provide useful information about the functional relationship between the two types of quantities.",
+            "The graph of a function can be used to help describe the relationship between two quantities.",
+            "The information represented on the axes of the graph.",
+            "How to interpret the y-axis."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Match the graph of a function to a given situation. For example, the speed of a school bus on its route to school.",
+            "Create a graph of a function that describes the relationship between two variables.",
+            "Write a verbal description of the functional relationship between two variables depicted on a graph."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.1a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A transformation is a geometric operation that relates each point of a figure to an image point.",
+            "Symmetry transformations produce images that are identical in size and shape to the original figure.",
+            "How to verify means to demonstrate something is true, accurate, or justified.",
+            "How to look for and express regularity in repeated reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Ideas about how distance behaves under transformations are used to describe and analyze two-dimensional figures.",
+            "Translations do not change the orientation.",
+            "Reflections reverse the orientation.",
+            "Rotations change the orientation.",
+            "Geometric attributes of lines provide descriptive information about an object's properties and position in space.",
+            "Reflections, rotations, and translations are symmetry transformations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify lines and line segments in two-dimensional figures.",
+            "Measure and compare lengths of a figure and its image.",
+            "Verify that after a figure has been translated, reflected, or rotated, corresponding lines and line segments remain the same length.",
+            "Determine the change in orientation to isolate the transformations used."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.1b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A transformation is a geometric operation that relates each point of a figure to an image point.",
+            "Symmetry transformations produce images that are identical in size and shape to the original figure.",
+            "How to verify means to demonstrate something is true, accurate or justified.",
+            "An angle is a figure formed by two rays or line segments that have a common vertex.",
+            "How to look for and express regularity in repeated reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Ideas about how angles behave under transformations are used to describe and analyze two-dimensional figures.",
+            "Geometric attributes of angles provide descriptive information about an object's properties and position in space.",
+            "Reflections, rotations, and translations are symmetry transformations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify angles in two-dimensional figures.",
+            "Measure and compare angle measures of a figure and its image.",
+            "Verify that after a figure has been translated, reflected, or rotated, corresponding angles have the same measure."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.1c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A transformation is a geometric operation that relates each point of a figure to an image point.",
+            "Symmetry transformations produce images that are identical in size and shape to the original figure.",
+            "How to verify means to demonstrate something is true, accurate or justified.",
+            "Parallel lines are lines in a plane that never meet.",
+            "How to look for and express regularity in repeated reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Ideas about how distance behaves under transformations are used to describe and analyze two-dimensional figures.",
+            "Geometric attributes of lines provide descriptive information about an object's properties and position in space.",
+            "Reflections, rotations, and translations are symmetry transformations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify parallel lines in two-dimensional figures.",
+            "Measure and compare parallelism of a figure and its image.",
+            "Verify that after a figure has been translated, reflected, or rotated, corresponding parallel lines remain parallel."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A transformation is a geometric operation that relates each point of a figure to an image point.",
+            "A rigid motion is a sequence of one or more rotations, reflections, and/or translations.",
+            "Understand means to know how something works or happens.",
+            "How to identify corresponding sides and angles from congruency statement and/or figures.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Transformations can be used to prove that two figures are congruent.",
+            "Geometric attributes of figures provide descriptive information about an object's position in space.",
+            "The connection between congruence and transformations.",
+            "Ideas about congruence can be used to describe and analyze two-dimensional figures and to solve problems.",
+            "Two plane figures are congruent if one can be obtained from the other by rigid motion.",
+            "Matching tick marks and arcs may be used to show congruency of sides and angles."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Perform a series of transformations to prove or disprove that two given figures are congruent.",
+            "Describe a sequence of transformations that exhibit congruence of two figures."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A transformation is a geometric operation that relates each point of a figure to an image point.",
+            "Symmetry transformations produce images that are identical in size and shape to the original figure.",
+            "Dilations move each point along the ray through the point emanating from a fixed center and multiply distances from the center by a common scale factor.",
+            "A similarity transformation is a rigid motion followed by a dilation.",
+            "Coordinates are ordered pairs of numbers used to locate points on a coordinate grid.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between x- and y- coordinates and the x- and y- axes.",
+            "In a dilation, each coordinate of the original image is multiplied by the scale factor.",
+            "In a translation, the x and y coordinates of the original image change by the value of the horizontal and vertical changes.",
+            "In a rotation, each point of the original figure and its new image are the same distance from the center of rotation.",
+            "In a reflection, each point of the original image and its new image are the same distance from the line of reflection."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Name an ordered pair as the coordinates of a point in a coordinate plane.",
+            "Graph coordinates in a coordinate plane.",
+            "Describe the changes occurring to coordinates of a figure after transformations and dilations.",
+            "Determine the new coordinates of an image given the original coordinates and a series of transformations and/or dilations to be applied."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A transformation is a geometric operation that relates each point of a figure to an image point.",
+            "A rigid motion is a sequence of one or more rotations, reflections, and/or translations.",
+            "Understand means to know how something works or happens.",
+            "Two polygons are similar when their corresponding angles are congruent and the measures of their corresponding sides are proportional.",
+            "Dilations move each point along the ray through the point emanating from a fixed center and multiply distances from the center by a common scale factor.",
+            "A similarity transformation is a rigid motion followed by a dilation.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Transformations and dilations can be used to prove that two figures are similar.",
+            "Geometric attributes of figures provide descriptive information about an object's position in space.",
+            "Dilations create similar figures.",
+            "Ideas about similarity can be used to describe and analyze two-dimensional figures and to solve problems.",
+            "Similarity transformation is a rigid motion followed by a dilation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Perform a series of transformations and dilations to prove or disprove that two given figures are similar.",
+            "Describe a sequence of transformations and dilations that exhibit similarity of two figures."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "An exterior angle is an angle at a vertex of a polygon where the sides of the angle are one side of the polygon and the extension of the other side meeting at the vertex.",
+            "An interior angle is the angle inside a polygon formed by two adjacent sides of the polygon.",
+            "Parallel lines are lines in a plane that never meet.",
+            "A transversal is a line that intersects two or more lines."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The angle-angle criterion for similarity of triangles states that two triangles with two pairs of equal angles are similar.",
+            "The sum of any triangle's interior angles will have the same measure as a straight angle.",
+            "The measure of an exterior angle of a triangle is equal to the sum of the measures of its two remote interior angles.",
+            "The relationships and measurements of the angles created when two parallel lines are cut by a transversal."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Construct triangles from three measures of angles.",
+            "Construct viable arguments.",
+            "Make conjectures regarding relationships and measurements of the angles created when two parallel lines are cut by a transversal.",
+            "Apply proven relationships to establish properties to justify similarity.",
+            "Show that the sum of the angles in a triangle is the angle formed by a straight line."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Legs are the sides of a right triangle that are adjacent to the right angle.",
+            "The hypotenuse is the side of a right triangle that is opposite the right angle.",
+            "The hypotenuse is the longest side of a right triangle.",
+            "The Pythagorean Theorem states that if a and b are the lengths of the legs of a right triangle and c is the length of the hypotenuse, then a2 + b2 = c2.",
+            "The converse of the Pythagorean Theorem states that if side lengths of a triangle a, b, c satisfy a2 + b2 = c2, then the triangle is a right triangle."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Visual models can be used to demonstrate the relationship of the three side lengths of any right triangle.",
+            "The converse of the Pythagorean Theorem can be used to determine if a given triangle is a right triangle.",
+            "There are various proofs of the Pythagorean Theorem.",
+            "The Pythagorean Theorem and its converse can be used to solve problems."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use algebraic reasoning to relate a visual model to the Pythagorean Theorem.",
+            "Explain why the Pythagorean Theorem holds."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Legs are the sides of a right triangle that are adjacent to the right angle.",
+            "The hypotenuse is the side of a right triangle that is opposite the right angle.",
+            "The hypotenuse is the longest side of a right triangle.",
+            "Irrational numbers cannot be written as a quotient of two integers where the denominator is not 0.",
+            "How to decompose polygons into triangles.",
+            "The Pythagorean Theorem states that if a and b are the lengths of the legs of a right triangle and c is the length of the hypotenuse, then a2 + b2 = c2."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The Pythagorean Theorem relates to work in irrational numbers.",
+            "The Pythagorean Theorem is useful in practical problems."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Apply the Pythagorean Theorem to find an unknown side length of a right triangle.",
+            "Use the Pythagorean Theorem in a diagram to solve real-world problems involving right triangles.",
+            "Find right triangles in a three-dimensional figure.",
+            "Use the Pythagorean Theorem to calculate various dimensions of right triangles found in a three-dimensional figure.",
+            "Provide answers as whole numbers and irrational numbers approximated to three decimal places with the use of a calculator."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.8"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Legs are the sides of a right triangle that are adjacent to the right angle.",
+            "The hypotenuse is the side of a right triangle that is opposite the right angle.",
+            "The Pythagorean Theorem states that if a and b are the lengths of the legs of a right triangle and c is the length of the hypotenuse, then a2 + b2 = c2."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Geometric attributes of figures provide descriptive information that support visualization.",
+            "Applying the Pythagorean Theorem to find the distance between two points is related to finding lengths and analyzing polygons."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Connect any two points on a coordinate grid to a third point so that the three points form a right triangle.",
+            "Use a right triangle built from two original points connecting a third point in a coordinate grid and the Pythagorean Theorem to find the distance between the two original points."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "8.G.9"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Volume is the capacity of a three-dimensional shape.",
+            "Recognize three-dimensional shapes-cone, cylinder, and sphere.",
+            "The formulas used to find the volumes of cones, cylinders, and spheres.",
+            "This is the culminating standard of acquiring a well-developed set of geometric measurement skills."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The volume is the number of unit cubes that will fit into a three-dimensional figure.",
+            "The similarity between finding the volume of a cylinder and the volume of a right prism.",
+            "The relationship between the volume of a cylinder and the volume of a cone with the same base.",
+            "The relationship between the volume of a sphere and the volume of a circumscribed cylinder."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use the formulas to find the volumes of cylinders, cones, and spheres.",
+            "Solve real-world problems involving the volumes of cylinders, cones, and spheres."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "8.SP.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A Scatter plot is a graph in the coordinate plane representing a set of bivariate data.",
+            "Bivariate data are pairs of linked numerical observations.",
+            "A positive linear association is one that would be modeled using a line with a positive slope.",
+            "A negative linear association is one that would be modeled using a line with a negative slope.",
+            "A cluster is a group of numerical data values that are close to one another.",
+            "An outlier is a value that does not seem to fit the general pattern in a scatter plot."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A pattern in a scatter plot suggests that there may be a relationship between the two variables used to construct the scatter plot.",
+            "A scatter plot may show a linear association, a nonlinear association, or no association.",
+            "The variable not changed by other variables or the independent variable is represented on the horizontal axis.",
+            "The variable to be predicted by the independent variable or the dependent variable is represented on the vertical axis."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Plot ordered pairs on a coordinate grid representing the relationship between two data sets.",
+            "Describe patterns in the context of the measurement data.",
+            "Interpret patterns of association in the context of the data sample."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "8.SP.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A scatter plot is a graph in the coordinate plane representing a set of bivariate data.",
+            "A line can be used to represent the trend in a scatter plot.",
+            "Linear association is when the data on a scatter plot show an upward or downward trend.",
+            "Whether or not data plotted on a scatter plot have a linear association."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A good line for prediction is one that goes through the middle of the points in a scatter plot for which the points tend to fall close to the line.",
+            "A trend line on a scatter plot shows the association more clearly.",
+            "A line of best fit is the most accurate trend line on a scatter plot showing the relationship between two sets of data."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Draw a straight trend line to approximate the linear relationship between the plotted points of two data sets.",
+            "Make inferences regarding the reliability of the trend line by noting the closeness of the data points to the line."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "8.SP.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Bivariate data are pairs of linked numerical observations.",
+            "The y-intercept is the point where the graph crosses the y-axis.",
+            "Slope of a line is a constant rate of change between the two variables.",
+            "The initial value of a linear function is the value of the y-variable when the x value is zero.",
+            "How to model with mathematics.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A trend line on a scatter plot shows the association more clearly.",
+            "A line of best fit is the most accurate trend line on a scatter plot showing the relationship between two sets of data.",
+            "The equation of the trend line can be used to summarize the given data and make predictions regarding additional data points.",
+            "The slope and y-intercept in relation to the function represented by the equation y = mx + b."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine the equation of the trend line that approximates the linear relationship between the plotted points of two data sets.",
+            "Use a linear equation to describe the association between two quantities in bivariate data.",
+            "Interpret the slope of the equation in the context of the collected data.",
+            "Interpret the y-intercept of the equation in the context of the collected data."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "8.SP.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Categorical data are non-numerical data sets.",
+            "Bivariate data are pairs of linked numerical observations.",
+            "A two-way table organizes data about two categorical variables into rows and columns.",
+            "Frequency is the number of times a given data value occurs in a data set.",
+            "Relative frequency is the ratio of the number of desired results to the total number of trials."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Rules of probability can lead to more valid and reliable predictions about the likelihood of an event occurring.",
+            "Categorical data can have patterns of association.",
+            "Venn diagrams can also be used to display data from a two-way table."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create a two-way table to record the frequencies of bivariate categorical values.",
+            "Compute marginal sums or marginal percentages.",
+            "Determine the relative frequencies for rows and/or columns of a two-way table.",
+            "Use the relative frequencies and context of the problem to describe possible associations between the two sets of data."
+          ]
+        }
+      }
+    }
+  }
+]

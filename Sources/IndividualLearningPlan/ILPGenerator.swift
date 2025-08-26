@@ -9,6 +9,7 @@ import Foundation
 import MLX
 import AnalysisCore
 import StatisticalEngine
+import PredictiveModeling
 
 public actor IndividualLearningPlanGenerator {
     private let standardsRepository: StandardsRepository

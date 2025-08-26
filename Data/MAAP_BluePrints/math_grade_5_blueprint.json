@@ -1,0 +1,152 @@
+{
+    "school_year": "2021-2022",
+    "subject": "MATH",
+    "program_name": "MAAP",
+    "reporting_categories": [{
+            "name": "Operations and Algebraic Thinking (OA)",
+            "code": "OA",
+            "standards": [{
+                "code": "5.OA",
+                "numbers": [
+                    1,
+                    2,
+                    3
+                ],
+                "is_modeling": false
+            }],
+            "percentage_range": [
+                13.0,
+                17.0
+            ]
+        },
+        {
+            "name": "Number and Operations in Base Ten (NBT)",
+            "code": "NBT",
+            "standards": [{
+                "code": "5.NBT",
+                "numbers": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "is_modeling": false
+            }],
+            "percentage_range": [
+                25.0,
+                33.0
+            ]
+        },
+        {
+            "name": "Number and Operations\u2014Fractions (NF)",
+            "code": "NF",
+            "standards": [{
+                "code": "5.NF",
+                "numbers": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    71
+                ],
+                "is_modeling": false
+            }],
+            "percentage_range": [
+                25.0,
+                33.0
+            ]
+        },
+        {
+            "name": "Measurement and Data (MD)",
+            "code": "MD",
+            "standards": [{
+                "code": "5.MD",
+                "numbers": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "is_modeling": false
+            }],
+            "percentage_range": [
+                13.0,
+                17.0
+            ]
+        },
+        {
+            "name": "Geometry (G)",
+            "code": "G",
+            "standards": [{
+                "code": "5.G",
+                "numbers": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "is_modeling": false
+            }],
+            "percentage_range": [
+                12.0,
+                17.0
+            ]
+        },
+        {
+            "name": "Field Test Items",
+            "code": "",
+            "standards": [],
+            "percentage_range": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "Total Items",
+            "code": "",
+            "standards": [],
+            "percentage_range": [
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "operational_criteria": {
+        "dok_level_2_percentage": 75.0,
+        "dok_level_other_percentage": 25.0,
+        "mcss_percentage_range": [
+            75.0,
+            80.0
+        ],
+        "other_item_types_range": [
+            20.0,
+            25.0
+        ],
+        "minimum_standards_coverage": 75.0,
+        "operational_notes": [
+            "\u2022 The Depth of Knowledge (DOK) level of items across the operational test form will be tracked to have as much variety as possible.\u202fThe\u202fgoal is\u202ffor 75% of the\u202fitems on the\u202fform to be\u202fDOK level 2\u202fand\u202fapproximately\u202f25%\u202fof the\u202fitems on the\u202fform to be\u202fDOK\u202flevel\u202f1 and DOK\u202flevel 3.\u202fHowever, we recognize that standard distribution,\u202fitem types,\u202fand item statistics take priority when building the form.",
+            "\u2022 The goal is for the form to contain approximately 75-80% Multiple Choice Single Select (MCSS) items and the remaining\u202f20-25% of the items will be Multiple Choice Multiple Select (MCMS), Match, Numeric\u202fEntry, Grid, and Composite Item Types.",
+            "\u2022 The operational form will be built to\u202fensure that\u202fat least 75%\u202fof the\u202fstandards\u202fin a\u202freporting category\u202fwill be\u202fassessed\u202feach year.",
+            "\u2022 The Depth of Knowledge (DOK) level of items across the operational test form will be tracked to have as much variety as possible.\u202fThe\u202fgoal is\u202ffor 75% of the\u202fitems on the\u202fform to be\u202fDOK level 2\u202fand\u202fapproximately\u202f25%\u202fof the\u202fitems on the\u202fform to be\u202fDOK\u202flevel\u202f1 and DOK\u202flevel 3.\u202fHowever, we recognize that standard distribution,\u202fitem types,\u202fand item statistics take priority when building the form.",
+            "\u2022 The goal is for the form to contain approximately 75-80% Multiple Choice Single Select (MCSS) items and the remaining\u202f20-25% of the items will be Multiple Choice Multiple Select (MCMS), Match, Numeric\u202fEntry, Grid, and Composite Item Types.",
+            "\u2022 The operational form will be built to\u202fensure that\u202fat least 75%\u202fof the\u202fstandards\u202fin a\u202freporting category\u202fwill be\u202fassessed\u202feach year.",
+            "\u2022 The Depth of Knowledge (DOK) level of items across the operational test form will be tracked to have as much variety as possible.\u202fThe\u202fgoal is\u202ffor 75% of the\u202fitems on the\u202fform to be\u202fDOK level 2\u202fand\u202fapproximately\u202f25%\u202fof the\u202fitems on the\u202fform to be\u202fDOK\u202flevel\u202f1 and DOK\u202flevel 3.\u202fHowever, we recognize that standard distribution,\u202fitem types,\u202fand item statistics take priority when building the form.",
+            "\u2022 The goal is for the form to contain approximately 75-80% Multiple Choice Single Select (MCSS) items and the remaining\u202f20-25% of the items will be Multiple Choice Multiple Select (MCMS), Match, Numeric\u202fEntry, Grid, and Composite Item Types.",
+            "\u2022 The operational form will be built to\u202fensure that\u202fat least 75%\u202fof the\u202fstandards\u202fin a\u202freporting category\u202fwill be\u202fassessed\u202feach year."
+        ]
+    },
+    "total_points": 0,
+    "total_items": 58,
+    "operational_items": 49,
+    "field_test_items": 9,
+    "testing_time_minutes": 0,
+    "notes": [
+        "Note1: Division of a fraction by a fraction is not a requirement at this grade"
+    ]
+}

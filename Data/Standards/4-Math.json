@@ -1,0 +1,1300 @@
+[{
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "4.OA.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to fluently multiply and divide within 100.",
+                        "How to fluently recall basic multiplication facts.",
+                        "The answer to a multiplication problem is called the product.",
+                        "The two numbers that are being multiplied in a multiplication equation are called factors.",
+                        "The answer to a division problem is called the quotient.",
+                        "The number being divided is called the dividend and the number being divided into the dividend is called the divisor.",
+                        "How to compare numbers in an additive sense (what amount would be added to a quantity in order to result in another).",
+                        "How to interpret products and quotients of whole numbers.",
+                        "Interpretation means to communicate symbolically,"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "An additive comparison is the difference between two quantities.",
+                        "A multiplicative comparison compares two quantities by showing that one quantity is a specific number \"times less than\" or \"greater than\" the other quantity.",
+                        "Determining the factor by which to multiply one quantity in order to result in another.",
+                        "The meaning of \"times as many.\"",
+                        "The difference in the situations in which you would multiply to find the unknown or divide to find the unknown.",
+                        "Reason abstractly and quantitatively.",
+                        "Modeling with mathematics.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Solve multiplication and division problems that involve the following comparison situations: unknown product, group size unknown, number of groups unknown.",
+                        "Use a tape diagram model to make and illustrate multiplicative comparisons.",
+                        "Write an equation to represent a multiplicative comparison using a symbol to represent the unknown.",
+                        "Determine if a word problem is additive comparison or multiplicative comparison.",
+                        "Identify differences among additive comparison and multiplicative comparison word problems."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "4.OA.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A variable represents an unknown quantity.",
+                        "How to write one-step equations using variables.",
+                        "How to write two-step equations using addition and subtraction (easy to medium difficulty level).",
+                        "How to explain the difference between an expression and an equation.",
+                        "Equal sign means \"is the same as.\"",
+                        "How to add, subtract, divide, and multiply with multi-digit whole numbers.",
+                        "How to define multiplication and division.",
+                        "How to describe the inverse relationship between multiplication and division and addition and subtraction.",
+                        "How to fluently multiply and divide within 100.",
+                        "How to fluently recall basic multiplication facts.",
+                        "How to fluently add and subtract numbers up to 1,000."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Use of parenthesis in an equation.",
+                        "Reading an expression or equation that has more than one step.",
+                        "Rounding whole numbers to find an estimate that can be used to assess the reasonableness of the answer.",
+                        "Remainders can be interpreted as:",
+                        "o a leftover.",
+                        "o fractions or decimals.",
+                        "o discards, leaving only the whole number quotient.",
+                        "o increasing the whole number quotient by one.",
+                        "o rounding to the nearest whole number for an approximate result.",
+                        "Substitute * or  for the \"x\" in a multiplication equation.",
+                        "Making sense of problems",
+                        "and persevering in solving them.",
+                        "Attending to precision.",
+                        "Modeling with mathematics.",
+                        "Reasoning abstractly and quantitatively."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Identify the differences among addition, subtraction, multiplication, and division word problems.",
+                        "Perform addition, subtraction, division, and multiplication with whole numbers.",
+                        "Interpret remainders and how they affect the whole number answer in a division problem.",
+                        "Write equations using variables to represent the unknown for multi-step word problems.",
+                        "Evaluate the reasonableness of an answer by using estimation strategies or mental math strategies.",
+                        "Write an equation consisting of multiple operations to reflect the situation(s) in a word problem.",
+                        "Select a word problem that matches a specific equation."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "4.OA.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to fluently multiply and divide within 100.",
+                        "Describe the inverse relationship between multiplication and division.",
+                        "A factor is a number that is multiplied with another number to get a product.",
+                        "A product is the answer to a multiplication problem when two factors are multiplied.",
+                        "The words multiple and product are interchangeable.",
+                        "Division can be used to find an unknown factor."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Any whole number is a multiple of each of its factors.",
+                        "A prime number only has two factors, one and itself.",
+                        "A composite number has two or more factor pairs.",
+                        "A factor pair is two factors that create a specific product.",
+                        "A multiple is divisible by its factors.",
+                        "Divisibility means that a multiple can be divided evenly by its factor with no remainder."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "List factors for a given whole number.",
+                        "Classify numbers as prime or composite.",
+                        "List multiples of a given single digit number.",
+                        "Decide if a number is a multiple of a given one-digit number."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "4.OA.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A pattern is a set of numbers or objects which relate to each other according to a specific rule.",
+                        "How to identify patterns in a multiplication table.",
+                        "How to identify patterns in an addition table.",
+                        "How to fluently add and subtract single digit numbers.",
+                        "How to fluently multiply and divide within 100."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Patterns can grow or repeat.",
+                        "Division can be used to help identify properties of repeating patterns when finding the \"nth\" figure in a pattern (for example: find the 100th figure in the pattern circle, square, triangle, triangle-since there are four figures in the pattern before the pattern repeats, divide 100 by 4. This tells you that there will be 25 full repeats so the 100th figure would be the last shape in the pattern.)",
+                        "Reasoning abstractly and quantitatively.",
+                        "Attending to precision.",
+                        "Looking for and expressing regularity in repeated reasoning."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Construct shape patterns that express a given rule.",
+                        "Construct number patterns that express a given rule.",
+                        "Connect a rule for a given pattern with its sequence of numbers or shapes.",
+                        "Extend a given pattern after determining the rule that the pattern follows.",
+                        "Make generalizations about patterns that are not apparent within the given rule.",
+                        "Determine the rule for a given pattern that can be used to find the \"𝑛𝑛𝑡𝑡ℎ\" number or object in the pattern.",
+                        "Look for and make use of structure."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "4.NBT.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to use standard form, number names, and expanded form to read and write numbers to 1000.",
+                        "How to use place value to compare two three-digit numbers and use >, =, and < symbols to record the comparisons.",
+                        "How to identify the values of the digits represented by the place in the base-ten system up to the thousands.",
+                        "When moving to the right across the places in a number, the digits represent lesser values and when moving to the left, the places have a greater value.",
+                        "Ten like units make one unit of the next greater place (each bundle of 10 makes 1 of the place to the left).",
+                        "That to compare numbers you use the greatest place value."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The role of the comma:",
+                        "The values of the digits represented by the place in the base-ten system extended beyond the thousands up to one million.",
+                        "Patterns when multiplying single digit numbers by 10; 100; 1,000; 10,000; 100,000; 1,000,000.",
+                        "Place value to the one million place.",
+                        "How to use place value to write numbers in expanded notation.",
+                        "When comparing numbers, the number with the greatest place is the greatest number."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Say multi-digit whole numbers (up to 1,000,000).",
+                        "Write multi-digit whole numbers in expanded form (ex: 2,436 = 2,000 + 400 + 30 + 6 and 2,436 = (1,000 x 2) + (100 x 4) + (10 x 3) + (1 x 6).",
+                        "Write the whole number that is being represented by expanded notation.",
+                        "Write multi-digit whole numbers from place names of digits (ex: 2 thousands + 4 hundreds + 3 tens + 6 ones = 2,436).",
+                        "Write whole numbers from word form to standard form and standard form to word form.",
+                        "Compare two multi-digit numbers by using place value understanding.",
+                        "Use symbols such as >, =, and < to record comparisons of two multi-digit numbers."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "4.NBT.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "The relationship between addition and subtraction is an inverse relationship.",
+                        "How to fluently add and subtract numbers up to 10,000.",
+                        "How to model addition and subtraction by using an open number line and base ten blocks.",
+                        "How to use the properties of operations to add and subtract.",
+                        "The values of the digits represented by a place in the base-ten system extend beyond the thousands up to one million.",
+                        "When moving to the right across the places in a number, the digits represent lesser values and when"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Like base-ten units are to be added together or subtracted from each other.",
+                        "Compose or decompose base-ten units as needed in order to add or subtract multi-digit whole numbers.",
+                        "Digits that are in the same place should be lined up together when adding or subtracting.",
+                        "The steps and understanding behind the standard algorithm for addition.",
+                        "The standard algorithm for addition is a step-wise process that relies on base-ten place value.",
+                        "The standard algorithm for subtraction is a step-wise process that relies on base-ten place value."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Add numbers up to 1,000,000 using the standard algorithm for addition.",
+                        "Subtract numbers up to 1,000,000 using the standard algorithm for subtraction.",
+                        "Regroup in order to add or subtract.",
+                        "Explain the steps of the addition standard algorithm and the subtraction standard algorithm."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "4.NBT.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Division is repeated subtraction.",
+                        "Division can be used for three purposes: equal sharing, measurement, and finding unknown factors.",
+                        "The answer to a division problem is called the quotient.",
+                        "The number being divided is called the dividend and the number being divided into the dividend is called the divisor.",
+                        "The relationship between division and multiplication is an inverse relationship.",
+                        "In the base-ten system, the value of the place to the immediate left of any place is 10 times the value of that place.",
+                        "How to name and identify the value of each place in the base-ten system up to millions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Compose and decompose whole numbers based on place value.",
+                        "Patterns are created when dividing multiples of 10 by single digit numbers that divide evenly (ex: 8,000 ÷ 4 = 2,000).",
+                        "Remainders can be interpreted as:",
+                        "o a leftover.",
+                        "o fractions or decimals.",
+                        "o discards, leaving only the whole number answer.",
+                        "o increasing the whole number quotient by one.",
+                        "o rounding to the nearest whole number for an approximate result.",
+                        "Model with mathematics."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Decompose numbers based on place value to find the quotient of a greater number divided by a one-digit number.",
+                        "Divide up to four-digit numbers that will result in whole numbers and remainders.",
+                        "Interpret remainders and how they affect the quotient.",
+                        "Model division by using the area model, rectangular arrays, and writing equations.",
+                        "Write an explanation describing how the quotient was found."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to recognize fractions as equivalent based on size or location on a number line.",
+                        "How to recognize and generate simple equivalent fractions and explain why the fractions are equivalent.",
+                        "How to write whole numbers as fractions and identify fractions that are equivalent to whole numbers.",
+                        "Equivalent fractions represent the same area, interval or amount.",
+                        "Fractions should be seen and treated as regular numbers.",
+                        "The denominator represents the number of parts that comprise the whole and the numerator represents the number of parts that are being identified."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Two different fractions can be equivalent.",
+                        "Equivalent fractions are based on the same whole.",
+                        "Multiplying the numerator and the denominator by the same number, n, partitions each unit fraction piece into smaller equal pieces.",
+                        "Dividing the numerator and denominator by the same number, n, groups the unit fractions together to make larger equal pieces.",
+                        "Working with fractions with denominators of 2, 3, 4, 6, 8, 10, 12, and 100.",
+                        "Modeling with mathematics."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Plot, label, and identify fractions on a number line.",
+                        "Use a variety of visual fraction models (tape diagram, number line diagram, or area model).",
+                        "Write 1 and other whole numbers as a fraction.",
+                        "Partition a whole into smaller parts to model a fraction that is equivalent to the fraction that is already being represented.",
+                        "Create an equivalent fraction for a given fraction by partitioning a whole into smaller parts or by combining parts to make larger parts.",
+                        "Use writing to justify why two fractions are or are not equivalent."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Fractions with the same denominator (based on the same whole) are made up of the same size unit fractions.",
+                        "The sign > is the \"greater than\" sign, the sign < is the \"less than\" sign, and the sign = is the \"equal to\" sign.",
+                        "When placing two fractions on a number line, the one to the left is lesser and the one to the right is greater.",
+                        "How to generate equivalent fractions for ½ and 1.",
+                        "Equivalent fractions represent the same area, interval, or amount.",
+                        "Numbers 0, ½, and 1 are benchmark numbers.",
+                        "Decompose means to break into parts."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "In order to compare fractions, the fractions must be referring to the same whole.",
+                        "The greater the denominator, the less the value of the unit fraction.",
+                        "When fractions have the same denominator, the fraction with the greatest numerator has the greatest value.",
+                        "A fraction the with a numerator greater than the denominator has a value greater than 1.",
+                        "Working with fractions with denominators of 2, 3, 4, 6, 8, 10, 12, and 100.",
+                        "Modeling with mathematics."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Make comparisons of fractions by using a variety of visual fraction models (tape diagram, number line diagram, or area model).",
+                        "Create equivalent fractions by finding common denominators.",
+                        "Decompose fractions with the same denominator to justify comparisons.",
+                        "Draw a model to justify conclusions when comparing two fractions.",
+                        "Evaluate the reasonableness of a conclusion based on the benchmark fractions of 0, ½, and 1."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.3a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to create equivalent fractions.",
+                        "How to write a whole number as a fraction.",
+                        "A fraction a/b is made up of a sufficient number of unit fractions.",
+                        "Addition means joining together and subtraction means taking away.",
+                        "Subtraction and addition are inverse operations.",
+                        "How to find quotients of whole numbers with and without remainders."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "A mixed number is a number that is made up of a whole number and a fraction that is less than 1.",
+                        "A fraction with the numerator greater than the denominator has a value greater than 1.",
+                        "Converting a mixed number to a fraction by representing the whole number as an equivalent fraction and finding their sum.",
+                        "Decomposing a fraction into a sum of a whole number and a number less than 1 in order to convert to a mixed number.",
+                        "Adding and subtracting fractions with like denominators of 2, 3, 4, 6, 8, 10, 12, and 100."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a variety of visual fraction models (tape diagram, number line diagram, or area model).",
+                        "Create an equivalent fraction for a mixed number (write it as an improper fraction) in order to add or subtract.",
+                        "Represent the sum as a mixed number by joining a sufficient number of unit fractions together to make as many wholes as possible, and create the fraction by joining together the left over unit fractions.",
+                        "Model with mathematics.",
+                        "Reason abstractly and quantitatively.",
+                        "Look for and make use of"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.3d"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Addition means joining together and subtraction means taking away.",
+                        "Subtraction and addition are the inverse operations.",
+                        "Fraction a/b is made up of a sufficient number of unit fractions.",
+                        "How to create equivalent fractions.",
+                        "How to write a whole number as a fraction.",
+                        "A mixed number is a number that is made up of a whole number and a fraction that is less than 1."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Adding fractions with like denominators of 2, 3, 4, 6, 8, 10, and 12.",
+                        "Writing an equation using fractions.",
+                        "A fraction with a numerator greater than the denominator has a value greater than 1.",
+                        "Converting a mixed number to a fraction by representing the whole number as an equivalent fraction and finding their sum.",
+                        "Decomposing a fraction into a sum of a whole number and a number less than 1 in order to convert to a mixed number.",
+                        "Attending to precision."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a variety of visual fraction models (tape diagram, number line diagram, or area model) to solve word problems.",
+                        "Solve word problems that include the following situations: result unknown, total unknown, both addends unknown, change unknown, difference unknown, greater unknown, and lesser unknown.",
+                        "Write an equation that represents a word problem.",
+                        "Model with mathematics.",
+                        "Make sense of problems and persevere in solving them.",
+                        "Look for and make use of structure."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.4a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Definitions of the terms \"multiplication\" and \"multiple\".",
+                        "How to fluently recall basic multiplication facts.",
+                        "How to multiply whole numbers.",
+                        "The denominator represents the number of parts that comprise the whole and the numerator represents the number of parts that are being identified.",
+                        "Fraction a/b is made up of a sufficient number of unit fractions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "A fraction a/b is a multiple of the unit fraction 1/b.",
+                        "When multiplying a whole number by a fraction, the whole number is only multiplied by the numerator.",
+                        "Decomposing a fraction to show how many groups of the unit fraction it takes to represent that fraction.",
+                        "A fraction with a numerator greater than the denominator has a value greater than 1.",
+                        "Decomposing a mixed number to create a whole as a fraction plus the fraction.",
+                        "When multiplying a fraction by a whole number, you are multiplying the number of unit fractions by the whole number.",
+                        "Attending to precision.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a variety of visual fraction models (tape diagram, number line diagram, or area model) to multiply a fraction by a whole number.",
+                        "Express a multiple of a/b as a multiple of 1/b.",
+                        "Use multiplication to write an equation that represents how many groups of a unit fraction it takes to represent a fraction.",
+                        "Represent the product as a mixed number by joining a sufficient number of unit fractions together to make as many wholes as possible, and join the remaining unit fractions together to create a fraction.",
+                        "Model with mathematics."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.4b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Definitions of the terms \"multiplication\" and \"multiple\".",
+                        "How to fluently recall basic multiplication facts.",
+                        "How to multiply whole numbers.",
+                        "The denominator represents the number of parts that comprise the whole and the numerator represents the number of parts that are being identified.",
+                        "That a fraction a/b is made up of a sufficient number of unit fractions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "A fraction a/b is a multiple of the unit fraction 1/b.",
+                        "When multiplying a whole number by a fraction, the whole number is only multiplied by the numerator.",
+                        "Decomposing a fraction to show how many groups of the unit fraction it takes to represent that fraction.",
+                        "A fraction with a numerator greater than the denominator has a value greater than 1.",
+                        "Decomposing a mixed number to create a whole as a fraction plus the fraction.",
+                        "Modeling with mathematics.",
+                        "Looking for and making use of structure.",
+                        "Looking for and expressing regularity in repeated reasoning."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a variety of visual fraction models (tape diagram, number line diagram, or area model) to multiply a fraction by a whole number.",
+                        "Use multiplication to write an equation that represents how many groups of a unit fraction it takes to represent a fraction.",
+                        "Express a multiple of a/b as a multiple of 1/b.",
+                        "Represent the product as a mixed number by joining a sufficient number of unit fractions together to make as many wholes as possible, and join the remaining unit fractions together to make the fraction."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.4c"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Equivalent fractions represent the same area, interval, or amount.",
+                        "Fractions should be seen and treated as regular numbers.",
+                        "The denominator represents the number of parts that comprise the whole and the numerator represents the number of parts that are being identified.",
+                        "How to create equivalent fractions.",
+                        "How to fluently recall basic multiplication facts."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Adding fractions with like denominators.",
+                        "When adding fractions with like denominators, you only add the numerators.",
+                        "Multiplying the numerator and denominator by the same number, n, partitions each unit fraction piece into smaller equal pieces.",
+                        "Reasoning abstractly and quantitatively.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a variety of visual models (number line and base ten blocks) to represent a decimal.",
+                        "Create an equivalent fraction with 100 as the denominator for a fraction that has a denominator of 10.",
+                        "Add fractions with like denominators.",
+                        "Write a fraction with a denominator of 10 or 100 as a decimal.",
+                        "Model with mathematics."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Equivalent fractions represent the same area, interval, or amount.",
+                        "Fractions should be seen and treated as regular numbers.",
+                        "The denominator represents the number of parts that comprise the whole and the numerator represents the number of parts that are being identified.",
+                        "How to create equivalent fractions.",
+                        "How to fluently recall basic multiplication facts."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Adding fractions with like denominators.",
+                        "When adding fractions with like denominators, you only add the numerators.",
+                        "Multiplying the numerator and denominator by the same number, n, partitions each unit fraction piece into smaller equal pieces.",
+                        "Reasoning abstractly and quantitatively.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a variety of visual models (number line and base ten blocks) to represent a decimal.",
+                        "Create an equivalent fraction with 100 as the denominator for a fraction that has a denominator of 10.",
+                        "Add fractions with like denominators.",
+                        "Write a fraction with a denominator of 10 or 100 as a decimal.",
+                        "Model with mathematics."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.6"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "The place value chart does not just extend to the left of the ones place but also to the right.",
+                        "The denominator represents the number of parts that comprise the whole and the numerator represents the number of parts that are being identified.",
+                        "A fraction with a denominator of 10 represents \"tenths\" and a fraction with a denominator of 100 represents \"hundredths\".",
+                        "When the numerator and denominator are equal, the fraction represents 1.",
+                        "A fraction with numerator greater than the denominator has a value greater than 1."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "A decimal fraction is a fraction with 10 or 100 as the denominator.",
+                        "A whole number contains an \"understood\" decimal point after it (to the right).",
+                        "Decimals can be written as fractions.",
+                        "The number of digits to the right of the decimal point indicates the number in the denominator of the fraction: 10, 100, 1000, etc.",
+                        "The first place after the decimal point represents the \"tenths\" place and the second place represents the \"hundredths\" place.",
+                        "Fractions with denominators equal to 10 and 100 can be written using a decimal point.",
+                        "The value of the ones place is 10 times the value of the tenths place and the value of"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Write a decimal number as a fraction with a denominator of 10 or 100.",
+                        "Write a fraction with a denominator of 10 or 100 as a decimal number.",
+                        "Create an equivalent fraction with 100 in the denominator for a fraction with 10 in the denominator.",
+                        "Locate and label a decimal number on a number line.",
+                        "Look for and make use of structure."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "4.NF.7"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "The sign > is the \"greater than\" sign, the sign < is the \"less than\" sign, and the sign = is the \"equal to\" sign.",
+                        "When placing two decimals on a number line, the one to the left has a lesser value and the one to the right has a greater value.",
+                        "Decimals can be written as fractions.",
+                        "A decimal represents part of a whole.",
+                        "How to correctly pronounce a decimal number."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The value of the ones place is 10 times the value of the tenths place and the value of the tenths place is 10 times the value of the hundredths place.",
+                        "You can only compare decimals that refer to the same whole.",
+                        "0.1 is equivalent to 0.10, 0.2 is equivalent to 0.20, etc.",
+                        "Modeling with mathematics.",
+                        "Attending to precision.",
+                        "Reasoning abstractly and quantitatively."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Represent a decimal with a visual model (number line or base-ten blocks).",
+                        "Make comparisons of decimals by using a variety of visual models (number line or base ten blocks).",
+                        "Justify comparisons with a visual model."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to identify unit measurements related to length/distance, volume/capacity, and weight/mass.",
+                        "Equivalent means \"equal to.\"",
+                        "How to tell and write time to the nearest minute.",
+                        "How to measure time intervals in minutes.",
+                        "How to directly or indirectly compare two units of measurement.",
+                        "How to use and read a ruler."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Units belong to either the metric system or the U.S. customary system.",
+                        "Units in the metric and U.S. customary systems are used to measure length, capacity, weight, and time.",
+                        "The metric system is based on base ten place value.",
+                        "Prefixes and their meanings are added to the basic unit in the metric system.",
+                        "Multiplicatively comparing two different units in the same system.",
+                        "Multiplication is used to convert greater units of measurement to lesser units of measurement in a single system."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Recognize and identify units of measurements used to measure length, capacity, weight, and time.",
+                        "Relate the size of a unit to a benchmark or mental image.",
+                        "Convert greater units of measurement to lesser units of measurement within a single system.",
+                        "Create a two-column table of measurement equivalents.",
+                        "Write an equation to represent a multiplication comparison of two different units.",
+                        "Look for and make use of structure.",
+                        "Look for and express regularity in repeated reasoning."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to add, subtract, multiply, and divide whole numbers.",
+                        "How to add and subtract fractions or mixed numbers with the denominators of 2, 3, 4, 5, 6, 8, 10, 12, and 100.",
+                        "How to write a fraction with a denominator of 10 or 100 as a decimal and how to write a decimal as a fraction with 10 or 100 as the denominator.",
+                        "How to identify unit measurements related to length/distance, volume/capacity, and weight/mass.",
+                        "Equivalent means \"equal to.\"",
+                        "How to tell and write time to the nearest minute.",
+                        "How to measure time intervals in minutes.",
+                        "How to directly or indirectly compare two units of measurement.",
+                        "How to use and read a ruler."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "(Grade level appropriate) Word problems will be situations that involve two whole number measurements or one whole number measurement and a non-whole number measurement.",
+                        "Units belong to either the metric system or the U.S. customary system.",
+                        "Units and their size in the metric and U.S. customary systems are used to measure length, capacity, weight, and time.",
+                        "The metric system is based on base ten place value.",
+                        "Prefixes and their meanings can be added to the basic unit in the metric system.",
+                        "Multiplication is used to convert greater units of measurement to lesser units of measurement within a single system."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Convert larger units of measurement to smaller units of measurement within a single system.",
+                        "Recognize and identify units of measurements used to measure length, capacity, weight, and time.",
+                        "Relate the size of a unit to a benchmark or mental image.",
+                        "Construct a number line diagram, marked in whole numbers and fractions or decimals, to represent a measurement scale.",
+                        "Read a measurement scale.",
+                        "Solve word problems related to measurement that include the following situations: result unknown, total unknown, both addends unknown, change unknown, difference unknown, greater unknown, lesser unknown, unknown product,"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to recall basic multiplication facts.",
+                        "How to multiply whole numbers.",
+                        "Area is the amount of two-dimensional space that is contained within a boundary.",
+                        "Area is measured in square units.",
+                        "How to find the area of quadrilaterals by tiling and by using the formula A = l x w.",
+                        "How to find the area of figures that are decomposable into rectangles.",
+                        "Perimeter is the boundary of a two-dimensional shape.",
+                        "Perimeter is measured in units of length.",
+                        "How to find the perimeter of figures by adding all side lengths together.",
+                        "Opposite sides of a rectangle are equal."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The multiplicative relationship between the number of square units in the row and the number of square units in the column in a rectangular figure.",
+                        "The unknown length of a rectangular figure is the unknown factor of the product of the length and width.",
+                        "By using the inverse operation of multiplication, division, you can find the missing length of one side of a rectangular figure when you know the area and one side of the rectangular figure.",
+                        "All the possible lengths and widths of a rectangle can be found by dividing the perimeter in half and finding all of the numbers with a sum of this number.",
+                        "Modeling with mathematics.",
+                        "Using appropriate tools strategically."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Find the area and perimeter of rectangular figures in real world situations.",
+                        "Find the unknown length of a rectangular figure when one side length and the area of the rectangle are known or when one side length and the perimeter are known.",
+                        "Find the length and width of a rectangle that has a specific perimeter or a specific area or a specific perimeter and area together.",
+                        "Write a \"situation equation\" that can be used to find the missing length of a rectangle when the length of one side and area of the rectangle is known or the length of one side and perimeter of the rectangle is known. (The Progression Document states that a \"situation equation\" refers to the idea that the"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Data is not just a set of numbers, it is a set of numbers with a context.",
+                        "How to read and write in fraction notation.",
+                        "Fractions should be seen and treated as regular numbers.",
+                        "That the denominator represents the number of parts that comprise the whole and the numerator represents the number of parts that are being identified.",
+                        "Difference is the answer to a subtraction problem.",
+                        "How to identify unit measurements related to length/distance, volume/capacity, and weight/mass."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "When adding and subtracting fractions, the fractions must be referring to the same whole.",
+                        "Adding and subtracting fractions with denominators of 2, 3, 4, 5,6, 8, 10, 12, and 100.",
+                        "A line plot is a type of display that positions the data along the appropriate scale drawn as a number line diagram.",
+                        "Reasoning abstractly and quantitatively.",
+                        "Modeling with mathematics.",
+                        "Using appropriate tools strategically.",
+                        "Attending to precision.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a ruler to gather measurement data (halves, fourths, eighths) and construct a line plot using the data.",
+                        "Construct a line plot from a given data set and mark off the appropriate units (denominators limited to 2, 4, and 8).",
+                        "Analyze and read a line plot.",
+                        "Add and subtract fractions and/or mixed numbers with like denominators to solve problems involving data on a line plot.",
+                        "Compare fractions by reasoning about their size.",
+                        "Use the data in the line plot to answer questions about the data."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.5a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A ray is a part of a line with one end point and extends without end in one direction.",
+                        "An angle is formed wherever two rays have a common endpoint. This endpoint is called the vertex of the angle.",
+                        "The size of an angle is the amount of rotation between two rays forming the angle.",
+                        "A right angle has a measurement of 90°, an acute angle has a measurement of less than 90°, an obtuse angle has a measurement of more than 90° and less than 180°, a straight angle has a measurement of exactly 180°, and a reflex angle has a measurement of more than 180° and less than 360°.",
+                        "A fraction represents a part of a whole."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Degrees are the units used to measure angles.",
+                        "Angles are measured within degrees of a circle.",
+                        "Angles are a fraction of a circle.",
+                        "A circle has 360°.",
+                        "An angle is named using three points in which the middle point labels the vertex.",
+                        "Using appropriate tools strategically.",
+                        "Attending to precision.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Identify an angle.",
+                        "Identify benchmark angles (90°, 180°, 270°, 360°).",
+                        "Recognize that angles are measured within degrees of a circle.",
+                        "Write an angle's measurement as a fraction.",
+                        "Explain that an angle measurement is a fraction of a circle.",
+                        "Categorize angles based on their measurement (acute, obtuse, right, straight, reflex).",
+                        "Construct examples of an angle with a specific measurement using a protractor.",
+                        "Measure a given angle using a protractor."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.5b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A ray is a part of a line with one end point and extends without end in one direction.",
+                        "An angle is formed wherever two rays have a common endpoint.",
+                        "The size of an angle is the amount of rotation between the two rays that form the angle.",
+                        "A right angle has a measurement of 90°, an acute angle has a measurement of less than 90°, an obtuse angle has a measurement of more than 90° and less than 180°, a straight angle has a measurement of exactly 180°, and a reflex angle has a measurement of more than 180° and less than 360°."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Degrees are the units used to measure angles.",
+                        "Angles are measured within degrees of a circle.",
+                        "Angles are a fraction of a circle.",
+                        "A circle has 360°.",
+                        "A protractor is used to measure angles.",
+                        "An angle is named using 3 points in which the middle point labels the vertex.",
+                        "Using appropriate tools strategically.",
+                        "Attending to precision.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Identify an angle.",
+                        "Recognize that angles are measured within degrees of a circle.",
+                        "Recognize benchmark angles (90°, 180°, 270°, 360°).",
+                        "Explain that an angle measurement is a fraction of a circle.",
+                        "Categorize angles based on their measurement (acute, obtuse, right, straight, reflex).",
+                        "Construct examples of an angle with a specific measurement using a protractor.",
+                        "Measure a given angle using a protractor."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.6"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A ray is a part of a line with one end point and extends without end in one direction.",
+                        "An angle is formed wherever two rays have a common endpoint.",
+                        "The size of an angle is the amount of rotation between the two rays that form the angle.",
+                        "A right angle has a measurement of 90°, an acute angle has a measurement of less than 90°, an obtuse angle has a measurement of more than 90° and less than 180°, a straight angle has a measurement of exactly 180°, and a reflex angle has a measurement of more than 180° and less than 360°."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Degrees are the units used to measure angles.",
+                        "Angles are measured within degrees of a circle.",
+                        "Angles are a fraction of a circle.",
+                        "A circle has 360°.",
+                        "A protractor is used to measure angles.",
+                        "An angle is named using 3 points in which the middle point labels the vertex.",
+                        "Using appropriate tools strategically.",
+                        "Attending to precision."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Name and identify angles.",
+                        "Identify benchmark angles (90°, 180°, 270°, 360°).",
+                        "Categorize angles based on their measurement (acute, obtuse, right, straight, reflex).",
+                        "Use a protractor to construct examples of an angle with a specific measurement.",
+                        "Measure a given angle using a protractor."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "4.MD.7"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "An angle is formed wherever two rays have a common endpoint.",
+                        "A ray is a part of a line with one end point and extends without end in one direction.",
+                        "The size of an angle is the amount of rotation between the two rays that form the angle.",
+                        "A right angle has a measurement of 90°, an acute angle has a measurement of less than 90°, an obtuse angle has a measurement of more than 90° and less than 180°, a straight angle has a measurement of exactly 180°, and a reflex angle has a measurement of more than 180° and less than 360°.",
+                        "How to write an equation using a variable to represent the unknown."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Degrees are the units used to measure angles.",
+                        "Angles are measured within degrees of a circle.",
+                        "Angles are a fraction of a circle.",
+                        "A circle has 360°.",
+                        "An angle is named using 3 points in which the middle point labels the vertex.",
+                        "Two angles that have the same vertex and share a side are called adjacent angles.",
+                        "Two angles are complimentary if their measurements have the sum of 90°.",
+                        "Two angles are supplementary if their measurements have the sum of 180°.",
+                        "Opposite angles created by intersecting lines have the same angle measurement.",
+                        "Making sense of problems and persevering in solving them.",
+                        "Modeling with mathematics."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Find the measurement of an angle in a diagram when given the angle's complimentary or supplementary measurement.",
+                        "Find the measurement of the other three angles formed by intersecting lines when given the measurement of one angle.",
+                        "Write an equation to find the missing measurement of one angle when given the measurement of the second angle for complimentary and supplementary angles and find the measurement of it.",
+                        "Write an equation to find the missing measurement of an angle inside a larger angle when the larger angle measurement and one measurement part of the larger angle is known and find the measurement of it."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "4.G.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A two-dimensional figure is a figure that lies in a plane or is \"flat.\"",
+                        "Polygons have attributes.",
+                        "Polygons with equal sides are regular polygons.",
+                        "Two-dimensional shapes are closed figures. A shape is closed if exactly two sides meet at every vertex, every side meets exactly two other sides, and no sides cross each other.",
+                        "Two-dimensional figures are made up of points, lines, and line segments."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The meaning of the words point, line, line segment, ray, angle, obtuse angle, acute angle, right angle, parallel, and perpendicular.",
+                        "Lines are infinite in extent, and points have location but no dimension.",
+                        "The size of an angle is the amount of rotation between the two rays that form the angle.",
+                        "A right angle has a measurement of 90°, an acute angle has a measurement of less than 90°, and an obtuse angle has a measurement of more than 90° and less than 180°.",
+                        "An angle is formed wherever two rays have a common endpoint. This endpoint is called the vertex of the angle."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Define and recognize examples of the following: point, line, line segment, ray, angle, acute angle, right angle, obtuse angle, perpendicular, and parallel lines.",
+                        "Construct examples of angles and triangles that are acute, right, or obtuse.",
+                        "Construct examples of points, lines, line segments, and parallel and perpendicular lines.",
+                        "Recognize and identify points, lines, line segments, types of angles, and parallel and perpendicular lines in two-dimensional figures.",
+                        "Attend to precision."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "4.G.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A two-dimensional figure is a figure that lies in a plane or is \"flat\".",
+                        "Two-dimensional shapes are closed figures. A shape is closed if exactly two sides meet at every vertex, every side meets exactly two other sides, and no sides cross each other.",
+                        "How to identify defining attributes of two-dimensional figures.",
+                        "Defining attributes are geometrical characteristics, such as number of vertices, angles, angle size, etc. Examples of non-defining attributes are color, overall size, or orientation of the figure.",
+                        "How to classify shapes based on attributes, such as number of sides or angles."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The meaning of the words parallel and perpendicular (and distinguish how they are different).",
+                        "A right angle is an angle with a measurement of 90°, an acute angle is an angle with a measurement of less than 90°, and an obtuse angle is an angle with a measurement of more than 90°.",
+                        "The size of an angle is the amount of rotation between the two rays that form the angle.",
+                        "A right triangle is a triangle that contains a right angle; any triangle that has a right angle can be categorized as a right triangle.",
+                        "An angle is named using three points in which the middle point labels the vertex."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Identify shapes that have parallel or perpendicular lines.",
+                        "Use parallel lines and perpendicular lines to categorize two-dimensional shapes.",
+                        "Categorize shapes based on similar attributes.",
+                        "Identify two-dimensional shapes that contain angles with a specific measurement.",
+                        "Identify and recognize right triangles.",
+                        "Measure a given angle.",
+                        "Attend to precision.",
+                        "Use appropriate tools strategically."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "4",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "4.G.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A two-dimensional figure is a figure that lies in a plane or is \"flat.\"",
+                        "Two-dimensional shapes are closed figures. A shape is closed if exactly two sides meet at every vertex, every side meets exactly two other sides, and no sides cross each other.",
+                        "A line is straight."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "A figure is symmetrical if a line can be drawn and one side is the mirror image of the other.",
+                        "When a figure is folded on a line and the areas match up exactly, the fold creates a line of symmetry.",
+                        "A figure can have more than one line of symmetry.",
+                        "A figure can have no line of symmetry.",
+                        "Modeling with mathematics.",
+                        "Attending to precision.",
+                        "Looking for and making use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Create a symmetrical figure by drawing in the missing half of the figure.",
+                        "Draw in all the lines of symmetry in a figure.",
+                        "Identify symmetrical figures."
+                    ]
+                }
+            }
+        }
+    }
+]

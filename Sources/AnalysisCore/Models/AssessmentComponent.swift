@@ -71,27 +71,65 @@ public enum TestProvider: String, Codable, Sendable {
     }
 }
 
+// Core type definitions
 public struct ComponentIdentifier: Hashable, Sendable, CustomStringConvertible {
     public let grade: Int
     public let subject: String
     public let component: String
+    public let testProvider: TestProvider
     
-    public init(grade: Int, subject: String, component: String) {
+    public init(
+        grade: Int,
+        subject: String,
+        component: String,
+        testProvider: TestProvider
+    ) {
         self.grade = grade
         self.subject = subject
         self.component = component
+        self.testProvider = testProvider
     }
     
     public var description: String {
-        "\(subject)_G\(grade)_\(component)"
+        "Grade \(grade) \(subject) \(component)"
+    }
+    
+    public func toPair() -> ComponentPair {
+        ComponentPair(
+            grade: grade,
+            year: nil,
+            subject: subject,
+            component: component,
+            testProvider: testProvider
+        )
     }
 }
 
-public typealias ComponentPair = (source: ComponentIdentifier, target: ComponentIdentifier)
+public struct ComponentPair: Sendable {
+    public let grade: Int
+    public let year: Int?
+    public let subject: String
+    public let component: String
+    public let testProvider: TestProvider
+    
+    public init(
+        grade: Int,
+        year: Int?,
+        subject: String,
+        component: String,
+        testProvider: TestProvider
+    ) {
+        self.grade = grade
+        self.year = year
+        self.subject = subject
+        self.component = component
+        self.testProvider = testProvider
+    }
+}
 
 public enum RiskLevel: String, Sendable {
-    case critical = "Critical"
-    case high = "High" 
-    case moderate = "Moderate"
     case low = "Low"
+    case moderate = "Moderate"
+    case high = "High"
+    case critical = "Critical"
 }

@@ -1,0 +1,1585 @@
+[{
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.1",
+            "type": "Grade-Specific",
+            "description": "Interpret products of whole numbers, e.g., interpret 5 × 7 as the total number of objects in 5 groups of 7 objects each. For example, describe a context in which a total number of objects can be expressed as 5 × 7."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Repeated addition is connected to multiplication.",
+                        "Equal groups can be modeled by partitioning rectangles.",
+                        "How to skip count by 2s, 5s and 10s.",
+                        "How to use a rectangular array to find the total number of objects.",
+                        "Interpretation means to communicate symbolically, numerically, abstractly, and/or with a model.",
+                        "How to add using the commutative and identity properties.",
+                        "Patterns connecting addition and subtraction."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Multiplication means \"groups of.\"",
+                        "Multiply by using a set of equal groups.",
+                        "Arrays can be used to represent multiplication.",
+                        "How to define the terms factor and product.",
+                        "Properties (rules about how numbers work) of multiplication can be used to solve problems.",
+                        "Patterns are found in the multiplication table."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Find products of whole numbers as the total number of objects in n groups of n objects each.",
+                        "Solve multiplication problems by using equal groups, arrays, area, and/or measurement quantities.",
+                        "Represent a multiplication situation as an equation.",
+                        "For example, choose the equation that represents the picture:"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "multiplication",
+                "products",
+                "equal groups",
+                "arrays",
+                "repeated addition",
+                "factors",
+                "commutative property",
+                "identity property",
+                "patterns",
+                "skip counting"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.2",
+            "type": "Grade-Specific",
+            "description": "Interpret whole-number quotients of whole numbers, e.g., interpret 56 ÷ 8 as the number of objects in each share when 56 objects are partitioned equally into 8 shares, or as a number of shares when 56 objects are partitioned into equal shares of 8 objects each. For example, describe a context in which a number of shares or a number of groups can be expressed as 56 ÷ 8."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Repeated subtraction is related to division.",
+                        "How to skip count by 2s, 5s, 10s, and 100s.",
+                        "Patterns are found in the multiplication table.",
+                        "How to partition shapes and groups of objects into equal shares.",
+                        "Interpretation means to communicate symbolically, numerically, abstractly, and/or with a model.",
+                        "Patterns connecting addition and subtraction."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Division means to separate into parts.",
+                        "A quotient describes how many groups there are or how many objects are in each group.",
+                        "The numbers in a division equation represent a number of equal shares and the number of items in each share.",
+                        "The relationship between multiplication and division is an inverse relationship.",
+                        "Models and arrays can be used to solve division problems."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Explain what division means and how it relates to equal shares.",
+                        "Interpret quotients as the number of objects (shares) or the number of groups when a set of objects is divided equally.",
+                        "Solve division problems by using equal groups, arrays, area, and/or measurement quantities.",
+                        "Represent a division situation as an equation.",
+                        "For example, choose the division number sentence that represents the picture:"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.3",
+            "type": "Grade-Specific",
+            "description": "Use multiplication and division within 100 to solve word problems in situations involving equal groups, arrays, and measurement quantities, e.g., by using drawings and equations with a symbol for the unknown number to represent the problem."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to solve one- and two-step addition and subtraction word problems.",
+                        "Addition can be used to find the total number of objects arranged in rectangular arrays.",
+                        "How to skip count by 2s, 5s, and 10s.",
+                        "A variable represents the unknown number.",
+                        "How to solve equations for the unknown.",
+                        "Multiplication and division are related.",
+                        "Multiplication is repeated addition and division is repeated subtraction.",
+                        "How to find products and quotients within 100."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Multiplication is used to find the sum of equal groups.",
+                        "Division is used to find the number of objects in a share or the number of equal shares.",
+                        "Arrays can be used to model multiplication and division problems.",
+                        "The rows and columns of an array differ based on orientation of the array.",
+                        "The relationship between multiplication and division (inverse operations) can be used to find the unknown."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Solve a variety of problem solving situations including the product, the group size, or the number of groups.",
+                        "Represent a word problem using a picture, an equation with a symbol for the unknown number, or in other ways.",
+                        "Solve real-life multiplication and division problems where the product/quotient is greater than 5.",
+                        "For example, Maria cuts 12 feet of ribbon into three equal pieces so she can share it with her two sisters. Use words, numbers, and/or pictures to show how long each piece is."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.4",
+            "type": "Grade-Specific",
+            "description": "Determine the unknown whole number in a multiplication or division equation relating three whole numbers. For example, determine the unknown number that makes the equation true in each of the equations 8 × ? = 48, 5 = _ ÷ 3, 6 × 6 = ?"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to find an unknown whole number in an addition and subtraction equation.",
+                        "Addition can be used to find the total number of objects arranged in rectangular arrays.",
+                        "How to skip count by 2s, 5s, and 10s.",
+                        "A variable represents the unknown number.",
+                        "How to multiply and divide within 100 using basic multiplication facts.",
+                        "How to express the relationship between multiplication and division as fact families."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "How to use related facts and properties of operations to find the unknown number.",
+                        "The relationship between multiplication and division (inverse operations) can be used to find the unknown.",
+                        "Factors and products and divisors and dividends express part-whole relationships in multiplication and division.",
+                        "The meaning of the equal sign as \"the same as\" to interpret an equation with an unknown.",
+                        "Products from single digit factors 0-9 and 10."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Select the operation (multiplication or division) needed to determine the unknown whole number.",
+                        "Solve to find the unknown whole number (factor, product, quotient) in a multiplication or division equation where products and quotients are greater than 5.",
+                        "For example, solve the equations below: 24= ? x 6 72 ÷ ? = 9",
+                        "For example, Candace has four bags. There are three marbles in each bag. How many marbles does Candace have altogether (4 x 3 = m)?"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.5",
+            "type": "Grade-Specific",
+            "description": "Apply properties of operations as strategies to multiply and divide. Examples: If 6 × 4 = 24 is known, then 4 × 6 = 24 is also known. (Commutative property of multiplication.) 3 × 5 × 2 can be found by 3 × 5 = 15, then 15 × 2 = 30, or by 5 × 2 = 10, then 3 × 10 = 30. (Associative property of multiplication.) Knowing that 8 × 5 = 40 and 8 × 2 = 16, one can find 8 × 7 as 8 × (5 + 2) = (8 × 5) + (8 × 2) = 40 + 16 = 56. (Distributive property.)"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Understand and apply the properties of operations (commutative, associative, and identity) to add and subtract.",
+                        "Addition can be used to find the total number of objects arranged in rectangular arrays.",
+                        "How to multiply and divide within 100.",
+                        "How to use arrays, bar diagrams, and drawings as strategies to multiply and divide.",
+                        "Fact families are expressions of the relationship between multiplication and division."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The commutative property states that the order in which the factors are multiplied does not change the product.",
+                        "The associative property states the way in which numbers are grouped does not change their product.",
+                        "The distributive property states that a sum may be found by multiplying each addend separately and then adding the products.",
+                        "The identity property of multiplication states that the product of 1 and a number is the number itself.",
+                        "Factors can be decomposed as a strategy for finding a product."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Explain how the properties of operations work.",
+                        "Apply properties of operations as strategies to multiply and divide.",
+                        "Find products and quotients by using known facts.",
+                        "For example, for each expression in A-D, answer Yes or No if the expression is equivalent to the product of 7"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.6",
+            "type": "Grade-Specific",
+            "description": "Understand division as an unknown-factor problem. For example, find 32 ÷ 8 by finding the number that makes 32 when multiplied by 8."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to find an unknown whole number in an addition and subtraction equation.",
+                        "Addition can be used to find the total number of objects arranged in rectangular arrays.",
+                        "How to skip count by 2s, 5s, and 10s.",
+                        "The equal sign is an expression of equality.",
+                        "How to use models and arrays to find quotients to division problems.",
+                        "A variable represents the unknown number.",
+                        "How to multiply and divide within 100."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "How to use multiplication to find the unknown number in a division problem.",
+                        "The relationship between multiplication and division (inverse operations) can be used to find the unknown.",
+                        "Factors and products and divisors and dividends express part-whole relationships in multiplication and division.",
+                        "The difference between division with and without a remainder and the impact to factors in multiplication."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Find quotients to division problems by using multiplication facts.",
+                        "Recognize multiplication and division as related operations and explain how they are related.",
+                        "For example, 3 x 5 =15; 5 x 3= 15 15 ÷ __ = 5 (3) 15 ÷ __ = 3 (5)",
+                        "For example, a student knows that 4 x 6 = 24. How can he use that fact to determine the answer to the following problem: Twenty-four students are divided into four groups in Art class. How many students are in each group? Write a division equation and explain your reasoning."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.7",
+            "type": "Grade-Specific",
+            "description": "Fluently multiply and divide within 100, using strategies such as the relationship between multiplication and division (e.g., knowing that 8 × 5 = 40, one knows 40 ÷ 5 = 8) or properties of operations. By the end of Grade 3, know from memory all products of two one-digit numbers."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to add and subtract fluently within 20 and recall single-digit sums from memory.",
+                        "Patterns and relationships are found in the multiplication table.",
+                        "The relationship between multiplication and division is an inverse relationship.",
+                        "Multiplication is used to find the sum of equal groups.",
+                        "Division is used to find the number of objects in a share or the number of equal shares."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Visual images and numerical patterns of multiplication and division can be used to solve problems.",
+                        "Various strategies are used to attain fluency with basic multiplication and division facts.",
+                        "Numbers can be used flexibly to solve multiplication and division problems.",
+                        "Fluently means quickly and accurately.",
+                        "Multiplication and division within 100."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Analyze a multiplication or division problem in order to choose an appropriate strategy to fluently multiply or divide within 100.",
+                        "Recall from memory all products of two one-digit numbers.",
+                        "For example: 6 x 7 = 42 8 x 8 = 64 42 ÷ 6 = 7"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.8",
+            "type": "Grade-Specific",
+            "description": "Solve two-step (two operational steps) word problems using the four operations. Represent these problems using equations with a letter standing for the unknown quantity. Assess the reasonableness of answers using mental computation and estimation strategies including rounding. Include problems with whole dollar amounts."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to solve two-step word problems involving addition and subtraction",
+                        "How to recall multiplication and division facts from memory",
+                        "How to use problem-solving structures for area/arrays and for equal groups",
+                        "How to define the meaning of addition, subtraction, multiplication, and division",
+                        "A variable represents the unknown number",
+                        "Rounding is an estimation strategy",
+                        "How to describe the order of operations (without parentheses)"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "How to construct an equation with a letter standing for the unknown quantity",
+                        "How to describe strategies for solving problems involving addition, subtraction, multiplication, and division",
+                        "Using strategies for estimating",
+                        "How to represent whole dollar amounts",
+                        "How to subtract across zeros when working with whole dollar amounts"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Solve two-step problems involving addition, subtraction, multiplication, and division",
+                        "Solve for an unknown in various positions",
+                        "Justify answers using various estimation strategies",
+                        "Apply problem-solving strategies to real-world scenarios like calculating total number of wheels in a skating team problem"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "two-step word problems",
+                "four operations",
+                "equations",
+                "unknown quantity",
+                "variables",
+                "mental computation",
+                "estimation",
+                "rounding",
+                "whole dollar amounts",
+                "problem solving"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "3.OA.9",
+            "type": "Grade-Specific",
+            "description": "Identify arithmetic patterns (including patterns in the addition table or multiplication table), and explain them using properties of operations. For example, observe that 4 times a number is always even, and explain why 4 times a number can be decomposed into two equal addends."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to use an addition table, a multiplication table, and a hundreds chart.",
+                        "Arithmetic patterns are patterns that change by the same rate, such as adding the same number.",
+                        "The properties of operations can be used to identify arithmetic patterns.",
+                        "How to determine whether a number is even or odd."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Patterns can be found in the addition and multiplication tables.",
+                        "Visual images and numerical patterns of multiplication and division will help in solving problems.",
+                        "Identifying arithmetic patterns related to the properties of operations.",
+                        "Identifying patterns (such as even and odd numbers, patterns in an addition table, patterns in a multiplication table, patterns regarding multiples and sums)."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Identify arithmetic patterns (including patterns in the addition or multiplication tables).",
+                        "Explain rules for a pattern using properties of operations.",
+                        "Explain relationships between the numbers in a pattern.",
+                        "For example, the products of",
+                        "a) 4",
+                        "b) 6",
+                        "c) 8",
+                        "d) all of the above"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "3.NBT.1",
+            "type": "Grade-Specific",
+            "description": "Use place value understanding to round whole numbers to the nearest 10 or 100."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Each digit in a three-digit number represents an amount of hundreds, tens, and ones.",
+                        "Three-digit numbers can be compared based on the hundreds, tens, and ones digits, and >, =, and < symbols are used to record the results of comparisons.",
+                        "A hundreds chart and a number line illustrate place- value relationships."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Rounding is a method of approximating an answer.",
+                        "There are rules for rounding.",
+                        "The digits in the ones, tens, and hundreds places are used to round whole numbers.",
+                        "A number line and a hundreds chart are tools to support rounding.",
+                        "Rounding applies to real life.",
+                        "When rounding to the nearest 10, the ones digit is used to determine if the number is rounded up or down.",
+                        "When rounding to the nearest 100, the tens digit is used to determine if the number is rounded up or down."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Use a number line, hundreds chart, and/or rounding rules to round whole numbers to the nearest 10 or 100.",
+                        "Model the rounding process and reasoning for rounding to represent the structure of the base-ten number system.",
+                        "Use patterns in the number system in the rounding process.",
+                        "For example, when rounding to the nearest 10:"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "3.NBT.2",
+            "type": "Grade-Specific",
+            "description": "Fluently add and subtract within 1000 using strategies and algorithms based on place value, properties of operations, and/or the relationship between addition and subtraction."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to add and subtract fluently within 100.",
+                        "How to apply various strategies (i.e., the standard algorithm, concrete models, make 10, and make 100) to add and subtract.",
+                        "The properties of operations (associative, commutative, and distributive properties) can be used to solve addition and subtraction problems.",
+                        "The relationship between addition and subtraction is an inverse relationship."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "A variety of strategies can be used to attain fluency with addition and subtraction.",
+                        "These strategies can include the standard algorithm (borrowing or regrouping) and thinking about multi-digit numbers as groups of hundreds, tens, and ones.",
+                        "Numbers can be used flexibly to solve addition and subtraction problems such as using the properties of operations.",
+                        "Fluently means quickly and accurately.",
+                        "Strategies for subtracting across zeros using place value understanding."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Add and subtract within 1,000 without context.",
+                        "Model algorithms based on place value, properties of operations, and/or the inverse relationship between addition and subtraction.",
+                        "Demonstrate fluency (speed, accuracy, and understanding) with addition and subtraction problems within 1,000.",
+                        "For example,",
+                        "Subtract across zeros using understanding of place value."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "3.NBT.3",
+            "type": "Grade-Specific",
+            "description": "Multiply one-digit whole numbers by multiples of 10 in the range 10-90 (e.g., 9 × 80, 5 × 60) using strategies based on place value and properties of operations."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to count by multiples of 10.",
+                        "How to compose and decompose multiples of 10 as groups of 10.",
+                        "How to find the product of two one-digit numbers; develop fluency with basic multiplication facts.",
+                        "Rectangular arrays can be constructed to find the sum of a repeated addition problem."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Base-ten blocks, diagrams, and a hundreds chart can be used to multiply a one-digit number by multiples of 10.",
+                        "The patterns in place value connect the products of one-digit numbers to the products of one-digit numbers multiplied by multiples of 10. For example, 6 x 8 = 48 and"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Multiply one-digit numbers by a multiple of 10 using various strategies.",
+                        "Recognize patterns in multiplying by multiples of 10.",
+                        "For example, 30 is 3 tens and 70 is 7 tens; 2 x 40 is 2 groups of 4 tens or 8 groups of ten; 5 x 60 is 5 groups of tens or 30 tens; and 30 tens is 300.",
+                        "For example, 40 x 5 = n."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "3.NF.1",
+            "type": "Grade-Specific",
+            "description": "Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts; understand a fraction a/b as the quantity formed by a parts of size 1/b."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to divide shapes (circles and rectangles) into no more than four equal parts.",
+                        "Fraction models include area (parts of a whole) models (circles, rectangles, and squares) and number lines.",
+                        "A fraction is written with a numerator/denominator.",
+                        "A fraction represents quantities where a whole is divided into equal parts.",
+                        "The numerator of a fraction is the number of parts.",
+                        "The denominator of a fraction represents the total number of parts that make up the whole.",
+                        "Equal shares of the same whole need not have the same shape."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The size of the fractional part is relative to the size of the whole.",
+                        "Fractions are composed of unit fractions, which have a numerator of 1. For example, the fraction 34� is composed of three pieces that each have a size of 14�.",
+                        "Fractions represent quantities where a whole is divided into equal-sized parts using models, manipulatives, words, and/or number lines.",
+                        "Fractions can be used as a tool to model and understand quantities and relationships."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Represent a whole using unit fractions.",
+                        "Use the terms numerator for the number of relevant parts and denominator for the total number of parts in the whole.",
+                        "Use accumulated unit fractions to represent numbers equal to, less than, and greater than one ( 13� and 13� is 23�; 13�, 13�, 13�, and 13� is 43� ).",
+                        "For example, four children share one chocolate bar that was broken into six pieces. What portion of the chocolate bar will each child receive?",
+                        "For example, six children share one chocolate bar that was broken into four pieces. What portion of the chocolate bar will each child receive?"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "3.NF.2a",
+            "type": "Grade-Specific",
+            "description": "Understand a fraction as a number on the number line; represent fractions on a number line diagram. Represent a fraction 1/b on a number line diagram by defining the interval 0 to 1 as the whole and partitioning it into b equal parts. Recognize that each part has size 1/b and that the endpoint of the part based at 0 locates the number 1/b on the number line."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to divide shapes (circles and rectangles) into no more than four equal parts",
+                        "How to share a whole that was partitioned or split",
+                        "Fraction models include area models (parts of a whole using circles, rectangles, and squares) and number lines",
+                        "The numerator of a fraction is the number of relevant parts",
+                        "The denominator of a fraction represents the total number of parts that make up a whole",
+                        "Fractions are composed of unit fractions"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Fractions can be used as a tool to model and understand quantities and relationships",
+                        "Fractions can be represented on a number line. The whole is divided into equal-sized parts between whole numbers",
+                        "How to define the interval from 0 to 1 on a number line as the whole",
+                        "The equal parts between 0 and 1 have a fractional representation",
+                        "The size of the fractional part is relative to the size of the whole"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Divide a number line diagram into equal segments and label the appropriate fractional parts",
+                        "Explain that the end of each equal part is represented by a fraction (1/the number of equal parts)",
+                        "Create and interpret number line diagrams showing fractional parts, such as dividing the space between 0 and 1 into four equal regions"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "fractions",
+                "number line",
+                "equal parts",
+                "numerator",
+                "denominator",
+                "unit fractions",
+                "partitioning",
+                "whole numbers",
+                "interval",
+                "area models"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "3.NF.2b",
+            "type": "Grade-Specific",
+            "description": "Understand a fraction as a number on the number line; represent fractions on a number line diagram. Represent a fraction a/b on a number line diagram by marking off a lengths 1/b from 0. Recognize that the resulting interval has size a/b and that its endpoint locates the number a/b on the number line."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to divide shapes (circles and rectangles) into no more than four equal parts",
+                        "How to share a whole that was partitioned or split",
+                        "Fraction models include area models (parts of a whole using circles, rectangles, and squares) and number lines",
+                        "The numerator of a fraction is the number of relevant parts",
+                        "The denominator of a fraction represents the total number of parts that make up a whole",
+                        "Fractions are composed of unit fractions"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Fractions can be used as a tool to model and understand quantities and relationships",
+                        "Fractions can be represented on a number line. The whole is divided into equal-sized parts between whole numbers",
+                        "How to define the interval from 0 to 1 on a number line as the whole",
+                        "The equal parts between 0 and 1 have a fractional representation",
+                        "The size of the fractional part is relative to the size of the whole"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Divide a number line diagram into equal segments and label the appropriate fractional parts",
+                        "Explain that the end of each equal part is represented by a fraction (1/the number of equal parts)",
+                        "Create and interpret number line diagrams showing fractional parts, such as dividing the space between 0 and 1 into four equal regions"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "fractions",
+                "number line",
+                "equal parts",
+                "numerator",
+                "denominator",
+                "unit fractions",
+                "partitioning",
+                "whole numbers",
+                "interval",
+                "area models"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "3.NF.3a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to divide shapes (circles and rectangles) into no more than four equal parts.",
+                        "Measure length and represent that data in a line plot.",
+                        "Fraction models include area models (parts of a whole using circles, rectangles, and squares) and number lines.",
+                        "The numerator of a fraction is the number of relevant parts.",
+                        "The denominator of a fraction represents the total number of parts that make up a whole."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Fractions that represent equal-sized quantities or parts of a whole are equivalent.",
+                        "Two fractions are equivalent if they are the same size, or represent the same portion on a number line.",
+                        "Visual fraction models (area models) and number lines are helpful in exploring equivalence.",
+                        "What makes fractions equivalent."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Represent different fractions as parts of a whole and compare the shaded or relevant parts.",
+                        "Compare fractions by reasoning about their size to determine equivalence.",
+                        "Model equivalent fractions using manipulatives, pictures, or number line diagrams and explain in words why the fractions are equivalent.",
+                        "For example: Which statement is true about the diagrams below?"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "3.NF.3b",
+            "type": "Grade-Specific",
+            "description": "Explain equivalence of fractions in special cases, and compare fractions by reasoning about their size. Recognize and generate simple equivalent fractions, e.g., 1/2 = 2/4, 4/6 = 2/3. Explain why the fractions are equivalent, e.g., by using a visual fraction model."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to divide shapes (circles and rectangles) into no more than four equal parts and use vocabulary terminology to describe",
+                        "How to measure length and represent that data in a line plot",
+                        "Fraction models include area models (parts of a whole using circles, rectangles, and squares) and number lines",
+                        "The numerator of a fraction is the number of relevant parts",
+                        "The denominator of a fraction represents the total number of parts that make up a whole"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Fractions that represent equal-sized quantities or parts of a whole are equivalent",
+                        "Visual fraction models (area models) and number lines are helpful in exploring equivalence",
+                        "What makes fractions equivalent",
+                        "Two fractions are equivalent (equal) if they are the same size, or represent the same portion on a number line"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Compare fractions by reasoning about their size to determine equivalence",
+                        "Recognize and construct equivalent fractions using manipulatives, pictures, or number line diagrams and explain in words why the fractions are equivalent",
+                        "Use mathematical symbols to compare fractions and determine their relationships"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "equivalent fractions",
+                "fraction comparison",
+                "visual models",
+                "fraction size",
+                "numerator",
+                "denominator",
+                "area models",
+                "number lines",
+                "comparison symbols",
+                "equal parts"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "3.NF.3c",
+            "type": "Grade-Specific",
+            "description": "Explain equivalence of fractions in special cases, and compare fractions by reasoning about their size. Express whole numbers as fractions, and recognize fractions that are equivalent to whole numbers. Examples: Express 3 in the form 3 = 3/1; recognize that 6/1 = 6; locate 4/4 and 1 at the same point of a number line diagram."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to divide shapes (circles and rectangles) into no more than four equal parts and use correct terms to describe (halves, thirds, fourths)",
+                        "Fraction models include area models (parts of a whole using circles, rectangles, and squares) and number lines",
+                        "The numerator of a fraction is the number of relevant parts",
+                        "The denominator of a fraction represents the total number of parts that make up a whole",
+                        "Fractions that represent equal-sized quantities are equivalent"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Writing whole numbers as fractions relates to fractions as division problems. For example, 6/2 is six wholes divided into two groups",
+                        "The difference between a whole number and a fraction",
+                        "Two fractions are equivalent (equal) if they are the same size, or represent the same portion on a number line",
+                        "Equivalence of fractions depends upon the same whole"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Explain how a fraction relates to or is equivalent to a whole number",
+                        "Represent whole numbers as fractions using area models, number line diagrams, and numbers",
+                        "Solve real-world problems involving fractions and whole numbers, such as fair sharing problems",
+                        "Identify and justify which fractions are equivalent to whole numbers"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "whole numbers as fractions",
+                "equivalent fractions",
+                "number line",
+                "division",
+                "equal parts",
+                "area models",
+                "fraction equivalence",
+                "whole numbers",
+                "division problems",
+                "fair sharing"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "3.NF.3d",
+            "type": "Grade-Specific",
+            "description": "Explain equivalence of fractions in special cases, and compare fractions by reasoning about their size. Compare two fractions with the same numerator or the same denominator by reasoning about their size. Recognize that comparisons are valid only when the two fractions refer to the same whole. Record the results of comparisons with the symbols >, =, or <, and justify the conclusions, e.g., by using a visual fraction model."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to divide shapes (circles and rectangles) into no more than four equal parts and use vocabulary to describe (halves, thirds, fourths)",
+                        "Two fractions are equivalent (equal) if they are the same size, or represent the same portion on a number line",
+                        "Fraction models include area models (parts of a whole using circles, rectangles, and squares) and number lines",
+                        "The numerator of a fraction is the number of relevant parts",
+                        "The denominator of a fraction represents the total number of parts that make up a whole",
+                        "The size of the fractional part is relative to the size of the whole"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Fractions can be compared with or without visual fraction models including number lines",
+                        "When fractions have common denominators, the larger numerator has the larger number of equal parts, i.e., 2/6 < 5/6",
+                        "When fractions have common numerators, each fraction has the same number of relevant equal parts, but the total number of parts is different. The whole with more parts has smaller pieces than the whole with fewer parts, i.e., 3/8 < 3/4"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Determine that comparisons are valid only when the two fractions refer to same-sized wholes",
+                        "Compare two fractions with the same numerator and compare two fractions with the same denominator using visual fraction models, symbols, and words",
+                        "Record the results of fraction comparisons using the symbols >, <, or =",
+                        "Justify conclusions about the equivalence of fractions",
+                        "Apply fraction comparison skills to solve real-world problems involving comparing quantities"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "fraction comparison",
+                "same numerator",
+                "same denominator",
+                "comparison symbols",
+                "visual models",
+                "fraction size",
+                "equal parts",
+                "justify conclusions",
+                "relative size",
+                "common denominator"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to tell and write time to the nearest hour, half-hour, and 5 minutes using digital and analog clocks.",
+                        "How to skip count by 5s.",
+                        "How to add and subtract within 100.",
+                        "An analog clock has an hour and minute hand. Sometimes an analog clock has a second hand.",
+                        "A.M. represents time from midnight to noon. P.M. represents time from noon to midnight.",
+                        "Sixty minutes is equivalent to 1 hour."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "The space between two consecutive tick marks on an analog clock represents 1 minute.",
+                        "Elapsed time is the interval of time, given a specific unit, from a starting time to an ending time.",
+                        "A number line is a tool that may be used to represent time on an analog clock and may be used as a tool for finding elapsed time."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Compare an analog clock face to a number line.",
+                        "Tell and write time to the nearest minute.",
+                        "Use a number line to add and subtract time intervals in hours and minutes.",
+                        "Create and solve word problems involving addition and subtraction of time intervals in hours and minutes.",
+                        "For example, Jonathan wakes us at 5:45 a.m. It takes him 5 minutes to shower, 10 minutes to get dressed, and 15 minutes to eat breakfast. What time will he be ready for school?"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Objects have measurable attributes including length and mass.",
+                        "How to measure and estimate the length of an object using units of inches, feet, centimeters, and meters.",
+                        "How to solve one-step addition and subtraction word problems within 100 involving the same unit."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Capacity is the amount of liquid that a container can hold and can be measured in liters.",
+                        "Mass is the amount of matter that an object has and can be measured in grams or kilograms.",
+                        "Mass is different than weight.",
+                        "Liters, grams, and kilograms are all units used to measure in the Metric System.",
+                        "How to solve one-step word problems involving mass and one-step word problems involving capacity. (Given in the same unit.)"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Measure and estimate capacity using liters and mass using grams and kilograms.",
+                        "Solve one-step, addition, subtraction, multiplication, or division word problems involving capacity and mass. (Problems contain only one unit of measure. No conversions between units.)",
+                        "For example, a paper clip weighs about (a) 1 gram, (b) 10 grams, or (c) 100 grams?",
+                        "For example, Mrs. Smith uses a backpack on a hiking trip. Her backpack had a mass of 8 kg. She took 2 kg of food out of her backpack. What is the mass of the backpack now?"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to draw a single-unit scale picture graph and a bar graph to represent a data set with up to four categories.",
+                        "How to solve simple one-step problems using information from picture graphs and bar graphs (with single-unit scale).",
+                        "Scaled pictographs include symbols that represent units. Graphs should include a title, labeled categories, a key, and data.",
+                        "Scaled bar graphs can be horizontal or vertical and use bars of different lengths/ heights to show data. Graphs include a title, labeled scale, labeled categories, and data,",
+                        "How to skip count by 5s, 10s, and 100s."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Information (data) can be represented using scaled bar and picture graph forms. These graphs can be used to solve one- and two-step math problems.",
+                        "The scale of a graph can be greater than one.",
+                        "How to find \"how many more,\" \"how many less,\" and \"how many fewer.\"",
+                        "How to find the difference between the greatest and the least values.",
+                        "Two-step word problems involving the four operations."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Create a scaled picture graph or scaled bar graph to show data in multiple categories.",
+                        "Interpret a bar/picture graph to solve one- or two-step problems asking \"how many more\" and \"how many less.\"",
+                        "Analyze a scaled graph with a scale greater than one and solve problems.",
+                        "For example, Ms. Bennett collected data to show the number of students in the third grade who were wearing each color of shirt. Draw a bar graph to show the information below: Blue - 28, Red - 15, Green -23, and Yellow - 17"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to draw a picture graph and a bar graph to represent a data set.",
+                        "How to measure length in whole units using both metric and U.S. customary systems and represent that data in a line plot.",
+                        "X's are drawn above the number line to represent data values.",
+                        "How to read and use a standard ruler, including halves and quarter inch marks on a ruler.",
+                        "Fractions are related to measuring one-half and one-quarter inch.",
+                        "Measuring is approximate."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "How to use a line plot to represent data.",
+                        "The horizontal scale is marked off in appropriate units.",
+                        "Some items will not measure exactly 14� , 12� , or 1 inch.",
+                        "How to determine an appropriate scale for the line plot.",
+                        "Fractions on a number line."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Generate measurement data by measuring lengths using rulers marked with halves and fourths of an inch.",
+                        "Create a line plot where the horizontal scale is marked off in appropriate units-whole numbers, halves, or quarters.",
+                        "Analyze data from a line plot.",
+                        "For example, Measure the objects in your art supply box to the nearest 12� or 14� of an inch and display data collected on a line plot. How many objects measured 14� , 12� , etc.?"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.5a",
+            "type": "Grade-Specific",
+            "description": "Recognize area as an attribute of plane figures and understand concepts of area measurement. A square with side length 1 unit, called 'a unit square,' is said to have 'one square unit' of area, and can be used to measure area."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to partition a rectangle into rows and columns of same-size squares and count to find the total number of them",
+                        "Plane figures are two-dimensional shapes that include triangles, quadrilaterals, pentagons, and hexagons",
+                        "What it means to find the length of an object",
+                        "How to measure the length of an object using the customary and metric units of inches, feet, centimeters, and meters"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Area as the amount of two-dimensional space in a bounded region",
+                        "A square unit is used to measure the area of a given plane figure or surface",
+                        "Area can be measured in square units",
+                        "How to find area by decomposing figures using cutting and folding techniques"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Cover the area of a plane figure with unit squares without gaps or overlaps",
+                        "Relate the number (n) of unit squares to the area of a plane figure",
+                        "For example, determine the area in square units of the rectangle below"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "area",
+                "plane figures",
+                "unit square",
+                "square units",
+                "geometric measurement",
+                "length",
+                "two-dimensional shapes",
+                "rectangles",
+                "triangles",
+                "quadrilaterals",
+                "pentagons",
+                "hexagons",
+                "decomposing figures"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.5b",
+            "type": "Grade-Specific",
+            "description": "Recognize area as an attribute of plane figures and understand concepts of area measurement. A plane figure which can be covered without gaps or overlaps by n unit squares is said to have an area of n square units."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Area can be found by partitioning a rectangle into rows and columns of same-size squares and counting the squares",
+                        "How to measure length in whole units using both metric and U.S. customary systems",
+                        "Plane figures are two-dimensional shapes that include triangles, quadrilaterals, pentagons, and hexagons",
+                        "Everyday objects have a variety of attributes each of which can be measured in different ways"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "A two-dimensional geometric figure that is covered by a certain number of squares without gaps or overlaps has an area of that number of square units",
+                        "Area can be measured in square units",
+                        "How to use square units to measure area by filling in an area with the same sized square units and counting the number of square units",
+                        "Plane figures have different attributes such as length and area"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Relate the number of unit squares (n) to the area of a plane figure",
+                        "Cover a plane figure with square tiles and count the number of units (tiles) to find the area",
+                        "Find the area of plane figures",
+                        "For example, which of the three rectangles covers the most area?"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "area",
+                "plane figures",
+                "unit squares",
+                "square units",
+                "geometric measurement",
+                "length measurement",
+                "two-dimensional shapes",
+                "rectangles",
+                "triangles",
+                "quadrilaterals",
+                "pentagons",
+                "hexagons",
+                "attributes",
+                "gaps and overlaps"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.6"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "Area can be found by partitioning a rectangle into rows and columns of same-size squares and counting the squares.",
+                        "How to use a ruler to measure length including the length of a side on a plane figure.",
+                        "Area can be measured in units of centimeters (cm), meters (m), inches (in), and feet (ft).",
+                        "Addition problem-solving strategies."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Area is the amount of two-dimensional space in a bound region, and it is measured by choosing a unit of area, often a square, and iterating it over the entire space.",
+                        "Squares units can be square centimeters, square meters, square inches, square feet, or other improvised square units.",
+                        "Everyday objects have a variety of attributes each of which can be measured in different ways.",
+                        "Area and addition are related."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Place square tiles on a surface without gaps or overlays and count the number of units (tiles) to find the area of the surface.",
+                        "For example, find the area in square units of the figure below."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.7a",
+            "type": "Grade-Specific",
+            "description": "Relate area to the operations of multiplication and addition. Find the area of a rectangle with whole-number side lengths by tiling it, and show that the area is the same as would be found by multiplying the side lengths."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to partition rectangles into equal-sized groups of rows and columns using square units",
+                        "Problem-solving structures for area arrays and for equal-sized groups",
+                        "How to skip count by 5s, 10s, and 100s",
+                        "Multiplication facts for all single digits 1 through 9 and 10"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Area is additive",
+                        "There is a relationship between area and multiplication",
+                        "The properties of operations will help in finding area",
+                        "Find the area of a rectangle by tiling it in unit squares",
+                        "Find the side lengths of a rectangle in units",
+                        "Skip counting and multiplication to determine the number of squares in an array",
+                        "Area models of multiplication"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Tile areas of rectangles and determine the area in square units. Record the length and width of the rectangle, and investigate the patterns in the numbers (equal-sized groups in rows and columns)",
+                        "Compare the area found by counting the tiles in a rectangle to the area found by adding equal-sized groups of tiles. If there are three rows and four columns, find the area by adding 3 + 3 + 3 + 3 or 4 + 4 + 4",
+                        "Compare the area found by tiling a rectangle to the area found by multiplying the side lengths and discover that the area is the length times the width"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "area",
+                "multiplication",
+                "addition",
+                "rectangles",
+                "tiling",
+                "arrays",
+                "square units",
+                "skip counting",
+                "equal groups",
+                "side lengths",
+                "rows and columns",
+                "area models"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.7b",
+            "type": "Grade-Specific",
+            "description": "Relate area to the operations of multiplication and addition. Multiply side lengths to find areas of rectangles with whole-number side lengths (where factors can be between 1 and 10, inclusively) in the context of solving real world and mathematical problems, and represent whole-number products as rectangular areas in mathematical reasoning."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to model with equal-sized groups by partitioning rectangles",
+                        "Problem-solving structures for area arrays and for equal groups",
+                        "Addition problem-solving strategies",
+                        "Multiplication facts for all single digits 1 through 9 and 10"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Area is additive",
+                        "There is a relationship between area and multiplication",
+                        "The properties of operations will help in finding area",
+                        "Multiply side lengths to find areas of rectangles",
+                        "Area is a square measure"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Solve real-world and mathematical area problems by multiplying whole-number side lengths of rectangles",
+                        "Use rectangular arrays to represent whole-number products in multiplication problems",
+                        "For example, Betsy wants to tile the bathroom floor using square foot tiles. How many square foot tiles will she need?"
+                    ]
+                }
+            }
+        },
+        "related_keywords": {
+            "terms": [
+                "area",
+                "multiplication",
+                "addition",
+                "rectangles",
+                "whole numbers",
+                "arrays",
+                "square measure",
+                "real-world problems",
+                "mathematical reasoning",
+                "side lengths",
+                "equal groups",
+                "problem-solving"
+            ]
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.7c"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to model with equal-sized groups by partitioning rectangles.",
+                        "Problem-solving structures for area/arrays and for equal groups.",
+                        "Addition problem-solving strategies.",
+                        "Multiplication facts for all single digits 1 through 9 and 10."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Area is additive.",
+                        "There is a relationship between area and multiplication.",
+                        "The properties of operations, specifically the distributive property, will help in finding area.",
+                        "How to multiply using an area model or array.",
+                        "How to use the distributive property to represent a real- world problem:"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Relate area of a rectangle to multiplication and addition by modeling the distributive property.",
+                        "For example, in the picture below, the area of a 6 x 7 figure can be determined by finding the area of a 6 x 5 and 6 x 2 figure and adding the two products.",
+                        "6 x 7= (6 x 5) + (6 x 2)"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.7d"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to decompose figures.",
+                        "A rectilinear figure is a polygon that has all right angles.",
+                        "How to find areas of rectangles.",
+                        "How to add areas of rectangles.",
+                        "Problem-solving structures for area/arrays and for equal groups.",
+                        "Multiplication facts for all single digits 1 through 9 and 10."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Area is additive.",
+                        "There is a relationship between area and multiplication.",
+                        "The properties of operations will help in finding area.",
+                        "Areas of each rectangle in a rectilinear (straight line) figure can be added together to find the area of the figure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Decompose rectilinear figures into different rectangles and find the area of each rectangle that is part of a larger figure.",
+                        "Find the area of each larger figure by adding the areas of each of the rectangles. See the example below."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Measurement and Data",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "3.MD.8"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to relate addition and subtraction to length.",
+                        "How to measure and estimate lengths in standard units.",
+                        "How to relate to an open array used in multiplication and area problems.",
+                        "Addition problem-solving strategies.",
+                        "A polygon is a closed, flat figure formed using line segments that meet only at their ends.",
+                        "For a polygon, the length of the perimeter is the sum of the lengths of the sides.",
+                        "Perimeter equals the distance around a closed figure."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Perimeter and addition are related and connected to the commutative property of multiplication.",
+                        "Patterns exist when finding the sum of the lengths and widths of rectangles.",
+                        "The difference between perimeter and area.",
+                        "The length of all sides in a polygon must be known to find the perimeter of the polygon.",
+                        "Unknown side lengths may be found by measuring or reasoning using given sides."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Solve real-world and mathematical problems involving perimeters of polygons.",
+                        "Find the perimeter of a polygon given the side lengths.",
+                        "Find the perimeter of a polygon when there is an unknown side length.",
+                        "Exhibit (design, create, draw, model, etc.) rectangles with the same perimeter and different areas.",
+                        "Exhibit rectangles with the same area and different perimeters.",
+                        "Solve real-world and mathematical problems involving perimeters of polygons."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "3.G.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "How to recognize and draw shapes having specified attributes such as a given number of angles and sides. Identify triangles, quadrilaterals, pentagons, and hexagons.",
+                        "Triangles, quadrilaterals, pentagons, etc. are two-dimensional shapes.",
+                        "How to identify and count angles and sides within a shape to label a shape."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Shapes can be described and compared using their geometric attributes.",
+                        "Shapes are categorized according to their attributes including the number of sides and angles within the shape. Those categories can contain subcategories, for example, rhombuses, rectangles, squares, trapezoids, parallelograms, etc.",
+                        "Attributes of a circle."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Describe, analyze, and compare properties of two-dimensional shapes.",
+                        "Compare and classify shapes by attributes, sides and angles.",
+                        "Group shapes with shared attributes to define a larger category (e.g., quadrilaterals).",
+                        "Draw examples and non-examples of quadrilaterals with specific attributes.",
+                        "For example, if a student writes, \"All quadrilaterals are squares, rectangles, or rhombuses.\" Draw a quadrilateral on the grid that proves this statement is false."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "3",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "3.G.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "A whole shape can be divided into equal parts. The equal parts may not be the same shape.",
+                        "How to divide shapes (circles and rectangles) into two, three, or four equal parts and use the terms halves, thirds, or fourths to describe the parts.",
+                        "A fraction represents quantities where a whole is divided into equal-sized parts.",
+                        "How to use the term numerator to indicate the number of parts and denominator to represents the total number of parts a whole is portioned into."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "Unit fractions can be used to describe a whole that has been divided into parts.",
+                        "The size of the fractional part is relative to the size of the whole.",
+                        "Composition and decomposition of rectangular regions.",
+                        "How to partition a rectangle into equal squares."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "Divide shapes into parts with equal areas.",
+                        "Represent the area of each part as a unit fraction.",
+                        "For example, which of these shows 13� of the shaded figure?"
+                    ]
+                }
+            }
+        }
+    }
+]

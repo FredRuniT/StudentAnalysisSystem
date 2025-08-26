@@ -1,0 +1,1373 @@
+[{
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "5.OA.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The mathematics symbols for operations of addition, subtraction, multiplication, and division.",
+                        "● There are numerous ways to write the different operations and some situations require different mathematical symbols.",
+                        "● Parentheses are often used when working with multiplication and can be used to illustrate the Associative Property of Multiplication and the"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Mathematic symbols help keep numeric expressions organized.",
+                        "● Parentheses group a set of numbers and operation symbols together and can also represent the operation of multiplication.",
+                        "● How to attend to precision.",
+                        "Distributive Property of Multiplication.",
+                        "● The difference between an expression and an equation."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Evaluate expressions by solving within parentheses first, within brackets second, and finally within the braces.",
+                        "● Recognize that not all problems will contain all the mathematical symbols, but when they are present, an order of operations must be followed to complete the problem.",
+                        "● Use mathematical symbols appropriately to organize numerical expressions."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "5.OA.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Parentheses are used to group expressions together.",
+                        "● It is possible to multiply any given expression by another quantity.",
+                        "● How the Distributive Property of Multiplication can be written as an expression."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Word problems are real-world situations and can be represented using numerical expressions.",
+                        "● The expression 14 x 3 is the same as (14)3, (10 + 4) x 3, or (10 + 4) + (10 + 4) + (10 + 4). (There are many other ways to write the expression as well.)",
+                        "● Decontextualizing a problem and organizing the information into a numeric expression is a necessary part of mathematics.",
+                        "● How to attend to precision."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Represent a word problem or real-world situation as a numeric expression.",
+                        "● Write a problem in various equivalent expressions.",
+                        "● Use parentheses and other mathematical symbols appropriately.",
+                        "● Use these mathematical symbols appropriately to organize numerical expressions.",
+                        "● Interpret numerical expressions.",
+                        "● Evaluate, create, and write numerical expressions."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Operations and Algebraic Thinking",
+        "reporting_category": "Operations and Algebraic Thinking",
+        "standard": {
+            "id": "5.OA.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to generate a number pattern that follows a given rule. For example: given the rule \"Add 3\" and the starting number 1, generate terms in the resulting sequence and observe that the terms appear to alternate between odd and even numbers."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● What an ordered pair is and the relationship between the coordinates and the coordinate plane.",
+                        "● Patterns and finding relationships between numbers.",
+                        "● How to look for and express regularity in repeated reasoning.",
+                        "● How to look for and make use of structure."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Create real-world and mathematical problems that require graphing points in Quadrant I of a coordinate plane.",
+                        "● Interpret coordinate values of points in the context of the situation.",
+                        "● Calculate terms of an ordered pair given a rule that must be followed.",
+                        "● Explain the relationship between two sets of patterns, i.e., Given the rule \"Add 2\" and a starting number 0, and given"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The names of the place value columns for whole numbers.",
+                        "● Ten ones compose a ten, ten different tens compose a hundred, and ten different hundreds compose a thousand.",
+                        "● The value of a digit located in the tenths or hundredths place.",
+                        "● The Base Ten System has place value because it is a positional notation system. The numerals 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9 can represent",
+                        "different values depending upon their position within a group of numerals. This is an efficient way to represent many quantities with few numeric symbols."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● A nine in the tens position has a different value than a nine in the hundred's position.",
+                        "● Columns located to the left of a given column have a greater value than columns located to the right of that column.",
+                        "● Multiples of 10.",
+                        "● A fraction bar represents division.",
+                        "● How to find the decimal equivalents for fractions of 1/10, 1/100, 1/1000, etc.",
+                        "● Multiplying by the fraction 1/10 is the same as dividing by 10,",
+                        "multiplying by 1/100 is the same as dividing by 100, etc."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● For a multi-digit number, tell what value each digit holds. For example, in 245, the 2 is in the hundreds place and has a value of 200.",
+                        "● Explain the patterns of the Base Ten System (each position is 10 times the position to its right and 1/10 of the position to its left).",
+                        "● Write an expression for a multi-digit number to show the quantity of each digit. For example: 345.67 is equivalent"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● A conceptual understanding of the multiplication of whole numbers.",
+                        "● A conceptual understanding of the Distributive Property of Multiplication.",
+                        "● Division is the inverse of multiplication.",
+                        "● Place value has many patterns.",
+                        "● In place value, each column has a value 10 times that of the column to the right of it. Each column has a value",
+                        "1/10 of the column to the left of it.",
+                        "● How to multiply multi-digit numbers by a single digit number as well as multi-digit numbers by a two-digit number."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Exponents are related to the operation of multiplication.",
+                        "● The base is the number that is being multiplied, while the exponent is the number of times the base is multiplied.",
+                        "● Exponents can also be referred to as powers.",
+                        "● Patterns are a way of making meaning without actually evaluating. For example:"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Explain how the patterns of the powers of ten relate to numbers being multiplied by them.",
+                        "● Explain 102 is the same as multiplying by 10 x 10, and the product of this is 100.",
+                        "● Explain why the problem",
+                        "● Use patterns and reasoning to place a decimal in a product or quotient. For example: The product of 3.1 x 102 must be close to 300 because 3.1 is"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.3a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to read and write whole numbers using base-ten numerals, number names, and expanded form.",
+                        "● The relationship between fractions and their base ten decimal equivalents.",
+                        "● Equivalent decimal values. For example: 0.6 is equivalent to 0.60.",
+                        "● How to compare decimals to the hundredths.",
+                        "● How to represent tenths and hundredths using modeling."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The patterns in the place value system can be extended beyond hundredths.",
+                        "● Thousandths are 1/10 the value of a hundredth, 1/100 the value of a tenth, and 1/1000 the value of one whole.",
+                        "● There are multiple ways to represent any given amount.",
+                        "● There is no comma to separate hundredths and thousandths."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Read and write decimals to thousandths using base-ten numerals, number names, and expanded form.",
+                        "● Convert numbers to word form and expanded form.",
+                        "● Compare the decimal amount in the various forms and with varying decimal place values."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.3b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to read and write whole numbers using base-ten numerals, number names, and expanded form.",
+                        "● How to compare whole numbers based on the meanings of the digits in each place.",
+                        "● The relationship between fractions and their base ten decimal equivalents.",
+                        "● Equivalent decimal values. For example: 0.6 is equivalent to 0.60",
+                        "● How to compare decimals to the hundredths place.",
+                        "● How to represent tenths and hundredths using modeling.",
+                        "● The meanings of the symbols >, =, and <."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The patterns in the place value system can be extended beyond hundredths.",
+                        "● Thousandths are 1/10 the value of a hundredth, 1/100 the value of a tenth, and 1/1000 the value of one whole.",
+                        "● There are multiple ways to represent any given amount.",
+                        "● There is no comma to separate hundredths and thousandths.",
+                        "● The number of digits in a base-ten decimal number does not determine its value.",
+                        "For example: 0.7 > 0.299 because 0.7 is closer to one whole than 0.299."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Compare decimals to the thousandths place by using the symbols >, =, and <.",
+                        "● Use visual models to show the value of each digit in a base-ten decimal number.",
+                        "● Explain decimal equivalence by using visual models and/or fractional equivalence.",
+                        "● Place decimals on a number line to demonstrate an understanding of value. Use number lines that show tenths, hundredths, and thousandths."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to use a number line to round whole numbers.",
+                        "● Decimal numbers can be placed on a number line.",
+                        "● How to round whole numbers."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Tenths are placed on a number line between whole numbers, hundredths are placed between tenths, and thousandths are placed between hundredths.",
+                        "● Rounding decimal values is very similar to rounding whole-number values."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Place decimals on a number line.",
+                        "● Use the number line to determine what benchmark number the original number is closest to on the line.",
+                        "● Given a base-ten decimal number, students should be able to explain what benchmark two numbers the given decimal is located between.",
+                        "● Round a decimal number to any given place using place value understanding."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to fluently recall basic multiplication facts.",
+                        "● Multiplication using strategies based on place value. These strategies could include partial products algorithms, distributive property, rectangular arrays, and area models."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The standard algorithm of multiplication is a \"short cut\" for other visual and written models.",
+                        "● The standard algorithm applies the same concepts of the Distributive Property of Multiplication. Every digit of the multiplicand must be multiplied by every digit in the multiplier.",
+                        "● The partial products in the standard algorithm are the",
+                        "results of multiplying by each digit in the multiplier. A two-digit multiplier results in two partial products. A three-digit multiplier results in three partial products, and so on."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Explain each of the steps in the standard multiplication algorithm and how place value plays an important role in each step.",
+                        "● Explain how the partial products in the standard algorithm relate to the place value of the digits being multiplied.",
+                        "● Complete all of steps in the standard algorithm with the"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.6"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● A conceptual knowledge of division and division models.",
+                        "● How to find whole-number quotients and remainders of up to four-digit dividends and one-digit divisors.",
+                        "● Division is the inverse of multiplication.",
+                        "● How to use visual models to divide whole numbers.",
+                        "● How to make sense of problems and persevere in solving them."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Dividing with two-digit divisors is conceptually the same as dividing with a single-digit divisor.",
+                        "● One visual model may be more appropriate than another depending on the problem context.",
+                        "● The relationship between multiplication and division."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Divide a whole number dividend with up to four digits by a two-digit divisor using any appropriate strategy.",
+                        "● Use multiple strategies for multi-digit division. Area models illustrate a connection to multiplication, partial quotients make a connection to place value, and concrete models (base- ten blocks) demonstrate the decomposition needed in the standard algorithm."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations in Base Ten",
+        "reporting_category": "Number and Operations in Base Ten",
+        "standard": {
+            "id": "5.NBT.7"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to add, subtract, multiply, and divide whole numbers using strategies based on place value and the properties of operations.",
+                        "● Addition and subtraction are inverse operations.",
+                        "● Multiplication and division are inverse operations.",
+                        "● Place value is extremely important when performing operations."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The concept of adding and subtracting decimals is conceptually the same as it is for whole numbers.",
+                        "● Number lines, concrete models, and algorithms can all be used to solve addition, subtraction, multiplication, and division problems with decimal numbers as well as with whole numbers.",
+                        "● The relationship between performing operations with fractions and with decimal numbers."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Use number lines, concrete models (base-ten blocks or decimal grids) or visual models to illustrate addition, subtraction, multiplication, or division of decimal numbers.",
+                        "● Apply knowledge of fraction multiplication and division to perform decimal operations.",
+                        "● Use reasoning to place the decimal in a sum, difference, product, or quotient.",
+                        "● Explain how the placement of the decimal in an answer is"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Adding fractions is joining separate parts referring to the same whole.",
+                        "● How to create an equivalent fraction for a given fraction using visual fraction models.",
+                        "● How to find common denominators and create equivalent fractions to compare fractions.",
+                        "● A unit fraction has a numerator of 1 and can be combined with other unit fractions with the same denominator.",
+                        "● How to add or subtract mixed numbers with like denominators.",
+                        "● Solve word problems involving addition and subtraction of fractions with like denominators by using visual fraction models, equations, and a number line."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Equivalent fractions represent the same part of a whole. They make it easier to perform operations with fractions.",
+                        "● Multiples and factors are important and help in finding equivalent fractions.",
+                        "● Fractions can be estimated to the nearest benchmark 0, ½, or 1 whole.",
+                        "● Mixed numbers can also be estimated to benchmarks.",
+                        "● Fractions with different size denominators can be",
+                        "placed on the same number line.",
+                        "● Improper fractions are fractions that represent an amount greater than one whole."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Find a common denominator and create equivalent fractions for given fractions or mixed numbers.",
+                        "● Place a fraction or mixed number on a number line and then increase or decrease it in value (move on the number line) from this position to perform an operation (adding or subtracting).",
+                        "● Use bar models or visual models to represent the adding or subtracting of"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Adding fractions is joining separate parts referring to the same whole.",
+                        "● How to use bar models, visual models, a number line, and equations to solve addition and subtraction problems involving fractions with like denominators and fractions with unlike denominators.",
+                        "● How to compare fractions with like and unlike denominators.",
+                        "● How to estimate a fraction to the nearest benchmark 0, ½, and 1."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Equivalent fractions represent the same part of a whole. They make it easier to perform operations with fractions.",
+                        "● Multiples and factors are important and help in finding equivalent fractions.",
+                        "● Fractions can be estimated to the nearest benchmark 0, ½, or 1 whole.",
+                        "● Mixed numbers also can be estimated to benchmarks.",
+                        "● Fractions with different size denominators can be placed on the same number line.",
+                        "● Improper fractions are fractions that represent an amount greater than one whole."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Create equivalent fractions for given fractions or mixed numbers.",
+                        "● Find a common denominator for given fractions or mixed numbers.",
+                        "● Solve word problems involving addition and subtraction of fractions with like or unlike denominators.",
+                        "● Use bar models, equations, or a number line to represent adding or subtracting of fractions with unlike denominators."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to divide whole numbers and what it means to divide using the partitioning and repeated subtraction models.",
+                        "● Division is the inverse of multiplication.",
+                        "● How to use visual models to divide whole numbers with and without remainders.",
+                        "● Equivalencies such as",
+                        "● How to make sense of problems and persevere in solving them."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Quotients can be represented with fractions.",
+                        "● It is possible to share an amount such as 3 with a greater number like 4. The process will require that the 3 be decomposed into smaller parts.",
+                        "● Contexts in word problems help to determine what operation to perform and what strategies might be useful.",
+                        "● Remainders can be interpreted in multiple ways and may be",
+                        "written as a fraction or a mixed number."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Contextualize and decontextualize word problems involving division.",
+                        "● Produce visual models (bar/ circle) to justify a division such as 7/8 (i.e., draw 7 wholes and 8 groups. Partition each whole into 8 pieces and then share the parts with the 8 groups). Each group will have seven pieces, and each piece will have a size of 1/8, thus each group will receive 7/8."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.4a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● A strong conceptual understanding of multiplication as an operation.",
+                        "● Multiplication can be viewed as repeated addition, equal-sized groups, or using an area model.",
+                        "● Multiplication by a number greater than 1 yields a product greater than the factors.",
+                        "● Multiplication by 1 yields a product that is equal to one of the factors."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● There are many different multiplication models that can be used. The model used depends on the context of the problem.",
+                        "● Multiplying by a number that is less than one whole will yield a product that is less than one of the factors.",
+                        "● Multiplication is a commutative operation."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Multiply a fraction or whole number by a fraction and interpret the product.",
+                        "● Use visual fraction models and number lines to show the steps used in solving a problem involving multiplication by a fraction.",
+                        "● Use benchmarks to estimate the product and determine if the solution is reasonable.",
+                        "● Contextualize and decontextualize problems by creating word problems and/or equations that"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.4b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find the area of a given rectangle with whole-number side lengths using square units (tiling square units and finding the total number of square units).",
+                        "● How to find the area of a given rectangle with whole-number side lengths using multiplication and addition."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Rectangles can have fractional side lengths.",
+                        "● Finding the area of a rectangle with fractional side lengths is similar to finding the area of a rectangle with whole number side lengths (the same process is used for both).",
+                        "● The total number of square units used to tile a rectangle represents the area of that rectangle.",
+                        "● Multiplication is a more efficient process for finding the area of a rectangle."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Find the area of a rectangle with fractional side lengths using unit squares of the appropriate unit fraction side lengths.",
+                        "● Find and explain the relationship between the fractional side lengths of the square unit and the fractional side lengths of the rectangle.",
+                        "● Show that counting the square units used to tile the rectangle and multiplying the side lengths of the rectangle produce the same answer"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.5a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The Identity Property of Multiplication means that any number multiplied by 1 equals the original number. For example: 6 x 1 = 6 or 126 x 1 = 126.",
+                        "● How to compare fractions to benchmarks 0, ½, and 1.",
+                        "● Multiplication is used for resizing (scaling).",
+                        "● Multiplication can produce an answer less than one or both of the factors."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Multiplying by a fraction less than 1 will yield a product less than one of the factors.",
+                        "● When multiplying by 12, the product is half the value of that factor times 1. For example, 6 × 12 = 3.",
+                        "● Multiplying by a fraction less than 1 will result in an answer less than 6.",
+                        "● When multiplying two proper fractions, the product is a part of a part of a whole. This",
+                        "yields a product that is less than both factors."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Compare the size of a product of two fractions to the size of one of the factors, without performing the indicated multiplication,",
+                        "● Make use of the structure of multiplication with whole numbers, and apply this knowledge to predict an outcome for multiplication of fractions. (For example, 4x2=8 and 4x1=4; therefore, multiplying 4 by a fraction less than 1 will produce an answer less than 4)"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.5b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Multiplication can be shown using repeated addition, equal-sized groups, or using an area model.",
+                        "● Multiplication is commutative.",
+                        "● Multiplying a number by a second number greater than 1 equals a product greater than the original number.",
+                        "● The Identity Property of Multiplication means that any number multiplied by 1 equals the original number. i.e., 6 x 1 = 6 or b x 1 = b.",
+                        "● The Zero Property of Multiplication. a x 0 = 0",
+                        "● How to look for and make use of structure.",
+                        "● How to look for and express regularity in repeated reasoning."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● There is pattern in multiplying whole numbers.",
+                        "● A whole number multiplied by 1 will always result in a product equal to the original whole number.",
+                        "● A whole number multiplied by zero will always result in a product of zero.",
+                        "● A whole number can be multiplied by a fraction."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Predict the relative size of the product for a given multiplication problem based on the two factors in the problem.",
+                        "● Use patterns to reason/ justify about the size of the product when multiplying a whole number by a fraction. For example: 6 x a/b = must be less than 6 but greater than 0, because a/b < 1 and a/b > 0.",
+                        "● Use patterns to reason/ justify about the size of the product when multiplying a fraction by a fraction."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.6"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Multiplication can be shown using repeated addition, equal-sized groups, or using an area model.",
+                        "● Multiplying a number by a second number greater than 1 equals a product greater than the original number.",
+                        "● The Identity Property of Multiplication means that any number multiplied by 1 equals the original number. i.e., 6 x 1 = 6 or b x 1 = b.",
+                        "● How to look for and make use of structure."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Mixed numbers can be written as improper fractions.",
+                        "● The concepts learned for multiplying whole numbers and fractions can be applied when multiplying by mixed numbers.",
+                        "● Mixed numbers represent a value greater than 1; therefore, multiplying a number by a mixed number will yield an answer that is greater than the given number.",
+                        "● How to look for and express regularity in repeated reasoning."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Solve real-world multiplication problems involving fractions and mixed numbers by creating a visual model or equation to solve.",
+                        "● Make use of patterns to solve problems.",
+                        "● Use prior knowledge of multiplying by fractions (proper or improper) to solve problems such as the following:",
+                        "6 x 4 ½ ="
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.7a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to divide whole numbers and what it means to divide using the partitioning and repeated subtraction models.",
+                        "● Division is the inverse of multiplication.",
+                        "● How to use visual models to divide whole numbers with and without remainders.",
+                        "● How to contextualize division problems using whole numbers.",
+                        "● Division is not a commutative operation.",
+                        "● Unit fractions have a numerator of one and can be combined to create non-unit fractions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Creating a visual model to represent problems helps give meaning to the problem and what is happening in the problem.",
+                        "● The division model used to solve a problem depends on the context of the problem.",
+                        "● The role of the dividend, divisor, and quotient.",
+                        "● A fraction can be divided by a whole number and the result will be less than the original fraction because it was partitioned into pieces."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Create visual models and divide unit fractions by whole numbers.",
+                        "● Reason through a division problem (i.e., For ¼ ÷ 3, ask, \"Can ¼ be shared with three groups?\" Explain that if ¼ is shared with three groups the quotient will be smaller in size than ¼).",
+                        "● Interpret division of a unit fraction by a non-zero whole number and compute quotients. Create a word problem to represent division"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.7b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to divide whole numbers and what it means to divide using the partitioning and repeated subtraction models.",
+                        "● Division is the inverse of multiplication.",
+                        "● How to use visual models to divide whole numbers with and without remainders.",
+                        "● Unit fractions have a numerator of one.",
+                        "● Division is not a commutative operation."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Creating a visual model to represent problems helps to give meaning to the problem and what is happening in the problem.",
+                        "● The division model used to solve a problem depends on the context of the problem.",
+                        "● The role of the dividend, divisor, and quotient.",
+                        "● A whole number can be divided by a fraction and the result will be greater than the original whole number."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Create visual models to divide a whole number by a unit fraction. Make meaning of a problem, such as 6 ÷ ½ by asking, \"How many ½ are in 6?\" (The quotient will be greater than 6 because each whole is composed of two halves.)",
+                        "● Create word problems to represent division problems.",
+                        "● Draw visual fraction models (bar/circles) using the appropriate number of wholes to find out how many of the"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Number and Operations - Fractions",
+        "reporting_category": "Number and Operations - Fractions",
+        "standard": {
+            "id": "5.NF.7c"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to divide whole numbers and what it means to divide using the partitioning and repeated subtraction models.",
+                        "● Division is the inverse of multiplication.",
+                        "● How to use visual models to divide whole numbers with and without remainders.",
+                        "● How to contextualize division problems using whole numbers.",
+                        "● Division is not a commutative operation."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Creating a visual model to represent problems helps give meaning to the problem and what is happening in the problem.",
+                        "● The division model used to solve a problem depends on the context of the problem.",
+                        "● The role of the dividend, divisor, and quotient.",
+                        "● Various models can be used to illustrate given problems.",
+                        "● Unit fractions have a numerator of one.",
+                        "● How to make sense of problems and persevere in solving them."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Solve real-world word problems involving division of unit fractions by non-zero whole numbers.",
+                        "● Solve real-world problems involving division of whole numbers by unit fractions.",
+                        "● Use visual fraction models and equations to represent word problems and solve them.",
+                        "● Use prior knowledge of patterns in dividing fractions and whole numbers to reason through problems."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● There are two systems of measurement (metric and customary).",
+                        "● Relative sizes of the different units in each of the two different systems.",
+                        "● There are multiple ways to represent measurements and equivalent measurements can be expressed by using different units.",
+                        "● There are different units for different types of measuring. For example: There are different units for mass,",
+                        "height, capacity, length and so on."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Units of measurement can be expressed in terms of a larger unit or a smaller unit. (For example: 6 in. = 0.5 ft.)",
+                        "● Conversions of measurement units are sometimes necessary when applying measurement to the real world.",
+                        "● The metric system is a base-ten system, and the customary system works in various bases.",
+                        "● Basic concepts of whole numbers, fractions, and decimals."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Solve multiple-step, real- world problems using various units of measurement (within the same system).",
+                        "● Explain equivalents within a given measurement system.",
+                        "● Use knowledge of whole numbers, fractions, and decimals to compare/convert units of measurement within a system.",
+                        "● Use visual models for conversions and solve measurement problems."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to partition a line into halves, fourths, and eighths.",
+                        "● How to use a line or line segment to make a line plot.",
+                        "● How to interpret and solve problems with a line plot using whole numbers and the unit fractions of 1/2, 1/4, and 1/8.",
+                        "● How to make sense of problems and persevere in solving them.",
+                        "● How to add and subtract unit fractions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● A line plot is used to organize data.",
+                        "● Every piece of data in a data set is displayed on the line plot with a symbol. Intervals on the line plot that do not have a symbol do not contain data.",
+                        "● Real-world problems can be represented using a line plot.",
+                        "● How to multiply unit fractions by whole numbers."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Collect real-world data using fractions 1/2, 1/4, and 1/8, and create a line plot to display the results visually.",
+                        "● Use the results of the line plot to make observations and/or inferences about the data.",
+                        "● Answer questions using a line plot that has already been created.",
+                        "● Use fraction operations of addition, subtraction, multiplication, and division to solve real-world problems using line plots."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.3a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The names and attributes of two-dimensional shapes, in particular, squares and rectangles.",
+                        "● The names and attributes of three-dimensional shapes, in particular, rectangular prisms and cubes.",
+                        "● Two dimensional figures can be measured using area.",
+                        "● How to find the area of a figure using square units or the standard algorithm.",
+                        "● How the formula for the area of rectangles and squares is derived."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Volume is the space that can be filled in a three-dimensional figure similar to the way that area is the space that can be filled in a two-dimensional figure.",
+                        "● A cubic unit is similar to a square unit. The difference is that it has a third dimension, height.",
+                        "● Exponents can be used to describe square units and cubic units.",
+                        "● Volume can be \"packed\" or \"filled.\" These two different",
+                        "ideas both represent volume. For example: packing with unit cubes versus filling with liquid/gas."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Explain the concept of volume. Provide examples in the real world that represent a measure of volume.",
+                        "● Describe the difference between square units and cubic units.",
+                        "● Make connections between exponents and the relationship they have with square units and cubic units.",
+                        "● Explain how the unit cube is used to find the volume of an object."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.3b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The names and attributes of two-dimensional shapes especially squares and rectangles.",
+                        "● The names and attributes of three-dimensional shapes especially rectangular prisms and cubes.",
+                        "● Two-dimensional figures can be measured using area.",
+                        "● How to find the area of a figure using square units or the standard algorithm.",
+                        "● How the formula for the area of rectangles and squares is derived."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Volume is the space in a three-dimensional figure.",
+                        "● What it means to find the area of a two-dimensional figure.",
+                        "● A cubic unit is similar to a square unit. The difference is that it has a third dimension, height.",
+                        "● Exponents are used to describe square units and cubic units.",
+                        "● Volume can be \"packed\" or \"filled.\" These two different ideas both represent volume.",
+                        "Packing with unit cubes versus filling with liquid/gas."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Explain that when finding volume, unit cubes must be packed without gaps or overlays inside a three-dimensional space.",
+                        "● The total number of unit cubes (n) packed into a three-dimensional figure equals the volume of the figure.",
+                        "● Look at examples of different sized prisms packed with unit cubes, some packed with no gaps or overlays and others packed in an unorganized manner, and explain which"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The names and attributes of two-dimensional shapes, especially squares and rectangles.",
+                        "● The names and attributes of three-dimensional shapes, especially rectangular prisms and cubes.",
+                        "● Two-dimensional figures can be measured using area.",
+                        "● How to find the area of a figure using square units or the standard algorithm.",
+                        "● How the formulas for the area of rectangles and squares are derived."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Volume is the space in a three-dimensional figure.",
+                        "● Finding the area for a two-dimensional figure is similar to finding the volume of a three-dimensional figure.",
+                        "● A cubic unit is similar to a square unit. The difference is that it has a third dimension, height.",
+                        "● Exponents are used to describe square units and cubic units.",
+                        "● A cubic unit has a length, width, and height of 1 unit.",
+                        "● Volume can be \"packed\" or \"filled.\" These two different ideas both represent volume. Packing with unit cubes versus filling with liquid/gas."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Determine the volume of a rectangular prism using a concrete or pictorial example, by counting unit cubes. The unit cubes may be cubic centimeters, cubic inches, cubic feet, or other improvised units. (These examples should already have visible unit cubes associated with them. For example: a cube or rectangular prism built from snap cubes or inch cubes or a drawing or picture of a"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.5a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Volume is the space in a three-dimensional figure.",
+                        "● Volume can be \"packed\" or \"filled.\" These two different ideas can be problematic for students. Packing with unit cubes versus filling with liquid/gas.",
+                        "● A cubic unit is similar to a square unit. The difference is that it has a third dimension, height.",
+                        "● Exponents are used to describe square units and cubic units."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Unit cubes must be packed into a prism or cube with no gaps or overlays to accurately measure volume.",
+                        "● Volume can be measured with cubic units that are improvised or standardized. The improvised unit will be referred to solely as a cubic unit and has a length, width, and height of 1 unit.",
+                        "● A unit cube with 1in. side lengths is referred to as a cubic inch, a unit cube with 1 cm. side lengths is referred to",
+                        "as a cubic centimeter, and a unit cube with 1 ft. side lengths is referred to as a cubic foot.",
+                        "● It is possible to calculate the volume of prisms and cubes that have no unit cubes visible."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Pack real-world prisms/cubes with unit cubes such as inch cubes, centimeter cubes, and improvised cubes. State the volume of a given prism/cube based on how many unit cubes it holds.",
+                        "● Calculate the volume of real- world rectangular prisms by counting the unit cubes used for the length, width, and height and multiplying them to get the total number of unit cubes in the volume."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.5b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Volume space inside a three-dimensional figure.",
+                        "● Volume can be \"packed\" or \"filled.\" These two different ideas can be problematic for students. Packing with unit cubes versus filling with liquid/gas.",
+                        "● A cubic unit is similar to a square unit. The difference is that it has a third dimension, height.",
+                        "● Exponents are used to describe cubic units."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Unit cubes must be packed into a prism or cube with no gaps or overlays to accurately measure volume.",
+                        "● It is possible to calculate the volume of rectangular prisms/cubes without counting every unit cube.",
+                        "● Volume of rectangular prisms can be found by multiplying the total number of unit cubes needed to form the length of the prism by the total number of unit cubes needed to form the width of the prism by the",
+                        "number of unit cubes needed for the height of the prism.",
+                        "● The total number of unit cubes in each layer is equivalent to the area of the base."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Discover the formulas for volume (l x w x h and b x h) based on their knowledge of packing unit cubes into three-dimensional figures and counting the cubes.",
+                        "● Explain the different formulas V=l x w x h and",
+                        "● Find the volume for real- world problems using rectangular"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Using Probability to Make Decisions",
+        "reporting_category": "Measurement and Data",
+        "standard": {
+            "id": "5.MD.5c"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Volume is the space that can be filled in a three-dimensional figure.",
+                        "● Volume can be \"packed\" or \"filled.\" These two different ideas can be problematic for students. Packing with unit cubes vs. filling with liquid/gas.",
+                        "● A cubic unit is similar to a square unit. The difference is that it has a third dimension, height.",
+                        "● Exponents are used to describe cubic units."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Unit cubes must be packed into a prism or cube with no gaps or overlays to accurately measure volume.",
+                        "● It is possible to calculate the volume of rectangular prisms/cubes without counting every unit cube by applying the formulas V= l x w x h or",
+                        "● The total number of unit cubes in each layer of a rectangular prism is equivalent to the area of the base."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Find the volume of different rectangular prism/cubes by counting unit cubes and applying the formulas for volume.",
+                        "● Combine two different rectangular prisms/cubes and determine the total volume of the combined prisms. Explain that if two prisms are combined, the total volume of one prism is added to the volume of the second prism.",
+                        "● Find the volume of combined rectangular prisms by"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "5.G.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to use a number line.",
+                        "● Basic geometric concepts of points, lines, line segments, rays, perpendicular lines, and parallel lines.",
+                        "● Two lines that cross at a 90-degree angle are perpendicular lines.",
+                        "● The meaning of the words vertical and horizontal."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● When two lines cross they form an intersection.",
+                        "● When perpendicular lines exist, a plane has been partitioned by those lines into fourths. The fourths are also referred to as quarters. In the case of coordinate planes, each quarter is referred to as a quadrant.",
+                        "● Each line forming the perpendicular line set is labeled for identification. The horizontal line is known as the",
+                        "x-axis and the vertical line is known as the y-axis.",
+                        "● When two number lines form perpendicular lines, a coordinate grid is created.",
+                        "● The point where the two lines cross is known as the origin and is a starting point.",
+                        "● A point can be located and identified by using the x- axis and the y-axis."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Identify the different parts of the coordinate grid. Know and understand the following:",
+                        "● Given an ordered pair, place a point on the correct coordinate.",
+                        "● Given a point in Quadrant I, identify the correct ordered pair."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "5.G.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Coordinate planes are created when two perpendicular lines cross and a mathematical grid is placed upon them.",
+                        "● These perpendicular lines are labeled as the x-axis and the y-axis.",
+                        "● Points within a plane can be located using an ordered pair which consists of an x-coordinate and a y-coordinate."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Coordinate grids are a mathematical concept that can be applied to the real world.",
+                        "● Coordinates are used in the real world to help with locating and direction. Lines of latitude and longitude are an example of how mathematical structure is applied to the real world.",
+                        "● Quadrant I can also be useful when representing real-world data. This quadrant can allow us to look for trends in data or changes in data over time.",
+                        "● Movement begins at the origin, follows the x-axis first, and the y-axis second."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Locate points (coordinates) and follow directions on a coordinate grid that has been contextualized using a real- world example.",
+                        "● Use maps, pictures, or drawings with a coordinate grid imposed upon it to create real-world math problems that involve locating and graphing points within Quadrant I.",
+                        "● Create Quadrant I using an x-axis and y-axis and graph points within Quadrant I that relate to real-world data."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "5.G.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Basic geometric concepts such as points, lines, line segments, rays, and angles.",
+                        "● Special types of lines including parallel and perpendicular lines.",
+                        "● Angles are obtuse, acute, or right.",
+                        "● Polygons are closed figures with straight sides. There are many different types of polygons and each is named based its number of sides and angles.",
+                        "● Polygons can be classified based on attributes. There can also be a hierarchy for certain polygons.",
+                        "● The attributes of these quadrilaterals: square, rectangle, trapezoid, and rhombus. For example, a trapezoid is a quadrilateral with at least 1 pair of parallel sides."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Polygons may appear different in shape and size, but they can still be classified together based on their attributes.",
+                        "● Regular polygons contain equal length sides and are a special type of polygon. Irregular polygons do not have to have the same length sides but still contain attributes that can be classified.",
+                        "● Polygons must be classified based on their attributes and not solely on their appearance.",
+                        "● Different polygons may or may not contain some of the same attributes thus creating subcategories."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Given the attributes without a visual picture, a student should be able to classify and name the polygon.",
+                        "● Sort polygons, especially quadrilaterals, into different subcategories by explaining the criterion by which they used to sort the polygons.",
+                        "● Compare and contrast the different polygons.",
+                        "● Justify, explain, and debate the categorizing of different types of polygons."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Mathematics",
+        "grade": "5",
+        "domain": "Geometry",
+        "reporting_category": "Geometry",
+        "standard": {
+            "id": "5.G.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● Basic geometric concepts such as points, lines, line segments, rays, and angles.",
+                        "● Special types of lines including parallel and perpendicular lines.",
+                        "● Angles are obtuse, acute, or right.",
+                        "● Polygons are closed figures with straight sides. There are many different types of polygons, and each is named based on the number of sides and angles it has.",
+                        "● Polygons can be classified based on attributes. There can also be a hierarchy for certain polygons.",
+                        "● The attributes of these quadrilaterals: square, rectangle, trapezoid, and rhombus. For example, a trapezoid is a quadrilateral with at least 1 pair of parallel sides."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Polygons may appear different in shape and size but they can still be classified together based on their attributes.",
+                        "● Regular polygons contain equal length sides and are a special type of polygon. Irregular polygons do not have to have the same length sides but still contain attributes that can be classified.",
+                        "● Polygons must be classified based on their attributes and not solely on their appearance.",
+                        "● Different polygons may or may not contain some of the same attributes thus creating subcategories."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Given the attributes without a visual picture, a student should be able to classify, draw, and name the polygon.",
+                        "● Explain why squares are unique among quadrilaterals.",
+                        "● Create a hierarchy of polygons, such as quadrilaterals, sorted with those with the most attributes and narrowing down to those with the fewest attributes."
+                    ]
+                }
+            }
+        }
+    }
+]

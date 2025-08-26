@@ -88,7 +88,7 @@ public actor EnhancedDataProcessor {
             
             // Store correlation for pair[0] -> pair[1]
             correlations.append(ComponentCorrelation(
-                target: ComponentIdentifier(grade: 0, subject: "", component: pair[1]),
+                target: ComponentIdentifier(grade: 0, subject: "", component: pair[1], testProvider: .questar),
                 correlation: correlation,
                 confidence: calculateConfidence(correlation, sampleSize: values1.count),
                 sampleSize: values1.count

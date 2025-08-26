@@ -80,7 +80,7 @@ public actor CorrelationAnalyzer {
             for j in i..<components.count {
                 if i == j {
                     // Self-correlation is always 1
-                    let selfPair = ComponentPair(source: components[i], target: components[i])
+                    let selfPair = components[i].toPair()
                     matrix[i, j] = CorrelationResult(
                         source: selfPair,
                         target: selfPair,
@@ -93,8 +93,8 @@ public actor CorrelationAnalyzer {
                         isSignificant: true
                     )
                 } else {
-                    let sourcePair = ComponentPair(source: components[i], target: components[i])
-                    let targetPair = ComponentPair(source: components[j], target: components[j])
+                    let sourcePair = components[i].toPair()
+                    let targetPair = components[j].toPair()
                     
                     let correlation = await calculateComponentCorrelations(
                         source: sourcePair,
@@ -123,19 +123,19 @@ public actor CorrelationAnalyzer {
         for student in studentData {
             // Find source assessment
             let sourceAssessment = student.assessments.first { assessment in
-                assessment.grade == source.source.grade &&
-                assessment.subject == source.source.subject
+                assessment.grade == source.grade &&
+                assessment.subject == source.subject
             }
             
             // Find target assessment
             let targetAssessment = student.assessments.first { assessment in
-                assessment.grade == target.target.grade &&
-                assessment.subject == target.target.subject
+                assessment.grade == target.grade &&
+                assessment.subject == target.subject
             }
             
             // Extract component scores
-            if let sourceScore = sourceAssessment?.componentScores[source.source.component],
-               let targetScore = targetAssessment?.componentScores[target.target.component] {
+            if let sourceScore = sourceAssessment?.componentScores[source.component],
+               let targetScore = targetAssessment?.componentScores[target.component] {
                 pairs.append((source: sourceScore, target: targetScore))
             }
         }

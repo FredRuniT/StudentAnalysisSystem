@@ -153,16 +153,9 @@ public actor ComponentCorrelationEngine {
     }
 }
 
-public struct ComponentIdentifier: Hashable, Sendable {
-    public let grade: Int
-    public let subject: String
-    public let component: String
-    public let testProvider: TestProvider
-    
-    public var description: String {
-        "Grade \(grade) \(subject) \(component)"
-    }
-    
+// ComponentIdentifier is defined in AnalysisCore
+// Extension to add toPair functionality
+extension ComponentIdentifier {
     public func toPair() -> ComponentPair {
         ComponentPair(
             grade: grade,

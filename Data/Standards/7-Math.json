@@ -1,0 +1,1562 @@
+[
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The meaning of ratio language.",
+            "The meaning of unit rate.",
+            "How to compute unit rate when given two whole number values.",
+            "How to convert measurement units.",
+            "How to multiply fractions.",
+            "How to divide fractions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A rate is a ratio that compares, by division, the amount one quantity changes as another quantity changes.",
+            "The concept of a unit rate a/b associated with a ratio a:b with b≠ 0.",
+            "Various units of measurement and the connections between them.",
+            "How to reason abstractly and quantitatively.",
+            "How to model with mathematics.",
+            "How to attend to precision."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator or standard algorithm to compute unit rates.",
+            "Set up and solve ratios to include complex fractions.",
+            "Determine when it is appropriate to use unit rate and understand when it has limitations.",
+            "For example, when given a recipe including fractional amounts, students can increase/decrease the amount of ingredients needed to adjust the recipe using units rates and ratios with fractions.",
+            "For example, in a recent turtle race, the winning turtle traveled 6.75 feet in ¾ of a minute. How fast was the turtle traveling in feet per second?"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to reason about tables of equivalent ratios.",
+            "How to make tables of equivalent ratios.",
+            "How to model ratio understanding using tape diagrams, double number lines, or equations.",
+            "How to define proportional reasoning.",
+            "How to analyze simple drawings that indicate relative size of quantities.",
+            "How to plot rational numbers in the coordinate plane."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use proportional reasoning to solve problems involving scale drawings and missing values.",
+            "A proportional relationship when graphed on a coordinate grid passes through the origin and contains a constant rate or proportionality.",
+            "Relationships between tables, graphs, and equations.",
+            "How to model with mathematics.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator or standard algorithm to determine if two quantities are proportional.",
+            "Determine proportionality between two quantities that are not whole numbers.",
+            "Construct graphs or tables to determine if quantities are proportional.",
+            "Solve problems beyond those that involve whole-number values.",
+            "When given a table of values, student can determine if the data is proportional or not; and explain why or why not?"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to make a table of equivalent ratios.",
+            "How to model ratio understanding using tape diagrams, double number lines, or equations.",
+            "How to solve problems of unit pricing and constant speed.",
+            "How to solve simple equations.",
+            "How to evaluate expressions.",
+            "Ratios and unit rates were introduced in sixth grade and will flow into functions in eighth grade."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use proportional reasoning to solve problems involving scale drawings and missing values.",
+            "Relationships between tables, graphs, and equations.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically.",
+            "How to look for and express regularity in repeated reasoning."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify the unit rate given any of the various forms of proportional relationships.",
+            "Will not be allowed to use a four-function calculator to represent relationships in various forms.",
+            "When given a real-world scenario, create a table of values, a graph, and an equation that will describe the situation and determine if the situation represents a proportional relationship.",
+            "Compare proportional relationships given in different forms (tables, equations, diagrams, verbal, graphs)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to use ratio language.",
+            "How to identify equivalent expressions.",
+            "How to understand dependent and independent variable relationships.",
+            "This is a progressing standard. Ratios and unit rates were introduced in sixth grade and will flow into functions in eighth grade."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationships and connections between graphs, tables, equations, and verbal descriptions.",
+            "How to represent situations in multiple ways, i.e., graphs, tables, equations, verbally.",
+            "How to reason abstractly and quantitatively.",
+            "How to look for and express regularity in repeated reasoning."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Will not be allowed to use a four-function calculator to solve equations involving proportions.",
+            "Write equations representing proportional relationships when provided a real-world context.",
+            "For example: Sam is making cupcakes. The number of cups of flour he uses is proportional to the number of batches of cupcakes he makes. Sam uses 14 ½ cups of flour to make 8 batches of cupcakes. Write an equation to show the relationship between the cups of flour Sam uses, and the number of cupcake batches he makes."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2d"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to use ratio language correctly.",
+            "How to understand the concept of unit rate.",
+            "How to use positive and negative numbers to represent real-world quantities.",
+            "Plot ordered pairs on a coordinate plane system.",
+            "This is a progressing standard. Ratios and unit rates were introduced in sixth grade and will flow into functions in eighth grade."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The concept of a ratio.",
+            "The concept of a unit rate a/b associated with a ratio a:b with b≠ 0.",
+            "The relationships described in proportional situations.",
+            "How to reason abstractly and quantitatively.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Interpret a point on the graph of a proportional relationship in terms of the situation.",
+            "Describe what the point (0,0) means in the context in the graph or situation provided.",
+            "Accurately draw a graph when the value of y is proportional to the value of x, and the constant of proportionality is provided.",
+            "Will not be allowed to use a four-function calculator to explain points on a given graph."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to calculate percentages as a rate per 100.",
+            "How to solve part-whole relationships dealing with percents.",
+            "How to accurately perform operations with decimals.",
+            "How to calculate the percent of a number when given a single-step scenario.",
+            "How to solve simple equations.",
+            "How to accurately perform operations with fractions.",
+            "How to set up word problems."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The close relationships between fractions, decimals, and percents.",
+            "Percentages are rational numbers.",
+            "How to solve proportions.",
+            "How to make sense in problems and persevere in solving them.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically.",
+            "How to attend to precision."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator or standard algorithm to solve multi-step ratio problems.",
+            "Set up and solve multistep problems involving real-world percentages.",
+            "For example, Brian needs to buy new tires for his truck. Each tire costs $300. Gateway Tire has a special going on now if you buy 3 tires you get the 4th tire 75% off. Brian is going to buy four tires at Gateway Tire. The sales tax is 7%. How much money will Brain save using the deal versus. paying full price?",
+            "Determine when it is appropriate to use unit rate, and understand when it has limitations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.1a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Because there are no specific standards for rational number arithmetic in later grades, and because so much other work in grade 7 depends on rational number arithmetic, fluency with rational number arithmetic should be the goal in grade 7.",
+            "A rational number is a number expressed in the form a/b or -a/b for some fraction a/b. The rational numbers include the integers.",
+            "An integer is a number expressible in the form a or -a for some whole number a.",
+            "The procedure for adding and subtracting rational numbers with and without the use of a number line.",
+            "The definition of opposites. Two numbers that are an equal distance from zero on a number line; also called additive inverse."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Two numbers whose sum is 0 are additive inverses of one another. For example, ¾ and -3/4 are additive inverses of one another because ¾ + (-3/4) = (-3/4) + ¾ = 0.",
+            "How to find the opposite of a number.",
+            "The diagram shows a number line, which is used to represent numbers and support reasoning about them. In a number line diagram for measurement quantities, the interval from 0 to 1 on the diagram represents the unit of measure for the quantity.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a horizontal or vertical number line to add -4 + 6. For example, to find the answer, students find -4 on the number line and move 6 units in a positive direction. The stopping point of 2 is the sum of this expression.",
+            "Use a horizontal or vertical number line to subtract -5 - (-2). For example, this problem is asking for the distance between -5 and -2. The distance between -5 and -2 is 3 and the direction from -2 to -5 is negative. The answer would be -3. It should be noted that this answer is the same as adding the opposite of -2: -5 + 2 = -3.",
+            "Answer questions in a real-world context. For example, during a football game, Freddie Jackson loses 4 yards on the first down and then gains one yard during the second down. Explain what Freddie Jackson needs to do on the third down to make his team be back where they were when they started."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.1b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The absolute value of a number is the distance it is from zero and shown by",
+            "The definition of opposites. Two numbers that are an equal distance from zero on a number line; also called additive inverse.",
+            "The commutative property for addition which states, a + b = b + a."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to find the absolute value of a number.",
+            "Two numbers whose sum is 0 are additive inverses of one another.",
+            "How to find the opposite of a number.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a horizontal or vertical number line to illustrate p + q.",
+            "Use a horizontal or vertical number line to illustrate p + (-q).",
+            "Use a horizontal or vertical number line to illustrate the following:",
+            "Determine the possible values of numbers that are a given distance from a known number. For example, the value of x is a distance of 4 units from 2. What are the possible values of x?",
+            "Explain, in a real-world context, the sum of rational numbers."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.1c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A rational number is a number expressed in the form a/b or",
+            "An integer is a number expressible in the form a or",
+            "The procedure for adding rational numbers with and without the use of a number line.",
+            "The procedure for subtracting rational numbers with and without a number line.",
+            "The definition of opposites.",
+            "Two numbers that are an equal distance from zero on a number line; also called additive inverses."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Two numbers whose sum is 0 are additive inverses of one another.",
+            "How to find the opposite of a number.",
+            "How to add and subtract like fractions, unlike fractions, and mixed numbers."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a horizontal or vertical number line to illustrate p - q.",
+            "Use a horizontal or vertical number line to illustrate p + (-q).",
+            "Use a horizontal or vertical number line to illustrate",
+            "Solve the following problem: Kevin, Briana, Kimberly, and Edward all live on the same street as their school, which runs from north to south. In reference to the school, Kevin lives 5.5 blocks to the north, Briana lives 4.25 blocks to the south, Kimberly lives 2.75 blocks to the north, and Edward lives 6.5 blocks to the south. Edward says that he lives 3.75 blocks away from Kimberly. Is he correct? Explain your reasoning using a number line or by using sums or differences."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.1d"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The associative property of addition which states: (a + b) + c = a + (b + c).",
+            "The commutative property of addition which states: a + b = b + a.",
+            "The additive identity property of 0 which states: a + 0 = 0 + a = a.",
+            "The existence of additive inverses which states: For every a there exists -a so that a + (-a) = (-a) + a = 0.",
+            "The distributive property of multiplication over addition which states: a x (b + c) = a x b + a x c."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to apply the properties of operations to simplify a problem that contains rational numbers using addition and subtraction.",
+            "How to reason abstractly and quantitatively when given real-world problems involving addition and subtraction of rational numbers.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four function calculator with square root to add and subtract rational numbers.",
+            "Add or subtract up to three rational numbers with and without the use of a horizontal or vertical number line.",
+            "Add and subtract up to three like or unlike fractions and mixed numbers.",
+            "Demonstrate conceptual understanding by producing or recognizing an expression equivalent to a given sum or difference. For example, -8.1 + 7.4 = -(8.1 - 7.4)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.2a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Because there are no specific standards for rational number arithmetic in later grades and because so much other work in grade 7 depends on rational number arithmetic, fluency with rational number arithmetic should be the goal in grade 7.",
+            "A rational number is a number expressed in the form a/b or -a/b for some fraction a/b. The rational numbers include the integers.",
+            "An integer is a number expressible in the form a or -a for some whole number a.",
+            "The procedure for multiplying whole numbers.",
+            "The procedure for multiplying fractions.",
+            "The rules for multiplying signed numbers, which are: The product of two integers with different signs is negative and the product of two integers with the same sign is positive.",
+            "The multiplicative property of zero, which states that the product of any number and zero is zero.",
+            "The commutative property of multiplication which states: a x b = b x a."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Multiplication of integers is an extension of multiplication of whole numbers.",
+            "The basic idea of multiplication is repeated addition. For example,",
+            "Repeated addition also works for signed numbers. For example,",
+            "How to construct viable arguments and critique the reasoning of others."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Multiply integers and rational numbers.",
+            "Write properties for given mathematical statements. For example:",
+            "Solve real-world problems involving multiplication of integers."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.2b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Because there are no specific standards for rational number arithmetic in later grades and because so much other work in grade 7 depends on rational number arithmetic, fluency with rational number arithmetic should be the goal in grade 7.",
+            "A rational number is a number expressed in the form a/b or -a/b for some fraction a/b. The rational numbers include the integers.",
+            "An integer is a number expressible in the form a or -a for some whole number a.",
+            "The procedures for dividing whole numbers and fractions.",
+            "The rules for dividing integers, which are: The quotient of two integers with different signs is negative and the quotient of two integers with the same sign is positive."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Division of integers is an extension of division of whole numbers.",
+            "Integers can be divided provided that the divisor is not zero. Since multiplication and division sentences are related, they can be used to find the quotient of integers with different signs and the same sign.",
+            "When division of rational numbers is represented with a fraction bar, each number can have a negative sign."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Divide integers and rational numbers.",
+            "Solve real-world problems involving division of integers and rational numbers.",
+            "Evaluate an expression using division.",
+            "Demonstrate conceptual understanding by producing or recognizing equivalent expressions using properties of operations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.2c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Because there are no specific standards for rational number arithmetic in later grades and because so much other work in grade 7 depends on rational number arithmetic, fluency with rational number arithmetic should be the goal in grade 7.",
+            "How to multiply rational numbers.",
+            "How to divide rational numbers."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to apply the properties of operations to simplify a problem that contains rational numbers using multiplication and division.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Multiply and divide up to three rational numbers.",
+            "Demonstrate conceptual understanding by producing or recognizing equivalent expressions using properties of operations.",
+            "Write properties for given mathematical statements. For example:"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.2d"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Because there are no specific standards for rational number arithmetic in later grades and because so much other work in grade 7 depends on rational number arithmetic, fluency with rational number arithmetic should be the goal in grade 7.",
+            "The decimal form of a fraction is called a repeating or terminating decimal.",
+            "A repeating decimal is the decimal form of a rational number. Repeating decimals can be represented using bar notation where a bar is drawn only over the digit(s) that repeat. For example, 0.333333…. = 0.3�",
+            "A decimal is called terminating if its repeating digit is 0. For example, 0.250� is typically written 0.25."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "That you can use bar notation to indicate a number pattern that repeats indefinitely.",
+            "Any fraction can be expressed as a decimal by dividing the numerator by the denominator."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write a fraction or a mixed number as decimal using long division.",
+            "Write a decimal as a fraction or mixed number in simplest form.",
+            "Use long division to express fractions as decimals.",
+            "Explain which fractions will result in terminating or repeating decimals."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "7.NS.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Because there are no specific standards for rational number arithmetic in later grades and because so much other work in grade 7 depends on rational number arithmetic, fluency with rational number arithmetic should be the goal in grade 7.",
+            "How to add rational numbers.",
+            "How to subtract rational numbers.",
+            "How to multiply rational numbers.",
+            "How to divide rational numbers."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use the order of operations to write and solve problems with all rational numbers.",
+            "Reason abstractly and quantitatively.",
+            "Use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Add rational numbers when provided a real-world context.",
+            "Subtract rational numbers when provided a real-world context.",
+            "Multiply rational numbers when provided a real-world context.",
+            "Divide rational numbers when provided a real-world context."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "7.EE.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "This is a continuation of work from 6th grade using properties of operations and combining like terms.",
+            "A variable is a symbol, usually a letter, used to represent a number in mathematical expressions.",
+            "An algebraic expression is a combination of variables, numbers, and at least one operation.",
+            "The associative property of addition which states: (a + b) + c = a + (b + c).",
+            "The commutative property of addition which states: a + b = b + a",
+            "The distributive property of multiplication over addition which states: a x (b + c) = a x b + a x c.",
+            "A linear expression is a collection of variable terms and constant terms that are joined by addition or subtraction, and the variables are raised to the first power.",
+            "A rational coefficient is the number that is multiplied times a variable.",
+            "To combine like terms means to add the terms that have the exact same variable raised to the exact same power."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "All operations involving the properties of addition and the distributive property of multiplication over addition can be used to simplify expressions.",
+            "Variables can be used to represent quantities in a real-world or mathematical problems.",
+            "Expressions are powerful tools for exploring, reasoning about, and representing situations.",
+            "Two or more expressions may be equivalent even when their symbolic forms differ.",
+            "How to factor a linear expression using the greatest common factor."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Add, subtract, factor, and expand linear expressions with and without rational coefficients.",
+            "Utilize properties of operations to rewrite expressions in different forms.",
+            "Factor by using division to express a linear expression by its factors and then expand it by using multiplication to rewrite the factors in a linear expression as a product.",
+            "Produce and identify equivalent expressions. For example,"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "7.EE.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "To simplify means to write an expression in its simplest form.",
+            "An expression is in simplest form when it has no like terms or parentheses.",
+            "Equivalent expressions are two or more expressions that have the same solution."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The reason for rewriting an expression in terms of a contextual situation. For example, students understand that a 40% discount is the same as finding 60% of the cost, c (0.60c).",
+            "Sales tax and tips are calculated as a percent of the price and can be represented as a percent of increase.",
+            "How to write an expression in simplest form.",
+            "How to determine if two or more expressions are equivalent."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write an expression from a real-world context possibly involving sales tax, tip, discount, gratuity, markup, selling price, perimeter, area, and angle measures of a triangle.",
+            "Evaluate an expression given a value for the variable.",
+            "Translate a verbal expression into an algebraic expression.",
+            "Use manipulatives such as algebra tiles to factor expressions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "7.EE.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Meeting standard 7.EE.3 in its entirety will involve using rational number arithmetic and percents.",
+            "This is a major capstone standard for arithmetic and its applications.",
+            "How to use front-end estimation.",
+            "How to use clustering around an average.",
+            "How to round numbers.",
+            "How to use compatible numbers.",
+            "How to add, subtract, multiply, and divide integers and rational numbers."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use estimation strategies for calculations with fractions and decimals.",
+            "How to write an expression in its simplest form.",
+            "How to determine if two or more expressions are equivalent.",
+            "How to model with mathematics.",
+            "How to use appropriate tools strategically.",
+            "How to apply properties of operations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve contextual problems and mathematical problems using rational numbers.",
+            "Convert between fractions, decimals, and percents as needed to solve a problem.",
+            "Compare and order rational numbers on a number line.",
+            "Apply properties of operations to calculate with numbers in any form.",
+            "Use estimation to justify the reasonableness of answers."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "7.EE.4a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "An equation is a sentence stating that two quantities are equal.",
+            "The solution of an equation is the value of a variable that makes the equation true.",
+            "The coefficient is the numerical factor of a term that contains a variable.",
+            "Addition property of equality.",
+            "Subtraction property of equality.",
+            "Multiplication property of equality.",
+            "Division property of equality.",
+            "How to define a variable and use appropriate units."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to write a phrase as an algebraic expression.",
+            "Whether to write an equation or inequality for a given situation.",
+            "How to use the properties of equality.",
+            "How to solve one- and two-step equations.",
+            "How to make sense of problems and persevere in solving them.",
+            "How to model in mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve multi-step equations derived from word problems.",
+            "Use arithmetic from a given problem to generalize an algebraic solution.",
+            "Explain how he or she determined whether to write an equation or inequality and the properties of the real number system used to find a solution."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "7.EE.4b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "An inequality is an open sentence that uses <, >, ≠, ≤, or ≥ to compare two quantities.",
+            "The solution of an inequality is the value of a variable that makes the inequality true.",
+            "The coefficient is the numerical factor of a term that contains a variable.",
+            "Addition property of inequality.",
+            "Subtraction property of inequality.",
+            "Multiplication property of inequality.",
+            "Division property of inequality.",
+            "How to define a variable and use appropriate units."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to write a phrase as an algebraic expression.",
+            "Whether to write an equation or inequality for a given situation.",
+            "How to use the properties of inequality.",
+            "How to solve one and two step inequalities.",
+            "When you multiply or divide each side of an inequality by a negative number, the inequality symbol must be reversed for the inequality to remain true.",
+            "How to make sense of problems and persevere in solving them.",
+            "How to model in mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve multi-step inequalities derived from word problems.",
+            "Graph the solution set of the inequality.",
+            "Use arithmetic from a given problem to generalize an algebraic solution.",
+            "Explain how he or she determined whether to write an equation or inequality and the properties of the real number system used to find a solution."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "7.G.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Have a solid understanding of ratios and how to describe the relationship between two quantities.",
+            "How to use rate reasoning to set up real-world problems.",
+            "Multiplication facts.",
+            "Division facts.",
+            "How to calculate area.",
+            "This is an introductory standard to scaling and scale drawings, but is based on the understanding of ratio reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate the area of a shape using decomposition when needed.",
+            "The concepts of proportional reasoning as applied to scale factors.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to determine actual lengths and areas of scale drawings.",
+            "Solve problems involving scale drawings when given as mathematical or real-world problems.",
+            "Reproduce a scale drawing that is proportional to a given geometric figure using a different scale.",
+            "Identify corresponding sides of scaled geometric figures.",
+            "An example task may provide students with two sets of dimensions of the same figure and ask students to determine the ratio of the scale."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "7.G.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Attributes of basic two-dimensional shapes.",
+            "How to classify two-dimensional figures based on properties.",
+            "How to draw polygons.",
+            "How to accurately use a ruler to draw and measure given lengths.",
+            "Students have been exposed to triangles and their attributes since kindergarten.",
+            "In fourth grade, students have to recognize right triangles."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use a protractor to measure and draw angles accurately.",
+            "The attributes of various triangles.",
+            "The characteristics of angles that create triangles.",
+            "How to construct viable arguments and critique the reasoning of others.",
+            "How to use appropriate tools strategically.",
+            "How to attend to precision."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in identifying angle measures found in geometric shapes.",
+            "Solve mathematical problems involving the construction of triangles.",
+            "Construct triangles from three given angle measures.",
+            "Construct triangles from three given side measures.",
+            "An example task may ask students if it is possible to draw a triangle with a 90° angle and one leg that is 4 inches long and one leg that is 3 inches long? If so, draw one, and is there more than one way to draw this?"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "7.G.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to represent three-dimensional shapes.",
+            "The attributes of two-dimensional figures.",
+            "The definition of a right rectangular prism.",
+            "The definition of a right rectangular pyramid.",
+            "The difference between prisms and pyramids.",
+            "The definition of slicing as a cross-section of a three-dimensional figure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The definition of a plane section is the area created by cutting through a solid.",
+            "Cuts made parallel will take the shape of the base.",
+            "Cuts made perpendicular will take the shape of the lateral face.",
+            "Cuts made at an angle through a right rectangular prism will produce a parallelogram.",
+            "Cuts made at an angle through a rectangular prism will also produce a parallelogram.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in describing two-dimensional figures resulting from slicing three-dimensional figures.",
+            "Solve simple real-world problems or mathematical problems involving two-and three-dimensional figures.",
+            "An example task may provide students with various three-dimensional figures and ask students to identify the shape of the horizontal and vertical cross sections."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "7.G.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The attributes of a circle.",
+            "This is an introductory standard for area and circumference of a circle.",
+            "Area means the amount of space inside a two-dimensional figure.",
+            "The formulas for calculating the area and circumference of a circle.",
+            "How to be proficient in operations involving decimals and fractions.",
+            "This is the students' initial work with circles, knowing that a circle is created by connecting all the points equidistant from a point (center) is essential."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between the radius and the diameter of a circle.",
+            "The ratio of circumference to diameter can be expressed as 𝜋𝜋.",
+            "Why the formula works and how the formula relates to the measure (area and circumference) and the figure.",
+            "How to reason abstractly and quantitatively.",
+            "How to model with mathematics.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist with calculating the area of circles, the circumference of circles, and when identifying relationships between the two.",
+            "Tasks may require answers to be written in terms of 𝜋𝜋.",
+            "Identify and produce a logical conclusion about the relationship between the circumference and the area of a circle. For example, that given three circles with areas A1>A2>A3, the circumference satisfy C1>C2>C3.",
+            "Example task: The 7th grade class is building a mini-golf game. The end of the putting green will be a circle. If the circle is 10 feet in diameter, how many square feet of grass carpet will they need to buy to cover the circle? How might you communicate this information to the salesperson to make sure you receive a piece of carpet that is the correct size?"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "7.G.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Parallel lines are two lines that will never intersect.",
+            "Perpendicular lines are two lines that intersect and create a 90-degree angle.",
+            "Right angles are formed by two lines or line segments, and create a 90-degree angle.",
+            "How to use variables to represent unknown numbers.",
+            "How to write and solve simple equations.",
+            "Definitions of supplementary, complementary, vertical, and adjacent angles."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use appropriate tools strategically.",
+            "How to attend to precision.",
+            "How to solve one- and two-step equations.",
+            "How to solve equations with variables on both sides.",
+            "How to represent angle relationships using equations to solve for unknown angles."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in classifying and solving problems dealing with various types of angles.",
+            "Solve mathematical and real-world problems involving types of angles and their measures.",
+            "Determine complements and supplements of a given angle.",
+            "An example task may provide the student with a figure, as the one shown below, and ask students to write and solve an equation to find the measure of angle x."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "7.G.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Volume is an attribute of solid, three-dimensional figures.",
+            "How to calculate volume using manipulatives.",
+            "Volume formulas for right rectangular prisms.",
+            "How to calculate the area of triangles and quadrilaterals.",
+            "How to represent three-dimensional figures using nets.",
+            "How to use nets to calculate surface area."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Why the formula works and how the formula relates to the measure (area, volume, and surface area) and the figure.",
+            "Volume can be supported by focusing on the area of the base times the height.",
+            "Surface area can be supported by focusing on the sum of the area of the faces.",
+            "Net can be used to evaluate surface area calculations.",
+            "How to decompose figures into familiar shapes.",
+            "How to make sense of problems and persevere in solving them.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in calculating the area, volume, and surface area of two- and three-dimensional figures.",
+            "Solve mathematical and real-world problems involving area, surface area, and volume of geometric figures.",
+            "Tasks that focus on area of two-dimensional objects.",
+            "All computations should make use of formulas and involve whole numbers, fractions, decimals, ratios, and various units of measure with same system conversions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to calculate measures of center and variability.",
+            "Rational number operations.",
+            "The standards in this cluster represent opportunities to apply percentages and proportional reasoning.",
+            "The definition of generalization is a general statement or concept obtained by inference from specific cases.",
+            "Validity is based on having sound basis in logic or fact."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A key element of a representative sample is the understanding that a random sampling guarantees that each element of the population has an equal opportunity to be selected in the sample.",
+            "A random sample must be used in conjunction with the population to get accuracy.",
+            "How to recognize sampling techniques such as convenience, random, systematic, and voluntary.",
+            "Know that generalizations about a population from a sample are valid only if the sample is representative of that population.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining statistics.",
+            "Apply statistics to gain information about a population from a sample of the population.",
+            "A task may provide students with a table of information obtained from a survey and ask students to determine statements that are supported by the data as it pertains to the whole population and not just the sampling provided."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The standards in this cluster represent opportunities to apply percentages and proportional reasoning.",
+            "How to make an inference.",
+            "How to calculate measures of center and variability.",
+            "How to identify an appropriate sample size.",
+            "An inference is a conclusion reached on the basis of evidence and reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between a sample and the entire population.",
+            "How to read data.",
+            "The relationship between sample size and validity.",
+            "How to collect and use multiple samples of data to answer questions about a population.",
+            "Variation across samples may occur and how to interpret these in relation to the overall population.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining statistics.",
+            "Compare a random sample to the overall population.",
+            "A task may provide students with a large amount of data and ask students to describe a method of sampling to answer simple questions about the population in all.",
+            "An example task may be having students make at least two inferences based on the data in the table below."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to calculate measures of center and variability.",
+            "How to display data on graphical representations, such as a dot plot or box plot.",
+            "An inference is a conclusion reached on the basis of evidence and reasoning.",
+            "This is the students' first experience with comparing two data sets. Students build on their understanding of graphs, mean, median, and interquartile range from 6th grade."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How different inferences can be made based on the same two sets of data.",
+            "A full understanding of the data requires consideration of the measures of variability as well as mean or median.",
+            "Variability is responsible for the overlap of two data sets, and that an increase in variability can increase the overlap.",
+            "Median is paired with the interquartile range.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining statistics.",
+            "Provided with two populations, students may use the data to persuade two different sides of an argument.",
+            "Tasks may use range as a measure of variability.",
+            "Compare two numerical data distributions on a graph by visually data displays, and assessing the degree of overlap.",
+            "Tasks may ask students to compare the differences in the measure of central tendency in two numerical data distributions by measuring the difference between the centers."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to calculate measures of center and variability.",
+            "Measures of center include mean, median, and mode.",
+            "Measures of variability include range, and interquartile range.",
+            "How to display data on graphical representations, such as a dot plot or box plot.",
+            "An inference is a conclusion reached on the basis of evidence and reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to analyze and interpret data using measures of central tendency and variability.",
+            "How to construct viable arguments and critique the reasoning of others.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining statistics.",
+            "Draw informal comparative inferences about two populations from random samples.",
+            "A task may provide data as displayed below and ask students to make conclusions surrounding the measures of variability."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Ratio and proportional relationships in sixth grade develops fractions as ratios and percents as ratios.",
+            "How to convert between rational numbers: fractions, decimals, percentages.",
+            "Rational number operations.",
+            "This is students' first formal introduction to probability.",
+            "The definition of probability is the likelihood of something happening or being the case."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The probability of a single event can be recognized as a fraction. The closer the fraction is to one, the greater the probability the event will occur.",
+            "A random event with a probability of ½ is equally likely to happen.",
+            "As probability moves closer to 0, it is less likely to occur.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining probability.",
+            "Draw conclusions to determine that a greater likelihood occurs as the number of favorable outcomes approaches the total number of outcomes.",
+            "An example of a task may be the following: a container contains 2 gray, 1 white, and 4 black disks. Without looking, if you choose a disk from the container, will the probability be closer to 0 or 1 that you select a white disk? A gray disk? A black disk? Justify each of your predictions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The definition of probability is the likelihood of something happening or being the case.",
+            "How to describe and show frequency of an event happening, i.e., dot plot.",
+            "An approximation is close to the actual, but not completely accurate or exact.",
+            "How to set up ratios.",
+            "How to solve proportions.",
+            "Rational operations to include fractions and decimals."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between theoretical and experimental probabilities.",
+            "As students collect data from a probability experiment, they recognize that as the number of trials increases, the experimental probability approaches the theoretical probability.",
+            "Relative frequency is the observed proportion of successful events.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining probability.",
+            "Students try an experiment and compare their predictions to the experimental outcomes to continue to explore and refine conjectures about theoretical probability.",
+            "Create a second scenario with a different ratio, and make a conjecture about the outcome.",
+            "Predict the relative frequency (experimental probability) of an event based on the (theoretical) probability.",
+            "If the task is technologically-enhanced, the task can simulate a data-gathering process."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.7a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The definition of probability is the likelihood of something happening or being the case.",
+            "How to solve proportions.",
+            "Rational operations including fractions and decimals.",
+            "Recognize uniform (equally likely) probability.",
+            "How to use models to determine the probability of events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Probabilities are useful for predicting what will happen over the long run.",
+            "Using theoretical probability, students can predict frequencies of outcomes.",
+            "How to recognize an appropriate design to conduct an experiment with simple probability events, understanding that the experimental data gives realistic estimates of the probability of an event but are affected by sample size.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining probability.",
+            "Develop a uniform probability model, and use it to determine the probability of each outcome/event.",
+            "Analyze a probability model, and justify why it is uniform or explain the discrepancy if it is not."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.7b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The definition of probability is the likelihood of something happening or being the case.",
+            "How to solve proportions.",
+            "Rational operations including fractions and decimals.",
+            "Recognize uniform (equally likely) probability.",
+            "How to use models to determine the probability of events.",
+            "How to write equivalent fractions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to develop models for geometric probability, (i.e., a target).",
+            "How to recognize an appropriate design to conduct an experiment with simple probability events, understanding that the experimental data gives realistic estimates of the probability of an event but are affected by sample size.",
+            "How to determine if a game is fair or unfair and how to justify the conclusion using probability.",
+            "How to use appropriate tools strategically.",
+            "How to model with mathematics."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining probability.",
+            "Tasks may provide the data students are to use, or if the task is technology-enhanced, the task can simulate a data-gathering process.",
+            "Develop a probability model (which may not be uniform) by observing frequencies in data generated from a chance process.",
+            "An example task may provide the diagram below and ask \"If you choose a point in the square, what is the probability that it is not in the circle?\""
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.8a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to find the probability of simple events.",
+            "The definition of a compound event is the probability of two or more things happening at once.",
+            "Operations dealing with fractions.",
+            "How to solve proportions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The meaning of fractions.",
+            "The probability of a compound event is the fraction of outcomes in the sample space for which the compound event occurs.",
+            "Probabilities are useful for predicting what will happen over the long run.",
+            "How to model with mathematics.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining probability.",
+            "Define and describe a compound event.",
+            "Given two spinners, such as the ones below, students will find the probability of a compound event. What is the likelihood of both spinners landing on B when spun simultaneously?"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.8b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to create a tree diagram, frequency table, organized lists, and simulations to determine the probability of compound events.",
+            "Sample space is the set of all of the possible outcomes in a probability experiment.",
+            "How to find the probability of simple events.",
+            "The definition of a compound event is the probability of two or more things happening at once.",
+            "Operations dealing with fractions.",
+            "How to solve proportions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between various graphical representations of compound probabilities (tree diagrams, frequency tables, etc.)",
+            "How to choose the appropriate method such as organized lists, tables, and tree diagrams to represent sample spaces for compound events.",
+            "How to use the Fundamental Counting Principle to find the number of possible outcomes in a sample space.",
+            "How to model with mathematics.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining probability.",
+            "Tasks may ask students to complete a table to display possible outcomes of a compound event such as the one below."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.8c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The definition of a compound event is the probability of two or more things happening at once.",
+            "How to represent frequencies of an event occurring in multiple ways.",
+            "Operations dealing with fractions.",
+            "How to solve proportions.",
+            "How to model probability in various ways such as, tree diagrams and tables.",
+            "How to write equivalent ratios.",
+            "The definition of simulation is the imitation of the operation of a real-world process or system over time."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Probabilities are useful for predicting what will happen over the long run.",
+            "How to use theoretical probabilities to predict frequencies of outcomes.",
+            "Simulations allow one to act out an event that would not be practical to perform.",
+            "How to recognize an appropriate design to conduct an experiment with simple probability events, understanding that the experimental data give realistic estimates of the probability of an event but are affected by sample size.",
+            "How to model with mathematics.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator to assist in determining probability.",
+            "Design and use a simulation to generate frequencies for compound events.",
+            "Students may choose to roll two number cubes to simulate the number of strikes two bowling partners will get in the next 20 games. Based on the current season, Bowler 1 gets a strike"
+          ]
+        }
+      }
+    }
+  }
+]

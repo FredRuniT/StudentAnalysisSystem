@@ -1,0 +1,1741 @@
+[
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A ratio is a pair of nonnegative numbers, A:B, where both are not zero, and are used to indicate a relationship between two quantities.",
+            "For the ratio A:B, the value is the quotient of A/B.",
+            "The order of the numbers is important to the meaning of the ratio. Switching the numbers changes the relationship.",
+            "Descriptions of a ratio relationship include words such as to, for each, for every.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Solving problems involving multiplicative comparisons.",
+            "Interpreting a fraction as division of the numerator by the denominator",
+            "How to find and use the Greatest Common Factor to simplify fractions.",
+            "Changing the order of the numbers represents a different relationship."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write a ratio that describes a relationship between two quantities.",
+            "Use ratio reasoning to solve real-world and mathematical problems.",
+            "Compare data from bar diagrams and frequency tables using ratios.",
+            "Use ratios to describe a simple set of data in different ways: girls to boys, boys to girls, boys to total, total to girls.",
+            "May use a four-function calculator for computations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A rate indicates, for a proportional relationship between two quantities, how many units of one quantity there are for every one unit of the second quantity.",
+            "A unit rate is a ratio, a:b, where b = 1.",
+            "The unit price is the cost per unit.",
+            "Dividing the numerator by the denominator will find the unit rate."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Equivalent fractions as equivalent ratios.",
+            "Interpreting a fraction as division of the numerator by the denominator",
+            "Descriptions of a unit rate include words such as per, in, and for every."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Convert a given ratio to a unit rate.",
+            "Use ratio and rate reasoning to solve real-world and mathematical problems.",
+            "Compare unit rates.",
+            "Calculate and justify the best buy using unit price.",
+            "May use a four-function calculator for computations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Rate tables show a collection of equivalent ratios.",
+            "An equivalent ratio can be found my multiplying both quantities by the same amount (a:b = 2a:2b).",
+            "In an equation, the constant value represents the rate (y = 3x; 3 is the unit rate).",
+            "A double number line has one set of numbers running along the top representing one quantity and a second set of numbers running along the bottom representing the second quantity."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Ratios and proportional relationships are used to express how quantities are related and how quantities change in relation to each other.",
+            "Equivalent fractions."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use ratio and rate reasoning to solve real-world and mathematical problems.",
+            "Use a variety of tools: tape diagrams, double number lines, or equations to demonstrate equivalent ratios.",
+            "Use a four-function calculator for computations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.3a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Equivalent fractions are equivalent ratios.",
+            "The \"rule\" for a rate table is the unit rate.",
+            "The equation y = mx, relates independent variables, dependent variables, and rates.",
+            "How to plot points in all four quadrants of the coordinate plane."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between dependent and independent variables.",
+            "The unit rate for y is the point located at (1,y).",
+            "Pairs of numbers that have the same ratio can be organized into a ratio table.",
+            "Scaled ratios (equivalent fractions) can be created by multiplying or dividing the two related quantities by the same number.",
+            "Ratios can be scaled up or down."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Make a table of equivalent ratios.",
+            "Use tables to compare ratios.",
+            "Find missing values in tables.",
+            "Plot values on the coordinate plane.",
+            "Determine that the steeper line represents the greater ratio.",
+            "Use ratio and rate reasoning to solve real-world and mathematical problems, such as increasing a recipe to serve more people.",
+            "Use a four-function calculator for computing."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.3b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A unit rate is a ratio, a:b, where b = 1.",
+            "Unit price is the cost per unit.",
+            "Dividing the numerator by the denominator will find the unit rate.",
+            "The distance formula is d = rt, where d is distance, r is the unit rate, and t is time.",
+            "Dependent variables can be found by multiplying the independent variable by the unit rate.",
+            "Descriptions of a unit rate include words such as per, in, and, for every."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Knowing two values in an equation leads to calculation of the third.",
+            "The inverse relationship between multiplication and division.",
+            "Division of whole numbers with decimals quotients."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Calculate speed, if distance and time are known.",
+            "Calculate unit price, if total cost and quantity are known.",
+            "Find and justify the \"best buy.\"",
+            "Use ratio and rate reasoning to solve real-world and mathematical problems.",
+            "Use a four-function calculator for computing."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.3c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Percents are rates per 100.",
+            "The percentage of a number is the product of the percent in fraction or decimal form and the original number,",
+            "How to fluently write decimals as fractions and percents.",
+            "How to fluently write fractions as decimals and percents.",
+            "How to fluently write percents as decimals and fractions.",
+            "How to represent percents greater than 100% and less than 1%.",
+            "Equivalent fractions.",
+            "How to solve for the unknown in an equation.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Fraction and percent equivalents.",
+            "Fractions demonstrate the relationships between parts and wholes.",
+            "How to compare and order decimals, fractions, and percents.",
+            "How to use the percent proportion, part/whole = % /100.",
+            "Proportional reasoning."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write percents as a rate per one hundred.",
+            "Find a percent of a quantity.",
+            "Solve problems involving finding the whole when given a part and the percent.",
+            "Use ratio and rate reasoning to solve real-world and mathematical problems.",
+            "Use a visual representation to model percents."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Ratios and Proportional Relationships",
+    "reporting_category": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.3d"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to convert among different-sized standard measurement units.",
+            "Common conversion factors in the customary system: inches, feet, miles, ounces, pounds, tons, fluid ounces, cups, quarts, and gallons.",
+            "Common conversion factors in the metric system: kilo-, centi-, milli-, meters, liters, and grams.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Dividing by the conversion factor when transforming from smaller units to larger units (inches to feet).",
+            "Multiplying by the conversion factor when transforming from larger units to smaller units (gallons to cups).",
+            "Equivalent ratios are used as conversion factors: 12 in. / 1 ft. = 1 ft. / 12 in.1 lb. / 16 oz. = 16 oz. / 1 lb."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a ratio as a conversion factor when working with measurements of different units.",
+            "Use ratio and rate reasoning to solve real-world and mathematical problems.",
+            "Use a four-function calculator for computing."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "This standard completes the extension of operations to fractions.",
+            "Fractions should be seen and treated as regular numbers.",
+            "The meaning of multiplication.",
+            "The codependent relationship between multiplication and division.",
+            "How to solve for the unknown in an equation.",
+            "How to reason abstractly and quantitatively.",
+            "Interpretation means to communicate symbolically, numerically, abstractly, and/or with a model.",
+            "How to create a story context from a set of given information."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts (unit fraction).",
+            "A fraction a/b as the quantity formed by a parts of size 1/b.",
+            "All fractions are rational.",
+            "Fractions allow us to solve word problems that may not be possible to solve with whole numbers or integers.",
+            "Three uses of division are for equal sharing, measuring, and finding unknown factors.",
+            "Fractions have multiple interpretations, and making sense of them depends on identifying the unit.",
+            "Equivalent fractions can be used as a strategy for solving various word problems.",
+            "The close relationship between fractions and ratios."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Plot, label, and identify fractions on a number line.",
+            "Evaluate the reasonableness of a solution based on the benchmark fractions of 0, ½,",
+            "Perform +, -, and ⋅ with fractions, and with whole numbers and fractions (with like and unlike denominators).",
+            "Make comparisons between fractions given in multiple representations.",
+            "Perform operations with mixed numbers.",
+            "Use a variety of visual fraction models (tape diagram, number line diagram, or area model).",
+            "Must demonstrate use of the standard algorithm to convert between fractions and decimals."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Multiplication facts (0-12).",
+            "The difference between dividend, divisor, and quotient.",
+            "This is the culminating standard for several years' worth of work with division of whole numbers.",
+            "How to attend to precision."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Divisibility rules for numbers 2 through 10.",
+            "Division is repeated subtraction.",
+            "Rational numbers can be represented in multiple ways and are useful when examining situations involving numbers that are not whole.",
+            "Estimation as a tool for checking reasonableness of a quotient."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Divide multi-digit numbers using the standard algorithm.",
+            "Check quotients for reasonableness."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Place value to the left and right of the decimal point.",
+            "Vocabulary for adding, subtracting, multiplying, and dividing: addends, sum, subtrahend, minuend, difference, factors, product, dividend, divisor, and quotient.",
+            "When adding and/or subtracting decimals, decimal points must be lined up.",
+            "Commutative Properties of addition and multiplication.",
+            "How to attend to precision."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Addition and subtraction are inverse operations.",
+            "Multiplication and division are inverse operations.",
+            "Subtraction problems may be interpreted as missing addend problems.",
+            "Division problems may be interpreted as missing factor problems.",
+            "The difference between a terminating and repeating decimal.",
+            "Multiplying a whole number by a decimal less than 1 results in a product less than the original factor."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Add and subtract multi-digit decimals using the standard algorithm.",
+            "Multiply and divide multi-digit decimals using the standard algorithm.",
+            "Use estimation to check answers for reasonableness."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The greatest common factor of any two numbers is the largest number that will divide evenly into both numbers.",
+            "The least common multiple of any two numbers is the first consecutive number divisible by the two numbers.",
+            "A prime number is a number with exactly two factors: 1 and itself.",
+            "Composite numbers are numbers with more than two factors.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "1 is neither prime nor composite.",
+            "Prime factorization of a number is a multiplication expression composed of only prime numbers.",
+            "Distributive property of multiplication over addition means you can multiply a sum by a number and get the same result as multiplying each addend separately, a(b + c) = ab + ac."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Find the greatest common factor of two whole numbers less than or equal to 100.",
+            "Find the least common multiple of two whole numbers less than or equal to 12.",
+            "Use the distributive property to express a sum of two whole numbers 1-100 with a common factor as a multiple of a sum of two whole numbers with no common factor."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Numbers greater than 0, located to the right of 0 on the number line, are called positive numbers.",
+            "Numbers less than 0, located to the left of 0 on the number line, are called negative numbers.",
+            "Any negative number is less than any positive number.",
+            "0 is neither positive nor negative.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Two numbers with opposite signs, such as 5, and -5, are equidistant from 0 on the number line.",
+            "Number lines may be displayed horizontally or vertically. This does not affect a number's value.",
+            "0 is the point at which direction or value changes."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Explain the relationship between positive and negative numbers in real-world context: temperature, money, sea level, and electric charge.",
+            "Explain the meaning of zero in any real-world context."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A rational number is a number that may be displayed as a fraction as long as the denominator is not 0.",
+            "The number line extends infinitely in both positive and negative directions.",
+            "An integer is any positive or negative whole number.",
+            "Points on the number line may be integers, fractions, or decimals.",
+            "How to attend to precision.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "every rational number can be represented by a point on a number line.",
+            "The coordinate plane is 2 number lines intersecting at 0, effectively called the x- and",
+            "As such, the coordinate plane extends infinitely."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Plot a rational number as a point on the number line.",
+            "Extend number lines as needed to display data.",
+            "Extend coordinate axes learned in previous grades.",
+            "Plot ordered pairs that may include negative coordinates."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.6a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The opposite of a positive number is a negative number, and the reverse is true.",
+            "Two numbers with opposite signs, such as 5 and -5, represent numbers equidistant from 0 on the number line.",
+            "Zero is its own opposite.",
+            "Look for and express regularity in repeated reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The opposite of an opposite of a number is the original number."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize opposite signs of numbers as indicating locations on opposite sides of 0 on the number line.",
+            "Find the opposite of any number.",
+            "Read numbers accurately plotted on the number line.",
+            "Plot numbers accurately on the number line."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.6b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Rational numbers may include whole numbers, integers, fractions, and decimals.",
+            "Ordering refers to placing numbers greatest to least or least to greatest.",
+            "Absolute value is the distance a number is from 0 on the number line.",
+            "The symbol for absolute value is ||."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Since absolute value refers to distance from zero, it is always represented by a positive number."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Order rational numbers least to greatest or greatest to least.",
+            "Find the absolute value of a rational number."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.7a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Numbers to the right of zero are positive on a number line diagram.",
+            "Numbers to the left of zero are negative on a number line diagram.",
+            "Relation symbols are <, >, <, >, and ≠.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The further left a number is from zero, the more negative (smaller) it is.",
+            "The further right a number is from zero, the more positive (larger) it is.",
+            "When comparing any two numbers on a number line diagram, the number to the left is always smaller if the number line is oriented from left to right."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Describe the relative position of two numbers on a number line when given an inequality.",
+            "Interpret statements of inequality as statements about the relative position of two numbers on a number line diagram."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.7b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Absolute value is the distance a number is from zero on the number line.",
+            "The symbol for absolute value is ||.",
+            "Magnitude refers to the amount or size relative to the context.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The absolute value of any number, positive or negative, is positive.",
+            "Absolute value is positive because it represents distance from zero.",
+            "The difference between a signed number, such as -5, and the absolute value of a signed number, |−5|, in real- world context."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Explain absolute value.",
+            "Relate absolute value to real- world situations such as sea level, temperature, and debt."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.7d"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to compare rational numbers.",
+            "Absolute value is the distance from zero.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Using a number line diagram as a tool for comparison.",
+            "Absolute value may not be limited to integers."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Distinguish comparisons of absolute value from statements about order."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.8"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to plot points in all four quadrants.",
+            "One can use coordinates or absolute value to find distance between plotted points.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Distance between two plotted points with the same x-coordinate is found by subtracting the y-coordinates using standard rules for subtraction.",
+            "Distance between two plotted points with the same y-coordinate is found by subtracting the x-coordinates using standard rules for subtraction.",
+            "One may also consider the absolute value of the difference between coordinates. For example, (2,4) and (2,7): 7 - 4 = 3 and 4 - 7 = -3. Either solution is an absolute value of 3. As such, the points are 3 units apart."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve real-world and mathematical problems by graphing points in all four quadrants of the coordinate plane.",
+            "Use coordinates and absolute value to find the distance between points."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.9a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The absolute value of a number is its distance from zero.",
+            "Since absolute value is a measure of distance, it always has a positive value.",
+            "The difference between the absolute value of a number and its opposite.",
+            "Opposites are additive inverses.",
+            "The commutative property for addition."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to find absolute value of a number vs. finding its opposite.",
+            "A positive integer added to a positive integer results in a positive integer.",
+            "A negative integer added to a negative integer results in a negative integer.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a horizontal or vertical number line to add p + q, regardless of whether either number is positive or negative.",
+            "Use a horizontal or vertical number line to show that a number and its opposite have a sum of zero.",
+            "Interpret sums of integers in real-world contexts."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "The Number System",
+    "reporting_category": "The Number System",
+    "standard": {
+      "id": "6.NS.9c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The associative property of addition:",
+            "The commutative property of addition: a + b = b + a.",
+            "The additive identity property of zero: a + 0 = 0 + a = a.",
+            "The distributive property of multiplication over addition:",
+            "The distributive property of multiplication over subtraction:"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Applying appropriate properties to add or subtract integers.",
+            "How to reason abstractly and quantitatively.",
+            "How to use appropriate tools strategically. (properties)"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Add or subtract integers with or without a number line.",
+            "Add or subtract integers with or without a four-function calculator.",
+            "Demonstrate understanding of adding and subtracting by recognizing equivalent expressions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A base is the number being raised to an exponent, or power.",
+            "A number raised to a power represents repeated multiplication of the base.",
+            "How to evaluate the means to solve for the product of the base.",
+            "How to read and identify the parts of a numerical and algebraic expression using mathematical terms."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A number raised to a power represents an algebraic expression.",
+            "Using exponents to make sense of quantitative relationships.",
+            "Any number, whole or fractional, may be raised to an exponent.",
+            "The function of each part of a numerical expression."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write an expression using exponents to illustrate repeated multiplication.",
+            "Multiply fluently whole numbers and fractions.",
+            "Evaluate expressions that consist of whole numbers, exponents, fractions and decimals.",
+            "Use a four-function calculator to evaluate expressions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A variable is a symbol that stands in the place of an unknown value.",
+            "An expression is a mathematical phrase containing numbers, variables, and operation symbols.",
+            "A term, such as 3x, is read 3 times x.",
+            "How to evaluate the means to substitute a value for a variable and solve the expression.",
+            "How to attend to precision."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Common algebraic expressions such as less than, more than, times, shared equally.",
+            "The difference between an expression and an equation.",
+            "Variables may represent any whole number, fraction, decimal, or exponent.",
+            "Variables may also represent positive or negative values.",
+            "Order of operations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Read accurately an algebraic expression containing variables and exponents (reading).",
+            "Translate an expression from words to symbols (writing).",
+            "Substitute in a value for the given variable and complete the calculations (evaluating).",
+            "Add, subtract, multiply, and divide fluently with whole numbers, fractions, and decimals.",
+            "Apply order of operations.",
+            "Use a four-function calculator for computations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.2a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Mathematical terms such as sum, quotient, product, difference, coefficient.",
+            "A variable is a symbol that stands in the place of an unknown value.",
+            "When a term is representing addition/subtraction versus multiplication/division.",
+            "How to look for and express regularity in repeated reasoning.",
+            "How to read an expression."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Common algebraic expressions such as less than, more than, times, shared equally.",
+            "An expression can be a final answer: 5 - y is the answer until you have a value to substitute in for y.",
+            "The difference between the expressions 5 - y and y - 5.",
+            "Order of Operations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write an expression when using whole numbers, fractions, and decimals."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.2b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Parts of an expression.",
+            "Which operations apply to the mathematical terms sum, difference, product, quotients, less than, more than, less, etc."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "2(8 + 7) is a product of two factors: 2 and the sum of 8 and 7.",
+            "An expression has a single value but may also be viewed as multiple terms that operations are performed on.",
+            "That variables in an expression represent a value."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify accurately the parts of an expression."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.2c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A variable is a symbol that stands in the place of an unknown value.",
+            "How to evaluate a means to substitute a value for the variable and solve the expression."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Substituting a value for a variable.",
+            "Order of operations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Evaluate an expression for a given value.",
+            "Substitute values in formulas to solve real-world problems.",
+            "Apply order of operations with or without parentheses.",
+            "Evaluate expressions that arise from formulas; however, students are not required to manipulate the formulas."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Commutative properties of addition and multiplication, associative properties of addition and multiplication, and distributive properties of multiplication over addition and subtraction.",
+            "Repeated addition is multiplication.",
+            "Equivalent means expressions have the same value.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "2 * 2 has the same value as 4. As such, 3(2 + x) is the same as 6 + 3x.",
+            "Distributing is multiplying a term outside of parentheses times every term inside the parentheses.",
+            "The importance of fluently adding, subtracting, multiplying and dividing whole numbers, fractions, and decimals."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Generate two or more equivalent expressions using the properties.",
+            "Compose and decompose expressions using the properties."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A variable is a symbol that stands in the place of an unknown value (number).",
+            "When two or more expressions are equivalent, that means the value of each expression is the same."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Variables represent numerical values.",
+            "Expressions may have to be simplified to determine equivalency."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine whether two expressions are equivalent by using the same value to evaluate both expressions.",
+            "Identify equivalent expressions.",
+            "Use properties of operations to justify that two expressions are equivalent."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "An expression is a mathematical phrase containing numbers, variables, and operation symbols.",
+            "An equation is a number sentence that's equal to a specific value.",
+            "An inequality is a number sentence that utilizes relation symbols other than the equal sign (i.e., <, >, ≤, ≥, or ≠).",
+            "How to reason abstractly or quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between expressions, equations and inequalities.",
+            "An inequality may contain a variable that can represent more than one value. For example, x < 5; x = all real numbers less than 5.",
+            "A solution is the number or set of numbers that makes an inequality true."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Utilize substitution to decide if an equation or inequality is true.",
+            "Solve an equation or inequality to find the value of the variable.",
+            "Use a four-function calculator to solve equations and inequalities."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The difference between an equation, expression, and inequality.",
+            "Variables and their purpose."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A variable may represent one number or more than one number (equation versus inequality).",
+            "A variable may represent any whole number, fraction, or decimal.",
+            "A variable may represent positive or negative numbers."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use variables to represent numbers to solve real-world problems.",
+            "Determine the function of the variable in a real-world or mathematical problem.",
+            "Write expressions when solving real-world or mathematical problems.",
+            "Identify the relationship of the variable in real-world or mathematical problems."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Nonnegative rational numbers include positive numbers that may be written as a quotient of two integers where the denominator is not zero.",
+            "Decimals that are rational numbers either terminate or repeat.",
+            "How to reason abstractly and quantitatively.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Substitution of values as they pertain to a real-world problem."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve equations when the values for the variables are given.",
+            "Write and solve equations that represent real-world problems.",
+            "Fluently add, subtract, multiply and divide whole numbers, fractions, and decimals.",
+            "Evaluate reasonableness of solutions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.8"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A simple inequality is x > 4 or x < 4.",
+            "X can represent any value that proves the inequality true.",
+            "How to reason abstractly and quantitatively.",
+            "How to look for and make use of structure."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "C, the constraint value, is not limited to integers.",
+            "A constraint value is the value that x is greater than or less than.",
+            "X in an inequality, x < c, has an infinite number of solutions.",
+            "That there are an infinite number of solutions for an inequality."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write an inequality to represent constraints or conditions in a real-world or mathematical problem.",
+            "Graph a solution set of an inequality on a number line.",
+            "Explain what the solution set of an inequality represents."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Expressions and Equations",
+    "reporting_category": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.9"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Dependent variable is a variable whose value is determined by another variable in the expression. For example, the distance you travel is determined by how long you drive.",
+            "Independent variable is a variable whose value decides the value of the other variable. For example, in a fundraiser, how many items you sell determines the amount of money you make.",
+            "Plotting points in all four quadrants of the coordinate plane.",
+            "How to model with mathematics.",
+            "How to attend to precision.",
+            "How to look for and express regularity in repeated reasoning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between the dependent and independent variable in a real-world relationship.",
+            "The function of the dependent and independent variable.",
+            "The pattern y=mx, to show that the dependent variable is the product of a rate times the independent variable.",
+            "The y and x in y=mx refer to the x and y axis on the coordinate plane.",
+            "The effect x has on y corresponds to the rate in the equation. For example, d= 65t, means for every hour (t), d will increase by 65 miles."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Analyze tables and graphs to determine the dependent and independent variable.",
+            "Analyze tables and graphs to determine the relationship between dependent and independent variables.",
+            "Write an equation with variables that represent the relationship between the dependent and independent variables.",
+            "Create a table of two variables that represent a real-world situation in which one quantity will change in relation to the other.",
+            "Use data to plot points on the coordinate plane.",
+            "Interpret patterns in the table and graph and relate them back to the equation.",
+            "Use a four-function calculator to determine either variable."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "6.G.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A quadrilateral is defined as a four-sided shape.",
+            "Recognize squares, rectangles, rhombuses, and trapezoids as quadrilaterals.",
+            "Simple shapes compose to form larger shapes.",
+            "Shapes can be partitioned into parts of equal areas.",
+            "Multiplication and division are inverse operations.",
+            "How to reason abstractly and quantitatively.",
+            "How to look for and make use of structure.",
+            "Area as defined as the inside shape or space measured in square units.",
+            "How to identify a right triangle."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A trapezoid is defined as a quadrilateral with at least one pair of parallel sides.",
+            "Area formulas for rectangles, parallelograms, triangles, and trapezoids are related.",
+            "The relationship between area of a rectangle and area of a triangle.",
+            "Area of a right triangle equals one-half base times height.",
+            "Shapes with more than three sides can be decomposed into triangles (1 square = 2 triangles).",
+            "Triangles can be used to compose larger polygons."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Calculate area of triangles and quadrilaterals when given base and height.",
+            "Calculate base or height when given area.",
+            "Compose polygons from triangles.",
+            "Decompose polygons into triangles.",
+            "Solve real-world and mathematical problems.",
+            "Use a four-function calculator to solve for area."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "6.G.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Volume of a right rectangular prism equals the product of the length times the width times the height of the figure.",
+            "A right rectangular prism is defined as a prism whose lateral faces are rectangles.",
+            "A unit cube is a cube whose side lengths are 1 unit long.",
+            "Multiplication of fractions and mixed numbers.",
+            "What volume means and what volume represents.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The connection between computing volume and packing the solid figure with cubes of varying sizes.",
+            "The formula V = bh refers to multiplying the area of the base times the height.",
+            "Units that measure volume are cubic (cm3, m3, ft3)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Compute volume after packing a rectangular prism with unit cubes.",
+            "Apply formulas to solve problems with real-world contexts.",
+            "Calculate volume with and without a four-function calculator.",
+            "Evaluate reasonableness of the volume of a prism in regard to its length, width, and height."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "6.G.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Polygons are closed figures with no curved sides.",
+            "Vertices is plural for vertex; vertex being the point where two segments meet.",
+            "Coordinates (ordered pairs) are two numbers that describe the location of a point on the coordinate grid.",
+            "How to plot points on the coordinate grid in all four quadrants.",
+            "How to find, name, and label coordinates.",
+            "How to identify and label a line segment.",
+            "How to use appropriate tools strategically."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Length of a segment with joining points is also the distance between said points.",
+            "The distance between two points with the same first coordinate is found my subtracting the points' second coordinates.",
+            "Conversely, the distance between two points with the same second coordinate is found by subtracting the points' first coordinates."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Draw polygons in the coordinate plane given coordinates for the vertices.",
+            "Use coordinates to find the length of a side joining points with the same first coordinate or the same second coordinate.",
+            "Subtract positive and negative numbers.",
+            "Find the perimeter and area of polygons.",
+            "Solve real-world and mathematical problems."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "6.G.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The difference between right rectangular prisms, right triangular prisms, right square prisms (cube), and right tetrahedrons.",
+            "A right tetrahedron is also called a triangular pyramid.",
+            "Area formulas for triangles and rectangles.",
+            "How to model with mathematics."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A net is a two-dimensional pattern for a three-dimensional figure.",
+            "Nets may be rearranged to form the same three-dimensional figure. For example, there are 11 different nets for a right square prism (cube).",
+            "Surface area is the sum of the areas of each face of a three-dimensional figure."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Match nets with corresponding three-dimensional figures.",
+            "Draw nets when given the name of a three-dimensional figure.",
+            "Calculate surface area with and without a four-function calculator.",
+            "Evaluate reasonableness of the surface area considering the lengths and widths of the faces of the figure.",
+            "Solve real-world and mathematical problems."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Variability means that not all the data values will have the same value.",
+            "A statistical question poses a question where data must be collected to answer the question.",
+            "How to reason abstractly and quantitatively."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "What makes a good statistical question.",
+            "The difference between numerical data and categorical data. For example, heights of basketball players versus their favorite colors."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize a statistical question.",
+            "Develop a question that can be used to collect statistical information.",
+            "Collect data to demonstrate the variability of the answers to the question."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Distribution refers to the entire data set as a whole.",
+            "Distribution can be described in terms of center, spread, and shape.",
+            "Mean is the average of all the numerical data.",
+            "Median is the exact middle value of the data.",
+            "Mode is the most frequently occurring data value.",
+            "How to model with mathematics."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The center of a distribution can be described in terms of mean, median, and mode.",
+            "The spread of a distribution can be described in terms of clusters, gaps, and outliers.",
+            "Shape can be described as symmetric or skewed.",
+            "A box plot is a method of displaying a distribution of data values by using the median, quartiles, and extremes of the data set.",
+            "A box shows the middle 50% of the data."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Describe a distribution of data in terms of center, spread, and overall shape.",
+            "Construct a box plot to show the distribution of a set of data.",
+            "Interpret data from a box plot.",
+            "Compare multiple distributions looking for similar centers, spreads, and overall shapes."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Measure of center refers to mean, median, and mode.",
+            "Any of these three represent the entire data set with just one number.",
+            "Measure of variation refers to range, interquartile range, or mean absolute deviation.",
+            "Range is the difference between maximum and minimum data values.",
+            "Mean absolute deviation is the average of the absolute value of the distances of the data values from the mean.",
+            "How to attend to precision."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "When mean is used as the measure of center, that number may not itself be a value from the data set.",
+            "When median is used as the measure of center, it may or may not be a value from the data set. That is dependent on whether the data set is made up of an even or odd set of data.",
+            "When mode is used as the measure of center, it is an actual value from the data set."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Calculate measures of center (mean, median, and mode) of a set of numerical data.",
+            "Calculate measures of variation by calculating range, interquartile range, or mean absolute deviation of a set of numerical data.",
+            "Cannot use a calculator but must be able to use the standard algorithm for calculating."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Dot plots are also called line plots. Data are represented by Xs or dots on a number line.",
+            "Histograms are bar graphs where data are grouped and displayed within intervals.",
+            "Intervals must be continuous (bars must be touching).",
+            "Box plots, also called box-and-whisker plots, graph five summary measures. They show the center as well as the variability of the data.",
+            "How to model with mathematics.",
+            "How to attend to precision."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between how data are represented by dot plots, histograms, and box plots.",
+            "Graphical representations should be chosen based on what information needs to be communicated about the data set."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Organize and display data as a line plot or dot plot.",
+            "Organize and display data in a histogram.",
+            "Organize and display data in a box plot.",
+            "Calculate extremes, range, median, and mean to be able to display data in a box plot.",
+            "Identify a graphical representation that is representative of a given data set."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.5a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Observations refer to the number of data values in the set.",
+            "Measures of center are mean, median, and mode.",
+            "Measures of variability are range, interquartile range, and mean absolute deviation."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Reporting the number of observations does not by itself lend any information to measures of center or variability, only how many data values were collected."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a four-function calculator for rapid calculation of measures of center or variability.",
+            "Report number of observations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.5b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "An attribute is a particular characteristic or feature being investigated: typical age of 6th graders, typical numbers of pets, or how many states have most students visited in their lifetime.",
+            "How to model with mathematics."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between an attribute and the units used to measure that attribute."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify the attribute being investigated.",
+            "Identify how the attribute was measured and by what units."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "domain": "Statistics and Probability",
+    "reporting_category": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.5c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Measures of center: mean, median, and mode.",
+            "Measures of variability: range and interquartile range",
+            "Shape is described as symmetrical or skewed.",
+            "How to construct viable arguments and critique the reasoning of others."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "There is no wrong choice of measure of the center-only a wrong interpretation of it.",
+            "The shape of the data should be considered before deciding on which measure of center or variability should be used to summarize the data.",
+            "The effect adding or removing data values will have on measures of center or variability."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Calculate measures of center.",
+            "Calculate measures of variability.",
+            "Draw inferences about the shape of the distribution using measures of center and/or variability.",
+            "Justify the use of a particular measure of center or variability based on the shape of the data."
+          ]
+        }
+      }
+    }
+  }
+]

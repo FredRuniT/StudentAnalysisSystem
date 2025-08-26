@@ -79,6 +79,18 @@ public struct StudentSingleYearData: Sendable {
     public let grade: Int
     public let assessmentData: [String: Double]
     
+    public init(
+        msis: String,
+        year: Int,
+        grade: Int,
+        assessmentData: [String: Double]
+    ) {
+        self.msis = msis
+        self.year = year
+        self.grade = grade
+        self.assessmentData = assessmentData
+    }
+    
     public func getComponentScore(_ component: String) -> Double? {
         assessmentData[component]
     }

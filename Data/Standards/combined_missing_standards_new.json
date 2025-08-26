@@ -1,0 +1,3272 @@
+[
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "3.MD.5",
+      "type": "Grade-Specific",
+      "description": "Recognize area as an attribute of plane figures and understand concepts of area measurement. A square with side length 1 unit, called 'a unit square,' is said to have 'one square unit' of area, and can be used to measure area."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to partition a rectangle into rows and columns of same-size squares and count to find the total number of them",
+            "Plane figures are two-dimensional shapes that include triangles, quadrilaterals, pentagons, and hexagons",
+            "What it means to find the length of an object",
+            "How to measure the length of an object using the customary and metric units of inches, feet, centimeters, and meters"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Area as the amount of two-dimensional space in a bounded region",
+            "A square unit is used to measure the area of a given plane figure or surface",
+            "Area can be measured in square units",
+            "How to find area by decomposing figures using cutting and folding techniques"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Cover the area of a plane figure with unit squares without gaps or overlaps",
+            "Relate the number (n) of unit squares to the area of a plane figure",
+            "For example, determine the area in square units of the rectangle below"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "area",
+        "plane figures",
+        "unit square",
+        "square units",
+        "geometric measurement",
+        "length",
+        "two-dimensional shapes",
+        "rectangles",
+        "triangles",
+        "quadrilaterals",
+        "pentagons",
+        "hexagons",
+        "decomposing figures"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "3.MD.5b",
+      "type": "Grade-Specific",
+      "description": "Recognize area as an attribute of plane figures and understand concepts of area measurement. A plane figure which can be covered without gaps or overlaps by n unit squares is said to have an area of n square units."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Area can be found by partitioning a rectangle into rows and columns of same-size squares and counting the squares",
+            "How to measure length in whole units using both metric and U.S. customary systems",
+            "Plane figures are two-dimensional shapes that include triangles, quadrilaterals, pentagons, and hexagons",
+            "Everyday objects have a variety of attributes each of which can be measured in different ways"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "A two-dimensional geometric figure that is covered by a certain number of squares without gaps or overlaps has an area of that number of square units",
+            "Area can be measured in square units",
+            "How to use square units to measure area by filling in an area with the same sized square units and counting the number of square units",
+            "Plane figures have different attributes such as length and area"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Relate the number of unit squares (n) to the area of a plane figure",
+            "Cover a plane figure with square tiles and count the number of units (tiles) to find the area",
+            "Find the area of plane figures",
+            "For example, which of the three rectangles covers the most area?"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "area",
+        "plane figures",
+        "unit squares",
+        "square units",
+        "geometric measurement",
+        "length measurement",
+        "two-dimensional shapes",
+        "rectangles",
+        "triangles",
+        "quadrilaterals",
+        "pentagons",
+        "hexagons",
+        "attributes",
+        "gaps and overlaps"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "3.MD.7",
+      "type": "Grade-Specific",
+      "description": "Relate area to the operations of multiplication and addition. Find the area of a rectangle with whole-number side lengths by tiling it, and show that the area is the same as would be found by multiplying the side lengths."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to partition rectangles into equal-sized groups of rows and columns using square units",
+            "Problem-solving structures for area arrays and for equal-sized groups",
+            "How to skip count by 5s, 10s, and 100s",
+            "Multiplication facts for all single digits 1 through 9 and 10"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Area is additive",
+            "There is a relationship between area and multiplication",
+            "The properties of operations will help in finding area",
+            "Find the area of a rectangle by tiling it in unit squares",
+            "Find the side lengths of a rectangle in units",
+            "Skip counting and multiplication to determine the number of squares in an array",
+            "Area models of multiplication"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Tile areas of rectangles and determine the area in square units. Record the length and width of the rectangle, and investigate the patterns in the numbers (equal-sized groups in rows and columns)",
+            "Compare the area found by counting the tiles in a rectangle to the area found by adding equal-sized groups of tiles. If there are three rows and four columns, find the area by adding 3 + 3 + 3 + 3 or 4 + 4 + 4",
+            "Compare the area found by tiling a rectangle to the area found by multiplying the side lengths and discover that the area is the length times the width"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "area",
+        "multiplication",
+        "addition",
+        "rectangles",
+        "tiling",
+        "arrays",
+        "square units",
+        "skip counting",
+        "equal groups",
+        "side lengths",
+        "rows and columns",
+        "area models"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "3.MD.7b",
+      "type": "Grade-Specific",
+      "description": "Relate area to the operations of multiplication and addition. Multiply side lengths to find areas of rectangles with whole-number side lengths (where factors can be between 1 and 10, inclusively) in the context of solving real world and mathematical problems, and represent whole-number products as rectangular areas in mathematical reasoning."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to model with equal-sized groups by partitioning rectangles",
+            "Problem-solving structures for area arrays and for equal groups",
+            "Addition problem-solving strategies",
+            "Multiplication facts for all single digits 1 through 9 and 10"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Area is additive",
+            "There is a relationship between area and multiplication",
+            "The properties of operations will help in finding area",
+            "Multiply side lengths to find areas of rectangles",
+            "Area is a square measure"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Solve real-world and mathematical area problems by multiplying whole-number side lengths of rectangles",
+            "Use rectangular arrays to represent whole-number products in multiplication problems",
+            "For example, Betsy wants to tile the bathroom floor using square foot tiles. How many square foot tiles will she need?"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "area",
+        "multiplication",
+        "addition",
+        "rectangles",
+        "whole numbers",
+        "arrays",
+        "square measure",
+        "real-world problems",
+        "mathematical reasoning",
+        "side lengths",
+        "equal groups",
+        "problem-solving"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "3.MD.7c",
+      "type": "Grade-Specific",
+      "description": "Relate area to the operations of multiplication and addition. Use tiling to show in a concrete case that the area of a rectangle with whole-number side lengths a and b + c is the sum of a \u00d7 b and a \u00d7 c. Use area models to represent the distributive property in mathematical reasoning."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to model with equal-sized groups by partitioning rectangles",
+            "Problem-solving structures for area/arrays and for equal groups",
+            "Addition problem-solving strategies",
+            "Multiplication facts for all single digits 1 through 9 and 10"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Area is additive",
+            "There is a relationship between area and multiplication",
+            "The properties of operations, specifically the distributive property, will help in finding area",
+            "How to multiply using an area model or array",
+            "How to use the distributive property to represent a real-world problem: a \u00d7 (b + c) = a \u00d7 b + a \u00d7 c"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Relate area of a rectangle to multiplication and addition by modeling the distributive property",
+            "For example, in the picture below, the area of a 6 \u00d7 7 figure can be determined by finding the area of 6 \u00d7 5 and 6 \u00d7 2 figure and adding the two products"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "area",
+        "multiplication",
+        "addition",
+        "distributive property",
+        "rectangles",
+        "tiling",
+        "arrays",
+        "area models",
+        "mathematical reasoning",
+        "equal groups",
+        "partitioning",
+        "whole numbers"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "3.MD.7d",
+      "type": "Grade-Specific",
+      "description": "Relate area to the operations of multiplication and addition. Find areas of rectilinear figures by decomposing them into non-overlapping rectangles and adding the areas of the non-overlapping parts, applying this technique to solve real world problems. Recognize area as additive."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to decompose figures",
+            "A rectilinear figure is a polygon that has all right angles",
+            "How to find areas of rectangles",
+            "How to add areas of rectangles",
+            "Problem-solving structures for area/arrays and for equal groups",
+            "Multiplication facts for all single digits 1 through 9 and 10"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Area is additive",
+            "There is a relationship between area and multiplication",
+            "The properties of operations will help in finding area",
+            "Areas of each rectangle in a rectilinear (straight line) figure can be added together to find the area of the figure"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Decompose rectilinear figures into different rectangles and find the area of each rectangle that is part of a larger figure",
+            "Find the area of each larger figure by adding the areas of each of the rectangles. See the example below"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "area",
+        "rectilinear figures",
+        "decomposition",
+        "non-overlapping rectangles",
+        "addition",
+        "multiplication",
+        "right angles",
+        "polygons",
+        "real-world problems",
+        "area models",
+        "additive property"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "3.MD.8",
+      "type": "Grade-Specific",
+      "description": "Solve real world and mathematical problems involving perimeters of polygons, including finding the perimeter given the side lengths, finding an unknown side length, and exhibiting rectangles with the same perimeter and different areas or with the same area and different perimeters."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to relate addition and subtraction to length",
+            "How to measure and estimate lengths in standard units",
+            "How to relate to an open array used in multiplication and area problems",
+            "Addition problem-solving strategies",
+            "A polygon is a closed, flat figure formed using line segments that meet only at their ends",
+            "For a polygon, the length of the perimeter is the sum of the lengths of the sides",
+            "Perimeter equals the distance around a closed figure"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Perimeter and addition are related and connected to the commutative property of multiplication",
+            "Patterns exist when finding the sum of the lengths and widths of rectangles",
+            "The difference between perimeter and area",
+            "The length of all sides in a polygon must be known to find the perimeter of the polygon",
+            "Unknown side lengths may be found by measuring or reasoning using given sides"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Solve real-world and mathematical problems involving perimeters of polygons",
+            "Find the perimeter of a polygon given the side lengths",
+            "Find the perimeter of a polygon when there is an unknown side length",
+            "Exhibit (design, create, draw, model, etc.) rectangles with the same perimeter and different areas",
+            "Exhibit rectangles with the same area and different perimeters",
+            "Solve real-world and mathematical problems involving perimeters of polygons"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "perimeter",
+        "polygons",
+        "side lengths",
+        "unknown sides",
+        "rectangles",
+        "area",
+        "measurement",
+        "addition",
+        "real-world problems",
+        "mathematical reasoning",
+        "closed figures",
+        "line segments"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Geometry",
+    "standard": {
+      "id": "3.G.1",
+      "type": "Grade-Specific",
+      "description": "Understand that shapes in different categories (e.g., rhombuses, rectangles, and others) may share attributes (e.g., having four sides), and that the shared attributes can define a larger category (e.g., quadrilaterals). Recognize rhombuses, rectangles, and squares as examples of quadrilaterals, and draw examples of quadrilaterals that do not belong to any of these subcategories."
+    },
+    "reporting_category": "Geometry",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to recognize and draw shapes having specified attributes such as a given number of angles and sides. Identify triangles, quadrilaterals, pentagons, and hexagons",
+            "Triangles, quadrilaterals, pentagons, etc. are two-dimensional shapes",
+            "How to identify and count angles and sides within a shape to label a shape"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Shapes can be described and compared using their geometric attributes",
+            "Shapes are categorized according to their attributes including the number of sides and angles within the shape. Those categories can contain subcategories, for example, rhombuses, rectangles, squares, trapezoids, parallelograms, etc.",
+            "Attributes of a circle"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Describe, analyze, and compare properties of two-dimensional shapes",
+            "Compare and classify shapes by attributes, sides and angles",
+            "Group shapes with shared attributes to define a larger category (e.g., quadrilaterals)",
+            "Draw examples and non-examples of quadrilaterals with specific attributes",
+            "For example, if a student writes, \"All quadrilaterals are squares, rectangles, or rhombuses.\" Draw a quadrilateral on the grid that proves this statement is false"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "shapes",
+        "categories",
+        "attributes",
+        "quadrilaterals",
+        "rhombuses",
+        "rectangles",
+        "squares",
+        "angles",
+        "sides",
+        "two-dimensional shapes",
+        "geometric properties",
+        "classification"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Geometry",
+    "standard": {
+      "id": "3.G.2",
+      "type": "Grade-Specific",
+      "description": "Partition shapes into parts with equal areas. Express the area of each part as a unit fraction of the whole. For example, partition a shape into 4 parts with equal area, and describe the area of each part as 1/4 of the area of the shape."
+    },
+    "reporting_category": "Geometry",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "A whole shape can be divided into equal parts. The equal parts may not be the same shape",
+            "How to divide shapes (circles and rectangles) into two, three, or four equal parts and use the terms halves, thirds, or fourths to describe the parts",
+            "A fraction represents quantities where a whole is divided into equal-sized parts",
+            "How to use the term numerator to indicate the number of parts and denominator to represents the total number of parts a whole is portioned into"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Unit fractions can be used to describe a whole that has been divided into parts",
+            "The size of the fractional part is relative to the size of the whole",
+            "Composition and decomposition of rectangular regions",
+            "How to partition a rectangle into equal squares"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Divide shapes into parts with equal areas",
+            "Represent the area of each part as a unit fraction",
+            "For example, which of these shows 1/3 of the shaded figure?"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "shapes",
+        "partitioning",
+        "equal areas",
+        "unit fractions",
+        "fractions",
+        "equal parts",
+        "numerator",
+        "denominator",
+        "area",
+        "division",
+        "geometric shapes",
+        "decomposition"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "3.NF.2",
+      "type": "Grade-Specific",
+      "description": "Understand a fraction as a number on the number line; represent fractions on a number line diagram."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to represent whole numbers on a number line",
+            "How to partition a whole into equal parts",
+            "How to identify and represent unit fractions on a number line",
+            "How to count by unit fractions on a number line"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "A fraction represents a point on the number line",
+            "The denominator determines the size of the equal parts",
+            "The numerator represents how many equal parts are being counted",
+            "The relationship between unit fractions and other fractions"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Represent fractions on a number line by partitioning the line into equal segments",
+            "Locate and plot fractions on a number line",
+            "Use the number line to compare fractions",
+            "Count by unit fractions on a number line"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "fractions",
+        "number line",
+        "unit fractions",
+        "equal parts",
+        "numerator",
+        "denominator",
+        "partitioning",
+        "plotting points",
+        "comparing fractions",
+        "counting"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "3.NF.3",
+      "type": "Grade-Specific",
+      "description": "Explain equivalence of fractions in special cases, and compare fractions by reasoning about their size."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to identify equivalent fractions",
+            "How to compare fractions with the same numerator or denominator",
+            "How to express whole numbers as fractions",
+            "How to recognize fractions that are equal to 1"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Two fractions are equivalent if they represent the same point on a number line",
+            "Fractions with the same denominator can be compared by comparing their numerators",
+            "Fractions with the same numerator can be compared by comparing their denominators",
+            "The relationship between whole numbers and fractions"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Generate equivalent fractions using visual fraction models",
+            "Compare fractions using visual models and number lines",
+            "Express whole numbers as fractions",
+            "Recognize and generate simple equivalent fractions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "equivalent fractions",
+        "comparing fractions",
+        "fraction models",
+        "number line",
+        "whole numbers",
+        "numerator",
+        "denominator",
+        "visual models",
+        "reasoning",
+        "size comparison"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "3",
+    "strand": "Operations and Algebraic Thinking",
+    "standard": {
+      "id": "3.OA.81",
+      "type": "Grade-Specific",
+      "description": "Solve two-step word problems using the four operations. Represent these problems using equations with a letter standing for the unknown quantity. Assess the reasonableness of answers using mental computation and estimation strategies including rounding."
+    },
+    "reporting_category": "Operations and Algebraic Thinking",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to solve one-step word problems",
+            "How to use the four operations",
+            "How to represent unknown quantities with letters",
+            "How to estimate and round numbers"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "The relationship between operations in multi-step problems",
+            "How to determine which operations to use",
+            "The meaning of variables in equations",
+            "The importance of checking answer reasonableness"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Solve two-step word problems using multiple operations",
+            "Write equations with variables for unknown quantities",
+            "Use estimation and mental math to check answers",
+            "Apply rounding strategies to verify solutions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "word problems",
+        "equations",
+        "variables",
+        "operations",
+        "estimation",
+        "rounding",
+        "mental math",
+        "problem solving",
+        "reasonableness",
+        "two-step problems"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "4",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "4.MD.5",
+      "type": "Grade-Specific",
+      "description": "Recognize angles as geometric shapes that are formed wherever two rays share a common endpoint, and understand concepts of angle measurement."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What an angle is and how it is formed",
+            "How to identify rays and endpoints",
+            "How angles are measured in degrees",
+            "The relationship between angles and circles"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "An angle is formed by two rays sharing a common endpoint",
+            "Angles are measured with reference to a circle",
+            "A one-degree angle turns through 1/360 of a circle",
+            "The relationship between angle measure and arc length"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Identify and draw angles",
+            "Measure angles using a protractor",
+            "Relate angle measurements to fractions of a circle",
+            "Solve problems involving angle measurements"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "angles",
+        "rays",
+        "endpoints",
+        "degrees",
+        "circles",
+        "geometric shapes",
+        "measurement",
+        "protractor",
+        "arc length",
+        "geometry"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "4",
+    "strand": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "4.NBT.2",
+      "type": "Grade-Specific",
+      "description": "Read and write multi-digit whole numbers using base-ten numerals, number names, and expanded form. Compare two multi-digit numbers based on meanings of the digits in each place, using >, =, and < symbols to record the results of comparisons."
+    },
+    "reporting_category": "Number and Operations in Base Ten",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Place value concepts up to millions",
+            "How to read and write numbers in different forms",
+            "The meaning of comparison symbols",
+            "How to compare multi-digit numbers"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Numbers can be represented in different ways",
+            "The value of a digit depends on its place",
+            "How to use place value to compare numbers",
+            "The relationship between different forms of numbers"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Read and write numbers in standard form",
+            "Write numbers in expanded form",
+            "Compare multi-digit numbers using place value",
+            "Use comparison symbols correctly"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "place value",
+        "multi-digit numbers",
+        "base-ten",
+        "expanded form",
+        "number names",
+        "comparison symbols",
+        "greater than",
+        "less than",
+        "equal to",
+        "comparing numbers"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "4",
+    "strand": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "4.NBT.4",
+      "type": "Grade-Specific",
+      "description": "Fluently add and subtract multi-digit whole numbers using the standard algorithm."
+    },
+    "reporting_category": "Number and Operations in Base Ten",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Place value concepts",
+            "Standard algorithms for addition and subtraction",
+            "How to regroup in addition and subtraction",
+            "Properties of operations"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why regrouping works",
+            "The relationship between addition and subtraction",
+            "How place value affects computation",
+            "Why the standard algorithm works"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Add multi-digit numbers fluently",
+            "Subtract multi-digit numbers fluently",
+            "Use the standard algorithm correctly",
+            "Check answers for reasonableness"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "addition",
+        "subtraction",
+        "multi-digit numbers",
+        "standard algorithm",
+        "regrouping",
+        "place value",
+        "computation",
+        "fluency",
+        "whole numbers",
+        "operations"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "4",
+    "strand": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "4.NBT.6",
+      "type": "Grade-Specific",
+      "description": "Find whole-number quotients and remainders with up to four-digit dividends and one-digit divisors, using strategies based on place value, the properties of operations, and/or the relationship between multiplication and division. Illustrate and explain the calculation by using equations, rectangular arrays, and/or area models."
+    },
+    "reporting_category": "Number and Operations in Base Ten",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Division concepts and strategies",
+            "Place value understanding",
+            "Properties of operations",
+            "Relationship between multiplication and division"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "How place value affects division",
+            "Why division strategies work",
+            "How to use different models to represent division",
+            "The meaning of remainders"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Divide multi-digit numbers by one-digit numbers",
+            "Use multiple strategies to solve division problems",
+            "Explain division calculations using models",
+            "Handle remainders appropriately"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "division",
+        "quotients",
+        "remainders",
+        "place value",
+        "multiplication",
+        "arrays",
+        "area models",
+        "equations",
+        "strategies",
+        "operations"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "4",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "4.NF.3",
+      "type": "Grade-Specific",
+      "description": "Understand a fraction a/b with a > 1 as a sum of fractions 1/b. Decompose a fraction into a sum of fractions with the same denominator in more than one way, recording each decomposition by an equation. Justify decompositions."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What fractions represent",
+            "How to decompose fractions",
+            "Addition of fractions with like denominators",
+            "Multiple representations of fractions"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "A fraction can be decomposed into unit fractions",
+            "There are multiple ways to decompose a fraction",
+            "The role of the numerator and denominator",
+            "Why decomposition strategies work"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Break down fractions into sums of unit fractions",
+            "Write equations to show fraction decompositions",
+            "Justify decomposition strategies",
+            "Add fractions with like denominators"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "fractions",
+        "decomposition",
+        "unit fractions",
+        "addition",
+        "equations",
+        "numerator",
+        "denominator",
+        "justification",
+        "equivalent expressions",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "4",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "4.NF.4",
+      "type": "Grade-Specific",
+      "description": "Apply and extend previous understandings of multiplication to multiply a fraction by a whole number."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Multiplication concepts",
+            "How fractions represent parts of a whole",
+            "Multiple representations of multiplication",
+            "Properties of operations with fractions"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "How multiplication relates to repeated addition",
+            "Why multiplying a fraction by a whole number works",
+            "The relationship between factors and products",
+            "How to use models to represent multiplication of fractions"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Multiply fractions by whole numbers",
+            "Use visual models to represent multiplication",
+            "Solve word problems involving multiplication of fractions",
+            "Apply properties of operations to multiply fractions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "multiplication",
+        "fractions",
+        "whole numbers",
+        "repeated addition",
+        "visual models",
+        "properties of operations",
+        "factors",
+        "products",
+        "word problems",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "5.MD.3",
+      "type": "Grade-Specific",
+      "description": "Recognize volume as an attribute of solid figures and understand concepts of volume measurement. A cube with side length 1 unit, called a 'unit cube,' is said to have 'one cubic unit' of volume, and can be used to measure volume."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What volume means and how it is measured",
+            "How to identify unit cubes",
+            "The relationship between dimensions and volume",
+            "How to measure volume using cubic units"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Volume is a measure of three-dimensional space",
+            "A unit cube has a volume of one cubic unit",
+            "Volume can be measured by counting unit cubes",
+            "The relationship between length, width, height, and volume"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Measure volume using unit cubes",
+            "Calculate volume of rectangular prisms",
+            "Explain the concept of volume measurement",
+            "Solve real-world problems involving volume"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "volume",
+        "solid figures",
+        "unit cube",
+        "cubic units",
+        "measurement",
+        "three-dimensional",
+        "rectangular prisms",
+        "dimensions",
+        "space",
+        "geometric measurement"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Measurement and Data",
+    "standard": {
+      "id": "5.MD.5",
+      "type": "Grade-Specific",
+      "description": "Relate volume to the operations of multiplication and addition and solve real world and mathematical problems involving volume."
+    },
+    "reporting_category": "Measurement and Data",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to calculate volume using formulas",
+            "The relationship between volume and multiplication",
+            "How to decompose irregular shapes",
+            "Properties of rectangular prisms"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Volume is multiplicative in nature",
+            "Volume can be found by multiplying length \u00d7 width \u00d7 height",
+            "Volume is additive for non-overlapping solids",
+            "Different methods can be used to find volume"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Apply volume formulas to solve problems",
+            "Find volumes of composite figures",
+            "Use multiplication to calculate volume",
+            "Solve real-world volume problems"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "volume",
+        "multiplication",
+        "addition",
+        "formulas",
+        "rectangular prisms",
+        "composite figures",
+        "dimensions",
+        "real-world problems",
+        "measurement",
+        "geometric solids"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "5.NBT.3",
+      "type": "Grade-Specific",
+      "description": "Read, write, and compare decimals to thousandths. Read and write decimals to thousandths using base-ten numerals, number names, and expanded form. Compare two decimals to thousandths based on meanings of the digits in each place, using >, =, and < symbols to record the results of comparisons."
+    },
+    "reporting_category": "Number and Operations in Base Ten",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Place value concepts for decimals",
+            "How to read and write decimals",
+            "Decimal comparison strategies",
+            "Different forms of decimal representation"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "The relationship between place values in decimals",
+            "How to use place value to compare decimals",
+            "The meaning of decimal numbers",
+            "How decimals relate to fractions"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Read and write decimals to thousandths",
+            "Compare decimals using place value",
+            "Use comparison symbols correctly",
+            "Convert between different decimal forms"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "decimals",
+        "place value",
+        "comparison",
+        "expanded form",
+        "base-ten",
+        "number names",
+        "thousandths",
+        "greater than",
+        "less than",
+        "equal to"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "5.NBT.4",
+      "type": "Grade-Specific",
+      "description": "Use place value understanding to round decimals to any place."
+    },
+    "reporting_category": "Number and Operations in Base Ten",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Place value concepts for decimals",
+            "Rounding rules and strategies",
+            "How to identify place values in decimals",
+            "The meaning of decimal numbers"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "How place value affects rounding",
+            "Why rounding rules work",
+            "The relationship between different decimal places",
+            "When and why to round decimals"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Round decimals to any place value",
+            "Use number lines to visualize rounding",
+            "Apply rounding rules consistently",
+            "Solve problems involving rounded decimals"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "decimals",
+        "place value",
+        "rounding",
+        "number lines",
+        "estimation",
+        "decimal places",
+        "tenths",
+        "hundredths",
+        "thousandths",
+        "approximation"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "5.NBT.7",
+      "type": "Grade-Specific",
+      "description": "Add, subtract, multiply, and divide decimals to hundredths, using concrete models or drawings and strategies based on place value, properties of operations, and/or the relationship between addition and subtraction; relate the strategy to a written method and explain the reasoning used."
+    },
+    "reporting_category": "Number and Operations in Base Ten",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Operations with decimals",
+            "Place value concepts",
+            "Properties of operations",
+            "Models and drawings for decimals"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "How place value affects decimal operations",
+            "The relationship between operations with decimals",
+            "Why decimal computation strategies work",
+            "How to use models to represent decimal operations"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Add and subtract decimals to hundredths",
+            "Multiply and divide decimals to hundredths",
+            "Use models to solve decimal problems",
+            "Explain decimal computation strategies"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "decimals",
+        "operations",
+        "place value",
+        "addition",
+        "subtraction",
+        "multiplication",
+        "division",
+        "models",
+        "strategies",
+        "reasoning"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "5.NF.1",
+      "type": "Grade-Specific",
+      "description": "Add and subtract fractions with unlike denominators (including mixed numbers) by replacing given fractions with equivalent fractions in such a way as to produce an equivalent sum or difference of fractions with like denominators."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to find equivalent fractions",
+            "How to add and subtract fractions",
+            "What mixed numbers are",
+            "The concept of like and unlike denominators"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why common denominators are needed",
+            "How to create equivalent fractions",
+            "The relationship between mixed numbers and improper fractions",
+            "Why addition and subtraction strategies work"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Convert fractions to equivalent forms",
+            "Add fractions with unlike denominators",
+            "Subtract fractions with unlike denominators",
+            "Work with mixed numbers in computations"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "fractions",
+        "unlike denominators",
+        "mixed numbers",
+        "equivalent fractions",
+        "addition",
+        "subtraction",
+        "common denominators",
+        "improper fractions",
+        "operations",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "5.NF.3",
+      "type": "Grade-Specific",
+      "description": "Interpret a fraction as division of the numerator by the denominator (a/b = a \u00f7 b). Solve word problems involving division of whole numbers leading to answers in the form of fractions or mixed numbers, e.g., by using visual fraction models or equations to represent the problem."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "The relationship between fractions and division",
+            "How to interpret fractions as division",
+            "Visual fraction models",
+            "Division concepts and strategies"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why a fraction represents division",
+            "How to use models to represent division",
+            "The connection between division and fractions",
+            "When division results in fractions"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Solve division word problems with fraction answers",
+            "Use visual models to represent division",
+            "Write equations for division problems",
+            "Convert between fractions and division expressions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "fractions",
+        "division",
+        "numerator",
+        "denominator",
+        "word problems",
+        "visual models",
+        "equations",
+        "mixed numbers",
+        "problem solving",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "5.NF.4",
+      "type": "Grade-Specific",
+      "description": "Apply and extend previous understandings of multiplication to multiply a fraction or whole number by a fraction."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Multiplication concepts with fractions",
+            "How to multiply fractions",
+            "Area models for fraction multiplication",
+            "Properties of operations with fractions"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why fraction multiplication works",
+            "How to use area models for multiplication",
+            "The relationship between whole number and fraction multiplication",
+            "When to use fraction multiplication"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Multiply fractions by whole numbers",
+            "Multiply fractions by fractions",
+            "Use area models to represent multiplication",
+            "Solve word problems involving fraction multiplication"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "multiplication",
+        "fractions",
+        "whole numbers",
+        "area models",
+        "visual models",
+        "operations",
+        "properties",
+        "problem solving",
+        "number sense",
+        "reasoning"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "5.NF.7",
+      "type": "Grade-Specific",
+      "description": "Apply and extend previous understandings of division to divide unit fractions by whole numbers and whole numbers by unit fractions."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Division concepts with fractions",
+            "What unit fractions are",
+            "How to divide with fractions",
+            "Visual models for division"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why division with unit fractions works",
+            "The relationship between multiplication and division of fractions",
+            "How to interpret division situations with fractions",
+            "When to use fraction division"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Divide unit fractions by whole numbers",
+            "Divide whole numbers by unit fractions",
+            "Use visual models for division",
+            "Solve word problems involving fraction division"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "division",
+        "unit fractions",
+        "whole numbers",
+        "visual models",
+        "operations",
+        "multiplication",
+        "problem solving",
+        "number sense",
+        "reasoning",
+        "fractions"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.2",
+      "type": "Grade-Specific",
+      "description": "Write, read, and evaluate expressions in which letters stand for numbers."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What variables and expressions are",
+            "How to write expressions with variables",
+            "Order of operations",
+            "Properties of operations"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Variables represent unknown numbers",
+            "How to translate between words and mathematical expressions",
+            "The meaning of mathematical expressions in context",
+            "How to evaluate expressions with given values"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Write expressions using variables",
+            "Read and interpret mathematical expressions",
+            "Evaluate expressions by substituting values",
+            "Apply order of operations correctly"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "expressions",
+        "variables",
+        "evaluation",
+        "order of operations",
+        "algebraic expressions",
+        "substitution",
+        "mathematical language",
+        "equations",
+        "numerical expressions",
+        "properties"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.3",
+      "type": "Grade-Specific",
+      "description": "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3(2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6(4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Properties of operations",
+            "What equivalent expressions are",
+            "The distributive property",
+            "How to combine like terms"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why expressions can be written in different but equivalent forms",
+            "How properties of operations work with variables",
+            "When and how to apply the distributive property",
+            "The meaning of equivalent expressions"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Generate equivalent expressions",
+            "Apply the distributive property",
+            "Combine like terms",
+            "Verify that expressions are equivalent"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "equivalent expressions",
+        "distributive property",
+        "properties of operations",
+        "like terms",
+        "algebraic expressions",
+        "variables",
+        "coefficients",
+        "terms",
+        "simplification",
+        "algebra"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.4",
+      "type": "Grade-Specific",
+      "description": "Identify when two expressions are equivalent (i.e., when the two expressions name the same number regardless of which value is substituted into them). For example, the expressions y + y + y and 3y are equivalent because they name the same number regardless of which number y stands for."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What makes expressions equivalent",
+            "Properties of operations",
+            "How to evaluate expressions",
+            "The meaning of variables"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Equivalent expressions yield the same value for any substitution",
+            "Different forms can represent the same mathematical relationship",
+            "How to verify equivalence through substitution",
+            "Why certain expressions are equivalent"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Test expressions for equivalence",
+            "Substitute values to verify equivalence",
+            "Recognize different forms of the same expression",
+            "Explain why expressions are equivalent"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "equivalent expressions",
+        "variables",
+        "substitution",
+        "evaluation",
+        "algebraic expressions",
+        "properties",
+        "verification",
+        "mathematical relationships",
+        "algebra",
+        "equivalence"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.5",
+      "type": "Grade-Specific",
+      "description": "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What equations and inequalities are",
+            "How to substitute values into equations",
+            "The meaning of solution sets",
+            "How to determine if a value is a solution"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Solutions make equations or inequalities true",
+            "Not all equations have solutions",
+            "Some equations have multiple solutions",
+            "How to verify solutions through substitution"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Test values in equations and inequalities",
+            "Use substitution to verify solutions",
+            "Determine solution sets",
+            "Explain why values are or are not solutions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "equations",
+        "inequalities",
+        "solutions",
+        "substitution",
+        "solution sets",
+        "verification",
+        "truth values",
+        "variables",
+        "algebra",
+        "problem solving"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.6",
+      "type": "Grade-Specific",
+      "description": "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What variables represent",
+            "How to write expressions with variables",
+            "Different uses of variables",
+            "Real-world applications of variables"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Variables can represent unknown or varying quantities",
+            "The same variable can have different meanings",
+            "How to translate word problems into expressions",
+            "When to use variables in problem solving"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Write expressions to represent situations",
+            "Use variables appropriately in context",
+            "Solve real-world problems using variables",
+            "Explain the meaning of variables in context"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "variables",
+        "expressions",
+        "problem solving",
+        "real-world applications",
+        "unknown quantities",
+        "algebra",
+        "mathematical modeling",
+        "word problems",
+        "representation",
+        "context"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.7",
+      "type": "Grade-Specific",
+      "description": "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to solve one-step equations",
+            "Properties of equality",
+            "Inverse operations",
+            "What rational numbers are"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Equations represent balanced relationships",
+            "How inverse operations undo each other",
+            "Why solution steps work",
+            "The meaning of solutions in context"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Write equations from word problems",
+            "Solve one-step equations",
+            "Check solutions",
+            "Apply equations to real-world situations"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "equations",
+        "problem solving",
+        "rational numbers",
+        "one-step equations",
+        "inverse operations",
+        "solutions",
+        "real-world applications",
+        "algebra",
+        "properties of equality",
+        "mathematical modeling"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "6.EE.8",
+      "type": "Grade-Specific",
+      "description": "Write an inequality of the form x > c or x < c to represent a constraint or condition in a real-world or mathematical problem. Recognize that inequalities of the form x > c or x < c have infinitely many solutions; represent solutions of such inequalities on number line diagrams."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What inequalities represent",
+            "How to write inequalities",
+            "The meaning of solution sets",
+            "How to use number lines with inequalities"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Inequalities can have infinite solutions",
+            "How to represent solutions on a number line",
+            "The meaning of greater than and less than",
+            "How inequalities relate to real-world situations"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Write inequalities for real-world situations",
+            "Graph inequalities on number lines",
+            "Identify solution sets of inequalities",
+            "Interpret inequality solutions in context"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "inequalities",
+        "number lines",
+        "solution sets",
+        "infinite solutions",
+        "greater than",
+        "less than",
+        "constraints",
+        "real-world applications",
+        "graphing",
+        "algebra"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Geometry",
+    "standard": {
+      "id": "6.G.1",
+      "type": "Grade-Specific",
+      "description": "Find the area of right triangles, other triangles, special quadrilaterals, and polygons by composing into rectangles or decomposing into triangles and other shapes; apply these techniques in the context of solving real-world and mathematical problems."
+    },
+    "reporting_category": "Geometry",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Area formulas for basic shapes",
+            "Properties of polygons",
+            "How to decompose shapes",
+            "How to compose shapes"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Complex shapes can be broken down into simpler shapes",
+            "Area is additive",
+            "Different methods can give the same area",
+            "How to choose efficient decomposition strategies"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Calculate areas of various polygons",
+            "Decompose shapes into simpler forms",
+            "Compose shapes to find areas",
+            "Solve real-world area problems"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "area",
+        "triangles",
+        "quadrilaterals",
+        "polygons",
+        "decomposition",
+        "composition",
+        "geometric shapes",
+        "measurement",
+        "real-world applications",
+        "problem solving"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "The Number System",
+    "standard": {
+      "id": "7.NS.1",
+      "type": "Grade-Specific",
+      "description": "Apply and extend previous understandings of addition and subtraction to add and subtract rational numbers; represent addition and subtraction on a horizontal or vertical number line diagram."
+    },
+    "reporting_category": "The Number System",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Properties of operations with rational numbers",
+            "How to represent numbers on a number line",
+            "The meaning of positive and negative numbers",
+            "How to use absolute value in computations"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Addition and subtraction can be represented on number lines",
+            "The relationship between addition and subtraction of rational numbers",
+            "How absolute value relates to operations",
+            "Why rules for operations with signed numbers work"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Add and subtract rational numbers",
+            "Use number lines to model operations",
+            "Apply properties of operations",
+            "Solve real-world problems with rational numbers"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "rational numbers",
+        "addition",
+        "subtraction",
+        "number line",
+        "positive numbers",
+        "negative numbers",
+        "absolute value",
+        "operations",
+        "real-world applications",
+        "properties"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "The Number System",
+    "standard": {
+      "id": "7.NS.2",
+      "type": "Grade-Specific",
+      "description": "Apply and extend previous understandings of multiplication and division and of fractions to multiply and divide rational numbers."
+    },
+    "reporting_category": "The Number System",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Rules for multiplying and dividing signed numbers",
+            "Properties of operations with rational numbers",
+            "How to convert between fractions and decimals",
+            "The meaning of rational numbers"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why the rules for signs in multiplication work",
+            "The relationship between multiplication and division of rational numbers",
+            "How properties of operations apply to rational numbers",
+            "The connection between fractions and terminating/repeating decimals"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Multiply and divide rational numbers",
+            "Convert between different forms of rational numbers",
+            "Apply properties of operations",
+            "Solve real-world problems involving rational number operations"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "rational numbers",
+        "multiplication",
+        "division",
+        "signed numbers",
+        "fractions",
+        "decimals",
+        "properties",
+        "operations",
+        "real-world applications",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.1",
+      "type": "Grade-Specific",
+      "description": "Compute unit rates associated with ratios of fractions, including ratios of lengths, areas and other quantities measured in like or different units."
+    },
+    "reporting_category": "Ratios and Proportional Relationships",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "The meaning of ratio language",
+            "The meaning of unit rate",
+            "How to compute unit rate when given two whole number values",
+            "How to convert measurement units",
+            "How to multiply fractions",
+            "How to divide fractions"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "A rate is a ratio that compares, by division, the amount one quantity changes as another quantity changes",
+            "The concept of a unit rate a/b associated with a ratio a:b with b\u2260 0",
+            "Various units of measurement and the connections between them",
+            "How to reason abstractly and quantitatively",
+            "How to model with mathematics",
+            "How to attend to precision"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Use a four-function calculator or standard algorithm to compute unit rates",
+            "Set up and solve ratios to include complex fractions",
+            "Determine when it is appropriate to use unit rate and understand when it has limitations",
+            "Solve real-world problems involving unit rates and ratios with fractions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "unit rates",
+        "ratios",
+        "fractions",
+        "measurement",
+        "division",
+        "proportional relationships",
+        "quantities",
+        "computation",
+        "real-world applications",
+        "problem solving"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2a",
+      "type": "Grade-Specific",
+      "description": "Recognize and represent proportional relationships between quantities: Decide whether two quantities are in a proportional relationship, e.g., by testing for equivalent ratios in a table or graphing on a coordinate plane and observing whether the graph is a straight line through the origin."
+    },
+    "reporting_category": "Ratios and Proportional Relationships",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to reason about tables of equivalent ratios",
+            "How to make tables of equivalent ratios",
+            "How to model ratio understanding using tape diagrams, double number lines, or equations",
+            "How to define proportional reasoning",
+            "How to analyze simple drawings that indicate relative size of quantities",
+            "How to plot rational numbers in the coordinate plane"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "How to use proportional reasoning to solve problems involving scale drawings and missing values",
+            "A proportional relationship when graphed on a coordinate grid passes through the origin and contains a constant rate or proportionality",
+            "Relationships between tables, graphs, and equations",
+            "How to model with mathematics",
+            "How to use appropriate tools strategically"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Use a four-function calculator or standard algorithm to determine if two quantities are proportional",
+            "Determine proportionality between two quantities that are not whole numbers",
+            "Construct graphs or tables to determine if quantities are proportional",
+            "Solve problems beyond those that involve whole-number values"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "proportional relationships",
+        "equivalent ratios",
+        "tables",
+        "graphs",
+        "coordinate plane",
+        "origin",
+        "straight line",
+        "quantities",
+        "proportional reasoning",
+        "mathematical modeling"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2b",
+      "type": "Grade-Specific",
+      "description": "Recognize and represent proportional relationships between quantities: Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships."
+    },
+    "reporting_category": "Ratios and Proportional Relationships",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to make a table of equivalent ratios",
+            "How to model ratio understanding using tape diagrams, double number lines, or equations",
+            "How to solve problems of unit pricing and constant speed",
+            "How to solve simple equations",
+            "How to evaluate expressions",
+            "Understanding of ratios and unit rates from sixth grade"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "How to use proportional reasoning to solve problems involving scale drawings and missing values",
+            "Relationships between tables, graphs, and equations",
+            "How to reason abstractly and quantitatively",
+            "How to use appropriate tools strategically",
+            "How to look for and express regularity in repeated reasoning"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Identify the unit rate given any of the various forms of proportional relationships",
+            "Create tables of values, graphs, and equations to describe proportional situations",
+            "Compare proportional relationships given in different forms",
+            "Determine if situations represent proportional relationships"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "constant of proportionality",
+        "unit rate",
+        "proportional relationships",
+        "tables",
+        "graphs",
+        "equations",
+        "diagrams",
+        "verbal descriptions",
+        "mathematical modeling",
+        "problem solving"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2c",
+      "type": "Grade-Specific",
+      "description": "Recognize and represent proportional relationships between quantities: Represent proportional relationships by equations."
+    },
+    "reporting_category": "Ratios and Proportional Relationships",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to use ratio language",
+            "How to identify equivalent expressions",
+            "How to understand dependent and independent variable relationships",
+            "Understanding of ratios and unit rates from previous grade levels"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "The relationships and connections between graphs, tables, equations, and verbal descriptions",
+            "How to represent situations in multiple ways",
+            "How to reason abstractly and quantitatively",
+            "How to look for and express regularity in repeated reasoning"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Write equations representing proportional relationships",
+            "Solve equations involving proportions",
+            "Apply proportional relationships to real-world contexts",
+            "Convert between different representations of proportional relationships"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "proportional relationships",
+        "equations",
+        "expressions",
+        "variables",
+        "ratio language",
+        "mathematical modeling",
+        "real-world applications",
+        "multiple representations",
+        "problem solving",
+        "algebraic thinking"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2d",
+      "type": "Grade-Specific",
+      "description": "Recognize and represent proportional relationships between quantities: Explain what a point (x, y) on the graph of a proportional relationship means in terms of the situation, with special attention to the points (0, 0) and (1, r) where r is the unit rate."
+    },
+    "reporting_category": "Ratios and Proportional Relationships",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to plot ordered pairs on a coordinate plane",
+            "Understanding of the concept of unit rate",
+            "How to interpret points on a graph",
+            "How to identify the origin and other key points on a coordinate plane"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "The significance of the origin (0, 0) in proportional relationships",
+            "Why the point (1, r) represents the unit rate",
+            "How to connect graphical representations to real-world contexts",
+            "The relationship between coordinates and quantities in context"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Interpret points on the graph of a proportional relationship in context",
+            "Explain the meaning of specific points, including (0, 0) and (1, r)",
+            "Connect graphical representations to real-world situations",
+            "Use graphs to solve proportional relationship problems"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "proportional relationships",
+        "coordinate plane",
+        "ordered pairs",
+        "unit rate",
+        "origin",
+        "graphs",
+        "interpretation",
+        "real-world context",
+        "mathematical modeling",
+        "coordinate geometry"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "7.EE.4",
+      "type": "Grade-Specific",
+      "description": "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to write and solve equations and inequalities",
+            "Properties of operations and equality",
+            "How to represent real-world situations algebraically",
+            "The meaning of variables in context"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Variables can represent unknown quantities in real-world situations",
+            "Equations and inequalities can model real-world constraints",
+            "Different solution methods can be used for different problem types",
+            "How to interpret solutions in context"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Write equations and inequalities to represent problems",
+            "Solve multi-step equations and inequalities",
+            "Graph solutions on number lines",
+            "Check solutions for reasonableness in context"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "equations",
+        "inequalities",
+        "variables",
+        "problem solving",
+        "real-world applications",
+        "algebraic reasoning",
+        "solution methods",
+        "mathematical modeling",
+        "number lines",
+        "word problems"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "The Number System",
+    "standard": {
+      "id": "7.NS.3",
+      "type": "Grade-Specific",
+      "description": "Solve real-world and mathematical problems involving the four operations with rational numbers."
+    },
+    "reporting_category": "The Number System",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to add rational numbers",
+            "How to subtract rational numbers",
+            "How to multiply rational numbers",
+            "How to divide rational numbers",
+            "The properties of operations with rational numbers",
+            "The importance of fluency with rational number arithmetic"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use the order of operations to write and solve problems with rational numbers",
+            "How to reason abstractly and quantitatively with rational numbers",
+            "How to apply operations with rational numbers to real-world situations",
+            "The relationship between different forms of rational numbers (fractions, decimals, percents)",
+            "The importance of checking solutions for reasonableness"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Add rational numbers in real-world contexts",
+            "Subtract rational numbers in real-world contexts",
+            "Multiply rational numbers in real-world contexts",
+            "Divide rational numbers in real-world contexts",
+            "Apply properties of operations to solve multi-step problems",
+            "Convert between different forms of rational numbers as needed"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "rational numbers",
+        "operations",
+        "addition",
+        "subtraction",
+        "multiplication",
+        "division",
+        "real-world problems",
+        "mathematical problems",
+        "order of operations",
+        "properties of operations",
+        "fractions",
+        "decimals",
+        "integers",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.7",
+      "type": "Grade-Specific",
+      "description": "Develop a probability model and use it to find probabilities of events. Compare probabilities from a model to observed frequencies; if the agreement is not good, explain possible sources of the discrepancy."
+    },
+    "reporting_category": "Statistics and Probability",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Basic probability concepts",
+            "How to develop probability models",
+            "The difference between theoretical and experimental probability",
+            "Methods for collecting and organizing data"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Probability models can predict likely outcomes",
+            "Why theoretical and experimental probabilities might differ",
+            "How to evaluate the effectiveness of a probability model",
+            "The relationship between relative frequency and probability"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Develop and use probability models",
+            "Calculate theoretical probabilities",
+            "Compare predicted and observed frequencies",
+            "Explain discrepancies between models and observations"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "probability",
+        "probability models",
+        "theoretical probability",
+        "experimental probability",
+        "relative frequency",
+        "data analysis",
+        "statistical reasoning",
+        "predictions",
+        "observations",
+        "modeling"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Statistics and Probability",
+    "standard": {
+      "id": "7.SP.8",
+      "type": "Grade-Specific",
+      "description": "Find probabilities of compound events using organized lists, tables, tree diagrams, and simulation."
+    },
+    "reporting_category": "Statistics and Probability",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What compound events are",
+            "Different ways to organize probability outcomes",
+            "How to use tree diagrams and tables",
+            "Basic concepts of simulation"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "How to identify all possible outcomes of compound events",
+            "Why different organizational methods work",
+            "The relationship between theoretical and simulated probability",
+            "When to use different probability tools"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Create organized lists and tables for compound events",
+            "Construct and use tree diagrams",
+            "Design and conduct probability simulations",
+            "Calculate probabilities using various methods"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "compound events",
+        "probability",
+        "tree diagrams",
+        "organized lists",
+        "tables",
+        "simulation",
+        "outcomes",
+        "sample space",
+        "theoretical probability",
+        "experimental probability"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.3",
+      "type": "Grade-Specific",
+      "description": "Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and to express how many times as much one is than the other."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to write numbers in scientific notation",
+            "Powers of 10 and their properties",
+            "Place value concepts with very large and very small numbers",
+            "How to compare numbers using scientific notation"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Scientific notation is useful for expressing very large or very small quantities",
+            "How to interpret numbers written in scientific notation",
+            "The relationship between the power of 10 and the size of the number",
+            "How to compare magnitudes of numbers in scientific notation"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Express numbers in scientific notation",
+            "Compare quantities written in scientific notation",
+            "Estimate large and small quantities using powers of 10",
+            "Determine relative sizes of quantities in scientific notation"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "scientific notation",
+        "powers of 10",
+        "estimation",
+        "very large numbers",
+        "very small numbers",
+        "exponents",
+        "place value",
+        "comparison",
+        "magnitude",
+        "relative size"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.7",
+      "type": "Grade-Specific",
+      "description": "Solve linear equations in one variable. a. Give examples of linear equations in one variable with one solution, infinitely many solutions, or no solutions. Show which of these possibilities is the case by successively transforming the given equation into simpler forms, until an equivalent equation of the form x = a, a = a, or a = b results (where a and b are different numbers). b. Solve linear equations and inequalities with rational number coefficients, including those whose solutions require expanding expressions using the distributive property and collecting like terms."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Properties of equality and operations",
+            "The concept of equivalent equations",
+            "Different types of solution possibilities for linear equations",
+            "The distributive property and how to collect like terms",
+            "How to work with rational number coefficients",
+            "The meaning of variables and coefficients"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Why some equations have one solution, no solution, or infinitely many solutions",
+            "How transforming equations leads to equivalent forms",
+            "The relationship between equation forms and their solutions",
+            "When and how to apply the distributive property",
+            "How to determine the number of solutions an equation has"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Solve linear equations with rational coefficients",
+            "Transform equations to determine solution types",
+            "Apply the distributive property to expand expressions",
+            "Combine like terms to simplify expressions",
+            "Identify equations with one, none, or infinitely many solutions",
+            "Verify solutions through substitution"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "linear equations",
+        "one variable",
+        "rational coefficients",
+        "distributive property",
+        "like terms",
+        "equivalent equations",
+        "solution types",
+        "properties of equality",
+        "algebraic manipulation",
+        "equation solving"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "strand": "Expressions and Equations",
+    "standard": {
+      "id": "8.EE.8",
+      "type": "Grade-Specific",
+      "description": "Analyze and solve pairs of simultaneous linear equations. a. Understand that solutions to a system of two linear equations in two variables correspond to points of intersection of their graphs, because points of intersection satisfy both equations simultaneously. b. Solve systems of two linear equations in two variables algebraically, and estimate solutions by graphing the equations. Solve simple cases by inspection. c. Solve real-world and mathematical problems leading to two linear equations in two variables."
+    },
+    "reporting_category": "Expressions and Equations",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "What a system of linear equations represents",
+            "Methods for solving systems of equations",
+            "The relationship between graphs and solutions",
+            "How to interpret points of intersection",
+            "Different solution possibilities for systems",
+            "Real-world applications of systems"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Solutions to systems are points that satisfy both equations",
+            "The connection between algebraic and graphical solutions",
+            "Why some systems have one, no, or infinitely many solutions",
+            "How to choose appropriate solution methods",
+            "When to use systems to model real situations"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Graph pairs of linear equations",
+            "Find intersection points of linear equations",
+            "Solve systems using algebraic methods",
+            "Estimate solutions using graphs",
+            "Apply systems to solve real-world problems",
+            "Verify solutions satisfy both equations"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "systems of equations",
+        "linear equations",
+        "graphing",
+        "intersection points",
+        "algebraic methods",
+        "solution types",
+        "real-world applications",
+        "mathematical modeling",
+        "coordinate plane",
+        "simultaneous equations"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "8",
+    "strand": "Geometry",
+    "standard": {
+      "id": "8.G.1",
+      "type": "Grade-Specific",
+      "description": "Verify experimentally the properties of rotations, reflections, and translations: a. Lines are taken to lines, and line segments to line segments of the same length. b. Angles are taken to angles of the same measure. c. Parallel lines are taken to parallel lines."
+    },
+    "reporting_category": "Geometry",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "Properties of rotations, reflections, and translations",
+            "Characteristics of lines, line segments, and angles",
+            "The concept of parallel lines",
+            "How transformations affect geometric figures",
+            "Methods for measuring angles and lengths"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Transformations preserve the properties of geometric figures",
+            "How each type of transformation affects a figure",
+            "Why parallel lines remain parallel under transformations",
+            "The relationship between original and transformed figures",
+            "How to verify transformation properties experimentally"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Perform rotations, reflections, and translations",
+            "Verify that transformations preserve length and angle measures",
+            "Demonstrate that parallel lines remain parallel",
+            "Use appropriate tools to measure and compare figures",
+            "Explain how transformations affect geometric properties"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "transformations",
+        "rotations",
+        "reflections",
+        "translations",
+        "geometric properties",
+        "parallel lines",
+        "angle measure",
+        "line segments",
+        "geometric figures",
+        "congruence"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "4",
+    "strand": "Operations and Algebraic Thinking",
+    "standard": {
+      "id": "4.OA.2",
+      "type": "Grade-Specific",
+      "description": "Multiply or divide to solve word problems involving multiplicative comparison, e.g., by using drawings and equations with a symbol for the unknown number to represent the problem, distinguishing multiplicative comparison from additive comparison."
+    },
+    "reporting_category": "Operations and Algebraic Thinking",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "How to multiply and divide within 100",
+            "How to represent word problems using equations",
+            "The difference between multiplicative and additive comparison",
+            "How to use symbols to represent unknown quantities",
+            "Basic multiplication and division facts"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Multiplicative comparison involves comparing quantities using multiplication or division",
+            "The difference between multiplicative and additive comparison situations",
+            "How to interpret word problems to determine appropriate operations",
+            "The relationship between multiplication and division in word problems",
+            "How to use drawings and equations to represent problem situations"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Solve word problems involving multiplicative comparison",
+            "Use drawings to represent multiplicative situations",
+            "Write equations with variables for unknown values",
+            "Distinguish between multiplicative and additive comparison situations",
+            "Apply appropriate operations to solve comparison problems"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "multiplicative comparison",
+        "word problems",
+        "equations",
+        "unknown numbers",
+        "multiplication",
+        "division",
+        "drawings",
+        "symbols",
+        "additive comparison",
+        "problem solving"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "5.NF.5",
+      "type": "Grade-Specific",
+      "description": "Interpret multiplication as scaling (resizing), by: a. Comparing the size of a product to the size of one factor on the basis of the size of the other factor, without performing the indicated multiplication. b. Explaining why multiplying a given number by a fraction greater than 1 results in a product greater than the given number (recognizing multiplication by whole numbers greater than 1 as a familiar case); explaining why multiplying a given number by a fraction less than 1 results in a product smaller than the given number; and relating the principle of fraction equivalence a/b = (n \u00d7 a)/(n \u00d7 b) to the effect of multiplying a/b by 1."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "items": [
+            "The Identity Property of Multiplication",
+            "How to compare fractions to benchmarks 0, \u00bd, and 1",
+            "Multiplication is used for resizing (scaling)",
+            "Multiplication can produce an answer less than one or both factors",
+            "Properties of multiplication with whole numbers",
+            "The concept of fraction equivalence"
+          ]
+        },
+        "understanding": {
+          "items": [
+            "Multiplying by a fraction less than 1 will yield a product less than one of the factors",
+            "When multiplying by \u00bd, the product is half the value of that factor",
+            "The relationship between fraction multiplication and scaling",
+            "Why multiplying by a fraction greater than 1 increases the product",
+            "Why multiplying by a fraction less than 1 decreases the product",
+            "How fraction equivalence relates to multiplying by 1"
+          ]
+        },
+        "skills": {
+          "items": [
+            "Compare products to factors without performing multiplication",
+            "Predict the relative size of products based on the factors",
+            "Explain the effect of multiplying by fractions greater than or less than 1",
+            "Use patterns to reason about multiplication with fractions",
+            "Apply the principle of fraction equivalence",
+            "Justify predictions about product size using mathematical reasoning"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "multiplication",
+        "scaling",
+        "resizing",
+        "fractions",
+        "factors",
+        "products",
+        "comparison",
+        "equivalence",
+        "mathematical reasoning",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "5",
+    "strand": "Number and Operations - Fractions",
+    "standard": {
+      "id": "5.NF.71",
+      "type": "Grade-Specific",
+      "description": "Apply and extend previous understandings of division to divide unit fractions by whole numbers and whole numbers by unit fractions. a. Interpret division of a unit fraction by a non-zero whole number, and compute such quotients. For example, create a story context for (1/3) \u00f7 4, and use a visual fraction model to show the quotient. Use the relationship between multiplication and division to explain that (1/3) \u00f7 4 = 1/12 because (1/12) \u00d7 4 = 1/3. b. Interpret division of a whole number by a unit fraction, and compute such quotients. For example, create a story context for 4 \u00f7 (1/5), and use a visual fraction model to show the quotient. Use the relationship between multiplication and division to explain that 4 \u00f7 (1/5) = 20 because 20 \u00d7 (1/5) = 4. c. Solve real world problems involving division of unit fractions by non-zero whole numbers and division of whole numbers by unit fractions, e.g., by using visual fraction models and equations to represent the problem."
+    },
+    "reporting_category": "Number and Operations - Fractions",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to divide whole numbers and what it means to divide using the partitioning and repeated subtraction models",
+            "Division is the inverse of multiplication",
+            "How to use visual models to divide whole numbers with and without remainders",
+            "How to contextualize division problems using whole numbers",
+            "Division is not a commutative operation",
+            "Unit fractions have a numerator of one and can be combined to create non-unit fractions"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Creating a visual model to represent problems helps give meaning to the problem and what is happening in the problem",
+            "The division model used to solve a problem depends on the context of the problem",
+            "The role of the dividend, divisor, and quotient",
+            "A fraction can be divided by a whole number and the result will be less than the original fraction because it was partitioned into pieces",
+            "A whole number can be divided by a fraction and the result will be greater than the original whole number",
+            "Various models can be used to illustrate given problems"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create visual models and divide unit fractions by whole numbers",
+            "Reason through division problems involving fractions and whole numbers",
+            "Interpret division of a unit fraction by a non-zero whole number and compute quotients",
+            "Create visual models to divide a whole number by a unit fraction",
+            "Create and solve word problems involving division of unit fractions by whole numbers and whole numbers by unit fractions",
+            "Use the relationship between multiplication and division to explain solutions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "division",
+        "unit fractions",
+        "whole numbers",
+        "visual models",
+        "multiplication",
+        "inverse operations",
+        "word problems",
+        "real-world applications",
+        "partitioning",
+        "quotients"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "The Number System",
+    "standard": {
+      "id": "6.NS.7",
+      "type": "Grade-Specific",
+      "description": "Understand ordering and absolute value of rational numbers. a. Interpret statements of inequality as statements about the relative position of two numbers on a number line diagram. For example, interpret \u20133 > \u20137 as a statement that \u20133 is located to the right of \u20137 on a number line oriented from left to right. b. Write, interpret, and explain statements of order for rational numbers in real-world contexts. For example, write \u20133\u00b0C > -7\u00b0C to express the fact that \u20133\u00b0C is warmer than -7\u00b0C. c. Understand the absolute value of a rational number as its distance from 0 on the number line; interpret absolute value as magnitude for a positive or negative quantity in a real-world situation. For example, for an account balance of \u201330 dollars, write |\u201330| = 30 to describe the size of the debt in dollars. d. Distinguish comparisons of absolute value from statements about order. For example, recognize that an account balance less than \u201330 dollars represents a debt greater than 30 dollars."
+    },
+    "reporting_category": "The Number System",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Numbers to the right of zero are positive on a number line diagram",
+            "Numbers to the left of zero are negative on a number line diagram",
+            "Relation symbols are <, >, \u2264, \u2265, and \u2260",
+            "Rational numbers may include whole numbers, integers, fractions, and decimals",
+            "Absolute value is the distance a number is from 0 on the number line",
+            "The symbol for absolute value is | |"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The further left a number is from zero, the more negative (smaller) it is",
+            "The further right a number is from zero, the more positive (larger) it is",
+            "When comparing any two numbers on a number line diagram, the number to the left is always smaller if the number line is oriented from left to right",
+            "Since absolute value refers to distance from zero, it is always represented by a positive number",
+            "Using a number line diagram as a tool for comparison",
+            "Absolute value may not be limited to integers"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Describe the relative position of two numbers on a number line when given an inequality",
+            "Interpret statements of inequality as statements about the relative position of two numbers on a number line diagram",
+            "Write, interpret, and explain statements of order for rational numbers in real-world contexts",
+            "Order rational numbers least to greatest or greatest to least",
+            "Find the absolute value of a rational number",
+            "Distinguish comparisons of absolute value from statements about order"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "rational numbers",
+        "absolute value",
+        "ordering",
+        "integers",
+        "fractions",
+        "decimals",
+        "number line",
+        "positive numbers",
+        "negative numbers",
+        "inequalities",
+        "real-world applications",
+        "magnitude",
+        "distance from zero",
+        "comparison"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "The Number System",
+    "standard": {
+      "id": "6.NS.9",
+      "type": "Grade-Specific",
+      "description": "Apply and extend previous understanding of addition and subtraction to add and subtract integers; represent addition and subtraction on a horizontal or vertical number line diagram. a. Understand that the absolute value of a number is its distance from zero and that since absolute value is a measure of distance, it always has a positive value. b. Understand p + q as the number located a distance |q| from p, in the positive or negative direction depending on whether q is positive or negative. Show that a number and its opposite have a sum of 0 (are additive inverses). Interpret sums of integers by describing real-world contexts. c. Understand subtraction of integers as adding the additive inverse, p \u2013 q = p + (-q). Show that the distance between two integers on the number line is the absolute value of their difference, and apply this principle in real-world contexts. d. Apply properties of operations to add and subtract integers."
+    },
+    "reporting_category": "The Number System",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The absolute value of a number is its distance from zero",
+            "Since absolute value is a measure of distance, it always has a positive value",
+            "The difference between the absolute value of a number and its opposite",
+            "Opposites are additive inverses",
+            "The associative property of addition: (a + b) + c = a + (b + c)",
+            "The commutative property of addition: a + b = b + a",
+            "The additive identity property of zero: a + 0 = 0 + a = a",
+            "The distributive property of multiplication over addition and subtraction"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to find absolute value of a number vs. finding its opposite",
+            "A positive integer added to a positive integer results in a positive integer",
+            "A negative integer added to a negative integer results in a negative integer",
+            "Applying appropriate properties to add or subtract integers",
+            "The relationship between addition and subtraction with integers",
+            "How to use a number line to represent addition and subtraction of integers"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a horizontal or vertical number line to add p + q, regardless of whether either number is positive or negative",
+            "Use a horizontal or vertical number line to show that a number and its opposite have a sum of zero",
+            "Interpret sums of integers in real-world contexts",
+            "Add or subtract integers with or without a number line",
+            "Add or subtract integers with or without a four-function calculator",
+            "Demonstrate understanding of adding and subtracting by recognizing equivalent expressions"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "integers",
+        "addition",
+        "subtraction",
+        "additive inverse",
+        "opposite numbers",
+        "number line",
+        "absolute value",
+        "distance",
+        "real-world context",
+        "properties of operations",
+        "positive numbers",
+        "negative numbers",
+        "zero"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "6.RP.21",
+      "type": "Grade-Specific",
+      "description": "Understand the concept of a unit rate a/b associated with a ratio a:b with b\u22600, and use rate language in the context of a ratio relationship. For example, 'This recipe has a ratio of 3 cups of flour to 4 cups of sugar, so there is 3/4 cup of flour for each cup of sugar.' 'We paid $75 for 15 hamburgers, which is a rate of $5 per hamburger.'"
+    },
+    "reporting_category": "Ratios and Proportional Relationships",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A rate indicates, for a proportional relationship between two quantities, how many units of one quantity there are for every one unit of the second quantity",
+            "A unit rate is a ratio, a:b, where b = 1",
+            "The unit price is the cost per unit",
+            "Dividing the numerator by the denominator will find the unit rate"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Equivalent fractions as equivalent ratios",
+            "Interpreting a fraction as division of the numerator by the denominator",
+            "Descriptions of a unit rate include words such as per, in, and for every"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Convert a given ratio to a unit rate",
+            "Use ratio and rate reasoning to solve real-world and mathematical problems",
+            "Compare unit rates",
+            "Calculate and justify the best buy using unit price",
+            "Use a four-function calculator for computations"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "unit rate",
+        "ratio",
+        "proportional relationships",
+        "fractions",
+        "division",
+        "real-world applications",
+        "rate language",
+        "unit price",
+        "comparison",
+        "mathematical reasoning"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "6",
+    "strand": "Statistics and Probability",
+    "standard": {
+      "id": "6.SP.5",
+      "type": "Grade-Specific",
+      "description": "Summarize numerical data sets in relation to their context, such as by: a. Reporting the number of observations. b. Describing the nature of the attribute under investigation, including how it was measured and its units of measurement. c. Giving quantitative measures of center (median and/or mean) and variability (interquartile range), as well as describing any overall pattern and any striking deviations from the overall pattern with reference to the context in which the data were gathered. d. Relating the choice of measures of center and variability to the shape of the data distribution and the context in which the data were gathered."
+    },
+    "reporting_category": "Statistics and Probability",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The definition and purpose of measures of center (mean, median, mode)",
+            "The definition and purpose of measures of variability (range, interquartile range, mean absolute deviation)",
+            "How to calculate various statistical measures",
+            "The importance of units of measurement in data collection",
+            "How data distribution shapes can be described"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between data distribution shape and appropriate measures of center",
+            "How context influences the choice of statistical measures",
+            "The significance of sample size in data analysis",
+            "How to identify and interpret patterns and deviations in data",
+            "The importance of considering both center and spread in data analysis"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Calculate and interpret measures of center and variability",
+            "Report the number of observations in a dataset",
+            "Describe attributes and their units of measurement",
+            "Analyze patterns and deviations in data distributions",
+            "Select appropriate statistical measures based on data context and distribution"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "data analysis",
+        "statistical measures",
+        "measures of center",
+        "measures of variability",
+        "data distribution",
+        "mean",
+        "median",
+        "mode",
+        "range",
+        "interquartile range",
+        "observations",
+        "attributes",
+        "units of measurement",
+        "patterns",
+        "deviations",
+        "data context"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "The Number System",
+    "standard": {
+      "id": "7.NS.31",
+      "type": "Grade-Specific",
+      "description": "Solve real-world and mathematical problems involving the four operations with rational numbers."
+    },
+    "reporting_category": "The Number System",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to add rational numbers",
+            "How to subtract rational numbers",
+            "How to multiply rational numbers",
+            "How to divide rational numbers",
+            "The properties of operations with rational numbers",
+            "The importance of fluency with rational number arithmetic"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use the order of operations to write and solve problems with rational numbers",
+            "How to reason abstractly and quantitatively with rational numbers",
+            "How to apply operations with rational numbers to real-world situations",
+            "The relationship between different forms of rational numbers (fractions, decimals, percents)",
+            "The importance of checking solutions for reasonableness"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Add rational numbers in real-world contexts",
+            "Subtract rational numbers in real-world contexts",
+            "Multiply rational numbers in real-world contexts",
+            "Divide rational numbers in real-world contexts",
+            "Apply properties of operations to solve multi-step problems",
+            "Convert between different forms of rational numbers as needed"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "rational numbers",
+        "operations",
+        "addition",
+        "subtraction",
+        "multiplication",
+        "division",
+        "real-world problems",
+        "mathematical problems",
+        "order of operations",
+        "properties of operations",
+        "fractions",
+        "decimals",
+        "integers",
+        "number sense"
+      ]
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "7",
+    "strand": "Ratios and Proportional Relationships",
+    "standard": {
+      "id": "7.RP.2",
+      "type": "Grade-Specific",
+      "description": "Recognize and represent proportional relationships between quantities. a. Decide whether two quantities are in a proportional relationship, e.g., by testing for equivalent ratios in a table or graphing on a coordinate plane and observing whether the graph is a straight line through the origin. b. Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships. c. Represent proportional relationships by equations. d. Explain what a point (x, y) on the graph of a proportional relationship means in terms of the situation, with special attention to the points (0, 0) and (1, r) where r is the unit rate."
+    },
+    "reporting_category": "Ratios and Proportional Relationships",
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to make and reason about tables of equivalent ratios",
+            "How to plot points in the coordinate plane",
+            "How to identify and use unit rates",
+            "How to write and solve equations",
+            "The meaning of proportional relationships",
+            "How to model relationships using various representations"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The characteristics of proportional relationships in tables, graphs, and equations",
+            "The significance of (0,0) and (1,r) in graphs of proportional relationships",
+            "How to identify and interpret the constant of proportionality",
+            "The connections between different representations of proportional relationships",
+            "How context influences the interpretation of points on a graph"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine if two quantities are proportional using tables, graphs, or equations",
+            "Find and interpret the constant of proportionality in various representations",
+            "Write equations to represent proportional relationships",
+            "Explain the meaning of points on graphs in context",
+            "Convert between different representations of proportional relationships",
+            "Solve real-world problems involving proportional relationships"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "terms": [
+        "proportional relationships",
+        "ratios",
+        "unit rate",
+        "constant of proportionality",
+        "equivalent ratios",
+        "coordinate plane",
+        "graphs",
+        "tables",
+        "equations",
+        "origin",
+        "mathematical modeling",
+        "real-world applications",
+        "linear relationships",
+        "multiple representations"
+      ]
+    }
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to recite numbers 1 to 30 in the correct order."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Numbers must be counted in the correct order.",
+            "● The patterns in counting (for example, ones are repeated each time a new decade or ten is reached as in 21, 22, 23…31, 32, 33…)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Rote counting of numbers in the correct order to 100 (only verbal counting).",
+            "● Rote counting of numbers by tens (beginning at decade numbers as in 10, 20, 30, 40, 50, 60, 70…)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to recite numbers 1 to 30 in the correct order.",
+            "● The sequential aspect of counting (i.e. 1 comes before 2, 2 comes before 3, etc.)"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Numbers must be counted in the correct order.",
+            "● The counting sequence is the same, no matter where you begin counting.",
+            "● The patterns in counting (for example, ones are repeated each time a new decade or ten is reached as in 21, 22, 23…31, 32, 33…)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Start rote counting at any number between 1 and 100 and continue to 100 (only verbal counting)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to recite numbers 1 to 30 in the correct order.",
+            "● How to recognize, name, and attempt writing numerals 0- 10.",
+            "● One to one correspondence.",
+            "● The last number said in the counting sequence is the number of objects."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Numbers must be counted in the correct order.",
+            "● When counting a set of objects, begin with the number 1.",
+            "● A numeral is a symbol for a quantity.",
+            "● 0 represents none."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Write a numeral (0-20) to match a set of counted objects.",
+            "● Count out a number of objects (0-20) to match a numeral."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.4a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to recite numbers 1 to 30 in the correct order.",
+            "● How to count a group of 10 arranged objects and 7 scattered objects."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Numbers must be counted in the correct order.",
+            "● When counting a set of objects, begin with the number 1.",
+            "● One to one correspondence (each object represents a number name).",
+            "● Objects are only counted once."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Count a set of objects.",
+            "● Keep track of which objects have been counted and which objects have not.",
+            "● Point to each object (one at a time) and say the counting sequence."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.4b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to recite numbers 1 to 30 in the correct order.",
+            "● The sequential aspect of counting (i.e. 1 comes before 2, 2 comes before 3, etc.)",
+            "● How to count a group of 10 arranged objects and 7 scattered objects."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Numbers must be counted in the correct order.",
+            "● When counting a set of objects, begin with the number 1.",
+            "● One to one correspondence (each object represents a number name).",
+            "● Objects are only counted once.",
+            "● The group of objects is the same quantity, no matter the arrangement."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Count a set of objects.",
+            "● Keep track of which objects have been counted and which objects have not.",
+            "● Point to each object (one at a time) and say the counting sequence.",
+            "● Answer the question, \"How many are there?,\" knowing that the last number counted is the answer."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.4c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to recite numbers 1 to 30 in the correct order.",
+            "● How to count a group of 10 arranged objects and 7 scattered objects."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Numbers must be counted in the correct order.",
+            "● When counting a set of objects, begin with the number 1.",
+            "● One to one correspondence (each object represents a number name).",
+            "● Objects are only counted once.",
+            "● The group of objects is the same quantity no matter the arrangement.",
+            "● The number name 15 is larger than the number name 14 and so forth."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Count a set of objects.",
+            "● Keep track of which objects have been counted and which objects have not.",
+            "● Point to each object (one at a time) and say the counting sequence.",
+            "● Answer the question, \"How many are there?,\" knowing that the last number counted is the answer.",
+            "● Answer the question, \"How many would there be if we added one more object?\""
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to recite numbers 1 to 30 in the correct order.",
+            "● How to count a group of 10 arranged objects and 7 scattered objects.",
+            "● One to one correspondence (each object represents a number name).",
+            "● When counting a set of objects, begin with the number 1."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Numbers must be counted in the correct order.",
+            "● Objects are only counted once.",
+            "● The group of objects is the same quantity, no matter the arrangement."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Count a set of objects (up to 20), and tell how many.",
+            "● Given a number, count out that number of objects (up to 20).",
+            "● Keep track of which objects have been counted and which objects have not.",
+            "● Point to each object (one at a time) and say the counting sequence.",
+            "● Answer the question, \"How many are there?,\" knowing that the last number counted is the answer.",
+            "● Explain counting strategy."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● The sequential aspect of counting (i.e. 1 comes before 2, 2 comes before 3, etc.)",
+            "● Comparative language such as more than, less than, equal to, and different to compare objects."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● The term \"greater than\" means more than (larger quantity).",
+            "● The term \"less than\" means fewer (smaller quantity).",
+            "● The term \"equal\" means the quantity is the same."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Compare two groups of objects (with up to 10 objects in each group).",
+            "● Use matching strategies (e.g., students line up objects with one characteristic [squares] to another row of objects with a different characteristic [circles]. Students can see which objects do not have a partner). Use language greater than, less than, or equal to, after determining the comparison.",
+            "● Explain counting strategy."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "CC",
+    "reporting_category": "CC",
+    "standard": {
+      "id": "K.CC.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● The sequential aspect of counting (i.e. 1 comes before 2, 2 comes before 3, etc.)",
+            "● Comparative language such as more than, less than, equal to, and different to compare objects.",
+            "● Significance of each numeral through multiple experiences with tools, such as ten frames, rekenreks, counters, etc."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● The term \"greater than\" means more than (a larger quantity).",
+            "● The term \"less than\" means fewer (a smaller quantity).",
+            "● The term \"equal\" means the quantity is the same.",
+            "● A numeral is a symbol for a quantity of objects; a representation of a particular quantity."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Compare two numbers (only seeing the numeral) by using the language \"greater than, less than, or equal to.\""
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Operations and Algebraic Thinking",
+    "reporting_category": "Operations and Algebraic Thinking",
+    "standard": {
+      "id": "K.OA.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Rapid recognition of numbers to 5 on their fingers.",
+            "● When counting, to say the number names in order.",
+            "● Each object represents one number name (one to one correspondence).",
+            "● When counting a number of objects, the last number name tells the number of objects counted."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● There are multiple ways to solve addition and subtraction problems.",
+            "● How to represent addition and subtraction number sentences.",
+            "● The equal sign can mean \"makes\" or \"results in,\" but always means \"is the same number as\".",
+            "● Addition means to add to or put together, and is noted with a \"+\" symbol.",
+            "● Subtraction means to take from or take apart, and is noted with a \"-\" symbol."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Act out addition and subtraction situations given by the teacher.",
+            "● Model with mathematics by drawing (with no importance to detail of the pictures).",
+            "● Picture mental images (dot patterns, pictures of objects, ten frames) of number quantities (also known as subitization).",
+            "● Add to, with the result unknown (A + B = ?).",
+            "● Take from, with the result unknown (C - B = ?).",
+            "● Put together/take apart with total unknown (A + B = ?) and both addends unknown (C = ? + ?)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Operations and Algebraic Thinking",
+    "reporting_category": "Operations and Algebraic Thinking",
+    "standard": {
+      "id": "K.OA.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Rapid recognition of numbers to 10 on their fingers.",
+            "● When counting, to say the number names in order, each object represents one number name (one to one correspondence).",
+            "● When counting a number of objects, the last number name tells the number of objects counted."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● The equal sign can mean \"makes\" or \"results in\", but always means \"is the same number as.\"",
+            "● The plus sign (+) means to \"put together\" or \"join.\"",
+            "● A whole can be separated into two or more parts.",
+            "● A pair, in this standard, means two numbers.",
+            "● How to represent the decomposition of number partners into an equation (e.g., 5 = 2 + 3 and 5 = 4 + 1)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Break apart a number to find all of its pairs or partners using various objects or tools (e.g., ten-frames, ten wands, rekenreks, dot patterns, double sided counters, etc.).",
+            "● Model with mathematics.",
+            "● Reason abstractly and quantitatively.",
+            "● Record decomposition through drawings or an equation."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Operations and Algebraic Thinking",
+    "reporting_category": "Operations and Algebraic Thinking",
+    "standard": {
+      "id": "K.OA.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Rapid recognition of numbers to 10 on their fingers.",
+            "● When counting, say the number names in order.",
+            "● Each object represents one number name (one to one correspondence).",
+            "● When counting a number of objects, the last number name tells the number of objects counted."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● The equal sign can mean \"makes\" or \"results in,\" but always means \"is the same number as.\"",
+            "● The plus sign (+) means \"put together\" or \"join.\"",
+            "● Two parts (number partners) combine to make a whole (the number 10).",
+            "● How to represent the composition of number partners into an equation to represent 10 as the whole (e.g., 5 + ? = 10, 10 = 2 + ?)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Make 10, when given a number 1-9, using various objects or tools (e.g., ten frames, ten wands, rekenreks, dot patterns, double sided counters).",
+            "● Model with mathematics.",
+            "● Reason abstractly and quantitatively.",
+            "● Record method for making 10 through drawings or an equation."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Operations and Algebraic Thinking",
+    "reporting_category": "Operations and Algebraic Thinking",
+    "standard": {
+      "id": "K.OA.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Rapid recognition of numbers to 5 on their fingers.",
+            "● When counting, to say the number names in order.",
+            "● Each object represents one number name (one to one correspondence).",
+            "● When counting a number of objects, the last number name tells the number of objects counted.",
+            "● Addition means to add to or put together (noted by a \"+\" sign).",
+            "● Subtraction means to take from or take apart (noted by a \"-\" sign).",
+            "● The equal sign can mean \"makes\" or \"results in,\" but always means \"is the same number as.\""
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● To use visual images or representations of numbers (learned through dot patterns) to add or subtract, also known as subitization.",
+            "● That numbers can be added in any order (commutative property), and this is a strategy for solving facts, such as 1 + 4 quicker by switching the addends to only have to count up 1."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Quickly add and subtract up to 5.",
+            "● Use strategies such as counting on, counting back, fingers, mental representations, etc., to solve problems."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Number and Operations in Base Ten",
+    "reporting_category": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "K.NBT.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● The counting sequence.",
+            "● One to one correspondence.",
+            "● How to write and read the numbers 11 to 19."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● The numbers 11 to 19 are created by using a 10 and then adding ones. Numbers can be \"put together\" (composed) or \"broken apart\" (decomposed).",
+            "● The digit in the tens place describes the number of tens, and the number in the ones place describes the number of ones."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Model with mathematics by using tools such as a ten-frame, drawings, or rekenreks to compose numbers 11 to 19.",
+            "● Describe that a ten frame can contain only 10 ones and there will be some leftover when modeling counting numbers 11 to 19.",
+            "● Write an addition equation to match the model of tens and ones.",
+            "● Count on from 10 (For example, when modeling the number 14 on a ten frame, the student would count \"10, 11, 12, 13, 14,\" instead of beginning with 1.)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Using Probability to Make Decisions",
+    "reporting_category": "Measurement and Data",
+    "standard": {
+      "id": "K.MD.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Vocabulary such as small, big, short, tall, empty, full, heavy, and light.",
+            "● Objects can be measured for different purposes."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● \"Length\" is the term used to measure how long an object is.",
+            "● \"Weight\" is the term used to measure how heavy an object is.",
+            "● An object's weight and length can be described.",
+            "● Length and weight are relative to other objects."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Use words to describe an object by stating if it is short, long, heavy, light, etc.",
+            "● Know how to determine an object's weight or length using nonstandard units of measurement (balance scale, connecting cubes, paper clips, etc.)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Using Probability to Make Decisions",
+    "reporting_category": "Measurement and Data",
+    "standard": {
+      "id": "K.MD.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Terms bigger, longer, taller, heavier, same weight, same amount and be able to use them appropriately.",
+            "● How to use nonstandard units of measurement.",
+            "● Length is the term used to measure how long an object is.",
+            "● Weight is the term used to measure how heavy an object is.",
+            "● An object's weight and length can be described.",
+            "● Length and weight are relative to other objects."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● The terms shorter/taller are used for comparing height.",
+            "● The terms heavier/lighter are used for comparing weight.",
+            "● When placing objects next to one another, they must be lined up evenly."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Measure objects by placing them next to one another.",
+            "● Use words to compare the height of two objects.",
+            "● Use words to compare the weight of two objects.",
+            "● Model with mathematics by using nonstandard units of measurement (balance scale, connecting cubes, paper clips, etc.)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Using Probability to Make Decisions",
+    "reporting_category": "Measurement and Data",
+    "standard": {
+      "id": "K.MD.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● How to count objects 1 to 10.",
+            "● How to compare and contrast objects by looking at their attributes.",
+            "● One to one correspondence.",
+            "● The last number said in the counting sequence is the number of objects in the group."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Objects can be sorted by different categories.",
+            "● Sorting means to separate objects and put them together with other objects that have something in common (color, shape, etc.).",
+            "● A category is a group of similar objects.",
+            "● The count is the same when they both have the same number of objects."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Sort objects into categories (e.g., color, size, length, height, weight, area, temperature).",
+            "● Count how many objects are in each category (the count will be limited to 10 objects in each category).",
+            "● Sort the categories based on their counts (for example, all categories that had a count of 5 objects will be placed together.)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "K.G.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Names of shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres).",
+            "● Shapes are found in different objects."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● A shape can change location and orientation without changing shape.",
+            "● Objects are located in relative positions.",
+            "● No matter the position of the object, the object is still the same.",
+            "● Objects around us are three-dimensional shapes, and these shapes have a mathematical term (e.g., a ball should be called a sphere)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Describe everyday objects by telling the name of their shape.",
+            "● Describe non-examples of shapes.",
+            "● Use terms such as \"in front of\" to describe the location of an object in relation to another; use prepositions appropriately to describe objects (e.g., the ball is in front of me)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "K.G.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Names of shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres).",
+            "● Shapes are found in different objects.",
+            "● How to describe everyday objects by telling the name of their shapes.",
+            "● How to describe non-examples of shapes.",
+            "● How to give attributes of each shape."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● A shape can change location, size, color, and orientation without changing shape (non-defining attributes).",
+            "● No matter the position of the object, the object is still the same.",
+            "● Objects around us are three-dimensional shapes, and these shapes have a mathematical term (e.g., a ball should be called a sphere)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Name shapes when turned in various directions (e.g., a triangle is a triangle, even when turned upside down).",
+            "● Name a shape of various sizes (e.g., the shape is a triangle, even though it is larger than another triangle)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "K.G.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Names of shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres).",
+            "● Shapes are found in different objects.",
+            "● How to describe everyday objects by telling the name of their shapes.",
+            "● How to describe non-examples of shapes.",
+            "● How to give attributes (defining and non-defining) of each shape."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Objects around us are three-dimensional shapes, and these shapes have a mathematical term (e.g., a ball should be called a sphere).",
+            "● Three-dimensional shapes are solid figures composed of two-dimensional shapes (faces) and have volume.",
+            "● Two-dimensional shapes are flat."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Determine whether a shape (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres) is two- or three-dimensional."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "K.G.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Names of shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres).",
+            "● Shapes are found in different objects.",
+            "● How to describe everyday objects by telling the name of their shapes.",
+            "● How to describe non-examples of shapes.",
+            "● Attributes of each shape.",
+            "● How to determine whether a shape is two- or three-dimensional."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● Three-dimensional shapes are solid figures composed of two-dimensional shapes (faces) and have volume.",
+            "● Two-dimensional shapes are flat.",
+            "● Shapes have different parts that we can describe informally (corners) or formally with math language (vertices).",
+            "● Shapes are alike and different."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Compare two shapes (two- or three-dimensional) by describing their similarities (number of sides, vertices, etc.).",
+            "● Contrast two shapes (two- and three-dimensional) by describing their differences (number of sides, vertices, etc.).",
+            "● Analyze two- and three- dimensional shapes by description of their \"parts\" (e.g., this shape has no points)."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "K",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "K.G.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "● Name of shapes (squares, circles, triangles, rectangles, and hexagons).",
+            "● How to compose simple shapes.",
+            "● How to use materials, such as Popsicle sticks, play dough, blocks, pipe cleaners, and pattern blocks to create shapes."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "● A shape can change location and orientation without changing shape.",
+            "● Shapes can be reoriented by using flips, slides, and turns.",
+            "● Smaller shapes can be joined to create a new, larger shape."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "● Build larger shapes from using smaller shapes (e.g., pattern blocks).",
+            "● Name the new shape that is built from smaller shapes."
+          ]
+        }
+      }
+    }
+  }
+]

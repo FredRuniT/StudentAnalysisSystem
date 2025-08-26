@@ -1,0 +1,283 @@
+[
+  {
+    "subject": "Mathematics",
+    "grade": "2",
+    "domain": "Operations and Algebraic Thinking",
+    "reporting_category": "Operations and Algebraic Thinking",
+    "standard": {
+      "id": "2.OA.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Combine for addition.",
+            "Take away for subtraction.",
+            "Use properties of operations.",
+            "Use a hundreds chart.",
+            "Add within 100.",
+            "How to choose the method in which you will solve a problem.",
+            "Solve using the traditional algorithm.",
+            "Use vertical/place value addition.",
+            "Use horizontal addition.",
+            "Mentally find 10 more and 10 less."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The place value number system.",
+            "Adding tens is similar to adding ones.",
+            "Two-digit numbers can be broken apart using tens and ones and added in different ways.",
+            "Patterns on a hundreds chart.",
+            "Subtracting groups of tens is similar to subtracting numbers less than 10.",
+            "Ten ones can be regrouped for 1 ten.",
+            "One ten can be regrouped for 10 ones.",
+            "Sums and differences can be found using models, mental math or paper and pencil."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify and write numbers that are 10 more and 10 less than given numbers.",
+            "Mentally add a one-digit number to a two-digit number.",
+            "Use models and algorithms for addition and subtraction.",
+            "Use mental math to add a two-digit number to a two-digit number.",
+            "Find the missing part of numbers within 100 by \"counting on\" from the given part.",
+            "Regroup 1 ten as 10 ones when subtracting.",
+            "Regroup 10 ones as a ten."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "2",
+    "domain": "Number and Operations in Base Ten",
+    "reporting_category": "Number and Operations in Base Ten",
+    "standard": {
+      "id": "2.NBT.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Know there are 7 days in a week.",
+            "Know the names of the days of the week.",
+            "Identify the days of the week on a calendar.",
+            "Identify the number of weeks in each month.",
+            "Know the names of the months."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Not every month has the same number of weeks.",
+            "Not every month has the same number of days.",
+            "A week doesn't always begin on Sunday."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Answer recall questions about increments of time on a calendar.",
+            "Use a calendar to solve word problems."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "2",
+    "domain": "Using Probability to Make Decisions",
+    "reporting_category": "Measurement and Data",
+    "standard": {
+      "id": "2.MD.9"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Organize data."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A line plot can be used as a visual representation of the relative lengths of objects.",
+            "A table is one way to organize data.",
+            "The objects that are the longest are farthest right on the line plot.",
+            "The objects that are the shortest in length are the least value on the line plot.",
+            "How to organize a line plot."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "How to measure objects.",
+            "Make a line plot.",
+            "How to graph on a line plot."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "2",
+    "domain": "Using Probability to Make Decisions",
+    "reporting_category": "Measurement and Data",
+    "standard": {
+      "id": "2.MD.10"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Making graphs provides an opportunity to count, compare, add, subtract, sequence, and classify data.",
+            "Drawing a model to represent a situation.",
+            "Adding and subtracting."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Data can be organized in different ways.",
+            "The type of data can determine the best graph to be used to represent it.",
+            "Picture graphs and bar graphs make it easy to compare data.",
+            "A symbol represents the data.",
+            "Graphs can represent numerical data."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Represent a set of data in a picture graph and in a bar graph.",
+            "Draw and use pictographs to solve problems.",
+            "Solve simple addition and subtraction problems regarding the graph data.",
+            "Solve comparison problems regarding the graph data."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "2",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "2.G.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Know the names and faces of objects (e.g. rectangles, squares, trapezoids, triangles, half-circles, and quarter-circles).",
+            "Know the names of three-dimensional shapes (e.g., cubes, right rectangular prisms, circular cones, circular cylinders.)",
+            "Combine shapes to make new shapes.",
+            "Decompose shapes into other shapes.",
+            "Build and draw shapes."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between two- and three-dimensional shapes.",
+            "A shape can be identified by the number of sides, vertices, or angles.",
+            "Three-dimensional or solid figures have a length, width, and height."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": []
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "2",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "2.G.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Partition rectangles into equal squares.",
+            "Know rows horizontal.",
+            "Know columns vertical.",
+            "Partitioning rectangles and describing as halves, fourths, and quarters.",
+            "Counting."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "When you add rows and columns, you get a sum.",
+            "You can divide rectangles up into smaller equal shares.",
+            "You can partition in more parts than halves, fourths, and quarters.",
+            "Decomposing into equal shares.",
+            "The connection between geometry and measurement is finding the area of a rectangle."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Divide a rectangle into equal rows and columns, and count the total number of squares."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "2",
+    "domain": "Geometry",
+    "reporting_category": "Geometry",
+    "standard": {
+      "id": "2.G.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Know the concept of equal parts.",
+            "Know the meaning of half.",
+            "Decompose into equal shares makes smaller shares.",
+            "Model draw to make fractions that represent them."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The equal-sized parts have the same area but do not necessarily have the same shape.",
+            "Naming of equal parts of a whole using terminology mentioned in the standard (e.g., halves, thirds, half of, a third of)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Describe the terms: halves, thirds, half of, a third of, fourths, etc.",
+            "Identify \"equal shares.\"",
+            "Divide circles and rectangles into two, three, or four equal shares.",
+            "Demonstrate that equal shares of identical wholes do not need to have the same shape.",
+            "Partition shapes in equal shares that do and do not have the same shape."
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,561 @@
+{
+    "ADMIN": {
+        "Field Name": "Administration",
+        "Field Heading": "ADMIN",
+        "Field Description": "This field identifies the test administration period.",
+        "Field Acceptable Values": "Administration identifier (e.g., Fall 2024, Winter 2024, Spring 2024)"
+    },
+    "DIST_NUM": {
+        "Field Name": "District Number",
+        "Field Heading": "DIST_NUM",
+        "Field Description": "This field contains the district number.",
+        "Field Acceptable Values": "0–9999"
+    },
+    "DIST_NAME": {
+        "Field Name": "District Name",
+        "Field Heading": "DIST_NAME",
+        "Field Description": "This field contains the district name, associated to the district number.",
+        "Field Acceptable Values": "0–9, A–Z, space, quote, period, hyphen, comma, forward slash, parentheses, ampersand"
+    },
+    "SCHOOL_NUM": {
+        "Field Name": "School Number",
+        "Field Heading": "SCHOOL_NUM",
+        "Field Description": "This field contains the school number.",
+        "Field Acceptable Values": "0–999"
+    },
+    "SCHOOL_NAME": {
+        "Field Name": "School Name",
+        "Field Heading": "SCHOOL_NAME",
+        "Field Description": "This field contains the school name, associated to the school number.",
+        "Field Acceptable Values": "0–9, A–Z, space, quote, period, hyphen, comma, forward slash, parentheses, ampersand"
+    },
+    "SLNAME": {
+        "Field Name": "Student Last Name",
+        "Field Heading": "SLNAME",
+        "Field Description": "This field contains the student full legal last name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "SFNAME": {
+        "Field Name": "Student First Name",
+        "Field Heading": "SFNAME",
+        "Field Description": "This field contains the student full legal first name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "SMI": {
+        "Field Name": "Student Middle Initial",
+        "Field Heading": "SMI",
+        "Field Description": "This field contains the student middle initial.",
+        "Field Acceptable Values": "A–Z (all uppercase), space"
+    },
+    "DOB": {
+        "Field Name": "Student Date of Birth",
+        "Field Heading": "DOB",
+        "Field Description": "This field contains the date of birth of the student.",
+        "Field Acceptable Values": "MMDDYYYY (must be a valid date)"
+    },
+    "MSIS_ID": {
+        "Field Name": "Mississippi Student Information System ID",
+        "Field Heading": "MSIS_ID",
+        "Field Description": "A unique number assigned to a student by the Mississippi state system.",
+        "Field Acceptable Values": "0–9"
+    },
+    "DRC_STUDENTID": {
+        "Field Name": "Data Recognition Corporation Student ID",
+        "Field Heading": "DRC_STUDENTID",
+        "Field Description": "Unique identifier assigned by Data Recognition Corporation for test administration.",
+        "Field Acceptable Values": "0–9, A–Z"
+    },
+    "GRADE": {
+        "Field Name": "Grade",
+        "Field Heading": "GRADE",
+        "Field Description": "This field indicates the grade of the student.",
+        "Field Acceptable Values": "K = Kindergarten, 1 = Grade 1, 2 = Grade 2, 3 = Grade 3, 4 = Grade 4, 5 = Grade 5, 6 = Grade 6, 7 = Grade 7, 8 = Grade 8, 9 = Grade 9, 10 = Grade 10, 11 = Grade 11, 12 = Grade 12"
+    },
+    "GENDER": {
+        "Field Name": "Gender",
+        "Field Heading": "GENDER",
+        "Field Description": "This field indicates the gender of the student.",
+        "Field Acceptable Values": "F = Female, M = Male"
+    },
+    "ETHNIC": {
+        "Field Name": "Ethnicity",
+        "Field Heading": "ETHNIC",
+        "Field Description": "This field identifies the ethnicity of the student.",
+        "Field Acceptable Values": "H = Hispanic, I = American Indian or Alaska Native, A = Asian, B = Black or African American, P = Native Hawaiian or other Pacific Islander, W = White, M = Multiple, Blank = Not Indicated"
+    },
+    "DISABILITY": {
+        "Field Name": "Disability",
+        "Field Heading": "DISABILITY",
+        "Field Description": "This field indicates whether the student has a disability and, if so, what that disability is.",
+        "Field Acceptable Values": "1 = Autism, 2 = Deaf-Blindness, 3 = Development Delay, 4 = Emotional Disturbance, 5 = Hearing Impairment, 6 = Intellectual Disability, 7 = Multiple Disabilities, 8 = Orthopedic Impairment, 9 = Other Health Impairment, 10 = Specific Learning Disability, 11 = Speech or Language Impairment, 12 = Traumatic Brain Injury, 13 = Visual Impairment, 14 = Deafness, Blank = No Disability Indicated"
+    },
+    "IEP": {
+        "Field Name": "IEP",
+        "Field Heading": "IEP",
+        "Field Description": "This field indicates whether the student has an Individual Education Plan (IEP) and is receiving special education services.",
+        "Field Acceptable Values": "Y = Yes, N = No"
+    },
+    "504": {
+        "Field Name": "Section 504",
+        "Field Heading": "504",
+        "Field Description": "This field indicates whether the student is receiving services under Section 504.",
+        "Field Acceptable Values": "Y = Yes, N = No"
+    },
+    "LEP": {
+        "Field Name": "LEP Status",
+        "Field Heading": "LEP",
+        "Field Description": "An LEP Student is a Limited English Proficient student. This field indicates LEP status.",
+        "Field Acceptable Values": "N = Not LEP, Y = Current LEP, F = Former LEP"
+    },
+    "Filler_1": {
+        "Field Name": "Filler Field 1",
+        "Field Heading": "Filler_1",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "CONTENT_AREA": {
+        "Field Name": "Content Area",
+        "Field Heading": "CONTENT_AREA",
+        "Field Description": "This field contains the subject area in which the student was assessed.",
+        "Field Acceptable Values": "Mathematics, Reading, Language Usage, Science"
+    },
+    "SEASON": {
+        "Field Name": "Testing Season",
+        "Field Heading": "SEASON",
+        "Field Description": "This field identifies the testing season during which the assessment took place.",
+        "Field Acceptable Values": "Fall, Winter, Spring"
+    },
+    "DOCUMENT_ID": {
+        "Field Name": "Document ID",
+        "Field Heading": "DOCUMENT_ID",
+        "Field Description": "This field identifies the specific test document.",
+        "Field Acceptable Values": "0–9, A–Z, hyphen"
+    },
+    "FORM_ID": {
+        "Field Name": "Form ID",
+        "Field Heading": "FORM_ID",
+        "Field Description": "This field identifies the specific test form assigned to the student.",
+        "Field Acceptable Values": "0–9, A–Z"
+    },
+    "ATTEMPT": {
+        "Field Name": "Test Attempt",
+        "Field Heading": "ATTEMPT",
+        "Field Description": "This field indicates that the student attempted the test.",
+        "Field Acceptable Values": "Y = Yes (attempted), N = No (did not attempt)"
+    },
+    "RETEST": {
+        "Field Name": "Retest Indicator",
+        "Field Heading": "RETEST",
+        "Field Description": "This field indicates whether this is a retest.",
+        "Field Acceptable Values": "Y = Yes (retest), N = No (not a retest)"
+    },
+    "TEACHER_ID": {
+        "Field Name": "Teacher ID",
+        "Field Heading": "TEACHER_ID",
+        "Field Description": "State-designated Teacher identification number",
+        "Field Acceptable Values": "4–6 numeric characters (may contain leading zeros)"
+    },
+    "TLNAME": {
+        "Field Name": "Teacher Last Name",
+        "Field Heading": "TLNAME",
+        "Field Description": "This field contains the Teacher full legal last name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "TFNAME": {
+        "Field Name": "Teacher First Name",
+        "Field Heading": "TFNAME",
+        "Field Description": "This field contains the Teacher full legal first name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "MODE": {
+        "Field Name": "Test Mode",
+        "Field Heading": "MODE",
+        "Field Description": "This field indicates whether the student took the assessment online or using a paper/pencil form.",
+        "Field Acceptable Values": "1 = Online test, 2 = Paper/Pencil test"
+    },
+    "TS_55": {
+        "Field Name": "Time Stamp",
+        "Field Heading": "TS_55",
+        "Field Description": "Time stamp field for test administration tracking.",
+        "Field Acceptable Values": "Date/time format"
+    },
+    "Filler_2": {
+        "Field Name": "Filler Field 2",
+        "Field Heading": "Filler_2",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "ONLINE": {
+        "Field Name": "Online Test Indicator",
+        "Field Heading": "ONLINE",
+        "Field Description": "This field indicates if the test was taken online.",
+        "Field Acceptable Values": "Y = Yes, N = No"
+    },
+    "HR_55": {
+        "Field Name": "Hour Field",
+        "Field Heading": "HR_55",
+        "Field Description": "Hour field for time tracking.",
+        "Field Acceptable Values": "0–23"
+    },
+    "Filler_3": {
+        "Field Name": "Filler Field 3",
+        "Field Heading": "Filler_3",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "Filler_4": {
+        "Field Name": "Filler Field 4",
+        "Field Heading": "Filler_4",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "PAPER_TEST": {
+        "Field Name": "Paper Test Indicator",
+        "Field Heading": "PAPER_TEST",
+        "Field Description": "This field indicates if the test was taken on paper.",
+        "Field Acceptable Values": "Y = Yes, N = No"
+    },
+    "BRAILLE": {
+        "Field Name": "Braille Accommodation",
+        "Field Heading": "BRAILLE",
+        "Field Description": "This field indicates if Braille accommodation was used.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "LARGE_PRINT": {
+        "Field Name": "Large Print Accommodation",
+        "Field Heading": "LARGE_PRINT",
+        "Field Description": "This field indicates if Large Print accommodation was used.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "SCRIBE": {
+        "Field Name": "Scribe Accommodation",
+        "Field Heading": "SCRIBE",
+        "Field Description": "This field indicates if Scribe accommodation was used.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "Filler_5": {
+        "Field Name": "Filler Field 5",
+        "Field Heading": "Filler_5",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "Filler_6": {
+        "Field Name": "Filler Field 6",
+        "Field Heading": "Filler_6",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "TESTING_48": {
+        "Field Name": "Testing Accommodation 48",
+        "Field Heading": "TESTING_48",
+        "Field Description": "Supplemental aids accommodation.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "TESTING_20": {
+        "Field Name": "Testing Accommodation 20",
+        "Field Heading": "TESTING_20",
+        "Field Description": "Extra time accommodation - Cannot extend beyond the end of the instructional day.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "Filler_7": {
+        "Field Name": "Filler Field 7",
+        "Field Heading": "Filler_7",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "TESTING_25": {
+        "Field Name": "Testing Accommodation 25",
+        "Field Heading": "TESTING_25",
+        "Field Description": "Administer the test over consecutive days.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "Filler_8": {
+        "Field Name": "Filler Field 8",
+        "Field Heading": "Filler_8",
+        "Field Description": "Reserved field for system use.",
+        "Field Acceptable Values": "Various, Blank"
+    },
+    "TESTING_81": {
+        "Field Name": "Testing Accommodation 81",
+        "Field Heading": "TESTING_81",
+        "Field Description": "Bilingual Glossary accommodation.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "TESTING_93_99": {
+        "Field Name": "Testing Accommodations 93-99",
+        "Field Heading": "TESTING_93_99",
+        "Field Description": "Other allowable accommodations or accessibility features.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "INV_REAS": {
+        "Field Name": "Invalidation Reason Code",
+        "Field Heading": "INV_REAS",
+        "Field Description": "This field contains the code that represents the reason that a test was invalidated.",
+        "Field Acceptable Values": "1–11 = Various invalidation reasons, Blank = Test is valid"
+    },
+    "INV_DTC": {
+        "Field Name": "Invalidation Date/Time Code",
+        "Field Heading": "INV_DTC",
+        "Field Description": "This field contains date/time information related to test invalidation.",
+        "Field Acceptable Values": "Date/time format, Blank = Test is valid"
+    },
+    "INV_REAS_C": {
+        "Field Name": "Invalidation Reason Code as determined by Caveon",
+        "Field Heading": "INV_REAS_C",
+        "Field Description": "This field carries an indication on whether the student's test results are to be invalidated based on Caveon analysis.",
+        "Field Acceptable Values": "Y = Test is invalid, N = Test is valid (default), Blank = Waiting for analysis"
+    },
+    "D1OP": {
+        "Field Name": "Domain 1 Overall Performance",
+        "Field Heading": "D1OP",
+        "Field Description": "This field contains the overall performance score for Domain 1. For Mathematics: typically Operations and Algebraic Thinking. For Reading: typically Literature. For Science: typically Life Sciences.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated)"
+    },
+    "D1PP": {
+        "Field Name": "Domain 1 Performance Percentile",
+        "Field Heading": "D1PP",
+        "Field Description": "This field contains the performance percentile for Domain 1.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated)"
+    },
+    "D1PC": {
+        "Field Name": "Domain 1 Percent Correct",
+        "Field Heading": "D1PC",
+        "Field Description": "This field contains the percent correct for Domain 1.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated)"
+    },
+    "D2OP": {
+        "Field Name": "Domain 2 Overall Performance",
+        "Field Heading": "D2OP",
+        "Field Description": "This field contains the overall performance score for Domain 2. For Mathematics: typically Number Sense and Operations. For Reading: typically Informational Text. For Science: typically Physical Science.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated)"
+    },
+    "D2PP": {
+        "Field Name": "Domain 2 Performance Percentile",
+        "Field Heading": "D2PP",
+        "Field Description": "This field contains the performance percentile for Domain 2.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated)"
+    },
+    "D2PC": {
+        "Field Name": "Domain 2 Percent Correct",
+        "Field Heading": "D2PC",
+        "Field Description": "This field contains the percent correct for Domain 2.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated)"
+    },
+    "D3OP": {
+        "Field Name": "Domain 3 Overall Performance",
+        "Field Heading": "D3OP",
+        "Field Description": "This field contains the overall performance score for Domain 3. For Mathematics: typically Measurement and Data Analysis. For Reading: typically Vocabulary. For Science: typically Earth and Space Science.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated)"
+    },
+    "D3PP": {
+        "Field Name": "Domain 3 Performance Percentile",
+        "Field Heading": "D3PP",
+        "Field Description": "This field contains the performance percentile for Domain 3.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated)"
+    },
+    "D3PC": {
+        "Field Name": "Domain 3 Percent Correct",
+        "Field Heading": "D3PC",
+        "Field Description": "This field contains the percent correct for Domain 3.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated)"
+    },
+    "D4OP": {
+        "Field Name": "Domain 4 Overall Performance",
+        "Field Heading": "D4OP",
+        "Field Description": "This field contains the overall performance score for Domain 4. For Mathematics: typically Geometry. For Reading: typically Language Usage/Mechanics. For Science: typically Scientific Inquiry and Process.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated)"
+    },
+    "D4PP": {
+        "Field Name": "Domain 4 Performance Percentile",
+        "Field Heading": "D4PP",
+        "Field Description": "This field contains the performance percentile for Domain 4.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated)"
+    },
+    "D4PC": {
+        "Field Name": "Domain 4 Percent Correct",
+        "Field Heading": "D4PC",
+        "Field Description": "This field contains the percent correct for Domain 4.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated)"
+    },
+    "D5OP": {
+        "Field Name": "Domain 5 Overall Performance",
+        "Field Heading": "D5OP",
+        "Field Description": "This field contains the overall performance score for Domain 5. For combined Math/ELA files: typically ELA Literature domain.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated or not applicable)"
+    },
+    "D5PP": {
+        "Field Name": "Domain 5 Performance Percentile",
+        "Field Heading": "D5PP",
+        "Field Description": "This field contains the performance percentile for Domain 5.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated or not applicable)"
+    },
+    "D5PC": {
+        "Field Name": "Domain 5 Percent Correct",
+        "Field Heading": "D5PC",
+        "Field Description": "This field contains the percent correct for Domain 5.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated or not applicable)"
+    },
+    "D6OP": {
+        "Field Name": "Domain 6 Overall Performance",
+        "Field Heading": "D6OP",
+        "Field Description": "This field contains the overall performance score for Domain 6. For combined Math/ELA files: typically ELA Informational Text domain.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated or not applicable)"
+    },
+    "D6PP": {
+        "Field Name": "Domain 6 Performance Percentile",
+        "Field Heading": "D6PP",
+        "Field Description": "This field contains the performance percentile for Domain 6.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated or not applicable)"
+    },
+    "D6PC": {
+        "Field Name": "Domain 6 Percent Correct",
+        "Field Heading": "D6PC",
+        "Field Description": "This field contains the percent correct for Domain 6.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated or not applicable)"
+    },
+    "D7OP": {
+        "Field Name": "Domain 7 Overall Performance",
+        "Field Heading": "D7OP",
+        "Field Description": "This field contains the overall performance score for Domain 7. For combined Math/ELA files: typically ELA Vocabulary domain.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated or not applicable)"
+    },
+    "D7PP": {
+        "Field Name": "Domain 7 Performance Percentile",
+        "Field Heading": "D7PP",
+        "Field Description": "This field contains the performance percentile for Domain 7.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated or not applicable)"
+    },
+    "D7PC": {
+        "Field Name": "Domain 7 Percent Correct",
+        "Field Heading": "D7PC",
+        "Field Description": "This field contains the percent correct for Domain 7.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated or not applicable)"
+    },
+    "D8OP": {
+        "Field Name": "Domain 8 Overall Performance",
+        "Field Heading": "D8OP",
+        "Field Description": "This field contains the overall performance score for Domain 8. For combined Math/ELA files: typically ELA Language Usage/Mechanics domain.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated or not applicable)"
+    },
+    "D8PP": {
+        "Field Name": "Domain 8 Performance Percentile",
+        "Field Heading": "D8PP",
+        "Field Description": "This field contains the performance percentile for Domain 8.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated or not applicable)"
+    },
+    "D8PC": {
+        "Field Name": "Domain 8 Percent Correct",
+        "Field Heading": "D8PC",
+        "Field Description": "This field contains the percent correct for Domain 8.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated or not applicable)"
+    },
+    "DTOP": {
+        "Field Name": "Total Domain Overall Performance",
+        "Field Heading": "DTOP",
+        "Field Description": "This field contains the total overall performance across all domains.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated)"
+    },
+    "DTPP": {
+        "Field Name": "Total Domain Performance Percentile",
+        "Field Heading": "DTPP",
+        "Field Description": "This field contains the total performance percentile across all domains.",
+        "Field Acceptable Values": "1–99, Blank (if invalidated)"
+    },
+    "DTPC": {
+        "Field Name": "Total Domain Percent Correct",
+        "Field Heading": "DTPC",
+        "Field Description": "This field contains the total percent correct across all domains.",
+        "Field Acceptable Values": "0–100, Blank (if invalidated)"
+    },
+    "PASS": {
+        "Field Name": "Pass Indicator",
+        "Field Heading": "PASS",
+        "Field Description": "This field indicates whether or not the student received a passing score.",
+        "Field Acceptable Values": "Y = Student passed, N = Student did not pass, Blank (if invalidated)"
+    },
+    "TOT_OP": {
+        "Field Name": "Total Overall Performance",
+        "Field Heading": "TOT_OP",
+        "Field Description": "This field contains the total overall performance score for the entire test.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated)"
+    },
+    "SCALE_SCORE": {
+        "Field Name": "Student Scale Score (RIT Score)",
+        "Field Heading": "SCALE_SCORE",
+        "Field Description": "This field contains the RIT scale score earned by the student.",
+        "Field Acceptable Values": "140–300 (typical RIT range), Blank (if invalidated)"
+    },
+    "PROF_LVL": {
+        "Field Name": "Student Proficiency Level",
+        "Field Heading": "PROF_LVL",
+        "Field Description": "This field contains the Proficiency Level attained by the student.",
+        "Field Acceptable Values": "1 = Below Basic, 2 = Basic, 3 = Proficient, 4 = Advanced, Blank (if invalidated)"
+    },
+    "CSEM": {
+        "Field Name": "Conditional Standard Error of Measurement",
+        "Field Heading": "CSEM",
+        "Field Description": "This field indicates the error of measurement. For instance, if the value is '5', then the CSEM is +/–5.",
+        "Field Acceptable Values": "0–99, Blank (if invalidated)"
+    },
+    "FINAL_WPC1": {
+        "Field Name": "Final Writing Performance Component 1",
+        "Field Heading": "FINAL_WPC1",
+        "Field Description": "This field contains the score for Writing Performance Component 1.",
+        "Field Acceptable Values": "0–4 (if scored), BB = No response, IL = Response is unintelligible, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, Blank (if invalidated or not applicable)"
+    },
+    "FINAL_WPC2": {
+        "Field Name": "Final Writing Performance Component 2",
+        "Field Heading": "FINAL_WPC2",
+        "Field Description": "This field contains the score for Writing Performance Component 2.",
+        "Field Acceptable Values": "0–4 (if scored), BB = No response, IL = Response is unintelligible, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, Blank (if invalidated or not applicable)"
+    },
+    "FINAL_WPC3": {
+        "Field Name": "Final Writing Performance Component 3",
+        "Field Heading": "FINAL_WPC3",
+        "Field Description": "This field contains the score for Writing Performance Component 3.",
+        "Field Acceptable Values": "0–2 (if scored), BB = No response, IL = Response is unintelligible, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, Blank (if invalidated or not applicable)"
+    },
+    "FINAL_WPC4": {
+        "Field Name": "Final Writing Performance Component 4",
+        "Field Heading": "FINAL_WPC4",
+        "Field Description": "This field contains the score for Writing Performance Component 4.",
+        "Field Acceptable Values": "0–2 (if scored), BB = No response, IL = Response is unintelligible, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, Blank (if invalidated or not applicable)"
+    },
+    "FINAL_WP_SCORE": {
+        "Field Name": "Final Writing Performance Total Score",
+        "Field Heading": "FINAL_WP_SCORE",
+        "Field Description": "This field contains the final total score for writing performance. Calculated as sum of FINAL_WPC1 + FINAL_WPC2 + FINAL_WPC3 + FINAL_WPC4.",
+        "Field Acceptable Values": "0–12 (if scored), Blank (if invalidated or not applicable)"
+    },
+    "DOMAIN_STRUCTURE_EXPLANATION": {
+        "Note": "NWEA MAP Domain Structure Overview",
+        "Combined_Math_ELA_Structure": {
+            "D1_D4_Mathematics": {
+                "D1": "Operations and Algebraic Thinking - Basic arithmetic operations, algebraic thinking, and problem-solving strategies",
+                "D2": "Number Sense and Operations - Place value, number relationships, computation, and number theory", 
+                "D3": "Measurement and Data Analysis - Units of measurement, data interpretation, statistics, and probability",
+                "D4": "Geometry - Shapes, spatial relationships, coordinate geometry, and geometric reasoning"
+            },
+            "D5_D8_ELA_Reading": {
+                "D5": "Literature - Fiction analysis, character development, plot, theme, and literary devices",
+                "D6": "Informational Text - Non-fiction comprehension, text structure, and analytical reading",
+                "D7": "Vocabulary - Word knowledge, context clues, word relationships, and academic vocabulary", 
+                "D8": "Language Usage/Mechanics - Grammar, syntax, conventions, and writing mechanics"
+            }
+        },
+        "Eight_Domain_Structure": "This Mississippi NWEA MAP export contains both Mathematics and ELA data in a single file. Domains 1-4 represent Mathematics performance, while Domains 5-8 represent ELA/Reading performance. Each domain reports three metrics: Overall Performance (OP), Performance Percentile (PP), and Percent Correct (PC).",
+        "State_Variations": "Domain organization can vary by state and standards alignment. Mississippi may have specific domain structures that differ from the typical 4-domain organization seen in other states.",
+        "MAAP_vs_NWEA_Comparison": {
+            "MAAP_Structure": "Mississippi's MAAP (state test) uses 'Reporting Categories' (RC1OP, RC2OP, RC3OP, RC4OP, RC5OP) that align with Mississippi College- and Career-Readiness Standards",
+            "NWEA_Structure": "NWEA MAP uses 'Domains' (D1OP, D1PP, D1PC, etc.) with three metrics per domain: Overall Performance, Performance Percentile, and Percent Correct",
+            "Grade_Level_Variations": "Both assessment systems have different domain/category structures by grade level, with elementary grades focusing more on foundational skills and upper grades incorporating advanced concepts like algebra and functions"
+        },
+        "MAAP_Reporting_Categories_by_Grade": {
+            "Grades_3-5": ["Operations and Algebraic Thinking (OA)", "Number and Operations in Base Ten (NBT)", "Number and Operations—Fractions (NF)", "Measurement and Data (MD)", "Geometry (G)"],
+            "Grade_6": ["Ratios and Proportional Relationships (RP)", "The Number System (NS)", "Expressions and Equations (EE)", "Geometry (G)", "Statistics and Probability (SP)"],
+            "Grade_7": ["Ratios and Proportional Relationships (RP)", "The Number System (NS)", "Expressions and Equations (EE)", "Geometry (G)", "Statistics and Probability (SP)"],
+            "Grade_8": ["The Number System (NS)", "Expressions and Equations (EE)", "Functions (F)", "Geometry (G)", "Statistics and Probability (SP)"],
+            "Algebra_I": ["Number and Quantity (N)", "Algebra (A)", "Functions (F)", "Statistics and Probability (S)"]
+        }
+    }
+}

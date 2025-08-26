@@ -1,0 +1,4336 @@
+[
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.1",
+      "description": "With prompting and support, ask and answer questions about key details in a text. Desired Student Performance A Student Should Know (Prerequisite Knowledge) A Student Should Understand (Conceptual Understanding) A Student Should Be Able to Do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: questions, answer, detail, literary text, story, evidence, infer, conclusion, decide, provide, ask"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.1",
+      "grade": null,
+      "description": "Read closely to determine what the text says explicitly and make logical inferences from it; cite specific textual evidence and when writing or speaking to support conclusions drawn from the text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Questions are sentences that require answers.",
+            "Questions can be answered from text.",
+            "Questions often begin with who, what, where, when, and why.",
+            "How to, with prompting and support, explain the difference between questions and answers.",
+            "Text refers to words that are written, such as stories, poems, song lyrics, etc.",
+            "A question mark is an end punctuation mark that tells the reader the sentence is a question."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers listen actively and spontaneously and ask questions before, during, and after reading.",
+            "Growing readers understand listening to others' questions inspires new questions of their own.",
+            "Growing readers know key details are part of the story that will help them understand the story.",
+            "Growing readers ask and answer questions to clarify meaning and focus on specific parts of the text.",
+            "Growing readers understand that both questions and responses are stated in complete sentences.",
+            "Growing readers understand that sentences express a complete thought."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Ask and respond to questions about important details in a story.",
+            "Decide if the answers to their questions can be found in the text or whether they need to infer and/or draw a conclusion from the text.",
+            "Create questions and/or answers that show understanding of key details in a text.",
+            "Ask questions as follow-ups to previous questions asked by the teacher or peers.",
+            "Respond to questions in complete sentences."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "questions",
+        "answer",
+        "detail",
+        "literary text",
+        "story",
+        "evidence",
+        "infer",
+        "conclusion",
+        "decide",
+        "provide",
+        "ask"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.2",
+      "description": "With prompting and support, retell familiar stories, including key details. Desired Student Performance A Student Should Know (Prerequisite Knowledge) A Student Should Understand (Conceptual Understanding) A Student Should Be Able to Do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: detail, lesson, retelling, beginning, middle, ending, prompt, support, listen, question, character, setting, plot"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.2",
+      "grade": null,
+      "description": "Determine central ideas or themes of a text and analyze their development; summarize the key supporting details and ideas."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A story is an account of imaginary or real people, places, things, and/or events told for entertainment.",
+            "Stories have characters and settings.",
+            "Stories have a beginning, middle, and end.",
+            "How to listen to a story to learn information about the characters and setting.",
+            "How to listen to a story and determine the beginning, middle, and end.",
+            "Readers can use what they know about a topic/subject to ask and answer questions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers listen to a text or read text independently. They think about which parts of a text are the most important. They use these parts to retell familiar stories.",
+            "Authors include key details to help readers make sense of what they are reading.",
+            "Growing readers know that retelling a story is when a reader tells the story again in his or her own words."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Retell (orally or through writing/drawing/dictating) a story including the main character(s) and setting.",
+            "Retell (orally or through writing/drawing/dictating) a story including the beginning, middle, and end in the order that they occurred in the text."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "detail",
+        "lesson",
+        "retelling",
+        "beginning",
+        "middle",
+        "ending",
+        "prompt",
+        "support",
+        "listen",
+        "question",
+        "character",
+        "setting",
+        "plot"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.3",
+      "description": "With prompting and support, identify characters, settings, and major events in a story. Desired Student Performance (Prerequisite Knowledge) (Conceptual Understanding) (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: character, setting, major event, details, identify, story elements, problem, solution, beginning, middle, end"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.3",
+      "grade": null,
+      "description": "Analyze how and why individuals, events, or ideas develop and interact over the course of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "character",
+        "setting",
+        "major event",
+        "details",
+        "identify",
+        "story elements",
+        "problem",
+        "solution",
+        "beginning",
+        "middle",
+        "end"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.4",
+      "description": "Ask and answer questions about unknown words in a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) question, answer, picture, clue, sound-symbol relationships, strategies, unknown, statement, text"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.4",
+      "grade": null,
+      "description": "Interpret words and phrases as they are used in a text, including determining technical, connotative, and figurative meanings, and analyze how specific word choices shape meaning or tone."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Understand that a word has meaning.",
+            "Understand that pictures help to tell a story.",
+            "How to use the picture clues provided in the text to develop understanding of the words in a story.",
+            "How to ask and answer questions about the text.",
+            "How to identify corresponding sounds with the first and last letters of the word.",
+            "How to listen to a story to gain meaning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers use strategies to help them figure out unknown words within a text.",
+            "Growing readers use picture clues, sound clues, and the words around an unknown word to help them gain understanding.",
+            "Growing readers ask and answer questions about an unknown word."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Use the picture clues from the story to determine the meanings of unknown words in the text.",
+            "Ask and answer questions about unknown words in the story.",
+            "Reread and study visual cues in the text to unlock word meaning."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "question",
+        "answer",
+        "picture",
+        "clue",
+        "sound-symbol relationships",
+        "strategies",
+        "unknown",
+        "statement",
+        "text"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.5",
+      "description": "Recognize common types of texts (e.g., storybooks, poems). Desired Student Performance (Prerequisite Knowledge) (Conceptual Understanding) (Evidence of Knowledge) storybook, fiction, poem, song, informational /explanatory text, imaginary, rhyme, text, real, purpose, recognize"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.5",
+      "grade": null,
+      "description": "Analyze the structure of texts, including how specific sentences, paragraphs, and larger portions of the text (e.g., a section, chapter, scene, or stanza) relate to each other and the whole."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "storybook",
+        "fiction",
+        "poem",
+        "song",
+        "informational /explanatory text",
+        "imaginary",
+        "rhyme",
+        "text",
+        "real",
+        "purpose",
+        "recognize"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.6",
+      "description": "With prompting and support, name the author and illustrator of a story and define the role of each in telling the story. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: author, illustrator, illustrations, story, role, name, locate, cover, identify, write, pictures"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.6",
+      "grade": null,
+      "description": "Assess how point of view or purpose shapes the content and style of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "The author is the person who wrote the story.",
+            "The illustrator is the person who created the pictures or art for the story."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Illustrators are the people that create the pictures that match the meaning of the words the author has written in the story.",
+            "Illustrations are pictures, art, or graphics.",
+            "Growing readers use the illustrations to help them make meaning of the text.",
+            "The author's words are often represented by artwork or illustrations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Locate, identify, and name the author of the story.",
+            "Locate, identify, and name the illustrator of a story.",
+            "Explain the author's role in telling the story.",
+            "o The author writes the story.",
+            "Explain the illustrator's role in telling the story.",
+            "o The illustrator draws the pictures."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "author",
+        "illustrator",
+        "illustrations",
+        "story",
+        "role",
+        "name",
+        "locate",
+        "cover",
+        "identify",
+        "write",
+        "pictures"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.7",
+      "description": "With prompting and support, describe the relationship between illustrations and the story in which they appear (e.g., what moment in a story an illustration depicts). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: illustration, relationship, describe, characters, setting, events, pictures, art, photographs, sketches,"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.7",
+      "grade": null,
+      "description": "Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Illustrations may be pictures, drawings, artwork, paintings, sketches, and photographs.",
+            "How to describe what is pictured in an illustration.",
+            "Anything that is visual that is NOT words can be considered illustrations.",
+            "Story elements include the character(s), setting, problem, solution, and events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors use illustrations to help tell their stories.",
+            "Growing readers \"read\" the illustrations. They are the pictures that tell more about the words the author has written.",
+            "Illustrations help readers understand the story.",
+            "Readers can explain how pictures help them understand the story they are reading."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Describe how illustrations and the text (words) are related in the order they appear in the text.",
+            "Use illustrations and text in a story to describe the characters, setting, and events.",
+            "Present information orally or through a combination of writing and drawing gained from the illustration in the story."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "illustration",
+        "relationship",
+        "describe",
+        "characters",
+        "setting",
+        "events",
+        "pictures",
+        "art",
+        "photographs",
+        "sketches"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.8",
+      "description": "Not applicable to literature. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD:"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.8",
+      "grade": null,
+      "description": "Delineate and evaluate the argument and specific claims in a text, including the validity of the reasoning as well as the relevance and sufficiency of the evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.9",
+      "description": "With prompting and support, compare and contrast the adventures and experiences of characters in familiar stories. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: characters, adventures, experiences, feelings, actions, motives, events, compare, contrast, multiple, familiar"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.9",
+      "grade": null,
+      "description": "Analyze how two or more texts address similar themes or topics in order to build knowledge or to compare the approaches the authors take."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Characters are the people or animals in a story.",
+            "Characters have adventures and experience in a story.",
+            "Compare refers to things that are the same.",
+            "Contrast refers to things that are different."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors create stories with experiences and adventurous for their characters.",
+            "Growing readers often read familiar stories about characters and their experiences.",
+            "Readers study characters' actions, feelings, and motivations to deepen their understanding of a story.",
+            "Growing readers begin to think about how characters' actions, feelings, and motives are the same and different."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify and name the characters in multiple stories.",
+            "Identify and describe the settings (when and where) in multiple stories.",
+            "Identify and explain the major events in multiple stories.",
+            "Compare the adventures and experience of characters in multiple familiar stories.",
+            "Contrast the adventures and experience of characters in multiple familiar stories."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "characters",
+        "adventures",
+        "experiences",
+        "feelings",
+        "actions",
+        "motives",
+        "events",
+        "compare",
+        "contrast",
+        "multiple",
+        "familiar"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Literature",
+    "reporting_category": "Range of Reading and Level of Text Complexity",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.K.10",
+      "description": "Actively engage in group reading activities with purpose and understanding. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: background knowledge, visual images, draw inferences, ask questions, determine importance, synthesize"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.10",
+      "grade": null,
+      "description": "Read and comprehend complex literary and informational texts independently and proficiently."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to listen to and read text from a variety of text genres."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers participate in rich, small- and whole- group reading activities where they focus on comprehending within and beyond the text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Utilize comprehension strategies to gain deeper understanding in small and large group readings, e.g.",
+            "o activating relevant background knowledge",
+            "o creating visual images, drawing inferences",
+            "o asking questions",
+            "o determining important ideas",
+            "o synthesizing information"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "background knowledge",
+        "visual images",
+        "draw inferences",
+        "ask questions",
+        "determine importance",
+        "synthesize"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.1",
+      "description": "With prompting and support, ask and answer questions about key details in a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: questions, statement, clarify, background knowledge, details, informational text, predictions, key details, illustrations, inference, draw conclusions, evidence from the text"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.1",
+      "grade": null,
+      "description": "Read closely to determine what the text says explicitly and make logical inferences from it; cite specific textual evidence and when writing or speaking to support conclusions drawn from the text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Text refers to written words in a variety of forms (e.g., books, articles, emails, letters, etc.)",
+            "Questions often begin with who, what, where, when, and why.",
+            "A question is a sentence that requires an answer.",
+            "Details are pieces of information that clarify information about a topic.",
+            "How to, with prompting and support, be able to explain the difference between questions and answers.",
+            "Questions can be generated based on the topic to help students make predictions about the text.",
+            "A question mark is an end punctuation mark that tells the reader the sentence is a question."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers use their background knowledge to help them think about what they know and ask questions about information they want to know more about.",
+            "Growing readers may ask questions before, during, and after reading.",
+            "Readers use evidence from the text (details) to generate questions to deepen their understanding of informational text.",
+            "Growing readers ask and answer questions to clarify meaning and make predictions focused on specific parts of the text.",
+            "Growing readers understand that both questions and responses are stated in complete sentences.",
+            "Growing readers understand that sentences express a complete thought."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Set a purpose for reading and identify type of text (informational).",
+            "Provide questions and answers that show understanding of key details in a text.",
+            "Look at text and illustrations to generate questions and/or answers about the text.",
+            "Use background knowledge and information from the text to make inferences when asking or answering questions.",
+            "Respond to questions in complete sentences."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "questions",
+        "statement",
+        "clarify",
+        "background knowledge",
+        "details",
+        "informational text",
+        "predictions",
+        "key details",
+        "illustrations",
+        "inference",
+        "draw conclusions",
+        "evidence from the text"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.2",
+      "description": "With prompting and support, identify the main topic and retell key details of a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: main topic, key details, retell, informational text, images, graphics"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.2",
+      "grade": null,
+      "description": "Determine central ideas or themes of a text and analyze their development; summarize the key supporting details and ideas."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Informational text has a main topic or main idea (what the text is mostly about).",
+            "A key detail is a piece of information that provides more information about the main topic or main idea.",
+            "How to retell or describe details from informational read aloud.",
+            "Types of informational texts include literary nonfiction, informational, technical texts, etc."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors of informational text write about topics.",
+            "They include key details to help their readers better understand the topic.",
+            "Readers use text and graphic features as sources to identify the main topic and think about key details.",
+            "Growing readers begin to take notes using pictures or images and words. This helps them to think about what they have learned to form a retelling on a topic."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide a statement of the main topic or main idea of a text.",
+            "Identify key details that support the main topic or main idea.",
+            "Retell the key ideas for the main topic or main idea.",
+            "Participate in a discussion about the main topic or main idea to recall one or more details from the text.",
+            "Respond to questions about the topic and details."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "main topic",
+        "key details",
+        "retell",
+        "informational text",
+        "images",
+        "graphics"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.3",
+      "description": "With prompting and support, describe the connection between two individuals, events, ideas, or pieces of information in a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: connection, individuals, events, ideas, information, relationship, text features, informational text"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.3",
+      "grade": null,
+      "description": "Analyze how and why individuals, events, or ideas develop and interact over the course of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Informational text provides information that teaches the reader about people, places, events, and ideas.",
+            "Authors use text features such as bold words, photographs, captions, etc., to help the reader understand more about the people, places, things, or events that they are writing about.",
+            "How to use background knowledge and experiences to identify and discuss how personal experiences, ideas, or pieces of information are the same and different from a piece of text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Describe means to explain or give details about a person, place, event or, ideas in a text.",
+            "The information in the informational texts can be used to help the reader understand people, events, and ideas in a text.",
+            "Authors sometimes make connections between two individuals, events, ideas, or pieces of informational text. This helps readers make meaning of what they read."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify and name individuals, events, and ideas or pieces of information (details) in a text.",
+            "Provide a description of the connection between two individuals in a text.",
+            "Provide a description of the connections between two events.",
+            "Provide a description of the connections between two ideas or pieces of information."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "connection",
+        "individuals",
+        "events",
+        "ideas",
+        "information",
+        "relationship",
+        "text features",
+        "informational text"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.4",
+      "description": "With prompting and support, ask and answer questions about unknown words in a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: question, answer, statement, background knowledge, phrases, mental images, print features, graphic aids, context clues, vocabulary words"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.4",
+      "grade": null,
+      "description": "Interpret words and phrases as they are used in a text, including determining technical, connotative, and figurative meanings, and analyze how specific word choices shape meaning or tone."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Understand that a word has meaning.",
+            "Understand that pictures help to provide information and details in a text.",
+            "How to use the picture clues provided in the text to develop understanding of the words in a story.",
+            "How to ask and answer questions about the text.",
+            "How to identify corresponding sounds with the first and last letters of a word.",
+            "How to listen to a text to gain meaning of unknown words."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers actively seek meaning of unknown words and phrases by asking and answering questions to clarify meaning.",
+            "Authors use words that create mental images to create meaning in informational text.",
+            "Readers use a variety of print features and graphic aids (size of font, illustrations/ photographs, drawings, maps, etc.) to identify meanings of unknown words.",
+            "Authors often give clues to help the reader determine the meaning of unknown words within a text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify unknown words in a text.",
+            "Ask and answer questions about unknown words in a text to determine the meaning of a word.",
+            "Listen carefully to a story being read aloud and listen for clues within the text to determine the meaning of an unknown word.",
+            "Read and reread the visual images, print features, and other words in the text to identify context clues that aid in determining the meaning of unknown words."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "question",
+        "answer",
+        "statement",
+        "background knowledge",
+        "phrases",
+        "mental images",
+        "print features",
+        "graphic aids",
+        "context clues",
+        "vocabulary words"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.5",
+      "description": "Identify the front cover, back cover, and title page of a book. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: front cover, title page, back cover, parts of a book, informational text, prediction, author, illustrator, publisher"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.5",
+      "grade": null,
+      "description": "Analyze the structure of texts, including how specific sentences, paragraphs, and larger portions of the text (e.g., a section, chapter, scene, or stanza) relate to each other and the whole."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to identify books from other types of text.",
+            "Books are read from front to back and left to right.",
+            "How to identify and name the parts of a book (e.g., front cover, title page, and back cover)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Readers know the front of the book contains a title and author/illustrator.",
+            "The back cover shares a snapshot of the information contained in the book.",
+            "The title page restates the title, author, and illustrator and tells the name of the company that published the book and when the book was published.",
+            "These elements assist readers to make predictions of what the informational text might teach them."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify and name the front cover of a book.",
+            "Identify and name the back cover of a book.",
+            "Identify and name the title page of a book.",
+            "Use the title page and illustrations to make predictions about meaning and events."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "front cover",
+        "title page",
+        "back cover",
+        "parts of a book",
+        "informational text",
+        "prediction",
+        "author",
+        "illustrator",
+        "publisher"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.6",
+      "description": "Name the author and illustrator of a text and define the role of each in presenting the ideas or information in a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: author, illustrator, photographer, visual images, informational text, ideas, role"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.6",
+      "grade": null,
+      "description": "Assess how point of view or purpose shapes the content and style of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "The author of an informational text chooses the ideas and/or information to be shared with readers.",
+            "The illustrator or photographer of informational text provides the images to help readers make meaning of what they are reading."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The author is the person who writes the book or text.",
+            "An illustrator is the person who makes or draws the pictures for the text.",
+            "A photographer is the person that takes the photographs for the text.",
+            "Visual images provide information or ideas in a text.",
+            "Words and visual images work together to teach information."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify the author of a text.",
+            "Explain what the author's role is in presenting the ideas or information in that text.",
+            "Identify the illustrator or photographer of a text.",
+            "Explain what the illustrator's role is in presenting the ideas or information in that text.",
+            "Explain how the words and illustrations work together to teach the reader new information."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "author",
+        "illustrator",
+        "photographer",
+        "visual images",
+        "informational text",
+        "ideas",
+        "role"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.7",
+      "description": "With prompting and support, describe the relationship between illustrations and the text in which they appear (e.g., what person, place, thing, or idea in the text an illustration depicts). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: illustrations, drawings, photographs, ideas, informational text, cross-check, author, details, text features, scanning, relationship"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.7",
+      "grade": null,
+      "description": "Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Authors of informational text include illustrations and photographs to teach new information.",
+            "Photographs and illustrations build understanding of text.",
+            "How to preview a piece of text then discuss the information learned from scanning the text features."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers use illustrations, including photographs and drawings, to help them gain new knowledge when reading informational text.",
+            "Illustrations are pictures included in informational text.",
+            "Readers make connections between details provided by the illustrator/photographer and the information the author shared."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify and explain people, places, things, or ideas in a text.",
+            "Identify people, places, things, or ideas in the text that are represented in the illustrations.",
+            "Describe the relationship between the illustration and the text in which it appears (e.g., what person, place, think, or idea from the text is depicted in an illustration)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "illustrations",
+        "drawings",
+        "photographs",
+        "ideas",
+        "informational text",
+        "cross-check",
+        "author",
+        "details",
+        "text features",
+        "scanning",
+        "relationship"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.8",
+      "description": "With prompting and support, identify the reasons an author gives to support points in a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: authors, informational text, key details, supporting details, points, relevant, irrelevant, reasons, examples, support"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.8",
+      "grade": null,
+      "description": "Delineate and evaluate the argument and specific claims in a text, including the validity of the reasoning as well as the relevance and sufficiency of the evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Authors write informational texts about specific topics.",
+            "Authors use key or supporting details to make their points and to provide more information about the topic."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors of informational texts use reasons and examples to provide support to their points and ideas and to provide more information about the topic.",
+            "Growing readers identify the reasons and examples authors use to support their points and ideas. This helps readers make meaning of informational text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify the topic or main idea.",
+            "Identify the points an author makes in a text.",
+            "Identify supporting points an author makes in a text.",
+            "Answer questions about details and how they support the points an author makes in informational text.",
+            "o What does this sentence tell the reader about the topic?",
+            "o What can the reader learn about the topic from the information the author gives in the text?",
+            "o Why did the author include this sentence?"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "authors",
+        "informational text",
+        "key details",
+        "supporting details",
+        "points",
+        "relevant",
+        "irrelevant",
+        "reasons",
+        "examples",
+        "support"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.9",
+      "description": "With prompting and support, identify basic similarities in and differences between two texts on the same topic (e.g., in illustrations, descriptions, or procedures). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: topics, details, similar, different, informational text, text features, labels, captions, illustrations, photographs"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.9",
+      "grade": null,
+      "description": "Analyze how two or more texts address similar themes or topics in order to build knowledge or to compare the approaches the authors take."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to identify the topic of multiple texts",
+            "How to recognize texts with the same topic",
+            "How to discuss objects that are similar or different"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors of informational text use text features (e.g., labels, illustrations, captions, etc.) to share information on their topics.",
+            "Readers focus on text features (e.g., labels, illustrations, captions, etc.) to gain more information about topics.",
+            "Readers focus on the words in informational texts to gain more information about the topic.",
+            "Growing readers identify how two texts written on the same topic may be similar or different."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Listen to or read multiple texts on the same topic.",
+            "Identify illustrations, descriptions, procedures, or other text features presented in one text.",
+            "Identify illustrations, descriptions, procedures, or other text features presented in other texts on the same topic.",
+            "Provide an identification of the basic similarities and differences between two texts on the same topic."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "topics",
+        "details",
+        "similar",
+        "different",
+        "informational text",
+        "text features",
+        "labels",
+        "captions",
+        "illustrations",
+        "photographs"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Range of Reading and Level of Text Complexity",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.K.10",
+      "description": "Actively engage in group reading activities with purpose and understanding. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD monitor thinking, utilize prior knowledge, ask questions, visualize information, determine importance, summarize, synthesize, just right text, complex text, literary, informational, variety of genres, comprehension within/beyond the text"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.10",
+      "grade": null,
+      "description": "Read and comprehend complex literary and informational texts independently and proficiently."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to listen to and/or read text from a variety of text genres on a kindergarten reading level with guidance and support.",
+            "How to choose appropriate text for independent reading."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing readers understand the characteristics of informational text.",
+            "Growing readers participate in rich, small- and whole- group readings where they focus on comprehending within and beyond the text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Utilize comprehension strategies, e.g.",
+            "o activating relevant background knowledge",
+            "o creating visual images",
+            "o drawing inferences",
+            "o asking questions",
+            "o determining important ideas",
+            "o synthesizing information to gain deeper understanding of text independently and in small and large group settings."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.1a",
+      "description": "Follow words from left to right, top to bottom, and page by page. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: demonstrate, follow, progress, identify, track, find, words, left, right, top, bottom, page"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.1",
+      "grade": null,
+      "description": ".: Demonstrate understanding of the organization and basic features of print."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Texts are constructed with words.",
+            "Words are organized in an order on a page.",
+            "Words progress in meaning from left to right, top to bottom, and page to page.",
+            "Print on a page should be read.",
+            "Illustrations are used on a page to support the text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Sentences are built to be read from left to right.",
+            "Pages are designed to be read from top to bottom.",
+            "Print is designed to be read from left to right, top to bottom, and page by page.",
+            "Reading begins with the first word on a page.",
+            "Reading progresses from left to right by moving across the page.",
+            "Print continues down the page from top to bottom.",
+            "Reading progresses from page to page."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Find the print on a page.",
+            "Identify a word.",
+            "Track words in print.",
+            "Track print from left to right.",
+            "Track print from top to bottom.",
+            "Track print page by page.",
+            "Use return sweeps."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "demonstrate",
+        "follow",
+        "progress",
+        "identify",
+        "track",
+        "find",
+        "words",
+        "left",
+        "right",
+        "top",
+        "bottom",
+        "page"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.1b",
+      "description": "Recognize that spoken words are represented in written language by specific sequences of letters. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: know, recognize, understand, demonstrate, show, letters, words, spaces, separated, sequence, spoken, print, written, graphemes, phonemes"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.1",
+      "grade": null,
+      "description": ".: Demonstrate understanding of the organization and basic features of print."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Words can be written or spoken.",
+            "Words spoken can also be on a printed page.",
+            "Letters are organized in specific order to create words."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Letters are organized to build words.",
+            "Words are represented by letters.",
+            "Letters in words represent sounds of a word.",
+            "The first letter in a word makes the initial or beginning sound.",
+            "The last letter in the word makes the final sound.",
+            "Sounds between the initial and final sounds of the word are medial sounds.",
+            "Words are organized into sentences."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Point to a word.",
+            "Demonstrate understanding of letter-sound relationships.",
+            "Begin to identify words in print such as sight words.",
+            "Recognize words in print from letters in print.",
+            "o Exceptions are one letter words such as I and a."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "know",
+        "recognize",
+        "understand",
+        "demonstrate",
+        "show",
+        "letters",
+        "words",
+        "spaces",
+        "separated",
+        "sequence",
+        "spoken",
+        "print",
+        "written",
+        "graphemes",
+        "phonemes"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.1c",
+      "description": "Understand words are separated by spaces in print. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: demonstrate, show, understand, spaces, words, letters, separated, sequence, spoken, print, written"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.1",
+      "grade": null,
+      "description": ".: Demonstrate understanding of the organization and basic features of print."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Realize written language corresponds with spoken language.",
+            "How to recognize a one-to-one correspondence for words in a sentence or on a page.",
+            "How to distinguish the difference between letters, words, and spaces."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Know words are put together to build a sentence.",
+            "Know to read a sentence in a left to right progression.",
+            "Understand when reading line by line there should be a return sweep to the progression.",
+            "Know that there is a space between each word to separate one word from the next word."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Place the left and right pointer finger around a word to \"frame a word.\"",
+            "Show how words are separated with spaces.",
+            "Point out spaces between words.",
+            "Track and count words in a sentence."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "demonstrate",
+        "show",
+        "understand",
+        "spaces",
+        "words",
+        "letters",
+        "separated",
+        "sequence",
+        "spoken",
+        "print",
+        "written"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.1d",
+      "description": "Recognize and name all upper- and lower-case letters of the alphabet. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: uppercase letters, lowercase letters, show, point, sort, name"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.1",
+      "grade": null,
+      "description": ".: Demonstrate understanding of the organization and basic features of print."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Distinguish letters from shapes.",
+            "Distinguish letters from numbers.",
+            "Distinguish letters from words."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Capital letters are different from lowercase letters of the alphabet.",
+            "Letters are different from other printed symbols (e.g., numbers).",
+            "Letters are different from punctuation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Point to letters while stating their names.",
+            "Sort capital and lowercase letters in appropriate categories.",
+            "Identify and match uppercase to lowercase letters (e.g., using a letter grid).",
+            "Name capital and lowercase letters when prompted (e.g., using letter cards).",
+            "Write both upper and lowercase letters when prompted."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "uppercase letters",
+        "lowercase letters",
+        "show",
+        "point",
+        "sort",
+        "name"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.2a",
+      "description": "Recognize and produce rhyming words. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: rhyming words, sounds, ending sounds, match, sound the same, rime"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.2",
+      "grade": null,
+      "description": ".: Demonstrate understanding of spoken words, syllables, and sounds (phonemes)."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Understand basic phonological awareness.",
+            "Understand words are made up of sounds.",
+            "Understand rhyming words have the same ending sound or rime.",
+            "Distinguish between onset (beginning sound) and rime (ending sounds)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Understand words that rhyme sound the same at the end.",
+            "Understand the ending sound of a word will help decide if the words rhyme.",
+            "How to identify similar sounds in oral speech.",
+            "Understand which part of the word (rime) is important for rhyming."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Match rhyming words using picture cards.",
+            "Given a list of rhyming words, produce other words that rhyme with those on the list.",
+            "Identify two words that rhyme when a list is given orally.",
+            "Determine if spoken pairs of words rhyme (e.g., Do these words rhyme? ball, call).",
+            "Produce a spoken word with the same rhyme of a spoken word (e.g., Can you tell me a word that rhymes with ball?).",
+            "State which spoken words rhyme (e.g., Which words in this list rhyme? ball, fall, mat)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "rhyming words",
+        "sounds",
+        "ending sounds",
+        "match",
+        "sound the same",
+        "rime"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.2b",
+      "description": "Count, pronounce, blend, and segment syllables in spoken words. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: count, say, pull a part, stretch, blend, pronounce, clap, break, segment"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.2",
+      "grade": null,
+      "description": ".: Demonstrate understanding of spoken words, syllables, and sounds (phonemes)."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Understand one-to-one correspondence of letters and words.",
+            "There is a part to whole relationships for letters and words.",
+            "Syllables have one vowel sound."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "A word broken into its syllables can have its sounds blended together.",
+            "Spoken words can be blended together to make compound words.",
+            "Word parts can be put together to make a bigger word.",
+            "How to segment spoken words into parts (e.g., compound words).",
+            "Syllables are parts of words."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Clap parts of a word.",
+            "Use a strategy to determine the number of syllables.",
+            "Break a word into its parts.",
+            "Pronounce syllables in spoken words (e.g., Clap and state the parts of a word).",
+            "Count syllables in spoken words (e.g., Clap the parts of a word and state how many parts it has).",
+            "Blend syllables into spoken words (e.g., Put the parts together to make a whole).",
+            "Segment spoken words into syllables (e.g., Break the word into two smaller parts)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "count",
+        "say",
+        "pull a part",
+        "stretch",
+        "blend",
+        "pronounce",
+        "clap",
+        "break",
+        "segment"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.2c",
+      "description": "Blend and segment onsets and rimes of single-syllable spoken words. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: make, use, sound, demonstrate, sounds, syllables, beginning sounds, ending sounds, blend, segment, rime"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.1",
+      "grade": null,
+      "description": ".: Demonstrate understanding of spoken words, syllables, and sounds (phonemes)."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to make the beginning sound of a word.",
+            "How to make the ending sound of a word."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Words can be blended.",
+            "Words can be broken down into parts.",
+            "Spoken words have initial sounds.",
+            "How to identify initial sounds in spoken words.",
+            "How to determine rime when onset is deleted from a given word."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Create the beginning sound of a word and add the rime in order to blend a word together.",
+            "Break a word apart by separating the beginning sound from the rime.",
+            "Blend the onset and rime to state the complete word (e.g., Put the parts together to make a whole: /c/ + /at/.).",
+            "Segment sounds of a spoken word into onset and rime (e.g., Say cat in two parts-the first sound then the rest of the word.)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "make",
+        "use",
+        "sound",
+        "demonstrate",
+        "sounds",
+        "syllables",
+        "beginning sounds",
+        "ending sounds",
+        "blend",
+        "segment",
+        "rime"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.2d",
+      "description": "Isolate and pronounce the initial, medial vowel, and final sounds (phonemes) in three-phoneme (consonant-vowel-consonant, or CVC) words.* (This does not include CVCs ending with /l/, /r/, or /x/.) Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: isolate, pronounce, initial sounds, medial sounds, final sounds, demonstrate, say, phoneme"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.2",
+      "grade": null,
+      "description": ". Demonstrate understanding of spoken words, syllables, and sounds (phonemes)."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Show awareness of phonological awareness with counting words in sentences and rhyme.",
+            "Understand letter-sound correspondence.",
+            "Words consist of different speech sound.",
+            "Listening to words can help one identify each individual speech sound in a word."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Listen to a word to identify each individual phoneme within a word.",
+            "Count, pronounce, blend, and segment syllables in spoken words.",
+            "Blend and segment onsets and rimes of single-syllable spoken words.",
+            "Demonstrate an understanding of sequence of sounds in words (e.g., first, middle, last).",
+            "Demonstrate an understanding of words being made up of sounds."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Isolate the initial sound in a three-phoneme word.",
+            "o What sound do you hear at the beginning of the word cat? /k/",
+            "Isolate the medial sound in a three-phoneme word.",
+            "o What sound do you hear in the middle of the word cat? /a/",
+            "Isolate the final sound in a three-phoneme word.",
+            "o What sound do you hear at the end of the word cat? /t/",
+            "Pronounce the initial sound in a three-phoneme word.",
+            "Pronounce the medial sound in a three-phoneme word.",
+            "Pronounce the final sound in a three-phoneme word."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "isolate",
+        "pronounce",
+        "initial sounds",
+        "medial sounds",
+        "final sounds",
+        "demonstrate",
+        "say",
+        "phoneme"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.2e",
+      "description": "Add or substitute individual sounds (phonemes) in simple, one-syllable words to make new words. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: add, substitute, phoneme, one-syllable words, CVC pattern"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.2",
+      "grade": null,
+      "description": "Demonstrate understanding of spoken words, syllables, and sounds (phonemes)."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to pronounce letter sounds.",
+            "Be aware of individual phonemes or sounds within words.",
+            "Be able to identify individual phoneme in words.",
+            "Words with the CVC pattern are constructed of individual sounds."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Words are made up of individual phonemes or sound.",
+            "Listening for phonemes (sounds) within a word can help you identify or read the word.",
+            "Blending phonemes (sounds) together creates words.",
+            "New words can be made by adding or substituting or changing phonemes (sounds) to a given word."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "In the given word, add or change the initial sound to a new phoneme and state the new word.",
+            "o Add a /k/ to the word at. The word is cat.",
+            "o Change the /k/ in cat to a /m//. The word is mat.",
+            "In a given word, change the medial phoneme (sound) to create a new word.",
+            "o Change the /a/ in bat it /i/. The word is bit.",
+            "In a given words, change the final phoneme (sound) to create a new word.",
+            "o Change the /p/ in cap to /n/. The word is can."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "add",
+        "substitute",
+        "phoneme",
+        "one-syllable words",
+        "CVC pattern"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.3a",
+      "description": "Demonstrate basic knowledge of one-to-one letter-sound correspondences by producing the primary or many of the most frequent sound for each consonant. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: one-to-one letter-sounds, consonants, name, sounds"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.3",
+      "grade": null,
+      "description": ".: Know and apply grade-level phonics and word analysis skills in decoding words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Letters are different from numbers, shapes, etc.",
+            "Letters represent sounds.",
+            "Letters can represent various sounds."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to identify and name consonants.",
+            "Each letter can make one sound inside a word."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify the name and sound of each consonant letter."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "one-to-one letter-sounds",
+        "consonants",
+        "name",
+        "sounds"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.3b",
+      "description": "Associate the long and short sounds with common spellings (graphemes) for the five major vowels. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: vowels, sounds, long vowel sounds, short vowel sounds"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.3",
+      "grade": null,
+      "description": ". Know and apply grade-level phonics and word analysis skills in decoding words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Letters are made of vowels and consonants.",
+            "Vowels have specific sounds.",
+            "Vowels can have different sounds."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to identify vowels.",
+            "How to name the vowels."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify short vowel sounds.",
+            "Identify long vowel sounds.",
+            "Differentiate between long and short vowel sounds.",
+            "Know when a given sound is a short vowel or a long vowel sound.",
+            "Know the long and short vowel sounds for each vowel.",
+            "Recognize how the vowel sound also represents the vowel."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "vowels",
+        "sounds",
+        "long vowel sounds",
+        "short vowel sounds"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.3c",
+      "description": "Read common high-frequency words by sight (e.g., the, of, to, you, she, my, is, are, do, does). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: words, high-frequency words, sight words"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.3",
+      "grade": null,
+      "description": ".: Know and apply grade-level phonics and word analysis skills in decoding words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Words can be learned from environmental print.",
+            "Some words have a high frequency of use."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Some words do not follow the phonics rules.",
+            "Some words are sight words or words seen frequently in text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify grade appropriate sight words.",
+            "Differentiate between sight words and phonetic words.",
+            "Read high-frequency words when presented randomly on a kindergarten level.",
+            "Identify or read grade appropriate sight words in print."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "words",
+        "high-frequency words",
+        "sight words"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.3d",
+      "description": "Distinguish between similarly spelled words by identifying the sounds of the letters that differ. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: letter sounds, identify, vowel, consonant"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.3",
+      "grade": null,
+      "description": ".: Know and apply grade-level phonics and word analysis skills in decoding words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Letters represent sounds in a word.",
+            "Each word will have its own sounds based on the order of the letters."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to recognize and produce multiple sounds of vowels and consonants that can make several sounds."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify a given vowel sound that has been changed from the original word (e.g., mat changed to mitt).",
+            "Identify sounds changed on words that are spelled similarly.",
+            "Identify sound consonants changes in the spelling of similar word (e.g., rat changed to cat)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "letter sounds",
+        "identify",
+        "vowel",
+        "consonant"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Reading Foundational Skills",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RF.K.4",
+      "description": "Read emergent-reader texts with purpose and understanding. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: read, emergent-reader, text, purpose, understanding, questions, characters, setting, plot"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Reading Foundational Skills",
+      "reporting_category": null,
+      "id": "CCR.RF.4",
+      "grade": null,
+      "description": ".: Read emergent-reader texts with purpose and understanding."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Meaning and understanding should be gained from reading text.",
+            "How to use one-to-one matching which connects spoken and written words.",
+            "Possess control over most consonant sounds.",
+            "Recognize the difference between letters and words.",
+            "How to track words from left to right.",
+            "How to identify onset and rimes of simple words.",
+            "How to identify grade appropriate sight words.",
+            "How to blend words with CVC patterns.",
+            "Understand that pictures can help readers understand the text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Beginning readers can read simple text by identifying sight words.",
+            "Beginning readers can read simple text by blending the letters to make simple words (e.g., words with CVC pattern) to make sense out of text.",
+            "Beginning readers can read by looking for the repetitive patterns of words of simple text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Use picture clues to help in comprehending text.",
+            "Use word skills to begin to read text.",
+            "Read grade appropriate sight words in emergent-readers texts.",
+            "Blend simple words to read words in emergent-readers texts.",
+            "Tell about the story from emergent-readers text:",
+            "o Tell who is in the story.",
+            "o Tell what happened in the story.",
+            "o Answer simple questions about the story."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "read",
+        "emergent-reader",
+        "text",
+        "purpose",
+        "understanding",
+        "questions",
+        "characters",
+        "setting",
+        "plot"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.1",
+      "description": "Use a combination of drawing, dictating, and writing to compose opinion pieces in which they tell a reader the topic or the name of the book they are writing about and state an opinion or preference about the topic or book (e.g., My favorite book is...). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: opinion, fact, introduction, support, topic, reasons, details, conclusion, compose, dictating, preference, opinion,"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.1",
+      "grade": null,
+      "description": "Write arguments to support claims in an analysis of substantive topics or texts using valid reasoning and relevant and sufficient evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "An opinion tells what someone likes or thinks.",
+            "A preference is choosing the thing one likes better when offered choices.",
+            "Opinions on a topic can be shared orally or through drawing and/or writing.",
+            "There must be reasons that support the opinion.",
+            "How to add details to drawings to provide more information for the reader.",
+            ""
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing writers can identify and share their opinions or preferences.",
+            "Growing writers can identify the opinion of the author by looking for clues in the text.",
+            "Growing writers include the topic or name of the book they are writing about when sharing their opinions.",
+            "Authors share their opinions through talking, drawing, or in writing.",
+            "Growing writers begin with a draft, reread to add and/or delete details.",
+            "Growing writers learn how to write from other writers."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Using a combination of drawing, dictating, and writing to:",
+            "Name the topic.",
+            "o My Favorite Animal",
+            "State an opinion or preference about a topic or book.",
+            "o I like apples.",
+            "o My favorite ____ is…",
+            "Identify how the author feels about a topic based on clues from the text.",
+            "o e.g., The author likes dogs because he says dogs make good pets.",
+            "Add pictures, words, phrases, or sentences (details) to make writing more interesting for the reader.",
+            "o I like apples. They taste good. I eat them every day."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "opinion",
+        "fact",
+        "introduction",
+        "support",
+        "topic",
+        "reasons",
+        "details",
+        "conclusion",
+        "compose",
+        "dictating",
+        "preference",
+        "opinion"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.2",
+      "description": "Use a combination of drawing, dictating, and writing to compose informative/explanatory texts in which they name what they are writing about and supply some information about the topic. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: informational text, explanatory text, facts, details, topic, labels, drawing, sketches, information, procedures, nonfiction, beginnings, endings, notes, compose, topic"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.2",
+      "grade": null,
+      "description": "Write informative/explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Informational texts convey facts or information about a topic.",
+            "Explanatory texts explain how something works, or how to do something.",
+            "Informative and explanatory writing teaches the reader about a topic.",
+            "Labels for drawing can add important information to writing.",
+            "How to sketch or draw information learned from a piece of text.",
+            "There are different types of informational/ explanatory writing (e.g., labels, procedures, friendly letters)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing writers write books or short pieces that are enjoyable for the reader plus teach the reader about a new topic.",
+            "Authors of informational text use text features (labels, illustrations, labels, captions, etc.) to provide information to their reader.",
+            "Writers convey main idea using supporting details to help their reader understand the topic."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Use a combination of drawing, dictating, and writing to:",
+            "State the topic.",
+            "o Frogs",
+            "Explain about the topic.",
+            "o Frogs are amphibians.",
+            "Provide information about the topic.",
+            "o Frogs live in the water and on land."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "informational text",
+        "explanatory text",
+        "facts",
+        "details",
+        "topic",
+        "labels",
+        "drawing",
+        "sketches",
+        "information",
+        "procedures",
+        "nonfiction",
+        "beginnings",
+        "endings",
+        "notes",
+        "compose",
+        "topic"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.3",
+      "description": "Use a combination of drawing, dictating, and writing to narrate a single event or several loosely linked events, tell about the events in the order in which they occurred, and provide a reaction to what happened. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: personal narrative, story, small moment, pre-telling, drawing, dictating, writing, events, details, authors, feelings, order, sequence, beginning, middle, ending"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.3",
+      "grade": null,
+      "description": "Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details and well-structured event sequences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Narrative writing is a story or an account (small moment) of a series of events, real or imagined.",
+            "Pre-telling and drawing serve as graphic organizers.",
+            "Events usually occur in a sequence that includes a beginning, middle, and an ending.",
+            "Stories should be important to the writer.",
+            "Simple words show the passage of time (e.g., then, after)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors provide some descriptive details to make their story more interesting for their reader.",
+            "Writers tell stories from their own lives that are often based on memories.",
+            "Growing writers express their feelings, actions, and thoughts before, during, and after an event using words or pictures.",
+            "Growing writers tell then write stories across several pages to develop the story or idea."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Tell a narrative story about a real or imaginary person, place, or thing using pictures, writing, or dictating.",
+            "Tell a story describing events that occurred in his/her life.",
+            "Create a made-up story about a person, place, or thing.",
+            "Describe a single moment or sequence of events in different ways and elaborate on what happens during the event(s)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "personal narrative",
+        "story",
+        "small moment",
+        "pre-telling",
+        "drawing",
+        "dictating",
+        "writing",
+        "events",
+        "details",
+        "authors",
+        "feelings",
+        "order",
+        "sequence",
+        "beginning",
+        "middle",
+        "ending"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Production and Distribution of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.4",
+      "description": "Begins in grade 3. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.4",
+      "grade": null,
+      "description": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Production and Distribution of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.5",
+      "description": "With guidance and support from adults, respond to questions and suggestions from peers and add details to strengthen writing as needed. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: revise, revision, edit, details, thoughts, feelings, actions, mental images, rewrite, draft, punctuation, capitalization, spelling"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.5",
+      "grade": null,
+      "description": "Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Revision is making changes to a piece of writing.",
+            "Revision suggestions may come from peers and/or adults.",
+            "How to follow agreed upon rules for discussion (e.g., listening to others with care, speaking one at a time about topics under discussion).",
+            "Details help readers understand the author's thoughts, feelings, and actions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Growing writers work with peers and adults to revise their work by adding details (e.g., thoughts, feelings, actions). These details help their readers create mental images.",
+            "Writers make revisions to their writing to improve their words and message. The final step is to edit capitalization, punctuation, and spelling errors."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide a response to questions and suggestions from adults and peers about a piece of writing.",
+            "Make revisions to drafts to help the reader fully understand events or ideas."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "revise",
+        "revision",
+        "edit",
+        "details",
+        "thoughts",
+        "feelings",
+        "actions",
+        "mental images",
+        "rewrite",
+        "draft",
+        "punctuation",
+        "capitalization",
+        "spelling"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Production and Distribution of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.6",
+      "description": "With guidance and support from adults, explore a variety of digital tools to produce and publish writing, including in collaboration with peers. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: digital tools, word processing, paint programs, digital images, audio recordings, podcasts, blogging, email, twitter, text, power-point, backchannel, audio tracks, produce, publish, collaborate, draft, revise, edit"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.6",
+      "grade": null,
+      "description": "Use technology, including the Internet, to produce and publish writing and to interact and collaborate with others."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Digital tool may be used to produce and publish writing (e.g., paint programs, word processing, podcasts).",
+            "Digital tools may be used for communication (e.g., texting, email, blogging, twitter, digital images)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Writers use digital tools to enhance their writing (e.g., word processing, paint programs, cameras, and audio recordings, podcasts)",
+            "Authors determine the digital tools to be utilized based on the task or purpose (e.g., blog, text, power-point, back- channel, audio track, etc.)"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Use a variety of digital tools (e.g., storytelling software, drawing software, voice recording software, word processing, etc.) to produce, share, and publish writing.",
+            "Collaborate with peers and adults to produce, share, and publish writing, using a variety of digital tools."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "digital tools",
+        "word processing",
+        "paint programs",
+        "digital images",
+        "audio recordings",
+        "podcasts",
+        "blogging",
+        "email",
+        "twitter",
+        "text",
+        "power-point",
+        "backchannel",
+        "audio tracks",
+        "produce",
+        "publish",
+        "collaborate",
+        "draft",
+        "revise",
+        "edit"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Research to Build and Present Knowledge",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.7",
+      "description": "Participate in shared research and writing projects (e.g., explore a number of books by a favorite author and express opinions about them). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: research, writing project, collecting information, facts, data, notes, text features (e.g., photographs, captions, labels, etc.), discussion"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.7",
+      "grade": null,
+      "description": "Conduct short as well as more sustained research projects based on focused questions, demonstrating understanding of the subject under investigation."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Research is the process of collecting information, facts, and data.",
+            "How to participate in conversations with peers and adults with an agreed upon set of rules for discussion (e.g., listening to others with care, speaking one at a time about topics under discussion)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors read and take notes from text and visual images through drawings and in writing to hold on to the information they learn about their topic.",
+            "Writers can share their research in a variety of ways (e.g., photographs with captions and labels, cutaways, sequence of events, maps, etc.)",
+            "Growing writers decide which important information should be included in their research project."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Using drawing, writing or dictating to:",
+            "Listen to different texts or books about a topic and use the information to write about the topic",
+            "Watch videos or digital clips such as those from the Internet to research a topic and then write about the topic",
+            "Look at pictures, diagrams, or other graphic aids to gain information about a text to writing about the topic"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "research",
+        "writing project",
+        "collecting information",
+        "facts",
+        "data",
+        "notes",
+        "text features (e.g.",
+        "photographs",
+        "captions",
+        "labels",
+        "etc.)",
+        "discussion"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Research to Build and Present Knowledge",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.8",
+      "description": "With guidance and support from adults, recall information from experiences or gather information from provided sources to answer a question. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: information, recall, question, answer, sources, accurate"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.8",
+      "grade": null,
+      "description": "Gather relevant information from multiple print and digital sources, assess the credibility and accuracy of each source, and integrate the information while avoiding plagiarism."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Information is found in a source (e.g., book, magazine, Internet, etc.) or from a person's experiences.",
+            "A question is a statement that asks for information.",
+            "Answers provide the information to address a question.",
+            "Past experiences may be important when answering a question."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Researchers gather information to help answer a question. They take notes using pictures and words.",
+            "Authors use and cite multiple sources to gather information so they will have accurate information.",
+            "Writers review the information they collect to come up with the most accurate answer to their question."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Respond to a question using drawing, writing, or dictating.",
+            "Tell about an experience to answer a question.",
+            "Gather information from provided print and digital sources to answer a question in a product that includes drawing dictation, and/or writing."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "information",
+        "recall",
+        "question",
+        "answer",
+        "sources",
+        "accurate"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Research to Build and Present Knowledge",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.9",
+      "description": "Begins in grade 4. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.9",
+      "grade": null,
+      "description": "Draw evidence from literary or informational texts to support analysis, reflection, and research."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Writing",
+    "reporting_category": "Range of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.K.10",
+      "description": "Begins in grade 3. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.10",
+      "grade": null,
+      "description": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of tasks, purposes, and audiences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.K.1a",
+      "description": "Follow agreed-upon rules for discussions (e.g., listening to others and taking turns speaking about the topics and texts under discussion). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: class rules, discussions, expectations, share, talk about, peers"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.1",
+      "grade": null,
+      "description": ". Participate in collaborative conversations with diverse partners about kindergarten topics and texts with peers and adults in small and larger groups."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Rules help everyone play fair.",
+            "Discussions are when two people talk about a topic or a text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Understand the class rules for discussions.",
+            "Understand the proper expectations for following the agreed-upon rules for classroom discussions."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Listen to classmates share and discuss a topic.",
+            "Wait one's turn to speak.",
+            "Provide information about a topic to peers in a group discussion when prompted by the teacher.",
+            "Respond to questions or prompts when prompted by the teacher.",
+            "Respond to peers' responses when discussing a topic.",
+            "Share about their knowledge of a given topic when prompted by the teacher.",
+            "Stop talking and listen when others are speaking."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "class rules",
+        "discussions",
+        "expectations",
+        "share",
+        "talk about",
+        "peers"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.K.1b",
+      "description": "Continue a conversation through multiple exchanges. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: listen, peer, comment, given topic, provide more, restate, wait"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.1",
+      "grade": null,
+      "description": ". Participate in collaborative conversations with diverse partners about kindergarten topics and texts with peers and adults in small and larger groups."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Rules help everyone play fair.",
+            "Discussions are when two people talk about a topic or a text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Understand how to listen to a peer's comments on a given topic and then continue the discussion by providing more information.",
+            "Understand how to listen to a peer's comments on a given topic and then continue the discussion by restating what has been shared.",
+            "Listen to others' discussion in a group and wait to respond when a turn arises."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Listen to peers' comments during a discussion.",
+            "Consider what to share during the discussion.",
+            "Ask questions to further the discussion.",
+            "Share information about the topic during the discussion.",
+            "Decide as the discussion continues if he/she can share more information."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "listen",
+        "peer",
+        "comment",
+        "given topic",
+        "provide more",
+        "restate",
+        "wait"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.K.2",
+      "description": "Confirm understanding of a text read aloud or information presented orally or through other media by asking and answering questions about key details and requesting clarification if something is not understood. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: share, ask, answer, clarification"
+    },
+    "anchor_standard": null,
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "When information is presented, understanding should take place.",
+            "Questions can be asked when one does not understand the information.",
+            "How to listen to text read aloud to gain meaning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Understand how to share what is understood from a read aloud or information presented orally or through other media.",
+            "Understand how to ask questions about key details needing clarification from a read aloud or information presented orally or through other media.",
+            "Understand how to answer questions about key details needing clarification from a read aloud or information presented orally or through other media."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Share what is understood from a read aloud or information presented orally or through other media.",
+            "Ask questions about key details needing clarification from a read aloud or information presented orally or through other media.",
+            "Answer questions about key details needing clarification from a read aloud or information presented orally or through other media."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "share",
+        "ask",
+        "answer",
+        "clarification"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.K.3",
+      "description": "Ask and answer questions in order to seek help, get information, or clarify something that is not understood. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: ask, clarification, answer, questions,"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.3",
+      "grade": null,
+      "description": ". Evaluate a speaker's point of view, reasoning, and use of evidence and rhetoric."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Know when information is presented, understanding should take place.",
+            "Know questions can be asked when you do not understand information."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Understand how to ask others for help when clarification is needed.",
+            "Understand how to ask others for more information to clarify when something is not understood.",
+            "Understand how to ask for clarification when something is not understood.",
+            "Understand how to answer others when they request clarification."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Ask others for help when clarification is needed.",
+            "Ask others for more information to clarify when something is not understood.",
+            "Ask for clarification when something is not understood.",
+            "Answer others when they request clarification."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "ask",
+        "clarification",
+        "answer",
+        "questions"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Presentation of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.K.4",
+      "description": "Describe familiar people, places, things, and events and, with prompting and support, provide additional detail. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: familiar, adjectives, describe, people, places, things, event, prompting, support additional details"
+    },
+    "anchor_standard": null,
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Experiences from our lives can be described using words.",
+            "Adjectives help to describe people, places, things, and event.",
+            "Understand that to describe a person, place, thing, or event, specific details will need to be given in order to help others understand."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Use their memories to think about a person, place, thing, or event.",
+            "Tell about the person, place, thing, or event to describe it.",
+            "Use adjectives to describe the person, place, thing, or event.",
+            "Listen to questions asked by the teacher to help provide additional information."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "When prompted by the teacher…",
+            "o Describe a familiar person",
+            "o Describe a familiar place",
+            "o Describe a specific thing",
+            "o Describe familiar event",
+            "When prompted by the teacher, add additional information",
+            "o Tell more about….",
+            "o What color is it…",
+            "o Who was there….",
+            "o What else happened…",
+            "o How did you feel when…",
+            "o What happened first…",
+            "o What happened next…",
+            "o What happened last…"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "familiar",
+        "adjectives",
+        "describe",
+        "people",
+        "places",
+        "things",
+        "event",
+        "prompting",
+        "support additional details"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Presentation of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.K.5",
+      "description": "Add drawings or other visual displays to descriptions as desired to provide additional detail. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: draw, add visuals, detail"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.5",
+      "grade": null,
+      "description": ". Make strategic use of digital media and visual displays of data to express information and enhance understanding of presentations."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Pictures can help tell a story.",
+            "Pictures can be used to tell stories about people, places, things, or events that are familiar to students.",
+            "Illustrators draw pictures for books to help the author tell a story."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Understand drawings help someone understand what is happening in text.",
+            "Understand visual displays help someone understand what is happening in text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Draw what is described in print.",
+            "Add visuals to information described in print.",
+            "Add drawings to give more details to what has been described.",
+            "Use drawings to tell a story about a person, place, thing, or event that is familiar to the student.",
+            "Use pictures to explain or tell about a nonfiction topic."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "draw",
+        "add visuals",
+        "detail"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Presentation of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.K.6",
+      "description": "Speak audibly and express thoughts, feelings, and ideas clearly. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: speak, listen, share, ideas, feelings, conversations"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.6",
+      "grade": null,
+      "description": ". Adapt speech to a variety of contexts and communicative tasks, demonstrating command of formal English when indicated or appropriate"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Understand conversations help express thoughts clearly.",
+            "Understand conversations help express thoughts clearly."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Understand that in order to express a thought to others, thoughts need to be communicated, sometimes through speech.",
+            "Understand that in order to express something one must express thoughts, feelings, and ideas in a way for others to understand them."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Verbally express thoughts to others.",
+            "Verbally express thoughts, feelings, and ideas in a way for others to understand them."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "speak",
+        "listen",
+        "share",
+        "ideas",
+        "feelings",
+        "conversations"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.1a",
+      "description": "Print many upper- and lowercase letters. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: alphabet, uppercase, lowercase, print, standard form, distinguish, write, letters, words, demonstrate, command, conventions, Standard English, grammar, usage, writing, speaking"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Letters can be written in uppercase and lowercase.",
+            "Distinguish between letters and shapes."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The alphabet is made up of letters that can be printed in upper- and lowercase.",
+            "Letters look different when printed in upper- versus lowercase.",
+            "Letters make up words.",
+            "The printed alphabet has a standard form that is universally used.",
+            "Printing letters correctly allows the reader to understand what has been written.",
+            "Printing letters correctly allows the student to write using Standard English."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Distinguish the difference between upper- and lowercase letters.",
+            "Write in standard print many upper- and lowercase letters.",
+            "Recognize that writing keys produce a letter, number, and symbol."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "alphabet",
+        "uppercase",
+        "lowercase",
+        "print",
+        "standard form",
+        "distinguish",
+        "write",
+        "letters",
+        "words",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "grammar",
+        "usage",
+        "writing",
+        "speaking"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.1b",
+      "description": "Use frequently occurring nouns and verbs. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: frequently, nouns, verbs, classification, purposes, identify, difference, demonstrate, command, conventions, Standard English, grammar, usage, writing, speaking"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Letters make up words.",
+            "Words in sentences can be classified into different groups.",
+            "Words in sentences serve different purposes."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Nouns name something such as people, places, or things.",
+            "Verbs express an action, occurrence, or state of being.",
+            "Words can be classified as nouns and verbs.",
+            "Nouns and verbs are used for different purposes.",
+            "The classification of a word as a noun or verb determines how it will be used in a sentence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify and name nouns.",
+            "Identify and name verbs.",
+            "Use nouns and verbs in sentences when speaking and writing.",
+            "Explain the difference between a noun and a verb."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "frequently",
+        "nouns",
+        "verbs",
+        "classification",
+        "purposes",
+        "identify",
+        "difference",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "grammar",
+        "usage",
+        "writing",
+        "speaking"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.1c",
+      "description": "Form regular plural nouns orally by adding /s/ or /es/ (e.g., dog, dogs; wish, wishes). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: regular nouns, singular nouns, plural nouns, orally, explain, add, demonstrate, command, conventions, Standard English, grammar, usage, writing, speaking, distinguish, identify, difference"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Singular means one.",
+            "Plural means more than one.",
+            "Nouns name people, places, or things.",
+            "Some nouns can become plural by adding /s/ or /es/ to the end of the word (preK standard)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Nouns can be singular or plural.",
+            "Some nouns can become plural by adding /s/ or /es/ to the end of the word.",
+            "Pictures of nouns can show both singular and plural nouns."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Distinguish the difference between singular and plural nouns.",
+            "Identify regular nouns and irregular nouns.",
+            "Add /s/ or /es/ to regular singular nouns to make them plural.",
+            "Identify and name singular nouns and their plurals.",
+            "Identify and name plural nouns in isolation from the singular form of the word.",
+            "Sort nouns by singular or plural categories using words or pictures.",
+            "Identify pictures that represent singular and plural nouns."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "regular nouns",
+        "singular nouns",
+        "plural nouns",
+        "orally",
+        "explain",
+        "add",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "grammar",
+        "usage",
+        "writing",
+        "speaking",
+        "distinguish",
+        "identify",
+        "difference"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.1d",
+      "description": "Understand and use question words (interrogatives (e.g., who, what, where, when, why, how). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: understand, use, interrogatives, question, purposes, difference, ask, questions, demonstrate, command, conventions, Standard English, grammar, usage, writing, speaking, identify, answer"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Certain words are used to ask questions.",
+            "There is a difference between questions and statements.",
+            "A statement is a telling sentence, and a question is an asking sentence."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Certain words are used at the beginning of sentences to ask questions.",
+            "Interrogatives are used for specific purposes (i.e., ask different types of questions).",
+            "Interrogatives are used to help create question sentences."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify all question words (interrogatives: who, what, where, when, why, how).",
+            "Understand the difference among interrogatives (knowing when to use who versus what and when versus where).",
+            "Listen to questions with interrogatives, and identify the interrogative words within the sentence.",
+            "Use interrogatives to ask questions.",
+            "Correctly answer a question posed with an interrogative."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "understand",
+        "use",
+        "interrogatives",
+        "question",
+        "purposes",
+        "difference",
+        "ask",
+        "questions",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "grammar",
+        "usage",
+        "writing",
+        "speaking",
+        "identify",
+        "answer"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.1e",
+      "description": "Use the most frequently occurring prepositions (e.g., to, from, in, out, on, off, for, of, by, with). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: preposition, noun, pronoun, direction, location, time, identify, explain, speaking, writing, use, frequently, sentences, demonstrate, command, conventions, Standard English, grammar, usage, writing, speaking"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Prepositions are used to describe.",
+            "Prepositions can be used to show location (e.g., in, out, on, off)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Prepositions are used with a noun or pronoun to show direction, location, or time.",
+            "Prepositions can help clarify when used in a sentence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify and name frequently occurring prepositions.",
+            "Explain how and why prepositions are used.",
+            "Use frequently occurring prepositions in written and spoken sentences."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "preposition",
+        "noun",
+        "pronoun",
+        "direction",
+        "location",
+        "time",
+        "identify",
+        "explain",
+        "speaking",
+        "writing",
+        "use",
+        "frequently",
+        "sentences",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "grammar",
+        "usage",
+        "writing",
+        "speaking"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.1f",
+      "description": "Produce and expand complete sentences in shared language activities. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: produce, expand, complete sentences, collaboration, subject, verb, agree, demonstrate, command, conventions, Standard English, grammar, usage, writing, speaking"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Complete sentences can be formed while speaking during shared language activities (e.g., student to student, student to teacher).",
+            "Complete sentences contain a subject and verb."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Sentences are made up of, at a minimum, a subject and a verb.",
+            "Subjects can be nouns or pronouns.",
+            "Subjects and verbs must agree.",
+            "A verb is the action or the state of being in the sentence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Write and speak complete sentences in collaboration with other students and the teacher.",
+            "Expand upon basic sentences in collaboration with other students and the teacher.",
+            "Add descriptive words to expand sentences with teacher guidance during a shared language lesson.",
+            "o The dog barks.",
+            "o The black dog barked.",
+            "o The large black dog barked.",
+            "o The large black dog barked loudly.",
+            "o The large black dog barked loudly all night."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "produce",
+        "expand",
+        "complete sentences",
+        "collaboration",
+        "subject",
+        "verb",
+        "agree",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "grammar",
+        "usage",
+        "writing",
+        "speaking"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.2a",
+      "description": "Capitalize the first word in a sentence and the pronoun I. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: capitalize, first word, sentence, pronoun, I, choose, demonstrate, command, conventions, Standard English, capitalization, punctuation, spelling, writing"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.2",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Write one's first name capitalizing the first letter.",
+            "Differentiate between an upper- and lowercase letter."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The first word of a sentence is always capitalized.",
+            "The pronoun I is always capitalized in a sentence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify capitalized words in text.",
+            "Choose a correctly capitalized sentence (first word and I).",
+            "Write a sentence capitalizing the first word.",
+            "Write a sentence capitalizing the pronoun I."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "capitalize",
+        "first word",
+        "sentence",
+        "pronoun",
+        "I",
+        "choose",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "capitalization",
+        "punctuation",
+        "spelling",
+        "writing"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.2b",
+      "description": "Recognize and name end punctuation. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: recognize, name, end punctuation, sentences, demonstrate, command, conventions, Standard English, capitalization, punctuation, spelling, writing"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.2",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Sentences have end punctuation.",
+            "All sentences have end punctuation.",
+            "End punctuation alerts the reader that the sentence is complete."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "A sentence is a complete thought.",
+            "Each end punctuation mark serves a different purpose.",
+            "A period comes at the end of a telling or declarative sentence.",
+            "A question mark comes at the end of an asking or integrative sentence.",
+            "An exclamation mark comes at the end of an exclamatory sentence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Recognize the different types of end punctuation.",
+            "Name the different types of end punctuation.",
+            "Differentiate between the types of end punctuation.",
+            "Explain why certain end punctuation marks are used."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "recognize",
+        "name",
+        "end punctuation",
+        "sentences",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "capitalization",
+        "punctuation",
+        "spelling",
+        "writing"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.2c",
+      "description": "Write a letter or letters for most consonant and short-vowel sounds (phonemes). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: write, letter(s), consonant, short-vowel, long-vowel, phonemes, relationship, sounds, recognize, distinguish, demonstrate, command, conventions, Standard English, capitalization, punctuation, spelling, writing"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.2",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Letters and sounds have a relationship.",
+            "Letter(s) can show the sound a consonant and vowel makes."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Letters represent sounds.",
+            "Consonants are non-vowels.",
+            "Vowels can have short or long sounds."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Recognize the sounds that letters make.",
+            "Distinguish between consonants and vowels.",
+            "Distinguish between short and long vowel sounds.",
+            "Write a letter or letters for most consonant sounds.",
+            "Write a letter or letters for short-vowel sounds."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "write",
+        "letter(s)",
+        "consonant",
+        "short-vowel",
+        "long-vowel",
+        "phonemes",
+        "relationship",
+        "sounds",
+        "recognize",
+        "distinguish",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "capitalization",
+        "punctuation",
+        "spelling",
+        "writing"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.2d",
+      "description": "Spell simple words phonetically, drawing on knowledge of sound-letter relationships. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: spell, simple words, phonetically, sound-letter relationships, recognize, demonstrate, command, conventions, Standard English, capitalization, punctuation, spelling, writing, distinguish, difference, say"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.2",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Letters and sounds have a relationship."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Letters represent sounds.",
+            "Some words can be spelled when you know the sounds the letters make."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Recognize the relationship between letters and sounds.",
+            "Say the sound(s) letters make.",
+            "Spell simple words phonetically, using sound and letter relationships.",
+            "Distinguish the difference between words that can be spelled phonetically and those that cannot."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "spell",
+        "simple words",
+        "phonetically",
+        "sound-letter relationships",
+        "recognize",
+        "demonstrate",
+        "command",
+        "conventions",
+        "Standard English",
+        "capitalization",
+        "punctuation",
+        "spelling",
+        "writing",
+        "distinguish",
+        "difference",
+        "say"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Knowledge of Language",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.3",
+      "description": "Begins in grade 2. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.3",
+      "grade": null,
+      "description": null
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.4a",
+      "description": "Identify new meanings for familiar words and apply them accurately (e.g., knowing duck is a bird and learning the verb to duck). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: identify, familiar words, apply, classified, groups, meaning, words, determine, clarify, new, unknown words, multiple-meaning words, phrases, context clues, analyzing, word parts, consulting, reference materials"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.4",
+      "grade": null,
+      "description": "Determine or clarify the meaning of unknown and multiple-meaning words and phrases by using context clues, analyzing meaningful word parts, and consulting general and specialized reference materials, as appropriate."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "All words have meanings.",
+            "Some words have more than one meaning.",
+            "New meanings can be applied for familiar words with prompting and support in a preK text.",
+            "Unknown and multiple meaning words can be explored with prompting and support in a preK text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Words can be classified into larger groups.",
+            "Words can have more than one meaning."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Determine or clarify new meanings for familiar words.",
+            "Apply new meanings for familiar words accurately.",
+            "Look at pictures to determine the meaning of a multiple meaning word.",
+            "o e.g., Show students a picture of duck as an animal and a picture of a person ducking. Have students determine which picture goes with each definition.",
+            "Listen to a story with the word, and determine which meaning is used of a multiple meaning word."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "identify",
+        "familiar words",
+        "apply",
+        "classified",
+        "groups",
+        "meaning",
+        "words",
+        "determine",
+        "clarify",
+        "new",
+        "unknown words",
+        "multiple-meaning words",
+        "phrases",
+        "context clues",
+        "analyzing",
+        "word parts",
+        "consulting",
+        "reference materials"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.4b",
+      "description": "Use the most frequently occurring inflections and affixes (e.g., -ed, -s, re-, un-, pre-, -ful, -less) as a clue to the meaning of an unknown word. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: use, inflections, affixes, clue, meaning, determine, clarify, new, unknown words, multiple-meaning words, phrases, context clues, analyzing, word parts, consulting, reference materials"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.4",
+      "grade": null,
+      "description": "Determine or clarify the meaning of unknown and multiple-meaning words and phrases by using context clues, analyzing meaningful word parts, and consulting general and specialized reference materials, as appropriate."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Meanings of unknown words with inflections and affixes can be determined with prompting and support in a preK text.",
+            "All words have meanings.",
+            "An affix is an additional element placed at the beginning or end of a root, stem, or word.",
+            "An inflection is a change in the form of a word (typically the ending) to express a grammatical function or attribute such as tense, mood, person, number, case, and gender."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Sometimes word parts are added to words.",
+            "Word parts can be added to the beginning or end of words.",
+            "These word parts have meanings.",
+            "Word parts are affixes known as prefixes or suffixes.",
+            "Knowing the meanings of inflections and affixes can help determine the meanings of unknown words."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Name and define most frequently occurring inflections and affixes.",
+            "Determine or clarify the meaning of an unknown word by using the most frequently occurring inflections and affixes as clues to the meaning of the word.",
+            "Look at words, and sort words with similar affixes.",
+            "Listen to words in a story and select word with affixes.",
+            "Identify affixes within a text either during read alouds or from words in print.",
+            "Orally separate a word and its affix."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "use",
+        "inflections",
+        "affixes",
+        "clue",
+        "meaning",
+        "determine",
+        "clarify",
+        "new",
+        "unknown words",
+        "multiple-meaning words",
+        "phrases",
+        "context clues",
+        "analyzing",
+        "word parts",
+        "consulting",
+        "reference materials"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.5a",
+      "description": "Sort common objects into categories (e.g., shapes, foods) to gain a sense of the concepts the categories represent. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: sort, common, objects, categories, shapes, foods, sense, concepts, represent, shows, understanding, word relationships, nuances, word meanings, demonstrate, figurative language"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.5",
+      "grade": null,
+      "description": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Objects can be sorted into categories based on similarities and differences.",
+            "Categories for kindergarten can be types of nouns, noun and verbs, singular and plural, same colors, types of food, same shapes, letters and numbers, etc."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Sorting objects into categories helps to gain a sense of the concept the categories represent.",
+            "Gaining a sense of the concept categories represented helps in the understanding of word relationships and nuances in word meanings.",
+            "Categories represent similarities among objects."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify categories that objects will be sorted into.",
+            "Sort objects into categories.",
+            "Identify how objects were selected to be sorted into each category.",
+            "Use picture cards or word cards to sort words into categories."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "sort",
+        "common",
+        "objects",
+        "categories",
+        "shapes",
+        "foods",
+        "sense",
+        "concepts",
+        "represent",
+        "shows",
+        "understanding",
+        "word relationships",
+        "nuances",
+        "word meanings",
+        "demonstrate",
+        "figurative language"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.5b",
+      "description": "Demonstrate understanding of frequently occurring verbs and adjectives by relating them to their opposites (antonyms). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: demonstrate, understanding, frequently occurring, verbs, adjectives, opposites, antonyms, shows, word relationships, nuances, word meanings, relating , figurative language"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.5",
+      "grade": null,
+      "description": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "All words have meanings.",
+            "An antonym is a word that means the opposite of another word.",
+            "Frequently occurring verbs and adjectives (run/walk, hard/soft) have opposites (antonyms)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Some words have meanings that can be different from or opposite to other words.",
+            "These words are known as antonyms.",
+            "Some verbs and adjectives have antonyms."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify frequently occurring verbs and adjectives.",
+            "Name their opposites (antonyms).",
+            "Listen to a story and identify a verb and give or identify its opposite.",
+            "Use picture cards to match a word to its antonym.",
+            "Orally give the antonym of a verb or adjective."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "demonstrate",
+        "understanding",
+        "frequently occurring",
+        "verbs",
+        "adjectives",
+        "opposites",
+        "antonyms",
+        "shows",
+        "word relationships",
+        "nuances",
+        "word meanings",
+        "relating",
+        "figurative language"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.5c",
+      "description": "Identify real-life connections between words and their use (e.g., note places at school that are colorful). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: identify, real-life, connections, words, use, context, shows, understanding, word relationships, nuances, word meanings, demonstrate, figurative language, adjectives"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.5",
+      "grade": null,
+      "description": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Know that all words have meanings.",
+            "Words are a part of their daily lives.",
+            "Know the connection between words and their use (i.e., describe things that are smooth).",
+            "Know that there are objects in their environments that relate to words they are learning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Words are useful when describing things in real-life scenarios.",
+            "Words should be used in the context of a real-life situation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify the meaning of words, and find objects at home or school that represents the word.",
+            "o e.g., round",
+            "o Students can name things at their homes or in their class that are round.",
+            "Identify common nouns and/or adjectives.",
+            "o Find someone or something that represents a noun at home or school. e.g., My teacher, mother, sister, and grandmother are girls.",
+            "o List people, places, or things that relate to the adjectives. e.g., My ball, toy truck, coat, and desk are brown.",
+            "Use these adjectives to describe objects (i.e., things that are fast, things in the classroom that are round, etc.)"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "identify",
+        "real-life",
+        "connections",
+        "words",
+        "use",
+        "context",
+        "shows",
+        "understanding",
+        "word relationships",
+        "nuances",
+        "word meanings",
+        "demonstrate",
+        "figurative language",
+        "adjectives"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.5d",
+      "description": "Distinguish shades of meaning among verbs describing the same general action (e.g., walk, march, strut, prance) by acting out the meanings. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: distinguish, shades of meaning, verbs, describing, same, general action, shows, understanding, word relationships, nuances, word meanings, acting out, demonstrate, figurative language, identify, difference"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.5",
+      "grade": null,
+      "description": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Verbs describe actions.",
+            "Some words mean the same thing but to varying degrees.",
+            "Words can be sorted into categories known as parts of speech."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Verbs represent words that show actions or something that a person or thing can do.",
+            "Verbs can have the same general action but have subtle differences."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify verbs that have the same general action.",
+            "Listen to stories or sentences, and determine the action verb.",
+            "Act out the meaning of these verbs to show the difference among them.",
+            "Look at pictures, and determine the verb."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "distinguish",
+        "shades of meaning",
+        "verbs",
+        "describing",
+        "same",
+        "general action",
+        "shows",
+        "understanding",
+        "word relationships",
+        "nuances",
+        "word meanings",
+        "acting out",
+        "demonstrate",
+        "figurative language",
+        "identify",
+        "difference"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "K",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.K.6",
+      "description": "Use words and phrases acquired through conversations, reading and being read to, and responding to texts. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: use, words, phrases, acquire, conversations, reading, being read to, responding to texts, shows, understanding, newly acquired vocabulary"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.6",
+      "grade": null,
+      "description": "Acquire and use accurately a range of general academic and domain-specific words and phrases sufficient for reading, writing, speaking, and listening at the college and career readiness level; demonstrate independence in gathering vocabulary knowledge when encountering an unknown term important to comprehension or expression."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to, with prompting and support, use words and phrases acquired through conversations, experiences, shared reading, being read to, and responding to texts."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Words and phrases that have been learned can be applied to new situations.",
+            "Expanding one's vocabulary can provide for rich dialogue when speaking, rich text when writing, and increased reading comprehension and enjoyment."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Acquire new words and phrases through conversations, reading and being read to, and responding to texts.",
+            "Use these new words and phrases (through speaking and/or writing) in a different context or scenario.",
+            "Use knowledge of words and phrases that have been acquired to decipher the meaning of unknown vocabulary in text."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "use",
+        "words",
+        "phrases",
+        "acquire",
+        "conversations",
+        "reading",
+        "being read to",
+        "responding to texts",
+        "shows",
+        "understanding",
+        "newly acquired vocabulary"
+      ]
+    }
+  }
+]

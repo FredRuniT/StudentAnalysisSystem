@@ -1,0 +1,3699 @@
+[
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.1",
+      "description": "Cite several pieces of textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) When writing and speaking:"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.1",
+      "grade": null,
+      "description": "Read closely to determine what the text says explicitly and to make logical inferences from it; cite specific textual evidence when writing or speaking to support conclusions drawn from the text"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to focus closely and critically on content in a literary text.",
+            "How to form a comprehensive understanding or analysis of what they are reading and for selecting key evidence for use in writing or speaking.",
+            "How to cite evidence from the text in the form of specific details or examples to support an analysis of what the text says explicitly.",
+            "How to cite evidence from the text in the form of specific details or examples to support an analysis of inferences drawn from the text.",
+            "How to refer directly to details and examples in a text and/or quote accurately from a text when explaining what happens in the text.",
+            "How to refer directly to details and examples in a text and/or quote accurately from a text when drawing inferences from a text.",
+            "What it means to draw inferences from a text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors purposely include specific details and/or examples in literary texts and/or omit specific details and/or examples from literary texts to prompt students to ask and answer questions about the text.",
+            "Details and examples authors provide in a literary text reveal meaning.",
+            "Authors state information explicitly in a text to allow students to make a direct connection and/or implicitly to require students to draw inferences from a text.",
+            "Authors provide evidence to support an analysis of what the text says explicitly and/or to support an analysis of inferences drawn from the text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze, and annotate a literary text to comprehend what the author says explicitly and to discover the levels of meaning embedded deeply within complex literary texts.",
+            "Conduct self-checks to ensure comprehension of a literary text, persevere through difficult sections, examine unfamiliar words or phrases and attempt to uncover the meaning of unknown words.",
+            "Provide citations of several pieces of textual evidence to support analysis of what the text says explicitly",
+            "Provide citations of several pieces of textual evidence to support analysis of inferences drawn from the text"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.3",
+      "description": "Analyze how particular elements of a literary text interact (e.g., how setting shapes the characters or plot). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.3",
+      "grade": null,
+      "description": "Analyze how and why individuals, events, or ideas develop and interact over the course of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to describe how a plot unfolds.",
+            "How to describe how characters respond to challenges over the course of a text.",
+            "How to describe how characters change over the course of a text.",
+            "Characters in a literary text interact through dialogue and actions.",
+            "How to compare and contrast two or more characters, settings, or events, citing specific details from a literary text.",
+            "How to describe in detail a character, setting, or event, citing specific evidence from a literary text.",
+            "How to describe characters and explain how the characters' traits,"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors develop elements of a story or drama to interact together.",
+            "Elements of a story include the characters, setting, exposition, rising action, conflict, climax, turning point, falling action, and solution/resolution.",
+            "Elements of a drama include casts of characters, settings, descriptions, dialogue, and stage directions.",
+            "Authors develop a character through direct and/or indirect characterization through description of a character's appearance, dialogue, thoughts, actions, reactions, interactions, and behaviors.",
+            "Authors often develop characters using general literary archetypes."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze, and annotate a story for evidence of how the characters, setting, and/or plot of a literary text interact.",
+            "Closely read, analyze and annotate a drama for evidence of how the characters, setting, and/or plot of a literary text interact.",
+            "Provide an analysis of how two or more story elements interact.",
+            "Provide an analysis of how characters' actions, dialogue, thoughts, motivations, and relationships shape the plot.",
+            "Provide an analysis of how the setting influences and shapes the plot.",
+            "Provide an analysis of how the setting influences and shapes the characters."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.4",
+      "description": "Determine the meaning of words and phrases as they are used in a text, including figurative and connotative meanings; analyze the impact of specific word choice (e.g., alliteration) on meaning and tone. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.4",
+      "grade": null,
+      "description": "Interpret words and phrases as they are used in a text, including determining technical, connotative, and figurative meanings, and analyze how specific word choices shape meaning or tone."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Specific word choice helps to achieve particular effects in a text and feelings in the reader.",
+            "Figurative language helps to achieve particular effects in a text and in the reader.",
+            "Connotation refers to a reader's emotion or association connected with a word.",
+            "Personification is a figure of speech in which a thing, idea, or animal is given human qualities.",
+            "How to use context clue to determine what a word means in a given context.",
+            "Tone is the author's attitude toward the audience, the subject, or the character. Tone is conveyed through the author's words and details.",
+            "Mood is the emotions the reader feels while reading a text. Mood is created by the author's word choice, imagery, dialogue, setting, and plot."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand what a word means in a given context, focusing on what the author is trying to do with the language.",
+            "Students understand that authors purposely choose words possessing strong, weak, positive, negative, or neutral connotations to achieve particular effects in a text and in the reader.",
+            "Students understand that authors purposely use figurative language to achieve particular effects in a section of a text.",
+            "Students understand that connotation refers to a reader's emotion or association connected with a word."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze and annotate a text for evidence of the meanings of words and phrases as they are used in a text.",
+            "Closely read, analyze and annotate a text for evidence of the impact of rhymes and other repetitions of sounds on sections of a poem, story or drama.",
+            "Determine the meaning of words and phrases based on context.",
+            "Determine the figurative meaning of particular words and phrases based on context.",
+            "Determine the connotative meaning of particular words and phrases based on context."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.5",
+      "description": "Analyze how a drama's or poem's form or structure (e.g., soliloquy, sonnet) contributes to its meaning. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.5",
+      "grade": null,
+      "description": "Analyze the structure of texts, including how specific sentences, paragraphs, and larger portions of the text (e.g., a section, chapter, scene, or stanza) relate to each other and the whole."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Writers purposely include specific sentences, chapters, scenes, or stanzas that contribute to the development of the theme, setting, or plot.",
+            "Knowledge of common narrative structure provides support for organizing ideas and deepening understanding of the text.",
+            "Common narrative structure follows the elements of plot: exposition, rising action, climax, falling action, resolution.",
+            "Stories may be presented through common narrative structure, through common narrative structure without conflict, with flashbacks,"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand that knowledge of a text's form and structure provides support for mentally organizing the ideas and deepening understanding of the text.",
+            "Students understand that authors often use a soliloquy to convey a character's inner thoughts or motivations to the audience.",
+            "Students understand that a soliloquy is an uninterrupted speech delivered by a single character to the audience but not to the other characters in the scene.",
+            "Students understand that a soliloquy can be very poetic and elegant in nature but is"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze and annotate a text for evidence of how a drama or poem's form or structure contributes to its meaning.",
+            "Provide an analysis of how a drama or poem's form or structure contributes to its meaning.",
+            "Provide an analysis of how a soliloquy's form or structure contributes to its meaning.",
+            "Provide an analysis of how a sonnet's form or structure contributes to its meaning."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.6",
+      "description": "Analyze how an author develops and contrasts the points of view of different characters or narrators in a text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.6",
+      "grade": null,
+      "description": "Assess how point of view or purpose shapes the content and style of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A narrator or speaker's point of view influences how events are presented and affects the information revealed about the characters and events.",
+            "How to distinguish their own point of view from that of the narrator's point of view or other characters' point of view.",
+            "Point of view is the perspective from which the story is presented.",
+            "There are three major types of point of view: first person, second person, and third person.",
+            "Third person point of view consists of three differing"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand that authors often include characters with opposing points of view for effect (e.g., to present conflict, show how characters see a situation differently).",
+            "Students understand that authors develop point of view through author's style, tone, word choice, description, dialogue, thoughts, reflection, author or narrator commentary, illustrations.",
+            "Students understand that authors can direct readers' attention to the exact detail, opinion, or emotion the author wants to stress by"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze and annotate a text for evidence of how an author develops and contrasts the points of view of different characters or narrators in a text.",
+            "Provides an analysis of how the author develops and contrasts the points of view of different characters or narrators within the text (e.g., how two characters may see a situation differently).",
+            "Provides an analysis of how point of view influences the way the story is told, and how the author develops the narrator (e.g., how Robert Cormier slowly reveals the"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.7",
+      "description": "Compare and contrast a written story, drama, or poem to its audio, filmed, staged, or multimedia version, analyzing the effects of techniques unique to each medium (e.g., lighting, sound, color, or camera focus and angles in a film). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.7",
+      "grade": null,
+      "description": "Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Compare and contrast reading the text of a story, drama, or poem to listening or viewing a performed version, describing how each version affects the reader or viewer differently (e.g., explain whether the suspense is greater in the written or performed version of the text).",
+            "How to describe the differences in a written story or drama and a performed story or drama.",
+            "How to explain how a performed story or drama represents a version of the written story or drama.",
+            "Students understand that to compare and contrast, they must show both similarities and differences."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand that authors purposely use word choice, style, description, dialogue, thoughts, reflections, author or narrator commentary and illustrations, while directors purposely select lighting, sound, color, or camera focus and angles to achieve specific effects and influence the audience/reader's perceptions.",
+            "Speakers use intonation, pausing, voice, etc., to achieve specific effects and influence the audience's perceptions.",
+            "Performed versions of texts affect audiences differently than the printed version.",
+            "Suspense may be greater in the written or performed version of the text."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze, take notes and/or annotate a text for evidence to use in comparing and contrasting a written story, drama, or poem to its audio, filmed, staged or multimedia version, focusing on the effects of techniques unique to each medium.",
+            "Provide a comparison and contrast of a written story, drama or poem to its audio, filmed, staged or multimedia version including an analysis of the effects of techniques unique to each medium.",
+            "Compare and contrast the written text of a story, drama, or poem to a performed version of it.",
+            "Provide an analysis of the effects of the specific"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.8",
+      "description": "Not applicable to literature. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD:"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.8",
+      "grade": null,
+      "description": "Delineate and evaluate the argument and specific claims in a text, including the validity of the reasoning as well as the relevance and sufficiency of the evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": []
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": []
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": []
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.9",
+      "description": "Compare and contrast a fictional portrayal of a time, place, or character and a historical account of the same period as a means of understanding how authors of fiction use or alter history. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.9",
+      "grade": null,
+      "description": "Analyze how two or more texts address similar themes or topics in order to build knowledge or to compare the approaches the authors take."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Multiple texts in different literary genres may address similar themes or topics.",
+            "Reading multiple literary texts addressing a similar theme or topic exposes students to multiple perspectives and points of view.",
+            "A specific genre influences the way information is presented in a text.",
+            "Students know how to describe and analyze aspects of the setting to explain how the setting affects the plot and characters.",
+            "Authors use situational literary archetypes in a variety of literary genres (e.g., journey, the initiation, good vs. evil, the fall)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Authors of fiction often include elements of nonfiction in their writing.",
+            "A fictional text often reflects and is influenced by a historical time, place, event or person.",
+            "Stories are influenced by the genre an author chooses for his writing."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze, take notes and/or annotate a text for evidence on how authors of fiction use or alter history in a fictional portrayal of a time, place, or character from history.",
+            "Provide a comparison and contrast of a fictional portrayal of a time and a historical account of the same period as a means of understanding how authors of fiction use or alter history (e.g., discuss the portrayal of historical characters and events in Johnny Tremain as opposed to the facts and accounts presented about the Revolutionary War in a history text).",
+            "Provide a comparison and contrast of a fictional"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Literature",
+    "reporting_category": "Range of Reading and Level of Text Complexity",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RL.7.10",
+      "description": "By the end of the year, read and comprehend literature, including stories, dramas, and poems, in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: comprehend, stories, dramas, poems, scaffolding, complexity band, proficiently, range"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.10",
+      "grade": null,
+      "description": "Read and comprehend complex literary and informational texts independently and proficiently."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Students self-monitor and adjust understanding of a literary text by visualizing unfamiliar situations, diagramming complex relationships, and applying skills from across the language arts.",
+            "How to explain the differences between different genres (e.g., short stories, poetry, drama) based on their characteristics and structural elements.",
+            "Students know how to make and check predictions.",
+            "Students know how to note important parts of a story."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The complexity of text increases as students progress through grade levels.",
+            "Students understand the importance of knowing the specific characteristics of different forms of literary texts (e.g., adventure stories, historical fiction, mystery, myths, science fiction, realistic fiction, allegory, parody, satire, drama, graphic novel, play, poetry, sonnet, ode, ballad, epic)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, comprehend, take notes and annotate literary texts of increasing complexity within the Lexile range of 955-1155 for the purpose of comprehension.",
+            "Monitor and adjust understanding of a literary text by recognizing when comprehension becomes unclear and applying corrective strategies automatically, including summarizing, paraphrasing, reviewing previous points, making connections to other texts and prior knowledge, determining word- and sentence-level meaning of confusing passages, and applying skills from across the language arts.",
+            "Use knowledge of the characteristics of different forms of literary texts to aid in comprehension of text."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "comprehend",
+        "stories",
+        "dramas",
+        "poems",
+        "scaffolding",
+        "complexity band",
+        "proficiently",
+        "range"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.1",
+      "description": "Cite several pieces of textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) Students cite evidence from the text in the form of"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.1",
+      "grade": null,
+      "description": "Read closely to determine what the text says explicitly and to make logical inferences from it; cite specific textual evidence when writing or speaking to support conclusions drawn from the text"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Students focus closely and critically on content in an informational text.",
+            "Students form a thorough understanding or analysis of what they are reading and for selecting key evidence for use in writing or speaking.",
+            "Students refer directly to details and examples in a text and/or quote accurately from a text when explaining what a text is about.",
+            "Students refer directly to details and examples in a text and/or quote accurately from a text when drawing inferences from a text.",
+            "Students understand what it means to draw inferences from a text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand that authors purposely include specific details and/or examples in informational texts and/or omit specific details and/or examples from informational texts to prompt students to ask and answer questions about the text.",
+            "Students understand that the details and examples authors provide in an informational text reveal meaning.",
+            "Students understand that authors state information explicitly in a text to allow students to make a direct connection and/or implicitly to require students to draw inferences from a text.",
+            "Students understand that authors provide evidence to"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Students closely read and analyze an informational text to comprehend what the author says explicitly and to discover the layers of meaning that are often embedded within complex informational texts.",
+            "Students conduct self-checks to ensure comprehension of an informational text, persevere through difficult sections, examine unfamiliar words or phrases and attempt to uncover the meaning of unknown words.",
+            "Students cite evidence from the text in the form of specific details or examples to support an analysis of what the text says explicitly."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Key Ideas and Details",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.3",
+      "description": "Analyze the interactions between individuals, events, and ideas in a text (e.g., how ideas influence individuals or events, or how individuals influence ideas or events). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.3",
+      "grade": null,
+      "description": "Analyze how and why individuals, events, or ideas develop and interact over the course of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A student is able to provide a detailed analysis of how a key individual or idea is introduced in a text (e.g., through examples and anecdotes)",
+            "A student is able to provide detailed analysis of how a key individual, event or idea is illustrated in a text (e.g., through examples and anecdotes)",
+            "A student is able to provide detailed analysis of how a key individual, event or idea is elaborated in a text (e.g., through examples and anecdotes)",
+            "Illustrate means to explain, describe, or give example of an individual, event, or idea.",
+            "Elaborate means to provide more details about an individual, event, or idea or"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "A student should understand how causal relationships between events, individuals, and ideas are introduced and developed in an informational text.",
+            "A student should understand the importance of comprehending ideas and processes as they develop in an informational text.",
+            "A student should understand that events, ideas, and actions described in the text influence other events, ideas, and actions.",
+            "In turn, a student should understand that events, ideas, and actions described in the text are influenced by other events, ideas, and actions."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze and annotate a text for evidence to analyze the interactions between individuals, events, and ideas.",
+            "Provide an analysis of how ideas influence individuals in an informational text.",
+            "Provide an analysis of how ideas influence events in an informational text.",
+            "Provide an analysis of how individuals influence ideas in an informational text.",
+            "Provide an analysis of how individuals influence events in an informational text.",
+            "Provide an analysis of how events influence individuals in an informational text.",
+            "Provide an analysis of how events influence ideas in a text."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.4",
+      "description": "Determine the meaning of words and phrases as they are used in a text, including figurative, connotative, and technical meanings; analyze the impact of a specific word choice on meaning and tone. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.4",
+      "grade": null,
+      "description": "Interpret words and phrases as they are used in a text, including determining technical, connotative, and figurative meanings, and analyze how specific word choices shape meaning or tone."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Students use context clues to determine what a word means in a given context (e.g., figurative, connotative).",
+            "Determine the connotative meaning of particular words and phrases based on context",
+            "Figurative language uses words in some way other than their literal meanings to make a comparison, add emphasis, or say something in a fresh and creative way.",
+            "An exaggeration describes something as being greater, larger, more important, etc., than it really is - an extravagant statement that is not meant to be taken literally.",
+            "A metaphor compares two unlike things to illuminate a"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand what a word means in a given context, focusing on what the author is trying to do with the language.",
+            "Students understand that tone is the author's attitude toward the audience, the subject, or the character. Tone is conveyed through the author's words and details.",
+            "Students understand that readers determine tone through word choice and clues presented in the context.",
+            "Students understand that tone may change throughout a text. In effect, a text can have more than one tone.",
+            "Students understand that authors often use figurative"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze and annotate a text for evidence of the meanings of words and phrases as they are used in a text.",
+            "Closely read, analyze and annotate a text for evidence of the impact of a specific word choice on meaning and tone.",
+            "Determine the meaning of words and phrases based on context.",
+            "Determine the figurative meanings of particular words and phrases based on context.",
+            "Determine the connotative meanings of particular words and phrases based on context.",
+            "Determine the technical meanings of particular words and phrases as they are used in context.",
+            "Provide an analysis of the impact of specific word choice on meaning and/or tone."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.5",
+      "description": "Analyze the structure an author uses to organize a text, including how the major sections contribute to the whole and to the development of the ideas. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.5",
+      "grade": null,
+      "description": "Analyze the structure of texts, including how specific sentences, paragraphs, and larger portions of the text (e.g., a section, chapter, scene, or stanza) relate to each other and the whole."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A student should be able to provide an analysis of how a particular sentence, paragraph, chapter, or section fits into the overall structure of a text",
+            "A student should be able to provide an analysis of how a particular sentence, chapter, or section contributes to the development of the ideas",
+            "A student knows how to compare and contrast the overall structure of events, ideas, concepts, or information in two or more texts.",
+            "A student knows how to describe the overall structure of events, ideas, concepts, or information in a text or part of a text."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand that writers purposely include major sections in a text that contribute to the overall text.",
+            "Students understand that writers purposely include major sections in a text that contribute to the development of ideas in a text.",
+            "Students understand that knowledge of common informational text structures provides support for organizing the ideas and deepening understanding of the text.",
+            "Authors use linguistic devices specific to different text structures (complex sentences, correlative conjunctions, specific nouns, verbs, and adjectives)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze and annotate a text for evidence of the structure an author uses to organize a text.",
+            "Closely read, analyze and annotate a text for evidence of how major sections contribute to the whole text and to the development of ideas within the text.",
+            "Provide an analysis of the structure an author uses to organize a text, including how the major sections contribute to the whole and to the development of ideas.",
+            "Provide an analysis of how an informational text is organized.",
+            "Identify major sections and explain how they contribute to the development of larger ideas in the text."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Craft and Structure",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.6",
+      "description": "Determine an author's point of view or purpose in a text and analyze how the author distinguishes his or her position from that of others. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.6",
+      "grade": null,
+      "description": "Assess how point of view or purpose shapes the content and style of a text."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Students know that authors develop point of view through author's style, tone, word choice, description, omission of information, inclusion of information, etc.",
+            "Students know that authors can direct readers' attention to the exact detail, opinion, idea, emotion, etc., the author wants to stress through his or her style of writing.",
+            "Students know the ways in which an author's point of view influences content and style.",
+            "An author's writing is influenced by his experiences, background, and values.",
+            "Students know that authors use different points of view to offer different perceptions and to develop a text based on the author's purpose for writing."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "An author's point of view is his position on a topic, idea, individual, event, etc.",
+            "Students understand that authors develop point of view through author's style, tone, word choice, description, omission of information, inclusion of information, etc.",
+            "Students understand that authors can direct readers' attention to the exact detail, opinion, idea, emotion, etc., the author wants to stress through his or her style of writing.",
+            "Authors can present information objectively (based on facts) or subjectively (based on opinions and bias)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze and annotate a text for evidence of an author's point of view.",
+            "Closely read, analyze and annotate a text for evidence of how the author distinguishes his or her point of view from others.",
+            "Provide a statement of an author's point of view in a text.",
+            "Provide a statement of an author's purpose in a text.",
+            "Provide an analysis of how the author distinguishes his or her position from that of others.",
+            "Compare and contrast authors' purposes or positions in informational texts on similar topics."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.7",
+      "description": "Compare and contrast a text to an audio, video, or multimedia version of the text, analyzing each medium's portrayal of the subject (e.g., how the delivery of a speech affects the impact of the words). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.7",
+      "grade": null,
+      "description": "Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A student can interpret information and data presented visually, quantitatively, and in writing.",
+            "A student can apply information from multiple sources to understand a topic.",
+            "A student can integrate information on a topic from several texts to develop a base of knowledge on a subject (e.g., categorize/organize information, compare information, summarize from multiple texts)",
+            "A student should be able to draw on information from multiple print and digital sources, demonstrating the ability to locate an answer to a question quickly or to solve a problem efficiently.",
+            "A student should be able to interpret information presented visually, orally, or quantitatively"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Students understand that authors purposely use word choice, style, etc., while directors purposely select lighting, sound, color, or camera focus and angles to achieve specific effects and influence the audience/reader's perceptions.",
+            "Speakers use intonation, pausing, voice, etc., to achieve specific effects and influence the audience's perceptions.",
+            "Performed versions of texts affect audiences differently than the printed version."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze, take notes and/or annotate a text for evidence to use in comparing and contrasting a text to its audio, video or multimedia version, analyzing each medium's portrayal of the subject.",
+            "Provide a comparison and contrast of a text to an audio, video, or multimedia version of the text.",
+            "Provide an analysis of each medium's portrayal of the subject.",
+            "Compare and contrast how information on the same topic is presented in different mediums (e.g., how a film of Martin Luther King's \"I Have a Dream\" speech captures its emotional impact while a written description of it"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.8",
+      "description": "Trace and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient to support the claims. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.8",
+      "grade": null,
+      "description": "Delineate and evaluate the argument and specific claims in a text, including the validity of the reasoning as well as the relevance and sufficiency of the evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Trace means to outline, delineate, or describe.",
+            "A student should know the difference between a claim that is supported with reasons and evidence opposed to a claim this is unsupported.",
+            "A student should know how to identify a speaker's claim(s) and explain how each claim is supported by the argument or arguments the speaker makes (the evidence).",
+            "A student should understand that a speaker uses reasons, facts, statistics, details, etc. to support his or her arguments for a claim or claims."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "A student should understand the difference between sound and unsound reasoning.",
+            "Sound reasoning is based on facts, statistical data, credible sources, etc.",
+            "Unsound reasoning refers to evidence presented from non-credible sources such as, blogs, self-authored cites, opinions, etc., or evidence that is not directly connected to the idea.",
+            "A student should understand that some arguments may not be relevant (not appropriate or not closely connected) to the claim.",
+            "A student should understand that some of the evidence presented may not be sufficient; the argument"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze, take notes and/or annotate a text for evidence to use in assessing whether or not the presented reasoning is sound.",
+            "Closely read, analyze, and annotate a text for evidence to use in assessing whether or not the presented is relevant and sufficient to support the claims.",
+            "Demonstrates the ability to trace an argument and specific claims in a text.",
+            "Provides an evaluation of whether the reasoning is sound in an argument.",
+            "Provides an evaluation of whether the evidence is relevant and sufficient to support the claims.",
+            "Identify weaknesses and logical fallacies in an argument (e.g., personal attack, exaggeration, stereotyping, categorical claims)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Integration of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.9",
+      "description": "Analyze how two or more authors writing about the same topic shape their presentations of key information by emphasizing different evidence or advancing different interpretations of facts. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: compare, contrast, presentation, events, analyze, interpretation, emphasis, topic"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.9",
+      "grade": null,
+      "description": "Analyze how two or more texts address similar themes or topics in order to build knowledge or to compare the approaches the authors take."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to understand that authors present information differently.",
+            "How to integrate information from several texts on the same topic in order to write or speak about the subject knowledgably.",
+            "How to compare and contrast the most important points and key details presented in two texts on the same topic."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to explain similarities and differences between informational texts on the same topic (purpose, organization, main ideas, viewpoint).",
+            "There are many forms of Informational text/literary nonfiction subgenres.",
+            "o Exposition",
+            "o Argument",
+            "o Functional text",
+            "o Personal essays",
+            "o Speeches",
+            "o Opinion pieces",
+            "o Biographies",
+            "o Memoirs",
+            "o Journalism"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, analyze, and annotate a text for evidence that shows how two or more writers emphasize different evidence on the same topic.",
+            "Provide an analysis of how two or more authors writing about the same topic shape their presentations of key information by emphasizing different evidence.",
+            "Provide an analysis of how two or more authors writing about the same topic shape their presentations of key information by advancing different interpretations of facts.",
+            "Analyze similarities and differences in emphasis and interpretation in informational texts on the same topic."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "compare",
+        "contrast",
+        "presentation",
+        "events",
+        "analyze",
+        "interpretation",
+        "emphasis",
+        "topic"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Reading Informational Text",
+    "reporting_category": "Range of Reading and Level of Text Complexity",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "RI.7.10",
+      "description": "By the end of the year, read and comprehend literary nonfiction in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "R",
+      "reporting_category": null,
+      "id": "CCR.R.10",
+      "grade": null,
+      "description": "Read and comprehend complex literary and informational texts independently and proficiently."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to self-monitor and adjust understanding of an informational text by visualizing unfamiliar situations, diagramming complex relationships, and applying skills from across the language arts.",
+            "How to explain the differences between text structures (e.g., chronological, compare/contrast, problem/solution, description, process order, etc.)",
+            "How to note important parts of a text.",
+            "How to explain the characteristics and structural elements of different genres of informational text (e.g., argument, exposition, functional texts)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The complexity of text increases as students progress through grade levels.",
+            "An interpretive framework can be applied to works of the same genre.",
+            "Literary nonfiction shares characteristics with literature but is based on fact.",
+            "There are several modes of discourse (e.g., narration, description, exposition, and argument).",
+            "Text structure impacts a text's meaning.",
+            "Characteristics of informational text forms include:",
+            "o Essays",
+            "o Speeches",
+            "o Opinion pieces",
+            "o Biographies",
+            "o Memoirs"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Closely read, comprehend, take notes and annotate literary texts of increasing complexity within the Lexile range of 955-1155 for the purpose of comprehension.",
+            "Analyze and explain the characteristics and devices employed by types of informational texts including literary nonfiction (e.g., essay, biography) and argument to begin to establish an interpretive framework for understanding different works",
+            "Monitor and adjust understanding of an informational text by recognizing when comprehension becomes unclear and applying corrective strategies automatically, including"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.1a",
+      "description": "Introduce claim(s), acknowledge alternate or opposing claims, and organize the reasons and evidence logically. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.1",
+      "grade": null,
+      "description": "Write arguments to support claims in an analysis of substantive topics or texts using valid reasoning and relevant and sufficient evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Claims are introduced to present the writer's opinion or position on a topic, idea, or issue.",
+            "A counterclaim is an alternate or opposing claim; the opposite side of the writer's claim.",
+            "Some claims attempt to convince the reader that the position the writer takes is correct.",
+            "A writer presents an argument (point, reason, detail) or several arguments (points, reasons, details) to provide support for his claim.",
+            "Evidence is introduced to provide support for the writer's claim.",
+            "Arguments should be strategically ordered from least support to greatest support so readers end with the strongest support in their minds.",
+            "How to write clearly and concisely using formal English.",
+            "Coherence and cohesion adds to the clarity of the writer's claim(s) and support."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Opposing or alternate claims are acknowledged by writers to strengthen the argument made by the writer and refute the opposing claim.",
+            "Alternate or opposing claims are often presenting using subordination through complex sentences; subordination allows the writer to emphasize his claim by deemphasizing the opposing or alternate claim.",
+            "Evidence is introduced to provide support for the writer's claim.",
+            "Coherence and cohesion aids to the clarity of the writer's idea."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Ensure writing is about a debatable claim.",
+            "Provide an introductory claim statement about a topic, idea, or issue under study, including the title, author, and genre (TAG sentence) of the texts from which the writing is related.",
+            "Write a statement of the alternate or opposing claim(s) in a way that helps to strengthen his or her argument.",
+            "Complete a graphic organizer to organize the reasons and evidence to support his or her claim clearly.",
+            "Separate evidence from the text into two groups: (1) evidence that supports the writer's claim or (2) evidence"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.1b",
+      "description": "Support claim(s) with logical reasoning and relevant evidence, using accurate, credible sources and demonstrating an understanding of the topic or text. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.1",
+      "grade": null,
+      "description": "Write arguments to support claims in an analysis of substantive topics or texts using valid reasoning and relevant and sufficient evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A well-written claim requires students to have a deep understanding of the topic or text.",
+            "Sources are considered credible when they are trustworthy, accurate, and reliable.",
+            "How to distinguish between relevant and irrelevant evidence.",
+            "Evidence (arguments) should be strategically ordered from least support to greatest support so readers end with the strongest support in their minds.",
+            "There are different ways to present evidence.",
+            "o Paraphrasing",
+            "o Quotations"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Providing clear reasons supported with relevant support from credible sources for claims will convince the reader that the writer has a well-supported interpretation of the claim.",
+            "Relevant evidence causes the argument to be more credible."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Evaluate his or her resources for accuracy and credibility and selects evidence that comes from credible sources to use in writing.",
+            "Organize evidence into two groups: (1) relevant evidence or (2) irrelevant evidence.",
+            "Provide clear reasons and relevant evidence from credible sources as support for claim(s).",
+            "Develop an outline of his claim(s) and supporting evidence to ensure understanding of the topic and/or text(s).",
+            "Demonstrate an understanding of the text through his or her writing."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.1c",
+      "description": "Use words, phrases, and clauses to create cohesion and clarify the relationships among claim(s), reasons, and evidence. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.1",
+      "grade": null,
+      "description": "Write arguments to support claims in an analysis of substantive topics or texts using valid reasoning and relevant and sufficient evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Transition words assist writers in developing relationships among claims and reasons.",
+            "There are several types of transition words.",
+            "o Agreement, addition, similarity (e.g., as a matter of fact, equally, furthermore, of course, by the same token)",
+            "o Examples, support, emphasis (e.g., in other words, to put it differently, on the positive side, on the negative side, chiefly, notably, most compelling evidence)",
+            "o Effect, result, consequence (e.g., thus, accordingly, hence, in that case, for this reason, under those circumstances)",
+            "o Opposition, limitation, contradiction (e.g., although this may be true,"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Precise language is used to show the reader how the evidence is connected to the claim.",
+            "Cohesion is the connection that allows the sentences and paragraphs to work as a unified piece."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include precise language in writing.",
+            "Include descriptive words/ phrases.",
+            "Include sensory details.",
+            "Include specific linking and transitional words.",
+            "Include domain-specific vocabulary as appropriate to the text or topic.",
+            "Include relevant warrants to the claim.",
+            "Use transition words to clarify relationships among claims, reasons, and evidence.",
+            "Demonstrate cohesion in his or her writing."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.1d",
+      "description": "Establish and maintain a formal style. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: Formal style"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.1",
+      "grade": null,
+      "description": "Write arguments to support claims in an analysis of substantive topics or texts using valid reasoning and relevant and sufficient evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Formal language should not include words that are used in a casual language. (i.e. euphemisms, slang, biased language, group-specific jargon)",
+            "Formal language uses correct grammar and spelling."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The level of formality is determined by the audience.",
+            "Academic writing requires a formal tone."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Develop a response appropriate for the intended audience.",
+            "Omit casual language.",
+            "Use correct spelling and grammar."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "Formal style"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.1e",
+      "description": "Provide a concluding statement or section that follows from and supports the argument presented. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: concluding statement/ section, arguments, support, claims"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.1",
+      "grade": null,
+      "description": "Write arguments to support claims in an analysis of substantive topics or texts using valid reasoning and relevant and sufficient evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to provide a concluding statement or section related to the opinion presented.",
+            "Conclusions wrap up what has been discussed throughout the paper."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Conclusions address why the reader should align with your position.",
+            "Support for the argument(s) presented will convince the reader that the writer has a well-supported interpretation of the claim."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide a concluding statement or section that restates the arguments presented to support the claim.",
+            "Provide a concluding statement or section that addresses why the reader should align with your position."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "concluding statement/ section",
+        "arguments",
+        "support",
+        "claims"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.2a",
+      "description": "Introduce a topic clearly, previewing what is to follow; organize ideas, concepts, and information, using strategies such as definition, classification, comparison/contrast, and cause/effect; include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to aiding comprehension. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.2",
+      "grade": null,
+      "description": "Write informative /explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to introduce a topic clearly, provide a general observation and focus, and group related information logically.",
+            "How to include formatting and tools (e.g., heading, illustrations, and multimedia) when useful to aiding comprehension.",
+            "How to group related information in paragraphs and sections.",
+            "Topics should be narrow.",
+            "Formats used to signal major divisions throughout the text.",
+            "o Headings",
+            "o Sections",
+            "Graphics (i.e., charts, tables) provide examples for the topic."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The topic must be clear and presented in the introduction.",
+            "Ideas, concepts, and information should be organized for audience and purpose using the most effective method.",
+            "Including a preview of the information that will be included in the text allows the reader will know what to expect.",
+            "Ideas can be organized using different methods.",
+            "o Definition",
+            "o Classification",
+            "o Compare/contrast",
+            "o Cause/effect",
+            "The method of organization will assist in the development of the topic."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Introduce a topic clearly and provide a preview of what is to be presented in the body of the text.",
+            "Organize ideas, concepts, and information using a specific organizational method and/or graphic organizer appropriate to the topic.",
+            "Include specific formatting, graphics, and/or multimedia when it aids in comprehension."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.2b",
+      "description": "Develop the topic with relevant facts, definitions, concrete details, quotations, or other information and examples. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: topic, relevant facts, definitions, concrete details, quotations, examples"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.2",
+      "grade": null,
+      "description": "Write informative /explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to develop a topic with facts, definitions, concrete details, quotations, or other information and examples related to the topic.",
+            "Definitions provide statements of the exact meaning of a word.",
+            "Concrete details are facts that come from the source.",
+            "Quotations are words taken from a text or speech and repeated by someone other than the original speaker.",
+            "Examples are a model or pattern of something that can be imitated."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Developing a topic will help the reader to understand what the writer is trying to convey.",
+            "Relevant facts connected to the topic will aid the reader in comprehending the information the writer is presenting.",
+            "Concrete details about the topic will aid the reader in comprehending the information the writer is presenting.",
+            "Quotations about the topic will aid the reader in comprehending the information the writer is presenting.",
+            "Examples that are relevant to the topic will aid the reader in comprehending the information the writer is presenting."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Develop the main point(s) (body) of the paper by including relevant facts, definitions, concrete details, quotations or other information and examples retrieved from resources that support the main focus of his paper."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "topic",
+        "relevant facts",
+        "definitions",
+        "concrete details",
+        "quotations",
+        "examples"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.2c",
+      "description": "Use appropriate transitions to create cohesion and clarify the relationships among ideas and concepts. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.2",
+      "grade": null,
+      "description": "Write informative /explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to link ideas within and across categories of information using words, phrases, and clauses (in contrast, especially, another, for example, also, because, and, more, but)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Transitions unify writing into a whole piece.",
+            "Transitions connect ideas and paragraphs.",
+            "Transitions connect corresponding paragraphs.",
+            "Transition words assist writers in developing relationships among claims and reasons.",
+            "There are several types of transition words.",
+            "o Agreement, addition, similarity (e.g., as a matter of fact, equally, furthermore, of course, by the same token)",
+            "o Examples, support, emphasis (e.g., in other words, to put it differently, on the"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include transitions that provide logical connections in writing.",
+            "Demonstrate cohesion among ideas and relationships within writing.",
+            "Build ideas and paragraphs from a smaller point to a larger point.",
+            "Show that one paragraph refers to another.",
+            "Clearly show the relationships among ideas and concepts."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.2d",
+      "description": "Use precise language and domain-specific vocabulary to inform about or explain the topic. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: precise language, domain-specific vocabulary, inform, audience, purpose for writing"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.2",
+      "grade": null,
+      "description": "Write informative /explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Precise language is language that uses the right words to convey the exact message.",
+            "Domain-specific vocabulary includes words that are specific to certain domain/ area."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Precise language will help the reader understand the writer's topic."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include language that is specific to the writer's topic, audience, and purpose.",
+            "Include domain-specific vocabulary to inform or explain the writer's topic."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "precise language",
+        "domain-specific vocabulary",
+        "inform",
+        "audience",
+        "purpose for writing"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.2e",
+      "description": "Establish and maintain a formal style. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: formal style, argument, support, claim, relevant evidence"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.2",
+      "grade": null,
+      "description": "Write informative /explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Formal language should not include words that are used in a casual language. (i.e., euphemisms, slang, biased language, group-specific jargon)",
+            "Formal language uses correct grammar and spelling."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The level of formality is determined by the audience.",
+            "Academic writing requires a formal tone."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Develop a response appropriate for the intended audience.",
+            "Omit casual language.",
+            "Use correct spelling and grammar."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "formal style",
+        "argument",
+        "support",
+        "claim",
+        "relevant evidence"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.2f",
+      "description": "Provide a concluding statement or section that follows from and supports the information or explanation presented. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: concluding statement, concluding section, support, information, explanation"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.2",
+      "grade": null,
+      "description": "Write informative /explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Conclusions wrap up what has been discussed throughout the paper.",
+            "The concluding section should the support the information presented."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Providing support for the information presented will convince the reader that the information presented is accurate."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include a concluding statement or section that restates the topic.",
+            "Include a concluding statement or section that supports the information presented."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "concluding statement",
+        "concluding section",
+        "support",
+        "information",
+        "explanation"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.3a",
+      "description": "Engage and orient the reader by establishing a context and point of view and introducing a narrator and/or characters; organize an event sequence that unfolds naturally and logically. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.3",
+      "grade": null,
+      "description": "Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details, and well -structured event sequences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to orient the reader by establishing a situation and introducing a narrator and/or characters.",
+            "How to organize an event sequence that unfolds naturally.",
+            "How to write a narrative in which he or she recounts a well-elaborate event or short sequence of events; includes details to describe actions, thoughts, and feelings; uses temporal words to signal event order; and provides a sense of closure.",
+            "A narrative tells a story.",
+            "A narrator is the person who tells the story of events.",
+            "A narrative includes a setting, characters, and a plot.",
+            "The plot of a narrative is made up of the events that take place in a story (e.g., the exposition,"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Establishing a context will let the reader know what the essay is about.",
+            "Organizing an event sequence that unfolds naturally and logically will allow the reader the opportunity to get engaged with the piece."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Complete a graphic organizer to plan the context, setting, introduce the characters, and logically sequence the plot.",
+            "Develop an engaging context to hook the reader into the narrative.",
+            "Establish a point of view.",
+            "Determine how he or she will begin the narrative.",
+            "Introduce the narrator and characters.",
+            "Organize an event sequence that unfolds naturally and logically."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.3b",
+      "description": "Use narrative techniques, such as dialogue, pacing, and description, to develop experiences, events, and/or characters. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.3",
+      "grade": null,
+      "description": "Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details, and well- structured event sequences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to use narrative techniques such as dialogue, description, and pacing, to develop experiences and events.",
+            "Narrative techniques include dialogue, pacing, and description.",
+            "Dialogue is a conversation between two or more people.",
+            "Pacing is the manipulation of time.",
+            "Pacing moves the events of the narrative forward.",
+            "Description is a way to give details about events, people, and experiences.",
+            "How to use dialogue and descriptions of actions, thoughts, and feelings to develop characters."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Narrative techniques such as dialogue, description, and pacing, assist in developing complex characters.",
+            "Dialogue, pacing, and description work together and/or individually to drive the action and push the plot toward a resolution/solution.",
+            "Pacing is important to a narrative to assist the development of the plot by allowing the events to flow naturally.",
+            "Description provides a spoken or written representation of a person, experience or an event.",
+            "Dialogue is important to the development of the character and events in a narrative."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include techniques such as dialogue, pacing, and description to develop the characters' experiences.",
+            "Include techniques such as dialogue, pacing, and description to develop the events in the plot.",
+            "Include techniques such as dialogue, pacing, and description to develop complex characters.",
+            "Focus on a short period for the narrative that allows the student to develop the experiences, events, and characters in a complex, engaging manner.",
+            "Include pacing that allows the events and experiences to flow and unfold naturally.",
+            "Include detailed description to provide the reader a visual"
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.3c",
+      "description": "Use variety of transition words, phrases, and clauses to convey sequence and signal shifts from one time frame or setting to another. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.3",
+      "grade": null,
+      "description": "Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details, and well -structured event sequences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Transition words, phrases, and clauses connect ideas and paragraphs.",
+            "Transitional words will signal exceptions, time, repetition, summary, or conclusion, emphasis, or give examples.",
+            "Sequencing is the order in which things happen."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Transitions unify writing into a whole piece.",
+            "Transitions connect ideas and paragraphs.",
+            "Transitions connect corresponding paragraphs.",
+            "Transition words assist writers in developing relationships among claims and reasons.",
+            "There are many transition words that convey sequence, time, chronology (e.g., after, as soon as, before, initially, now, immediately, meanwhile, when we finished, soon after, before long, suddenly, later on).",
+            "Transitions help readers understand how ideas and paragraphs work together.",
+            "Transitions help readers understand that ideas and"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include a variety of transition words, phrases, and/or clauses that provide logical transitions in their writing.",
+            "Annotate his or her writing for inclusion of transitions that link one event and/or paragraph to another are included.",
+            "Annotate his or her writing for inclusion of signal shifts from one time frame to another to ensure the plot is moving forward.",
+            "Include signal shifts to introduce a flashback if appropriate to the context of the narrative.",
+            "Use transition words to link one setting to another in appropriate to the context of the narrative."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.3d",
+      "description": "Use precise words and phrases, relevant descriptive details, and sensory language to convey experiences and events. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.3",
+      "grade": null,
+      "description": "Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details, and well- structured event sequences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to use concrete words and phrases and sensory details to convey experiences and events precisely.",
+            "How to provide a sense of closure in a narrative.",
+            "Precise language is language that uses the right words to convey the exact message.",
+            "Descriptive details convey a clear picture of an idea.",
+            "Sensory details are details that deal with the senses."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Writers should choose precise words based on the effect they want to achieve in the reader.",
+            "Choosing words for their specific connotations assists the reader in determining the mood of the passage and the tone of the writer.",
+            "Tone is how the author chooses to present the writing (e.g., style, word choice).",
+            "There are many possible tones a writer can use (e.g., serious, humorous, amused, angry, playful, neutral, ironic, suspicious, witty).",
+            "Mood is the feeling a piece of literature evokes in a reader.",
+            "There are many possible moods a reader can feel (e.g., optimistic, gloomy, happy,"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include words that are precise to convey experiences and events and evoke feelings in the reader.",
+            "Include relevant descriptive details to convey experiences and events.",
+            "Include sensory language to help create an image in the reader's mind of experiences and events in the narrative.",
+            "Annotate his or her writing for precise words, descriptive details, and sensory language.",
+            "Give and receive peer feedback on the inclusion of precise words, descriptive details, and sensory language."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Text Types and Purposes",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.3e",
+      "description": "Provide a conclusion that follows from the narrated experiences or events. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: provide, conclusion, narrated experiences, narrated events"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.3",
+      "grade": null,
+      "description": "Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details, and well- structured event sequences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to provide a conclusion that follows the narrated experiences or events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Conclusions inform the reader of the resolution or solution.",
+            "A conclusion brings the narrative to a close (e.g., shows what was learned through the experience or event by the narrator or another character, connects the event to a larger meaning, provides a reflection of the experience or event)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Include a concluding statement or section that follows from the narrated events or experiences and brings the narrative to a close.",
+            "Give and receive peer feedback on the inclusion of an appropriate conclusion."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "provide",
+        "conclusion",
+        "narrated experiences",
+        "narrated events"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Production and Distribution of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.4",
+      "description": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) Determining the audience will be helpful when developing the subject. A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.4",
+      "grade": null,
+      "description": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Coherent writing is logically ordered, well-organized and connected, and easy to understand.",
+            "Text structure is how the information within the text is written or organized.",
+            "o Narration",
+            "o Description",
+            "o Process",
+            "o Definition",
+            "o Division and classification",
+            "o Compare and contrast",
+            "o Analogy",
+            "o Cause and effect",
+            "A writer's style is the way he or she chooses language to convey ideas.",
+            "Style includes the author's voice, tone, and word choice.",
+            "A task is an assigned piece of work to be completed.",
+            "There must be a purpose for writing."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The assigned task must be addressed in the writing.",
+            "Considering the purpose of the writing will assist the writer in the organization of the writing."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Present writing in a clear, coherent manner.",
+            "Address the assigned task.",
+            "Use language appropriate to the task, purpose, and audience.",
+            "Give and receive peer feedback on development, organization, style, task purpose, audience for a variety of pieces of writing."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Production and Distribution of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.5",
+      "description": "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on how well purpose and audience have been addressed. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 7.) Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.6",
+      "grade": null,
+      "description": "Use technology, including the internet, to produce and publish writing and to interact and collaborate with others."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A peer is someone who is of equal standing.",
+            "The steps of writing include planning, revising, editing, re-writing, or trying a new approach.",
+            "Planning allows the student the opportunity to gather ideas, brainstorm, and map out thoughts and make decisions about the content of a piece.",
+            "Revising is altering something that has already been written or printed in order to improve, update or make corrections.",
+            "Editing is correcting written work, checking for grammar, spelling, or punctuation errors.",
+            "Command of the conventions of standard English grammar and its usage."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Receiving guidance and support from peers and adults will help the development of and strengthen the writing by giving the writer an opportunity to write for an audience.",
+            "Using the writing process will help develop the writer's piece.",
+            "Using the writing process will help strengthen the writer's writing."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Ask for and receive guidance and support from peers and adults for pieces of writing.",
+            "Make changes to pieces of writing, based on the feedback from peers and teachers to strengthen writing.",
+            "Demonstrate command of the conventions of standard English grammar and usage.",
+            "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling.",
+            "Request peer or adult feedback on the conventions of standard English and edit pieces of writing accordingly.",
+            "Demonstrate knowledge of language and its conventions. capitalization, punctuation, and spelling."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Production and Distribution of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.6",
+      "description": "Use technology, including the internet, to produce and publish writing and link to and cite sources as well as to interact and collaborate with others, including linking to and citing sources. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.6",
+      "grade": null,
+      "description": "Use technology, including the internet, to produce and publish writing and to interact and collaborate with others."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Technology consists of electronic and web-based tools and applications used to access, analyze, and evaluate information.",
+            "The Internet is a global system of interconnected computer networks.",
+            "Produce means to create something.",
+            "Publishing is the final step in the writing process then the writer shares the work with others.",
+            "Keyboarding skills are necessary for using both word processing software and database software.",
+            "Collaborate means to work cooperatively with other and interact with others.",
+            "How to type a minimum of three pages in a single sitting."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The student's writing will be produced using technology (e.g., PowerPoint, Prezi,).",
+            "The student's writing will be published through technology (e.g., classroom blogs, classroom webpages).",
+            "Link to sources means to include a hyperlink to the website resource used in part/all of the presentation.",
+            "Linking the sources to the writing will show the reader the direct connections in the writing.",
+            "Citing sources identifies and credits the source from which the information came.",
+            "Citing sources will allow the reader to verify that the information given is supported by a reliable source."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Produce writing using technology.",
+            "Publish writing through technology.",
+            "Type a minimum of three pages in a single sitting.",
+            "Collaborate with others to retrieve information and/or publish information.",
+            "Provide a link to sources within the presentation/publication.",
+            "Cite sources."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Research to Build and Present Knowledge",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.7",
+      "description": "Conduct short research projects to answer a question, drawing on several sources and generating additional related, focused questions for further research and investigation. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: conduct, research project, several sources, refocusing, inquiry, research, sources, generate, focused questions, research, investigation"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.7",
+      "grade": null,
+      "description": "Conduct short as well as more sustained research projects based on focused quotations, demonstrating understanding of the subject under investigation."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to conduct short research projects, using several sources to build knowledge through investigation of different aspects of a topic.",
+            "A research project is an organized study to discover facts about a particular topic.",
+            "Sources are people, places, or things that provide information.",
+            "An inquiry is a request for information.",
+            "An investigation is conducted to find out the facts about something."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Researching a topic will answer questions that the reader may have.",
+            "Using several sources will provide more support for the research topic.",
+            "Several sources will help verify answers to the research questions.",
+            "Based on the information found, additional research and investigations may be needed.",
+            "Students utilize an appropriate standard format for giving credit to the authors they are citing, such as those from the MLA or the APA."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Conduct short research projects that answer a question.",
+            "Use several sources when conducting research.",
+            "Generate additional questions for further research and investigation, based on the information found.",
+            "Use a graphic organizer to organize and maintain the information from resources."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "conduct",
+        "research project",
+        "several sources",
+        "refocusing",
+        "inquiry",
+        "research",
+        "sources",
+        "generate",
+        "focused questions",
+        "research",
+        "investigation"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Research to Build and Present Knowledge",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.8",
+      "description": "Gather relevant information from multiple print and digital sources; using search terms effectively; assess the credibility and accuracy of each source; and quote or paraphrase the data and conclusions of others while avoiding plagiarism and following a standard format for citation. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.8",
+      "grade": null,
+      "description": "Delineate and evaluate the argument and specific claims in a text, including the validity of the reasoning as well as the relevance and sufficiency of the evidence."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to recall relevant information from experiences or gather relevant information from print and digital sources.",
+            "Digital sources are sources that are available in electric form, readable and manipulated by computer.",
+            "How to summarize or paraphrase information in notes and finished work.",
+            "How to provide a list or sources.",
+            "How to quote a source correctly within his or her writing."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Information can be gathered from print and digital sources.",
+            "Sources are considered credible when they are trustworthy, accurate, and reliable.",
+            "Paraphrase means to rephrase an author's idea in different words.",
+            "Information from sources should be used without plagiarizing.",
+            "Plagiarism is the use of ideas or writings of another author, representing them as one's original work.",
+            "Providing bibliographic information about sources will give the author of the information credit. A quote is a repeat or copy of someone else's statement or thoughts."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Gather information from several print and digital sources.",
+            "Assess the credibility of the source by the author, the author's purpose, and the date of the information.",
+            "Quote directly from a source and provide credit to the author by providing basic bibliographic information using an appropriate standard format.",
+            "Paraphrase information from others while avoiding plagiarism and providing basic bibliographic information using an appropriate standard format."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Research to Build and Present Knowledge",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.9a",
+      "description": "Apply grade 8 Reading standards to literary texts (e.g., \"Compare and contrast a fictional portrayal of a time, place, or character and a historical account of the same period as a means of understanding how authors of fiction use or alter history\"). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.9",
+      "grade": null,
+      "description": "Analyze how two or more texts address similar themes or topics in order to build knowledge or to compare the approaches the authors take."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to compare and contrast texts in different forms or genres [e.g., stories and poems; historical novels and fantasy stories] in terms of their approaches to similar themes and topics.",
+            "How to compare and contrast two or more characters, settings, or events in a story or drama, drawing on specific details in a text.",
+            "How to describe in depth a character, setting, or event in a story or drama, drawing on specific details in a text.",
+            "Evidence is information that shows, proves, or gives reasons for making a judgment."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Evidence to support analysis, reflection, or research must be retrieved from literary texts."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide a written response to questions based on Reading for Literature Standards 2-9.",
+            "Support written responses to questions based on Reading for Literature Standard 1.",
+            "Include evidence from literary texts that supports analysis, reflection, and research."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Research to Build and Present Knowledge",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.9b",
+      "description": "Apply grade 7 Reading standards to literary nonfiction and/or informational texts (e.g., \"Trace and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient to support the claims\"). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.9",
+      "grade": null,
+      "description": "Analyze how two or more texts address similar themes or topics in order to build knowledge or to compare the approaches the authors take."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not.",
+            "How to explain how an author uses reasons and evidence to support particular points in a text, identifying which reasons and evidence support which point(s).",
+            "Evidence is information that shows, proves, or gives reasons for making a judgment.",
+            "Informational texts are written selection intended to explain an idea, topic, or process.",
+            "Support is used to show that an idea, statement, or theory is true or correct."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Evidence to support analysis, reflection, or research must be retrieved from informational texts."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide a written response to questions based on Reading for Literature and Reading for Information Standards 2-9.",
+            "Support written responses to questions based on Reading for Literature and Reading for Information Standard 1.",
+            "Include evidence gather from informational texts that supports analysis, reflection, and research."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Writing",
+    "reporting_category": "Range of Writing",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "W.7.10",
+      "description": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Writing",
+      "reporting_category": null,
+      "id": "CCR.W.10",
+      "grade": null,
+      "description": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of tasks, purposes, and audiences."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Routine is a sequence of actions regularly followed.",
+            "Time frames are periods of time.",
+            "Research is the careful investigation or study of a topic.",
+            "Reflection is done to consider the thoughts on a topic or literary work.",
+            "Revision is a step in the writing process used to correct or improve the original work.",
+            "Single sitting is a limited period of activity without stopping.",
+            "Discipline-specific tasks are tasks related to a specific branch of knowledge."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Writing should be done regularly.",
+            "Writing will have to be produced during different time frames.",
+            "Writing will be produced for a range of discipline-specific tasks.",
+            "Writing will be produced for a range of purposes.",
+            "Writing will be produced for a range of audiences."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Write routinely over extended time frames and shorter time frames.",
+            "Produce writing for a range of discipline-specific tasks.",
+            "Produce writing for a range of purposes.",
+            "Produce writing for a range of audiences."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.1a",
+      "description": "Come to discussions prepared, having read or researched material under study; explicitly draw on that preparation by referring to evidence on the topic, text, or issue to probe and reflect on ideas under discussion. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: discussion, researched, evidence, probe"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.1",
+      "grade": null,
+      "description": "Prepare for and participate effectively in a range of conversations and collaborations with diverse partners, building on others' ideas and expressing their own clearly and persuasively."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "A good communicator is able to express his or her ideas effectively and listen actively.",
+            "How to come to discussions prepared, having read required material.",
+            "How to use evidence to support ideas shared in a discussion."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Sometimes it is necessary to prepare for a discussion by researching the topic, text, or issue to be discussed.",
+            "Reading required material prepares them for discussion of the text.",
+            "How to identify key ideas from researched material on the topic, text, or issue under discussion.",
+            "How to use evidence to support ideas shared in a discussion.",
+            "How to formulate comments, questions, and responses on ideas under discussion."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide evidence of reading/studying required material through note-taking and/or annotation of the text.",
+            "Participate in discussions on the required material, citing evidence from the text to support comments on the text.",
+            "Ask questions that require a deeper probing of ideas presented in the text.",
+            "Provide comments that offer a differing perspective or reflection of the topic or ideas under discussion.",
+            "Develop comments, questions, and responses based on evidence."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "discussion",
+        "researched",
+        "evidence",
+        "probe"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.1b",
+      "description": "Follow rules for collegial discussions, track progress toward specific goals and deadlines, and define individual roles as needed. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: collegial, discussion, track, goals, deadlines, roles"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.1",
+      "grade": null,
+      "description": "Prepare for and participate effectively in a range of conversations and collaborations with diverse partners, building on others' ideas and expressing their own clearly and persuasively."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to follow agreed-upon rules of a collegial discussion.",
+            "The importance of setting goals and deadlines for collegial discussions.",
+            "How to define individual roles for group discussions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to set goals and deadlines, and then track progress.",
+            "How to assign and assume individual roles in a discussion."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Continually demonstrate the ability to follow established rules for participating in collegial discussions (e.g., listen actively and attentively, do not monopolize discussion, ask for clarification, respect every member).",
+            "Within a collegial discussion, remain on task and track progress toward achieving the instructional goal(s) set forth by the teacher within the established time frame.",
+            "Participate in small-group discussions and effectively carry out assigned role (e.g., leader, recorder, reporter, illustrator, time keeper)."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "collegial",
+        "discussion",
+        "track",
+        "goals",
+        "deadlines",
+        "roles"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.1c",
+      "description": "Pose questions that elicit elaboration and respond to others' questions and comments with relevant observations and ideas that bring the discussion back on topic as needed. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: pose, elicit, elaboration, relevant, observations"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.1",
+      "grade": null,
+      "description": "Prepare for and participate effectively in a range of conversations and collaborations with diverse partners, building on others' ideas and expressing their own clearly and persuasively."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to pose and respond to specific questions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to create questions that elicit elaboration form their peers during a discussion.",
+            "How to respond to questions and comments with relevant details.",
+            "How to track the progress of a discussion and recognize when the discussion is getting off topic."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "In a one-on-one, small-group, or whole-group setting, ask questions about a topic, text, or issue under discussion that require classmates to elaborate on their answers by providing specific details and relevant observations from the text.",
+            "In a one-on-one, small-group, or whole-group setting, answer questions about a topic, text, or issue under discussion by elaborating on specific details and relevant observations from the text.",
+            "Bring a discussion back on topic as needed by posing a relevant question."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "pose",
+        "elicit",
+        "elaboration",
+        "relevant",
+        "observations"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.1d",
+      "description": "Acknowledge new information expressed by others and, when warranted, modify their own views. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: acknowledge, information, expressed, warranted, modify, views"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.1",
+      "grade": null,
+      "description": "Prepare for and participate effectively in a range of conversations and collaborations with diverse partners, building on others' ideas and expressing their own clearly and persuasively."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to demonstrate understanding of multiple perspectives by reflecting on the ideas expressed.",
+            "Group discussions can be a powerful way to gain new understanding.",
+            "Reflecting and paraphrasing information helps you better understand the key ideas expressed in a discussion.",
+            "Paraphrasing means to express the meaning of another person's writing and/or speaking using different words."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "It is important to allow your views to be flexible.",
+            "How to acknowledge the key ideas presented by others in a discussion and integrate those key ideas with their own when warranted."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "In one-on-one, small group, or whole group settings, review new information expressed by classmates.",
+            "In one-on-one, small-group, or whole-group settings, paraphrase other classmates' ideas and perspectives.",
+            "In one-on-one, small group, or whole group settings, reflect on others' ideas and affirm or, when warranted, adjust his or her own ideas."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "acknowledge",
+        "information",
+        "expressed",
+        "warranted",
+        "modify",
+        "views"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.2",
+      "description": "Analyze the main ideas and supporting details presented in diverse media and formats (e.g., visually, quantitatively, orally) and explain how the ideas clarify a topic, text, or issue under study. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.2",
+      "grade": null,
+      "description": "Integrate and evaluate information presented in diverse media and formats, including visually, quantitatively, and orally."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "By interpreting information presented in diverse media and formats, you develop a stronger understanding of the topic, text, or issue under study.",
+            "Interpreting information requires students to attend closely to the format in which the information is presented.",
+            "Interpreting information means explaining what the information means.",
+            "Diverse media and formats refer to the different types of media and formats available.",
+            "o Visual (e.g., video clips, graphics, diagrams, photographs, illustrations, digital storytelling, web page, blog, images, political cartoons, maps, magazines, timelines)",
+            "o Quantitative (e.g., bar graphs, line graphs, pie charts, box plots, tables, spreadsheets, histograms)"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to identify and analyze the main idea and supporting details presented in a variety of media and formats.",
+            "Ideas presented in diverse media and formats should help to clarify the topic, text, or issue under study."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Determine the main idea and supporting details of information presented through a variety of media and formats.",
+            "Analyze the main idea and details of the information presented through a variety of media and formats to explain how the ideas help to make a topic, text, or issue under study more clear.",
+            "Participate in a discussion of how ideas presented in diverse media and formats helps to clarify the topic, text, or issue under study.",
+            "Summarize the information presented in diverse media and formats.",
+            "Discuss and explain how visual, quantitative, and oral formats contribute differently to a topic, text, or issue.",
+            "Paraphrase the information presented in diverse media and formats."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Comprehension and Collaboration",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.3",
+      "description": "Delineate a speaker's argument and specific claims, evaluating the soundness of the reasoning and the relevance and sufficiency of the evidence. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.3",
+      "grade": null,
+      "description": "Evaluate a speaker's point of view, reasoning, and use of evidence or rhetoric."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Delineate means to outline, trace, or describe.",
+            "The difference between a claim that is supported with reasons and evidence opposed to a claim this is unsupported.",
+            "How to identify a speaker's claim(s) and explain how each claim is supported by the argument or arguments the speaker makes (the evidence).",
+            "A speaker uses reasons, facts, statistics, details, etc. to support his or her arguments for a claim or claims.",
+            "A claim is a statement of opinion the writer or speaker is trying to prove.",
+            "Argument(s) is how the speaker supports his claim(s);"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The difference between sound and unsound reasoning.",
+            "Sound reasoning is based on facts, statistical data, credible sources, etc.",
+            "Unsound reasoning refers to evidence presented from non-credible sources such as, blogs, self-authored cites, opinions, etc., or evidence that is not directly connected to the idea.",
+            "Some arguments may not be relevant (not appropriate or not closely connected) to the claim.",
+            "Some of the evidence presented may not be sufficient; the argument presented may be weak details that do not provide"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide an outline of a speaker's claim(s) and supporting arguments (main points).",
+            "Provide an evaluation of whether or not a claim is supported by reasons and evidence.",
+            "Provide an evaluation of whether or not the evidence and reasoning presented is sound.",
+            "Provide an evaluation of whether or not the evidence presented is relevant and sufficient."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Presentation of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.4",
+      "description": "Present claims and findings, emphasizing salient points in a focused, coherent manner with pertinent descriptions, facts, details, and examples; use appropriate eye contact, adequate volume, and clear pronunciation. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.4",
+      "grade": null,
+      "description": "Present information, findings, and supporting evidence such that listeners can follow the line of reasoning and the organization, development, and style are appropriate to task, purpose, and audience."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to plan and deliver presentations.",
+            "How to sequence ideas logically.",
+            "The importance of separating pertinent information from impertinent information when presenting claims and findings.",
+            "Pertinent refers to whether or not the description, facts, and details clearly relate to or are relevant to the claim or findings under discussion.",
+            "Accentuating a main idea or theme means to present information that emphasizes a main idea or theme by using details, facts, gestures, and body language."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "How to determine salient points and pertinent descriptions, facts, details, and examples in order to emphasize them in a presentation.",
+            "How to arrange claims, findings, salient points, pertinent descriptions, facts, details, and examples in a focused, coherent manner.",
+            "A salient point refers to a prominent or obvious detail or feature.",
+            "Coherent manner means to express the salient points in a clear, logical, and well- organized way."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Present claims and findings, emphasizing salient points in a focused, coherent manner with pertinent descriptions, facts, details, and examples.",
+            "Use appropriate eye contact, adequate volume, and clear pronunciation when presenting."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Presentation of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.5",
+      "description": "Include multimedia components and visual displays in presentations to clarify claims and findings and emphasize salient points. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge)"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.5",
+      "grade": null,
+      "description": "Make strategic use of digital media and visual displays of data to express information and enhance understanding of presentations."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to identify a speaker's claim(s) and explain how each claim is supported by the argument or arguments the speaker makes (the evidence).",
+            "A speaker uses reasons, facts, statistics, details, etc. to support his or her arguments for a claim or claims.",
+            "A claim is a statement of opinion the writer or speaker is trying to prove.",
+            "Argument(s) is how the speaker supports his claim(s); argument is the main point or points a speaker makes to provide supporting reasons and evidence for his claim.",
+            "Including multimedia and visual components can help the audience understand the main idea and key details of his or her report.",
+            "How to select appropriate multimedia components (e.g.,"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Which parts of his or her presentation could use clarification or emphasis.",
+            "How to select multimedia components/visual displays that add meaning to his or her presentation.",
+            "A salient point refers to a prominent or obvious detail or feature."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Select multimedia components that help to clarify claims and findings to oral presentations and emphasize salient points.",
+            "Create and add multimedia components that help to clarify claims and findings and emphasize salient points in a presentation.",
+            "Design and create a visual display to include in an oral presentation that helps to clarify claims and findings and emphasize salient points."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": []
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Speaking and Listening",
+    "reporting_category": "Presentation of Knowledge and Ideas",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "SL.7.6",
+      "description": "Adapt speech to a variety of contexts and tasks, demonstrating command of formal English when indicated or appropriate. (See grade 7 Language standards 1 and 3 for specific expectations.) Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: adapt, speech, variety, contexts, tasks, formal English, appropriate, situation"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Speaking and Listening",
+      "reporting_category": null,
+      "id": "CCR.SL.6",
+      "grade": null,
+      "description": "Adapt speech to a variety of contexts and communicative tasks, demonstrating command of formal English when indicated or appropriate."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Language should be adjusted depending on whom he or she is speaking to and the specific occasion, context or task.",
+            "How to determine if formal or informal English is appropriate in a given setting and audience.",
+            "How to identify formal and informal settings.",
+            "The qualities of formal and informal speech.",
+            "How to differentiate between contexts or situations that call for formal English and contexts or situations where informal English is appropriate.",
+            "How to speak in complete sentence when asked to provide requested details, information, or clarification."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Language should be adjusted depending on audience and the specific occasion, context or task.",
+            "How to determine if formal or informal English is appropriate in a given setting and audience."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Appropriately adapt speech for a variety of contexts and tasks.",
+            "Based on audience, context, and task, determine when formal or informal language should be used.",
+            "Demonstrate correct usage of formal English when indicated."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "adapt",
+        "speech",
+        "variety",
+        "contexts",
+        "tasks",
+        "formal English",
+        "appropriate",
+        "situation"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.1a",
+      "description": "Explain the function of phrases and clauses in general and their function in specific sentences. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: phrases, clauses, function, subject, predicate, independent clauses, dependent clauses, adjectives, noun, pronoun, adverbs, verb"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing, cursive, or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Phrases and clauses are groups of words that give information in a sentence.",
+            "A phrase cannot stand alone because it does not contain both a subject and a predicate.",
+            "A clause is a group of words that contains both a subject and a predicate. There are two types of clauses.",
+            "o Independent clauses can stand alone as a sentence.",
+            "o A dependent clause cannot stand alone as a sentence."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Some phrases and clauses function like adjectives. They modify a noun or a pronoun in a sentence.",
+            "Some phrases and clauses function like adverbs. They modify a verb, an adjective or another adverb in a sentence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Explain the function of phrases in general and in specific sentences.",
+            "Explain the function of clauses in general and in specific sentences.",
+            "Choose phrases and clauses correctly when writing or speaking."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "phrases",
+        "clauses",
+        "function",
+        "subject",
+        "predicate",
+        "independent clauses",
+        "dependent clauses",
+        "adjectives",
+        "noun",
+        "pronoun",
+        "adverbs",
+        "verb"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.1b",
+      "description": "Choose among simple, compound, complex, and compound-complex sentences to signal differing relationships among ideas. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: simple sentence, compound sentence, complex sentence, compound-complex sentence, differing, relationships, independent clause, dependent clause"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing, cursive, or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to produce simple, compound, and complex sentences.",
+            "An independent clause can stand alone as a sentence.",
+            "A dependent clause cannot stand alone as a sentence and must be paired with an independent clause."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Writing can be improved by using different sentence types.",
+            "A simple sentence contains one independent clause.",
+            "A compound sentence contains two or more independent clauses that are joined by a comma and a coordinating conjunction, a semicolon, or a semicolon with a conjunctive adverb and a comma.",
+            "A complex sentence has one independent clause and one or more dependent clauses.",
+            "A compound-complex sentence contains two or more independent clauses and one or more dependent clauses."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Choose among sentence types to signal differing relationships among ideas when writing or speaking."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "simple sentence",
+        "compound sentence",
+        "complex sentence",
+        "compound-complex sentence",
+        "differing",
+        "relationships",
+        "independent clause",
+        "dependent clause"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.1c",
+      "description": "Place phrases and clauses within a sentence, recognizing and correcting misplaced and dangling modifiers. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: phrases, clauses, misplaced modifier, dangling modifier"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.1",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English grammar and usage when writing (printing, cursive, or keyboarding) or speaking."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Phrases and clauses are groups of words that provide information in a sentence.",
+            "A modifier is a word, phrase, or clause that changes, or modifies, the meaning of some part of a sentence."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "A misplaced modifier occurs when a word, phrase, or clause is placed too far away from the word it modifies.",
+            "A dangling modifier occurs when a word, phrase, or clause modifies an unintended or non-existent word due to its place in a sentence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Identify and correct misplaced and dangling modifiers when writing or speaking."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "phrases",
+        "clauses",
+        "misplaced modifier",
+        "dangling modifier"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.2a",
+      "description": "Use a comma to separate coordinate adjectives (e.g., It was a fascinating, enjoyable movie - but not He wore an old [,] green shirt). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: comma, coordinate adjectives"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.2",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "An adjective describes a noun by answering one of the following questions:",
+            "o What kind?",
+            "o How many?",
+            "o Which one?",
+            "An adjective can be a single word, a phrase, or clause."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Coordinate adjectives are two or more adjectives that modify the same noun.",
+            "Coordinate adjectives equally modify the noun, but they do not modify one another.",
+            "A comma should separate coordinate adjectives."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Use a comma to separate coordinate adjectives."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "comma",
+        "coordinate adjectives"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Conventions of Standard English",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.2b",
+      "description": "Spell correctly. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: spell, correctly"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.2",
+      "grade": null,
+      "description": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to consult reference materials, as needed, to check the spelling of a word."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Effective communication of ideas when writing or speaking relies on the appropriate usage of the conventions of standard English."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Spell grade-level words correctly."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "spell",
+        "correctly"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Knowledge of Language",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.3a",
+      "description": "Choose language that expresses ideas precisely and concisely, recognizing and eliminating wordiness and redundancy. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: express, precisely, concisely, eliminating, wordiness, redundancy, sentence patterns, style, expand, combine, reduce, convey, literal, nonliteral"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.3",
+      "grade": null,
+      "description": "Apply knowledge of language to understand how language functions in different contexts, to make effective choices for meaning or style, and to comprehend more fully when reading or listening."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to vary sentence patterns for meaning, reader/listener interest, and style.",
+            "How to expand, combine, and reduce sentences for meaning, reader/listener interest, and style.",
+            "How to use words and phrases to convey ideas precisely.",
+            "How to distinguish the literal and nonliteral meaning of words and phrases in context (e.g., take steps)."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "One way to make writing more effective is to make the ideas precise.",
+            "Removing unnecessary words can make his or her writing more precise and concise."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Choose language that expresses ideas precisely and concisely.",
+            "Recognize and eliminate wordiness and redundancy."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "express",
+        "precisely",
+        "concisely",
+        "eliminating",
+        "wordiness",
+        "redundancy",
+        "sentence patterns",
+        "style",
+        "expand",
+        "combine",
+        "reduce",
+        "convey",
+        "literal",
+        "nonliteral"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.4a",
+      "description": "Use context (e.g., the overall meaning of a sentence or paragraph; a word's position or function in a sentence) as a clue to the meaning of a word or phrase. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: context, definition, example, restatement, cause/effect, comparison/contrast, position, function"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.4",
+      "grade": null,
+      "description": "Determine or clarify the meaning of unknown or multiple-meaning words and phrases by using context clues, analyzing meaningful word parts, and consulting general and specialized reference materials, as appropriate."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Context clues are words and phrases in the text that give hints to a word's meaning.",
+            "There are several types of context clues readers can look for when trying to figure out unfamiliar text. Many of the types have signal words.",
+            "o Definition (e.g., is, means, are, or)",
+            "o Example (e.g., such as, like, for example)",
+            "o Restatements (e.g., or, that is, in other words, which is)",
+            "o Cause/effect (e.g., as a result, because)",
+            "o Comparison/contrast (e.g., although, similarly, like, unlike)"
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The overall meaning of a sentence or a paragraph can be used to determine the meaning of a word or phrase.",
+            "A word's position and function in a sentence can be used to derive word meaning."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Use the overall context of sentence or paragraph to determine the meaning of an unknown word or phrase.",
+            "Use a word's position and function in a sentence to determine the meaning of an unknown word or phrase."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "context",
+        "definition",
+        "example",
+        "restatement",
+        "cause/effect",
+        "comparison/contrast",
+        "position",
+        "function"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.4b",
+      "description": "Use common, grade-appropriate Greek or Latin affixes and roots as clues to the meaning of a word (e.g., belligerent, bellicose, rebel). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: affix, prefix, suffix, root"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.4",
+      "grade": null,
+      "description": "Determine or clarify the meaning of unknown or multiple-meaning words and phrases by using context clues, analyzing meaningful word parts, and consulting general and specialized reference materials, as appropriate."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Adding an affix (prefix or suffix) to a root word forms many English words.",
+            "The root of a word is its basic meaning before an affix is added.",
+            "A prefix is a word part added to the beginning of a root to change its meaning.",
+            "A suffix is a word part added to the end of a root to change its meaning."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "The meanings of grade-appropriate Greek or Latin roots in order to use their meanings as a clue to determine the meaning of unknown words.",
+            "o Example: belli means \"war\"",
+            "The meanings of grade-appropriate Greek and Latin affixes in order to use their meanings as a clue to determine unknown words.",
+            "o Examples:",
+            "-ent means \"inclined to\""
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Demonstrate knowledge of the meaning of grade-appropriate roots.",
+            "Demonstrate knowledge of the meaning of grade-appropriate Greek or Latin prefixes.",
+            "Demonstrate knowledge of the meaning of grade-appropriate Greek or Latin suffixes.",
+            "Use Greek and Latin affixes and roots to derive word meaning."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "affix",
+        "prefix",
+        "suffix",
+        "root"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.4c",
+      "description": "Consult general and specialized reference materials (e.g., dictionaries, glossaries, thesauruses), both print and digital, to find the pronunciation of a word or determine or clarify its precise meaning or its part of speech. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) When writing and speaking: KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: reference materials, dictionary, pronunciation, part of speech, definition, glossary, thesaurus, synonym, antonym"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.4",
+      "grade": null,
+      "description": "Determine or clarify the meaning of unknown or multiple-meaning words and phrases by using context clues, analyzing meaningful word parts, and consulting general and specialized reference materials, as appropriate."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Reference materials are print or digital resources that give factual information about a word or topic.",
+            "A dictionary lists words in alphabetical order. Each entry contains the word's pronunciation, part of speech, and definition(s).",
+            "A glossary is an alphabetical list of words that are used in a book. The glossary also contains the word's pronunciation and part of speech, but the glossary will only provide the definition of the word as it is used in the book.",
+            "A thesaurus lists synonyms and antonyms for words."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Words can have more than one definition and can function as more than one part of speech.",
+            "When reading and writing, consult a reference material to determine or clarify a word's meaning or part of speech."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Consult a dictionary, either print or digital, to confirm the meaning of a word and to find its pronunciation and part of speech.",
+            "Consult a glossary of a book, either print or digital, to find a word's pronunciation, part of speech, and to determine the word's meaning in that particular book.",
+            "Consult a thesaurus, either print or digital, to find synonyms and antonyms of a word."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "reference materials",
+        "dictionary",
+        "pronunciation",
+        "part of speech",
+        "definition",
+        "glossary",
+        "thesaurus",
+        "synonym",
+        "antonym"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.4d",
+      "description": "Verify the preliminary determination of the meaning of a word or phrase (e.g., by checking the inferred meaning in context or in a dictionary). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: verify, preliminary, inferred, context"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.4",
+      "grade": null,
+      "description": "Determine or clarify the meaning of unknown or multiple-meaning words and phrases by using context clues, analyzing meaningful word parts, and consulting general and specialized reference materials, as appropriate."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to determine the meaning of an unknown word using context clues.",
+            "How to consult reference materials to determine the meaning of a word."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Verifying the preliminary determination of the meaning of a word or phrase by checking the inferred meaning in context or in a dictionary ensures that you are using words correctly when writing or speaking.",
+            "Effective readers, writers, and speakers use knowledge of language to acquire, clarify, and appropriately use vocabulary."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Determine the meaning of a word by checking the inferred meaning in context.",
+            "Determine the meaning of a word by checking by checking the inferred meaning in a dictionary."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "verify",
+        "preliminary",
+        "inferred",
+        "context"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.5a",
+      "description": "Interpret figures of speech (e.g., literary, biblical, and mythological allusions) in context. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: interpret, figures of speech, figurative language, literal, similes, metaphors, compares, personification, attributes, allusion, associations"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.5",
+      "grade": null,
+      "description": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "Figurative language is language that goes beyond the literal meaning of the words.",
+            "How to interpret similes, metaphors and personification in context.",
+            "o A simile compares two things using the words like or as.",
+            "o A metaphor compares two things by stating that one thing is other.",
+            "o Personification is a figure of speech that gives human attributes to something that is non-human."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "An allusion is a reference to a well-known person, place, event, piece of art, or literary work.",
+            "Writers use allusions to make associations in the mind of the reader."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Interpret figures of speech in context."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "interpret",
+        "figures of speech",
+        "figurative language",
+        "literal",
+        "similes",
+        "metaphors",
+        "compares",
+        "personification",
+        "attributes",
+        "allusion",
+        "associations"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.5b",
+      "description": "Use the relationship between particular words (e.g., synonym/antonym, analogy) to better understand each of the words. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: synonym, antonym, analogy"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.5",
+      "grade": null,
+      "description": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How words are related to one another helps build vocabulary knowledge.",
+            "Synonyms are words that have the same, or nearly the same meaning.",
+            "Antonyms are words that have opposite meanings."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "An analogy shows the relationship between two pairs of words.",
+            "A student should understand that it is important to determine the relationship between the first pair of words in an analogy. Then, the student should apply the same relationship to the second pair of words.",
+            "Synonym/antonyms analogies show relationships in which one word in each pair is the opposite of the other."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Analyze the relationship between particular words.",
+            "Use the relationship between particular words to better understand each of the words."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "synonym",
+        "antonym",
+        "analogy"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.5c",
+      "description": "Distinguish among the connotations (associations) of words with similar denotations (definitions) (e.g., refined, respectful, polite, diplomatic, condescending). Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: distinguish, connotation, association, denotation, definition, dictionary, positive, negative, neutral"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.5",
+      "grade": null,
+      "description": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to determine the explicit meaning of a word.",
+            "How to use word relationships to clarify meaning of a word.",
+            "A word can have different kinds of meanings."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "A word's denotation is its dictionary definition.",
+            "A word's connotation is the feeling or association that it suggests.",
+            "Connotations can be positive, negative, or neutral."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Determine the connotations of words with similar denotations.",
+            "Choose and use specific words for their connotations to achieve an effect or a specific purpose."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "distinguish",
+        "connotation",
+        "association",
+        "denotation",
+        "definition",
+        "dictionary",
+        "positive",
+        "negative",
+        "neutral"
+      ]
+    }
+  },
+  {
+    "subject": "English Language Arts",
+    "grade": "7",
+    "strand": "Language",
+    "reporting_category": "Vocabulary Acquisition and Use",
+    "standard": {
+      "type": "Grade-Specific",
+      "id": "L.7.6",
+      "description": "Acquire and use accurately grade-appropriate general academic and domain- specific words and phrases; gather vocabulary knowledge when considering a word or phrase important to comprehension or expression. Desired Student Performance A student should know (Prerequisite Knowledge) A student should understand (Conceptual Understanding) A student should be able to do (Evidence of Knowledge) KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD: academic words, domain-specific words, subtle, precise"
+    },
+    "anchor_standard": {
+      "type": "College and Career Readiness Anchor",
+      "strand": "Language",
+      "reporting_category": null,
+      "id": "CCR.L.6",
+      "grade": null,
+      "description": "Acquire and use accurately a range of general academic and domain-specific words and phrases sufficient for reading, writing, speaking, and listening at the college and career readiness level; demonstrate independence in gathering vocabulary knowledge when considering a word or phrase important to comprehension or expression."
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know (Prerequisite Knowledge)",
+          "items": [
+            "How to identify, understand, and use 6th grade general academic and domain-specific terms.",
+            "Certain phrases signal relationships, such as contrast."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand (Conceptual Understanding)",
+          "items": [
+            "Academic words are words that are used routinely in all types of texts. They often represent subtle or precise ways to say relatively simple things.",
+            "Domain-specific words are words that are specific to a course of study.",
+            "How to use context clues and their knowledge of language to determine a word's meaning in reading, writing, speaking, or listening."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do (Evidence of Knowledge)",
+          "items": [
+            "Provide a statement demonstrating accurate meaning and use of grade-appropriate general academic words and phrases.",
+            "Use a range of general academic and grade-specific words and phrases accurately.",
+            "Correctly use the general academic and domain specific words that are important to the comprehension of a text."
+          ]
+        }
+      }
+    },
+    "related_keywords": {
+      "label": "KEY LANGUAGE/VERBS/TERMS RELATED TO THE STANDARD",
+      "terms": [
+        "academic words",
+        "domain-specific words",
+        "subtle",
+        "precise"
+      ]
+    }
+  }
+]

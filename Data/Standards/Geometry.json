@@ -1,0 +1,1442 @@
+[
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How angles are formed and measured.",
+            "How to construct angles, circles, and lines.",
+            "How to name points, lines, angles, and rays."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Communicating about geometric figures should use definitions with specific characteristics that describe the figures."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create and recognize given geometric figures in diagrams based on precise definitions.",
+            "Create and recognize non-examples of given geometric figures in diagrams based on precise definitions.",
+            "Use notation and symbols for given geometric figures.",
+            "Attend to precision in use of vocabulary."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to recognize translations, reflections, rotations, and dilations.",
+            "How to recognize a pre-image and image under a given transformation.",
+            "How to describe what happens to a pre-image point under a given transformation."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Every point on a pre-image has a corresponding point on the image that has gone through the transformation rule.",
+            "Every point on an image has a corresponding point on the pre-image that can be found by undoing the transformation rule."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize that both distance and angle are preserved under a translation, reflection, and rotation.",
+            "Recognize that both distance and angle are not preserved under a dilation.",
+            "Attend to precision using function notation to represent a transformation rule."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to recognize a line of symmetry for a figure.",
+            "All figures do not have lines of symmetry.",
+            "How to recognize a rotation and a reflection.",
+            "A trapezoid is defined as a quadrilateral with at least one pair of parallel sides.",
+            "Properties of rectangles, parallelograms, trapezoids, and regular polygons."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "What it means for a transformation to carry a figure onto itself.",
+            "Whether or not a given rotation or reflection will carry a figure onto itself."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize that reflecting a figure about a line of symmetry for that figure will carry the figure onto itself.",
+            "Recognize that rotating a figure about its center by an angle of rotation that is a multiple of the measure of one of its central angles will carry the figure onto itself.",
+            "Recognize that rotating a figure about its center by an angle of 360° or a multiple of 360° is a trivial case of carrying a figure onto itself.",
+            "Recognize that there are a finite number of ways to reflect a figure onto itself.",
+            "Recognize that there are an infinite number of ways to rotate a figure onto itself."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to use and name points, lines, and rays.",
+            "How to use and name angles, circles, perpendicular lines, parallel lines, and line segments.",
+            "What is needed for a rotation: a pre-image, a center of rotation, and an angle measure that indicates both measure and direction.",
+            "What is needed for a reflection: a pre-image and a line of reflection.",
+            "What is needed for a translation: a pre-image and a quantity that indicates both length and direction."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Communicating about geometric figures should use definitions with specific characteristics that describe the figures.",
+            "A positive angle measure indicates a counterclockwise rotation; a negative angle measure indicates a clockwise rotation.",
+            "A directed line segment and a vector indicate both length (magnitude) and direction."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize and create examples and non-examples of rotations, reflections, and translations based on precise definitions.",
+            "Use rotations, reflections, and translations in diagrams based on precise definitions.",
+            "Use notation and symbols for rotations, reflections, and translations."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "What is needed for a rotation: a pre-image, a center of rotation, and an angle measure that indicates both measure and direction.",
+            "What is needed for a reflection: a pre-image and a line of reflection.",
+            "What is needed for a translation: a pre-image and a quantity that indicates both length and direction.",
+            "How to draw a representation of a rotation, reflection, or translation."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Whether a sequence of transformations will map a given pre-image to an image.",
+            "How to communicate precisely when specifying a sequence of transformations that will map a given pre-image to an image."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Draw the image of a given pre-image and a sequence of transformations.",
+            "Given a pre-image and an image, describe a sequence of transformations that will carry a given figure onto another.",
+            "Recognize and justify whether the order of the sequence of transformations is important.",
+            "Attend to vocabulary precision."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Rotations, reflections, and translations are rigid motions.",
+            "What is needed for a rotation: a pre-image, a center of rotation, and an angle measure that indicates both measure and direction.",
+            "What is needed for a reflection: a pre-image and a line of reflection.",
+            "What is needed for a translation: a pre-image and a quantity that indicates both length and direction."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Two figures are congruent to each other if there is a sequence of rigid motions that carries one figure onto the other figure.",
+            "Two figures are not congruent to each other if there is not a sequence of rigid motions that carries one figure onto the other figure.",
+            "How to communicate precisely when specifying a sequence of transformations that will map a given pre-image to an image."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize whether two figures are congruent to each other.",
+            "Recognize the sequence of rigid motions that will map one figure onto another figure."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Rotations, reflections, and translations are rigid motions.",
+            "What is needed for a rotation: a pre-image, a center of rotation, and an angle measure that indicates both measure and direction.",
+            "What is needed for a reflection: a pre-image and a line of reflection.",
+            "What is needed for a translation: a pre-image and a quantity that indicates both length and direction."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Two figures are congruent to each other if there is a sequence of rigid motions that carries one figure onto the other figure.",
+            "When two figures are congruent, corresponding pairs of sides and corresponding pairs of angles will be congruent.",
+            "When corresponding pairs of sides and corresponding pairs of angles of two figures are congruent, the figures are congruent."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize whether two figures are congruent to each other.",
+            "Recognize the sequence of rigid motions that will map one figure onto another figure.",
+            "Recognize that corresponding pairs of sides and corresponding pairs of angles will be congruent when there is a rigid motion (or sequence of rigid motions) that maps one figure onto another figure.",
+            "Recognize that when corresponding pairs of sides and corresponding pairs of angles are congruent, there is a rigid motion (or sequence of rigid motions) that maps one figure onto another figure."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.8"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "What a congruence statement is, e.g.,",
+            "How to recognize corresponding sides and corresponding angles from a congruence statement.",
+            "What is needed for a reflection, translation, and rotation.",
+            "Rotations, reflections, and translations are rigid motions.",
+            "A dilation is not a rigid motion unless the scale factor is 1."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "The necessary and sufficient conditions for two triangles to be congruent by ASA, SAS, and SSS.",
+            "ASA, SAS, and SSS are methods for proving triangles congruent that can be proven by using a sequence of rigid motions to map one triangle onto the other triangle.",
+            "AA is not a method for proving triangles congruent; there is no sequence of rigid motions that would map two triangles with only two pairs of corresponding angles congruent onto each other."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Given two triangles that are congruent by ASA, show a sequence of rigid motions that maps one triangle onto the other triangle.",
+            "Given two triangles that are congruent by SAS, show a sequence of rigid motions that maps one triangle onto the other triangle.",
+            "Given two triangles that are congruent by SSS, show a sequence of rigid motions that maps one triangle onto the other triangle."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.9"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use and name points, lines, and rays.",
+            "How to use and name angles, circles, perpendicular lines, parallel lines, and line segments.",
+            "How to name angles created when parallel lines are cut by a transversal.",
+            "Facts about relationships of angles created when parallel lines are cut by a transversal.",
+            "Angle Addition Postulate.",
+            "How to use angle pairs such as vertical angles, angles that form a linear pair, supplementary and complementary angles."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "Vertical angles (the opposite angles formed when two lines intersect) are congruent.",
+            "When two parallel lines are cut by a transversal, the alternate interior angles, corresponding angles, and alternate exterior angles are congruent.",
+            "Auxiliary lines can assist in recognizing the structure for the perpendicular bisector of a given segment (look for and make use of structure).",
+            "Some variation of Euclid's Fifth Postulate is needed in order to prove theorems about the angles created when parallel lines are cut by a transversal."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize a valid argument for proving theorems about lines and angles.",
+            "Recognize an invalid argument for proving theorems about lines and angles.",
+            "Create a valid argument for proving theorems about lines and angles."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.10"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How use and name points, lines, and rays, angles, circles, perpendicular lines, parallel lines, and line segments.",
+            "Angle Addition Postulate",
+            "How to use angle pairs such as vertical angles, angles that form a linear pair, alternate interior angles, supplementary and complementary angles.",
+            "How to use and name special segments in triangles such as medians, angle bisectors, midsegments, and altitudes."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "The sum of the measures of the interior angles of a triangle is 180°.",
+            "Auxiliary lines can assist in recognizing the structure for proving the triangle sum theorem (look for and make use of structure).",
+            "The midsegment of a triangle is parallel to the third side of the triangle and half the length of the third side of the triangle.",
+            "The medians of a triangle are concurrent at the centroid of the triangle; the centroid is the balancing point of the triangle."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize a valid argument for proving theorems about triangles.",
+            "Recognize an invalid argument for proving theorems about triangles.",
+            "Create a valid argument for proving theorems about triangles."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.11"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A parallelogram is a trapezoid with both pairs of opposite sides parallel.",
+            "Properties of parallelograms.",
+            "How to use properties of parallelograms.",
+            "All rectangles, rhombi, and squares are parallelograms.",
+            "Methods for proving triangles congruent.",
+            "Corresponding parts of congruent triangles are congruent."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Communicating precisely about definitions makes it clear what are the sufficient characteristics to describe a geometric figure and not just its necessary characteristics.",
+            "Necessary and sufficient characteristics of special quadrilaterals.",
+            "Auxiliary lines such as a diagonal can assist in recognizing the structure for proving theorems about parallelograms (look for and make use of structure)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize a valid argument for proving theorems about parallelograms.",
+            "Recognize an invalid argument for proving theorems about parallelograms.",
+            "Create a valid argument for proving theorems about parallelograms.",
+            "Attend to precision."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.12"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to use a compass and a straightedge. How to use dynamic geometry software.",
+            "How to use and name points, lines, and rays, angles, circles, perpendicular lines, parallel lines, and line segments."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between constructing and drawing.",
+            "How to recognize advantages to making constructions using dynamic geometry software.",
+            "Why given steps of a geometric construction lead to the desired result."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically.",
+            "Name pairs of angles, triangles, segments, arcs, and other figures that are congruent as a result of a geometric construction.",
+            "Give valid reasons for why certain pairs of angles, triangles, segments, arcs, and other figures are congruent as a result of a geometric construction.",
+            "Attend to precision."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "CO",
+    "reporting_category": "CO",
+    "standard": {
+      "id": "G-CO.13"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use a compass and a straightedge. How to use dynamic geometry software.",
+            "How to use and name points, lines, and rays, angles, circles, perpendicular lines, parallel lines, and line segments."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between constructing and drawing.",
+            "How to recognize advantages to making constructions using dynamic geometry software.",
+            "Why given steps of a geometric construction lead to the desired result.",
+            "How to recognize properties of an equilateral triangle, square, and regular hexagon inscribed in a circle."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically.",
+            "Name pairs of angles, triangles, segments, arcs, and other figures that are congruent as a result of a geometric construction.",
+            "Give valid reasons for why certain pairs of angles, triangles, segments, arcs, and other figures are congruent as a result of a geometric construction."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use and name points, lines, and rays, angles, parallel lines, and line segments.",
+            "A line does not have length.",
+            "What is needed for a dilation: a pre-image, a center of dilation, and a scale factor.",
+            "How to draw a dilation."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Dilating a line that passes through the center of the dilation will produce the same line; the pre-image and image are equal.",
+            "Dilating a line that does not pass through the center of the dilation will produce a line that is parallel to the given line.",
+            "The distance from the center of the dilation to the image is dependent on both the scale factor of the dilation and how far away the pre-image is from the center of dilation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically.",
+            "Place points on the given line to dilate. The line that contains the images of the points on the given line will be the image of the given line."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use and name points, lines, and rays, angles, parallel lines, and line segments.",
+            "What is needed for a dilation: a pre-image, a center of dilation, and a scale factor.",
+            "How to draw a dilation."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A segment that is dilated by a scale factor k where |k>1| will have an image that is longer than the pre-image.",
+            "A segment that is dilated by a scale factor k where |0<k<1| will have an image that is shorter than the pre-image.",
+            "When dilating a segment by a scale factor of k, the ratio of the length of the image to the length of the pre-image will equal |k|."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically.",
+            "Dilate the endpoints of the given segment about the center of dilation using the scale factor. The segment with endpoints that are the images of the endpoints of the given segment will be the image of the given segment.",
+            "Verify the third measurement when given any two of the following: scale factor, length of given segment, length of dilated segment."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "What a similarity statement is, e.g., ΔABC~ΔXYZ.",
+            "How to recognize corresponding sides and corresponding angles from a similarity statement.",
+            "What is needed for a dilation, reflection, translation, and rotation.",
+            "Rotations, reflections, and translations are rigid motions.",
+            "A dilation is not a rigid motion unless the scale factor is 1."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations.",
+            "In similar figures, corresponding angles are congruent.",
+            "In similar figures corresponding pairs of sides are proportional."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Given two figures, determine whether the figures are similar.",
+            "Given two similar figures, determine the sequence of rotations, reflections, translations, and dilations from which one figure can be obtained by the other figure."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "What a similarity statement is, e.g., ΔABC~ΔXYZ.",
+            "How to recognize corresponding sides and corresponding angles from a similarity statement.",
+            "What is needed for a dilation, reflection, translation, and rotation.",
+            "Rotations, reflections, and translations are rigid motions.",
+            "A dilation is not a rigid motion unless the scale factor is 1."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations.",
+            "The necessary and sufficient conditions for two triangles to be similar by AA.",
+            "AA is a method for proving triangles similar that can be proven by using a sequence of transformations to obtain one triangle from the other triangle."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Given two triangles that are similar by AA, show a sequence of transformations by which one triangle can be obtained from the other triangle."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use and name points, lines, and rays, angles, circles, perpendicular lines, parallel lines, and line segments.",
+            "How to use angle pairs such as vertical angles, angles that form a linear pair, alternate interior angles, supplementary and complementary angles.",
+            "How to use and name special segments in triangles such as medians, angle bisectors, midsegments, and altitudes.",
+            "How to use the Pythagorean Theorem."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "A line parallel to one side of a triangle divides the other two sides proportionally.",
+            "If a line divides two sides of a triangle proportionally, then it is parallel to the third side.",
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations.",
+            "In similar figures, corresponding angles are congruent.",
+            "In similar figures, corresponding pairs of sides are proportional."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Auxiliary lines can assist in recognizing the structure for proving theorems about triangles (look for and make use of structure).",
+            "Recognize a valid argument for proving theorems about triangles.",
+            "Recognize an invalid argument for proving theorems about triangles.",
+            "Create a valid argument for proving theorems about triangles.",
+            "Recognize and create a valid argument for proving the Pythagorean Theorem using triangle similarity."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to recognize corresponding sides and corresponding angles from a congruence statement.",
+            "Two figures are congruent to each other if there is a sequence of rigid motions that carries one figure onto the other figure.",
+            "How to recognize corresponding sides and corresponding angles from a similarity statement.",
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "ASA, SAS, and SSS are methods for proving triangles congruent.",
+            "The necessary and sufficient conditions for two triangles to be congruent by ASA, SAS, and SSS.",
+            "AA is a method for proving triangles similar.",
+            "The necessary and sufficient conditions for two triangles to be similar by AA."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Calculate unknown measurements using known measurements and relationships among congruent and similar triangles.",
+            "Give a valid argument for calculating unknown measurements using known measurements and relationships among congruent and similar triangles.",
+            "Prove relationships in geometric figures using known measurements and other relationships among congruent and similar triangles."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "In similar figures, corresponding angles are congruent.",
+            "In similar figures corresponding pairs of sides are proportional."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations.",
+            "AA is a method for proving triangles similar."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize the effects of changing the sides and angles of a right triangle on the sine, cosine, and tangent ratios.",
+            "Connect sine, cosine, and tangent with appropriate ratios for the acute angles in a right triangle.",
+            "Connect cotangent, secant, and cosecant with appropriate ratios for the acute angles in a right triangle."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use angle pairs such as complementary angles.",
+            "Given a right triangle, how to determine the sine and cosine ratios of the acute angles."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The relationship between sine and cosine of complementary angles: sin(x°)=cos(90-x°) and sin(90-x°)=cos(x°)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create a valid argument for why the sine of one acute angle in a right triangle is equal to the cosine of the other acute angle in the right triangle.",
+            "Give an equivalent expression for the sine or cosine of one of the acute angles in a right triangle such as cos(40°). e.g., cos(40°)=sin(50°).",
+            "Use the relationship between the sine and cosine of complementary angles to solve problems."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "SRT",
+    "reporting_category": "SRT",
+    "standard": {
+      "id": "G-SRT.8"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use angle pairs such as complementary angles.",
+            "Given a right triangle, how to determine the trigonometric ratios of the acute angles.",
+            "The Pythagorean Theorem."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use trigonometric ratios of the acute angles in a right triangle to solve applied problems.",
+            "How to use inverse trigonometric functions to determine unknown angle measures when given the side lengths of a right triangle in an applied problem."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Model with mathematics.",
+            "Identify what is important in an applied problem.",
+            "Draw a diagram to represent the given information in an applied problem.",
+            "Use the Pythagorean Theorem to calculate unknown measures when appropriate.",
+            "Select an appropriate trigonometric ratio using the acute angles in a right triangle to solve an applied problem.",
+            "Solve an equation using a trigonometric ratio to solve an applied problem."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "C",
+    "reporting_category": "C",
+    "standard": {
+      "id": "G-C.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "What is needed for a dilation, reflection, translation, and rotation.",
+            "Rotations, reflections, and translations are rigid motions.",
+            "A dilation is not a rigid motion unless the scale factor is 1.",
+            "How to use basic circle vocabulary such as concentric circles and congruent circles."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to construct a viable argument and critique the reasoning of others.",
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize a valid argument for proving that all circles are similar.",
+            "Create a valid argument for proving that all circles are similar.",
+            "Calculate the scale factor for the dilation of one circle onto another circle given the lengths of their radii, diameters, circumferences, or some other pair of corresponding linear measures."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "C",
+    "reporting_category": "C",
+    "standard": {
+      "id": "G-C.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to use basic circle vocabulary such as radius, diameter, chord, secant, and tangent.",
+            "A central angle has a vertex at the center of the circle and has two sides that are radii of the circle.",
+            "An inscribed angle has a vertex on the circle and has two sides that are chords of the circle.",
+            "A circumscribed angle has a vertex outside the circle and has two sides that are tangents of the circle."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A central angle is equal to the measure of its intercepted arc.",
+            "An inscribed angle is one-half the measure of its intercepted arc.",
+            "A circumscribed angle forms a quadrilateral with the two radii drawn to the points of tangency.",
+            "An angle inscribed in a semicircle is a right angle.",
+            "The radius of a circle is perpendicular to a tangent line at the point of tangency."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Calculate missing angle and/or arc measures for central angles, inscribed angles, and circumscribed angles.",
+            "Look for and make use of structure such as using the right triangle formed by a radius drawn to a tangent line at the point of tangency to calculate missing side lengths."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "C",
+    "reporting_category": "C",
+    "standard": {
+      "id": "G-C.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to use a compass and a straightedge. How to use dynamic geometry software.",
+            "How to use basic circle vocabulary such as radius, diameter, chord, secant, and tangent.",
+            "When a circle is inscribed in a polygon, every side of the polygon will be tangent to the circle.",
+            "When a circle is circumscribed about a polygon, every side of the polygon will be a chord of the circle."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The difference between constructing and drawing.",
+            "How to recognize advantages of making constructions using dynamic geometry software.",
+            "Why given steps of a geometric construction lead to the desired result.",
+            "Opposite angles of a cyclic quadrilateral are supplementary.",
+            "Necessary and sufficient conditions for a quadrilateral to be inscribed in a circle."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically.",
+            "Name pairs of angles, triangles, segments, arcs, and other figures that are congruent as a result of a geometric construction.",
+            "Give valid reasons for why certain pairs of angles, triangles, segments, arcs, and other figures are congruent as a result of a geometric construction.",
+            "Recognize a valid argument for proving properties of cyclic quadrilaterals.",
+            "Create a valid argument for proving properties of cyclic quadrilaterals.",
+            "Calculate missing angle measures for a cyclic quadrilateral."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "C",
+    "reporting_category": "C",
+    "standard": {
+      "id": "G-C.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "All circles are similar.",
+            "Basic geometry vocabulary such as radius, central angle, intercepted arc, and sector."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The length of the arc intercepted by an angle is proportional to the radius, and the radian measure of the angle is the constant of proportionality."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize a valid argument for calculating the arc length of a sector.",
+            "Create a valid argument for calculating the arc length of a sector.",
+            "Recognize a valid argument for calculating the area of a sector.",
+            "Create a valid argument for calculating the area of a sector.",
+            "Calculate arc length and area of a sector.",
+            "Given any two of the following measurements for a sector, calculate the third: arc length or area, angle measure, radius."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GPE",
+    "reporting_category": "GPE",
+    "standard": {
+      "id": "G-GPE.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The Pythagorean Theorem.",
+            "Basic geometry vocabulary such as radius, diameter, circle.",
+            "How to calculate the distance between two points.",
+            "How to determine the midpoint of a segment when given the coordinates of its endpoints.",
+            "How to expand the square of a binomial.",
+            "How to factor perfect square trinomials."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The equation of a circle in the coordinate plane follows from the Pythagorean Theorem.",
+            "Every point (x,y) on a circle with center at the origin and radius r will satisfy the equation x2+y2=r2."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Reason abstractly and quantitatively.",
+            "Create a valid argument for how the equation of a circle is derived from the Pythagorean Theorem.",
+            "Write the equation of a circle given its center and radius.",
+            "Complete the square to find the center and radius of a circle given its equation."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GPE",
+    "reporting_category": "GPE",
+    "standard": {
+      "id": "G-GPE.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to calculate the distance between two points.",
+            "How to determine the midpoint of a segment when given the coordinates of its endpoints.",
+            "How to determine the endpoint of a segment when given its midpoint and other endpoint.",
+            "How to calculate the slope of the line that contains two given points.",
+            "How to write the equation of a circle given its center and radius.",
+            "Properties of rectangles, parallelograms, trapezoids, and regular polygons."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Sufficient conditions for proving that a figure is a special quadrilateral.",
+            "A point that lies on a circle will satisfy the equation of the circle when the x- and y-coordinates are substituted for x and y in the equation.",
+            "A point that lies inside the circle will be less than the square of the radius when the x- and y-coordinates are substituted for x and y in the equation.",
+            "A point that lies outside the circle will be greater than the square of the radius when the x- and y-coordinates are substituted for x and y in the equation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use slope calculations to determine whether two lines are parallel or perpendicular.",
+            "Use distance calculations to determine whether two segments are congruent.",
+            "Use midpoint calculations to determine whether a segment has been bisected.",
+            "Prove properties of special quadrilaterals in the coordinate plane using distance, midpoint, and slope.",
+            "Prove whether four points in the coordinate plane form a special quadrilateral.",
+            "Prove whether a given point lies on, inside, or outside a circle."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GPE",
+    "reporting_category": "GPE",
+    "standard": {
+      "id": "G-GPE.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations.",
+            "In similar figures, corresponding angles are congruent.",
+            "In similar figures corresponding pairs of sides are proportional.",
+            "How to calculate the slope of the line that contains two given points.",
+            "How to write the equation of a line given its slope and a point on the line.",
+            "Rewrite a linear equation in slope-intercept form.",
+            "Two slope triangles on the same line are similar to each other."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Slope triangles on parallel lines are similar to each other.",
+            "Parallel lines have slopes that are equal.",
+            "A vertical line (slope is undefined) and a horizontal line (slope of 0) are perpendicular.",
+            "Oblique perpendicular lines have slopes with a product of -1."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Look for and make use of structure, such as drawing auxiliary lines to create slope triangles on parallel lines in order to prove that the slopes of parallel lines are equal.",
+            "Create a valid argument for why the slopes of parallel lines are equal.",
+            "Create a valid argument for why the slopes of perpendicular lines have a product of -1.",
+            "Use slope calculations to determine whether two lines are perpendicular.",
+            "Write an equation of a line parallel or perpendicular to a given line that passes through a given point."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GPE",
+    "reporting_category": "GPE",
+    "standard": {
+      "id": "G-GPE.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Two figures are similar if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations.",
+            "In similar figures, corresponding angles are congruent.",
+            "In similar figures corresponding pairs of sides are proportional.",
+            "How to calculate the distance between two points.",
+            "How to use the Pythagorean Theorem.",
+            "How to solve a proportion with one variable."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "A line parallel to one side of a triangle divides the other two sides proportionally.",
+            "If a line divides two sides of a triangle proportionally, then it is parallel to the third side."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Look for and make use of structure, such as drawing similar slope triangles on a directed line segment to set up a proportion with corresponding side lengths.",
+            "Set up a proportion to determine the point on a directed line segment that partitions the segment in a given ratio."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GPE",
+    "reporting_category": "GPE",
+    "standard": {
+      "id": "G-GPE.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to calculate the distance between two points.",
+            "How to use the Pythagorean Theorem.",
+            "How to calculate the perimeter of a polygon.",
+            "How to compose or decompose a polygon into triangles and/or rectangles.",
+            "How to calculate the areas of triangles and rectangles.",
+            "How to recognize right triangles such as 45-45-90 triangles."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to recognize when a polygon is contained in a larger polygon that might be more manageable for calculations, even when subtracting the excess.",
+            "The area of a polygon is equal to the sum of the areas of its non-overlapping parts."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Look for and make use of structure. For example, the number of computations might be reduced by recognizing the symmetry of a given figure.",
+            "Calculate the perimeter of a polygon using the distance between two points.",
+            "Calculate the area of a polygon by decomposing the polygon into triangles and rectangles."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GMD",
+    "reporting_category": "GMD",
+    "standard": {
+      "id": "G-GMD.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Formulas for a circle such as circumference and area.",
+            "Formulas for the volume of a cylinder, pyramid, and cone.",
+            "Horizontal cross sections for a cylinder, pyramid, and cone."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Area answers the question \"how much does it cover?\"",
+            "Volume answers the question \"how much can it hold?\"",
+            "Pi is defined as the ratio of the circumference of any circle to its diameter.",
+            "Informal limit arguments, such as how we can slice a cylinder horizontally into an infinite number of circles and calculate the volume of the cylinder by summing the areas of each circular slice.",
+            "A cone is a pyramid with a circular base, and so the volume formula for a cone is like the volume formula for a pyramid."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize and create a valid argument for the formulas for the area and circumference of a circle.",
+            "Recognize and create a valid argument for the formulas for the volume of a cylinder, pyramid, and cone.",
+            "Use Cavalieri's Principle: If two solid figures have the same height and the same cross sections at every height, then their volumes are the same."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GMD",
+    "reporting_category": "GMD",
+    "standard": {
+      "id": "G-GMD.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "Formulas for the volume of a cylinder, pyramid, and cone.",
+            "How to use the Pythagorean Theorem to calculate unknown measures.",
+            "How to select an appropriate trigonometric ratio using the acute angles in a right triangle to calculate unknown measures."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Volume answers the question \"how much can it hold?\"",
+            "Units relate to whether a measurement represents area, volume, or a linear quantity."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Model with mathematics.",
+            "Calculate volume and/or missing linear measurements to solve problems.",
+            "Solve a volume formula for an unknown measure to solve an applied problem."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "GMD",
+    "reporting_category": "GMD",
+    "standard": {
+      "id": "G-GMD.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "How to graph lines in the coordinate plane.",
+            "Properties of two-dimensional figures.",
+            "Properties of three-dimensional figures."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "When a two-dimensional object is rotated but not bounded by the line of rotation, the resulting three-dimensional objects will have a \"hole.\""
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify the shape of the two-dimensional cross section when a three-dimensional object is sliced in different ways.",
+            "Identify the solid created and its properties when a two-dimensional shape is rotated about a line. For example, when a rectangle sitting on the x-axis and bounded on the left by a vertical line is rotated about the vertical line, the resulting three-dimensional object is a cylinder whose height is equal to the height of the rectangle and whose radius is equal to the base of the rectangle."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "MG",
+    "reporting_category": "MG",
+    "standard": {
+      "id": "G-MG.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "Properties of two-dimensional figures.",
+            "Properties of three-dimensional figures.",
+            "How to calculate measures of geometric shapes such as area and volume."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Properties of real-world objects can be determined using features of similar geometric shapes."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Model with mathematics.",
+            "Compose or decompose a figure into manageable geometric shapes.",
+            "Represent real-world objects as geometric shapes.",
+            "Estimate measures of real-world objects by calculating measures of the geometric shapes such as area and volume."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "MG",
+    "reporting_category": "MG",
+    "standard": {
+      "id": "G-MG.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "Properties of two-dimensional figures.",
+            "Properties of three-dimensional figures.",
+            "How to calculate measures of geometric shapes such as area and volume.",
+            "How to convert units."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Whether to use area or volume to model a given real-world situation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Model with mathematics.",
+            "Compose or decompose a figure into manageable geometric shapes.",
+            "Calculate area or volume to model a given real-world situation.",
+            "Calculate density in a real-world situation using area and volume."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Geometry",
+    "grade": "HS",
+    "domain": "MG",
+    "reporting_category": "MG",
+    "standard": {
+      "id": "G-MG.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to attend to precision.",
+            "Properties of two-dimensional figures.",
+            "Properties of three-dimensional figures.",
+            "How to calculate measures of geometric shapes such as area and volume."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Whether to use area or volume to model a given real-world situation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Model with mathematics.",
+            "Design an object to satisfy given constraints."
+          ]
+        }
+      }
+    }
+  }
+]

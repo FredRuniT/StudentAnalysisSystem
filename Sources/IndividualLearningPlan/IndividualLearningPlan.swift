@@ -3,6 +3,5 @@ import AnalysisCore
 import StatisticalEngine
 import PredictiveModeling
 
-public class IndividualLearningPlan {
-    
-}
+// This file is now empty - functionality moved to ILPGenerator.swift
+// Keeping for backward compatibility

@@ -1,0 +1,2278 @@
+[{
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "The Real Number System",
+        "reporting_category": "RN",
+        "standard": {
+            "id": "N-RN.3",
+            "type": "Grade-Specific",
+            "description": "Explain why the sum or product of two rational numbers is rational; that the sum of a rational number and an irrational number is irrational; and that the product of a nonzero rational number and an irrational number is irrational."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to identify numbers on a real number line.",
+                        "● The significance of rational and irrational numbers as subsets of real numbers, distinguishes between the two, and provides examples of each type when prompted.",
+                        "● How to simplify expressions including rational terms.",
+                        "● How to use the properties of exponents to evaluate expressions with exponents, including expressions containing negative and zero exponents.",
+                        "● How to write repeating decimals as fractions.",
+                        "● How to interpret and compare representations of square root functions.",
+                        "● How to use the laws of exponents to find products and quotients of monomials.",
+                        "● How to identify the properties of the real number system."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The meaning of rational exponents follow the properties of integer exponents. For example, 513 is defined as the cube root of 5 because (513)3=513×513×513=5.",
+                        "● How to simplify and solve expressions involving radicals and rational exponents.",
+                        "● The sum of rational numbers is always rational, and the product of rational numbers is always rational.",
+                        "● The sum of a rational number and an irrational number is",
+                        "always irrational, and the product of a rational number and an irrational number is always irrational."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Classify numbers with the real number system.",
+                        "● Simplify and solve expressions involving radicals, and rational exponents.",
+                        "● Extend the properties of integer exponents to rational exponents.",
+                        "● Attend to precision (Mathematical Practice 6), using clear definitions and stating the meaning of the mathematical symbols they include in their expressions.",
+                        "● Explain why rational numbers are closed under addition and multiplication."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Quantities",
+        "reporting_category": "Q",
+        "standard": {
+            "id": "N-Q.2",
+            "type": "Grade-Specific",
+            "description": "Define appropriate quantities for the purpose of descriptive modeling."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to convert rates and units of measurement.",
+                        "● The appropriate unit for expressing different quantities (e.g., length, area, or volume).",
+                        "● How to create bar graphs, line graphs, and histograms."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to choose appropriate units by defining quantities needed to model a situation.",
+                        "● How to express information in appropriate units and with understandable scales on graphs in modeling real-world situations.",
+                        "● How to determine what quantity and unit to express in a final solution.",
+                        "● How to determine which numeric form of their solution is appropriate (e.g., mixed",
+                        "fractions, improper fraction, decimals, or negative/positive values)."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Describe data and relationships from various representations.",
+                        "● Determine if a solution is appropriate for the situation.",
+                        "● Derive units to represent real-world situations.",
+                        "● Recognize whether given quantities are discrete or continuous.",
+                        "● Define inputs and outputs in specific mathematical models.",
+                        "● Quantify real-world data based on relevant attributes and"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Quantities",
+        "reporting_category": "Q",
+        "standard": {
+            "id": "N-Q.3",
+            "type": "Grade-Specific",
+            "description": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The rules of significant digits.",
+                        "● How to select appropriate scales for graph using estimation.",
+                        "● The relationship between dependent and independent variables in a given data set.",
+                        "● How to explain and illustrate how a change in one variable results in a change in another variable."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to determine the level of accuracy needed by reading a problem.",
+                        "● How accurately answers can be reported by recognizing which quantity most restricts the solution.",
+                        "● The tools used to collect and display data limits the accuracy of a measurement.",
+                        "● The analogy to univariate data is how little a median or mean really tells us about a set of data.",
+                        "● Why significant digits and units are important in calculations and measurement context."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Describe the association with form, direction, strength, and outliers.",
+                        "● Describe the precision of a measurement tool.",
+                        "● Recognize trends in data and make predictions in relation to context with an understanding of accuracy and limitations.",
+                        "● Recognize variability in data and the need to address its presence in data."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Seeing Structure in Expressions",
+        "reporting_category": "SSE",
+        "standard": {
+            "id": "A-SSE.1a",
+            "type": "Grade-Specific",
+            "description": "Interpret parts of an expression, such as terms, factors, and coefficients."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to use substitution to make new identities.",
+                        "● How to use the distributive property to expand polynomials.",
+                        "● How to evaluate numerical expressions involving parentheses, powers, and rational numbers.",
+                        "● How to translate verbal phrases into mathematical expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The mathematical meaning of the following words: factors, coefficients, terms, exponent, base, constant, and variable.",
+                        "● How to represent and identify factors, coefficients, terms, exponents, bases, constants, and variables components when given a mathematical expression.",
+                        "● How to explain the effect of changing one part of an expression by analyzing its component parts.",
+                        "● How to write and interpret complex expressions by",
+                        "analyzing their component parts."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Explain the meaning of the parts of an expression as they relate to the entire expression and to the context of the problem.",
+                        "● Extend understanding of the structure of linear, exponential, and quadratic functions to radical, rational, and polynomial functions.",
+                        "● Identify the parts of any expression as terms, factors, coefficients, exponents, quotients, divisors, dividends, remainders, and constants."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Seeing Structure in Expressions",
+        "reporting_category": "SSE",
+        "standard": {
+            "id": "A-SSE.1b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to use substitution to make new identities.",
+                        "● How to evaluate numerical expressions involving parentheses, powers, and rational numbers.",
+                        "● How to use the distributive property to expand polynomials.",
+                        "● How to translate verbal phrases into mathematical expressions.",
+                        "● How to recognize and use the properties of identity and equality."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The mathematical meaning of the following words: factors, coefficients, terms, exponent, base, constant, and variable.",
+                        "● How to represent and identify factors, coefficients, terms, exponents, bases, constants, and variables components when given a mathematical expression.",
+                        "● How to explain the effect of changing one part of an expression by analyzing its component parts.",
+                        "● How to write and interpret complex expressions by",
+                        "analyzing their component parts."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Write an expression containing identical factors as an expression using exponents.",
+                        "● Evaluate open sentences by performing operations.",
+                        "● Write formulas using two or more variables.",
+                        "● Explain the meaning of the parts of an expression as they relate to the entire expression and to the context of the problem.",
+                        "● Extend understanding of the structure of linear, exponential, and quadratic functions to radical, rational, and polynomial functions."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Seeing Structure in Expressions",
+        "reporting_category": "SSE",
+        "standard": {
+            "id": "A-SSE.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to apply properties of exponents to simplify expressions.",
+                        "● How to add, subtract, multiply, and divide polynomials."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Polynomial or rational expressions can sometimes be simplified to binomials or quadratic factors.",
+                        "● How to find patterns in repeated calculations, and make conjectures based on these patterns.",
+                        "● How to expand powers and products of expressions.",
+                        "● How to factor expressions completely.",
+                        "● How to compare the equivalence relationship between the original form of an",
+                        "expression and its expanded form."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Use algebraic methods and mathematical properties to transform expressions to determine whether expressions are equivalent.",
+                        "● Rearrange terms to rewrite an equivalent expression.",
+                        "● Write expressions in equivalent forms by factoring.",
+                        "● Apply the difference of squares theorem to polynomial expressions and numerical examples.",
+                        "● Factor polynomials completely.",
+                        "● Rewrite algebraic expressions in different equivalent forms by"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Seeing Structure in Expressions",
+        "reporting_category": "SSE",
+        "standard": {
+            "id": "A-SSE.3a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to solve multiple-step equations including variations of the distributive property.",
+                        "● How to apply properties of exponents to simplify and rewrite expressions.",
+                        "● How to add, subtract, multiply, and divide polynomial expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to expand the product of linear factors into polynomials and compare the two expressions and look for patterns.",
+                        "● How to rewrite expressions in different forms using mathematical properties.",
+                        "● The best form to write an expression given the context of an expression.",
+                        "● The relationship between the factorization of a quadratic expression and the solutions of a quadratic equation."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Factor expressions completely using various factoring methods.",
+                        "● Apply the Zero-Product Property to factored expressions.",
+                        "● Use algebra to simplify long computations, such as computing large sums of consecutive numbers.",
+                        "● Factor expressions by identifying a common factor.",
+                        "● Use difference of squares factoring to solve equations.",
+                        "● Explain and justify the relationship between the factorization of a quadratic expression and the solutions of a quadratic equation."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Seeing Structure in Expressions",
+        "reporting_category": "SSE",
+        "standard": {
+            "id": "A-SSE.3b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to solve multiple-step equations including variations of the distributive property.",
+                        "● How to apply properties of exponents to simplify and rewrite expressions.",
+                        "● How to add, subtract, multiply, and divide polynomial expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Completing the square is a part of a process that transforms a quadratic polynomial into a difference of squares.",
+                        "● How to graph quadratic functions and examine the graph to find the vertex.",
+                        "● How to use their knowledge of quadratics to optimize quadratic functions.",
+                        "● How to expand the product of linear factors into polynomials and compare the two expressions and look for patterns.",
+                        "● How to rewrite expressions in different forms using mathematical properties.",
+                        "● The optimal form to write an expression given the context."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Factor expressions completely.",
+                        "● Apply the Zero-Product Property to factored expressions.",
+                        "● Convert the equation of a parabola into graphing form by completing the square.",
+                        "● Write expressions in equivalent forms by completing the square to convey the vertex form, to find the maximum or minimum value of a quadratic function, and to identify and explain the meaning of the vertex.",
+                        "● Use difference of squares and factoring to solve equations."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Seeing Structure in Expressions",
+        "reporting_category": "SSE",
+        "standard": {
+            "id": "A-SSE.3c"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to solve multiple-step equations including variations of the distributive property.",
+                        "● How to apply properties of exponents to simplify and rewrite expressions.",
+                        "● How to add, subtract, multiply, and divide polynomial expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to use properties of exponents to create equivalent expressions.",
+                        "● How to expand the product of linear factors into polynomials and compare the two expressions and look for patterns.",
+                        "● How to represent exponential decay in multiple ways and how to investigate the effect when the exponent is 0 or negative.",
+                        "● How to rewrite expressions in different forms using mathematical properties.",
+                        "● The most useful form to write an expression given the context of an expression.",
+                        "● The relationship between the factorization of a quadratic expression and the solutions of a quadratic equation."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Solve complicated equations and simple exponential equations by rewriting and solving an equivalent equation.",
+                        "● Factor expressions completely using various factoring skills.",
+                        "● Apply the zero-property to factored expressions and explain meaning of the zeros.",
+                        "● Use algebra to simplify long computations, such as computing large sums of consecutive numbers."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Arithmetic with Polynomials and Rational Expressions",
+        "reporting_category": "APR",
+        "standard": {
+            "id": "A-APR.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to identify polynomials and their characteristics.",
+                        "● How to identify like terms.",
+                        "● How to use the distributive property.",
+                        "● How to find the degree of a polynomial.",
+                        "● Rules for adding, subtracting, and multiplying integers.",
+                        "● How to define terms related to the characteristics of polynomials. (e.g., terms, degree, coefficient, leading coefficient, monomial, binomial, and trinomials)."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to add and subtract polynomials.",
+                        "● How to simplify the product of a polynomial by a monomial.",
+                        "● Polynomials, like integers, are \"closed\" under addition, subtraction, and multiplication.",
+                        "● How to combine linear and quadratic polynomials with addition and subtraction.",
+                        "● How to multiply a constant by a linear or quadratic polynomial."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Write polynomials in standard form.",
+                        "● Multiply polynomials using multiple methods.",
+                        "● Find squares of binomials involving sums and differences.",
+                        "● Look closely to discern a pattern or structure when finding the square of a sum and difference."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Arithmetic with Polynomials and Rational Expressions",
+        "reporting_category": "APR",
+        "standard": {
+            "id": "A-APR.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to recognize equivalent expressions.",
+                        "● How to solve multi-step equations in one variable.",
+                        "● How to identify and graph linear functions.",
+                        "● How to factor a polynomial completely.",
+                        "● How to recognize perfect-square polynomials.",
+                        "● How to graph quadratic functions by hand, showing intercepts, and maxima or minima.",
+                        "● The relationship of the degree of a polynomial to",
+                        "the graph of the polynomial function."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to factor expressions by identifying a common factor.",
+                        "● How to apply the Zero-Product Property to factored expressions.",
+                        "● How factors, zeros, and x-intercepts, of a polynomial function are related.",
+                        "● How factors and roots of a polynomial function are related.",
+                        "● Key features of a parabola by looking at how the coefficients affect the graph.",
+                        "● If the product of two quantities equals zero, at least one of the quantities equals zero.",
+                        "● Why each factor is set to equal zero."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Find zeros by factoring polynomials of 1st- and 2nd- degrees and use the Zero-Product Property.",
+                        "● Determine the maximum number of zeros of a polynomial.",
+                        "● Recognize that repeated factors indicate multiplicity of roots and graph polynomials with repeated factors.",
+                        "● Identify the zeros of a polynomial.",
+                        "● Find the zeros of a polynomial from its graph."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Creating Equations",
+        "reporting_category": "CED",
+        "standard": {
+            "id": "A-CED.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to define variables.",
+                        "● How to translate algebraic and verbal expressions.",
+                        "● How to solve multi-step equations and inequalities in one variable.",
+                        "● How to solve equations and inequalities with variables on both sides.",
+                        "● How to rewrite equations and formulas."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The relationships between quantities (e.g., how the quantities are changing or growing with respect to each other); express these relationships using mathematical operations to create an appropriate equation or inequality to solve.",
+                        "● Build an equation or inequality from a mathematical situation.",
+                        "● Determine when equations and inequalities are true sometimes, always, or never.",
+                        "● Discern when to represent an equation and inequality using",
+                        "one variable versus two variables.",
+                        "● How to identify linear, quadratic, and exponential functions from multiple representations."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Construct and solve linear, exponential, and quadratic equations in one variable given real-world situations.",
+                        "● Construct and solve simple exponential functions by examining exponential growth and decay problems.",
+                        "● Construct equations that models geometric change by visualizing and extending a pattern.",
+                        "● Extend their understanding of exponential functions by examining the multiplier and starting point in different representations."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Creating Equations",
+        "reporting_category": "CED",
+        "standard": {
+            "id": "A-CED.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to translate algebraic and verbal expressions.",
+                        "● How to solve equations in one variable.",
+                        "● How to solve one-variable equations with variables on both sides.",
+                        "● How to solve literal equations for specific variable.",
+                        "● How to graph linear equations on a coordinate axis with labels and scales.",
+                        "● How to apply contextual meaning to slope and y-intercept.",
+                        "● How to interpret graphs and write equations for linear relations.",
+                        "● How to justify the relationship between graph, table, equation, and situation."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to build equations from mathematical situations.",
+                        "● How to solve a two-variable equation.",
+                        "● When equations are true sometimes, always, or never.",
+                        "● The slope and y-intercept can be used to write and graph an equation of the line.",
+                        "● How to explain and illustrate how a change in one variable results in a change in another variable and apply to the relationships between",
+                        "independent and dependent variables.",
+                        "● How to graph and analyze linear and exponential functions.",
+                        "● How to use algebraic and graphical methods to solve systems of linear equations in mathematical and real-world situations."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Identify the quantities in a mathematical problem or real-world situation that should be represented by distinct variables and describe what quantities the variable represents.",
+                        "● Write and graph an equation of a direct variation (proportional relationship).",
+                        "● Determine appropriate units for the labels and scale of a graph depicting the relationship between equations created in two variables."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Creating Equations",
+        "reporting_category": "CED",
+        "standard": {
+            "id": "A-CED.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to build equations from a mathematical or real-world situation.",
+                        "● How to solve multiple-step equations and inequalities with one variable.",
+                        "● How to solve and graph equations and inequalities of two variables.",
+                        "● How to solve and graph systems of equations and inequalities.",
+                        "● How to determine when equations are true sometimes, always, or never."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to define constraints and determine their necessity in modeling real-world situations.",
+                        "● Constraints are necessary to balance a mathematical model with real-world context.",
+                        "● When a modeling context involves constraints.",
+                        "● How to interpret solutions as viable or nonviable options in a modeling context.",
+                        "● When a problem should be represented by an equation, inequality, systems of equations, and/or inequalities.",
+                        "● How to represent constraints by equations or inequalities",
+                        "and by systems of equations and/or inequalities."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Use the graphing method to solve or estimate the solutions of complex equations and inequalities.",
+                        "● Explain the meaning of solutions to equations and inequalities using the context of the problem.",
+                        "● Eliminate algebraic solutions that do not make sense in the context of the problem.",
+                        "● Recognize how certain input and output values may or may not be reasonable.",
+                        "● Select an appropriate domain for a single-variable in a modeling context."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Creating Equations",
+        "reporting_category": "CED",
+        "standard": {
+            "id": "A-CED.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions by combining like terms.",
+                        "● How to solve multiple-step equations including rational coefficients and involving the distributive property.",
+                        "● How to solve equations with variables on both sides."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Formulas are equations with specific meaning that show the relationship between two or more quantities.",
+                        "● Why rewriting formulas can be useful.",
+                        "● How to manipulate an equation algebraically without changing its value.",
+                        "● Two equations that appear to be very different can describe the same equation.",
+                        "● How to solve an equation for a specific variable."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Solve literal equations using the same processes used in solving numerical equations.",
+                        "● Solve formulas that arise from real-world situations and are limited to linear and quadratic variables.",
+                        "● Translate a linear equation in standard form to slope intercept form.",
+                        "● Translate a linear equation in slope intercept form to standard form."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● The order of operations and how to apply it.",
+                        "● Zero pairs can be used to simply addition and subtraction equations.",
+                        "● How to simplify expressions using properties of algebra.",
+                        "● How to add, subtract, multiply, and divide rational numbers."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to construct a mathematically viable argument justifying a given, or self-generated, solution method.",
+                        "● Equations can have multiple solutions or no solutions.",
+                        "● How to work backward to justify solutions to equations."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Apply and explain the results of using inverse operations.",
+                        "● Justify the steps in solving equations by applying and explaining the properties of equality, inverse, and identity.",
+                        "● Use the names of the properties to aid in justifying the steps performed when solving an equation.",
+                        "● Find and analyze mistakes in work samples.",
+                        "● Choose an appropriate method for solving an equation.",
+                        "● Show steps to justify mathematical methods."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● The order of operations and how to apply it."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to solve equations and inequalities with variables on both sides.",
+                        "● How to solve equations and inequalities using inverse operations.",
+                        "● How to solve equations and inequalities involving many variations of the distributive property.",
+                        "● How to solve equations and inequalities involving rational coefficients.",
+                        "● Equations can have multiple solutions or no solutions.",
+                        "● How solving literal equations relates to solving numeric equations."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Interpret a situation and represent it mathematically.",
+                        "● Deepen understanding of equations as statements about numbers that can be true always, sometimes, or never.",
+                        "● Extend earlier work with solving linear equations/inequalities in one variable to solving literal equations that are linear in the variable being solved for. Include simple exponential equations that rely only on application of the laws of exponents."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.4a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to factor quadratic polynomials.",
+                        "● How to use factoring to solve equations.",
+                        "● How to apply the Difference of Squares Theorem to polynomial expressions and numerical examples.",
+                        "● How to use difference of squares factoring to solve equations."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Equations can be written in more than one form.",
+                        "● Write quadratic equations in both standard form and vertex form.",
+                        "● What different forms for writing quadratics reveal about the function.",
+                        "● How to solve quadratic equations by completing the square.",
+                        "● The connection between the quadratic formula and the process of completing the square.",
+                        "● The connection between the roots of a quadratic equation and the coefficients of a quadratic equation."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Write quadratic equations in one variable in both standard form as well as vertex form and understand what the parameters of each form reveals about the function.",
+                        "● Derive the quadratic formula by completing the square of a general quadratic equation.",
+                        "● Construct a quadratic equation given the equation's two roots.",
+                        "● Factor non-monic quadratics.",
+                        "● Identify which process is best to solve a quadratic equation.",
+                        "● Identify the y-intercept, zeros, and vertex of a quadratic function and use that to create a rough sketch of the function,"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.4b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to identify linear, exponential, and quadratic functions by inspection.",
+                        "● How to extend the property of exponents to rational exponents.",
+                        "● How to factor polynomials by using the greatest common factor.",
+                        "● How to factor general quadratic polynomials.",
+                        "● How to use factoring to solve quadratic equations."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to factor a quadratic expression to reveal the zeros of the function.",
+                        "● When solving by inspection, be able to identify the number of real roots, their value, and if there is no real root.",
+                        "● The similarities and differences between quadratic functions and linear functions.",
+                        "● How to determine the best method to solve a quadratic equation.",
+                        "● How to transform quadratic equations to and from standard form, graphing form, and factored form."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Solve quadratic equations by taking the square root.",
+                        "● Solve quadratic equations by factoring.",
+                        "● Solve quadratic equations by inspection.",
+                        "● Recognize non-real solutions.",
+                        "● Create a quadratic equation that describes a given situation.",
+                        "● Solve quadratic equations by inspection, factoring, completing the square, and the quadratic formula.",
+                        "● Complete the square in a quadratic expression to reveal"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to solve multiple-step equations involving rational numbers and coefficients.",
+                        "● How to solve literal equations for specific variables.",
+                        "● How to rewrite equations in equivalent forms.",
+                        "● How to evaluate numerical expressions involving parentheses, powers, and rational numbers.",
+                        "● How to express word problems using variables and mathematical notation.",
+                        "● How to write formulas using two or more variables.",
+                        "● How to write linear equations in standard form."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Solving system of equations by using elimination with addition requires adding the two equations together to eliminate one of the variables.",
+                        "● An equivalent system is formed whenever one of the equations is multiplied by a nonzero number and/or when one of the equations is replaced by the sum of a constant multiple of another equation and that equation.",
+                        "● Equations do not have to be written in standard form to use elimination.",
+                        "● A system of intersecting lines has exactly one solution and is consistent and independent.",
+                        "● A system whose graphs coincide has infinitely many solutions and is consistent and dependent.",
+                        "● A system of parallel lines has no solution and is consistent."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Provide mathematical justification for the addition and subtraction methods of solving systems of equations (elimination method).",
+                        "● Solve system of equations by using elimination with multiplication.",
+                        "● Write and solve a linear system of equation to represent a contextual problem.",
+                        "● Substitute the value from solving for one of the variable into either equation, and solve for the other variable.",
+                        "● Write the solution to the system of equation as an ordered pair."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.6"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to solve multiple step equations involving rational numbers and coefficients.",
+                        "● How to solve literal equations for specific variables.",
+                        "● How to rewrite equations in equivalent forms.",
+                        "● How to evaluate numerical expressions involving parentheses, powers, and rational numbers.",
+                        "● How to express word problems using variables and mathematical notation.",
+                        "● How to write formulas using two or more variables.",
+                        "● How to write linear equations in standard form.",
+                        "● How to graph linear equations in two variables.",
+                        "● How to find and interpret slope and y-intercept."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Systems of equations can be solved both graphically and algebraically.",
+                        "● A system of intersecting lines has exactly one solution and is consistent and independent.",
+                        "● A system whose graphs coincide has infinitely many solutions and is consistent and dependent.",
+                        "● A system of parallel lines has no solution and is consistent.",
+                        "● How recognizing and comparing the slopes of a lines can help solve many problems and reveal many characteristics of lines."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Graph systems of linear equations.",
+                        "● Solve systems of linear equations by graphing.",
+                        "● Write and solve real-world and mathematical situation problems for systems of equations.",
+                        "● Determine the best method for solving systems of equations.",
+                        "● Solve a linear system of equations using the linear combinations (elimination method).",
+                        "● Apply systems of linear equations.",
+                        "● Determine whether a system of linear equations has no, one, or infinitely many solutions.",
+                        "● Recognize constraints of systems of equations when modeling real-world situation."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.10"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to plot points on a coordinate plane.",
+                        "● How to substitute values for variables.",
+                        "● How to find the slope of a line given two points.",
+                        "● How to recognize the slope of a line given an equation in both standard form and y-intercept form.",
+                        "● How to graph points given a table of values."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to find the solutions to an equation and how they relate to the graph of the equation.",
+                        "● A graph/curve is a visual representation of an equation or data.",
+                        "● An ordered pair is a solution to the equation if it represents a point on the graph.",
+                        "● How to graph an equation given in both standard form and slope intercept form.",
+                        "● How to identify characteristics of a graph given its equation.",
+                        "● How equations, graphs, and tables are related.",
+                        "● How to create a table of values that satisfy an equation.",
+                        "● A continuous curve or a line contains an infinite number of solutions."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Test a point to determine whether it is on the graph of an equation.",
+                        "● Graph an equation by plotting points.",
+                        "● Write the equation of a vertical or horizontal line given its graph or a point on its graph.",
+                        "● Write equations of a line given slope and y-intercept, two points, or slope and a point.",
+                        "● Read a graph to identify points that are solutions to an equation.",
+                        "● Find the intersection points of two graphs and understand its meaning.",
+                        "● Identify different graphs as belonging to the same family of graphs."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.11",
+            "type": "Grade-Specific",
+            "description": "Explain why the x-coordinates of the points where the graphs of the equations y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x); find the solutions approximately, e.g., using technology to graph the functions, make tables of values, or find successive approximations."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to evaluate expressions.",
+                        "● How to construct a table of values for a given function.",
+                        "● How to graph functions using graphing technology.",
+                        "● How to recognize proportionality in direct and inverse variation.",
+                        "● How to graph equations given in both standard form and slope intercept form."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How technology can be used to find the domain, range, points of intersection, and other attributes use to characterize families of graphs.",
+                        "● How to recognize the distinguishing features of basic graphs, such as their general shape, and the points and quadrants that they pass through.",
+                        "● How to describe the rules for translating graphs of equations vertically or horizontally.",
+                        "● How to decide whether a situation represents direct or inverse variation.",
+                        "● How manipulating parameters of the symbolic rule will result in a predictable transformation of the graph."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Write and graph linear, quadratic, absolute value, and exponential functions (by hand as well as with technology).",
+                        "● Approximate solutions to systems of two equations using graphing technology.",
+                        "● Approximate solutions to systems of two equations using tables of values.",
+                        "● Explain why the x-coordinates of the points where the graphs of the equations y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x)."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Reasoning with Equations and Inequalities",
+        "reporting_category": "REI",
+        "standard": {
+            "id": "A-REI.12"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to write and graph linear equations with two variables.",
+                        "● How to simplify inequalities to represent them in a format that is easy to graph.",
+                        "● How to find and interpret the slope of a line and recognize its relationship in graphs."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● All points on a half-plane are solutions to a linear inequality.",
+                        "● The solutions to a system of inequalities in two-variables are the points that lie in the intersection of the corresponding half-planes.",
+                        "● How to graph the solution set of linear and non-linear inequalities with two variables.",
+                        "● How to graph a system of linear equation and inequality on a coordinate plane.",
+                        "● How to explain that the solution set for a system of linear inequalities is the intersection",
+                        "of the shaded regions (half-planes) of both inequalities.",
+                        "● How to check points in the intersection of the half-planes to verify that they represent a solution to the system of inequality."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Determine whether the boundary line should be included as part of the solution set.",
+                        "● Graph the solutions to a linear inequality in two variables as a half-plane, excluding the boundary for non-inclusive inequalities.",
+                        "● Graph the solution set to a system of linear inequalities in two variables as the intersection of their corresponding half-planes.",
+                        "● Graph constraints using systems of inequalities."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions.",
+                        "● How to generalize patterns using words and algebraic methods."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● A function is a rule that assigns each element from a set of inputs to exactly one element from a set of outputs.",
+                        "● The difference between a relation and a function.",
+                        "● Domain can also be referred to as \"input\" and \"x-values\".",
+                        "● Range can also be referred to as \"output\" and y-values\".",
+                        "● The graph of the function, f, is the graph of the equation 𝑦𝑦=𝑓𝑓(𝑥𝑥)",
+                        "● The relationship between a function, a table, and/or graph.",
+                        "● How to look for and analyze patterns in input-output tables.",
+                        "● How to recognize different ways to express a function."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Use the definition of a function to determine whether a relationship is a function given a table, graph, mapping, or words.",
+                        "● Given the function, f(x), identify x as an element of the domain, the input, and f(x) is an element in the range, the output.",
+                        "● Find a rule to describe a set of input and output values.",
+                        "● Build a function from a real-world mathematical situation or word problem.",
+                        "● Determine whether a relationship is a function based on its description or graph."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions.",
+                        "● How to generalize patterns using words and algebraic methods."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● A function is a rule that assigns each element from a set of inputs to exactly one element from a set of outputs.",
+                        "● The graph of the function, f, is the graph of the equation y= f(x).",
+                        "● How to recognize different ways to define and express a function.",
+                        "● How to work with functions expressed in various form (e.g., f(x) notation, tables, and graphs.",
+                        "● How to use function notation to evaluate functions for given inputs in the domain, including combinations and compositions of functions.",
+                        "● The relationship between a function, a table, mapping and/or graph.",
+                        "● How to look for and analyze patterns in input-output tables."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Use function notation to express relationships between contextual variables.",
+                        "● Input a value from the domain of a function and evaluate.",
+                        "● Create contextual examples that can be modeled by linear or exponential functions.",
+                        "● Use the definition of a function to determine whether a relationship is a function given a table, graph, mapping, or words.",
+                        "● Given the function, f(x), identify x as an element of the domain, the input, and (f) x is an element in the range, the output.",
+                        "● Write a relation in function notation.",
+                        "● Find a rule to describe a set of input and output values."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions.",
+                        "● How to generalize patterns using words and algebraic methods.",
+                        "● How to recognize linear functions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to recognize and explain that an explicit formula allows them to find any element of a sequence without knowing the previous term.",
+                        "● The connection between tables with constant differences and linear functions.",
+                        "● How to look for and analyze patterns in input-output tables.",
+                        "● A function is a rule that assigns each element from a set of inputs to exactly one element from a set of outputs.",
+                        "● A sequence is a function with a restricted domain."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Identify and generate explicit formula for arithmetic and geometric sequences.",
+                        "● Find an explicit function/rule that models a real-world mathematical situation.",
+                        "● Represent data from a table, graph, or situation as a sequence and predict terms in the sequence.",
+                        "● Determine if a sequence is arithmetic, geometric, or neither.",
+                        "● Determine whether a relationship is a linear or exponential function based on its description, graph, equation or table of values."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.4"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find and interpret slope as it relates to a graph.",
+                        "● How to graph the linear equations and inequalities in two variables given in both standard form and slope intercept form.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The graph of a function is often a useful way of visualizing the relationship of the function models, and manipulating a mathematical expression for a function can reveal important characteristics of the function's properties.",
+                        "● How to determine what a graph looks like.",
+                        "● How to describe what happens when x increases/decreases.",
+                        "● How to identify the x- and y-intercepts of a graph",
+                        "● How to determine any limitations on the inputs/outputs of the equation.",
+                        "● How to identify a maximum or minimum y-value (if it exists).",
+                        "● How to determine whether the graph has symmetry and describe the symmetry.",
+                        "● How to determine the direction of the graph.",
+                        "● How to compare the relative steepness of lines and to build intuition about positive, negative, and zero slopes."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Describe a parabola, using its intercepts, minima, maxima, vertex, symmetry, and whether it is positively or negatively oriented.",
+                        "● Distinguish linear, quadratic and exponential equations based on equations, tables, graphs and verbal descriptions.",
+                        "● Given a function, identify key features such as intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; and end behavior.",
+                        "● Use key features of a function to sketch a graph."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to determine whether relations are functions using tables, graphs, mapping, and context.",
+                        "● How to graph the linear equations and inequalities in two variables given in both standard form and slope intercept form.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to interpret key features of functions.",
+                        "● How to sketch the graph of functions showing key features, with and without technology.",
+                        "● How to apply strategies for finding exponential equations given the y-intercept and another point.",
+                        "● How to relate the domain of a function to its graph within context of a given relationship.",
+                        "● How to determine whether the domain of a function is reasonable given the context.",
+                        "● How to sketch the graph of a function that models a relationship between two quantities."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Identify appropriate values for the domain of a function based on context.",
+                        "● Identify the domain of a function from the graph.",
+                        "● Use set and interval notation to represent domain.",
+                        "● Describe the domain of a relation by examining an equation or graph.",
+                        "● Solidify connections between tables, equations, graphs and mathematical situations representations of functions.",
+                        "● Find equations of linear, quadratic and exponential"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.6"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find and interpret slope as it relates to a graph.",
+                        "● How to graph the linear equations and inequalities in two variables given in both standard form and slope intercept form.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions.",
+                        "● How to generate data by evaluating expressions for"
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How the slope of a graph relates to a rate of change.",
+                        "● How to interpret the rate of change and initial value of a linear function in terms of the situation it models and in terms of its graph or a table of values.",
+                        "● The rate of change between any two points, for non-linear functions, might not be the same as the rate of change of the overall function.",
+                        "● How to compare the relative steepness of lines and to build"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Calculate the slope between two points.",
+                        "● Calculate the rate of change over a given interval for rational, square root, cube root, and polynomial functions with a context.",
+                        "● Calculate the rate of change when presented as an equation or table.",
+                        "● Estimate the rate of change from a graph."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.7a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find and interpret slope as it relates to a graph.",
+                        "● How to graph the linear equations and inequalities in two variables given in both standard form and slope intercept form.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The graph of a function is often a useful way of visualizing the relationship of the function models, and manipulating a mathematical expression for a function can reveal important characteristics of the function's properties.",
+                        "● How to interpret key features of functions.",
+                        "● How to sketch the graph of functions showing key features, with and without technology.",
+                        "● How to relate the domain of a function to its graph within context of a given relationship.",
+                        "● How to sketch the graph of a function that models a relationship between two quantities.",
+                        "● How to describe what the graph of a given function looks like.",
+                        "● How to describe what happens when x increases/decreases.",
+                        "● How to identify x- and y-intercepts.",
+                        "● How to determine any limitations on the inputs/outputs of the equation.",
+                        "● How to determine if there is a maximum or minimum y-value.",
+                        "● How to determine whether the graph has symmetry.",
+                        "● How to identify the direction of the graph."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Graph and identify key features in linear and quadratic functions by hand and with technology.",
+                        "● Distinguish between linear and quadratic equations based on equations, tables, graphs and verbal descriptions.",
+                        "● Given a linear or quadratic function, identify key features such as intercepts-intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; and end behavior.",
+                        "● Use key features of a function to sketch a graph."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.7b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find and interpret slope as it relates to a graph.",
+                        "● How to graph the linear equations and inequalities in two variables given in both standard form and slope intercept form.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The graph of a function is often a useful way of visualizing the relationship of the function models, and manipulating a mathematical expression for a function can reveal important characteristics of the function's properties.",
+                        "● How to interpret key features of functions.",
+                        "● How to sketch the graph of functions showing key features, with and without technology.",
+                        "● How to relate the domain of a function to its graph within context of a given relationship.",
+                        "● How to sketch the graph of a function that models a relationship between two quantities.",
+                        "● How to describe what the graph of a given function looks like.",
+                        "● How to describe what happens when x increases/decreases.",
+                        "● How to identify x- and y-intercepts.",
+                        "● How to determine any limitations on the inputs/outputs of the equation.",
+                        "● How to determine if there is a maximum or minimum y-value.",
+                        "● How to determine whether the graph has symmetry.",
+                        "● How to identify the direction of the graph."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Graph linear, exponential, quadratic, absolute value, and piecewise-defined functions by hand as well as with technology.",
+                        "● Distinguish between linear, exponential, quadratic, square root, and piecewise-defined functions in context.",
+                        "● Interpret functions given in a different representations. (i.e., equations, tables, graphs, and verbal descriptions.)",
+                        "● Given a linear or quadratic function, identify key features such as intercepts-intervals"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.8a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to recognize equivalent expressions.",
+                        "● How to solve two-step equations with one variable.",
+                        "● How to factor a polynomial completely.",
+                        "● How to recognize perfect-square polynomials.",
+                        "● How to graph quadratic and linear functions by hand and using technology.",
+                        "● How the degree of a polynomial relates to its polynomial function."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Where on a graph you can find the solutions, zeros, roots, or x-intercepts of a quadratic function.",
+                        "● How to use the process of factoring and completing the square in a quadratic function to show zeros, extreme values, and symmetry of the graph and interpret them.",
+                        "● Which representation is best when comparing the properties of quadratic functions.",
+                        "● How factors and roots of a polynomial function are related.",
+                        "● How to identify key features of a parabola by looking at how the coefficients affect the graph.",
+                        "● If the product of two quantities equals zero, at least one of the quantities equals zero."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Use factoring and completing the square to find key features of quadratics.",
+                        "● Write an equivalent form of a function defined by an expression for functions given.",
+                        "● Apply the zero property to factored expressions.",
+                        "● Identify zeros, transformations, points of discontinuity, and asymptotes, when suitable factorizations are available.",
+                        "● Compare properties of quadratic functions from multiple representations."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Functions",
+        "reporting_category": "IF",
+        "standard": {
+            "id": "F-IF.9",
+            "type": "Grade-Specific",
+            "description": "Compare properties of two functions each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions). For example, given a graph of one quadratic function and an algebraic expression for another, say which has the larger maximum."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to recognize equivalent expressions.",
+                        "● How to solve multiple-step equations involving one variable and rational numbers.",
+                        "● How to factor a polynomial completely.",
+                        "● How to graph quadratic and linear functions by hand and using technology.",
+                        "● How the degree of a polynomial relates to its polynomial function."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Which representation is best when comparing the properties of quadratic functions.",
+                        "● How factors and roots of a polynomial function are related.",
+                        "● Identify key features of a parabola by looking at how the coefficients affect the graph.",
+                        "● Use transformations to simplify calculations and show that two expressions are equivalent.",
+                        "● When it useful to write an expression as a product of expressions vs. the standard form.",
+                        "● Represent functions algebraically, graphically,",
+                        "numerically in tables, and/or by verbal description."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Express functions using multiple representations and compare the properties for quadratic functions (e.g., equation, table of values, graph, or mathematical situation).",
+                        "● Model quadratic functions in real-world context.",
+                        "● Determine which representation is best when comparing the properties of quadratic functions.",
+                        "● Expand powers and products of expressions."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Building Functions",
+        "reporting_category": "BF",
+        "standard": {
+            "id": "F-BF.1a",
+            "type": "Grade-Specific",
+            "description": "Write a function that describes a relationship between two quantities. Determine an explicit expression, a recursive process, or steps for calculation from a context."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions including rational polynomial terms.",
+                        "● How to evaluate expressions with exponents.",
+                        "● How to relate representations of square root functions",
+                        "● How to use the laws of exponents to find products and quotients of monomials.",
+                        "● How to use the properties of exponents to simplify expressions containing negative and zero exponents.",
+                        "● How to make input-output tables and look for and analyze patterns.",
+                        "● How to graph linear equations and inequalities in two variables.",
+                        "● How to solve equations with elements from a replacement set."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to write an explicit formula for a sequence and use the formula to identify terms in the sequence.",
+                        "● How to relate arithmetic sequence to linear function and geometric sequence to a exponential function.",
+                        "● How to build a function from a real-world mathematical situation.",
+                        "● How to recognize and describe patterns.",
+                        "● How to determine the common difference and common ratio.",
+                        "● How manipulating parameters of the symbolic rule will result in a predictable transformation of the graph.",
+                        "● How to find function values."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Write an explicit formula for arithmetic and geometric functions.",
+                        "● Represent data from a table, graph, or situation as a sequence and predict terms in the sequence.",
+                        "● Identify a sequence as arithmetic, geometric, or neither.",
+                        "● Determine whether a relationship is a linear or exponential function based on its description, graph, equation or table of values.",
+                        "● Build functions and generate graphs both by hand and using graphing technology.",
+                        "● Write a function that describes a relationship between two quantities by determining an"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Building Functions",
+        "reporting_category": "BF",
+        "standard": {
+            "id": "F-BF.3",
+            "type": "Grade-Specific",
+            "description": "Identify the effect on the graph of replacing f(x) by f(x) + k, k f(x), f(kx), and f(x + k) for specific values of k (both positive and negative); find the value of k given the graphs. Experiment with cases and illustrate an explanation of the effects on the graph using technology."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to simplify expressions including rational polynomial terms.",
+                        "● How to evaluate expressions with exponents.",
+                        "● How to relate representations of square root functions",
+                        "● How to use the laws of exponents to find products and quotients of monomials.",
+                        "● How to use the properties of exponents to simplify expressions containing negative and zero exponents.",
+                        "● How to make input-output tables and look for and analyze patterns.",
+                        "● How to graph linear equations and inequalities in two variables.",
+                        "● How to solve equations with elements from a replacement set."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to write an explicit formula for a sequence and use the formula to identify terms in the sequence.",
+                        "● How to describe the rules for translating graphs of equations.",
+                        "● How to recognize the distinguishing features of basic graphs, such as their general shape, and the points and quadrants that they pass through.",
+                        "● How to use graphing technology to explore transformations of functions.",
+                        "● How to explore transformations that preserve characteristics of graphs of functions and which do not.",
+                        "● How to identify the effects of vertical translations of graphs of linear and exponential functions on their equations.",
+                        "● How to graph parent functions for quadratic and absolute value functions.",
+                        "● The meaning and effects that the coefficients, factors, exponents, and/or intercepts in a linear and exponential function have when describing the attributes of graphs."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Sketch the graphs of the equations 𝑦𝑦=𝑥𝑥, 𝑥𝑥𝑥𝑥=1, 𝑦𝑦=𝑥𝑥2, 𝑦𝑦=𝑥𝑥3, 𝑦𝑦=√𝑥𝑥, 𝑦𝑦=|𝑥𝑥|, and variations of these equations.",
+                        "● Perform transformation on quadratic and absolute value functions with and without technology.",
+                        "● Describe the effects of each transformation of functions (e.g., if 𝑓𝑓(𝑥𝑥) is replaced with 𝑓𝑓(𝑥𝑥+𝑘𝑘)).",
+                        "● Given the Given the graph of a function, describe all"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Linear, Quadratic, and Exponential Models",
+        "reporting_category": "LE",
+        "standard": {
+            "id": "F-LE.1a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find and interpret slope as a rate of change.",
+                        "● How to apply properties of exponents to generate equivalent numerical expressions.",
+                        "● How to evaluate square roots of perfect squares and cube roots of perfect cubes.",
+                        "● How to graph a variety of functions, including exponential using a table of values."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Two families of functions characterized by laws of growth are linear functions, which grow at a constant rate, and exponential functions, which grow at a constant percent rate.",
+                        "● How to distinguish between constant differences (linear functions) and constant ratios (exponential functions) by recognizing constant growth patterns versus exponential growth patterns (e.g., compound interest versus simple interest).",
+                        "● How to recognize the relationship between rises and runs on a graph and differences of inputs and outputs in a symbolic form of the proof.",
+                        "● The ratio of the rise and run for any two distinct points on a line is the same.",
+                        "● Linear functions with a constant term of zero describe proportional relationships.",
+                        "● Characteristics of graphs, tables, and equations for linear, exponential, and quadratic functions."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Make conjectures about the equations, tables, and graphs of linear and exponential functions.",
+                        "● Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another.",
+                        "● Create and graph linear, quadratic, and exponential functions.",
+                        "● Write and use arithmetic and geometric sequences recursively and explicitly to model situations.",
+                        "● Distinguish between situations that model linear and exponential functions."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Linear, Quadratic, and Exponential Models",
+        "reporting_category": "LE",
+        "standard": {
+            "id": "F-LE.1b",
+            "type": "Grade-Specific",
+            "description": "Recognize situations in which one quantity changes at a constant rate per unit interval relative to another."
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find and interpret slope as a rate of change.",
+                        "● How to apply properties of exponents to generate equivalent numerical expressions.",
+                        "● How to evaluate square roots of perfect squares and cube roots of perfect cubes.",
+                        "● How to graph a variety of functions, including exponential use of a table of values."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How real-world and mathematical situations can be modeled by linear functions when the rate of change of a quantity is constant.",
+                        "● When the rate of change is not constant, the function cannot be linear.",
+                        "● How to analyze tables and graphs to identify exponential or linear functions.",
+                        "● The ratio of the rise and run for any two distinct points on a line is the same.",
+                        "● Linear functions with a constant term of zero describe proportional relationships."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Recognize situations in which one quantity changes at a constant rate per unit interval relative to another.",
+                        "● Recognize a linear function when analyzing a table, graph, or equation.",
+                        "● Determine the rate of change of a linear function in context.",
+                        "● Make conjectures about equations, tables, and graphs of linear and exponential functions.",
+                        "● Combine linear and exponential functions using arithmetic operations."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Linear, Quadratic, and Exponential Models",
+        "reporting_category": "LE",
+        "standard": {
+            "id": "F-LE.1c"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to find and interpret slope as a rate of change.",
+                        "● How to apply properties of exponents to generate equivalent numerical expressions.",
+                        "● How to evaluate square roots of perfect squares and cube roots of perfect cubes.",
+                        "● How to graph a variety of functions, including exponential use of a table of values.",
+                        "● The relationship between variables in a function."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Explicit forms of functions will show that linear models grow by a constant rate over equal intervals.",
+                        "● Exponential models grow by equal factors over equal intervals.",
+                        "● If the percent rate of change is not constant for a given function, the function is not exponential.",
+                        "● Constant ratios are like constant differences, except you calculate the ratio between consecutive outputs.",
+                        "● When the rate of change is not constant, the function cannot be linear."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another.",
+                        "● Write exponential functions from graphs, tables, and mathematical and real-world situations with an explicit formula.",
+                        "● Compare graphs, tables, equations, and situations of linear and exponential functions.",
+                        "● Describe how quantities increase or decrease exponentially over intervals."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Linear, Quadratic, and Exponential Models",
+        "reporting_category": "LE",
+        "standard": {
+            "id": "F-LE.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to write the equation of a line given two points, a graph, or table.",
+                        "● How to simplify expressions involving rational numbers and coefficients.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to translate verbal phrases into mathematical expressions.",
+                        "● How to generalize patterns using words and algebraic methods.",
+                        "● How to recognize linear functions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to identify sequences generated by adding a constant as arithmetic and those generated by multiplying by a constant as geometric.",
+                        "● The vocabulary and notation for arithmetic sequences as they develop formulas for the nth term.",
+                        "● How to write sequences from recursive equations and vice versa.",
+                        "● How to convert between explicit and recursive equations for arithmetic sequences.",
+                        "● How to find equations for geometric sequences and see relationships between",
+                        "geometric sequences and exponential functions.",
+                        "● How to look for and analyze patterns in input-output tables."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Construct linear and exponential functions given a graph.",
+                        "● Construct linear and exponential function given a description of a relationship.",
+                        "● Construct linear and exponential functions given two input-output pairs.",
+                        "● Construct arithmetic and geometric sequences given a description of a relationship.",
+                        "● Construct arithmetic and geometric sequences given two input-output pairs.",
+                        "● Sort sequences based on their patterns in their representation.",
+                        "● Write rules for arithmetic and geometric sequences that"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Linear, Quadratic, and Exponential Models",
+        "reporting_category": "LE",
+        "standard": {
+            "id": "F-LE.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to recognize equivalent expressions.",
+                        "● How to solve multiple-step equations involving one variable and rational numbers.",
+                        "● How to factor a polynomial completely.",
+                        "● How to graph quadratic and linear functions by hand and using technology.",
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to justify conjectures and patterns using numerical expressions.",
+                        "● How to expand powers and products of expressions."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to apply knowledge of linear and exponential functions to investigate the relationship between simple and compound interest.",
+                        "● How to represent exponential decay in multiple representations.",
+                        "● How to solidify connections between a table, equation, graph, and situational representations of an exponential function.",
+                        "● How to interpret the meaning of slope and y-intercept of a",
+                        "linear equation in terms of context."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Based on the context of a situation, explain the meaning of the coefficients, factors, exponents, and/or intercepts in a linear or exponential function.",
+                        "● Apply exponential functions to real-life situations involving growth and decay.",
+                        "● Calculate simple interest.",
+                        "● Use exponential functions to calculate compound interest.",
+                        "● Determine which representation is best when comparing the properties of quadratics."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.1"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to perform basic operations involving rational numbers.",
+                        "● How to identify limitations, or misuses, of visual representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● A dot plot includes values from the range of the data and plots a point for each occurrence of an observed value on a number line.",
+                        "● A histogram subdivides the data into class intervals and uses a rectangle to show the frequency of observations in those intervals.",
+                        "● A box-and-whisker plot shows the five-number summary of a distribution. (Five-number summary includes the minimum, lower quartile (25"
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Construct dot plots, histograms, and box-and-whisker plots for data on real number lines.",
+                        "● Analyze data and compare data in different data sets. (e.g., dot plots, histograms and box-and-whisker plots.)"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.2"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to perform basic operations involving rational numbers.",
+                        "● How to identify limitations, or misuses, of visual representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● A spread describes how the data lies.",
+                        "● The shape of a data distribution might be described as symmetrical, skewed, flat, or bell shaped, and it might be summarized by a statistic-measuring center (such as standard deviation or interquartile range).",
+                        "● Different distributions can be compared numerically using statistics or compared visually using plots.",
+                        "● Which statistics to compare, which plots to use, and what the results of a comparison might mean, depending on the",
+                        "question to be investigated and the real-life actions to be taken."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Describe a distribution using center and spread.",
+                        "● Use the correct measure of center and spread to describe a distribution that is symmetric or skewed.",
+                        "● Identify outliers and their effects on data sets.",
+                        "● Compare two or more different data set using the center and spread of each.",
+                        "● Analyze data and compare data in different data sets.",
+                        "● Compute the mean, median, interquartile range, and standard deviation by hand in simple cases and using technology with larger data sets."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.3"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to perform basic operations involving rational numbers.",
+                        "● How to identify limitations, or misuses, of visual representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● What shape distributions a data set can have and how statistics can affect the shape and outliers.",
+                        "● How shapes of graphically displayed data can describe data distributions.",
+                        "● The shape and presence of extreme values may affect center and spread.",
+                        "● The shape of a data distribution might be described as symmetrical, skewed, flat, or bell-shaped, and it might be summarized by a statistic-measuring center (such as",
+                        "standard deviation or interquartile range).",
+                        "● Different distributions can be compared numerically using statistics or compared visually using plots.",
+                        "● How to explain a decision based on a graphical display of data and the corresponding descriptive statistics.",
+                        "● How changes in data affect visual representation of data."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Identify a data set by its shape and describe the data set as symmetric, skewed, flat, or bell-shaped.",
+                        "● Use the outlier rule to identify outliers in a data set.",
+                        "● Explain how adding or removing an outlier affects measures of center and spread in real-world and mathematical situations.",
+                        "● Compare two or more data sets using shape, center, and spread.",
+                        "● Determine which statistics to compare, which plots to use, and what the results of a"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.5"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to perform basic operations involving rational numbers.",
+                        "● How identify limitations, or misuses, of visual representations of data.",
+                        "● How to make and interpret visual and tabular representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Entries in the \"Total\" row and column are called marginal frequencies.",
+                        "● Entries in the body of the table are called joint frequencies.",
+                        "● The relative frequencies in the body of the table are called conditional frequencies.",
+                        "● How to use two-way tables to organize and display categorical data.",
+                        "● The difference between quantitative data versus categorical data.",
+                        "● What it means for two categorical data sets to be independent."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Recognize the differences between joint, marginal, and conditional relative frequencies.",
+                        "● Calculate relative frequencies including joint, marginal, and conditional relative frequencies.",
+                        "● Create and summarize a two-way frequency table for a set of categorical data.",
+                        "● Analyze two-way tables to determine if two categorical variables are associated or independent.",
+                        "● Interpret relative frequencies in the context of a given data set.",
+                        "● Recognize possible associations and trends in data."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.6a"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to identify limitations, or misuses, of visual representations of data.",
+                        "● How to make and interpret visual and tabular representations of data.",
+                        "● How changes in data affect visual representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Functions may be used to describe data.",
+                        "● How to identify the difference between association and causation.",
+                        "● How to analyze tables and graphs to identify exponential or linear functions.",
+                        "● How to make conjectures about equations, tables, and graphs of linear, quadratic, and exponential functions.",
+                        "● How to distinguish between constant differences (linear functions) and constant ratios (exponential functions) by recognizing constant growth",
+                        "patterns versus exponential growth patterns."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Create a scatter plot from two quantitative variables and analyze possible associations between two variables.",
+                        "● Describe the form, strength, and direction of the relationship.",
+                        "● Categorize data as linear, exponential, or quadratic based on its graphical display, function, or table of data.",
+                        "● Use algebraic methods and technology to fit a function to the data and use the function to predict values in the context of the data."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.6b"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to perform basic operations involving rational numbers.",
+                        "● How to identify limitations, or misuses, of visual representations of data.",
+                        "● How to make and interpret visual and tabular representations of data.",
+                        "● How changes in data affect visual representations of data.",
+                        "● How to write linear equations given a point and slope, two points, or graph."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The residual in a regression model is the difference between the observed y-value and its predicted y-value.",
+                        "● Residuals measure how much the data deviate from the regression line.",
+                        "● How to represent the residuals from a function and the data set it models numerically and graphically.",
+                        "● How to use line of fit and scatter plots to evaluate trends and make predictions.",
+                        "● If the data suggest a linear relationship, the relationship can be modeled with a regression line, and its strength and direction can be expressed through a correlation coefficient."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Graph the residuals and evaluate the fit of the linear equations.",
+                        "● Fit functions to data.",
+                        "● Informally assess the fit of a function by analyzing residuals from the residual plot.",
+                        "● Find residuals with and without technology and analyze their meaning.",
+                        "● Write equations of best-fit lines using linear regression.",
+                        "● Find a curve of best-fit in the form of a polynomial function for data."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.6c"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to interpret the slope and y-intercept of a linear model in the context of the data.",
+                        "● How to write and graph linear equations given a point and slope, two points, or graph.",
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to perform basic operations involving rational numbers.",
+                        "● How to make and interpret visual and tabular representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to use lines of fit and scatter plots to evaluate trends and make predictions.",
+                        "● How to identify the difference between association and causation.",
+                        "● How to determine whether the graph of real-world data shows a positive correlation, negative correlation, or no correlation.",
+                        "● How to use the function for the line of fit to predict values inside the range of the data for a real-world situation.",
+                        "● Some models are better than others at making predictions.",
+                        "● How changes in data affect visual representations of data."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Fit a linear function for a scatter plot that suggests a linear correlation.",
+                        "● Fit a linear function (trend line) to a scatter plot with and without technology.",
+                        "● Create a scatter plot from two quantitative variables and analyze possible associations between two variables.",
+                        "● Describe the form, strength, and direction of the relationship.",
+                        "● Determine whether the graph shows a positive, negative, or no correlation.",
+                        "● Interpret the meaning of positive and negative"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.7"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to generate data by evaluating expressions for different values of a variable and organize the data.",
+                        "● How to find the slope of a line given a graph, table, or two points on a line.",
+                        "● How to recognize and justify if a line has a positive, negative, zero, or undefined slope.",
+                        "● How to interpret slope by describing how y is expected to change when x changes by one unit.",
+                        "● How to simplify expressions involving rational numbers."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● How to explain the meaning of slope (rate of change) and y-intercept (constant term) in context.",
+                        "● How to explain and illustrate how a change in one variable may result in a change in another variable and apply to the relationships between independent and dependent variables.",
+                        "● How the slope of a graph relates to a rate of change.",
+                        "● How to interpret the rate of change and initial value of linear function in terms of the",
+                        "situation it models and in terms of its graph or a table of values.",
+                        "● The rate of change between any two points, for non-linear functions might not be the same as the rate of change of the overall function.",
+                        "● How to compare the relative steepness of lines and to build intuition about positive, negative, and zero slopes."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Write the equation of a line given a graph, table of values, or mathematical situation.",
+                        "● Determine the rate of change and constant term when given a graph, table, or mathematical situation and interpret its meaning in context.",
+                        "● Identify the quantities in a mathematical problem or real-world situation that should be represented by distinct variables and describe what quantities the variable represents.",
+                        "● Calculate the slope between two points."
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.8"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to interpret the slope and y-intercept of a linear model in the context of the data.",
+                        "● How to write and graph linear equations given a point and the slope, two points, or graph.",
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to identify limitations, or misuses, of visual representations of data.",
+                        "● How changes in data affect visual representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● Correlation coefficients measure the strength of association for a data set.",
+                        "● Correlation coefficients are a calculation based on the data that returns a number between -1 and 1.",
+                        "● Correlation does not imply causation.",
+                        "● Correlation coefficient does not detect nonlinear association.",
+                        "● How to input data using statistical or graphing technology and calculate its correlation coefficient.",
+                        "● Some models are better than others at making predictions."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Calculate the correlation coefficient of a linear fit using technology.",
+                        "● Interpret the correlation coefficient of a linear fit as a measure of how well the data fit the relationship.",
+                        "● Investigate relationships between quantities by using points on scatter plots.",
+                        "● Fit a linear function (trend line) to a scatter plot with and without technology.",
+                        "● Create a scatter plot from two quantitative variables and"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "subject": "Algebra I",
+        "grade": "HS",
+        "domain": "Interpreting Categorical and Quantitative Data",
+        "reporting_category": "ID",
+        "standard": {
+            "id": "S-ID.9"
+        },
+        "student_performance": {
+            "categories": {
+                "knowledge": {
+                    "label": "A student should know",
+                    "items": [
+                        "● How to interpret the slope and y-intercept of a linear model in the context of the data.",
+                        "● How to write and graph linear equations given a point and the slope, two points, or graph.",
+                        "● How to determine the mean, median, mode, and range for a set of data, and decide how meaningful they are in specific situations.",
+                        "● How to identify trends in data.",
+                        "● How to identify limitations, or misuses, of visual representations of data.",
+                        "● How changes in data affect visual representations of data."
+                    ]
+                },
+                "understanding": {
+                    "label": "A student should understand",
+                    "items": [
+                        "● The difference between correlation (association) and causation (cause-and-effect).",
+                        "● Correlation refers to how closely two sets of information or data are related.",
+                        "● Causal relationship between two things or events exists if one occurs because of the other.",
+                        "● When two variables have a correlation, it does not mean that a change in one causes a change in the others.",
+                        "● Correlation does not imply causation.",
+                        "● How to use lines of fit and scatter plots to evaluate trends and make predictions.",
+                        "● No model is perfect. Some models are better than others at making predictions."
+                    ]
+                },
+                "skills": {
+                    "label": "A student should be able to do",
+                    "items": [
+                        "● Investigate relationships between quantities by using points on scatter plots.",
+                        "● Fit a linear function (trend line) to a scatter plot with and without technology.",
+                        "● Create a scatter plot from two quantitative variables and analyze possible associations between two variables.",
+                        "● Describe the form, strength, and direction of the relationship.",
+                        "● Define positive, negative, or no correlation and explain"
+                    ]
+                }
+            }
+        }
+    }
+]

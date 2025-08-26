@@ -1,0 +1,1875 @@
+[
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "The Real Number System",
+    "reporting_category": "RN",
+    "standard": {
+      "id": "N-RN.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The meaning and function of exponents.",
+            "The meaning of rational expressions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to simplify an exponential expression.",
+            "How to simplify radical expressions."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify and attend to structure in writing and using rational exponents.",
+            "Recognize a power's corresponding root.",
+            "Relate use of rational exponents to properties of integer exponents."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "The Real Number System",
+    "reporting_category": "RN",
+    "standard": {
+      "id": "N-RN.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A single quantity can be represented by various expressions.",
+            "Facts about quantities can be expressed by different equations."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to simplify a radical expression."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Rewrite radical expressions using a fractional exponent instead of a radical sign.",
+            "Rewrite exponential expressions to reveal quantities of interest that may be useful."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Quantities",
+    "reporting_category": "Q",
+    "standard": {
+      "id": "N-Q.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Quantities are contextualized by the use of units."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to recognize and identify units.",
+            "How to identify relevant quantities in any context or problem-solving task."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Describe solutions using complete quantities (including units).",
+            "Attend to precision by the consistent use of units throughout the problem solving process."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Complex Number System",
+    "reporting_category": "CN",
+    "standard": {
+      "id": "N-CN.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Every quadratic equation has complex number solutions.",
+            "Complex numbers include imaginary and real numbers.",
+            "Some solutions to quadratic equations may be imaginary.",
+            "The imaginary unit i is a number, not a variable."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to solve quadratic equations in the form of x2 + k = 0, where k >0."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use a clear and precise vocabulary in defining of the imaginary unit.",
+            "Prove and define i as the square root of -1."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Complex Number System",
+    "reporting_category": "CN",
+    "standard": {
+      "id": "N-CN.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Every quadratic equation has complex number solutions.",
+            "Complex numbers include imaginary and real numbers.",
+            "Some solutions to quadratic equations may be imaginary.",
+            "The imaginary unit i is a number, not a variable."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to solve quadratic equations in the form of x2 + k = 0, where k >0."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Perform operations with complex numbers.",
+            "Use a clear and precise definition of the imaginary unit.",
+            "Define i as the square root of -1."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Complex Number System",
+    "reporting_category": "CN",
+    "standard": {
+      "id": "N-CN.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Every quadratic equation has complex number solutions.",
+            "Complex numbers include imaginary and real numbers.",
+            "Some solutions to quadratic equations may be imaginary.",
+            "The imaginary unit i is a number, not a variable."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to solve quadratic equations in the form of x2 + k = 0, where k >0."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Perform operations with complex numbers.",
+            "Use a clear and precise definition of the imaginary unit.",
+            "Define i as the square root of -1."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Seeing Structure in Expressions",
+    "reporting_category": "SSE",
+    "standard": {
+      "id": "A-SSE.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Expressions can be factored into simpler expressions.",
+            "How to factor expressions is similar to factoring numbers."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to factor simple expressions.",
+            "Many quadratic trinomials can be factored into the product of two binomials."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize various forms of factoring.",
+            "Find common and binomial factors of quadratic expressions.",
+            "Factor special quadratic expressions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Seeing Structure in Expressions",
+    "reporting_category": "SSE",
+    "standard": {
+      "id": "A-SSE.3c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Exponential growth.",
+            "Exponential decay.",
+            "Growth and decay factor.",
+            "Exponential function models growth or decay of an initial quantity."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to create exponential expressions.",
+            "How to graph a function (if still needed as a visual aid)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Rewrite expressions to reveal quantities that may be more useful.",
+            "Recognize that exponential function model may be appropriate when finding the solution would require iterative multiplication.",
+            "Model in the context of real- world situations, such as compound interest and radioactive decay."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Seeing Structure in Expressions",
+    "reporting_category": "SSE",
+    "standard": {
+      "id": "A-SSE.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "As with arithmetic series, geometric series are also finite",
+            "A geometric series is the sum of the terms in a geometric sequence."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The sum of a finite number of terms can be found using the first term, number of terms, and the common ratio.",
+            "A formula can be used to find the sum of a finite geometric series."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Define geometric series and find their sums",
+            "Use the following formula to find the sum of a finite series:"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Arithmetic with Polynomials and Rational Expressions",
+    "reporting_category": "APR",
+    "standard": {
+      "id": "A-APR.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Synthetic division simplifies the long division process.",
+            "Algorithms are instructions in solving problems and identify algorithms used in previous courses.",
+            "Factors of polynomials are similar to factors of whole numbers."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to write the coefficients of polynomials in standard form.",
+            "How to divide whole numbers using long division.",
+            "How to factor whole numbers and polynomials."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Know and apply the Remainder Theorem.",
+            "Divide polynomials.",
+            "Use both long division and synthetic division to divide polynomials.",
+            "Attend to precision.",
+            "Recognize similar structure in both division processes.",
+            "Recognize when a specific division process may not be possible."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Arithmetic with Polynomials and Rational Expressions",
+    "reporting_category": "APR",
+    "standard": {
+      "id": "A-APR.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Knowing the zeros of a polynomial function can give information about its graph.",
+            "Zeros of a quadratic function are equivalent to the x-intercepts and solutions of the related quadratic equation set to zero."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Finding x- and y-intercepts.",
+            "Solving quadratic equations by factoring and by graphing.",
+            "Zeros of a quadratic function y=ax2+bx+c can be found by solving the related equation 0=ax2+bx+c.",
+            "Applying the Zero-Product Property.",
+            "Applying the Factor Theorem."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Write a polynomial function from its zeros.",
+            "Analyze the factored form of polynomials.",
+            "Use appropriate tools strategically to graph the function defined by the polynomial.",
+            "Represent the polynomial in a factored form, tables, and graphs."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Arithmetic with Polynomials and Rational Expressions",
+    "reporting_category": "APR",
+    "standard": {
+      "id": "A-APR.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Number theory.",
+            "Consecutive numbers."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to factor polynomials."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use polynomial identities to write expressions in different forms.",
+            "Determine if an expression is even or odd by its characteristics.",
+            "Identify patterns."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Arithmetic with Polynomials and Rational Expressions",
+    "reporting_category": "APR",
+    "standard": {
+      "id": "A-APR.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Factors of polynomials are similar to factors of whole numbers."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to divide whole numbers.",
+            "How to divide polynomials using long division.",
+            "How to divide polynomials using synthetic division."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically, including technology.",
+            "Attend to precision in checking the factors of the expressions.",
+            "Factor rational expressions.",
+            "Rewrite rational expressions using inspection or long division.",
+            "Determine how different forms of an expression reveal useful information."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Creating Equations",
+    "reporting_category": "CED",
+    "standard": {
+      "id": "A-CED.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Properties of Equality (Reflexive, Symmetric, Transitive, Substitution, Addition, Subtraction, Multiplication, and Division).",
+            "Properties of Inequality (Transitive, Addition, Subtraction, Multiplication, and Division).",
+            "Inverse Operations.",
+            "Variables represent unknown quantities.",
+            "Absolute value."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to apply the Properties of Equality.",
+            "How to isolate variables.",
+            "How to apply the order of operations.",
+            "How to use the equal sign to represent balance or equivalence.",
+            "How to use signs of inequalities to represent a domain of solutions.",
+            "How to represent operations symbolically."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Represent real-world problems algebraically, and reason abstractly and quantitatively in solving them.",
+            "Find unknown quantities by relating them to known quantities."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Creating Equations",
+    "reporting_category": "CED",
+    "standard": {
+      "id": "A-CED.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Build equations from a mathematical or real-world situation.",
+            "Solve multi-step equations and inequalities in one-variable.",
+            "Solve and graph equations and inequalities of two variables.",
+            "Solve and graph systems of equations and inequalities.",
+            "Determine when equations are true sometimes, always or never."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Define constraints and determine their necessity in modeling real-world situations.",
+            "Constraints are necessary to balance a mathematical model with real-world context.",
+            "When a modeling context involves constraints.",
+            "Interpret solutions as viable or nonviable options in a modeling context.",
+            "When a problem should be represented by an equation, inequality, systems of equations and/or inequalities.",
+            "Represent constraints by equations or inequalities, and by systems of equations and/or inequalities."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use the graphing method to solve or estimate the solutions of complex equations and inequalities.",
+            "Explain the meaning of solutions to equations and inequalities using the context of the problem.",
+            "Eliminate algebraic solutions that do not make sense in the context of the problem.",
+            "Recognize how certain input and output values may or may not be reasonable.",
+            "Select an appropriate domain for a single-variable in a modeling context.",
+            "Develop necessary constraint using linear equations and linear inequalities."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Reasoning with Equations and Inequalities",
+    "reporting_category": "REI",
+    "standard": {
+      "id": "A-REI.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Properties of Equality (Reflexive, Symmetric, Transitive, Substitution, Addition, Subtraction, Multiplication, and Division).",
+            "Inverse Operations.",
+            "Variables represent unknown quantities."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to apply the Properties of Equality.",
+            "How to isolate variables.",
+            "How to apply the order of operations.",
+            "How to use the equal sign to represent balance or equivalence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Justify their solution method.",
+            "Reason abstractly and quantitatively.",
+            "Find unknown quantities by relating them to known quantities."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Reasoning with Equations and Inequalities",
+    "reporting_category": "REI",
+    "standard": {
+      "id": "A-REI.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The function of exponents and radicals.",
+            "Properties of Equality (Reflexive, Symmetric, Transitive, Substitution, Addition, Subtraction, Multiplication, and Division).",
+            "Inverse Operations.",
+            "Variables represent unknown quantities."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to apply the Properties of Equality.",
+            "How to isolate variables.",
+            "How to use the equal sign to represent balance or equivalence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve square root and other radical equations",
+            "Justify the solution method.",
+            "Reason abstractly and quantitatively.",
+            "Find unknown quantities by relating them to known quantities.",
+            "Use mathematical properties and structures to create equivalent expressions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Reasoning with Equations and Inequalities",
+    "reporting_category": "REI",
+    "standard": {
+      "id": "A-REI.4b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The function of exponents and radicals.",
+            "Properties of Equality (Multiplication and Division).",
+            "Inverse Operations.",
+            "Variables represent unknown quantities."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to apply the Properties of Equality.",
+            "How to isolate variables.",
+            "How to use the equal sign to represent balance or equivalence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Rewrite functions by completing the square.",
+            "Look for and express regularity in repeated reasoning and derive possible shortcuts as solving equations.",
+            "Use mathematical properties and structures to create equivalent expressions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Reasoning with Equations and Inequalities",
+    "reporting_category": "REI",
+    "standard": {
+      "id": "A-REI.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Variables represent unknown quantities.",
+            "Properties of Equality (Reflexive, Symmetric, Transitive, Substitution, Addition, Subtraction, Multiplication, and Division).",
+            "Inverse Operations."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to graph on a coordinate plane.",
+            "How to apply the Properties of Equality.",
+            "How to isolate variables.",
+            "How to use the equal sign to represent balance or equivalence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve linear systems using graphs and tables.",
+            "Solve linear systems algebraically.",
+            "Recognize the point of intersection of the graphs as the solution of the system.",
+            "Identify one solution, infinitely many solutions, or no solution for the system.",
+            "Use appropriate tools strategically."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Reasoning with Equations and Inequalities",
+    "reporting_category": "REI",
+    "standard": {
+      "id": "A-REI.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A quadratic function is a stretch, compression, reflection, and/or translation of y=x2."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to solve systems of linear equations."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Solve and graph systems of linear and quadratic equations.",
+            "Identify one solution, two solutions, or no solution for the system.",
+            "Use appropriate tools strategically."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Reasoning with Equations and Inequalities",
+    "reporting_category": "REI",
+    "standard": {
+      "id": "A-REI.11"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Variables represent unknown quantities.",
+            "Properties of Equality (Reflexive, Symmetric, Transitive, Substitution, Addition, Subtraction, Multiplication, and Division).",
+            "Inverse Operations."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to solve systems of linear equations.",
+            "How to graph on a coordinate plane.",
+            "How to apply the Properties of Equality.",
+            "How to isolate variables.",
+            "How to use the equal sign to represent balance or equivalence."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Defend their reasoning in the context of real-world problems.",
+            "Construct viable arguments to defend their responses.",
+            "Use appropriate tools strategically."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Functions",
+    "reporting_category": "IF",
+    "standard": {
+      "id": "F-IF.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The set of integers includes the whole numbers and their opposites.",
+            "How to define domain."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to continue or complete a given sequence by listing additional terms.",
+            "How to develop a rule to yield sequence values."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize sequences as functions.",
+            "Describe/model a sequence using function notation.",
+            "Recognize a recursive function as a function that calls upon itself to produce new terms within the sequence."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Functions",
+    "reporting_category": "IF",
+    "standard": {
+      "id": "F-IF.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A function can be used to model the relationship between two quantities.",
+            "Key features may be identified using various representations such as graphs and tables.",
+            "The end behavior of a graph may be used to determine the domain of the function."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to identify all intercepts.",
+            "How to create a table of values and sketch a graph, when given a function.",
+            "Functions with degree other than 1 may contain relative maximum or relative minimums.",
+            "How to identify symmetries in graphs."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Given key features, sketch an appropriate graph",
+            "Determine increasing and decreasing intervals.",
+            "Identify relative maximums and minimums.",
+            "Recognize periodicity (when applicable) in graphs.",
+            "Model a periodical function using the form f(x + P) = f(x) where the period (P) is a non-zero constant."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Functions",
+    "reporting_category": "IF",
+    "standard": {
+      "id": "F-IF.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to recognize that the rate of change can be calculated at various points along any curve."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate the average rate of change by finding the slope of a secant line of the curve."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Compare the rate of change associated with different intervals along the curve."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Functions",
+    "reporting_category": "IF",
+    "standard": {
+      "id": "F-IF.7c"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A function can be used to model the relationship between two quantities.",
+            "The end behavior of a graph.",
+            "Definition and examples of polynomials.",
+            "Standard Form of a Polynomial Function.",
+            "Factoring polynomials.",
+            "Zero Product Property.",
+            "The Factor Theorem.",
+            "Relative maximum.",
+            "Relative minimum."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "End behavior and turning points can be determined from the degree of the polynomial.",
+            "A polynomial function of odd degree has an even number of turning points.",
+            "A polynomial function of even degree has an odd number of turning points.",
+            "How to set linear factors to zero to find the zeros."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine the end behavior of polynomial function given its algebraic form.",
+            "Use the graph of a polynomial function to construct its algebraic form.",
+            "Describe the relationship between the linear factors and the zeros of a polynomial.",
+            "Identify relative maximums and minimums.",
+            "Find linear factors and graph x-intercepts.",
+            "Determine the degree of a polynomial.",
+            "Use appropriate tools strategically."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Functions",
+    "reporting_category": "IF",
+    "standard": {
+      "id": "F-IF.8b"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The effects of a, k, and h to functions.",
+            "Properties of exponents."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to graph a function in the form y = abx.",
+            "The effects of the factor a in y = abx to stretch, compress, or reflect the parent graph."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify the function y = abx, where a>0 and b>1 as exponential growth.",
+            "Identify the function y = abx, where a>0 and b<1 as exponential decay.",
+            "Look for and make use of structure."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Functions",
+    "reporting_category": "IF",
+    "standard": {
+      "id": "F-IF.9"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A function can be used to model the relationship between two quantities.",
+            "The end behavior of a graph.",
+            "Relative maximum.",
+            "Relative minimum."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate slope.",
+            "How to read a function's graph or table.",
+            "How to write functions algebraically various ways (point slope form, standard form)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify key features of a function.",
+            "Create a viable argument comparing two functions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Building Functions",
+    "reporting_category": "BF",
+    "standard": {
+      "id": "F-BF.1a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "A function can be used to model the relationship between two quantities.",
+            "The effects of a, k, and h to functions.",
+            "Direct variation.",
+            "Constant of variation.",
+            "Exponential decay.",
+            "Exponential growth."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to find slope.",
+            "How to write functions algebraically in various forms."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify key features of a function.",
+            "Write functions algebraically various ways (point slope form, standard form).",
+            "Use a real-world context to create a function.",
+            "Relate each term of the function to the next term."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Building Functions",
+    "reporting_category": "BF",
+    "standard": {
+      "id": "F-BF.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to identify an arithmetic or geometric pattern."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to write functions algebraically in various ways."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create arithmetic and geometric sequences from real-world contexts.",
+            "Reason abstractly and quantitatively and relate the forms to one another.",
+            "Relate each term of the function to the next term."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Building Functions",
+    "reporting_category": "BF",
+    "standard": {
+      "id": "F-BF.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The effects of a, k, and h to functions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to interpret the graph of a function.",
+            "How to determine if a function is even or odd based on its graph or algebraic form."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically to manipulate and explain graphs of functions."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Building Functions",
+    "reporting_category": "BF",
+    "standard": {
+      "id": "F-BF.4a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to define inverse.",
+            "The range of the relation is the domain of the inverse.",
+            "The domain of the relation is the range of the inverse."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to create and solve equations.",
+            "If a function maps a to b, then its inverse maps b to a."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Define and identify inverse relations and functions.",
+            "Create an inverse function."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Linear, Quadratic, and Exponential Models",
+    "reporting_category": "LE",
+    "standard": {
+      "id": "F-LE.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to create a function given data or a contextual description.",
+            "Arithmetic and geometric sequences.",
+            "Linear functions.",
+            "Exponential functions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to interpret a function's graph or table.",
+            "How to create equations.",
+            "The effects of an exponent and its graphical representation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create linear and exponential functions based on a real-world context."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Linear, Quadratic, and Exponential Models",
+    "reporting_category": "LE",
+    "standard": {
+      "id": "F-LE.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Exponential equations.",
+            "Logarithmic equations.",
+            "Change of Base formula."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "An exponential function is one with the general form y=abx, a ≠ 0, with b>0, and b≠1.",
+            "The exponential function y=bx and the logarithmic function y=logbx are inverse functions."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Relate an exponential model to its logarithmic form for real- world contexts.",
+            "Use appropriate tools strategically."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Linear, Quadratic, and Exponential Models",
+    "reporting_category": "LE",
+    "standard": {
+      "id": "F-LE.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Linear functions",
+            "Exponential functions."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to solve and graph functions.",
+            "Linear functions in point-slope form, slope-intercept form, and standard form.",
+            "Exponential functions in the form y=abx."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Reason abstractly and quantitatively to interpret the meaning of parameters in a real-world context."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Trigonometric Functions",
+    "reporting_category": "TF",
+    "standard": {
+      "id": "F-TF.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Radian measure has no associated unit of measure.",
+            "Right triangle trigonometry."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Radian measure is the ratio of arc length and the radius of a circle."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create a reference triangle on a unit circle using right triangle trigonometry."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Trigonometric Functions",
+    "reporting_category": "TF",
+    "standard": {
+      "id": "F-TF.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Unit circles are circles that have a center at the origin of a coordinate plane.",
+            "Terminating sides of angles."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Simplicity of unit circles that have a radius of 1."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Find any of the six trigonometric functions for any angle within any quadrant of the unit circle."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "GPE",
+    "reporting_category": "GPE",
+    "standard": {
+      "id": "G-GPE.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to recognize a parabola as conic sections, formed by the intersection of a cone and a plane parallel to a side of the cone.",
+            "How to distinguish between vertical and horizontal parabolas.",
+            "How to define and identify the focus of a parabola, directix, and focal length.",
+            "Each point on a parabola is equidistance from both the focus and directix."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to apply the vertex equation for a parabola."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use the focus and directix of a parabola to create its equation.",
+            "Attend to precision of vocabulary such as focus and directix used with parabolas."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Categorical and Quantitative Data",
+    "reporting_category": "ID",
+    "standard": {
+      "id": "S-ID.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to define and give characteristics of mean, variance, standard deviation, and normal distribution.",
+            "How to define discrete and continuous probability distribution."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate mean, variance, and standard deviation.",
+            "Give examples of discrete and continuous probability distributions in real-world contexts."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Use appropriate tools strategically.",
+            "Apply standard deviation to create a normal distribution that models a real world scenario.",
+            "Interpret data given in a graphic display."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Interpreting Categorical and Quantitative Data",
+    "reporting_category": "ID",
+    "standard": {
+      "id": "S-ID.6a"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Quantitative variables.",
+            "Line of best fit.",
+            "Trend line."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to display data on a scatter plot.",
+            "How to recognize types of correlation (weak or strong, negative or positive, or no correlation)."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create a scatter plot to display a data set.",
+            "Match data with its graphical representation.",
+            "Describe the correlation between two variables.",
+            "Make inferences about the problem in context based on its function and data."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Making Inferences and Justifying Conclusions",
+    "reporting_category": "IC",
+    "standard": {
+      "id": "S-IC.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to define a population.",
+            "How to define a sample.",
+            "How to define a representative sample.",
+            "How to define a random sample."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "Given a scenario, how to identify the population and sample.",
+            "How to determine if a sample is representative of the population."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine the population given details of the experiment.",
+            "Design a collection process to create a representative sample.",
+            "Explain the importance and usefulness of representative samples when making inferences about populations.",
+            "Apply to a real-world context."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Making Inferences and Justifying Conclusions",
+    "reporting_category": "IC",
+    "standard": {
+      "id": "S-IC.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "The probability of a chance event is a number between 0 and 1 that expresses the likelihood of the event occurring.",
+            "Recognize that experimental probability and theoretical (expected) probability may yield different results."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to use a frequency table or graph to display a population distribution."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Justify discrepancies in results concerning experimental probability versus theoretical (expected) probability.",
+            "Discuss how/when experimental probability approaches the theoretical (expected) probability.",
+            "Make sense of a real-world context to justify discrepancies in experimental and theoretical probability.",
+            "Use sample data to make, justify, and critique inferences and conclusions about the corresponding population."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Making Inferences and Justifying Conclusions",
+    "reporting_category": "IC",
+    "standard": {
+      "id": "S-IC.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to define sample survey, experiment, and observational study."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to identify if a scenario describes a sample survey, experiment, or observational study.",
+            "How to determine the major difference between sample survey, experiment, and observational study.",
+            "List the strengths and weaknesses of each."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine whether a sample survey, experiment, or observational study is appropriate for a given circumstance.",
+            "Explain when and why each would be appropriate.",
+            "Modify scenarios to create an appropriate circumstance for sample survey, experiment, or observational study."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Making Inferences and Justifying Conclusions",
+    "reporting_category": "IC",
+    "standard": {
+      "id": "S-IC.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Sampling types and methods (convenience, self-selected, systematic, and random sampling).",
+            "Bias and influence."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to recognize and create proportional relationships.",
+            "How to find margin of error.",
+            "How to calculate confidence interval."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Apply data from a sample to its population by relating parts to the whole and creating proportional models.",
+            "Identify bias.",
+            "Calculate and justify margin of error via simulation models of real-world contexts."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Making Inferences and Justifying Conclusions",
+    "reporting_category": "IC",
+    "standard": {
+      "id": "S-IC.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Sampling types and methods (convenience, self-selected, systematic, and random sampling).",
+            "Z-score."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate Z-score.",
+            "How to use proportions to compare data."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Compare data to its population by relating parts to the whole and creating proportional models.",
+            "Recreate the event with various parameters to gather more data.",
+            "Create a viable argument to justify if differences in parameters are significant."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Making Inferences and Justifying Conclusions",
+    "reporting_category": "IC",
+    "standard": {
+      "id": "S-IC.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Measures of central tendencies and their uses.",
+            "Measures of variation.",
+            "How to interpret a box-and-whiskers plot."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate measures of central tendency.",
+            "How to calculate measures of variation."
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Attend to precision in use of explicit statistical vocabulary.",
+            "Decide if specified models are consistent with results from the given data-generating processes."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Conditional Probability and the Rules of Probability",
+    "reporting_category": "CP",
+    "standard": {
+      "id": "S-CP.1"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Conditional probability",
+            "Contingency, or two-way frequency, tables.",
+            "Addition Rule of Probability.",
+            "Independent and dependent events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The formula to find conditional probability-"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Recognize, determine, and use conditional probability in contextual problems.",
+            "Apply the Addition Rule of Probability and interprets answers in context."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Conditional Probability and the Rules of Probability",
+    "reporting_category": "CP",
+    "standard": {
+      "id": "S-CP.2"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "How to define and identify examples of dependent and independent events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to find the probability of a single event.",
+            "The probability of events A and B:"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine if two real-world events are independent of one another.",
+            "Give examples of real-world independent events and determine the probability of them both happening."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Conditional Probability and the Rules of Probability",
+    "reporting_category": "CP",
+    "standard": {
+      "id": "S-CP.3"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Conditional Probability."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate probability of compound events-"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Communicate dependency of one event to another in calculating its probability.",
+            "Identify conditional probability in real-world contexts."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Conditional Probability and the Rules of Probability",
+    "reporting_category": "CP",
+    "standard": {
+      "id": "S-CP.4"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Conditional probability.",
+            "Contingency, or two-way frequency, table.",
+            "Addition Rule of Probability.",
+            "Independent and dependent events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate conditional probability-"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Create and interpret contingency tables based on real-world contexts.",
+            "Create a viable argument as to whether two events are independent or dependent."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Conditional Probability and the Rules of Probability",
+    "reporting_category": "CP",
+    "standard": {
+      "id": "S-CP.5"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Conditional probability.",
+            "Independent and dependent events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate conditional probability-"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Determine if conditional probability exist in real-world context examples.",
+            "Create a viable argument as to whether two events are independent or dependent."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Conditional Probability and the Rules of Probability",
+    "reporting_category": "CP",
+    "standard": {
+      "id": "S-CP.6"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Conditional probability.",
+            "Contingency, or two-way frequency, table.",
+            "Addition Rule of Probability.",
+            "Independent and dependent events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "How to calculate conditional probability-"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Interpret contingency tables based on real-world contexts to find the conditional probability.",
+            "Relate and explain the answer back to the real-world context of the problem."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "subject": "Algebra II",
+    "grade": "HS",
+    "domain": "Conditional Probability and the Rules of Probability",
+    "reporting_category": "CP",
+    "standard": {
+      "id": "S-CP.7"
+    },
+    "student_performance": {
+      "categories": {
+        "knowledge": {
+          "label": "A student should know",
+          "items": [
+            "Dependent events.",
+            "Independent events.",
+            "Mutually exclusive events."
+          ]
+        },
+        "understanding": {
+          "label": "A student should understand",
+          "items": [
+            "The probability of events A and B:",
+            "The probability of event A or B:",
+            "The probability of event A or B if the two are mutually exclusive events:"
+          ]
+        },
+        "skills": {
+          "label": "A student should be able to do",
+          "items": [
+            "Identify dependent, independent, and mutually exclusive events in a real- world context.",
+            "Identify events and apply the Addition Rule in real-world context."
+          ]
+        }
+      }
+    }
+  }
+]

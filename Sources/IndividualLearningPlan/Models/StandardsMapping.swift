@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AnalysisCore
 
 public struct ScaffoldedStandard: Codable, Sendable {
     public let subject: String

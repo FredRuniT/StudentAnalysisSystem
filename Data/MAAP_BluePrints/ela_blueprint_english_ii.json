@@ -1,0 +1,208 @@
+{
+    "school_year": "2021-2022",
+    "subject": "ELA",
+    "program_name": "MAAP",
+    "sessions": [{
+            "session_number": 1,
+            "categories": [{
+                    "name": "Reading Literature",
+                    "code": "RL",
+                    "standards": [],
+                    "percentage_range": [
+                        30.0,
+                        37.0
+                    ],
+                    "subcategories": [{
+                            "name": "Key ideas",
+                            "code": "RL.Keyideas",
+                            "standards": [{
+                                "code": "RL.9-10",
+                                "numbers": [
+                                    1,
+                                    2,
+                                    3
+                                ]
+                            }],
+                            "percentage_range": [
+                                15.0,
+                                17.0
+                            ],
+                            "subcategories": null
+                        },
+                        {
+                            "name": "Craft and Structure",
+                            "code": "RL.CraftandStructure",
+                            "standards": [{
+                                "code": "RL.9-10",
+                                "numbers": [
+                                    4,
+                                    5,
+                                    6
+                                ]
+                            }],
+                            "percentage_range": [
+                                13.0,
+                                17.0
+                            ],
+                            "subcategories": null
+                        },
+                        {
+                            "name": "Integration of \n\nKnowledge and Ideas",
+                            "code": "RL.Integrationof\n\nKnowledgeandIdeas",
+                            "standards": [{
+                                "code": "RL.9-10",
+                                "numbers": [
+                                    7,
+                                    9
+                                ]
+                            }],
+                            "percentage_range": [
+                                2.0,
+                                3.0
+                            ],
+                            "subcategories": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Reading Informational Texts",
+                    "code": "RI",
+                    "standards": [],
+                    "percentage_range": [
+                        52.0,
+                        55.0
+                    ],
+                    "subcategories": [{
+                            "name": "Key ideas",
+                            "code": "RI.Keyideas",
+                            "standards": [{
+                                "code": "RI.9-10",
+                                "numbers": [
+                                    1,
+                                    2,
+                                    3
+                                ]
+                            }],
+                            "percentage_range": [
+                                25.0,
+                                27.0
+                            ],
+                            "subcategories": null
+                        },
+                        {
+                            "name": "Craft and Structure",
+                            "code": "RI.CraftandStructure",
+                            "standards": [{
+                                "code": "RI.9-10",
+                                "numbers": [
+                                    4,
+                                    5,
+                                    6
+                                ]
+                            }],
+                            "percentage_range": [
+                                22.0,
+                                25.0
+                            ],
+                            "subcategories": null
+                        },
+                        {
+                            "name": "Integration of \n\nKnowledge and Ideas",
+                            "code": "RI.Integrationof\n\nKnowledgeandIdeas",
+                            "standards": [{
+                                "code": "RI.9-10",
+                                "numbers": [
+                                    7,
+                                    8,
+                                    9
+                                ]
+                            }],
+                            "percentage_range": [
+                                3.0,
+                                5.0
+                            ],
+                            "subcategories": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Language",
+                    "code": "L",
+                    "standards": [],
+                    "percentage_range": [
+                        12.0,
+                        15.0
+                    ],
+                    "subcategories": [{
+                            "name": "Operational Items",
+                            "code": "L.OperationalItems",
+                            "standards": [],
+                            "percentage_range": [
+                                100.0,
+                                100.0
+                            ],
+                            "subcategories": null
+                        },
+                        {
+                            "name": "Field Test Items",
+                            "code": "L.FieldTestItems",
+                            "standards": [],
+                            "percentage_range": [
+                                0.0,
+                                0.0
+                            ],
+                            "subcategories": null
+                        }
+                    ]
+                }
+            ],
+            "total_points": 0,
+            "testing_time_minutes": 0,
+            "operational_items": 0,
+            "field_test_items": 0,
+            "total_items": 0
+        },
+        {
+            "session_number": 2,
+            "categories": [{
+                "name": "Writing",
+                "code": "W",
+                "standards": [],
+                "percentage_range": [
+                    100.0,
+                    100.0
+                ],
+                "subcategories": [{
+                    "name": "61",
+                    "code": "W.61",
+                    "standards": [],
+                    "percentage_range": [
+                        0.0,
+                        0.0
+                    ],
+                    "subcategories": null
+                }]
+            }],
+            "total_points": 0,
+            "testing_time_minutes": 0,
+            "operational_items": 0,
+            "field_test_items": 0,
+            "total_items": 0
+        }
+    ],
+    "operational_criteria": {
+        "dok_level_2_percentage": 75.0,
+        "dok_level_other_percentage": 25.0,
+        "mcss_percentage_range": [
+            75.0,
+            80.0
+        ],
+        "other_item_types_range": [
+            20.0,
+            25.0
+        ],
+        "minimum_standards_coverage": 75.0
+    },
+    "total_points": 0,
+    "total_items": 0
+}

@@ -6,19 +6,20 @@
 //
 
 import Foundation
+import AnalysisCore
 
 public actor StandardsRepository {
     private var standardsCache: [String: ScaffoldedStandard] = [:]
     private var mappingsCache: [String: ReportingCategoryMapping] = [:]
-    private let fileLoader: StandardsFileLoader
+    private let standardsDirectory: URL
     
     public init(standardsDirectory: URL) {
-        self.fileLoader = StandardsFileLoader(directory: standardsDirectory)
+        self.standardsDirectory = standardsDirectory
     }
     
     public func loadStandards() async throws {
         // Load all scaffolded standards from JSON files
-        let standardFiles = try fileLoader.getAllStandardFiles()
+        let standardFiles = try getAllStandardFiles()
         
         for file in standardFiles {
             let data = try Data(contentsOf: file)
@@ -27,7 +28,7 @@ public actor StandardsRepository {
         }
         
         // Load RC to standards mappings
-        let mappingFiles = try fileLoader.getMappingFiles()
+        let mappingFiles = try getMappingFiles()
         
         for file in mappingFiles {
             let data = try Data(contentsOf: file)
@@ -70,7 +71,7 @@ public actor StandardsRepository {
         
         return standardsCache.values.filter { standard in
             standard.grade == previousGrade &&
-            standard.reportingCategory == getReportingCategory(for: component)
+            standard.reportingCategory == component
         }
     }
     
@@ -84,5 +85,38 @@ public actor StandardsRepository {
             standard.grade == grade &&
             isRelatedToComponents(standard, base: baseComponent, target: targetComponent)
         }
+    }
+    
+    // Helper functions
+    private func getAllStandardFiles() throws -> [URL] {
+        let fileManager = FileManager.default
+        let contents = try fileManager.contentsOfDirectory(
+            at: standardsDirectory.appendingPathComponent("Standards"),
+            includingPropertiesForKeys: nil
+        )
+        return contents.filter { $0.pathExtension == "json" }
+    }
+    
+    private func getMappingFiles() throws -> [URL] {
+        let fileManager = FileManager.default
+        let blueprintPath = standardsDirectory.appendingPathComponent("MAAP_BluePrints")
+        guard fileManager.fileExists(atPath: blueprintPath.path) else {
+            return []
+        }
+        let contents = try fileManager.contentsOfDirectory(
+            at: blueprintPath,
+            includingPropertiesForKeys: nil
+        )
+        return contents.filter { $0.pathExtension == "json" }
+    }
+    
+    private func isRelatedToComponents(
+        _ standard: ScaffoldedStandard,
+        base: String,
+        target: String
+    ) -> Bool {
+        // Simple check - can be enhanced with more sophisticated logic
+        return standard.reportingCategory == base || 
+               standard.reportingCategory == target
     }
 }

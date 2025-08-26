@@ -146,3 +146,64 @@ public enum WarningLevel: String, Sendable {
     case moderate = "Moderate"
     case low = "Low"
 }
+
+// Additional types needed for EarlyWarningSystem
+public struct RiskFactor: Sendable {
+    public let component: String
+    public let severity: RiskLevel
+    public let impact: Double
+    public let description: String
+    
+    public init(
+        component: String,
+        severity: RiskLevel,
+        impact: Double,
+        description: String
+    ) {
+        self.component = component
+        self.severity = severity
+        self.impact = impact
+        self.description = description
+    }
+}
+
+// RiskLevel is defined in AnalysisCore
+
+public struct Intervention: Sendable {
+    public let type: InterventionType
+    public let priority: Int
+    public let title: String
+    public let description: String
+    public let targetComponents: [String]
+    public let estimatedDuration: String
+    public let resources: [String]
+    
+    public init(
+        type: InterventionType,
+        priority: Int,
+        title: String,
+        description: String,
+        targetComponents: [String],
+        estimatedDuration: String,
+        resources: [String]
+    ) {
+        self.type = type
+        self.priority = priority
+        self.title = title
+        self.description = description
+        self.targetComponents = targetComponents
+        self.estimatedDuration = estimatedDuration
+        self.resources = resources
+    }
+}
+
+public enum InterventionType: String, Sendable {
+    case tutoring = "Tutoring"
+    case smallGroup = "Small Group"
+    case remediation = "Remediation"
+    case enrichment = "Enrichment"
+    case practice = "Practice"
+    case assessment = "Assessment"
+}
+
+// ComponentPair and TestProvider are defined in AnalysisCore

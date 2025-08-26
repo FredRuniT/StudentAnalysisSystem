@@ -1,0 +1,428 @@
+{
+    "ADMIN": {
+        "Field Name": "Administration",
+        "Field Heading": "ADMIN",
+        "Field Description": "This field identifies the administration.",
+        "Field Acceptable Values": "2023 Spring 3–8, 2023 Spring EOC"
+    },
+    "DIST_NUM": {
+        "Field Name": "District Number",
+        "Field Heading": "DIST_NUM",
+        "Field Description": "This field contains the district number.",
+        "Field Acceptable Values": "0–9999"
+    },
+    "DIST_NAME": {
+        "Field Name": "District Name",
+        "Field Heading": "DIST_NAME",
+        "Field Description": "This field contains the district name, associated to the district number.",
+        "Field Acceptable Values": "0–9, A–Z, space, quote, period, hyphen, comma, forward slash, parentheses, ampersand"
+    },
+    "SCHOOL_NUM": {
+        "Field Name": "School Number",
+        "Field Heading": "SCHOOL_NUM",
+        "Field Description": "This field contains the school number.",
+        "Field Acceptable Values": "0–999"
+    },
+    "SCHOOL_NAME": {
+        "Field Name": "School Name",
+        "Field Heading": "SCHOOL_NAME",
+        "Field Description": "This field contains the school name, associated to the school number.",
+        "Field Acceptable Values": "0–9, A–Z, space, quote, period, hyphen, comma, forward slash, parentheses, ampersand"
+    },
+    "SLNAME": {
+        "Field Name": "Student Last Name",
+        "Field Heading": "SLNAME",
+        "Field Description": "This field contains the student full legal last name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "SFNAME": {
+        "Field Name": "Student First Name",
+        "Field Heading": "SFNAME",
+        "Field Description": "This field contains the student full legal first name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "SMI": {
+        "Field Name": "Student Middle Initial",
+        "Field Heading": "SMI",
+        "Field Description": "This field contains the student middle initial.",
+        "Field Acceptable Values": "A–Z (all uppercase), space"
+    },
+    "DOB": {
+        "Field Name": "Student Date of Birth",
+        "Field Heading": "DOB",
+        "Field Description": "This field contains the date of birth of the student.",
+        "Field Acceptable Values": "MMDDYYYY (must be a valid date)"
+    },
+    "MSIS": {
+        "Field Name": "Mississippi Student Information System Number",
+        "Field Heading": "MSIS",
+        "Field Description": "A unique number or alphanumeric code assigned to a student by a school, school system, a state, or other agency or entity.",
+        "Field Acceptable Values": "0–9"
+    },
+    "GRADE": {
+        "Field Name": "Grade",
+        "Field Heading": "GRADE",
+        "Field Description": "This field indicates the grade of the student.",
+        "Field Acceptable Values": "K = Kindergarten, 1 = Grade 1, 2 = Grade 2, 3 = Grade 3, 4 = Grade 4, 5 = Grade 5, 6 = Grade 6, 7 = Grade 7, 8 = Grade 8, 9 = Grade 9, 10 = Grade 10, 11 = Grade 11, 12 = Grade 12, 13 = Grade 12+"
+    },
+    "GENDER": {
+        "Field Name": "Gender",
+        "Field Heading": "GENDER",
+        "Field Description": "This field indicates the gender of the student.",
+        "Field Acceptable Values": "F = Female, M = Male"
+    },
+    "ETHNIC": {
+        "Field Name": "Ethnicity",
+        "Field Heading": "ETHNIC",
+        "Field Description": "This field identifies the ethnicity of the student. A student may have more than one ethnicity. If one of those ethnicities is Hispanic, then the student is Hispanic. If none of the multiple ethnicities is Hispanic, then the student is Multiple.",
+        "Field Acceptable Values": "H = Hispanic, I = American Indian or Alaska Native, A = Asian, B = Black or African American, P = Native Hawaiian or other Pacific Islander, W = White, M = Multiple, Blank = Not Indicated"
+    },
+    "HOME_LANG": {
+        "Field Name": "Home Language",
+        "Field Heading": "HOME_LANG",
+        "Field Description": "This field identifies the language most commonly spoken in the student's home.",
+        "Field Acceptable Values": "1 = English, 2 = Arabic, 3 = Chinese/Zhongwen, 4 = French, 5 = Haitian Creole, 6 = Portuguese, 7 = Russian, 8 = Spanish, 9 = Tagalog, 10 = Urdu, 11 = Vietnamese, 12 = Karen, 13 = Somali, 14 = Nuer, 15 = Nepali, 16 = Kurdish, 17 = Burmese, 18 = Marshallese, 98 = Other, 99 = Omitted"
+    },
+    "DISABILITY": {
+        "Field Name": "Disability",
+        "Field Heading": "DISABILITY",
+        "Field Description": "This field indicates whether the student has a disability and, if so, what that disability is.",
+        "Field Acceptable Values": "1 = Autism, 2 = Deaf-Blindness, 3 = Development Delay, 4 = Emotional Disturbance, 5 = Hearing Impairment, 6 = Intellectual Disability, 7 = Multiple Disabilities, 8 = Orthopedic Impairment, 9 = Other Health Impairment, 10 = Specific Learning Disability, 11 = Speech or Language Impairment, 12 = Traumatic Brain Injury, 13 = Visual Impairment, 14 = Deafness, Blank = No Disability Indicated"
+    },
+    "IEP": {
+        "Field Name": "IEP",
+        "Field Heading": "IEP",
+        "Field Description": "This field indicates whether the student has an Individual Education Plan (IEP) and is receiving special education services.",
+        "Field Acceptable Values": "Y = Yes, N = No"
+    },
+    "SECTION_504": {
+        "Field Name": "Section 504",
+        "Field Heading": "SECTION_504",
+        "Field Description": "This field indicates whether the student is receiving special education services for disabled students, federally funded.",
+        "Field Acceptable Values": "Y = Yes, N = No"
+    },
+    "LEP": {
+        "Field Name": "LEP Status",
+        "Field Heading": "LEP",
+        "Field Description": "An LEP Student is a Limited English Proficient student. This field is used to indicate whether a student is identified as an LEP student and, if so, what the LEP status is.",
+        "Field Acceptable Values": "N = Not LEP, Y = Current LEP, F = Former LEP, S = Screened but English proficient"
+    },
+    "MOBILE": {
+        "Field Name": "Highly Mobile",
+        "Field Heading": "MOBILE",
+        "Field Description": "This field is used to indicate whether a student is defined as \"homeless\" or lacking a fixed, regular, and adequate nighttime residence.",
+        "Field Acceptable Values": "Y = Yes, N = No"
+    },
+    "SUBJECT": {
+        "Field Name": "Subject Assessed",
+        "Field Heading": "SUBJECT",
+        "Field Description": "This field contains the subject or domain in which the student was assessed.",
+        "Field Acceptable Values": "ALGEBRA I, ENGLISH II, MATH, ELA"
+    },
+    "TERM": {
+        "Field Name": "Term",
+        "Field Heading": "TERM",
+        "Field Description": "This field identifies the term during which the assessment took place during the year.",
+        "Field Acceptable Values": "SPRING"
+    },
+    "TEST_ID": {
+        "Field Name": "Test ID/Lithocode",
+        "Field Heading": "TEST_ID",
+        "Field Description": "This field identifies the specific test to which a student is associated. If the test is online, this is a unique value that identifies the test by content area and student. A lithocode is a numeric value from a paper and pencil test.",
+        "Field Acceptable Values": "0–9, A–Z, hyphen"
+    },
+    "FORM_OL": {
+        "Field Name": "Student Response Form from Nextera",
+        "Field Heading": "FORM_OL",
+        "Field Description": "This field identifies the Nextera online test form that was assigned to the student.",
+        "Field Acceptable Values": "0–9, A–Z"
+    },
+    "ATTEMPT": {
+        "Field Name": "Tested/Attempted",
+        "Field Heading": "ATTEMPT",
+        "Field Description": "This field indicates that the student attempted the test.",
+        "Field Acceptable Values": "Y = Yes (attempted), N = No (did not attempt)"
+    },
+    "RETEST": {
+        "Field Name": "Retester (as determined by business rule)",
+        "Field Heading": "RETEST",
+        "Field Description": "This field is used to indicate whether a student is a first-time tester or retesting. This is determined by retester business rules as defined by the MDE. It is used to determine how the student is identified in reports.",
+        "Field Acceptable Values": "Y = Yes (retester), N = No (not a retester)"
+    },
+    "TEACHER_ID": {
+        "Field Name": "Teacher ID",
+        "Field Heading": "TEACHER_ID",
+        "Field Description": "State-designated Teacher identification number",
+        "Field Acceptable Values": "4–6 numeric characters (may contain leading zeros)"
+    },
+    "TLNAME": {
+        "Field Name": "Teacher Last Name",
+        "Field Heading": "TLNAME",
+        "Field Description": "This field contains the Teacher full legal last name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "TFNAME": {
+        "Field Name": "Teacher First Name",
+        "Field Heading": "TFNAME",
+        "Field Description": "This field contains the Teacher full legal first name.",
+        "Field Acceptable Values": "A–Z (all uppercase), apostrophe, slash, hyphen, space"
+    },
+    "TMI": {
+        "Field Name": "Teacher Middle Initial",
+        "Field Heading": "TMI",
+        "Field Description": "This field contains the Teacher middle initial.",
+        "Field Acceptable Values": "A–Z (all uppercase), space"
+    },
+    "MODE": {
+        "Field Name": "Test Mode",
+        "Field Heading": "MODE",
+        "Field Description": "This field indicates whether the student took the assessment online or using a paper/pencil form. This may or may not indicate an accommodation.",
+        "Field Acceptable Values": "1 = Online test, 2 = Paper/Pencil test"
+    },
+    "ZOOM": {
+        "Field Name": "Online — Zoom",
+        "Field Heading": "ZOOM",
+        "Field Description": "Zoom",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "MASKING": {
+        "Field Name": "Online — Answer Masking",
+        "Field Heading": "MASKING",
+        "Field Description": "Answer Masking",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "TEXT_TO_SPEECH_55": {
+        "Field Name": "Online — Text-to-Speech",
+        "Field Heading": "TEXT_TO_SPEECH_55",
+        "Field Description": "Text-to-Speech",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "HUMAN_READER_ONL_55": {
+        "Field Name": "Online — Human Reader",
+        "Field Heading": "HUMAN_READER_ONL_55",
+        "Field Description": "Human Reader for the online test",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "PRINT_V": {
+        "Field Name": "Offline — Print Variations",
+        "Field Heading": "PRINT_V",
+        "Field Description": "This field indicates that the student received a Paper/Pencil, Large Print, or Braille test.",
+        "Field Acceptable Values": "1 = (62) Paper/Pencil, 2 = (40) Large Print, 3 = (41) Braille, Blank = Accommodation was not selected"
+    },
+    "HUMAN_READER_PP_55": {
+        "Field Name": "Offline — Human Reader",
+        "Field Heading": "HUMAN_READER_PP_55",
+        "Field Description": "Human Reader for the P/P test",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_3": {
+        "Field Name": "Testing — 3",
+        "Field Heading": "T_3",
+        "Field Description": "(3) Small group (2–9 students).",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_4": {
+        "Field Name": "Testing — 4",
+        "Field Heading": "T_4",
+        "Field Description": "(4) Test individually.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_7": {
+        "Field Name": "Testing — 7",
+        "Field Heading": "T_7",
+        "Field Description": "(7) At home (i.e., homebound student) or in a facility (i.e., medical, behavioral, or detention).",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_12": {
+        "Field Name": "Testing — 12",
+        "Field Heading": "T_12",
+        "Field Description": "(12) Medical Monitoring Device — medical devices, such as blood glucose monitors and medical alert devices, that are accessed through a smartphone that is always in the student's possession for medical reasons.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_20": {
+        "Field Name": "Testing — 20",
+        "Field Heading": "T_20",
+        "Field Description": "(20) Extra time — Cannot extend beyond the end of the instructional day.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_21": {
+        "Field Name": "Testing — 21",
+        "Field Heading": "T_21",
+        "Field Description": "(21) Scheduled rest breaks (specify the time and duration of each break).",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_25": {
+        "Field Name": "Testing — 25",
+        "Field Heading": "T_25",
+        "Field Description": "(25) Administer the test over consecutive days.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_43": {
+        "Field Name": "Testing — 43",
+        "Field Heading": "T_43",
+        "Field Description": "(43) Amplification devices (e.g., speakers, FM system).",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_48": {
+        "Field Name": "Testing — 48",
+        "Field Heading": "T_48",
+        "Field Description": "(48) Supplemental aids.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_49": {
+        "Field Name": "Testing — 49",
+        "Field Heading": "T_49",
+        "Field Description": "(49) Stay on task reminder (\"Please continue working on your test.\")",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_57": {
+        "Field Name": "Testing — 57",
+        "Field Heading": "T_57",
+        "Field Description": "(57) Student reads test aloud to self (requires #4 or a Whisper Phone— type device to not distract other students).",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_70": {
+        "Field Name": "Testing — 70",
+        "Field Heading": "T_70",
+        "Field Description": "(70) Scribe/Transcription.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_75": {
+        "Field Name": "Testing — 75",
+        "Field Heading": "T_75",
+        "Field Description": "(75) Braille writer/Braille note-taker.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_76": {
+        "Field Name": "Testing — 76",
+        "Field Heading": "T_76",
+        "Field Description": "(76) Assistive technology devices / computer software programs used to facilitate communication for students with limited expressive language ability (e.g., Proloquo2Go).",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_77": {
+        "Field Name": "Testing — 77",
+        "Field Heading": "T_77",
+        "Field Description": "(77) Speech-to-Text (STT) without auto-correct features.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_81": {
+        "Field Name": "Testing — 81",
+        "Field Heading": "T_81",
+        "Field Description": "(81) Bilingual Glossary.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "T_OTHER": {
+        "Field Name": "Testing — OTHER",
+        "Field Heading": "T_OTHER",
+        "Field Description": "(OTHER) (83–99) Other allowable accommodation(s) or accessibility feature(s). Detail specific accommodation(s) or accessibility feature(s) on the IEP or 504 plan.",
+        "Field Acceptable Values": "Y = Accommodation was selected, N = Accommodation was not selected"
+    },
+    "SNT": {
+        "Field Name": "Student Not Tested Code",
+        "Field Heading": "SNT",
+        "Field Description": "This field contains the Student Not Tested code as indicated in the Nextera Admin site.",
+        "Field Acceptable Values": "1 = Absent during entire testing window, 2 = Sudden illness (Must document with OSA Medical Emergency Form), 3 = Extreme emotional reaction, 4 = Student/Parent refusal, 5 = Student moved out of district during testing window, 6 = Other, 9 = DOE Waiver, Blank = Accommodation was not selected"
+    },
+    "INV_REAS": {
+        "Field Name": "Invalidation Reason Code",
+        "Field Heading": "INV_REAS",
+        "Field Description": "This field contains the code that represents the reason that a test was invalidated.",
+        "Field Acceptable Values": "1 = Student not given accommodations per IEP/504 plan, 2 = Sudden illness (Must document with OSA Medical Emergency Form), 3 = Extreme emotional reaction, 4 = Student/Parent refusal, 5 = Student tested with non-allowable accommodation, 6 = Student cheated, 7 = Student tested beyond unit testing time allowed or other testing time issues, 8 = Possession of electronic device, 9 = Staff testing violation, 10 = Other, 11 = Tested off grade, Blank = Accommodation was not selected"
+    },
+    "INV_REAS_C": {
+        "Field Name": "Invalidation Reason Code as determined by Caveon",
+        "Field Heading": "INV_REAS_C",
+        "Field Description": "This field carries an indication on whether the student's test results are to be invalidated. This indication comes from the analysis data provided by Caveon.",
+        "Field Acceptable Values": "Y = Test is invalid, N = Test is valid (default), Blank (if waiting for Caveon data)"
+    },
+    "RC1OP": {
+        "Field Name": "Reporting Category 1 Total Points Scored — Operational",
+        "Field Heading": "RC1OP",
+        "Field Description": "This field contains the number of points the student received for Reporting Category 1 operational items.",
+        "Field Acceptable Values": "0–99, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "RC2OP": {
+        "Field Name": "Reporting Category 2 Total Points Scored — Operational",
+        "Field Heading": "RC2OP",
+        "Field Description": "This field contains the number of points the student received for Reporting Category 2 operational items.",
+        "Field Acceptable Values": "0–99, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "RC3OP": {
+        "Field Name": "Reporting Category 3 Total Points Scored — Operational",
+        "Field Heading": "RC3OP",
+        "Field Description": "This field contains the number of points the student received for Reporting Category 3 operational items.",
+        "Field Acceptable Values": "0–99, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "RC4OP": {
+        "Field Name": "Reporting Category 4 Total Points Scored — Operational",
+        "Field Heading": "RC4OP",
+        "Field Description": "This field contains the number of points the student received for Reporting Category 4 operational items.",
+        "Field Acceptable Values": "0–99, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "RC5OP": {
+        "Field Name": "Reporting Category 5 Total Points Scored — Operational",
+        "Field Heading": "RC5OP",
+        "Field Description": "This field contains the number of points the student received for Reporting Category 5 operational items.",
+        "Field Acceptable Values": "0–99, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation) — always blank for EOC"
+    },
+    "TOT_RS": {
+        "Field Name": "Student Total Raw Score",
+        "Field Heading": "TOT_RS",
+        "Field Description": "This field contains the total number of raw points the student received. This is the sum of points earned for operational items. Note: Field Test items are not included in this total.",
+        "Field Acceptable Values": "0–999, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "SCALE_SCORE": {
+        "Field Name": "Student Scale Score",
+        "Field Heading": "SCALE_SCORE",
+        "Field Description": "This field contains the scale score earned by the student. This is derived from the raw score to scale score conversion table.",
+        "Field Acceptable Values": "x01–x99 — x is the student's grade, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "PROF_LVL": {
+        "Field Name": "Student Proficiency Classification",
+        "Field Heading": "PROF_LVL",
+        "Field Description": "This field contains the Proficiency Level attained by the student. This is derived from the Scale Score Cut Points.",
+        "Field Acceptable Values": "PL1 = Proficiency Level 1, PL2 = Proficiency Level 2, PL3 = Proficiency Level 3, PL4 = Proficiency Level 4, PL5 = Proficiency Level 5, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "CSEM": {
+        "Field Name": "CSEM",
+        "Field Heading": "CSEM",
+        "Field Description": "This field indicates the error or measurement. For instance, if the value is \"5\", then the CSEM is +/–5.",
+        "Field Acceptable Values": "0–99, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "PASS": {
+        "Field Name": "Pass?",
+        "Field Heading": "PASS",
+        "Field Description": "This field indicates whether or not the student received a passing score.",
+        "Field Acceptable Values": "Y = Student passed, N = Student did not pass, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "FINAL_DIM1": {
+        "Field Name": "Final Dimension Score — Development of Ideas",
+        "Field Heading": "FINAL_DIM1",
+        "Field Description": "This field contains the number of points earned for Development of Ideas. If a numeric score is not assigned, an alphabetic non-score code is assigned. These values are dependent on scoring rules.",
+        "Field Acceptable Values": "0–4 (if scored), BB = No response, IL = Response is unintelligible or undecipherable, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, CP = Does not understand/know or direct copy prompt/passage, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "FINAL_DIM2": {
+        "Field Name": "Final Dimension Score — Organization",
+        "Field Heading": "FINAL_DIM2",
+        "Field Description": "This field contains the number of points earned for Organization. If a numeric score is not assigned, an alphabetic non-score code is assigned. These values are dependent on scoring rules.",
+        "Field Acceptable Values": "0–4 (if scored), BB = No response, IL = Response is unintelligible or undecipherable, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, CP = Does not understand/know or direct copy prompt/passage, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "FINAL_DIM3": {
+        "Field Name": "Final Dimension Score — Grammar and Usage",
+        "Field Heading": "FINAL_DIM3",
+        "Field Description": "This field contains the number of points earned for Grammar and Usage. If a numeric score is not assigned, an alphabetic non-score code is assigned. These values are dependent on scoring rules.",
+        "Field Acceptable Values": "0–2 (if scored), BB = No response, IL = Response is unintelligible or undecipherable, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, CP = Does not understand/know or direct copy prompt/passage, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "FINAL_DIM4": {
+        "Field Name": "Final Dimension Score — Mechanics",
+        "Field Heading": "FINAL_DIM4",
+        "Field Description": "This field contains the number of points earned for Mechanics. If a numeric score is not assigned, an alphabetic non-score code is assigned. These values are dependent on scoring rules.",
+        "Field Acceptable Values": "0–2 (if scored), BB = No response, IL = Response is unintelligible or undecipherable, NL = Response is not written in English, OT = Off-topic, XX = Refusal to respond, CP = Does not understand/know or direct copy prompt/passage, Blank (if there is an SNT code, Nextera Invalidation, or Caveon Invalidation)"
+    },
+    "FINAL_WP_SCORE": {
+        "Field Name": "Final Essay Score",
+        "Field Heading": "FINAL_WP_SCORE",
+        "Field Description": "This field contains the final score of points earned for the entire essay. The calculation is the sum of the final dimension scores. If any of the final dimension scores is a non-score code, then those dimensions will be counted as zero in the calculation below. FINAL_WP_SCORE = FINAL_DIM1 + FINAL_DIM2 + FINAL_DIM3 + FINAL_DIM4",
+        "Field Acceptable Values": "0–12 (if scored), Blank if there is an SNT or a district (Nextera) invalidation. This field will not be blank if there is a Caveon Invalidation."
+    }
+}

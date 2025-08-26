@@ -27,7 +27,7 @@ public actor BacktestingFramework {
         let testingSet = Array(shuffled[splitIndex...])
         
         // Train model on training set
-        await earlyWarningSystem.trainWarningSystem(trainingData: trainingSet)
+        try await earlyWarningSystem.trainWarningSystem(trainingData: trainingSet)
         
         // Test on holdout set
         var predictions: [PredictionResult] = []
@@ -36,7 +36,7 @@ public actor BacktestingFramework {
             for student in testingSet {
                 group.addTask {
                     // Use only first year of data
-                    let firstYearOnly = self.extractFirstYear(student)
+                    let firstYearOnly = await self.extractFirstYear(student)
                     
                     // Generate predictions
                     let warnings = await self.earlyWarningSystem.generateWarnings(
@@ -44,13 +44,15 @@ public actor BacktestingFramework {
                     )
                     
                     // Compare to actual outcomes
-                    let actualOutcomes = self.extractLaterOutcomes(student)
+                    let actualOutcomes = await self.extractLaterOutcomes(student)
                     
                     return PredictionResult(
                         studentID: student.msis,
-                        predictions: warnings,
-                        actualOutcomes: actualOutcomes,
-                        accuracy: self.calculateAccuracy(warnings, actualOutcomes)
+                        predictedOutcome: warnings.overallRiskLevel.rawValue,
+                        actualOutcome: actualOutcomes.first?.proficiencyLevel,
+                        probability: Double(warnings.warnings.count) / 10.0,
+                        confidence: warnings.warnings.first?.confidence ?? 0.5,
+                        wasCorrect: await self.compareOutcomes(warnings, actualOutcomes)
                     )
                 }
             }
@@ -74,8 +76,8 @@ public actor BacktestingFramework {
         var falseNegatives = 0
         
         for prediction in predictions {
-            let predicted = prediction.predictions.overallRiskLevel == .high
-            let actual = prediction.actualOutcomes.contains { $0.belowProficient }
+            let predicted = prediction.predictedOutcome.contains("High") || prediction.predictedOutcome.contains("Critical")
+            let actual = prediction.actualOutcome?.lowercased().contains("below") ?? false
             
             switch (predicted, actual) {
             case (true, true): truePositives += 1
@@ -98,8 +100,8 @@ public actor BacktestingFramework {
             f1Score: f1Score,
             confusionMatrix: ConfusionMatrix(
                 truePositives: truePositives,
-                falsePositives: falsePositives,
                 trueNegatives: trueNegatives,
+                falsePositives: falsePositives,
                 falseNegatives: falseNegatives
             ),
             sampleSize: total
@@ -131,5 +133,63 @@ public struct ValidationResults: Sendable {
         True Negatives: \(confusionMatrix.trueNegatives)
         False Negatives: \(confusionMatrix.falseNegatives)
         """
+    }
+}
+
+// Helper functions extension
+extension BacktestingFramework {
+    private func extractFirstYear(_ student: StudentLongitudinalData) -> StudentSingleYearData {
+        guard let firstYear = student.assessments.first else {
+            return StudentSingleYearData(
+                msis: student.msis,
+                year: 0,
+                grade: 0,
+                assessmentData: [:]
+            )
+        }
+        
+        var assessmentData = [String: Double]()
+        for assessment in student.assessments.filter({ $0.year == firstYear.year }) {
+            for (component, score) in assessment.componentScores {
+                assessmentData["\(assessment.subject)_\(component)"] = score
+            }
+        }
+        
+        return StudentSingleYearData(
+            msis: student.msis,
+            year: firstYear.year,
+            grade: firstYear.grade,
+            assessmentData: assessmentData
+        )
+    }
+    
+    private func extractLaterOutcomes(
+        _ student: StudentLongitudinalData
+    ) -> [StudentLongitudinalData.AssessmentRecord] {
+        guard student.assessments.count > 1 else { return [] }
+        
+        let firstYear = student.assessments.first?.year ?? 0
+        return student.assessments.filter { $0.year > firstYear }
+    }
+    
+    private func compareOutcomes(
+        _ warnings: EarlyWarningReport,
+        _ actualOutcomes: [StudentLongitudinalData.AssessmentRecord]
+    ) -> Bool {
+        let predicted = warnings.overallRiskLevel == .high || warnings.overallRiskLevel == .critical
+        
+        // Check if any later assessment shows below proficient
+        let actualStruggling = actualOutcomes.contains { assessment in
+            if let profLevel = assessment.proficiencyLevel {
+                return profLevel.lowercased().contains("below") ||
+                       profLevel.lowercased().contains("minimal")
+            }
+            if let pass = assessment.pass {
+                return !pass
+            }
+            return false
+        }
+        
+        return predicted == actualStruggling
     }
 }
