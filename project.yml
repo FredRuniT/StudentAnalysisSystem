@@ -5,275 +5,94 @@ options:
     iOS: 18.0
     macOS: 15.0
   createIntermediateGroups: true
-  groupSortPosition: top
   generateEmptyDirectories: true
   
 packages:
-  MLX:
-    url: https://github.com/ml-explore/mlx-swift
-    from: 0.25.0
-  Algorithms:
-    url: https://github.com/apple/swift-algorithms
-    from: 1.2.0
-  CoreXLSX:
-    url: https://github.com/CoreOffice/CoreXLSX
-    from: 0.14.0
-  CSV:
-    url: https://github.com/yaslab/CSV.swift
-    from: 2.5.0
-  SwiftyJSON:
-    url: https://github.com/SwiftyJSON/SwiftyJSON
-    from: 5.0.0
-  TabularData:
-    url: https://github.com/apple/swift-tabular-data
-    from: 0.1.0
+  LocalPackage:
+    path: .
 
 settings:
   base:
     SWIFT_VERSION: 6.0
     MARKETING_VERSION: 1.0.0
     CURRENT_PROJECT_VERSION: 1
-    SWIFT_EMIT_LOC_STRINGS: YES
     SWIFT_STRICT_CONCURRENCY: complete
-    ENABLE_USER_SCRIPT_SANDBOXING: YES
-    GENERATE_INFOPLIST_FILE: YES
 
 targets:
-  # Core Analysis Library
-  AnalysisCore:
-    type: framework
-    platform: [iOS, macOS]
+  # macOS App
+  StudentAnalysisSystemMac:
+    type: application
+    platform: macOS
     sources:
-      - path: Sources/AnalysisCore
+      - path: Apps/StudentAnalysisMac
         createIntermediateGroups: true
     dependencies:
-      - package: MLX
-        products: [MLX, MLXNN, MLXOptimizers, MLXLinalg, MLXFFT]
-      - package: Algorithms
-      - package: CoreXLSX
-      - package: CSV
-      - package: SwiftyJSON
+      - package: LocalPackage
+        products:
+          - AnalysisCore
+          - StatisticalEngine
+          - PredictiveModeling
+          - ReportGeneration
+          - IndividualLearningPlan
     settings:
-      PRODUCT_NAME: AnalysisCore
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.analysiscore
-      INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2025 Student Analysis System"
-  
-  # Statistical Engine
-  StatisticalEngine:
-    type: framework
-    platform: [iOS, macOS]
-    sources:
-      - path: Sources/StatisticalEngine
-        createIntermediateGroups: true
-    dependencies:
-      - target: AnalysisCore
-      - package: MLX
-        products: [MLX, MLXRandom]
-      - package: Algorithms
-    settings:
-      PRODUCT_NAME: StatisticalEngine
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.statisticalengine
-
-  # Predictive Modeling
-  PredictiveModeling:
-    type: framework
-    platform: [iOS, macOS]
-    sources:
-      - path: Sources/PredictiveModeling
-        createIntermediateGroups: true
-    dependencies:
-      - target: StatisticalEngine
-      - target: AnalysisCore
-    settings:
-      PRODUCT_NAME: PredictiveModeling
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.predictivemodeling
-
-  # Report Generation
-  ReportGeneration:
-    type: framework
-    platform: [iOS, macOS]
-    sources:
-      - path: Sources/ReportGeneration
-        createIntermediateGroups: true
-    dependencies:
-      - target: AnalysisCore
-      - target: PredictiveModeling
-      - target: IndividualLearningPlan
-    settings:
-      PRODUCT_NAME: ReportGeneration
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.reportgeneration
-
-  # Individual Learning Plan
-  IndividualLearningPlan:
-    type: framework
-    platform: [iOS, macOS]
-    sources:
-      - path: Sources/IndividualLearningPlan
-        createIntermediateGroups: true
-    dependencies:
-      - target: AnalysisCore
-      - target: StatisticalEngine
-      - target: PredictiveModeling
-    settings:
-      PRODUCT_NAME: IndividualLearningPlan
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.ilp
+      base:
+        PRODUCT_NAME: StudentAnalysisSystemMac
+        PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.mac
+        COMBINE_HIDPI_IMAGES: YES
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2025"
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
+        INFOPLIST_KEY_NSMainStoryboardFile: ""
+        INFOPLIST_KEY_NSPrincipalClass: NSApplication
 
   # iOS App
   StudentAnalysisSystemiOS:
     type: application
     platform: iOS
     sources:
-      - path: Apps/StudentAnalysisSystemApp-iOS
+      - path: Apps/StudentAnalysisiOS
         createIntermediateGroups: true
     dependencies:
-      - target: AnalysisCore
-      - target: StatisticalEngine
-      - target: PredictiveModeling
-      - target: ReportGeneration
-      - target: IndividualLearningPlan
-    info:
-      path: Apps/StudentAnalysisSystemApp-iOS/Info.plist
-      properties:
-        UILaunchStoryboardName: LaunchScreen
-        UIApplicationSceneManifest:
-          UIApplicationSupportsMultipleScenes: true
-          UISceneConfigurations:
-            UIWindowSceneSessionRoleApplication:
-              - UISceneConfigurationName: Default Configuration
-                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
-        UISupportedInterfaceOrientations~ipad:
-          - UIInterfaceOrientationPortrait
-          - UIInterfaceOrientationPortraitUpsideDown
-          - UIInterfaceOrientationLandscapeLeft
-          - UIInterfaceOrientationLandscapeRight
-        UISupportedInterfaceOrientations~iphone:
-          - UIInterfaceOrientationPortrait
+      - package: LocalPackage
+        products:
+          - AnalysisCore
+          - StatisticalEngine
+          - PredictiveModeling
+          - ReportGeneration
+          - IndividualLearningPlan
     settings:
       base:
         PRODUCT_NAME: StudentAnalysisSystemiOS
         PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.ios
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: 1,2
-        SUPPORTS_MACCATALYST: NO
-        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
-
-  # macOS App
-  StudentAnalysisSystemMac:
-    type: application
-    platform: macOS
-    sources:
-      - path: Apps/StudentAnalysisSystemApp-Mac
-        createIntermediateGroups: true
-    dependencies:
-      - target: AnalysisCore
-      - target: StatisticalEngine
-      - target: PredictiveModeling
-      - target: ReportGeneration
-      - target: IndividualLearningPlan
-    info:
-      path: Apps/StudentAnalysisSystemApp-Mac/Info.plist
-      properties:
-        CFBundlePackageType: APPL
-        LSMinimumSystemVersion: "15.0"
-        NSMainStoryboardFile: Main
-        NSPrincipalClass: NSApplication
-    entitlements:
-      path: Apps/StudentAnalysisSystemApp-Mac/StudentAnalysisSystemMac.entitlements
-      properties:
-        com.apple.security.app-sandbox: true
-        com.apple.security.files.user-selected.read-write: true
-        com.apple.security.network.client: true
-        com.apple.security.files.downloads.read-write: true
-    settings:
-      base:
-        PRODUCT_NAME: StudentAnalysisSystemMac
-        PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.mac
-        COMBINE_HIDPI_IMAGES: YES
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-
-  # Test Targets
-  AnalysisCoreTests:
-    type: bundle.unit-test
-    platform: [iOS, macOS]
-    sources:
-      - path: Tests/AnalysisCoreTests
-        createIntermediateGroups: true
-    dependencies:
-      - target: AnalysisCore
-      - package: Algorithms
-    settings:
-      PRODUCT_NAME: AnalysisCoreTests
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.analysiscore.tests
-      TEST_HOST: ""
-
-  StatisticalEngineTests:
-    type: bundle.unit-test
-    platform: [iOS, macOS]
-    sources:
-      - path: Tests/StatisticalEngineTests
-        createIntermediateGroups: true
-    dependencies:
-      - target: StatisticalEngine
-    settings:
-      PRODUCT_NAME: StatisticalEngineTests
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.statisticalengine.tests
-
-  PredictiveModelingTests:
-    type: bundle.unit-test
-    platform: [iOS, macOS]
-    sources:
-      - path: Tests/PredictiveModelingTests
-        createIntermediateGroups: true
-    dependencies:
-      - target: PredictiveModeling
-    settings:
-      PRODUCT_NAME: PredictiveModelingTests
-      PRODUCT_BUNDLE_IDENTIFIER: com.studentanalysis.predictivemodeling.tests
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
 
 schemes:
-  StudentAnalysisSystem-iOS:
-    build:
-      targets:
-        StudentAnalysisSystemiOS: all
-        AnalysisCoreTests: [test]
-        StatisticalEngineTests: [test]
-        PredictiveModelingTests: [test]
-    run:
-      config: Debug
-      executable: StudentAnalysisSystemiOS
-    test:
-      config: Debug
-      targets:
-        - AnalysisCoreTests
-        - StatisticalEngineTests
-        - PredictiveModelingTests
-    archive:
-      config: Release
-
   StudentAnalysisSystem-Mac:
     build:
       targets:
         StudentAnalysisSystemMac: all
-        AnalysisCoreTests: [test]
-        StatisticalEngineTests: [test]
-        PredictiveModelingTests: [test]
     run:
       config: Debug
       executable: StudentAnalysisSystemMac
     test:
       config: Debug
-      targets:
-        - AnalysisCoreTests
-        - StatisticalEngineTests
-        - PredictiveModelingTests
     archive:
       config: Release
 
-  AllFrameworks:
+  StudentAnalysisSystem-iOS:
     build:
       targets:
-        AnalysisCore: all
-        StatisticalEngine: all
-        PredictiveModeling: all
-        ReportGeneration: all
-        IndividualLearningPlan: all
+        StudentAnalysisSystemiOS: all
+    run:
+      config: Debug
+      executable: StudentAnalysisSystemiOS
+    test:
+      config: Debug
+    archive:
+      config: Release
