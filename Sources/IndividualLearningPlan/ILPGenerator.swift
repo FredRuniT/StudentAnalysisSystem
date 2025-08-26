@@ -15,15 +15,18 @@ public actor ILPGenerator {
     private let standardsRepository: StandardsRepository
     private let correlationEngine: CorrelationAnalyzer
     private let warningSystem: EarlyWarningSystem
+    private let configuration: SystemConfiguration
     
     public init(
         standardsRepository: StandardsRepository,
         correlationEngine: CorrelationAnalyzer,
-        warningSystem: EarlyWarningSystem
+        warningSystem: EarlyWarningSystem,
+        configuration: SystemConfiguration? = nil
     ) {
         self.standardsRepository = standardsRepository
         self.correlationEngine = correlationEngine
         self.warningSystem = warningSystem
+        self.configuration = configuration ?? SystemConfiguration.default
     }
     
     // MARK: - Main ILP Generation Methods
@@ -40,7 +43,7 @@ public actor ILPGenerator {
         
         // Determine if student needs remediation or enrichment
         if performanceAnalysis.proficiencyLevel == .advanced || 
-           performanceAnalysis.overallScore >= 85 {
+           performanceAnalysis.overallScore >= configuration.ilp.enrichmentThreshold {
             // Generate enrichment plan for excelling students
             return try await generateEnrichmentILP(
                 student: student,

@@ -1,0 +1,62 @@
+{
+  "correlation" : {
+    "confidenceLevel" : 0.95,
+    "minimumCorrelation" : 0.3,
+    "minimumSampleSize" : 30,
+    "pValueThreshold" : 0.05,
+    "strongCorrelationThreshold" : 0.7,
+    "useBonferroniCorrection" : true,
+    "veryStrongCorrelationThreshold" : 0.9
+  },
+  "earlyWarning" : {
+    "criticalRiskMultiplier" : 0.8,
+    "falsePositiveWeight" : 1.0,
+    "minimumF1Score" : 0.6,
+    "minimumStudentsForThreshold" : 50,
+    "thresholdPercentiles" : [10, 20, 25, 30, 35, 40, 45, 50, 60, 70]
+  },
+  "growth" : {
+    "adequateGrowthThreshold" : 1.0,
+    "adjustForRegressionToMean" : true,
+    "expectedAnnualGrowth" : 1.0,
+    "growthMethod" : "value_added",
+    "growthPercentiles" : {
+      "high" : 65,
+      "low" : 35,
+      "typical" : 65
+    },
+    "includeConfidenceIntervals" : true,
+    "useCohortReferencing" : true
+  },
+  "ilp" : {
+    "correlationWeight" : 0.7,
+    "enrichmentThreshold" : 85.0,
+    "includeCrossCurricular" : true,
+    "includePrerequisites" : true,
+    "maxStandardsPerILP" : 10,
+    "proficiencyThresholds" : {
+      "advanced" : 85.0,
+      "basic" : 40.0,
+      "minimal" : 25.0,
+      "proficient" : 60.0
+    }
+  },
+  "metadata" : {
+    "description" : "Default configuration for Student Analysis System. Adjust these values to test different hypotheses without modifying code.",
+    "lastModified" : "2025-08-26T12:00:00Z",
+    "version" : "1.0.0"
+  },
+  "performance" : {
+    "batchSize" : 1000,
+    "enableMLXAcceleration" : true,
+    "enableParallelProcessing" : true,
+    "maxConcurrentTasks" : 8,
+    "memoryLimitMB" : 4096
+  },
+  "validation" : {
+    "crossValidationFolds" : 5,
+    "minimumPredictionConfidence" : 0.7,
+    "trainTestSplitRatio" : 0.8,
+    "useStratifiedSampling" : true
+  }
+}

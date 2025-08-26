@@ -5,10 +5,12 @@ import StatisticalEngine
 public actor ComponentCorrelationEngine {
     private let correlationAnalyzer: CorrelationAnalyzer
     private let mlxAccelerator: MLXAccelerator
+    private let configuration: SystemConfiguration
     
-    public init() {
+    public init(configuration: SystemConfiguration? = nil) {
         self.correlationAnalyzer = CorrelationAnalyzer()
         self.mlxAccelerator = MLXAccelerator()
+        self.configuration = configuration ?? SystemConfiguration.default
     }
     
     public struct ComponentCorrelationMap: Sendable, Codable {
@@ -33,9 +35,13 @@ public actor ComponentCorrelationEngine {
     
     public func discoverAllCorrelations(
         studentData: [StudentLongitudinalData],
-        minCorrelation: Double = 0.3,
-        minSampleSize: Int = 30
+        minCorrelation: Double? = nil,
+        minSampleSize: Int? = nil
     ) async throws -> [ComponentCorrelationMap] {
+        // Use configuration values if not provided
+        let minCorr = minCorrelation ?? configuration.correlation.minimumCorrelation
+        let minSample = minSampleSize ?? configuration.correlation.minimumSampleSize
+        
         // Extract all unique components
         let allComponents = extractAllComponents(from: studentData)
         var correlationMaps: [ComponentCorrelationMap] = []
@@ -48,8 +54,8 @@ public actor ComponentCorrelationEngine {
                         source: source,
                         allComponents: allComponents,
                         studentData: studentData,
-                        minCorrelation: minCorrelation,
-                        minSampleSize: minSampleSize
+                        minCorrelation: minCorr,
+                        minSampleSize: minSample
                     )
                 }
             }

@@ -7,10 +7,12 @@ public actor EarlyWarningSystem {
     private let correlationAnalyzer: CorrelationAnalyzer
     private let thresholdCalculator: ThresholdCalculator
     private var warningThresholds: [ComponentThreshold] = []
+    private let configuration: SystemConfiguration
     
-    public init(correlationAnalyzer: CorrelationAnalyzer) {
+    public init(correlationAnalyzer: CorrelationAnalyzer, configuration: SystemConfiguration? = nil) {
         self.correlationAnalyzer = correlationAnalyzer
         self.thresholdCalculator = ThresholdCalculator()
+        self.configuration = configuration ?? SystemConfiguration.default
     }
     
     public func trainWarningSystem(
@@ -38,7 +40,7 @@ public actor EarlyWarningSystem {
             if let score = student.getComponentScore(componentKey) {
                 if score < threshold.riskThreshold {
                     let warning = Warning(
-                        level: score < threshold.riskThreshold * 0.8 ? .critical : .high,
+                        level: score < threshold.riskThreshold * configuration.earlyWarning.criticalRiskMultiplier ? .critical : .high,
                         message: "Component \(threshold.component.description) score (\(score)) is below critical threshold",
                         confidence: threshold.confidence,
                         recommendations: generateRecommendations(for: threshold.component)
@@ -109,11 +111,11 @@ public actor EarlyWarningSystem {
         let scores = extractComponentScores(component, from: studentData)
         let outcomeLabels = mapToOutcomeLabels(scores, outcomes)
         
-        guard scores.count >= 50 else { return nil }
+        guard scores.count >= configuration.earlyWarning.minimumStudentsForThreshold else { return nil }
         
-        return await Task.detached(priority: .userInitiated) {
+        return await Task.detached(priority: .userInitiated) { [self] in
             let scoresArray = scores.map { Float($0.value) }
-            let outcomesArray = outcomeLabels.map { Float($0 ? 1.0 : 0.0) }
+            let _ = outcomeLabels.map { Float($0 ? 1.0 : 0.0) }
             // MLX arrays for future use when MLX API is available
             // let mlxScores = MLXArray(scoresArray)
             // let mlxOutcomes = MLXArray(outcomesArray)
@@ -122,7 +124,7 @@ public actor EarlyWarningSystem {
             var bestThreshold = 0.0
             var bestF1Score = 0.0
             
-            let percentiles = [10, 20, 25, 30, 35, 40, 45, 50, 60, 70]
+            let percentiles = configuration.earlyWarning.thresholdPercentiles
             
             for percentile in percentiles {
                 // Calculate percentile threshold
