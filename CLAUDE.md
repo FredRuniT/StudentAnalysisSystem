@@ -116,7 +116,7 @@ Components follow pattern: `Grade_{grade}_{subject}_{component}_{provider}`
 - Matrix is symmetric (A→B = B→A)
 
 ### Performance Considerations
-- Limited to 500 students in main.swift for reasonable processing time
+- Uses full dataset of 25,946 students for maximum model accuracy
 - Full dataset contains 25,946 students
 - MLXAccelerator provides GPU optimization for correlation calculations
 - DataFrameOptimizer batches operations to reduce memory usage

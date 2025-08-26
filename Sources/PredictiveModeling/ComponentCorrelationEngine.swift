@@ -11,12 +11,12 @@ public actor ComponentCorrelationEngine {
         self.mlxAccelerator = MLXAccelerator()
     }
     
-    public struct ComponentCorrelationMap: Sendable {
+    public struct ComponentCorrelationMap: Sendable, Codable {
         public let sourceComponent: ComponentIdentifier
         public let correlations: [TargetCorrelation]
         public let strongestPath: CorrelationPath?
         
-        public struct TargetCorrelation: Sendable {
+        public struct TargetCorrelation: Sendable, Codable {
             public let target: ComponentIdentifier
             public let correlation: Double
             public let confidence: Double
@@ -24,7 +24,7 @@ public actor ComponentCorrelationEngine {
             public let timeGap: Int // Years between assessments
         }
         
-        public struct CorrelationPath: Sendable {
+        public struct CorrelationPath: Sendable, Codable {
             public let components: [ComponentIdentifier]
             public let cumulativeCorrelation: Double
             public let pathway: String
@@ -87,11 +87,19 @@ public actor ComponentCorrelationEngine {
             // Filter by thresholds
             if abs(correlation.pearsonR) >= minCorrelation && 
                correlation.sampleSize >= minSampleSize {
+                // Calculate confidence with NaN protection
+                let confidence = {
+                    let pValue = correlation.pValue
+                    guard !pValue.isNaN && !pValue.isInfinite else { return 0.0 }
+                    let result = 1.0 - pValue
+                    return result.isNaN || result.isInfinite ? 0.0 : max(0.0, min(1.0, result))
+                }()
+                
                 targetCorrelations.append(
                     ComponentCorrelationMap.TargetCorrelation(
                         target: target,
                         correlation: correlation.pearsonR,
-                        confidence: 1.0 - correlation.pValue,
+                        confidence: confidence,
                         sampleSize: correlation.sampleSize,
                         timeGap: target.grade - source.grade
                     )

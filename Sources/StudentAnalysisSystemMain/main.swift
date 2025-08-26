@@ -216,11 +216,22 @@ actor SystemAnalyzer {
             
             // Parse the dataframe using appropriate parser
             let parser: any AssessmentParser = isNWEA ? NWEAParser() : QUESTARParser()
-            let components = await parser.parseComponents(from: dataFrame)
+            let rawComponents = await parser.parseComponents(from: dataFrame)
+            
+            // Filter out invalid grades (outside MAAP range 3-12)
+            var validComponents: [AssessmentComponent] = []
+            for component in rawComponents {
+                let grade = await component.grade
+                if grade >= 3 && grade <= 12 {
+                    validComponents.append(component)
+                } else {
+                    print("    ⚠️  Skipping invalid grade: \(grade)")
+                }
+            }
             
             // Group components by student ID
             var yearData: [String: [AssessmentComponent]] = [:]
-            for component in components {
+            for component in validComponents {
                 let studentID = await component.studentID
                 yearData[studentID, default: []].append(component)
             }
@@ -270,8 +281,9 @@ actor SystemAnalyzer {
             }
         }
         
-        // Limit to first 500 students for reasonable processing time
-        return Array(allStudents.values.prefix(500))
+        // Use full dataset for maximum model accuracy  
+        print("  📊 Processing all \(allStudents.count) students for comprehensive analysis")
+        return Array(allStudents.values)
     }
     
     // MARK: - Statistical Analysis

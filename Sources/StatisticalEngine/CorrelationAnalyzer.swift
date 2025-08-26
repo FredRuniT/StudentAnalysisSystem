@@ -37,22 +37,46 @@ public actor CorrelationAnalyzer {
         
         // Calculate statistics
         let n = pairedScores.count
-        let tStatistic = pearsonR * sqrt(Double(n - 2)) / sqrt(1 - pearsonR * pearsonR)
         let degreesOfFreedom = n - 2
+        
+        // Calculate t-statistic with protection against perfect correlations
+        let tStatistic: Double
+        if abs(pearsonR) >= 0.999 {
+            // For near-perfect correlations, use a very large t-statistic
+            tStatistic = pearsonR > 0 ? 100.0 : -100.0
+        } else {
+            tStatistic = pearsonR * sqrt(Double(degreesOfFreedom)) / sqrt(1 - pearsonR * pearsonR)
+        }
         
         // Calculate p-value (simplified)
         let pValue = calculatePValue(t: tStatistic, df: degreesOfFreedom)
         
-        // Calculate confidence interval
-        let fisherZ = 0.5 * log((1 + pearsonR) / (1 - pearsonR))
-        let standardError = 1.0 / sqrt(Double(n - 3))
-        let z95 = 1.96
+        // Calculate confidence interval with protection against edge cases
+        let lowerCI: Double
+        let upperCI: Double
         
-        let lowerZ = fisherZ - z95 * standardError
-        let upperZ = fisherZ + z95 * standardError
-        
-        let lowerCI = (exp(2 * lowerZ) - 1) / (exp(2 * lowerZ) + 1)
-        let upperCI = (exp(2 * upperZ) - 1) / (exp(2 * upperZ) + 1)
+        if abs(pearsonR) >= 0.999 {
+            // Handle near-perfect correlations to avoid log(0) issues
+            lowerCI = max(-1.0, pearsonR - 0.1)
+            upperCI = min(1.0, pearsonR + 0.1)
+        } else if n < 4 {
+            // Handle small samples
+            lowerCI = max(-1.0, pearsonR - 0.5)
+            upperCI = min(1.0, pearsonR + 0.5)
+        } else {
+            let fisherZ = 0.5 * log((1 + pearsonR) / (1 - pearsonR))
+            let standardError = 1.0 / sqrt(Double(n - 3))
+            let z95 = 1.96
+            
+            let lowerZ = fisherZ - z95 * standardError
+            let upperZ = fisherZ + z95 * standardError
+            
+            let lowerExp = exp(2 * lowerZ)
+            let upperExp = exp(2 * upperZ)
+            
+            lowerCI = (lowerExp - 1) / (lowerExp + 1)
+            upperCI = (upperExp - 1) / (upperExp + 1)
+        }
         
         return CorrelationResult(
             source: source,
@@ -156,7 +180,11 @@ public actor CorrelationAnalyzer {
         let numerator = n * sumXY - sumX * sumY
         let denominator = sqrt((n * sumX2 - sumX * sumX) * (n * sumY2 - sumY * sumY))
         
-        return denominator == 0 ? 0 : numerator / denominator
+        guard denominator > 0 else { return 0 }
+        let correlation = numerator / denominator
+        
+        // Clamp to valid range to prevent floating point issues
+        return max(-1.0, min(1.0, correlation))
     }
     
     private func calculateSpearmanCorrelation(_ x: [Double], _ y: [Double]) -> Double {

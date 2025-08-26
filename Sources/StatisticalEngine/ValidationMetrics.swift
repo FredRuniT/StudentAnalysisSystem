@@ -73,14 +73,17 @@ public struct ValidationMetrics: Sendable, Codable {
         labels: [Bool],
         thresholds: Int = 100
     ) -> (fpr: [Double], tpr: [Double], auc: Double) {
+        // Ensure thresholds is positive
+        let validThresholds = max(1, thresholds)
+        
         let minScore = scores.min() ?? 0
         let maxScore = scores.max() ?? 1
-        let step = (maxScore - minScore) / Double(thresholds)
+        let step = (maxScore - minScore) / Double(validThresholds)
         
         var fprValues: [Double] = []
         var tprValues: [Double] = []
         
-        for i in 0...thresholds {
+        for i in 0...validThresholds {
             let threshold = minScore + Double(i) * step
             let predictions = scores.map { $0 >= threshold }
             

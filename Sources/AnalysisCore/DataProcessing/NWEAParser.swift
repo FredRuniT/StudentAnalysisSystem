@@ -110,13 +110,18 @@ public actor NWEAParser: AssessmentParser {
     }
     
     private func parseGrade(_ grade: String) -> Int {
-        switch grade {
-        case "K": return 0
-        case "1"..."12": return Int(grade) ?? 0
-        default:
-            let numbers = grade.compactMap { $0.isNumber ? Int(String($0)) : nil }
-            return numbers.first ?? 0
+        // MAAP is grades 3-12 only
+        if let gradeInt = Int(grade), gradeInt >= 3 && gradeInt <= 12 {
+            return gradeInt
         }
+        
+        // Extract number from strings and validate MAAP range (3-12)
+        let numbers = grade.compactMap { $0.isNumber ? Int(String($0)) : nil }
+        if let gradeNum = numbers.first, gradeNum >= 3 && gradeNum <= 12 {
+            return gradeNum
+        }
+        // Return -1 for invalid grades to filter them out later
+        return -1
     }
     
     private func normalizeContent(_ content: String) -> String {
