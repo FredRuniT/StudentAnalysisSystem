@@ -2,6 +2,7 @@ import Foundation
 import AnalysisCore
 import IndividualLearningPlan
 import PredictiveModeling
+import StatisticalEngine
 
 public actor CSVExporter {
     
@@ -89,7 +90,11 @@ public actor CSVExporter {
         csv += "Precision,\(String(format: "%.4f", results.precision))\n"
         csv += "Recall,\(String(format: "%.4f", results.recall))\n"
         csv += "F1_Score,\(String(format: "%.4f", results.f1Score))\n"
-        csv += "Sample_Size,\(results.confusionMatrix.truePositives + results.confusionMatrix.trueNegatives + results.confusionMatrix.falsePositives + results.confusionMatrix.falseNegatives)\n"
+        let sampleSize = results.confusionMatrix.truePositives + 
+                        results.confusionMatrix.trueNegatives + 
+                        results.confusionMatrix.falsePositives + 
+                        results.confusionMatrix.falseNegatives
+        csv += "Sample_Size,\(sampleSize)\n"
         csv += "\n"
         csv += "Confusion Matrix\n"
         csv += ",Predicted_Positive,Predicted_Negative\n"

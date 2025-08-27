@@ -31,6 +31,10 @@ let package = Package(
         .library(
             name: "IndividualLearningPlan",
             targets: ["IndividualLearningPlan"]
+        ),
+        .library(
+            name: "StudentAnalysisSystemApp",
+            targets: ["StudentAnalysisSystem"]
         )
     ],
     dependencies: [
@@ -60,7 +64,11 @@ let package = Package(
         ),
         .target(
             name: "PredictiveModeling",
-            dependencies: ["StatisticalEngine", "AnalysisCore"]
+            dependencies: [
+                "StatisticalEngine", 
+                "AnalysisCore",
+                .product(name: "MLX", package: "mlx-swift")
+            ]
         ),
         .target(
             name: "ReportGeneration",
@@ -75,7 +83,8 @@ let package = Package(
             dependencies: [
                 "AnalysisCore",
                 "StatisticalEngine",
-                "PredictiveModeling"
+                "PredictiveModeling",
+                .product(name: "MLX", package: "mlx-swift")
             ]
         ),
         .testTarget(
@@ -84,6 +93,16 @@ let package = Package(
         ),
         .executableTarget(
             name: "StudentAnalysisSystemMain",
+            dependencies: [
+                "AnalysisCore",
+                "StatisticalEngine",
+                "PredictiveModeling",
+                "IndividualLearningPlan",
+                "ReportGeneration"
+            ]
+        ),
+        .target(
+            name: "StudentAnalysisSystem",
             dependencies: [
                 "AnalysisCore",
                 "StatisticalEngine",

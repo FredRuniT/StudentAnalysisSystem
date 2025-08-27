@@ -18,7 +18,7 @@ public actor BacktestingFramework {
     public func validatePredictiveModel(
         allStudents: [StudentLongitudinalData],
         trainTestSplit: Double = 0.7
-    ) async throws -> ValidationResults {
+    ) async throws -> BacktestingValidationResults {
         // Split data
         let shuffled = allStudents.shuffled()
         let splitIndex = Int(Double(shuffled.count) * trainTestSplit)
@@ -68,7 +68,7 @@ public actor BacktestingFramework {
     
     private func calculateValidationMetrics(
         _ predictions: [PredictionResult]
-    ) -> ValidationResults {
+    ) -> BacktestingValidationResults {
         // Calculate confusion matrix
         var truePositives = 0
         var falsePositives = 0
@@ -93,29 +93,36 @@ public actor BacktestingFramework {
         let recall = Double(truePositives) / Double(truePositives + falseNegatives)
         let f1Score = 2 * (precision * recall) / (precision + recall)
         
-        return ValidationResults(
+        let baseResults = StatisticalEngine.ValidationResults(
             accuracy: accuracy,
             precision: precision,
             recall: recall,
             f1Score: f1Score,
-            confusionMatrix: ConfusionMatrix(
+            confusionMatrix: StatisticalEngine.ValidationResults.ConfusionMatrix(
                 truePositives: truePositives,
                 trueNegatives: trueNegatives,
                 falsePositives: falsePositives,
                 falseNegatives: falseNegatives
-            ),
+            )
+        )
+        
+        return BacktestingValidationResults(
+            validationResults: baseResults,
             sampleSize: total
         )
     }
 }
 
-public struct ValidationResults: Sendable {
-    public let accuracy: Double
-    public let precision: Double
-    public let recall: Double
-    public let f1Score: Double
-    public let confusionMatrix: ConfusionMatrix
+// Wrapper for ValidationResults with additional sampleSize field
+public struct BacktestingValidationResults: Sendable {
+    public let validationResults: StatisticalEngine.ValidationResults
     public let sampleSize: Int
+    
+    public var accuracy: Double { validationResults.accuracy }
+    public var precision: Double { validationResults.precision }
+    public var recall: Double { validationResults.recall }
+    public var f1Score: Double { validationResults.f1Score }
+    public var confusionMatrix: StatisticalEngine.ValidationResults.ConfusionMatrix { validationResults.confusionMatrix }
     
     public var report: String {
         """

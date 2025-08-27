@@ -7,7 +7,6 @@
 
 import Foundation
 import MLX
-import AnalysisCore
 
 public actor AccelerationAnalyzer {
     private let correlationEngine: CorrelationAnalyzer

@@ -84,7 +84,7 @@ public actor EnhancedDataProcessor {
             guard values1.count == values2.count else { continue }
             
             let correlation = calculatePearsonCorrelation(values1, values2)
-            let spearman = calculateSpearmanCorrelation(values1, values2)
+            let _ = calculateSpearmanCorrelation(values1, values2) // TODO: Consider using Spearman correlation as alternative metric
             
             // Store correlation for pair[0] -> pair[1]
             correlations.append(ComponentCorrelation(

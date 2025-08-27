@@ -45,7 +45,9 @@ public actor CorrelationAnalyzer {
             // For near-perfect correlations, use a very large t-statistic
             tStatistic = pearsonR > 0 ? 100.0 : -100.0
         } else {
-            tStatistic = pearsonR * sqrt(Double(degreesOfFreedom)) / sqrt(1 - pearsonR * pearsonR)
+            let numerator = pearsonR * sqrt(Double(degreesOfFreedom))
+            let denominator = sqrt(1 - pearsonR * pearsonR)
+            tStatistic = numerator / denominator
         }
         
         // Calculate p-value (simplified)

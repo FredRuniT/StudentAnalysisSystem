@@ -208,7 +208,6 @@ actor SystemAnalyzer {
             
             // Determine provider based on filename
             let isNWEA = file.lastPathComponent.contains("2025")
-            let provider: TestProvider = isNWEA ? .nwea : .questar
             
             // Read CSV file into dataframe
             let fileReader = FileReader()

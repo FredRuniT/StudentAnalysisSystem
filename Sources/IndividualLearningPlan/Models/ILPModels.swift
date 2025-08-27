@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import AnalysisCore
 
 public struct IndividualLearningPlan: Codable, Sendable {
     public let studentInfo: StudentInfo

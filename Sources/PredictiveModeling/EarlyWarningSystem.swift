@@ -1,7 +1,7 @@
 import Foundation
-import MLX
 import AnalysisCore
 import StatisticalEngine
+import MLX
 
 public actor EarlyWarningSystem {
     private let correlationAnalyzer: CorrelationAnalyzer

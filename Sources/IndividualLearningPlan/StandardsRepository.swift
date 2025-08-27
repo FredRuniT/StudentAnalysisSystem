@@ -46,9 +46,8 @@ public actor StandardsRepository {
         grade: String,
         subject: String
     ) async -> [ScaffoldedStandard] {
-        // Determine if this is RC or Domain
+        // Determine if this is RC (QUESTAR) or Domain (NWEA)
         let isRC = component.hasPrefix("RC")
-        let isDomain = component.hasPrefix("D")
         
         let testProvider: TestProvider = isRC ? .questar : .nwea
         let key = "\(testProvider.rawValue)_\(subject)_\(grade)_\(component)"

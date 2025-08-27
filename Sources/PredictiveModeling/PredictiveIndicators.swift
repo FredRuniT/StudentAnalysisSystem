@@ -138,7 +138,7 @@ public actor PredictiveIndicatorDiscovery {
         guard !sourceScores.isEmpty else { return (50, 85) }
         
         // Find optimal thresholds using ROC analysis
-        let (_, _, auc) = ValidationMetrics.calculateROCCurve(
+        let (_, _, _) = ValidationMetrics.calculateROCCurve(
             scores: sourceScores,
             labels: targetProficient,
             thresholds: 50

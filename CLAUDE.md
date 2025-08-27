@@ -8,6 +8,10 @@ Student Analysis System - A comprehensive educational assessment platform for pr
 ## Essential Commands
 
 ### Building the Project
+
+#### IMPORTANT: XcodeGen Configuration
+The project uses XcodeGen with a modular Swift Package structure. The `project.yml` must reference Swift Package library products, NOT include source files directly. See [XcodeGen Configuration Guide](Documentation/Build/XcodeGen-Configuration.md) for details.
+
 ```bash
 # Always regenerate Xcode project after file/package changes
 xcodegen generate
@@ -23,7 +27,16 @@ xcodebuild -scheme StudentAnalysisSystem-Mac build
 
 # Build iOS app  
 xcodebuild -scheme StudentAnalysisSystem-iOS build
+
+# Clean everything and rebuild (if you encounter issues)
+rm -rf .build
+rm -rf ~/Library/Developer/Xcode/DerivedData/StudentAnalysisSystem-*
+xcodegen generate
+swift build
 ```
+
+#### Troubleshooting
+For build issues, see [Build Issues Guide](Documentation/Troubleshooting/Build-Issues.md)
 
 ### Running the System
 ```bash
@@ -138,3 +151,9 @@ Components follow pattern: `Grade_{grade}_{subject}_{component}_{provider}`
 - Modifying Package.swift dependencies
 - Changing target configurations
 - Before building the Xcode project
+
+**CRITICAL**: The `project.yml` configuration MUST:
+- Only include app UI sources in app targets (Sources/StudentAnalysisSystem)
+- Reference Swift Package library products as dependencies (AnalysisCore, StatisticalEngine, etc.)
+- NOT include module source directories directly in app targets
+- See [XcodeGen Configuration Guide](Documentation/Build/XcodeGen-Configuration.md) for correct setup

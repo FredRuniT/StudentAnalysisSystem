@@ -59,7 +59,6 @@ public actor RegressionModels {
         let sumY = y.reduce(0, +)
         let sumXY = zip(x, y).map(*).reduce(0, +)
         let sumX2 = x.map { $0 * $0 }.reduce(0, +)
-        let sumY2 = y.map { $0 * $0 }.reduce(0, +)
         
         // Calculate coefficients
         let beta1 = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX)
@@ -113,7 +112,7 @@ public actor RegressionModels {
         let p = features[0].count
         
         // Add intercept column
-        var X: [[Double]] = features.map { [1.0] + $0 }
+        let X: [[Double]] = features.map { [1.0] + $0 }
         
         // Calculate using normal equation: β = (X'X)^(-1)X'y
         // This is a simplified implementation

@@ -1,7 +1,6 @@
 import Foundation
 import AnalysisCore
-import PredictiveModeling
-import IndividualLearningPlan
+import StatisticalEngine
 
 public actor ReportBuilder {
     private let dateFormatter: DateFormatter

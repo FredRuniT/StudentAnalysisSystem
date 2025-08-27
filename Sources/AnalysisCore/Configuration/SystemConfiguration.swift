@@ -304,6 +304,27 @@ public struct SystemConfiguration: Codable, Sendable {
     
     // MARK: - Default Configuration
     public static let `default` = SystemConfiguration()
+    
+    // MARK: - Updating
+    public func updating(
+        correlation: CorrelationParameters? = nil,
+        earlyWarning: EarlyWarningParameters? = nil,
+        growth: GrowthParameters? = nil,
+        ilp: ILPParameters? = nil,
+        performance: PerformanceParameters? = nil,
+        validation: ValidationParameters? = nil,
+        metadata: Metadata? = nil
+    ) -> SystemConfiguration {
+        SystemConfiguration(
+            correlation: correlation ?? self.correlation,
+            earlyWarning: earlyWarning ?? self.earlyWarning,
+            growth: growth ?? self.growth,
+            ilp: ilp ?? self.ilp,
+            performance: performance ?? self.performance,
+            validation: validation ?? self.validation,
+            metadata: metadata ?? self.metadata
+        )
+    }
 }
 
 // MARK: - Configuration Manager
