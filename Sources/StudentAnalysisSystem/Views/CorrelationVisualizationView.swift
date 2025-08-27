@@ -50,9 +50,9 @@ struct CorrelationVisualizationView: View {
         .onAppear {
             loadCorrelationData()
         }
-        .onChange(of: selectedSubject) { _ in filterData() }
-        .onChange(of: selectedGradeFilter) { _ in filterData() }
-        .onChange(of: minimumCorrelation) { _ in filterData() }
+        .onChange(of: selectedSubject) { filterData() }
+        .onChange(of: selectedGradeFilter) { filterData() }
+        .onChange(of: minimumCorrelation) { filterData() }
     }
     
     var headerView: some View {
@@ -135,10 +135,10 @@ struct CorrelationVisualizationView: View {
         let avgConfidence = topCorrelations.isEmpty ? 0 : Int((topCorrelations.map { $0.confidence }.reduce(0, +) / Double(topCorrelations.count)) * 100)
         
         return HStack(spacing: 40) {
-            StatCard(title: "Strong Correlations", value: "\(strongCount)", subtitle: "r > 0.70")
-            StatCard(title: "Very Strong", value: "\(veryStrongCount)", subtitle: "r > 0.85")
-            StatCard(title: "Cross-Grade", value: "\(crossGradeCount)", subtitle: "Predictive")
-            StatCard(title: "Avg Confidence", value: "\(avgConfidence)%", subtitle: "Statistical")
+            CorrelationStatCard(title: "Strong Correlations", value: "\(strongCount)", subtitle: "r > 0.70")
+            CorrelationStatCard(title: "Very Strong", value: "\(veryStrongCount)", subtitle: "r > 0.85")
+            CorrelationStatCard(title: "Cross-Grade", value: "\(crossGradeCount)", subtitle: "Predictive")
+            CorrelationStatCard(title: "Avg Confidence", value: "\(avgConfidence)%", subtitle: "Statistical")
         }
         .padding(.horizontal)
     }
@@ -414,7 +414,7 @@ struct CorrelationVisualizationView: View {
     }
 }
 
-struct StatCard: View {
+struct CorrelationStatCard: View {
     let title: String
     let value: String
     let subtitle: String
