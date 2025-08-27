@@ -1,4 +1,6 @@
 import SwiftUI
+import AnalysisCore
+import IndividualLearningPlan
 
 struct ContentView: View {
     @State private var selectedTab = 0
@@ -18,24 +20,30 @@ struct ContentView: View {
                     Label("Early Warning", systemImage: "exclamationmark.triangle.fill")
                         .tag(1)
                     
-                    Label("Correlations", systemImage: "chart.scatter")
+                    Label("Predictive Analysis", systemImage: "chart.scatter")
                         .tag(2)
                     
                     Label("Student Reports", systemImage: "person.text.rectangle")
                         .tag(3)
+                    
+                    Label("ILP Generator", systemImage: "doc.badge.plus")
+                        .tag(4)
+                    
+                    Label("Grade Progression", systemImage: "chart.line.uptrend.xyaxis")
+                        .tag(5)
                 }
                 
                 Section("Data") {
                     Label("Import Data", systemImage: "square.and.arrow.down")
-                        .tag(4)
+                        .tag(6)
                     
                     Label("Data Overview", systemImage: "tablecells")
-                        .tag(5)
+                        .tag(7)
                 }
                 
                 Section("Settings") {
                     Label("Configuration", systemImage: "gearshape")
-                        .tag(6)
+                        .tag(8)
                         .onTapGesture {
                             showingConfiguration = true
                         }
@@ -52,14 +60,18 @@ struct ContentView: View {
                 case 1:
                     EarlyWarningDashboardView()
                 case 2:
-                    CorrelationTableView()
+                    PredictiveCorrelationView()
                 case 3:
                     StudentReportsView()
                 case 4:
-                    DataImportView()
+                    ILPGeneratorView()
                 case 5:
-                    DataOverviewView()
+                    GradeProgressionView()
                 case 6:
+                    DataImportView()
+                case 7:
+                    DataOverviewView()
+                case 8:
                     ConfigurationOverviewView()
                 default:
                     DashboardView()
@@ -339,18 +351,151 @@ struct CorrelationAnalysisView: View {
 }
 
 struct StudentReportsView: View {
-    var body: some View {
-        VStack {
-            Text("Student Reports")
-                .font(.largeTitle)
-                .bold()
-            
-            Text("Individual Learning Plans and progress reports")
-                .foregroundStyle(.secondary)
-            
-            Spacer()
+    @State private var selectedStudent: StudentAssessmentData?
+    @State private var searchText = ""
+    @State private var showingStudentProfile = false
+    
+    // Sample students for demonstration
+    let sampleStudents: [StudentAssessmentData] = [
+        SimplifiedStudent(
+            msis: "MS001234",
+            firstName: "Emily",
+            lastName: "Johnson",
+            grade: 5,
+            school: "Madison Elementary",
+            district: "Jackson Public Schools"
+        ).toStudentAssessmentData(),
+        SimplifiedStudent(
+            msis: "MS001235",
+            firstName: "Michael",
+            lastName: "Williams",
+            grade: 6,
+            school: "Madison Middle",
+            district: "Jackson Public Schools"
+        ).toStudentAssessmentData(),
+        SimplifiedStudent(
+            msis: "MS001236",
+            firstName: "Sarah",
+            lastName: "Brown",
+            grade: 4,
+            school: "Madison Elementary",
+            district: "Jackson Public Schools"
+        ).toStudentAssessmentData()
+    ]
+    
+    var filteredStudents: [StudentAssessmentData] {
+        if searchText.isEmpty {
+            return sampleStudents
         }
-        .padding()
+        return sampleStudents.filter { student in
+            student.firstName.localizedCaseInsensitiveContains(searchText) ||
+            student.lastName.localizedCaseInsensitiveContains(searchText) ||
+            student.msis.localizedCaseInsensitiveContains(searchText)
+        }
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            // Header
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Student Reports")
+                        .font(.largeTitle)
+                        .bold()
+                    
+                    Text("Individual Learning Plans and progress reports")
+                        .font(.headline)
+                        .foregroundStyle(.secondary)
+                }
+                
+                Spacer()
+                
+                // Search field
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(.secondary)
+                    TextField("Search students...", text: $searchText)
+                        .textFieldStyle(.plain)
+                }
+                .padding(8)
+                .background(Color(NSColor.controlBackgroundColor))
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+                .frame(width: 250)
+            }
+            .padding()
+            
+            // Student list
+            List(filteredStudents, id: \.msis) { student in
+                Button(action: {
+                    selectedStudent = student
+                    showingStudentProfile = true
+                }) {
+                    HStack {
+                        Image(systemName: "person.crop.circle")
+                            .foregroundStyle(.blue)
+                            .imageScale(.large)
+                        
+                        VStack(alignment: .leading) {
+                            Text("\(student.firstName) \(student.lastName)")
+                                .font(.headline)
+                                .foregroundStyle(.primary)
+                            
+                            HStack {
+                                Text("MSIS: \(student.msis)")
+                                Text("•")
+                                Text("Grade \(student.testGrade)")
+                                Text("•")
+                                Text(student.schoolName)
+                            }
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        }
+                        
+                        Spacer()
+                        
+                        HStack(spacing: 12) {
+                            Button(action: {}) {
+                                Label("View Profile", systemImage: "person.text.rectangle")
+                            }
+                            .buttonStyle(.bordered)
+                            .controlSize(.small)
+                            
+                            Button(action: {}) {
+                                Label("Generate ILP", systemImage: "doc.badge.plus")
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .controlSize(.small)
+                        }
+                    }
+                    .padding(.vertical, 8)
+                }
+                .buttonStyle(.plain)
+            }
+            
+            if filteredStudents.isEmpty {
+                ContentUnavailableView(
+                    "No Students Found",
+                    systemImage: "person.crop.circle.badge.questionmark",
+                    description: Text("Try adjusting your search criteria")
+                )
+            }
+        }
+        .sheet(isPresented: $showingStudentProfile) {
+            if let student = selectedStudent {
+                NavigationStack {
+                    StudentProfileView(student: student)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Done") {
+                                    showingStudentProfile = false
+                                }
+                            }
+                        }
+                }
+                .frame(minWidth: 900, minHeight: 700)
+            }
+        }
     }
 }
 
