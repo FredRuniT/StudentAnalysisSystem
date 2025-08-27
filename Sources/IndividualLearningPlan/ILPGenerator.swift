@@ -16,7 +16,7 @@ public actor ILPGenerator {
     private let correlationEngine: CorrelationAnalyzer
     private let warningSystem: EarlyWarningSystem
     private let configuration: SystemConfiguration
-    private let blueprintManager: BlueprintManager
+    internal let blueprintManager: BlueprintManager
     private let progressionAnalyzer: GradeProgressionAnalyzer?
     
     public init(
@@ -289,7 +289,7 @@ public actor ILPGenerator {
     
     // MARK: - Gap and Strength Identification
     
-    private func identifyWeakAreas(_ analysis: PerformanceAnalysis) -> [WeakArea] {
+    internal func identifyWeakAreas(_ analysis: PerformanceAnalysis) -> [WeakArea] {
         var weakAreas = [WeakArea]()
         
         for area in analysis.weakAreas {
@@ -330,7 +330,7 @@ public actor ILPGenerator {
     
     // MARK: - Standards Mapping
     
-    private func mapWeakAreasToStandards(_ weakAreas: [WeakArea], grade: Int) async -> [TargetStandard] {
+    internal func mapWeakAreasToStandards(_ weakAreas: [WeakArea], grade: Int) async -> [TargetStandard] {
         var targetStandards = [TargetStandard]()
         
         for area in weakAreas {
@@ -490,7 +490,7 @@ public actor ILPGenerator {
         return objectives
     }
     
-    private func generateEnrichmentObjectives(
+    internal func generateEnrichmentObjectives(
         standards: [TargetStandard],
         studentLevel: ProficiencyLevel
     ) async -> [ScaffoldedLearningObjective] {
@@ -524,7 +524,7 @@ public actor ILPGenerator {
     
     // MARK: - Intervention Strategies
     
-    private func createRemediationStrategies(
+    internal func createRemediationStrategies(
         objectives: [ScaffoldedLearningObjective],
         risks: [PredictedRisk]
     ) -> [InterventionStrategy] {
@@ -599,6 +599,30 @@ public actor ILPGenerator {
         ]
     }
     
+    internal func createEnrichmentStrategies(
+        objectives: [ScaffoldedLearningObjective],
+        strengthAreas: [String]
+    ) -> [InterventionStrategy] {
+        return [
+            InterventionStrategy(
+                tier: .universal, // Enrichment within regular class
+                frequency: "Daily with advanced activities",
+                duration: "Variable - self-paced",
+                groupSize: "Individual or collaborative groups",
+                focus: objectives.map { $0.standardId },
+                instructionalApproach: [
+                    "Advanced problem-solving",
+                    "Creative projects",
+                    "Cross-curricular connections",
+                    "Leadership opportunities",
+                    "Research and exploration"
+                ],
+                materials: generateEnrichmentMaterials(objectives),
+                progressMonitoring: "Project-based assessment and portfolio review"
+            )
+        ]
+    }
+    
     // MARK: - Bonus Standards
     
     private func recommendPrerequisiteStandards(
@@ -659,7 +683,7 @@ public actor ILPGenerator {
     
     // MARK: - Timeline Generation
     
-    private func generateTimeline(
+    internal func generateTimeline(
         startDate: Date,
         objectives: [ScaffoldedLearningObjective],
         type: TimelineType
@@ -734,7 +758,7 @@ public actor ILPGenerator {
     
     // MARK: - Helper Functions
     
-    private func createStudentInfo(from student: StudentAssessmentData) -> IndividualLearningPlan.StudentInfo {
+    internal func createStudentInfo(from student: StudentAssessmentData) -> IndividualLearningPlan.StudentInfo {
         return IndividualLearningPlan.StudentInfo(
             msis: student.studentInfo.msis,
             name: student.studentInfo.name,
@@ -1009,7 +1033,7 @@ public actor ILPGenerator {
         let readyForAcceleration: Bool
     }
     
-    internal enum TimelineType {
+    public enum TimelineType: String, Sendable {
         case remediation
         case enrichment
     }

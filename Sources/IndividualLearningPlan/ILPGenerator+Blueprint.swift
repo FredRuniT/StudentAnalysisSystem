@@ -8,6 +8,7 @@
 import Foundation
 import AnalysisCore
 import PredictiveModeling
+import StatisticalEngine
 
 extension ILPGenerator {
     
@@ -27,7 +28,7 @@ extension ILPGenerator {
                 student: student,
                 performanceAnalysis: performanceAnalysis,
                 progressionPlan: plan,
-                type: .remediation
+                type: TimelineType.remediation
             )
         }
         
@@ -35,15 +36,24 @@ extension ILPGenerator {
         let weakAreas = identifyWeakAreas(performanceAnalysis)
         
         // Map weak areas to blueprint standards
-        let targetStandards = await mapWeakAreasToStandardsWithBlueprints(
+        let targetStandardIds = await mapWeakAreasToStandardsWithBlueprints(
             weakAreas,
             grade: student.grade,
             subject: student.assessments.first?.subject ?? "MATH"
         )
         
+        // Convert to TargetStandard format
+        let targetStandards = targetStandardIds.enumerated().map { index, standardId in
+            TargetStandard(
+                standardId: standardId,
+                priority: index + 1,
+                rationale: "Addresses weakness identified in assessment"
+            )
+        }
+        
         // Generate objectives based on blueprint expectations  
         let learningObjectives = await generateBlueprintBasedObjectives(
-            standards: targetStandards,
+            standards: targetStandardIds,
             studentLevel: performanceAnalysis.proficiencyLevel,
             grade: student.grade
         )
@@ -64,7 +74,7 @@ extension ILPGenerator {
             timeline: generateTimeline(
                 startDate: Date(),
                 objectives: learningObjectives,
-                type: .remediation
+                type: TimelineType.remediation
             )
         )
     }
@@ -83,17 +93,26 @@ extension ILPGenerator {
                 student: student,
                 performanceAnalysis: performanceAnalysis,
                 progressionPlan: plan,
-                type: .enrichment
+                type: TimelineType.enrichment
             )
         }
         
         // Generate advanced objectives from next grade blueprints
         let nextGrade = min(student.grade + 1, 12)
-        let advancedStandards = await getNextGradeStandards(
+        let advancedStandardIds = await getNextGradeStandards(
             currentGrade: student.grade,
             nextGrade: nextGrade,
             subject: student.assessments.first?.subject ?? "MATH"
         )
+        
+        // Convert to TargetStandard format
+        let advancedStandards = advancedStandardIds.enumerated().map { index, standardId in
+            TargetStandard(
+                standardId: standardId,
+                priority: index + 1,
+                rationale: "Advanced/enrichment standard for high-achieving student"
+            )
+        }
         
         let enrichmentObjectives = await generateEnrichmentObjectives(
             standards: advancedStandards,
@@ -116,7 +135,7 @@ extension ILPGenerator {
             timeline: generateTimeline(
                 startDate: Date(),
                 objectives: enrichmentObjectives,
-                type: .enrichment
+                type: TimelineType.enrichment
             )
         )
     }
@@ -130,7 +149,7 @@ extension ILPGenerator {
     ) async -> IndividualLearningPlan {
         
         // Convert progression plan focuses to learning objectives
-        var learningObjectives: [LearningObjective] = []
+        var learningObjectives: [ScaffoldedLearningObjective] = []
         
         for focus in progressionPlan.learningFocuses {
             // Get standard details
@@ -139,17 +158,20 @@ extension ILPGenerator {
                 grade: progressionPlan.currentGrade,
                 subject: student.assessments.first?.subject ?? "MATH"
             ) {
-                let objective = LearningObjective(
-                    standard: focus.standardId,
-                    description: standard.standard.description,
-                    targetProficiency: determinTargetProficiency(
+                let objective = ScaffoldedLearningObjective(
+                    standardId: focus.standardId,
+                    standardDescription: standard.standard.description,
+                    currentLevel: performanceAnalysis.proficiencyLevel,
+                    targetLevel: determinTargetProficiency(
                         current: performanceAnalysis.proficiencyLevel,
                         focusArea: focus.focusArea
                     ),
-                    estimatedTime: "\(focus.estimatedTimeWeeks) weeks",
-                    activities: focus.suggestedActivities,
-                    prerequisites: extractPrerequisites(from: standard),
-                    assessment: generateAssessmentMethod(for: standard)
+                    knowledgeObjectives: createKnowledgeTasks(from: standard),
+                    understandingObjectives: createUnderstandingTasks(from: standard),
+                    skillsObjectives: createSkillsTasks(from: standard),
+                    keywords: standard.relatedKeywords.terms,
+                    successCriteria: generateSuccessCriteria(performanceAnalysis.proficiencyLevel),
+                    estimatedTimeframe: focus.estimatedTimeWeeks
                 )
                 learningObjectives.append(objective)
             }
@@ -161,18 +183,21 @@ extension ILPGenerator {
                 component: weakArea.component,
                 score: weakArea.performanceLevel.threshold * 100,
                 gap: (1.0 - weakArea.performanceLevel.threshold) * 100,
-                severity: weakArea.severity
+                description: "Weakness in \(weakArea.component): \(weakArea.severity) severity"
             )
         }
         
         // Create intervention strategies based on action plan
         let interventions = progressionPlan.actionPlan.phases.map { phase in
             InterventionStrategy(
-                type: mapPhaseToInterventionType(phase.name),
+                tier: mapPhaseToInterventionTier(phase.name),
                 frequency: determineFrequency(from: phase.timeframe),
                 duration: phase.timeframe,
+                groupSize: "Small group (3-5 students)",
+                focus: phase.focuses.map { $0.standardId },
+                instructionalApproach: generateInstructionalApproach(phase.name),
                 materials: extractMaterials(from: phase.focuses),
-                expectedOutcome: phase.goals.joined(separator: "; ")
+                progressMonitoring: "Weekly progress checks with phase-end assessment"
             )
         }
         
@@ -181,10 +206,16 @@ extension ILPGenerator {
             assessmentDate: Date(),
             performanceSummary: performanceAnalysis,
             identifiedGaps: identifiedGaps,
-            targetStandards: progressionPlan.actionPlan.priorityStandards,
+            targetStandards: progressionPlan.actionPlan.priorityStandards.enumerated().map { index, standardId in
+                TargetStandard(
+                    standardId: standardId,
+                    priority: index + 1,
+                    rationale: "Priority standard from progression plan"
+                )
+            },
             learningObjectives: learningObjectives,
             interventionStrategies: interventions,
-            additionalRecommendations: generateRecommendations(from: progressionPlan),
+            additionalRecommendations: [],
             predictedOutcomes: mapFutureImpacts(progressionPlan.futureImpacts),
             timeline: Timeline(
                 startDate: Date(),
@@ -193,10 +224,7 @@ extension ILPGenerator {
                     value: progressionPlan.actionPlan.totalEstimatedWeeks,
                     to: Date()
                 ) ?? Date(),
-                milestones: generateMilestones(from: progressionPlan.actionPlan),
-                assessmentDates: generateAssessmentDates(
-                    weeks: progressionPlan.actionPlan.totalEstimatedWeeks
-                )
+                milestones: generateMilestones(from: progressionPlan.actionPlan)
             )
         )
     }
@@ -213,7 +241,7 @@ extension ILPGenerator {
         
         guard let blueprint = blueprintManager.getBlueprint(grade: grade, subject: subject) else {
             // Fallback to original method
-            return await mapWeakAreasToStandards(weakAreas, grade: grade)
+            return await mapWeakAreasToStandards(weakAreas, grade: grade).map { $0.standardId }
         }
         
         for weakArea in weakAreas {
@@ -244,8 +272,8 @@ extension ILPGenerator {
         standards: [String],
         studentLevel: ProficiencyLevel,
         grade: Int
-    ) async -> [LearningObjective] {
-        var objectives: [LearningObjective] = []
+    ) async -> [ScaffoldedLearningObjective] {
+        var objectives: [ScaffoldedLearningObjective] = []
         
         for standardId in standards {
             // Extract subject from standard ID (e.g., "3.OA.1" -> Math)
@@ -257,16 +285,17 @@ extension ILPGenerator {
                 subject: subject
             ) {
                 // Create objective based on student's current level
-                let focusArea = determineFocusArea(for: studentLevel)
-                
-                let objective = LearningObjective(
-                    standard: standardId,
-                    description: standard.standard.description,
-                    targetProficiency: nextProficiencyLevel(from: studentLevel),
-                    estimatedTime: estimateTime(for: studentLevel),
-                    activities: generateActivities(for: standard, level: studentLevel),
-                    prerequisites: extractPrerequisites(from: standard),
-                    assessment: generateAssessmentMethod(for: standard)
+                let objective = ScaffoldedLearningObjective(
+                    standardId: standardId,
+                    standardDescription: standard.standard.description,
+                    currentLevel: studentLevel,
+                    targetLevel: nextProficiencyLevel(from: studentLevel),
+                    knowledgeObjectives: createKnowledgeTasks(from: standard),
+                    understandingObjectives: createUnderstandingTasks(from: standard),
+                    skillsObjectives: createSkillsTasks(from: standard),
+                    keywords: standard.relatedKeywords.terms,
+                    successCriteria: generateSuccessCriteria(studentLevel),
+                    estimatedTimeframe: estimateTimeWeeks(for: studentLevel)
                 )
                 objectives.append(objective)
             }
@@ -370,13 +399,13 @@ extension ILPGenerator {
         }
     }
     
-    private func mapPhaseToInterventionType(_ phaseName: String) -> InterventionType {
+    private func mapPhaseToInterventionTier(_ phaseName: String) -> InterventionStrategy.InterventionTier {
         if phaseName.contains("Immediate") {
-            return .intensiveSupport
+            return .intensive
         } else if phaseName.contains("Short-term") {
-            return .targetedIntervention
+            return .strategic
         } else {
-            return .regularSupport
+            return .universal
         }
     }
     
@@ -438,20 +467,20 @@ extension ILPGenerator {
         return recommendations
     }
     
-    private func mapFutureImpacts(_ impacts: [FutureImpact]) -> [PredictedOutcome] {
+    private func mapFutureImpacts(_ impacts: [FutureImpact]) -> [PredictedRisk] {
         return impacts.prefix(5).map { impact in
-            PredictedOutcome(
-                timeframe: "Grade \(impact.targetGrade)",
-                expectedImprovement: "\(Int(impact.correlationStrength * 100))% correlation with \(impact.targetComponent)",
-                confidenceLevel: impact.confidence,
-                metric: impact.impactDescription
+            PredictedRisk(
+                area: impact.targetComponent,
+                riskLevel: "High",
+                confidence: impact.confidence,
+                recommendations: [impact.impactDescription]
             )
         }
     }
     
-    private func generateMilestones(from actionPlan: ActionPlan) -> [Milestone] {
+    private func generateMilestones(from actionPlan: ActionPlan) -> [Timeline.Milestone] {
         return actionPlan.phases.enumerated().map { index, phase in
-            Milestone(
+            Timeline.Milestone(
                 date: Calendar.current.date(
                     byAdding: .month,
                     value: index + 1,
@@ -483,6 +512,112 @@ extension ILPGenerator {
         case .passing: return "4-6 weeks"
         case .proficient: return "2-4 weeks"
         case .advanced: return "1-2 weeks"
+        }
+    }
+    
+    private func estimateTimeWeeks(for level: ProficiencyLevel) -> Int {
+        switch level {
+        case .minimal: return 10
+        case .basic: return 7
+        case .passing: return 5
+        case .proficient: return 3
+        case .advanced: return 2
+        }
+    }
+    
+    private func generateInstructionalApproach(_ phaseName: String) -> [String] {
+        if phaseName.contains("Immediate") {
+            return [
+                "Direct instruction",
+                "Explicit modeling",
+                "Guided practice",
+                "Immediate feedback"
+            ]
+        } else if phaseName.contains("Short-term") {
+            return [
+                "Small group instruction",
+                "Scaffolded practice",
+                "Peer collaboration",
+                "Regular assessment"
+            ]
+        } else {
+            return [
+                "Differentiated instruction",
+                "Independent practice",
+                "Project-based learning",
+                "Formative assessments"
+            ]
+        }
+    }
+    
+    private func createKnowledgeTasks(from standard: LearningStandard) -> [LearningTask] {
+        return standard.studentPerformance.categories.knowledge.items.prefix(3).map { item in
+            LearningTask(
+                description: item,
+                complexity: .foundational,
+                estimatedSessions: 2,
+                assessmentType: "Quick check",
+                resources: ["Flashcards", "Video tutorials"]
+            )
+        }
+    }
+    
+    private func createUnderstandingTasks(from standard: LearningStandard) -> [LearningTask] {
+        return standard.studentPerformance.categories.understanding.items.prefix(3).map { item in
+            LearningTask(
+                description: item,
+                complexity: .intermediate,
+                estimatedSessions: 3,
+                assessmentType: "Concept application",
+                resources: ["Practice problems", "Discussion prompts"]
+            )
+        }
+    }
+    
+    private func createSkillsTasks(from standard: LearningStandard) -> [LearningTask] {
+        return standard.studentPerformance.categories.skills.items.prefix(3).map { item in
+            LearningTask(
+                description: item,
+                complexity: .advanced,
+                estimatedSessions: 4,
+                assessmentType: "Performance task",
+                resources: ["Hands-on activities", "Real-world projects"]
+            )
+        }
+    }
+    
+    private func generateSuccessCriteria(_ level: ProficiencyLevel) -> [String] {
+        switch level {
+        case .minimal:
+            return [
+                "Can identify basic concepts with support",
+                "Completes tasks with guidance",
+                "Demonstrates understanding through concrete examples"
+            ]
+        case .basic:
+            return [
+                "Can apply concepts in familiar contexts",
+                "Works independently on routine tasks",
+                "Shows understanding through explanations"
+            ]
+        case .passing:
+            return [
+                "Can solve grade-level problems",
+                "Applies strategies appropriately",
+                "Demonstrates conceptual understanding"
+            ]
+        case .proficient:
+            return [
+                "Can solve complex problems",
+                "Makes connections across concepts",
+                "Explains reasoning clearly"
+            ]
+        case .advanced:
+            return [
+                "Can solve challenging problems",
+                "Creates novel solutions",
+                "Teaches others effectively"
+            ]
         }
     }
     
