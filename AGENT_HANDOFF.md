@@ -101,7 +101,36 @@ Location: `Sources/StudentAnalysisSystem/Views/GradeProgressionView.swift`
 
 ### ⚠️ CRITICAL ISSUES DISCOVERED - MUST FIX FIRST
 
-#### IMPORTANT: Previous agent attempted backend integration but discovered fundamental model incompatibilities
+#### 1. HARDCODED VALUES THROUGHOUT CODEBASE - VIOLATES MODULAR DESIGN
+
+**Problem:** The system has hardcoded values scattered throughout instead of using configuration:
+- Test provider names hardcoded as "NWEA", "QUESTAR", "MAAP"
+- Grade ranges hardcoded as 3-8
+- File paths hardcoded to specific directories
+- Proficiency thresholds hardcoded (650, 700, 750 for different levels)
+- Component naming patterns hardcoded (D1OP, RC2, etc.)
+- School years hardcoded as "2024-2025"
+
+**Solution Required:** Create proper configuration system:
+```swift
+// Sources/AnalysisCore/Configuration/SystemConfiguration.swift
+struct SystemConfiguration {
+    let testProviders: [TestProvider]
+    let gradeRange: ClosedRange<Int>
+    let proficiencyThresholds: ProficiencyThresholds
+    let dataDirectories: DataDirectories
+    let componentMappings: ComponentMappings
+    // etc.
+}
+```
+
+**Files with hardcoded values to fix:**
+- All Views in `Sources/StudentAnalysisSystem/Views/` - using hardcoded "MAAP", grade numbers
+- All ViewModels - hardcoded school years and test names
+- Parser files - hardcoded column names and formats
+- ILPGenerator - hardcoded thresholds and timeframes
+
+#### 2. Previous agent attempted backend integration but discovered fundamental model incompatibilities
 
 **What Happened:**
 - Attempted to create ServiceContainer and ModelAdapters
@@ -193,17 +222,73 @@ Sources/ProgressTracking/
 
 ### 🛑 STOP - READ THIS FIRST
 
-**The UI is complete but CANNOT be connected to the backend without fixing model mismatches.**
+**The system has TWO critical architectural problems that MUST be fixed:**
 
-You have two options:
-1. **Option A: Fix Backend Models** - Modify backend models to match what UI expects
-2. **Option B: Fix UI Expectations** - Modify UI to use actual backend model properties
+1. **HARDCODED VALUES**: The entire codebase uses hardcoded values instead of configuration. This violates the modular design principle and makes the system inflexible.
 
-**Recommendation:** Option B is safer - modify UI to match backend reality rather than changing core backend models.
+2. **MODEL MISMATCHES**: The UI expects different model properties than the backend provides.
+
+**Fix Order:**
+1. First create proper configuration system
+2. Then fix model mismatches
+3. Finally integrate backend with UI
+
+**This is NOT optional** - the system is supposed to be modular and configurable, not hardcoded for Mississippi MAAP tests only.
 
 ### 🎯 Next Agent Actions (Priority Order)
 
-#### 1. Resolve Model Mismatches (CRITICAL - DO THIS FIRST)
+#### 1. Create Configuration System (CRITICAL - DO THIS FIRST)
+
+**Create a proper configuration module:**
+```swift
+// Sources/AnalysisCore/Configuration/AppConfiguration.swift
+public struct AppConfiguration: Codable, Sendable {
+    public struct TestProvider: Codable, Sendable {
+        let name: String
+        let identifier: String
+        let componentPattern: String
+        let columnMappings: [String: String]
+    }
+    
+    public struct ProficiencyLevels: Codable, Sendable {
+        let minimal: ClosedRange<Double>
+        let basic: ClosedRange<Double>
+        let passing: ClosedRange<Double>
+        let proficient: ClosedRange<Double>
+        let advanced: ClosedRange<Double>
+    }
+    
+    let applicationName: String
+    let testProviders: [TestProvider]
+    let supportedGrades: ClosedRange<Int>
+    let proficiencyLevels: ProficiencyLevels
+    let dataDirectory: String
+    let outputDirectory: String
+    let currentSchoolYear: String
+    let correlationThreshold: Double
+    let confidenceThreshold: Double
+}
+```
+
+**Load from JSON configuration file:**
+```json
+// Resources/config.json or config.plist
+{
+    "applicationName": "Student Analysis System",
+    "testProviders": [
+        {
+            "name": "Mississippi Academic Assessment Program",
+            "identifier": "MAAP",
+            "componentPattern": "D\\d+(OP|NBT|NF|MD|G)",
+            "columnMappings": {...}
+        }
+    ],
+    "supportedGrades": {"min": 3, "max": 8},
+    ...
+}
+```
+
+#### 2. Resolve Model Mismatches (AFTER configuration)
 
 **Specific files that need fixing:**
 - `Sources/StudentAnalysisSystem/Views/StudentProfileView.swift` - Uses wrong AssessmentComponent properties
@@ -316,15 +401,30 @@ open .build/DerivedData/Build/Products/Debug/StudentAnalysisSystem.app
 - **Full System Integration**: 40% overall (UI complete but disconnected from backend)
 
 ### 🚨 DO NOT
-- Change proficiency levels from official Mississippi standards
+- HARDCODE VALUES - Use configuration system instead
+- Hardcode test provider names (MAAP, NWEA, QUESTAR)
+- Hardcode grade ranges or school years
+- Hardcode file paths or directory locations
+- Hardcode proficiency thresholds or score ranges
 - Create duplicate type definitions
 - Make types non-Sendable (breaks Swift 6 concurrency)
 - Skip running `xcodegen generate` before builds
 - Modify the UI components without maintaining Apple HIG compliance
+- Assume Mississippi-specific standards - make it configurable
 
 ### 💡 Critical Tips for Next Agent
 
-1. **FIX MODEL MISMATCHES FIRST**: Do NOT attempt backend integration until UI uses correct model properties. The UI was built with assumptions about model structure that don't match reality.
+1. **CREATE CONFIGURATION FIRST**: The system MUST be modular and configurable. Remove ALL hardcoded values and replace with configuration-driven approach. This is a fundamental architectural requirement.
+
+2. **Configuration Should Support**:
+   - Multiple test providers (not just MAAP)
+   - Different states/regions (not just Mississippi)
+   - Variable grade ranges
+   - Custom proficiency levels
+   - Different component naming schemes
+   - Multiple school year formats
+
+3. **FIX MODEL MISMATCHES SECOND**: After configuration is in place, then fix UI to use correct model properties.
 
 2. **Build Order**:
    ```bash
@@ -348,6 +448,26 @@ open .build/DerivedData/Build/Products/Debug/StudentAnalysisSystem.app
    - UI expects: sourceGrade extracted from component string like "Grade_4_MATH_D1OP"
 
 5. **DO NOT USE MOCK DATA IN PRODUCTION CODE**: Previous agent added mock data - this should only be temporary for UI testing
+
+6. **Examples of Hardcoded Values to Remove**:
+   ```swift
+   // BAD - Hardcoded:
+   if testProvider == "MAAP" { ... }
+   let grades = 3...8
+   let threshold = 650
+   
+   // GOOD - Configurable:
+   if testProvider == config.testProviders.first?.identifier { ... }
+   let grades = config.supportedGrades
+   let threshold = config.proficiencyLevels.passing.lowerBound
+   ```
+
+7. **Consider UI Settings/Preferences Tab**: Since the system needs to be configurable, consider adding a Settings or Configuration tab in the UI where users can:
+   - Select active test provider
+   - Configure grade ranges
+   - Adjust proficiency thresholds
+   - Set data directories
+   - Configure school year format
 
 ### 🎉 What's Working Now
 
