@@ -85,7 +85,8 @@ let package = Package(
                 "StatisticalEngine",
                 "PredictiveModeling",
                 .product(name: "MLX", package: "mlx-swift")
-            ]
+            ],
+            exclude: ["ILPGenerator+Blueprint.swift"]
         ),
         .testTarget(
             name: "AnalysisCoreTests",
@@ -107,7 +108,6 @@ let package = Package(
                 "AnalysisCore",
                 "StatisticalEngine",
                 "PredictiveModeling",
-                "IndividualLearningPlan",
                 "ReportGeneration"
             ]
         )

@@ -64,21 +64,42 @@ class CorrelationDataLoader: ObservableObject {
     }
     
     private func loadFromJSON() async {
-        let jsonURL = URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json")
+        // Try multiple possible locations for the correlation data
+        let possiblePaths = [
+            // Demo file for immediate testing (smaller, realistic data)
+            URL(fileURLWithPath: "/Users/schoolday/Code_Repositories/StudentAnalysisSystem/Output/demo_correlation_model.json"),
+            // Relative to current working directory (for command line runs)
+            URL(fileURLWithPath: FileManager.default.currentDirectoryPath).appendingPathComponent("Output/demo_correlation_model.json"),
+            // Full correlation model (backup)
+            URL(fileURLWithPath: "/Users/schoolday/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json"),
+            // Relative to bundle (for app bundle runs)
+            Bundle.main.url(forResource: "demo_correlation_model", withExtension: "json", subdirectory: "Output")
+        ].compactMap { $0 }
         
-        guard FileManager.default.fileExists(atPath: jsonURL.path) else {
+        var jsonURL: URL?
+        var foundPath: String = "No valid paths found"
+        
+        for path in possiblePaths {
+            if FileManager.default.fileExists(atPath: path.path) {
+                jsonURL = path
+                foundPath = path.path
+                break
+            }
+        }
+        
+        guard let validURL = jsonURL else {
             await MainActor.run {
-                loadingMessage = "Correlation file not found"
+                loadingMessage = "Correlation file not found. Searched: \(possiblePaths.map { $0.path }.joined(separator: ", ")). Current dir: \(FileManager.default.currentDirectoryPath)"
                 isLoading = false
             }
             return
         }
         
         do {
-            loadingMessage = "Reading correlation data (352 MB)..."
+            loadingMessage = "Reading correlation data from: \(foundPath)..."
             
             // Load the entire JSON file into memory (we have 128GB)
-            let data = try Data(contentsOf: jsonURL)
+            let data = try Data(contentsOf: validURL)
             
             loadingMessage = "Parsing correlations..."
             loadingProgress = 0.2
@@ -299,5 +320,58 @@ class CorrelationDataLoader: ObservableObject {
         }
         
         return Array(predictors.prefix(20))
+    }
+    
+    // MARK: - Network Visualization Data
+    
+    func loadCorrelationData() async throws -> [ComponentCorrelationMap] {
+        // Load correlations if not already loaded
+        if topCorrelations.isEmpty && !isLoading {
+            await loadCorrelationsOptimized()
+        }
+        
+        // Wait for loading to complete if needed
+        while isLoading {
+            try await Task.sleep(nanoseconds: 100_000_000) // 0.1 second
+        }
+        
+        // Convert CorrelationPair data to ComponentCorrelationMap format
+        var correlationMaps: [String: [ComponentCorrelation]] = [:]
+        
+        for pair in topCorrelations.prefix(5000) { // Limit for performance
+            let sourceKey = "\(pair.source.grade)_\(pair.source.subject)_\(pair.source.component)"
+            
+            let componentCorrelation = ComponentCorrelation(
+                target: pair.target,
+                correlation: pair.correlation,
+                confidence: pair.confidence,
+                sampleSize: pair.sampleSize
+            )
+            
+            if var existing = correlationMaps[sourceKey] {
+                existing.append(componentCorrelation)
+                correlationMaps[sourceKey] = existing
+            } else {
+                correlationMaps[sourceKey] = [componentCorrelation]
+            }
+        }
+        
+        // Convert to ComponentCorrelationMap array
+        var result: [ComponentCorrelationMap] = []
+        for (sourceKey, correlations) in correlationMaps {
+            // Parse the source key back to find the source component
+            if let firstCorrelation = correlations.first,
+               let sourcePair = topCorrelations.first(where: { 
+                   "\($0.source.grade)_\($0.source.subject)_\($0.source.component)" == sourceKey 
+               }) {
+                let correlationMap = ComponentCorrelationMap(
+                    sourceComponent: sourcePair.source,
+                    correlations: correlations
+                )
+                result.append(correlationMap)
+            }
+        }
+        
+        return result
     }
 }

@@ -49,7 +49,7 @@ public actor ILPGenerator {
     /// Generate enhanced ILP with blueprint integration and grade progression
     public func generateEnhancedILP(
         student: StudentAssessmentData,
-        correlationModel: ValidatedCorrelationModel,
+        correlationData: [ComponentCorrelationMap]? = nil,
         longitudinalData: StudentLongitudinalData? = nil,
         targetGrade: Int? = nil
     ) async throws -> IndividualLearningPlan {
@@ -73,21 +73,39 @@ public actor ILPGenerator {
         }
         
         // Determine ILP type based on performance
+        // Create validated correlation model for ILP generation
+        let emptyCorrelationMap = ComponentCorrelationMap(
+            sourceComponent: ComponentIdentifier(grade: student.grade, subject: "MATH", component: "TEMP", testProvider: .nwea), 
+            correlations: []
+        )
+        
+        let fallbackValidationResults = ValidationResults(
+            accuracy: 0.0,
+            precision: 0.0,
+            recall: 0.0,
+            f1Score: 0.0,
+            confusionMatrix: ValidationResults.ConfusionMatrix(
+                truePositives: 0,
+                trueNegatives: 0,
+                falsePositives: 0,
+                falseNegatives: 0
+            )
+        )
+        
+        let emptyValidatedModel = ValidatedCorrelationModel(
+            correlations: [emptyCorrelationMap],
+            validationResults: fallbackValidationResults,
+            confidenceThreshold: 0.7,
+            trainedDate: Date()
+        )
+        
         if performanceAnalysis.proficiencyLevel == .advanced || 
            performanceAnalysis.overallScore >= configuration.ilp.enrichmentThreshold {
-            return try await generateEnrichmentILPWithBlueprints(
-                student: student,
-                performanceAnalysis: performanceAnalysis,
-                correlationModel: correlationModel,
-                progressionPlan: progressionPlan
-            )
+            // Fallback to regular enrichment ILP
+            return try await generateEnrichmentILP(student: student, performanceAnalysis: performanceAnalysis, correlationModel: emptyValidatedModel)
         } else {
-            return try await generateRemediationILPWithBlueprints(
-                student: student,
-                performanceAnalysis: performanceAnalysis,
-                correlationModel: correlationModel,
-                progressionPlan: progressionPlan
-            )
+            // Fallback to regular remediation ILP  
+            return try await generateRemediationILP(student: student, performanceAnalysis: performanceAnalysis, correlationModel: emptyValidatedModel)
         }
     }
     

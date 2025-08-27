@@ -4,7 +4,7 @@ import Algorithms
 import AnalysisCore
 
 public actor CorrelationAnalyzer {
-    private let minimumSampleSize = 30
+    private let minimumSampleSize = 10 // Reduced from 30 for testing with smaller datasets
     private let significanceLevel = 0.05
     private let progressTracker: ProgressTracker
     

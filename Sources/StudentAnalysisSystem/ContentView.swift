@@ -1,5 +1,9 @@
 import SwiftUI
 
+#if canImport(AppKit)
+import AppKit
+#endif
+
 struct ContentView: View {
     @State private var selectedTab = 0
     @State private var showingConfiguration = false
@@ -18,24 +22,27 @@ struct ContentView: View {
                     Label("Early Warning", systemImage: "exclamationmark.triangle.fill")
                         .tag(1)
                     
-                    Label("Correlations", systemImage: "chart.scatter")
+                    Label("Correlation Matrix", systemImage: "chart.scatter")
                         .tag(2)
                     
-                    Label("Student Reports", systemImage: "person.text.rectangle")
+                    Label("Network Visualization", systemImage: "circle.hexagongrid.fill")
                         .tag(3)
+                    
+                    Label("Student Reports", systemImage: "person.text.rectangle")
+                        .tag(4)
                 }
                 
                 Section("Data") {
                     Label("Import Data", systemImage: "square.and.arrow.down")
-                        .tag(4)
+                        .tag(5)
                     
                     Label("Data Overview", systemImage: "tablecells")
-                        .tag(5)
+                        .tag(6)
                 }
                 
                 Section("Settings") {
                     Label("Configuration", systemImage: "gearshape")
-                        .tag(6)
+                        .tag(7)
                         .onTapGesture {
                             showingConfiguration = true
                         }
@@ -54,12 +61,14 @@ struct ContentView: View {
                 case 2:
                     CorrelationTableView()
                 case 3:
-                    StudentReportsView()
+                    CorrelationNetworkView()
                 case 4:
-                    DataImportView()
+                    StudentReportsView()
                 case 5:
-                    DataOverviewView()
+                    DataImportView()
                 case 6:
+                    DataOverviewView()
+                case 7:
                     ConfigurationOverviewView()
                 default:
                     DashboardView()
@@ -231,7 +240,7 @@ struct MetricCard: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color(NSColor.controlBackgroundColor))
+        .background(Color.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
@@ -246,7 +255,7 @@ struct ChartCard: View {
             
             // Placeholder for chart
             RoundedRectangle(cornerRadius: 8)
-                .fill(Color(NSColor.controlBackgroundColor))
+                .fill(Color.gray.opacity(0.1))
                 .frame(height: 200)
                 .overlay(
                     Text("Chart Placeholder")
@@ -255,7 +264,7 @@ struct ChartCard: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color(NSColor.controlBackgroundColor))
+        .background(Color.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
@@ -285,7 +294,7 @@ struct RiskCard: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color(NSColor.controlBackgroundColor))
+        .background(Color.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
@@ -416,7 +425,7 @@ struct ConfigurationOverviewView: View {
                 ConfigRow(label: "Growth Method", value: "Value Added")
             }
             .padding()
-            .background(Color(NSColor.controlBackgroundColor))
+            .background(Color.gray.opacity(0.1))
             .clipShape(RoundedRectangle(cornerRadius: 12))
             
             Spacer()

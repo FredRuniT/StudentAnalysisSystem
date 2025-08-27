@@ -32,7 +32,6 @@ targets:
           - AnalysisCore
           - StatisticalEngine
           - PredictiveModeling
-          - IndividualLearningPlan
           - ReportGeneration
     settings:
       base:
@@ -58,7 +57,6 @@ targets:
           - AnalysisCore
           - StatisticalEngine
           - PredictiveModeling
-          - IndividualLearningPlan
           - ReportGeneration
     settings:
       base:
@@ -85,7 +83,6 @@ targets:
           - AnalysisCore
           - StatisticalEngine
           - PredictiveModeling
-          - IndividualLearningPlan
           - ReportGeneration
     settings:
       base:
