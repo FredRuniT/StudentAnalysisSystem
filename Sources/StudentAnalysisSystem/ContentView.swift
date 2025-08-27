@@ -2,6 +2,10 @@ import SwiftUI
 import AnalysisCore
 import IndividualLearningPlan
 
+#if canImport(AppKit)
+import AppKit
+#endif
+
 struct ContentView: View {
     @State private var selectedTab = 0
     @State private var showingConfiguration = false
@@ -23,7 +27,7 @@ struct ContentView: View {
                     Label("Predictive Analysis", systemImage: "chart.scatter")
                         .tag(2)
                     
-                    Label("Student Reports", systemImage: "person.text.rectangle")
+                    Label("Network Visualization", systemImage: "circle.hexagongrid.fill")
                         .tag(3)
                     
                     Label("ILP Generator", systemImage: "doc.badge.plus")
@@ -31,19 +35,22 @@ struct ContentView: View {
                     
                     Label("Grade Progression", systemImage: "chart.line.uptrend.xyaxis")
                         .tag(5)
+                    
+                    Label("Student Reports", systemImage: "person.text.rectangle")
+                        .tag(6)
                 }
                 
                 Section("Data") {
                     Label("Import Data", systemImage: "square.and.arrow.down")
-                        .tag(6)
+                        .tag(7)
                     
                     Label("Data Overview", systemImage: "tablecells")
-                        .tag(7)
+                        .tag(8)
                 }
                 
                 Section("Settings") {
                     Label("Configuration", systemImage: "gearshape")
-                        .tag(8)
+                        .tag(9)
                         .onTapGesture {
                             showingConfiguration = true
                         }
@@ -62,16 +69,18 @@ struct ContentView: View {
                 case 2:
                     PredictiveCorrelationView()
                 case 3:
-                    StudentReportsView()
+                    CorrelationNetworkView()
                 case 4:
                     ILPGeneratorView()
                 case 5:
                     GradeProgressionView()
                 case 6:
-                    DataImportView()
+                    StudentReportsView()
                 case 7:
-                    DataOverviewView()
+                    DataImportView()
                 case 8:
+                    DataOverviewView()
+                case 9:
                     ConfigurationOverviewView()
                 default:
                     DashboardView()
@@ -243,7 +252,7 @@ struct MetricCard: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color(NSColor.controlBackgroundColor))
+        .background(Color.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
@@ -258,7 +267,7 @@ struct ChartCard: View {
             
             // Placeholder for chart
             RoundedRectangle(cornerRadius: 8)
-                .fill(Color(NSColor.controlBackgroundColor))
+                .fill(Color.gray.opacity(0.1))
                 .frame(height: 200)
                 .overlay(
                     Text("Chart Placeholder")
@@ -267,7 +276,7 @@ struct ChartCard: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color(NSColor.controlBackgroundColor))
+        .background(Color.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
@@ -297,7 +306,7 @@ struct RiskCard: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color(NSColor.controlBackgroundColor))
+        .background(Color.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
@@ -561,7 +570,7 @@ struct ConfigurationOverviewView: View {
                 ConfigRow(label: "Growth Method", value: "Value Added")
             }
             .padding()
-            .background(Color(NSColor.controlBackgroundColor))
+            .background(Color.gray.opacity(0.1))
             .clipShape(RoundedRectangle(cornerRadius: 12))
             
             Spacer()

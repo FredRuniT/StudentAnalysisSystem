@@ -339,14 +339,8 @@ class CorrelationTableViewModel: ObservableObject {
             isLoading = true
             loadingMessage = "Loading correlation data..."
             
-            // Check if CSV exists first (faster loading)
-            let csvURL = URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/correlations.csv")
-            
-            if FileManager.default.fileExists(atPath: csvURL.path) {
-                await loadFromCSV(url: csvURL)
-            } else {
-                await loadFromJSON()
-            }
+            // Try to load demo data first for immediate testing
+            await loadFromJSON()
             
             updateStatistics()
             isLoading = false
@@ -356,17 +350,36 @@ class CorrelationTableViewModel: ObservableObject {
     }
     
     private func loadFromJSON() async {
-        let jsonURL = URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json")
+        // Try multiple possible locations for the correlation data
+        let possiblePaths = [
+            // Demo file for immediate testing (smaller, realistic data)
+            URL(fileURLWithPath: "/Users/schoolday/Code_Repositories/StudentAnalysisSystem/Output/demo_correlation_model.json"),
+            // Full correlation model (backup)
+            URL(fileURLWithPath: "/Users/schoolday/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json"),
+            // Relative to current working directory
+            URL(fileURLWithPath: FileManager.default.currentDirectoryPath).appendingPathComponent("Output/demo_correlation_model.json")
+        ]
         
-        guard FileManager.default.fileExists(atPath: jsonURL.path) else {
-            loadingMessage = "Correlation file not found"
+        var jsonURL: URL?
+        var foundPath: String = "No valid paths found"
+        
+        for path in possiblePaths {
+            if FileManager.default.fileExists(atPath: path.path) {
+                jsonURL = path
+                foundPath = path.path
+                break
+            }
+        }
+        
+        guard let validURL = jsonURL else {
+            loadingMessage = "Correlation file not found. Searched: \(possiblePaths.map { $0.path }.joined(separator: ", "))"
             isLoading = false
             return
         }
         
         do {
-            loadingMessage = "Reading JSON data (352 MB)..."
-            let data = try Data(contentsOf: jsonURL)
+            loadingMessage = "Reading JSON data from: \(foundPath)..."
+            let data = try Data(contentsOf: validURL)
             
             loadingMessage = "Parsing correlations..."
             loadingProgress = 0.1
