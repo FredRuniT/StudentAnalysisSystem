@@ -78,96 +78,9 @@ public struct StandardReference: Codable, Equatable {
 
 // MARK: - Scaffolding/Standards Models
 
-/// Represents detailed learning standard with student performance expectations
-public struct LearningStandard: Codable, Equatable {
-    public let subject: String
-    public let grade: String
-    public let domain: String?
-    public let strand: String?
-    public let reportingCategory: String
-    public let standard: StandardDetail
-    public let studentPerformance: StudentPerformance
-    public let relatedKeywords: RelatedKeywords
-    
-    private enum CodingKeys: String, CodingKey {
-        case subject
-        case grade
-        case domain
-        case strand
-        case reportingCategory = "reporting_category"
-        case standard
-        case studentPerformance = "student_performance"
-        case relatedKeywords = "related_keywords"
-    }
-    
-    public init(subject: String, grade: String, domain: String?, strand: String?, 
-                reportingCategory: String, standard: StandardDetail, 
-                studentPerformance: StudentPerformance, relatedKeywords: RelatedKeywords) {
-        self.subject = subject
-        self.grade = grade
-        self.domain = domain
-        self.strand = strand
-        self.reportingCategory = reportingCategory
-        self.standard = standard
-        self.studentPerformance = studentPerformance
-        self.relatedKeywords = relatedKeywords
-    }
-}
-
-/// Details of a specific standard
-public struct StandardDetail: Codable, Equatable {
-    public let id: String
-    public let type: String
-    public let description: String
-    
-    public init(id: String, type: String, description: String) {
-        self.id = id
-        self.type = type
-        self.description = description
-    }
-}
-
-/// Student performance expectations for a standard
-public struct StudentPerformance: Codable, Equatable {
-    public let categories: PerformanceCategories
-    
-    public init(categories: PerformanceCategories) {
-        self.categories = categories
-    }
-}
-
-/// Categories of student performance expectations
-public struct PerformanceCategories: Codable, Equatable {
-    public let knowledge: PerformanceItems
-    public let understanding: PerformanceItems
-    public let skills: PerformanceItems
-    
-    public init(knowledge: PerformanceItems, understanding: PerformanceItems, skills: PerformanceItems) {
-        self.knowledge = knowledge
-        self.understanding = understanding
-        self.skills = skills
-    }
-}
-
-/// Individual performance items within a category
-public struct PerformanceItems: Codable, Equatable {
-    public let label: String?
-    public let items: [String]
-    
-    public init(label: String? = nil, items: [String]) {
-        self.label = label
-        self.items = items
-    }
-}
-
-/// Keywords related to a standard
-public struct RelatedKeywords: Codable, Equatable {
-    public let terms: [String]
-    
-    public init(terms: [String]) {
-        self.terms = terms
-    }
-}
+// LearningStandard and related types are now defined in ScaffoldingModels.swift
+// Using type alias for compatibility
+public typealias LearningStandard = ScaffoldingDocument
 
 // MARK: - Grade Progression Models
 
@@ -231,7 +144,7 @@ public struct LearningFocus {
 }
 
 /// Areas where student needs focus
-public enum FocusArea: String, Codable {
+public enum FocusArea: String, Codable, Sendable {
     case knowledge = "Knowledge Gap"
     case understanding = "Conceptual Understanding"
     case skills = "Skill Application"

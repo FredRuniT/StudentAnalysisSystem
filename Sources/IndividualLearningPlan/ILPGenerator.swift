@@ -1009,7 +1009,7 @@ public actor ILPGenerator {
         let readyForAcceleration: Bool
     }
     
-    private enum TimelineType {
+    internal enum TimelineType {
         case remediation
         case enrichment
     }

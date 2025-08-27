@@ -204,6 +204,9 @@ public enum InterventionType: String, Sendable {
     case enrichment = "Enrichment"
     case practice = "Practice"
     case assessment = "Assessment"
+    case intensiveSupport = "Intensive Support"
+    case targetedIntervention = "Targeted Intervention"
+    case regularSupport = "Regular Support"
 }
 
 // ComponentPair and TestProvider are defined in AnalysisCore
