@@ -52,7 +52,7 @@ struct ContentView: View {
                 case 1:
                     EarlyWarningDashboardView()
                 case 2:
-                    CorrelationAnalysisView()
+                    CorrelationVisualizationView()
                 case 3:
                     StudentReportsView()
                 case 4:
