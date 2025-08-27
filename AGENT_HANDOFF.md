@@ -226,13 +226,137 @@ File: `Tests/AnalysisCoreTests/ScaffoldingModelsTests.swift`
 
 ### 🎯 Next Agent Actions (Priority Order)
 
-#### 1. Implement UI Components for ILP Features (URGENT)
-Create the following SwiftUI views following Apple HIG:
-- `StudentProfileView.swift` - Display student info and generate ILP button
-- `ILPGeneratorView.swift` - Configure and generate ILPs
-- `ILPDetailView.swift` - Display generated ILP with export options
-- `GradeProgressionView.swift` - Visualize grade-to-grade progression
-- `ILPViewModel.swift` - ViewModel to manage ILP generation state
+#### 1. 🚨 GAME-CHANGER: Implement Predictive Correlation View with Instant ILP Generation (TOP PRIORITY)
+
+**THIS IS THE KILLER FEATURE**: We have 623,286 correlations that can predict student struggles years in advance. The backend already does this - we just need to surface it!
+
+##### Create `PredictiveCorrelationView.swift`
+Location: `Sources/StudentAnalysisSystem/Views/PredictiveCorrelationView.swift`
+
+**Core Features:**
+1. **Top Correlations by Reporting Category**
+   - Show the strongest predictors grouped by domain (Operations, Fractions, etc.)
+   - Example: "Students weak in Grade 3 Operations (D1/D2) → 95% likely to struggle with Grade 5 Fractions"
+   - Visual indicators: Red for high correlation (>0.8), Orange for strong (>0.7), Yellow for moderate (>0.5)
+
+2. **Multi-Component Predictors**
+   - Show combinations: "Weak in D1OP + D3NBT = 98% chance of Grade 5 D5NF struggles"
+   - Use intersection analysis to find compound predictors
+   - Highlight the most actionable combinations
+
+3. **Instant ILP Generation Button**
+   - For ANY correlation shown, add "Generate ILP" button
+   - One-click from seeing "this predicts that" to having a full learning plan
+   - Shows confidence level and sample size for transparency
+
+4. **Student-Specific Predictions**
+   - Search/select a student
+   - Instantly see their top 10 predicted future struggles
+   - Color-coded by risk level and timeframe
+
+**Implementation Details:**
+```swift
+struct PredictiveCorrelationView: View {
+    @StateObject private var viewModel = PredictiveCorrelationViewModel()
+    @State private var selectedStudent: StudentAssessmentData?
+    @State private var showingILP = false
+    @State private var generatedILP: IndividualLearningPlan?
+    
+    var body: some View {
+        NavigationSplitView {
+            // Left: Categories/Domains
+            List {
+                ForEach(reportingCategories) { category in
+                    Section(category.name) {
+                        // Top 5 correlations for this category
+                        ForEach(viewModel.topCorrelations(for: category)) { correlation in
+                            CorrelationRow(correlation) {
+                                // Instant ILP generation
+                                generateILP(for: correlation)
+                            }
+                        }
+                    }
+                }
+            }
+        } detail: {
+            // Right: Selected correlation details + ILP preview
+            if let ilp = generatedILP {
+                ILPDetailView(ilp: ilp)
+            } else {
+                CorrelationDetailView(...)
+            }
+        }
+    }
+}
+```
+
+**Backend Integration (Already Available):**
+```swift
+// Get top correlations for a category
+let correlations = correlationEngine.getCorrelationsForComponent(
+    componentKey: "Grade_3_MATH_D1OP",
+    threshold: 0.7
+)
+
+// Instant ILP generation
+let ilp = await ilpGenerator.generateEnhancedILP(
+    student: selectedStudent,
+    correlationModel: correlationModel
+)
+```
+
+**Why This Changes Everything:**
+- Teachers see EXACTLY what will happen without intervention
+- One click from prediction to action plan
+- Uses our existing 623K correlations effectively
+- Makes the data ACTIONABLE, not just informational
+
+**Visual Design Requirements:**
+1. **Correlation Strength Visualization**
+   ```swift
+   // Color coding for correlation strength
+   func correlationColor(_ strength: Double) -> Color {
+       switch abs(strength) {
+       case 0.8...: return .red      // Critical correlation
+       case 0.7..<0.8: return .orange // Strong correlation  
+       case 0.5..<0.7: return .yellow // Moderate correlation
+       default: return .gray          // Weak correlation
+       }
+   }
+   ```
+
+2. **Reporting Category Groups**
+   - Operations & Algebraic Thinking (OA)
+   - Number & Operations Base Ten (NBT)
+   - Fractions (NF)
+   - Measurement & Data (MD)
+   - Geometry (G)
+   - Reading Comprehension (RC)
+   - Language Arts (LA)
+
+3. **Integration with ContentView.swift**
+   - Replace the placeholder CorrelationAnalysisView (line 325-338)
+   - Update navigation tab to "Predictive Analysis" instead of just "Correlations"
+
+**Required ViewModel: `PredictiveCorrelationViewModel.swift`**
+```swift
+@MainActor
+class PredictiveCorrelationViewModel: ObservableObject {
+    @Published var topCorrelationsByCategory: [String: [CorrelationPrediction]] = [:]
+    @Published var selectedStudent: StudentAssessmentData?
+    @Published var studentPredictions: [FuturePrediction] = []
+    @Published var isGeneratingILP = false
+    
+    private let correlationEngine: ComponentCorrelationEngine
+    private let ilpGenerator: ILPGenerator
+    
+    func loadTopCorrelations() async
+    func generateILPForCorrelation(_ correlation: CorrelationPrediction) async -> IndividualLearningPlan
+    func loadStudentPredictions(_ student: StudentAssessmentData) async
+}
+```
+
+#### 2. Original ILP UI Components (Now Secondary)
 
 #### 2. Fix Test Compilation Issues
 ```swift
