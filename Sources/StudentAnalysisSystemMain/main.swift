@@ -326,11 +326,15 @@ actor SystemAnalyzer {
             for (targetIndex, targetComponent) in componentsArray.enumerated() where sourceIndex != targetIndex {
                 // Get correlation from matrix using indices
                 if let correlation = matrix[sourceIndex, targetIndex] {
+                    // Calculate actual confidence level (1 - p-value gives us confidence)
+                    // For very small p-values, confidence approaches 1.0
+                    let confidenceLevel = correlation.isSignificant ? (1.0 - correlation.pValue) : correlation.pValue
+                    
                     correlations.append(
                         ComponentCorrelation(
                             target: targetComponent,
                             correlation: correlation.pearsonR,
-                            confidence: correlation.confidenceInterval.upper - correlation.confidenceInterval.lower,
+                            confidence: min(1.0, max(0.0, confidenceLevel)),
                             sampleSize: correlation.sampleSize
                         )
                     )

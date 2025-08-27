@@ -148,8 +148,25 @@ struct CorrelationTableView: View {
             .width(min: 100, ideal: 120)
             
             TableColumn("Confidence", value: \.confidence) { row in
-                Text(String(format: "%.1f%%", row.confidence * 100))
-                    .foregroundColor(row.confidence > 0.8 ? .green : row.confidence > 0.6 ? .orange : .red)
+                HStack(spacing: 4) {
+                    // Show significance indicator
+                    if row.confidence > 0.99 {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.purple)
+                            .font(.caption2)
+                            .help("p < 0.01 - Highly Significant")
+                    } else if row.confidence > 0.95 {
+                        Image(systemName: "star")
+                            .foregroundColor(.green)
+                            .font(.caption2)
+                            .help("p < 0.05 - Significant")
+                    }
+                    
+                    Text(String(format: "%.1f%%", row.confidence * 100))
+                        .foregroundColor(row.confidence > 0.99 ? .purple : 
+                                       row.confidence > 0.95 ? .green : 
+                                       row.confidence > 0.90 ? .blue : .orange)
+                }
             }
             .width(min: 80, ideal: 100)
             

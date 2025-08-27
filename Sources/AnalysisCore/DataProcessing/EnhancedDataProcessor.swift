@@ -300,10 +300,47 @@ public actor EnhancedDataProcessor {
         let lowerR = (exp(2 * lowerZ) - 1) / (exp(2 * lowerZ) + 1)
         let upperR = (exp(2 * upperZ) - 1) / (exp(2 * upperZ) + 1)
         
-        // Confidence is based on interval width
-        let intervalWidth = upperR - lowerR
-        let confidence = max(0, min(1, 1 - intervalWidth))
-        return confidence.isNaN ? 0.0 : confidence
+        // Calculate statistical confidence based on sample size and correlation strength
+        // For high correlations with reasonable sample size, confidence should be high
+        
+        // Calculate t-statistic for the correlation
+        let tStatistic: Double
+        if abs(correlation) >= 0.999 {
+            // Near-perfect correlation
+            tStatistic = correlation > 0 ? 100.0 : -100.0
+        } else {
+            let denominator = sqrt(1 - correlation * correlation)
+            if denominator > 0 {
+                tStatistic = correlation * sqrt(Double(sampleSize - 2)) / denominator
+            } else {
+                tStatistic = correlation > 0 ? 100.0 : -100.0
+            }
+        }
+        
+        // Convert t-statistic to approximate p-value
+        // Using simplified approximation for two-tailed test
+        let degreesOfFreedom = sampleSize - 2
+        let absT = abs(tStatistic)
+        
+        // Simplified p-value approximation
+        let pValue: Double
+        if absT > 10 {
+            pValue = 0.0001  // Very significant
+        } else if absT > 5 {
+            pValue = 0.001
+        } else if absT > 3.5 {
+            pValue = 0.01
+        } else if absT > 2.5 {
+            pValue = 0.05
+        } else if absT > 2 {
+            pValue = 0.1
+        } else {
+            pValue = 0.5
+        }
+        
+        // Confidence level is 1 - p-value
+        let confidence = 1.0 - pValue
+        return confidence.isNaN ? 0.95 : confidence
     }
 }
 
