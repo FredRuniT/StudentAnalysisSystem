@@ -158,7 +158,7 @@ class CorrelationDataLoader: ObservableObject {
                     if target.grade > source.grade && correlationValue > 0.7 {
                         let key = "\(source.grade)-\(target.grade)-\(source.subject)"
                         
-                        if var existing = crossGradeMap[key] {
+                        if let existing = crossGradeMap[key] {
                             let newCount = existing.count + 1
                             let newAvg = (existing.averageCorrelation * Double(existing.count) + correlationValue) / Double(newCount)
                             

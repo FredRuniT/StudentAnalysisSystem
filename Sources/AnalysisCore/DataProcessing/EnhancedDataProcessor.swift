@@ -297,8 +297,8 @@ public actor EnhancedDataProcessor {
         let upperZ = z + zCritical * se
         
         // Convert back to correlation scale
-        let lowerR = (exp(2 * lowerZ) - 1) / (exp(2 * lowerZ) + 1)
-        let upperR = (exp(2 * upperZ) - 1) / (exp(2 * upperZ) + 1)
+        let _ = (exp(2 * lowerZ) - 1) / (exp(2 * lowerZ) + 1) // lowerR
+        let _ = (exp(2 * upperZ) - 1) / (exp(2 * upperZ) + 1) // upperR
         
         // Calculate statistical confidence based on sample size and correlation strength
         // For high correlations with reasonable sample size, confidence should be high
@@ -319,7 +319,7 @@ public actor EnhancedDataProcessor {
         
         // Convert t-statistic to approximate p-value
         // Using simplified approximation for two-tailed test
-        let degreesOfFreedom = sampleSize - 2
+        let _ = sampleSize - 2 // degreesOfFreedom
         let absT = abs(tStatistic)
         
         // Simplified p-value approximation
