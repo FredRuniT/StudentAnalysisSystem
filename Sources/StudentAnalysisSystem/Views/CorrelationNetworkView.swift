@@ -1,15 +1,16 @@
-import SwiftUI
-import Foundation
 import AnalysisCore
+import AppKit
+import Foundation
 import ReportGeneration
+import SwiftUI
 
 #if canImport(AppKit)
-import AppKit
 #endif
 
 /// Main correlation network visualization view
 @MainActor
 public struct CorrelationNetworkView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var networkProcessor = CorrelationNetworkProcessor()
     @StateObject private var forceSimulation = ForceDirectedLayout()
     
@@ -31,7 +32,7 @@ public struct CorrelationNetworkView: View {
     public init() {}
     
     public var body: some View {
-        NavigationView {
+        NavigationStack {
             HStack(spacing: 0) {
                 // Filters sidebar
                 if showingFilters {
@@ -65,8 +66,10 @@ public struct CorrelationNetworkView: View {
                                 )
                             )
                             .onTapGesture { location in
+        .accessibilityAddTraits(.isButton)
                                 handleCanvasTap(at: location, canvasSize: geometry.size)
                             }
+                            .accessibilityAddTraits(.isButton)
                             
                             // Legend overlay
                             if showingLegend {
@@ -81,11 +84,11 @@ public struct CorrelationNetworkView: View {
                             VStack(alignment: .trailing, spacing: 4) {
                                 Text("FPS: \(frameRate, specifier: "%.1f")")
                                     .font(.system(.caption, design: .monospaced))
-                                    .foregroundColor(frameRate < 30 ? .red : frameRate < 45 ? .orange : .green)
+                                    .foregroundColor(frameRate < 30 ? AppleDesignSystem.SystemPalette.red : frameRate < 45 ? AppleDesignSystem.SystemPalette.orange : AppleDesignSystem.SystemPalette.green)
                                 
                                 Text(networkProcessor.filterSummary)
                                     .font(.system(.caption2, design: .monospaced))
-                                    .foregroundColor(.secondary)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                             }
                             .padding(.trailing)
                             .padding(.top, 8)
@@ -103,6 +106,7 @@ public struct CorrelationNetworkView: View {
                 NodeDetailView(component: selectedNode, processor: networkProcessor)
             }
         }
+        .themed()
     }
     
     // MARK: - Subviews
@@ -110,7 +114,7 @@ public struct CorrelationNetworkView: View {
     private var filterSidebar: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Network Filters")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .padding(.horizontal)
             
             ScrollView {
@@ -390,7 +394,7 @@ private struct CorrelationNetworkCanvas: View {
             )
             
             let nodePath = Circle().path(in: nodeRect)
-            let nodeColor = Color(hex: node.subjectColor) ?? .blue
+            let nodeColor = Color(hex: node.subjectColor) ?? AppleDesignSystem.SystemPalette.blue
             
             // Draw node fill
             context.fill(nodePath, with: .color(nodeColor))
@@ -421,7 +425,7 @@ private struct CorrelationNetworkCanvas: View {
         context.draw(
             Text(label)
                 .font(.system(size: 9, weight: .medium))
-                .foregroundColor(.primary),
+                .foregroundColor(AppleDesignSystem.SystemColors.label),
             in: labelRect
         )
     }
@@ -473,27 +477,3 @@ private struct CorrelationNetworkCanvas: View {
     }
 }
 
-// MARK: - Color Extension
-
-extension Color {
-    init?(hex: String) {
-        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
-        var int: UInt64 = 0
-        Scanner(string: hex).scanHexInt64(&int)
-        let r, g, b: UInt64
-        switch hex.count {
-        case 6: // RGB
-            (r, g, b) = ((int >> 16) & 0xFF, (int >> 8) & 0xFF, int & 0xFF)
-        default:
-            return nil
-        }
-        
-        self.init(
-            .sRGB,
-            red: Double(r) / 255,
-            green: Double(g) / 255,
-            blue:  Double(b) / 255,
-            opacity: 1
-        )
-    }
-}

@@ -1,9 +1,10 @@
-import SwiftUI
 import AnalysisCore
-import IndividualLearningPlan
 import Charts
+import IndividualLearningPlan
+import SwiftUI
 
 struct ILPDetailView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     let ilp: IndividualLearningPlan
     @State private var selectedTab = 0
     @State private var showingExportSheet = false
@@ -72,6 +73,7 @@ struct ILPDetailView: View {
             ExportOptionsSheet(ilp: ilp)
                 .frame(width: 400, height: 300)
         }
+        .themed()
     }
     
     // MARK: - Header Section
@@ -81,7 +83,7 @@ struct ILPDetailView: View {
             // Student info
             VStack(alignment: .leading, spacing: 8) {
                 Text(ilp.studentName)
-                    .font(.title2)
+                    .font(AppleDesignSystem.Typography.title2)
                     .bold()
                 
                 HStack(spacing: 16) {
@@ -90,7 +92,7 @@ struct ILPDetailView: View {
                     Label(ilp.planType.rawValue.capitalized, systemImage: planTypeIcon)
                         .foregroundStyle(planTypeColor)
                 }
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
                 .foregroundStyle(.secondary)
             }
             
@@ -99,12 +101,12 @@ struct ILPDetailView: View {
             // Plan metadata
             VStack(alignment: .trailing, spacing: 8) {
                 Text("Created: \(ilp.createdDate, format: .dateTime.month().day().year())")
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                     .foregroundStyle(.secondary)
                 
                 if let targetDate = ilp.targetCompletionDate {
                     Text("Target: \(targetDate, format: .dateTime.month().day().year())")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(.secondary)
                 }
             }
@@ -121,21 +123,21 @@ struct ILPDetailView: View {
             GroupBox {
                 VStack(alignment: .leading, spacing: 12) {
                     Label("Performance Summary", systemImage: "chart.bar.xaxis")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     if !ilp.performanceSummary.isEmpty {
                         ForEach(ilp.performanceSummary, id: \.self) { summary in
                             HStack(alignment: .top) {
                                 Image(systemName: "chevron.right.circle.fill")
-                                    .foregroundStyle(.blue)
+                                    .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                                     .imageScale(.small)
                                 Text(summary)
-                                    .font(.subheadline)
+                                    .font(AppleDesignSystem.Typography.subheadline)
                             }
                         }
                     } else {
                         Text("No performance summary available")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -147,7 +149,7 @@ struct ILPDetailView: View {
                 GroupBox {
                     VStack(alignment: .leading, spacing: 12) {
                         Label("Priority Focus Areas", systemImage: "target")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                         
                         LazyVGrid(columns: [
                             GridItem(.flexible()),
@@ -166,35 +168,35 @@ struct ILPDetailView: View {
             GroupBox {
                 VStack(alignment: .leading, spacing: 12) {
                     Label("Plan Statistics", systemImage: "chart.pie")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     HStack(spacing: 20) {
                         ILPStatCard(
                             title: "Objectives",
                             value: "\(ilp.learningObjectives.count)",
                             icon: "list.bullet",
-                            color: .blue
+                            color: AppleDesignSystem.SystemPalette.blue
                         )
                         
                         ILPStatCard(
                             title: "Interventions",
                             value: "\(ilp.interventionStrategies.count)",
                             icon: "lightbulb",
-                            color: .orange
+                            color: AppleDesignSystem.SystemPalette.orange
                         )
                         
                         ILPStatCard(
                             title: "Milestones",
                             value: "\(ilp.milestones.count)",
                             icon: "flag",
-                            color: .green
+                            color: AppleDesignSystem.SystemPalette.green
                         )
                         
                         ILPStatCard(
                             title: "Timeline",
                             value: "\(ilp.timeline?.phases.count ?? 0) phases",
                             icon: "calendar",
-                            color: .purple
+                            color: AppleDesignSystem.SystemPalette.purple
                         )
                     }
                 }
@@ -216,7 +218,7 @@ struct ILPDetailView: View {
                             Text(category)
                                 .padding(.horizontal, 12)
                                 .padding(.vertical, 6)
-                                .background(selectedObjectiveCategory == category ? Color.blue : Color(NSColor.controlBackgroundColor))
+                                .background(selectedObjectiveCategory == category ? AppleDesignSystem.SystemPalette.blue : Color(NSColor.controlBackgroundColor))
                                 .foregroundStyle(selectedObjectiveCategory == category ? .white : .primary)
                                 .clipShape(Capsule())
                         }
@@ -308,10 +310,10 @@ struct ILPDetailView: View {
             GroupBox {
                 VStack(alignment: .leading, spacing: 12) {
                     Label("Progress Tracking", systemImage: "chart.line.uptrend.xyaxis")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     Text("Progress tracking will be available after the first evaluation period")
-                        .font(.subheadline)
+                        .font(AppleDesignSystem.Typography.subheadline)
                         .foregroundStyle(.secondary)
                     
                     // Placeholder progress chart
@@ -324,7 +326,7 @@ struct ILPDetailView: View {
                                     .imageScale(.large)
                                     .foregroundStyle(.secondary)
                                 Text("Progress data will appear here")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .foregroundStyle(.secondary)
                             }
                         )
@@ -337,25 +339,25 @@ struct ILPDetailView: View {
                 GroupBox {
                     VStack(alignment: .leading, spacing: 12) {
                         Label("Evaluation Schedule", systemImage: "calendar")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                         
                         ForEach(timeline.phases) { phase in
                             HStack {
                                 Image(systemName: "calendar.badge.clock")
-                                    .foregroundStyle(.blue)
+                                    .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                                 
                                 VStack(alignment: .leading) {
                                     Text(phase.name)
-                                        .font(.subheadline)
+                                        .font(AppleDesignSystem.Typography.subheadline)
                                     Text("\(phase.startDate, format: .dateTime.month().day()) - \(phase.endDate, format: .dateTime.month().day())")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                         .foregroundStyle(.secondary)
                                 }
                                 
                                 Spacer()
                                 
                                 Text("\(phase.activities.count) activities")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .foregroundStyle(.secondary)
                             }
                             .padding(.vertical, 4)
@@ -380,9 +382,9 @@ struct ILPDetailView: View {
     
     private var planTypeColor: Color {
         switch ilp.planType {
-        case .auto: return .blue
-        case .remediation: return .orange
-        case .enrichment: return .green
+        case .auto: return AppleDesignSystem.SystemPalette.blue
+        case .remediation: return AppleDesignSystem.SystemPalette.orange
+        case .enrichment: return AppleDesignSystem.SystemPalette.green
         }
     }
     
@@ -437,9 +439,9 @@ struct FocusAreaDetailCard: View {
                 
                 VStack(alignment: .leading) {
                     Text(area.subject)
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     Text(area.description)
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(.secondary)
                         .lineLimit(2)
                 }
@@ -448,10 +450,10 @@ struct FocusAreaDetailCard: View {
                 
                 VStack(alignment: .trailing) {
                     Text("\(Int(area.severity * 100))%")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                         .foregroundStyle(severityColor(area.severity))
                     Text("severity")
-                        .font(.caption2)
+                        .font(AppleDesignSystem.Typography.caption2)
                         .foregroundStyle(.secondary)
                 }
             }
@@ -460,7 +462,7 @@ struct FocusAreaDetailCard: View {
                 HStack {
                     ForEach(area.components.prefix(3), id: \.self) { component in
                         Text(component)
-                            .font(.caption2)
+                            .font(AppleDesignSystem.Typography.caption2)
                             .padding(.horizontal, 6)
                             .padding(.vertical, 2)
                             .background(Color(NSColor.controlBackgroundColor))
@@ -469,7 +471,7 @@ struct FocusAreaDetailCard: View {
                     
                     if area.components.count > 3 {
                         Text("+\(area.components.count - 3)")
-                            .font(.caption2)
+                            .font(AppleDesignSystem.Typography.caption2)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -482,10 +484,10 @@ struct FocusAreaDetailCard: View {
     
     private func severityColor(_ severity: Double) -> Color {
         switch severity {
-        case 0.8...: return .red
-        case 0.6..<0.8: return .orange
-        case 0.4..<0.6: return .yellow
-        default: return .green
+        case 0.8...: return AppleDesignSystem.SystemPalette.red
+        case 0.6..<0.8: return AppleDesignSystem.SystemPalette.orange
+        case 0.4..<0.6: return AppleDesignSystem.SystemPalette.yellow
+        default: return AppleDesignSystem.SystemPalette.green
         }
     }
     
@@ -513,11 +515,11 @@ struct ILPStatCard: View {
                 .imageScale(.large)
             
             Text(value)
-                .font(.title3)
+                .font(AppleDesignSystem.Typography.title3)
                 .bold()
             
             Text(title)
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
                 .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity)
@@ -535,15 +537,15 @@ struct LearningObjectiveCard: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Image(systemName: "checkmark.circle")
-                    .foregroundStyle(.blue)
+                    .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                 
                 VStack(alignment: .leading) {
                     Text(objective.description)
-                        .font(.subheadline)
+                        .font(AppleDesignSystem.Typography.subheadline)
                     
                     if let standard = objective.standard {
                         Text("Standard: \(standard)")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -565,11 +567,11 @@ struct LearningObjectiveCard: View {
                         if let knowledge = expectations.knowledge, !knowledge.isEmpty {
                             VStack(alignment: .leading) {
                                 Text("Knowledge")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .bold()
                                 ForEach(knowledge, id: \.self) { item in
                                     Text("• \(item)")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                             }
                         }
@@ -577,11 +579,11 @@ struct LearningObjectiveCard: View {
                         if let understanding = expectations.understanding, !understanding.isEmpty {
                             VStack(alignment: .leading) {
                                 Text("Understanding")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .bold()
                                 ForEach(understanding, id: \.self) { item in
                                     Text("• \(item)")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                             }
                         }
@@ -589,11 +591,11 @@ struct LearningObjectiveCard: View {
                         if let skills = expectations.skills, !skills.isEmpty {
                             VStack(alignment: .leading) {
                                 Text("Skills")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .bold()
                                 ForEach(skills, id: \.self) { item in
                                     Text("• \(item)")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                             }
                         }
@@ -619,9 +621,9 @@ struct InterventionStrategyCard: View {
                 
                 VStack(alignment: .leading) {
                     Text("Tier \(strategy.tier.rawValue) Intervention")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     Text("Focus: \(strategy.focus.joined(separator: ", "))")
-                        .font(.subheadline)
+                        .font(AppleDesignSystem.Typography.subheadline)
                         .foregroundStyle(.secondary)
                         .lineLimit(2)
                 }
@@ -630,14 +632,14 @@ struct InterventionStrategyCard: View {
                 
                 VStack(alignment: .trailing) {
                     Text(strategy.frequency)
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .padding(.horizontal, 8)
                         .padding(.vertical, 4)
                         .background(Color(NSColor.controlBackgroundColor))
                         .clipShape(Capsule())
                     
                     Text(strategy.duration)
-                        .font(.caption2)
+                        .font(AppleDesignSystem.Typography.caption2)
                         .foregroundStyle(.secondary)
                 }
             }
@@ -649,7 +651,7 @@ struct InterventionStrategyCard: View {
                     if !strategy.instructionalApproach.isEmpty {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Approaches:")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .bold()
                             
                             ForEach(strategy.instructionalApproach, id: \.self) { approach in
@@ -658,7 +660,7 @@ struct InterventionStrategyCard: View {
                                         .imageScale(.small)
                                         .foregroundStyle(.secondary)
                                     Text(approach)
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                             }
                         }
@@ -667,7 +669,7 @@ struct InterventionStrategyCard: View {
                     if !strategy.materials.isEmpty {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Materials:")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .bold()
                             
                             ForEach(strategy.materials.prefix(3), id: \.self) { material in
@@ -676,7 +678,7 @@ struct InterventionStrategyCard: View {
                                         .imageScale(.small)
                                         .foregroundStyle(.secondary)
                                     Text(material)
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                             }
                         }
@@ -686,13 +688,13 @@ struct InterventionStrategyCard: View {
             
             HStack {
                 Label("Group: \(strategy.groupSize)", systemImage: "person.3")
-                    .font(.caption2)
+                    .font(AppleDesignSystem.Typography.caption2)
                     .foregroundStyle(.secondary)
                 
                 Spacer()
                 
                 Label(strategy.progressMonitoring, systemImage: "chart.line.uptrend.xyaxis")
-                    .font(.caption2)
+                    .font(AppleDesignSystem.Typography.caption2)
                     .foregroundStyle(.secondary)
             }
         }
@@ -703,9 +705,9 @@ struct InterventionStrategyCard: View {
     
     private func tierColor(_ tier: InterventionStrategy.InterventionTier) -> Color {
         switch tier {
-        case .intensive: return .red
-        case .strategic: return .orange
-        case .universal: return .blue
+        case .intensive: return AppleDesignSystem.SystemPalette.red
+        case .strategic: return AppleDesignSystem.SystemPalette.orange
+        case .universal: return AppleDesignSystem.SystemPalette.blue
         }
     }
 }
@@ -719,13 +721,13 @@ struct MilestoneCard: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Image(systemName: "flag.fill")
-                    .foregroundStyle(.green)
+                    .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                 
                 VStack(alignment: .leading) {
                     Text(milestone.title)
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     Text("Target: \(milestone.targetDate, format: .dateTime.month().day().year())")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(.secondary)
                 }
                 
@@ -743,7 +745,7 @@ struct MilestoneCard: View {
                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Success Criteria:")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .bold()
                     
                     ForEach(milestone.criteria, id: \.self) { criterion in
@@ -752,13 +754,13 @@ struct MilestoneCard: View {
                                 .foregroundStyle(.secondary)
                                 .imageScale(.small)
                             Text(criterion)
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                         }
                     }
                     
                     if !milestone.assessmentMethods.isEmpty {
                         Text("Assessment Methods:")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                             .bold()
                             .padding(.top, 4)
                         
@@ -768,7 +770,7 @@ struct MilestoneCard: View {
                                     .foregroundStyle(.secondary)
                                     .imageScale(.small)
                                 Text(method)
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                             }
                         }
                     }
@@ -799,15 +801,16 @@ struct TimelineView: View {
                     ForEach(Array(milestones.enumerated()), id: \.element.id) { index, milestone in
                         VStack {
                             Circle()
-                                .fill(Color.green)
+                                .fill(AppleDesignSystem.SystemPalette.green)
                                 .frame(width: 12, height: 12)
                             
                             Text(milestone.title)
-                                .font(.caption2)
+                                .font(AppleDesignSystem.Typography.caption2)
                                 .lineLimit(1)
+        .truncationMode(.tail)
                             
                             Text(milestone.targetDate, format: .dateTime.month().day())
-                                .font(.caption2)
+                                .font(AppleDesignSystem.Typography.caption2)
                                 .foregroundStyle(.secondary)
                         }
                         .frame(maxWidth: .infinity)

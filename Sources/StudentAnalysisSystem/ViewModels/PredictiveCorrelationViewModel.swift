@@ -1,8 +1,8 @@
-import SwiftUI
 import AnalysisCore
-import StatisticalEngine
-import PredictiveModeling
 import IndividualLearningPlan
+import PredictiveModeling
+import StatisticalEngine
+import SwiftUI
 
 @MainActor
 class PredictiveCorrelationViewModel: ObservableObject {
@@ -37,18 +37,16 @@ class PredictiveCorrelationViewModel: ObservableObject {
     
     private func setupServices() {
         Task {
-            do {
-                // Initialize correlation engine
-                correlationEngine = ComponentCorrelationEngine()
-                
-                // Initialize ILP generator
-                ilpGenerator = ILPGenerator()
-                
-                // Load correlation model if it exists
-                await loadCorrelationModel()
-            } catch {
-                print("Error setting up services: \(error)")
-            }
+            // Use ServiceContainer for proper dependency injection
+            let serviceContainer = ServiceContainer.shared
+            await serviceContainer.initializeServices()
+            
+            // Get services from container
+            correlationEngine = serviceContainer.correlationEngine
+            ilpGenerator = serviceContainer.ilpGenerator
+            
+            // Load correlation model if it exists
+            await loadCorrelationModel()
         }
     }
     
@@ -116,24 +114,25 @@ class PredictiveCorrelationViewModel: ObservableObject {
         var predictions: [CorrelationPrediction] = []
         
         // Search through correlation matrix
-        for (key, correlation) in model.correlations {
-            if key.contains(componentKey) && abs(correlation.coefficient) >= minimumCorrelationStrength {
-                let components = key.split(separator: "_").map(String.init)
-                if components.count >= 2 {
-                    // Parse the correlation key to extract source and target
-                    let sourceComponent = components[0]
-                    let targetComponent = components[1]
+        for correlationMap in model.correlations {
+            let sourceKey = "\(correlationMap.sourceComponent.grade)_\(correlationMap.sourceComponent.subject)_\(correlationMap.sourceComponent.component)"
+            
+            for correlation in correlationMap.correlations {
+                let targetKey = "\(correlation.target.grade)_\(correlation.target.subject)_\(correlation.target.component)"
+                
+                if (sourceKey.contains(componentKey) || targetKey.contains(componentKey)) && 
+                   abs(correlation.correlation) >= minimumCorrelationStrength {
                     
                     // Create prediction
                     let prediction = CorrelationPrediction(
-                        id: key,
-                        sourceComponent: sourceComponent,
-                        targetComponent: targetComponent,
-                        sourceGrade: extractGrade(from: sourceComponent),
-                        targetGrade: extractGrade(from: targetComponent),
-                        correlationStrength: correlation.coefficient,
-                        confidence: correlation.confidence ?? 0,
-                        pValue: correlation.pValue,
+                        id: "\(sourceKey)_to_\(targetKey)",
+                        sourceComponent: sourceKey,
+                        targetComponent: targetKey,
+                        sourceGrade: correlationMap.sourceComponent.grade,
+                        targetGrade: correlation.target.grade,
+                        correlationStrength: correlation.correlation,
+                        confidence: correlation.confidence,
+                        pValue: 0.05, // Default since not in model
                         sampleSize: correlation.sampleSize
                     )
                     
@@ -155,10 +154,11 @@ class PredictiveCorrelationViewModel: ObservableObject {
     }
     
     func generateILPForCorrelation(_ correlation: CorrelationPrediction) async -> IndividualLearningPlan? {
-        guard let generator = ilpGenerator,
-              let student = selectedStudent ?? createSampleStudent() else {
+        guard let generator = ilpGenerator else {
             return nil
         }
+        
+        let student = selectedStudent ?? createSampleStudent()
         
         await MainActor.run {
             isGeneratingILP = true
@@ -166,11 +166,16 @@ class PredictiveCorrelationViewModel: ObservableObject {
         
         do {
             // Generate ILP using the correlation data
+            guard let model = correlationModel else {
+                print("No correlation model available")
+                await MainActor.run { isGeneratingILP = false }
+                return nil
+            }
+            
             let ilp = try await generator.generateILP(
-                for: student,
-                planType: .remediation,
-                useBlueprints: true,
-                includeGradeProgression: true
+                student: student,
+                correlationModel: model,
+                historicalData: nil
             )
             
             await MainActor.run {
@@ -196,24 +201,28 @@ class PredictiveCorrelationViewModel: ObservableObject {
         
         var predictions: [FuturePrediction] = []
         
-        // Analyze student's weak areas
-        let weakComponents = student.components.filter { $0.scaledScore < 650 }
-        
-        for weakComponent in weakComponents {
-            // Find correlations for this weak component
-            if let correlations = findTopCorrelations(for: weakComponent.componentKey, in: model) {
-                for correlation in correlations.prefix(3) {
-                    let prediction = FuturePrediction(
-                        id: UUID().uuidString,
-                        student: student,
-                        currentWeakness: weakComponent.componentKey,
-                        predictedStruggle: correlation.targetComponent,
-                        predictedGrade: correlation.targetGrade,
-                        likelihood: abs(correlation.correlationStrength),
-                        confidence: correlation.confidence,
-                        timeframe: "\(correlation.targetGrade - extractGrade(from: weakComponent.componentKey)) year(s)"
-                    )
-                    predictions.append(prediction)
+        // Analyze student's weak areas using assessment data
+        for assessment in student.assessments {
+            for (componentKey, score) in assessment.componentScores {
+                // Consider scores below 650 as weak areas (typical proficiency threshold)
+                if score < 650 {
+                    // Find correlations for this weak component
+                    let componentId = "Grade_\(student.grade)_\(assessment.subject)_\(componentKey)"
+                    if let correlations = findTopCorrelations(for: componentId, in: model) {
+                        for correlation in correlations.prefix(3) {
+                            let prediction = FuturePrediction(
+                                id: UUID().uuidString,
+                                student: student,
+                                currentWeakness: componentId,
+                                predictedStruggle: correlation.targetComponent,
+                                predictedGrade: correlation.targetGrade,
+                                likelihood: abs(correlation.correlationStrength),
+                                confidence: correlation.confidence,
+                                timeframe: "\(correlation.targetGrade - student.grade) year(s)"
+                            )
+                            predictions.append(prediction)
+                        }
+                    }
                 }
             }
         }
@@ -228,27 +237,29 @@ class PredictiveCorrelationViewModel: ObservableObject {
     
     private func createSampleStudent() -> StudentAssessmentData {
         // Create a sample student for demonstration
-        StudentAssessmentData(
+        let studentInfo = StudentAssessmentData.StudentInfo(
             msis: "SAMPLE001",
-            lastName: "Sample",
-            firstName: "Student",
-            testGrade: 5,
-            testYear: 2025,
-            schoolYear: "2024-2025",
-            districtName: "Sample District",
-            schoolName: "Sample School",
-            components: []
+            name: "Sample Student", 
+            school: "Sample School",
+            district: "Sample District"
+        )
+        
+        return StudentAssessmentData(
+            studentInfo: studentInfo,
+            year: 2025,
+            grade: 5,
+            assessments: []
         )
     }
     
     func correlationColor(_ strength: Double) -> Color {
         switch abs(strength) {
         case 0.8...:
-            return .red      // Critical correlation
+            return AppleDesignSystem.SystemPalette.red      // Critical correlation
         case 0.7..<0.8:
-            return .orange   // Strong correlation
+            return AppleDesignSystem.SystemPalette.orange   // Strong correlation
         case 0.5..<0.7:
-            return .yellow   // Moderate correlation
+            return AppleDesignSystem.SystemPalette.yellow   // Moderate correlation
         default:
             return .gray     // Weak correlation
         }
@@ -327,13 +338,13 @@ struct FuturePrediction: Identifiable {
     var riskColor: Color {
         switch likelihood {
         case 0.9...:
-            return .red
+            return AppleDesignSystem.SystemPalette.red
         case 0.8..<0.9:
-            return .orange
+            return AppleDesignSystem.SystemPalette.orange
         case 0.7..<0.8:
-            return .yellow
+            return AppleDesignSystem.SystemPalette.yellow
         default:
-            return .green
+            return AppleDesignSystem.SystemPalette.green
         }
     }
 }

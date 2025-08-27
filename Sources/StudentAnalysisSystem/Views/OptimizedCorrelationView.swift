@@ -1,8 +1,9 @@
-import SwiftUI
-import Charts
 import AnalysisCore
+import Charts
+import SwiftUI
 
 struct OptimizedCorrelationView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var dataLoader = CorrelationDataLoader()
     @State private var selectedVisualization = "Top Correlations"
     @State private var selectedSubject = "All"
@@ -37,20 +38,21 @@ struct OptimizedCorrelationView: View {
         .task {
             await dataLoader.loadCorrelationsOptimized()
         }
+        .themed()
     }
     
     var loadingView: some View {
         VStack(spacing: 20) {
             ProgressView(value: dataLoader.loadingProgress) {
                 Text(dataLoader.loadingMessage)
-                    .font(.headline)
+                    .font(AppleDesignSystem.Typography.headline)
             }
             .progressViewStyle(LinearProgressViewStyle())
             .frame(width: 400)
             
             Text("Processing \(formatNumber(623286)) correlations...")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
@@ -63,17 +65,17 @@ struct OptimizedCorrelationView: View {
             
             HStack {
                 Text("Analyzing \(formatNumber(623286)) correlations across \(formatNumber(1117)) components")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.subheadline)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                 
                 Spacer()
                 
                 if !dataLoader.isLoading {
                     Text("Loaded: \(dataLoader.topCorrelations.count) correlations")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .padding(.horizontal, 8)
                         .padding(.vertical, 4)
-                        .background(Color.green.opacity(0.2))
+                        .background(AppleDesignSystem.SystemPalette.green.opacity(0.2))
                         .cornerRadius(4)
                 }
             }
@@ -113,7 +115,7 @@ struct OptimizedCorrelationView: View {
                 
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Min: \(minimumCorrelation, specifier: "%.2f")")
-                        .font(.caption2)
+                        .font(AppleDesignSystem.Typography.caption2)
                     Slider(value: $minimumCorrelation, in: 0.3...1.0, step: 0.05)
                         .frame(width: 100)
                 }
@@ -156,7 +158,7 @@ struct OptimizedCorrelationView: View {
     func topCorrelationsChart(data: [CorrelationDataLoader.CorrelationPair]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Top \(min(data.count, 30)) Strongest Correlations")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .padding(.horizontal)
             
             if !data.isEmpty {
@@ -172,7 +174,7 @@ struct OptimizedCorrelationView: View {
                 .padding()
             } else {
                 Text("No correlations match the current filters")
-                    .foregroundColor(.secondary)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .padding()
             }
@@ -182,7 +184,7 @@ struct OptimizedCorrelationView: View {
     var crossGradePatterns: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Cross-Grade Predictive Patterns")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .padding(.horizontal)
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -191,23 +193,23 @@ struct OptimizedCorrelationView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
                                 Text("Grade \(pattern.earlyGrade)")
-                                    .font(.caption)
-                                    .padding(4)
-                                    .background(Color.blue.opacity(0.2))
+                                    .font(AppleDesignSystem.Typography.caption)
+                                    .padding(AppleDesignSystem.Spacing.xs)
+                                    .background(AppleDesignSystem.SystemPalette.blue.opacity(0.2))
                                     .cornerRadius(4)
                                 
                                 Image(systemName: "arrow.right")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                 
                                 Text("Grade \(pattern.laterGrade)")
-                                    .font(.caption)
-                                    .padding(4)
-                                    .background(Color.green.opacity(0.2))
+                                    .font(AppleDesignSystem.Typography.caption)
+                                    .padding(AppleDesignSystem.Spacing.xs)
+                                    .background(AppleDesignSystem.SystemPalette.green.opacity(0.2))
                                     .cornerRadius(4)
                             }
                             
                             Text(pattern.subject)
-                                .font(.caption2)
+                                .font(AppleDesignSystem.Typography.caption2)
                                 .fontWeight(.medium)
                             
                             HStack(spacing: 4) {
@@ -215,12 +217,12 @@ struct OptimizedCorrelationView: View {
                                     .fill(correlationColor(pattern.averageCorrelation))
                                     .frame(width: 8, height: 8)
                                 Text(String(format: "%.3f", pattern.averageCorrelation))
-                                    .font(.caption2)
+                                    .font(AppleDesignSystem.Typography.caption2)
                             }
                             
                             Text("\(pattern.count) correlations")
-                                .font(.caption2)
-                                .foregroundColor(.secondary)
+                                .font(AppleDesignSystem.Typography.caption2)
+                                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                         }
                         .padding()
                         .frame(width: 150)
@@ -237,7 +239,7 @@ struct OptimizedCorrelationView: View {
     func predictivePathways(data: [CorrelationDataLoader.CorrelationPair]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Predictive Learning Pathways")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .padding(.horizontal)
             
             ScrollView(.vertical, showsIndicators: true) {
@@ -247,62 +249,62 @@ struct OptimizedCorrelationView: View {
                             // Source component
                             VStack(alignment: .leading, spacing: 2) {
                                 Text("Grade \(pair.source.grade)")
-                                    .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption2)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                                 Text(pair.source.component)
                                     .font(.system(.caption, design: .monospaced))
                                 Text(pair.source.subject)
-                                    .font(.caption2)
+                                    .font(AppleDesignSystem.Typography.caption2)
                             }
-                            .padding(8)
+                            .padding(AppleDesignSystem.Spacing.small)
                             .frame(width: 120)
-                            .background(Color.blue.opacity(0.1))
-                            .cornerRadius(6)
+                            .background(AppleDesignSystem.SystemPalette.blue.opacity(0.1))
+                            .cornerRadius(AppleDesignSystem.Corners.small)
                             
                             // Correlation strength
                             VStack(spacing: 2) {
                                 Image(systemName: "arrow.right.circle.fill")
                                     .foregroundColor(correlationColor(pair.correlation))
                                 Text(String(format: "%.3f", pair.correlation))
-                                    .font(.caption2)
+                                    .font(AppleDesignSystem.Typography.caption2)
                                     .fontWeight(.bold)
                                 Text("\(pair.sampleSize)")
-                                    .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption2)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                             }
                             
                             // Target component
                             VStack(alignment: .leading, spacing: 2) {
                                 Text("Grade \(pair.target.grade)")
-                                    .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption2)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                                 Text(pair.target.component)
                                     .font(.system(.caption, design: .monospaced))
                                 Text(pair.target.subject)
-                                    .font(.caption2)
+                                    .font(AppleDesignSystem.Typography.caption2)
                             }
-                            .padding(8)
+                            .padding(AppleDesignSystem.Spacing.small)
                             .frame(width: 120)
-                            .background(Color.green.opacity(0.1))
-                            .cornerRadius(6)
+                            .background(AppleDesignSystem.SystemPalette.green.opacity(0.1))
+                            .cornerRadius(AppleDesignSystem.Corners.small)
                             
                             Spacer()
                             
                             // Confidence
                             VStack(alignment: .trailing, spacing: 2) {
                                 Text("Confidence")
-                                    .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption2)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                                 Text("\(Int(pair.confidence * 100))%")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .fontWeight(.medium)
-                                    .foregroundColor(pair.confidence > 0.8 ? .green : .orange)
+                                    .foregroundColor(pair.confidence > 0.8 ? AppleDesignSystem.SystemPalette.green : AppleDesignSystem.SystemPalette.orange)
                             }
                         }
                         .padding(.vertical, 4)
                         .padding(.horizontal, 8)
                         .background(Color.gray.opacity(0.02))
-                        .cornerRadius(6)
+                        .cornerRadius(AppleDesignSystem.Corners.small)
                     }
                 }
                 .padding(.horizontal)
@@ -313,11 +315,11 @@ struct OptimizedCorrelationView: View {
     func matrixView(data: [CorrelationDataLoader.CorrelationPair]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Correlation Matrix View")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .padding(.horizontal)
             
             Text("Interactive matrix visualization coming soon...")
-                .foregroundColor(.secondary)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
         }
@@ -363,8 +365,8 @@ struct OptimizedCorrelationView: View {
             
             if dataLoader.correlationChunks.count > 1 {
                 Text("Chunk \(dataLoader.currentChunkIndex + 1) of \(dataLoader.correlationChunks.count)")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             }
         }
         .padding(.horizontal)
@@ -397,10 +399,10 @@ struct OptimizedCorrelationView: View {
     
     func correlationColor(_ value: Double) -> Color {
         switch value {
-        case 0.9...1.0: return .purple
-        case 0.7..<0.9: return .green
-        case 0.5..<0.7: return .blue
-        default: return .orange
+        case 0.9...1.0: return AppleDesignSystem.SystemPalette.purple
+        case 0.7..<0.9: return AppleDesignSystem.SystemPalette.green
+        case 0.5..<0.7: return AppleDesignSystem.SystemPalette.blue
+        default: return AppleDesignSystem.SystemPalette.orange
         }
     }
     
@@ -419,19 +421,19 @@ struct StatCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(title)
-                .font(.caption2)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption2)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             Text(value)
-                .font(.title3)
+                .font(AppleDesignSystem.Typography.title3)
                 .fontWeight(.semibold)
             Text(subtitle)
-                .font(.caption2)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption2)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .background(Color.gray.opacity(0.05))
-        .cornerRadius(6)
+        .cornerRadius(AppleDesignSystem.Corners.small)
     }
 }
 

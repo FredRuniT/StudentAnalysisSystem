@@ -1,10 +1,11 @@
-import SwiftUI
-import Charts
 import AnalysisCore
-import StatisticalEngine
+import Charts
 import ReportGeneration
+import StatisticalEngine
+import SwiftUI
 
 struct CorrelationVisualizationView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @State private var correlationData: ComponentCorrelationMap?
     @State private var selectedGradeFilter: Int?
     @State private var selectedSubject: String = "All"
@@ -53,6 +54,7 @@ struct CorrelationVisualizationView: View {
         .onChange(of: selectedSubject) { filterData() }
         .onChange(of: selectedGradeFilter) { filterData() }
         .onChange(of: minimumCorrelation) { filterData() }
+        .themed()
     }
     
     var headerView: some View {
@@ -62,8 +64,8 @@ struct CorrelationVisualizationView: View {
                 .fontWeight(.bold)
             
             Text("Analyzing \(formatNumber(623286)) correlations across \(formatNumber(1117)) unique components")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.subheadline)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
         }
         .padding(.horizontal)
     }
@@ -97,7 +99,7 @@ struct CorrelationVisualizationView: View {
             
             VStack(alignment: .leading) {
                 Text("Min Correlation: \(minimumCorrelation, specifier: "%.2f")")
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                 Slider(value: $minimumCorrelation, in: 0.3...1.0, step: 0.05)
                     .frame(width: 150)
             }
@@ -124,7 +126,7 @@ struct CorrelationVisualizationView: View {
         }
         .padding()
         .background(Color.gray.opacity(0.05))
-        .cornerRadius(12)
+        .cornerRadius(AppleDesignSystem.Corners.medium)
         .padding(.horizontal)
     }
     
@@ -146,7 +148,7 @@ struct CorrelationVisualizationView: View {
     var topCorrelationsView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Strongest Component Correlations")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
             
             if !topCorrelations.isEmpty {
                 Chart(topCorrelations.prefix(20)) { pair in
@@ -157,15 +159,15 @@ struct CorrelationVisualizationView: View {
                     .foregroundStyle(correlationColor(for: pair.correlation))
                     .annotation(position: .trailing, alignment: .leading) {
                         Text(String(format: "%.3f", pair.correlation))
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
+                            .font(AppleDesignSystem.Typography.caption2)
+                            .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                     }
                 }
                 .chartXScale(domain: minimumCorrelation...1.0)
                 .frame(minHeight: 400)
             } else {
                 Text("Loading correlation data...")
-                    .foregroundColor(.secondary)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                     .frame(maxWidth: .infinity, minHeight: 400, alignment: .center)
             }
         }
@@ -174,11 +176,11 @@ struct CorrelationVisualizationView: View {
     var crossGradePatternsView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Cross-Grade Predictive Patterns")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
             
             Text("How early grade performance predicts later outcomes")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             
             if !crossGradeCorrelations.isEmpty {
                 Chart(crossGradeCorrelations.prefix(15)) { correlation in
@@ -203,7 +205,7 @@ struct CorrelationVisualizationView: View {
                 .frame(minHeight: 400)
             } else {
                 Text("Analyzing cross-grade patterns...")
-                    .foregroundColor(.secondary)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                     .frame(maxWidth: .infinity, minHeight: 400, alignment: .center)
             }
         }
@@ -212,11 +214,11 @@ struct CorrelationVisualizationView: View {
     var predictivePathwaysView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Predictive Learning Pathways")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
             
             Text("Component relationships that predict future success")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             
             // Pathway visualization showing how Grade 3 components predict Grade 8 outcomes
             ScrollView {
@@ -226,13 +228,13 @@ struct CorrelationVisualizationView: View {
                             // Source
                             VStack(alignment: .leading) {
                                 Text("Grade \(pair.sourceGrade)")
-                                    .font(.caption)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                                 Text(pair.source)
                                     .font(.system(.body, design: .monospaced))
-                                    .padding(8)
-                                    .background(Color.blue.opacity(0.1))
-                                    .cornerRadius(6)
+                                    .padding(AppleDesignSystem.Spacing.small)
+                                    .background(AppleDesignSystem.SystemPalette.blue.opacity(0.1))
+                                    .cornerRadius(AppleDesignSystem.Corners.small)
                             }
                             
                             // Arrow with correlation
@@ -240,24 +242,24 @@ struct CorrelationVisualizationView: View {
                                 Image(systemName: "arrow.right")
                                     .foregroundColor(correlationColor(for: pair.correlation))
                                 Text(String(format: "%.3f", pair.correlation))
-                                    .font(.caption2)
+                                    .font(AppleDesignSystem.Typography.caption2)
                                     .fontWeight(.semibold)
                                 Text("\(pair.sampleSize) students")
-                                    .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption2)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                             }
                             .frame(width: 80)
                             
                             // Target
                             VStack(alignment: .leading) {
                                 Text("Grade \(pair.targetGrade)")
-                                    .font(.caption)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                                 Text(pair.target)
                                     .font(.system(.body, design: .monospaced))
-                                    .padding(8)
-                                    .background(Color.green.opacity(0.1))
-                                    .cornerRadius(6)
+                                    .padding(AppleDesignSystem.Spacing.small)
+                                    .background(AppleDesignSystem.SystemPalette.green.opacity(0.1))
+                                    .cornerRadius(AppleDesignSystem.Corners.small)
                             }
                             
                             Spacer()
@@ -265,12 +267,12 @@ struct CorrelationVisualizationView: View {
                             // Confidence indicator
                             VStack(alignment: .trailing) {
                                 Text("Confidence")
-                                    .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                    .font(AppleDesignSystem.Typography.caption2)
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                                 Text("\(Int(pair.confidence * 100))%")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .fontWeight(.medium)
-                                    .foregroundColor(pair.confidence > 0.8 ? .green : pair.confidence > 0.6 ? .orange : .red)
+                                    .foregroundColor(pair.confidence > 0.8 ? AppleDesignSystem.SystemPalette.green : pair.confidence > 0.6 ? AppleDesignSystem.SystemPalette.orange : AppleDesignSystem.SystemPalette.red)
                             }
                         }
                         .padding()
@@ -285,15 +287,15 @@ struct CorrelationVisualizationView: View {
     var correlationHeatmapView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Correlation Heatmap")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
             
             Text("Component-to-component correlation matrix")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             
             // Simplified heatmap for top components
             Text("Full heatmap visualization coming soon...")
-                .foregroundColor(.secondary)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                 .frame(maxWidth: .infinity, minHeight: 400, alignment: .center)
         }
     }
@@ -301,13 +303,13 @@ struct CorrelationVisualizationView: View {
     func correlationColor(for value: Double) -> Color {
         switch value {
         case 0.85...1.0:
-            return .green
+            return AppleDesignSystem.SystemPalette.green
         case 0.7..<0.85:
-            return .blue
+            return AppleDesignSystem.SystemPalette.blue
         case 0.5..<0.7:
-            return .orange
+            return AppleDesignSystem.SystemPalette.orange
         default:
-            return .red
+            return AppleDesignSystem.SystemPalette.red
         }
     }
     
@@ -422,14 +424,14 @@ struct CorrelationStatCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             Text(value)
-                .font(.title2)
+                .font(AppleDesignSystem.Typography.title2)
                 .fontWeight(.semibold)
             Text(subtitle)
-                .font(.caption2)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption2)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
         }
         .padding()
         .frame(minWidth: 120)

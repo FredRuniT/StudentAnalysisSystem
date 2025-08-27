@@ -1,8 +1,9 @@
-import SwiftUI
 import AnalysisCore
 import IndividualLearningPlan
+import SwiftUI
 
 struct ILPGeneratorView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = ILPGeneratorViewModel()
     @State private var selectedStudent: StudentAssessmentData?
     @State private var searchText = ""
@@ -10,7 +11,7 @@ struct ILPGeneratorView: View {
     @State private var useBlueprints = true
     @State private var includeGradeProgression = true
     @State private var showingStudentPicker = false
-    @State private var generatedILP: IndividualLearningPlan?
+    @State private var generatedILP: UIIndividualLearningPlan?
     @State private var showingILPDetail = false
     
     var body: some View {
@@ -55,6 +56,7 @@ struct ILPGeneratorView: View {
                     .frame(minWidth: 800, minHeight: 600)
             }
         }
+        .themed()
     }
     
     // MARK: - Section Views
@@ -66,14 +68,14 @@ struct ILPGeneratorView: View {
                     // Selected student display
                     HStack {
                         Image(systemName: "person.crop.circle.fill")
-                            .foregroundStyle(.blue)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                             .imageScale(.large)
                         
                         VStack(alignment: .leading) {
                             Text("\(student.firstName) \(student.lastName)")
-                                .font(.headline)
+                                .font(AppleDesignSystem.Typography.headline)
                             Text("MSIS: \(student.msis) • Grade \(student.testGrade)")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                         }
                         
@@ -111,14 +113,14 @@ struct ILPGeneratorView: View {
                         title: "Overall Performance",
                         value: viewModel.calculateOverallPerformance(for: selectedStudent),
                         icon: "chart.bar",
-                        color: .blue
+                        color: AppleDesignSystem.SystemPalette.blue
                     )
                     
                     StudentStatCard(
                         title: "Weak Components",
                         value: "\(viewModel.countWeakComponents(for: selectedStudent))",
                         icon: "exclamationmark.triangle",
-                        color: .orange
+                        color: AppleDesignSystem.SystemPalette.orange
                     )
                     
                     StudentStatCard(
@@ -137,7 +139,7 @@ struct ILPGeneratorView: View {
             // Plan Type Selection
             VStack(alignment: .leading, spacing: 12) {
                 Text("Plan Type")
-                    .font(.headline)
+                    .font(AppleDesignSystem.Typography.headline)
                 
                 Picker("Plan Type", selection: $planType) {
                     HStack {
@@ -163,25 +165,25 @@ struct ILPGeneratorView: View {
                     case .auto:
                         HStack {
                             Image(systemName: "info.circle")
-                                .foregroundStyle(.blue)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                             Text("System will automatically determine the best plan type based on student performance")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                         }
                     case .remediation:
                         HStack {
                             Image(systemName: "info.circle")
-                                .foregroundStyle(.orange)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
                             Text("Focus on strengthening weak areas and closing learning gaps")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                         }
                     case .enrichment:
                         HStack {
                             Image(systemName: "info.circle")
-                                .foregroundStyle(.green)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                             Text("Provide advanced challenges and extension activities for high performers")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -198,11 +200,11 @@ struct ILPGeneratorView: View {
                 Toggle(isOn: $useBlueprints) {
                     HStack {
                         Image(systemName: "doc.text.magnifyingglass")
-                            .foregroundStyle(.blue)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                         VStack(alignment: .leading) {
                             Text("Use Mississippi Test Blueprints")
                             Text("Maps weak components to specific MS-CCRS standards with K/U/S expectations")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -213,11 +215,11 @@ struct ILPGeneratorView: View {
                 Toggle(isOn: $includeGradeProgression) {
                     HStack {
                         Image(systemName: "chart.line.uptrend.xyaxis")
-                            .foregroundStyle(.purple)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.purple)
                         VStack(alignment: .leading) {
                             Text("Include Grade Progression Analysis")
                             Text("Predicts future struggles based on 623,286 correlations")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -231,42 +233,42 @@ struct ILPGeneratorView: View {
                     GroupBox {
                         VStack(alignment: .leading, spacing: 8) {
                             Label("Features Enabled", systemImage: "checkmark.seal")
-                                .font(.headline)
-                                .foregroundStyle(.green)
+                                .font(AppleDesignSystem.Typography.headline)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                             
                             if useBlueprints {
                                 HStack {
                                     Image(systemName: "checkmark.circle.fill")
-                                        .foregroundStyle(.green)
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                                         .imageScale(.small)
                                     Text("Standards-aligned learning objectives")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                                 
                                 HStack {
                                     Image(systemName: "checkmark.circle.fill")
-                                        .foregroundStyle(.green)
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                                         .imageScale(.small)
                                     Text("Knowledge, Understanding, and Skills breakdown")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                             }
                             
                             if includeGradeProgression {
                                 HStack {
                                     Image(systemName: "checkmark.circle.fill")
-                                        .foregroundStyle(.green)
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                                         .imageScale(.small)
                                     Text("Multi-year progression pathways")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                                 
                                 HStack {
                                     Image(systemName: "checkmark.circle.fill")
-                                        .foregroundStyle(.green)
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                                         .imageScale(.small)
                                     Text("Predictive correlation analysis")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                 }
                             }
                         }
@@ -288,7 +290,7 @@ struct ILPGeneratorView: View {
                             .scaleEffect(0.8)
                         
                         Text("Generating Individual Learning Plan...")
-                            .font(.subheadline)
+                            .font(AppleDesignSystem.Typography.subheadline)
                             .foregroundStyle(.secondary)
                         
                         Spacer()
@@ -314,9 +316,9 @@ struct ILPGeneratorView: View {
                 if selectedStudent == nil {
                     HStack {
                         Image(systemName: "exclamationmark.circle")
-                            .foregroundStyle(.orange)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
                         Text("Please select a student first")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -332,11 +334,11 @@ struct ILPGeneratorView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Label("ILP Generated Successfully", systemImage: "checkmark.seal.fill")
-                                .font(.headline)
-                                .foregroundStyle(.green)
+                                .font(AppleDesignSystem.Typography.headline)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                             
                             Text("Created: \(ilp.createdDate, format: .dateTime)")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                         }
                         
@@ -366,15 +368,15 @@ struct ILPGeneratorView: View {
                         if !ilp.performanceSummary.isEmpty {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("Key Findings")
-                                    .font(.headline)
+                                    .font(AppleDesignSystem.Typography.headline)
                                 
                                 ForEach(ilp.performanceSummary.prefix(3), id: \.self) { summary in
                                     HStack(alignment: .top) {
                                         Image(systemName: "chevron.right.circle")
-                                            .foregroundStyle(.blue)
+                                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                                             .imageScale(.small)
                                         Text(summary)
-                                            .font(.caption)
+                                            .font(AppleDesignSystem.Typography.caption)
                                     }
                                 }
                             }
@@ -384,7 +386,7 @@ struct ILPGeneratorView: View {
                         if !ilp.focusAreas.isEmpty {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("Focus Areas")
-                                    .font(.headline)
+                                    .font(AppleDesignSystem.Typography.headline)
                                 
                                 HStack(spacing: 12) {
                                     ForEach(ilp.focusAreas.prefix(4)) { area in
@@ -460,11 +462,11 @@ struct StudentStatCard: View {
                 .imageScale(.large)
             
             Text(value)
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .foregroundStyle(color)
             
             Text(title)
-                .font(.caption2)
+                .font(AppleDesignSystem.Typography.caption2)
                 .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity)
@@ -475,7 +477,7 @@ struct StudentStatCard: View {
 }
 
 struct FocusAreaCard: View {
-    let area: FocusArea
+    let area: UIFocusArea
     
     var body: some View {
         VStack(spacing: 4) {
@@ -488,18 +490,19 @@ struct FocusAreaCard: View {
                 )
             
             Text(area.subject)
-                .font(.caption2)
+                .font(AppleDesignSystem.Typography.caption2)
                 .lineLimit(1)
+        .truncationMode(.tail)
         }
         .frame(maxWidth: .infinity)
     }
     
     private func severityColor(_ severity: Double) -> Color {
         switch severity {
-        case 0.8...: return .red
-        case 0.6..<0.8: return .orange
-        case 0.4..<0.6: return .yellow
-        default: return .green
+        case 0.8...: return AppleDesignSystem.SystemPalette.red
+        case 0.6..<0.8: return AppleDesignSystem.SystemPalette.orange
+        case 0.4..<0.6: return AppleDesignSystem.SystemPalette.yellow
+        default: return AppleDesignSystem.SystemPalette.green
         }
     }
     
@@ -593,7 +596,7 @@ struct StudentPickerSheet: View {
                     .buttonStyle(.plain)
                 }
             }
-            .padding(8)
+            .padding(AppleDesignSystem.Spacing.small)
             .background(Color(NSColor.controlBackgroundColor))
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .padding()
@@ -608,12 +611,12 @@ struct StudentPickerSheet: View {
                         }) {
                             HStack {
                                 Image(systemName: "person.crop.circle")
-                                    .foregroundStyle(.blue)
+                                    .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                                     .imageScale(.large)
                                 
                                 VStack(alignment: .leading) {
                                     Text("\(student.firstName) \(student.lastName)")
-                                        .font(.headline)
+                                        .font(AppleDesignSystem.Typography.headline)
                                         .foregroundStyle(.primary)
                                     
                                     HStack {
@@ -623,7 +626,7 @@ struct StudentPickerSheet: View {
                                         Text("•")
                                         Text(student.schoolName)
                                     }
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .foregroundStyle(.secondary)
                                 }
                                 
@@ -767,10 +770,10 @@ class ILPGeneratorViewModel: ObservableObject {
     
     func riskLevelColor(for student: StudentAssessmentData?) -> Color {
         switch determineRiskLevel(for: student) {
-        case "Critical": return .red
-        case "High": return .orange
-        case "Moderate": return .yellow
-        case "Low": return .green
+        case "Critical": return AppleDesignSystem.SystemPalette.red
+        case "High": return AppleDesignSystem.SystemPalette.orange
+        case "Moderate": return AppleDesignSystem.SystemPalette.yellow
+        case "Low": return AppleDesignSystem.SystemPalette.green
         default: return .gray
         }
     }

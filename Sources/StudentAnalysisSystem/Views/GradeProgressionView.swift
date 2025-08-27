@@ -1,16 +1,22 @@
-import SwiftUI
-import Charts
 import AnalysisCore
+import Charts
 import PredictiveModeling
 import StatisticalEngine
+import SwiftUI
 
 struct GradeProgressionView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = GradeProgressionViewModel()
-    @State private var selectedGradeRange = 3...8
+    @State private var startGrade = 3
+    @State private var endGrade = 8
     @State private var selectedComponent: String?
     @State private var showingCorrelationDetail = false
     @State private var selectedCorrelation: ProgressionCorrelation?
     @State private var selectedStudent: StudentAssessmentData?
+    
+    private var selectedGradeRange: ClosedRange<Int> {
+        startGrade...endGrade
+    }
     
     var body: some View {
         NavigationStack {
@@ -58,6 +64,7 @@ struct GradeProgressionView: View {
         .onAppear {
             viewModel.loadCorrelations()
         }
+        .themed()
     }
     
     // MARK: - Header Section
@@ -67,9 +74,9 @@ struct GradeProgressionView: View {
             // Grade range selector
             HStack {
                 Text("Grade Range:")
-                    .font(.headline)
+                    .font(AppleDesignSystem.Typography.headline)
                 
-                Picker("Start Grade", selection: $selectedGradeRange.lowerBound) {
+                Picker("Start Grade", selection: $startGrade) {
                     ForEach(3...11, id: \.self) { grade in
                         Text("Grade \(grade)").tag(grade)
                     }
@@ -79,8 +86,8 @@ struct GradeProgressionView: View {
                 
                 Text("to")
                 
-                Picker("End Grade", selection: $selectedGradeRange.upperBound) {
-                    ForEach((selectedGradeRange.lowerBound + 1)...12, id: \.self) { grade in
+                Picker("End Grade", selection: $endGrade) {
+                    ForEach((startGrade + 1)...12, id: \.self) { grade in
                         Text("Grade \(grade)").tag(grade)
                     }
                 }
@@ -108,10 +115,10 @@ struct GradeProgressionView: View {
             // Legend
             HStack(spacing: 20) {
                 ForEach([
-                    ("Critical", Color.red, "90%+"),
-                    ("Strong", Color.orange, "80-89%"),
-                    ("Significant", Color.yellow, "70-79%"),
-                    ("Moderate", Color.blue, "60-69%"),
+                    ("Critical", AppleDesignSystem.SystemPalette.red, "90%+"),
+                    ("Strong", AppleDesignSystem.SystemPalette.orange, "80-89%"),
+                    ("Significant", AppleDesignSystem.SystemPalette.yellow, "70-79%"),
+                    ("Moderate", AppleDesignSystem.SystemPalette.blue, "60-69%"),
                     ("Weak", Color.gray, "<60%")
                 ], id: \.0) { label, color, range in
                     HStack(spacing: 4) {
@@ -119,7 +126,7 @@ struct GradeProgressionView: View {
                             .fill(color)
                             .frame(width: 10, height: 10)
                         Text("\(label) (\(range))")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                     }
                 }
             }
@@ -134,7 +141,7 @@ struct GradeProgressionView: View {
     private var componentSelectorPanel: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Select Component")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .padding(.horizontal)
             
             ScrollView {
@@ -159,18 +166,18 @@ struct GradeProgressionView: View {
                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Student Context")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     if let student = selectedStudent {
                         HStack {
                             Image(systemName: "person.crop.circle")
-                                .foregroundStyle(.blue)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                             
                             VStack(alignment: .leading) {
                                 Text("\(student.firstName) \(student.lastName)")
-                                    .font(.subheadline)
+                                    .font(AppleDesignSystem.Typography.subheadline)
                                 Text("Grade \(student.testGrade)")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .foregroundStyle(.secondary)
                             }
                             
@@ -182,7 +189,7 @@ struct GradeProgressionView: View {
                             }
                             .buttonStyle(.plain)
                         }
-                        .padding(8)
+                        .padding(AppleDesignSystem.Spacing.small)
                         .background(Color(NSColor.controlBackgroundColor))
                         .clipShape(RoundedRectangle(cornerRadius: 6))
                     }
@@ -204,11 +211,11 @@ struct GradeProgressionView: View {
                             // Header
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("Progression Pathways for \(component)")
-                                    .font(.title2)
+                                    .font(AppleDesignSystem.Typography.title2)
                                     .bold()
                                 
                                 Text("\(progressions.count) correlations found across grades \(selectedGradeRange.lowerBound)-\(selectedGradeRange.upperBound)")
-                                    .font(.subheadline)
+                                    .font(AppleDesignSystem.Typography.subheadline)
                                     .foregroundStyle(.secondary)
                             }
                             .padding()
@@ -228,7 +235,7 @@ struct GradeProgressionView: View {
                             // Correlation list
                             VStack(alignment: .leading, spacing: 12) {
                                 Text("Detailed Correlations")
-                                    .font(.headline)
+                                    .font(AppleDesignSystem.Typography.headline)
                                     .padding(.horizontal)
                                 
                                 ForEach(progressions.sorted { $0.correlationStrength > $1.correlationStrength }) { progression in
@@ -275,11 +282,11 @@ struct ComponentRow: View {
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(extractComponentName(component))
-                        .font(.subheadline)
+                        .font(AppleDesignSystem.Typography.subheadline)
                         .foregroundStyle(isSelected ? .white : .primary)
                     
                     Text("\(correlationCount) correlations")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(isSelected ? .white.opacity(0.8) : .secondary)
                 }
                 
@@ -287,14 +294,14 @@ struct ComponentRow: View {
                 
                 if correlationCount > 10 {
                     Image(systemName: "star.fill")
-                        .foregroundStyle(isSelected ? .white : .yellow)
+                        .foregroundStyle(isSelected ? .white : AppleDesignSystem.SystemPalette.yellow)
                         .imageScale(.small)
                 }
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(isSelected ? Color.blue : Color.clear)
+            .background(isSelected ? AppleDesignSystem.SystemPalette.blue : Color.clear)
             .clipShape(RoundedRectangle(cornerRadius: 6))
         }
         .buttonStyle(.plain)
@@ -380,10 +387,10 @@ struct ProgressionChart: View {
     
     private func correlationColor(_ strength: Double) -> Color {
         switch abs(strength) {
-        case 0.9...: return .red
-        case 0.8..<0.9: return .orange
-        case 0.7..<0.8: return .yellow
-        case 0.6..<0.7: return .blue
+        case 0.9...: return AppleDesignSystem.SystemPalette.red
+        case 0.8..<0.9: return AppleDesignSystem.SystemPalette.orange
+        case 0.7..<0.8: return AppleDesignSystem.SystemPalette.yellow
+        case 0.6..<0.7: return AppleDesignSystem.SystemPalette.blue
         default: return .gray
         }
     }
@@ -403,7 +410,7 @@ struct ProgressionCorrelationCard: View {
                 
                 VStack(spacing: 0) {
                     Text("\(Int(abs(progression.correlationStrength) * 100))%")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                         .foregroundStyle(correlationColor(progression.correlationStrength))
                 }
             }
@@ -412,33 +419,33 @@ struct ProgressionCorrelationCard: View {
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
                     Text("Grade \(progression.fromGrade) \(progression.fromComponent)")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     Image(systemName: "arrow.right")
                         .foregroundStyle(.secondary)
                     
                     Text("Grade \(progression.toGrade) \(progression.toComponent)")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                 }
                 
                 HStack(spacing: 12) {
                     Label("p < \(String(format: "%.3f", progression.pValue))", systemImage: "chart.xyaxis.line")
-                        .font(.caption)
-                        .foregroundStyle(.blue)
+                        .font(AppleDesignSystem.Typography.caption)
+                        .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                     
                     Label("n = \(progression.sampleSize)", systemImage: "person.3")
-                        .font(.caption)
-                        .foregroundStyle(.green)
+                        .font(AppleDesignSystem.Typography.caption)
+                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                     
                     if progression.confidence > 0.95 {
                         Label("High confidence", systemImage: "star.fill")
-                            .font(.caption)
-                            .foregroundStyle(.yellow)
+                            .font(AppleDesignSystem.Typography.caption)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.yellow)
                     }
                 }
                 
                 Text(progression.interpretation)
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                     .foregroundStyle(.secondary)
             }
             
@@ -457,10 +464,10 @@ struct ProgressionCorrelationCard: View {
     
     private func correlationColor(_ strength: Double) -> Color {
         switch abs(strength) {
-        case 0.9...: return .red
-        case 0.8..<0.9: return .orange
-        case 0.7..<0.8: return .yellow
-        case 0.6..<0.7: return .blue
+        case 0.9...: return AppleDesignSystem.SystemPalette.red
+        case 0.8..<0.9: return AppleDesignSystem.SystemPalette.orange
+        case 0.7..<0.8: return AppleDesignSystem.SystemPalette.yellow
+        case 0.6..<0.7: return AppleDesignSystem.SystemPalette.blue
         default: return .gray
         }
     }
@@ -480,7 +487,7 @@ struct CorrelationDetailSheet: View {
                         .bold()
                     
                     Text("\(correlation.fromComponent) → \(correlation.toComponent)")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                         .foregroundStyle(.secondary)
                 }
                 
@@ -507,7 +514,7 @@ struct CorrelationDetailSheet: View {
                         .foregroundStyle(correlationColor(correlation.correlationStrength))
                     
                     Text("correlation")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(.secondary)
                 }
             }
@@ -550,15 +557,15 @@ struct CorrelationDetailSheet: View {
             GroupBox("Interpretation") {
                 VStack(alignment: .leading, spacing: 8) {
                     Text(correlation.interpretation)
-                        .font(.subheadline)
+                        .font(AppleDesignSystem.Typography.subheadline)
                     
                     if correlation.correlationStrength > 0.8 {
                         HStack {
                             Image(systemName: "exclamationmark.triangle.fill")
-                                .foregroundStyle(.orange)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
                             Text("Strong predictive relationship - early intervention recommended")
-                                .font(.caption)
-                                .foregroundStyle(.orange)
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
                         }
                     }
                 }
@@ -588,10 +595,10 @@ struct CorrelationDetailSheet: View {
     
     private func correlationColor(_ strength: Double) -> Color {
         switch abs(strength) {
-        case 0.9...: return .red
-        case 0.8..<0.9: return .orange
-        case 0.7..<0.8: return .yellow
-        case 0.6..<0.7: return .blue
+        case 0.9...: return AppleDesignSystem.SystemPalette.red
+        case 0.8..<0.9: return AppleDesignSystem.SystemPalette.orange
+        case 0.7..<0.8: return AppleDesignSystem.SystemPalette.yellow
+        case 0.6..<0.7: return AppleDesignSystem.SystemPalette.blue
         default: return .gray
         }
     }
@@ -645,14 +652,15 @@ class GradeProgressionViewModel: ObservableObject {
         var components = Set<String>()
         var counts: [String: Int] = [:]
         
-        for (key, _) in model.correlations {
-            let parts = key.split(separator: "_").map(String.init)
-            if parts.count >= 2 {
-                components.insert(parts[0])
-                components.insert(parts[1])
-                
-                counts[parts[0], default: 0] += 1
-                counts[parts[1], default: 0] += 1
+        for correlationMap in model.correlations {
+            let sourceKey = "\(correlationMap.sourceComponent.grade)_\(correlationMap.sourceComponent.subject)_\(correlationMap.sourceComponent.component)"
+            components.insert(sourceKey)
+            counts[sourceKey, default: 0] += 1
+            
+            for correlation in correlationMap.correlations {
+                let targetKey = "\(correlation.target.grade)_\(correlation.target.subject)_\(correlation.target.component)"
+                components.insert(targetKey)
+                counts[targetKey, default: 0] += 1
             }
         }
         
@@ -676,31 +684,35 @@ class GradeProgressionViewModel: ObservableObject {
         var progressions: [ProgressionCorrelation] = []
         
         // Find all correlations involving this component
-        for (key, correlation) in model.correlations {
-            if key.contains(component) && abs(correlation.coefficient) >= minimumCorrelationStrength {
-                let parts = key.split(separator: "_").map(String.init)
-                if parts.count >= 2 {
-                    let fromComponent = parts[0]
-                    let toComponent = parts[1]
+        for correlationMap in model.correlations {
+            let sourceKey = "\(correlationMap.sourceComponent.grade)_\(correlationMap.sourceComponent.subject)_\(correlationMap.sourceComponent.component)"
+            
+            for correlation in correlationMap.correlations {
+                let targetKey = "\(correlation.target.grade)_\(correlation.target.subject)_\(correlation.target.component)"
+                
+                if (sourceKey.contains(component) || targetKey.contains(component)) && 
+                   abs(correlation.correlation) >= minimumCorrelationStrength {
+                    let fromComponent = sourceKey
+                    let toComponent = targetKey
                     let fromGrade = extractGrade(from: fromComponent)
                     let toGrade = extractGrade(from: toComponent)
                     
                     // Check if within grade range
                     if gradeRange.contains(fromGrade) && gradeRange.contains(toGrade) && fromGrade != toGrade {
                         let progression = ProgressionCorrelation(
-                            id: key,
+                            id: "\(sourceKey)_to_\(targetKey)",
                             fromComponent: extractComponentName(fromComponent),
                             toComponent: extractComponentName(toComponent),
                             fromGrade: fromGrade,
                             toGrade: toGrade,
-                            correlationStrength: correlation.coefficient,
-                            confidence: correlation.confidence ?? 0,
-                            pValue: correlation.pValue,
+                            correlationStrength: correlation.correlation,
+                            confidence: correlation.confidence,
+                            pValue: 0.05, // Default p-value since it's not in the model
                             sampleSize: correlation.sampleSize,
                             interpretation: generateInterpretation(
                                 from: fromComponent,
                                 to: toComponent,
-                                strength: correlation.coefficient
+                                strength: correlation.correlation
                             )
                         )
                         progressions.append(progression)

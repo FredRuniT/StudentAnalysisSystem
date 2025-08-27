@@ -1,14 +1,15 @@
-import SwiftUI
 import AnalysisCore
 import IndividualLearningPlan
+import SwiftUI
 
 struct StudentProfileView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     let student: StudentAssessmentData
     @StateObject private var ilpViewModel = ILPViewModel()
     @State private var selectedPlanType: PlanType = .auto
     @State private var showingILPGenerator = false
     @State private var showingExportOptions = false
-    @State private var generatedILP: IndividualLearningPlan?
+    @State private var generatedILP: UIIndividualLearningPlan?
     
     var body: some View {
         ScrollView {
@@ -62,6 +63,7 @@ struct StudentProfileView: View {
             )
             .frame(minWidth: 700, minHeight: 500)
         }
+        .themed()
     }
     
     // MARK: - Section Views
@@ -73,33 +75,33 @@ struct StudentProfileView: View {
                 ZStack {
                     Circle()
                         .fill(LinearGradient(
-                            colors: [.blue.opacity(0.3), .blue.opacity(0.1)],
+                            colors: [AppleDesignSystem.SystemPalette.blue.opacity(0.3), AppleDesignSystem.SystemPalette.blue.opacity(0.1)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ))
                         .frame(width: 80, height: 80)
                     
                     Text(student.firstName.prefix(1) + student.lastName.prefix(1))
-                        .font(.title)
-                        .foregroundStyle(.blue)
+                        .font(AppleDesignSystem.Typography.title)
+                        .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                 }
                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("\(student.firstName) \(student.lastName)")
-                        .font(.title2)
+                        .font(AppleDesignSystem.Typography.title2)
                         .bold()
                     
                     HStack(spacing: 20) {
                         Label(student.msis, systemImage: "number")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                             .foregroundStyle(.secondary)
                         
                         Label("Grade \(student.testGrade)", systemImage: "graduationcap")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                             .foregroundStyle(.secondary)
                         
                         Label(student.schoolYear, systemImage: "calendar")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -123,7 +125,7 @@ struct StudentProfileView: View {
             .padding()
         } label: {
             Label("Student Information", systemImage: "person.crop.circle")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
         }
     }
     
@@ -153,7 +155,7 @@ struct StudentProfileView: View {
                     PerformanceMetric(
                         title: "Components Below Basic",
                         value: "\(countBelowBasicComponents())",
-                        color: countBelowBasicComponents() > 0 ? .red : .green
+                        color: countBelowBasicComponents() > 0 ? AppleDesignSystem.SystemPalette.red : AppleDesignSystem.SystemPalette.green
                     )
                 }
                 
@@ -166,7 +168,7 @@ struct StudentProfileView: View {
             .padding()
         } label: {
             Label("Performance Summary", systemImage: "chart.bar.xaxis")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
         }
     }
     
@@ -177,7 +179,7 @@ struct StudentProfileView: View {
                 ForEach(groupComponentsByCategory(), id: \.key) { category, components in
                     VStack(alignment: .leading, spacing: 8) {
                         Text(category)
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                             .foregroundStyle(.secondary)
                         
                         LazyVGrid(columns: [
@@ -199,7 +201,7 @@ struct StudentProfileView: View {
             .padding()
         } label: {
             Label("Component Score Breakdown", systemImage: "list.bullet.rectangle")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
         }
     }
     
@@ -208,7 +210,7 @@ struct StudentProfileView: View {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
                     Text("Individual Learning Plan Options")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     Spacer()
                     
@@ -230,14 +232,14 @@ struct StudentProfileView: View {
                     ], id: \.0) { type, description, icon in
                         HStack {
                             Image(systemName: icon)
-                                .foregroundStyle(.blue)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                                 .imageScale(.large)
                             
                             VStack(alignment: .leading) {
                                 Text(type)
-                                    .font(.headline)
+                                    .font(AppleDesignSystem.Typography.headline)
                                 Text(description)
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .foregroundStyle(.secondary)
                             }
                         }
@@ -259,22 +261,22 @@ struct StudentProfileView: View {
             .padding()
         } label: {
             Label("ILP Generation", systemImage: "doc.badge.gearshape")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
         }
     }
     
-    private func generatedILPSection(_ ilp: IndividualLearningPlan) -> some View {
+    private func generatedILPSection(_ ilp: UIIndividualLearningPlan) -> some View {
         GroupBox {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
                     Label("Generated ILP", systemImage: "checkmark.seal.fill")
-                        .foregroundStyle(.green)
-                        .font(.headline)
+                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     Spacer()
                     
                     Text("Created: \(ilp.createdDate, format: .dateTime)")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(.secondary)
                 }
                 
@@ -282,23 +284,23 @@ struct StudentProfileView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     if !ilp.performanceSummary.isEmpty {
                         Text("Key Findings:")
-                            .font(.subheadline)
+                            .font(AppleDesignSystem.Typography.subheadline)
                             .bold()
                         
                         ForEach(ilp.performanceSummary.prefix(3), id: \.self) { summary in
                             HStack(alignment: .top) {
                                 Image(systemName: "arrow.right.circle.fill")
-                                    .foregroundStyle(.blue)
+                                    .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                                     .imageScale(.small)
                                 Text(summary)
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                             }
                         }
                     }
                     
                     if !ilp.focusAreas.isEmpty {
                         Text("Priority Areas:")
-                            .font(.subheadline)
+                            .font(AppleDesignSystem.Typography.subheadline)
                             .bold()
                             .padding(.top, 8)
                         
@@ -309,7 +311,7 @@ struct StudentProfileView: View {
                                         .foregroundStyle(severityColor(area.severity))
                                         .imageScale(.large)
                                     Text(area.subject)
-                                        .font(.caption2)
+                                        .font(AppleDesignSystem.Typography.caption2)
                                 }
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 8)
@@ -334,7 +336,7 @@ struct StudentProfileView: View {
             .padding()
         } label: {
             Label("Current ILP", systemImage: "doc.text.fill")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
         }
     }
     
@@ -342,36 +344,36 @@ struct StudentProfileView: View {
     
     private func determineProficiencyLevel() -> String {
         let avgScore = calculateOverallScore()
-        return MississippiProficiencyLevels.shared.proficiencyLevel(for: avgScore, grade: student.testGrade, subject: "Overall").name
+        return MississippiProficiencyLevels.getProficiencyLevel(score: Int(avgScore), grade: student.testGrade, subject: "Overall").level.rawValue
     }
     
     private func determineProficiencyLevelNumber() -> Int {
         let avgScore = calculateOverallScore()
-        return MississippiProficiencyLevels.shared.proficiencyLevel(for: avgScore, grade: student.testGrade, subject: "Overall").level
+        return MississippiProficiencyLevels.getProficiencyLevel(score: Int(avgScore), grade: student.testGrade, subject: "Overall").level.numericValue
     }
     
     private func calculateOverallScore() -> Int {
-        guard !student.components.isEmpty else { return 0 }
-        let total = student.components.reduce(0) { $0 + $1.scaledScore }
-        return total / student.components.count
+        guard !student.uiComponents.isEmpty else { return 0 }
+        let total = student.uiComponents.reduce(0) { $0 + Int($1.scaledScore) }
+        return total / student.uiComponents.count
     }
     
     private func calculateSubjectAverage(subject: String) -> String {
-        let subjectComponents = student.components.filter { $0.componentKey.contains(subject) }
+        let subjectComponents = student.uiComponents.filter { $0.componentKey.contains(subject) }
         guard !subjectComponents.isEmpty else { return "N/A" }
-        let avg = subjectComponents.reduce(0) { $0 + $1.scaledScore } / subjectComponents.count
+        let avg = subjectComponents.reduce(0) { $0 + Int($1.scaledScore) } / subjectComponents.count
         return "\(avg)"
     }
     
     private func countBelowBasicComponents() -> Int {
-        student.components.filter { $0.scaledScore < 650 }.count
+        student.uiComponents.filter { $0.scaledScore < 650 }.count
     }
     
-    private func groupComponentsByCategory() -> [(key: String, value: [AssessmentComponent])] {
-        let mathComponents = student.components.filter { $0.componentKey.contains("MATH") }
-        let elaComponents = student.components.filter { $0.componentKey.contains("ELA") }
+    private func groupComponentsByCategory() -> [(key: String, value: [UIAssessmentComponent])] {
+        let mathComponents = student.uiComponents.filter { $0.componentKey.contains("MATH") }
+        let elaComponents = student.uiComponents.filter { $0.componentKey.contains("ELA") }
         
-        var grouped: [(key: String, value: [AssessmentComponent])] = []
+        var grouped: [(key: String, value: [UIAssessmentComponent])] = []
         if !mathComponents.isEmpty {
             grouped.append(("Mathematics", mathComponents))
         }
@@ -384,31 +386,31 @@ struct StudentProfileView: View {
     
     private func proficiencyColor(_ level: String) -> Color {
         switch level {
-        case "Advanced": return .green
-        case "Proficient": return .blue
-        case "Passing": return .yellow
-        case "Basic": return .orange
-        case "Minimal": return .red
+        case "Advanced": return AppleDesignSystem.SystemPalette.green
+        case "Proficient": return AppleDesignSystem.SystemPalette.blue
+        case "Passing": return AppleDesignSystem.SystemPalette.yellow
+        case "Basic": return AppleDesignSystem.SystemPalette.orange
+        case "Minimal": return AppleDesignSystem.SystemPalette.red
         default: return .gray
         }
     }
     
     private func scoreColor(_ score: Double) -> Color {
         switch score {
-        case 750...: return .green
-        case 700..<750: return .blue
-        case 650..<700: return .yellow
-        case 600..<650: return .orange
-        default: return .red
+        case 750...: return AppleDesignSystem.SystemPalette.green
+        case 700..<750: return AppleDesignSystem.SystemPalette.blue
+        case 650..<700: return AppleDesignSystem.SystemPalette.yellow
+        case 600..<650: return AppleDesignSystem.SystemPalette.orange
+        default: return AppleDesignSystem.SystemPalette.red
         }
     }
     
     private func severityColor(_ severity: Double) -> Color {
         switch severity {
-        case 0.8...: return .red
-        case 0.6..<0.8: return .orange
-        case 0.4..<0.6: return .yellow
-        default: return .green
+        case 0.8...: return AppleDesignSystem.SystemPalette.red
+        case 0.6..<0.8: return AppleDesignSystem.SystemPalette.orange
+        case 0.4..<0.6: return AppleDesignSystem.SystemPalette.yellow
+        default: return AppleDesignSystem.SystemPalette.green
         }
     }
     
@@ -440,11 +442,11 @@ struct PerformanceMetric: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
                 .foregroundStyle(.secondary)
             
             Text(value)
-                .font(.title3)
+                .font(AppleDesignSystem.Typography.title3)
                 .bold()
                 .foregroundStyle(color)
         }
@@ -460,13 +462,13 @@ struct ProficiencyLevelBar: View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
                 Text("Proficiency Level")
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                     .foregroundStyle(.secondary)
                 
                 Spacer()
                 
                 Text("Scaled Score: \(scaledScore)")
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                     .foregroundStyle(.secondary)
             }
             
@@ -494,7 +496,7 @@ struct ProficiencyLevelBar: View {
                         .frame(width: 16, height: 16)
                         .overlay(
                             Circle()
-                                .stroke(Color.blue, lineWidth: 2)
+                                .stroke(AppleDesignSystem.SystemPalette.blue, lineWidth: 2)
                         )
                         .offset(x: position - 8)
                 }
@@ -504,7 +506,7 @@ struct ProficiencyLevelBar: View {
             HStack {
                 ForEach(["Minimal", "Basic", "Passing", "Proficient", "Advanced"], id: \.self) { levelName in
                     Text(levelName)
-                        .font(.caption2)
+                        .font(AppleDesignSystem.Typography.caption2)
                         .frame(maxWidth: .infinity)
                 }
             }
@@ -513,11 +515,11 @@ struct ProficiencyLevelBar: View {
     
     private func levelColor(_ level: Int) -> Color {
         switch level {
-        case 1: return .red
-        case 2: return .orange
-        case 3: return .yellow
-        case 4: return .blue
-        case 5: return .green
+        case 1: return AppleDesignSystem.SystemPalette.red
+        case 2: return AppleDesignSystem.SystemPalette.orange
+        case 3: return AppleDesignSystem.SystemPalette.yellow
+        case 4: return AppleDesignSystem.SystemPalette.blue
+        case 5: return AppleDesignSystem.SystemPalette.green
         default: return .gray
         }
     }
@@ -529,27 +531,27 @@ struct ProficiencyLevelBar: View {
 }
 
 struct ComponentScoreCard: View {
-    let component: AssessmentComponent
+    let component: UIAssessmentComponent
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text(extractComponentName(component.componentKey))
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                     .bold()
                 
-                Text("Score: \(component.scaledScore)")
-                    .font(.caption2)
+                Text("Score: \(Int(component.scaledScore))")
+                    .font(AppleDesignSystem.Typography.caption2)
                     .foregroundStyle(.secondary)
             }
             
             Spacer()
             
             Circle()
-                .fill(scoreIndicatorColor(component.scaledScore))
+                .fill(scoreIndicatorColor(Int(component.scaledScore)))
                 .frame(width: 8, height: 8)
         }
-        .padding(8)
+        .padding(AppleDesignSystem.Spacing.small)
         .background(Color(NSColor.controlBackgroundColor))
         .clipShape(RoundedRectangle(cornerRadius: 6))
     }
@@ -564,11 +566,11 @@ struct ComponentScoreCard: View {
     
     private func scoreIndicatorColor(_ score: Int) -> Color {
         switch score {
-        case 750...: return .green
-        case 700..<750: return .blue
-        case 650..<700: return .yellow
-        case 600..<650: return .orange
-        default: return .red
+        case 750...: return AppleDesignSystem.SystemPalette.green
+        case 700..<750: return AppleDesignSystem.SystemPalette.blue
+        case 650..<700: return AppleDesignSystem.SystemPalette.yellow
+        case 600..<650: return AppleDesignSystem.SystemPalette.orange
+        default: return AppleDesignSystem.SystemPalette.red
         }
     }
 }
@@ -576,7 +578,7 @@ struct ComponentScoreCard: View {
 struct ILPGeneratorSheet: View {
     let student: StudentAssessmentData
     let planType: PlanType
-    let onGenerate: (IndividualLearningPlan) -> Void
+    let onGenerate: (UIIndividualLearningPlan) -> Void
     
     @Environment(\.dismiss) var dismiss
     @State private var useBlueprints = true
@@ -590,19 +592,19 @@ struct ILPGeneratorSheet: View {
                 .bold()
             
             Text("for \(student.firstName) \(student.lastName)")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .foregroundStyle(.secondary)
             
             GroupBox {
                 VStack(alignment: .leading, spacing: 12) {
                     Toggle("Use Mississippi Test Blueprints", isOn: $useBlueprints)
                     Text("Maps weak components to specific MS-CCRS standards")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(.secondary)
                     
                     Toggle("Include Grade Progression Analysis", isOn: $includeGradeProgression)
                     Text("Predicts future struggles based on correlation data")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(.secondary)
                 }
                 .padding()
@@ -640,8 +642,7 @@ struct ILPGeneratorSheet: View {
             try? await Task.sleep(nanoseconds: 2_000_000_000) // 2 seconds
             
             // Create a mock ILP
-            let mockILP = IndividualLearningPlan(
-                id: UUID(),
+            let mockILP = UIIndividualLearningPlan(
                 studentMSIS: student.msis,
                 studentName: "\(student.firstName) \(student.lastName)",
                 currentGrade: student.testGrade,
@@ -654,8 +655,7 @@ struct ILPGeneratorSheet: View {
                     "Personalized interventions generated"
                 ],
                 focusAreas: [
-                    FocusArea(
-                        id: UUID().uuidString,
+                    UIFocusArea(
                         subject: "Primary Focus Area",
                         description: "Targeted learning objectives",
                         components: ["Component1", "Component2"],
@@ -682,7 +682,7 @@ struct ILPGeneratorSheet: View {
 @MainActor
 class ILPViewModel: ObservableObject {
     @Published var students: [StudentAssessmentData] = []
-    @Published var generatedILPs: [IndividualLearningPlan] = []
+    @Published var generatedILPs: [UIIndividualLearningPlan] = []
     @Published var isGenerating = false
     @Published var selectedPlanType: PlanType = .auto
     
@@ -697,8 +697,7 @@ class ILPViewModel: ObservableObject {
         try? await Task.sleep(nanoseconds: 2_000_000_000) // 2 seconds
         
         // Create a mock ILP
-        let mockILP = IndividualLearningPlan(
-            id: UUID(),
+        let mockILP = UIIndividualLearningPlan(
             studentMSIS: student.msis,
             studentName: "\(student.firstName) \(student.lastName)",
             currentGrade: student.testGrade,
@@ -711,8 +710,7 @@ class ILPViewModel: ObservableObject {
                 "Customized learning plan generated"
             ],
             focusAreas: [
-                FocusArea(
-                    id: UUID().uuidString,
+                UIFocusArea(
                     subject: "Mathematics",
                     description: "Focus on core concepts",
                     components: ["D1", "D2"],
@@ -730,7 +728,7 @@ class ILPViewModel: ObservableObject {
         generatedILPs.append(mockILP)
     }
     
-    func exportILP(_ ilp: IndividualLearningPlan, format: ExportFormat) async {
+    func exportILP(_ ilp: UIIndividualLearningPlan, format: ExportFormat) async {
         let exporter = ILPExporter()
         
         do {
@@ -740,14 +738,17 @@ class ILPViewModel: ObservableObject {
             
             try FileManager.default.createDirectory(at: outputURL, withIntermediateDirectories: true)
             
+            // Convert UI model to backend model for export
+            let backendILP = ilp.toBackendModel()
+            
             switch format {
             case .markdown:
-                let content = try exporter.exportToMarkdown(ilp)
+                let content = try exporter.exportToMarkdown(backendILP)
                 let fileURL = outputURL.appendingPathComponent("\(ilp.studentName)_ILP.md")
                 try content.write(to: fileURL, atomically: true, encoding: .utf8)
                 
             case .csv:
-                let content = try exporter.exportToCSV([ilp])
+                let content = try exporter.exportToCSV([backendILP])
                 let fileURL = outputURL.appendingPathComponent("\(ilp.studentName)_ILP.csv")
                 try content.write(to: fileURL, atomically: true, encoding: .utf8)
                 
@@ -761,8 +762,4 @@ class ILPViewModel: ObservableObject {
     }
 }
 
-enum ExportFormat {
-    case pdf
-    case markdown
-    case csv
-}
+// ExportFormat moved to UILearningPlanModels.swift to avoid duplication

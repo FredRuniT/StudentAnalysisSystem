@@ -1,12 +1,13 @@
-import SwiftUI
 import AnalysisCore
+import AppKit
 import IndividualLearningPlan
+import SwiftUI
 
 #if canImport(AppKit)
-import AppKit
 #endif
 
 struct ContentView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @State private var selectedTab = 0
     @State private var showingConfiguration = false
     @State private var isProcessing = false
@@ -52,6 +53,7 @@ struct ContentView: View {
                     Label("Configuration", systemImage: "gearshape")
                         .tag(9)
                         .onTapGesture {
+        .accessibilityAddTraits(.isButton)
                             showingConfiguration = true
                         }
                 }
@@ -91,6 +93,7 @@ struct ContentView: View {
             ConfigurationView()
                 .frame(minWidth: 800, minHeight: 600)
         }
+        .themed()
     }
 }
 
@@ -106,7 +109,7 @@ struct DashboardView: View {
                             .font(.largeTitle)
                             .bold()
                         Text("Mississippi MAAP Assessment Data (2023-2025)")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                             .foregroundStyle(.secondary)
                     }
                     Spacer()
@@ -125,28 +128,28 @@ struct DashboardView: View {
                         title: "Total Students",
                         value: "25,946",
                         icon: "person.3.fill",
-                        color: .blue
+                        color: AppleDesignSystem.SystemPalette.blue
                     )
                     
                     MetricCard(
                         title: "Components Analyzed",
                         value: "1,117",
                         icon: "chart.bar.fill",
-                        color: .green
+                        color: AppleDesignSystem.SystemPalette.green
                     )
                     
                     MetricCard(
                         title: "Correlations",
                         value: "623,286",
                         icon: "arrow.triangle.merge",
-                        color: .orange
+                        color: AppleDesignSystem.SystemPalette.orange
                     )
                     
                     MetricCard(
                         title: "Risk Identified",
                         value: "3,842",
                         icon: "exclamationmark.triangle.fill",
-                        color: .red
+                        color: AppleDesignSystem.SystemPalette.red
                     )
                 }
                 .padding(.horizontal)
@@ -204,16 +207,16 @@ struct EarlyWarningDashboardView: View {
             
             // Risk Summary Cards
             HStack(spacing: 16) {
-                RiskCard(level: "Critical", count: 342, color: .red)
-                RiskCard(level: "High", count: 1284, color: .orange)
-                RiskCard(level: "Moderate", count: 2216, color: .yellow)
-                RiskCard(level: "Low", count: 8432, color: .green)
+                RiskCard(level: "Critical", count: 342, color: AppleDesignSystem.SystemPalette.red)
+                RiskCard(level: "High", count: 1284, color: AppleDesignSystem.SystemPalette.orange)
+                RiskCard(level: "Moderate", count: 2216, color: AppleDesignSystem.SystemPalette.yellow)
+                RiskCard(level: "Low", count: 8432, color: AppleDesignSystem.SystemPalette.green)
             }
             .padding(.horizontal)
             
             // Student List
             Text("At-Risk Students")
-                .font(.title2)
+                .font(AppleDesignSystem.Typography.title2)
                 .bold()
                 .padding(.horizontal)
             
@@ -243,11 +246,11 @@ struct MetricCard: View {
             }
             
             Text(value)
-                .font(.title)
+                .font(AppleDesignSystem.Typography.title)
                 .bold()
             
             Text(title)
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
                 .foregroundStyle(.secondary)
         }
         .padding()
@@ -263,7 +266,7 @@ struct ChartCard: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(title)
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
             
             // Placeholder for chart
             RoundedRectangle(cornerRadius: 8)
@@ -293,15 +296,15 @@ struct RiskCard: View {
                     .fill(color)
                     .frame(width: 12, height: 12)
                 Text(level)
-                    .font(.headline)
+                    .font(AppleDesignSystem.Typography.headline)
             }
             
             Text("\(count)")
-                .font(.title2)
+                .font(AppleDesignSystem.Typography.title2)
                 .bold()
             
             Text("students")
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
                 .foregroundStyle(.secondary)
         }
         .padding()
@@ -316,9 +319,9 @@ struct StudentRiskRow: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Student Name")
-                    .font(.headline)
+                    .font(AppleDesignSystem.Typography.headline)
                 Text("MSIS: 123456789")
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                     .foregroundStyle(.secondary)
             }
             
@@ -326,16 +329,16 @@ struct StudentRiskRow: View {
             
             HStack(spacing: 12) {
                 Label("Math", systemImage: "function")
-                    .foregroundStyle(.orange)
+                    .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
                 Label("ELA", systemImage: "text.book.closed")
-                    .foregroundStyle(.red)
+                    .foregroundStyle(AppleDesignSystem.SystemPalette.red)
             }
             
             Text("Critical")
                 .foregroundStyle(.white)
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
-                .background(Color.red)
+                .background(AppleDesignSystem.SystemPalette.red)
                 .clipShape(Capsule())
         }
         .padding(.vertical, 4)
@@ -413,7 +416,7 @@ struct StudentReportsView: View {
                         .bold()
                     
                     Text("Individual Learning Plans and progress reports")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                         .foregroundStyle(.secondary)
                 }
                 
@@ -426,7 +429,7 @@ struct StudentReportsView: View {
                     TextField("Search students...", text: $searchText)
                         .textFieldStyle(.plain)
                 }
-                .padding(8)
+                .padding(AppleDesignSystem.Spacing.small)
                 .background(Color(NSColor.controlBackgroundColor))
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .frame(width: 250)
@@ -441,12 +444,12 @@ struct StudentReportsView: View {
                 }) {
                     HStack {
                         Image(systemName: "person.crop.circle")
-                            .foregroundStyle(.blue)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                             .imageScale(.large)
                         
                         VStack(alignment: .leading) {
                             Text("\(student.firstName) \(student.lastName)")
-                                .font(.headline)
+                                .font(AppleDesignSystem.Typography.headline)
                                 .foregroundStyle(.primary)
                             
                             HStack {
@@ -456,7 +459,7 @@ struct StudentReportsView: View {
                                 Text("•")
                                 Text(student.schoolName)
                             }
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                             .foregroundStyle(.secondary)
                         }
                         
@@ -493,7 +496,6 @@ struct StudentReportsView: View {
             if let student = selectedStudent {
                 NavigationStack {
                     StudentProfileView(student: student)
-                        .navigationBarTitleDisplayMode(.inline)
                         .toolbar {
                             ToolbarItem(placement: .cancellationAction) {
                                 Button("Done") {

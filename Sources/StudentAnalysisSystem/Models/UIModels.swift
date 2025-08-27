@@ -1,5 +1,5 @@
-import Foundation
 import AnalysisCore
+import Foundation
 
 // MARK: - ILP Plan Type
 public enum PlanType: String, CaseIterable, Sendable {

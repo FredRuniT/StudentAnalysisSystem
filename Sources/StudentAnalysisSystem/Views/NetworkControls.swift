@@ -1,10 +1,11 @@
-import SwiftUI
 import AnalysisCore
 import ReportGeneration
+import SwiftUI
 
 // MARK: - Correlation Threshold Control
 
 struct CorrelationThresholdControl: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @ObservedObject var processor: CorrelationNetworkProcessor
     
     private let thresholdOptions: [Double] = [0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0]
@@ -41,8 +42,8 @@ struct CorrelationThresholdControl: View {
             // Custom slider for fine-tuning
             VStack(alignment: .leading, spacing: 4) {
                 Text("Fine Tune: \(processor.correlationThreshold, specifier: "%.2f")")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                 
                 Slider(
                     value: $processor.correlationThreshold,
@@ -52,10 +53,10 @@ struct CorrelationThresholdControl: View {
                     Text("Threshold")
                 } minimumValueLabel: {
                     Text("0.1")
-                        .font(.caption2)
+                        .font(AppleDesignSystem.Typography.caption2)
                 } maximumValueLabel: {
                     Text("1.0")
-                        .font(.caption2)
+                        .font(AppleDesignSystem.Typography.caption2)
                 }
                 .onChange(of: processor.correlationThreshold) { oldValue, newValue in
                     // Debounce updates to avoid excessive processing
@@ -72,10 +73,11 @@ struct CorrelationThresholdControl: View {
             
             // Show current filter stats
             Text("Showing \(processor.filteredCorrelations.count) correlations")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
         }
         .padding(.vertical, 8)
+        .themed()
     }
 }
 
@@ -105,7 +107,7 @@ struct GradeFilterControl: View {
                         }
                     }
                 }
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
                 .foregroundColor(.accentColor)
             }
             
@@ -140,12 +142,12 @@ struct GradeFilterControl: View {
             
             if processor.selectedGrades.isEmpty {
                 Text("All grades selected")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             } else {
                 Text("\(processor.selectedGrades.count) grade\(processor.selectedGrades.count == 1 ? "" : "s") selected")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             }
         }
         .padding(.vertical, 8)
@@ -178,7 +180,7 @@ struct SubjectFilterControl: View {
                         }
                     }
                 }
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
                 .foregroundColor(.accentColor)
             }
             
@@ -219,12 +221,12 @@ struct SubjectFilterControl: View {
             
             if processor.selectedSubjects.isEmpty {
                 Text("All subjects selected")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             } else {
                 Text("\(processor.selectedSubjects.count) subject\(processor.selectedSubjects.count == 1 ? "" : "s") selected")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             }
         }
         .padding(.vertical, 8)
@@ -267,10 +269,10 @@ struct PerformanceSettingsControl: View {
                         Text("Max Correlations")
                     } minimumValueLabel: {
                         Text("1K")
-                            .font(.caption2)
+                            .font(AppleDesignSystem.Typography.caption2)
                     } maximumValueLabel: {
                         Text("50K")
-                            .font(.caption2)
+                            .font(AppleDesignSystem.Typography.caption2)
                     }
                     .onChange(of: processor.maxCorrelations) { oldValue, newValue in
                         // Debounce updates
@@ -289,16 +291,16 @@ struct PerformanceSettingsControl: View {
                 Group {
                     if processor.maxCorrelations > 25000 {
                         Label("High correlation count may impact performance", systemImage: "exclamationmark.triangle")
-                            .font(.caption2)
-                            .foregroundColor(.orange)
+                            .font(AppleDesignSystem.Typography.caption2)
+                            .foregroundColor(AppleDesignSystem.SystemPalette.orange)
                     } else if processor.maxCorrelations > 15000 {
                         Label("Medium performance impact expected", systemImage: "info.circle")
-                            .font(.caption2)
-                            .foregroundColor(.blue)
+                            .font(AppleDesignSystem.Typography.caption2)
+                            .foregroundColor(AppleDesignSystem.SystemPalette.blue)
                     } else {
                         Label("Optimal performance settings", systemImage: "checkmark.circle")
-                            .font(.caption2)
-                            .foregroundColor(.green)
+                            .font(AppleDesignSystem.Typography.caption2)
+                            .foregroundColor(AppleDesignSystem.SystemPalette.green)
                     }
                 }
             }
@@ -313,7 +315,7 @@ struct NetworkLegend: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Legend")
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
             
             // Node colors
             VStack(alignment: .leading, spacing: 6) {
@@ -337,18 +339,18 @@ struct NetworkLegend: View {
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
                         Rectangle()
-                            .fill(Color(hex: "#32D74B") ?? .green)
+                            .fill(Color(hex: "#32D74B") ?? AppleDesignSystem.SystemPalette.green)
                             .frame(width: 20, height: 3)
                         Text("Strong (r≥0.7)")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                     }
                     
                     HStack {
                         Rectangle()
-                            .fill(Color(hex: "#FF9F0A") ?? .orange)
+                            .fill(Color(hex: "#FF9F0A") ?? AppleDesignSystem.SystemPalette.orange)
                             .frame(width: 20, height: 2)
                         Text("Moderate (r≥0.5)")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                     }
                     
                     HStack {
@@ -356,7 +358,7 @@ struct NetworkLegend: View {
                             .fill(Color(hex: "#8E8E93") ?? .gray)
                             .frame(width: 20, height: 1)
                         Text("Weak (r<0.5)")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                     }
                 }
             }
@@ -372,13 +374,13 @@ struct NetworkLegend: View {
                     HStack {
                         Text("⭐")
                         Text("p < 0.01 (Highly Significant)")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                     }
                     
                     HStack {
                         Text("☆")
                         Text("p < 0.05 (Significant)")
-                            .font(.caption)
+                            .font(AppleDesignSystem.Typography.caption)
                     }
                 }
             }
@@ -395,7 +397,7 @@ struct NetworkLegend: View {
                 .fill(Color(hex: color) ?? .gray)
                 .frame(width: 12, height: 12)
             Text(label)
-                .font(.caption)
+                .font(AppleDesignSystem.Typography.caption)
         }
     }
 }
@@ -409,7 +411,7 @@ struct NodeDetailView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     // Component info
@@ -422,8 +424,8 @@ struct NodeDetailView: View {
                             Label(component.subject, systemImage: "book")
                             Label(component.testProvider.rawValue, systemImage: "checkmark.seal")
                         }
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                        .font(AppleDesignSystem.Typography.caption)
+                        .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                     }
                     
                     Divider()
@@ -432,7 +434,7 @@ struct NodeDetailView: View {
                     if let node = processor.networkNodes.first(where: { $0.id == component }) {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("Network Statistics")
-                                .font(.headline)
+                                .font(AppleDesignSystem.Typography.headline)
                             
                             Grid(alignment: .leading) {
                                 GridRow {
@@ -446,7 +448,7 @@ struct NodeDetailView: View {
                                     Text("\(node.nodeSize, specifier: "%.1f") points")
                                 }
                             }
-                            .font(.subheadline)
+                            .font(AppleDesignSystem.Typography.subheadline)
                         }
                         
                         Divider()
@@ -455,13 +457,13 @@ struct NodeDetailView: View {
                     // Top correlations
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Strongest Correlations")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                         
                         let topCorrelations = getTopCorrelations(for: component)
                         
                         if topCorrelations.isEmpty {
                             Text("No correlations available")
-                                .foregroundColor(.secondary)
+                                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                         } else {
                             ForEach(topCorrelations.prefix(10), id: \.id) { correlation in
                                 CorrelationRowView(correlation: correlation)
@@ -498,8 +500,8 @@ struct CorrelationRowView: View {
                 Text(correlation.target.description)
                     .font(.subheadline.weight(.medium))
                 Text(correlation.target.component)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             }
             
             Spacer()
@@ -510,12 +512,12 @@ struct CorrelationRowView: View {
                     Text("\(correlation.correlation, specifier: "%.3f")")
                         .font(.system(.subheadline, design: .monospaced))
                         .fontWeight(.medium)
-                        .foregroundColor(correlation.correlation > 0 ? .blue : .red)
+                        .foregroundColor(correlation.correlation > 0 ? AppleDesignSystem.SystemPalette.blue : AppleDesignSystem.SystemPalette.red)
                 }
                 
                 Text("n=\(correlation.sampleSize)")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption2)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             }
         }
         .padding(.vertical, 4)

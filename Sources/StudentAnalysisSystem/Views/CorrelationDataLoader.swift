@@ -1,8 +1,8 @@
-import Foundation
-import SwiftUI
 import AnalysisCore
-import StatisticalEngine
+import Foundation
 import MLX
+import StatisticalEngine
+import SwiftUI
 
 @MainActor
 class CorrelationDataLoader: ObservableObject {

@@ -1,5 +1,5 @@
-import SwiftUI
 import AnalysisCore
+import SwiftUI
 
 struct ConfigurationView: View {
     @StateObject private var viewModel = ConfigurationViewModel()
@@ -510,7 +510,7 @@ struct PercentileEditorView: View {
                             Text("\(percentile)th percentile")
                             Spacer()
                             Image(systemName: "checkmark.circle.fill")
-                                .foregroundStyle(.green)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                         }
                     }
                     .onDelete { indices in

@@ -1,3 +1,8 @@
+import AnalysisCore
+import Foundation
+import IndividualLearningPlan
+import PredictiveModeling
+import StatisticalEngine
 //
 //  ServiceContainer.swift
 //  StudentAnalysisSystem
@@ -5,11 +10,6 @@
 //  Dependency injection container for app services
 //
 
-import Foundation
-import AnalysisCore
-import StatisticalEngine
-import PredictiveModeling
-import IndividualLearningPlan
 
 /// Central service container for dependency injection
 @MainActor
@@ -17,7 +17,9 @@ public class ServiceContainer: ObservableObject {
     public static let shared = ServiceContainer()
     
     // Core Services
-    private(set) lazy var standardsRepository = StandardsRepository()
+    private(set) lazy var standardsRepository = StandardsRepository(
+        standardsDirectory: URL(fileURLWithPath: ConfigurationService.shared.standardsPath)
+    )
     private(set) lazy var correlationAnalyzer = CorrelationAnalyzer()
     private(set) lazy var blueprintManager = BlueprintManager.shared
     
@@ -25,7 +27,7 @@ public class ServiceContainer: ObservableObject {
     private(set) lazy var correlationEngine = ComponentCorrelationEngine()
     private(set) lazy var warningSystem = EarlyWarningSystem(
         correlationAnalyzer: correlationAnalyzer,
-        thresholds: EarlyWarningSystem.defaultThresholds()
+        configuration: SystemConfiguration.default
     )
     
     // ILP Services
@@ -107,28 +109,42 @@ public class ServiceContainer: ObservableObject {
     /// Create mock correlation model for development
     private func createMockCorrelationModel() -> ValidatedCorrelationModel {
         // Create sample correlations for demo
+        let sourceComponent = ComponentIdentifier(
+            grade: 4,
+            subject: "MATH",
+            component: "D1OP",
+            testProvider: .nwea
+        )
+        
+        let targetComponent1 = ComponentIdentifier(
+            grade: 5,
+            subject: "MATH",
+            component: "D3OP", 
+            testProvider: .nwea
+        )
+        
+        let targetComponent2 = ComponentIdentifier(
+            grade: 5,
+            subject: "MATH",
+            component: "D4OP",
+            testProvider: .nwea
+        )
+        
         let sampleCorrelations = [
             ComponentCorrelationMap(
-                sourceGrade: 4,
-                sourceComponent: "MATH_D1OP",
+                sourceComponent: sourceComponent,
                 correlations: [
                     ComponentCorrelation(
-                        targetGrade: 5,
-                        targetComponent: "MATH_D3OP",
+                        target: targetComponent1,
                         correlation: 0.92,
-                        pValue: 0.0001,
-                        sampleSize: 1000,
                         confidence: 0.9999,
-                        significance: .veryHighlySignificant
+                        sampleSize: 1000
                     ),
                     ComponentCorrelation(
-                        targetGrade: 5,
-                        targetComponent: "MATH_D4OP",
+                        target: targetComponent2,
                         correlation: 0.85,
-                        pValue: 0.001,
-                        sampleSize: 1000,
                         confidence: 0.999,
-                        significance: .highlySignificant
+                        sampleSize: 1000
                     )
                 ]
             )
@@ -159,48 +175,50 @@ public class ServiceContainer: ObservableObject {
     private func createMockStudents() -> [StudentAssessmentData] {
         return [
             StudentAssessmentData(
-                msis: "MS123456",
-                firstName: "Sarah",
-                lastName: "Johnson",
+                studentInfo: StudentAssessmentData.StudentInfo(
+                    msis: "MS123456",
+                    name: "Sarah Johnson",
+                    school: "Lincoln Elementary",
+                    district: "Sample District"
+                ),
+                year: 2024,
                 grade: 4,
-                schoolYear: "2024-2025",
                 assessments: [
-                    Assessment(
-                        testName: "MAAP",
-                        date: Date(),
+                    StudentAssessmentData.SubjectAssessment(
                         subject: "MATH",
-                        overallScore: 725,
-                        overallScoreConverted: 75,
-                        proficiencyLevel: .proficient,
-                        components: [
-                            AssessmentComponent(identifier: "D1OP", score: 65, subScore: nil),
-                            AssessmentComponent(identifier: "D2OP", score: 78, subScore: nil),
-                            AssessmentComponent(identifier: "D3OP", score: 82, subScore: nil),
-                            AssessmentComponent(identifier: "D4OP", score: 71, subScore: nil)
-                        ]
+                        testProvider: .nwea,
+                        componentScores: [
+                            "D1OP": 65.0,
+                            "D2OP": 78.0,
+                            "D3OP": 82.0,
+                            "D4OP": 71.0
+                        ],
+                        overallScore: 725.0,
+                        proficiencyLevel: "Proficient"
                     )
                 ]
             ),
             StudentAssessmentData(
-                msis: "MS789012",
-                firstName: "Michael",
-                lastName: "Davis",
+                studentInfo: StudentAssessmentData.StudentInfo(
+                    msis: "MS789012",
+                    name: "Michael Davis",
+                    school: "Roosevelt Elementary", 
+                    district: "Sample District"
+                ),
+                year: 2024,
                 grade: 3,
-                schoolYear: "2024-2025",
                 assessments: [
-                    Assessment(
-                        testName: "MAAP",
-                        date: Date(),
+                    StudentAssessmentData.SubjectAssessment(
                         subject: "ELA",
-                        overallScore: 680,
-                        overallScoreConverted: 68,
-                        proficiencyLevel: .basic,
-                        components: [
-                            AssessmentComponent(identifier: "RC1", score: 62, subScore: nil),
-                            AssessmentComponent(identifier: "RC2", score: 71, subScore: nil),
-                            AssessmentComponent(identifier: "LA1", score: 69, subScore: nil),
-                            AssessmentComponent(identifier: "LA2", score: 65, subScore: nil)
-                        ]
+                        testProvider: .questar,
+                        componentScores: [
+                            "RC1": 62.0,
+                            "RC2": 71.0,
+                            "LA1": 69.0,
+                            "LA2": 65.0
+                        ],
+                        overallScore: 680.0,
+                        proficiencyLevel: "Basic"
                     )
                 ]
             )

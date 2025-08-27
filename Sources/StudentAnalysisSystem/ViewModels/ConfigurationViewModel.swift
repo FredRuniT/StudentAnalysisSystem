@@ -1,6 +1,6 @@
-import SwiftUI
-import Combine
 import AnalysisCore
+import Combine
+import SwiftUI
 
 @MainActor
 class ConfigurationViewModel: ObservableObject {

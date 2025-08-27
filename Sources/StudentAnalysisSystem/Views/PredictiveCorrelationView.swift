@@ -1,8 +1,9 @@
-import SwiftUI
 import AnalysisCore
 import IndividualLearningPlan
+import SwiftUI
 
 struct PredictiveCorrelationView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = PredictiveCorrelationViewModel()
     @State private var selectedCategory: String?
     @State private var showingILPGenerator = false
@@ -22,12 +23,12 @@ struct PredictiveCorrelationView: View {
                             
                             VStack(alignment: .leading) {
                                 Text(category.name)
-                                    .font(.headline)
+                                    .font(AppleDesignSystem.Typography.headline)
                                 
                                 if let correlations = viewModel.topCorrelationsByCategory[category.name],
                                    !correlations.isEmpty {
                                     Text("\(correlations.count) strong predictors")
-                                        .font(.caption)
+                                        .font(AppleDesignSystem.Typography.caption)
                                         .foregroundStyle(.secondary)
                                 }
                             }
@@ -37,7 +38,7 @@ struct PredictiveCorrelationView: View {
                             if let correlations = viewModel.topCorrelationsByCategory[category.name],
                                let strongest = correlations.first {
                                 Text("\(Int(abs(strongest.correlationStrength) * 100))%")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .foregroundStyle(viewModel.correlationColor(strongest.correlationStrength))
                                     .bold()
                             }
@@ -50,12 +51,12 @@ struct PredictiveCorrelationView: View {
                     Button(action: { showingStudentSearch = true }) {
                         HStack {
                             Image(systemName: "person.crop.circle.badge.exclamationmark")
-                                .foregroundStyle(.blue)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                             Text("Analyze Student")
                             Spacer()
                             if viewModel.selectedStudent != nil {
                                 Image(systemName: "checkmark.circle.fill")
-                                    .foregroundStyle(.green)
+                                    .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                             }
                         }
                     }
@@ -97,6 +98,7 @@ struct PredictiveCorrelationView: View {
             StudentSearchView(viewModel: viewModel)
                 .frame(minWidth: 600, minHeight: 400)
         }
+        .themed()
     }
     
     private func iconForCategory(_ categoryId: String) -> String {
@@ -114,11 +116,11 @@ struct PredictiveCorrelationView: View {
     
     private func colorForCategory(_ categoryId: String) -> Color {
         switch categoryId {
-        case "OA": return .blue
-        case "NBT": return .green
-        case "NF": return .orange
-        case "MD": return .purple
-        case "G": return .pink
+        case "OA": return AppleDesignSystem.SystemPalette.blue
+        case "NBT": return AppleDesignSystem.SystemPalette.green
+        case "NF": return AppleDesignSystem.SystemPalette.orange
+        case "MD": return AppleDesignSystem.SystemPalette.purple
+        case "G": return AppleDesignSystem.SystemPalette.pink
         case "RC": return .cyan
         case "LA": return .indigo
         default: return .gray
@@ -145,7 +147,7 @@ struct CategoryCorrelationDetailView: View {
                         .font(.largeTitle)
                         .bold()
                     Text("Top Predictive Correlations")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                         .foregroundStyle(.secondary)
                 }
                 Spacer()
@@ -213,7 +215,7 @@ struct CorrelationCard: View {
                             .imageScale(.large)
                         
                         Text("\(Int(abs(correlation.correlationStrength) * 100))%")
-                            .font(.caption2)
+                            .font(AppleDesignSystem.Typography.caption2)
                             .bold()
                     }
                 }
@@ -222,39 +224,39 @@ struct CorrelationCard: View {
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
                         Text(correlation.description)
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                         
                         if correlation.confidence > 0.95 {
                             Image(systemName: "star.fill")
-                                .foregroundStyle(.yellow)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.yellow)
                                 .imageScale(.small)
                                 .help("High confidence (p < 0.01)")
                         } else if correlation.confidence > 0.9 {
                             Image(systemName: "star")
-                                .foregroundStyle(.yellow)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.yellow)
                                 .imageScale(.small)
                                 .help("Significant (p < 0.05)")
                         }
                     }
                     
                     Text("Students weak in \(correlation.sourceComponent) are \(correlation.strengthDescription) likely to struggle with \(correlation.targetComponent)")
-                        .font(.subheadline)
+                        .font(AppleDesignSystem.Typography.subheadline)
                         .foregroundStyle(.secondary)
                     
                     HStack(spacing: 16) {
                         Label(correlation.confidenceDescription, systemImage: "checkmark.shield")
-                            .font(.caption)
-                            .foregroundStyle(.green)
+                            .font(AppleDesignSystem.Typography.caption)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                         
                         Label("n = \(correlation.sampleSize)", systemImage: "person.3")
-                            .font(.caption)
-                            .foregroundStyle(.blue)
+                            .font(AppleDesignSystem.Typography.caption)
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                         
                         if correlation.targetGrade > correlation.sourceGrade {
                             Label("\(correlation.targetGrade - correlation.sourceGrade) year prediction",
                                   systemImage: "calendar")
-                                .font(.caption)
-                                .foregroundStyle(.purple)
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.purple)
                         }
                     }
                 }
@@ -283,12 +285,12 @@ struct CorrelationCard: View {
                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Detailed Analysis")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                     
                     HStack(spacing: 20) {
                         VStack(alignment: .leading) {
                             Text("Statistical Metrics")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                             
                             LabeledContent("Pearson Coefficient", value: String(format: "%.3f", correlation.correlationStrength))
@@ -298,17 +300,17 @@ struct CorrelationCard: View {
                         
                         VStack(alignment: .leading) {
                             Text("Intervention Impact")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                                 .foregroundStyle(.secondary)
                             
                             Text("Early intervention in Grade \(correlation.sourceGrade) can prevent:")
-                                .font(.caption)
+                                .font(AppleDesignSystem.Typography.caption)
                             Text("• \(Int(abs(correlation.correlationStrength) * 100))% risk of Grade \(correlation.targetGrade) struggles")
-                                .font(.caption)
-                                .foregroundStyle(.orange)
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
                             Text("• Potential \(correlation.targetGrade - correlation.sourceGrade)-year learning gap")
-                                .font(.caption)
-                                .foregroundStyle(.red)
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.red)
                         }
                     }
                 }
@@ -346,7 +348,7 @@ struct StudentPredictionView: View {
                             .font(.largeTitle)
                             .bold()
                         Text("MSIS: \(student.msis) • Grade \(student.testGrade)")
-                            .font(.headline)
+                            .font(AppleDesignSystem.Typography.headline)
                             .foregroundStyle(.secondary)
                     }
                     
@@ -402,30 +404,30 @@ struct StudentPredictionCard: View {
                     .imageScale(.large)
                 
                 Text(prediction.riskLevel)
-                    .font(.caption)
+                    .font(AppleDesignSystem.Typography.caption)
                     .foregroundStyle(prediction.riskColor)
             }
             .frame(width: 60)
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("Current Weakness: \(prediction.currentWeakness)")
-                    .font(.headline)
+                    .font(AppleDesignSystem.Typography.headline)
                 
                 Text("Predicted Struggle: \(prediction.predictedStruggle) in Grade \(prediction.predictedGrade)")
                     .foregroundStyle(.secondary)
                 
                 HStack(spacing: 12) {
                     Label("\(Int(prediction.likelihood * 100))% likely", systemImage: "chart.line.uptrend.xyaxis")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                         .foregroundStyle(prediction.riskColor)
                     
                     Label("In \(prediction.timeframe)", systemImage: "calendar")
-                        .font(.caption)
-                        .foregroundStyle(.purple)
+                        .font(AppleDesignSystem.Typography.caption)
+                        .foregroundStyle(AppleDesignSystem.SystemPalette.purple)
                     
                     Label("\(Int(prediction.confidence * 100))% confidence", systemImage: "checkmark.shield")
-                        .font(.caption)
-                        .foregroundStyle(.green)
+                        .font(AppleDesignSystem.Typography.caption)
+                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
                 }
             }
             
@@ -457,7 +459,7 @@ struct ILPPreviewView: View {
                         .font(.largeTitle)
                         .bold()
                     Text("\(ilp.studentName) • Grade \(ilp.currentGrade)")
-                        .font(.headline)
+                        .font(AppleDesignSystem.Typography.headline)
                         .foregroundStyle(.secondary)
                 }
                 
@@ -506,9 +508,9 @@ struct ILPPreviewView: View {
                                     
                                     VStack(alignment: .leading) {
                                         Text(area.subject)
-                                            .font(.headline)
+                                            .font(AppleDesignSystem.Typography.headline)
                                         Text(area.description)
-                                            .font(.caption)
+                                            .font(AppleDesignSystem.Typography.caption)
                                             .foregroundStyle(.secondary)
                                     }
                                 }
@@ -539,12 +541,12 @@ struct ILPPreviewView: View {
                                 ForEach(ilp.milestones.prefix(3)) { milestone in
                                     HStack {
                                         Image(systemName: "flag.fill")
-                                            .foregroundStyle(.blue)
+                                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
                                         VStack(alignment: .leading) {
                                             Text(milestone.title)
-                                                .font(.headline)
+                                                .font(AppleDesignSystem.Typography.headline)
                                             Text("Target: \(milestone.targetDate, format: .dateTime.month().day())")
-                                                .font(.caption)
+                                                .font(AppleDesignSystem.Typography.caption)
                                                 .foregroundStyle(.secondary)
                                         }
                                     }
@@ -562,13 +564,13 @@ struct ILPPreviewView: View {
     private func severityColor(_ severity: Double) -> Color {
         switch severity {
         case 0.8...:
-            return .red
+            return AppleDesignSystem.SystemPalette.red
         case 0.6..<0.8:
-            return .orange
+            return AppleDesignSystem.SystemPalette.orange
         case 0.4..<0.6:
-            return .yellow
+            return AppleDesignSystem.SystemPalette.yellow
         default:
-            return .green
+            return AppleDesignSystem.SystemPalette.green
         }
     }
 }
@@ -614,9 +616,9 @@ struct StudentSearchView: View {
                         HStack {
                             VStack(alignment: .leading) {
                                 Text("Sample Student \(index + 1)")
-                                    .font(.headline)
+                                    .font(AppleDesignSystem.Typography.headline)
                                 Text("MSIS: MS00\(index) • Grade \(5 + index)")
-                                    .font(.caption)
+                                    .font(AppleDesignSystem.Typography.caption)
                                     .foregroundStyle(.secondary)
                             }
                             Spacer()

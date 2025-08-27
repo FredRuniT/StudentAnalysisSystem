@@ -1,10 +1,11 @@
-import SwiftUI
-import Charts
 import AnalysisCore
+import Charts
 import StatisticalEngine
+import SwiftUI
 import UniformTypeIdentifiers
 
 struct CorrelationTableView: View {
+    @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = CorrelationTableViewModel()
     @State private var sortOrder = [KeyPathComparator(\CorrelationTableViewModel.CorrelationRow.correlation, order: .reverse)]
     @State private var selection = Set<CorrelationTableViewModel.CorrelationRow.ID>()
@@ -48,6 +49,7 @@ struct CorrelationTableView: View {
         ) { result in
             viewModel.handleExportResult(result)
         }
+        .themed()
     }
     
     var headerView: some View {
@@ -61,14 +63,14 @@ struct CorrelationTableView: View {
                     HStack(spacing: 20) {
                         Label("\(viewModel.filteredRows.count) of \(viewModel.allRows.count) correlations", systemImage: "chart.scatter")
                         Label("Loaded: \(viewModel.loadedCorrelations) items", systemImage: "checkmark.circle.fill")
-                            .foregroundColor(.green)
+                            .foregroundColor(AppleDesignSystem.SystemPalette.green)
                         if viewModel.isProcessingCSV {
                             Label("Processing CSV...", systemImage: "arrow.trianglehead.clockwise")
-                                .foregroundColor(.orange)
+                                .foregroundColor(AppleDesignSystem.SystemPalette.orange)
                         }
                     }
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(AppleDesignSystem.Typography.caption)
+                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                 }
                 
                 Spacer()
@@ -79,10 +81,10 @@ struct CorrelationTableView: View {
                     Text("Strong (>0.7): \(viewModel.strongCorrelations)")
                     Text("Cross-Grade: \(viewModel.crossGradeCount)")
                 }
-                .font(.caption)
-                .padding(8)
+                .font(AppleDesignSystem.Typography.caption)
+                .padding(AppleDesignSystem.Spacing.small)
                 .background(Color.gray.opacity(0.1))
-                .cornerRadius(6)
+                .cornerRadius(AppleDesignSystem.Corners.small)
             }
             .padding()
             
@@ -94,14 +96,14 @@ struct CorrelationTableView: View {
         VStack(spacing: 20) {
             ProgressView(value: viewModel.loadingProgress) {
                 Text(viewModel.loadingMessage)
-                    .font(.headline)
+                    .font(AppleDesignSystem.Typography.headline)
             }
             .progressViewStyle(LinearProgressViewStyle())
             .frame(width: 400)
             
             Text("Processing \(viewModel.loadedCorrelations) correlations...")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(AppleDesignSystem.Typography.caption)
+                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
             
             Button("Cancel") {
                 viewModel.cancelLoading()
@@ -116,10 +118,10 @@ struct CorrelationTableView: View {
             TableColumn("Source", value: \.sourceFullName) { row in
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Grade \(row.sourceGrade) - \(row.sourceSubject)")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                     Text(row.sourceComponent)
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
+                        .font(AppleDesignSystem.Typography.caption2)
+                        .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                 }
             }
             .width(min: 150, ideal: 200)
@@ -127,10 +129,10 @@ struct CorrelationTableView: View {
             TableColumn("Target", value: \.targetFullName) { row in
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Grade \(row.targetGrade) - \(row.targetSubject)")
-                        .font(.caption)
+                        .font(AppleDesignSystem.Typography.caption)
                     Text(row.targetComponent)
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
+                        .font(AppleDesignSystem.Typography.caption2)
+                        .foregroundColor(themeManager.currentTheme.colors.secondaryText)
                 }
             }
             .width(min: 150, ideal: 200)
@@ -152,27 +154,27 @@ struct CorrelationTableView: View {
                     // Show significance indicator
                     if row.confidence > 0.99 {
                         Image(systemName: "star.fill")
-                            .foregroundColor(.purple)
-                            .font(.caption2)
+                            .foregroundColor(AppleDesignSystem.SystemPalette.purple)
+                            .font(AppleDesignSystem.Typography.caption2)
                             .help("p < 0.01 - Highly Significant")
                     } else if row.confidence > 0.95 {
                         Image(systemName: "star")
-                            .foregroundColor(.green)
-                            .font(.caption2)
+                            .foregroundColor(AppleDesignSystem.SystemPalette.green)
+                            .font(AppleDesignSystem.Typography.caption2)
                             .help("p < 0.05 - Significant")
                     }
                     
                     Text(String(format: "%.1f%%", row.confidence * 100))
-                        .foregroundColor(row.confidence > 0.99 ? .purple : 
-                                       row.confidence > 0.95 ? .green : 
-                                       row.confidence > 0.90 ? .blue : .orange)
+                        .foregroundColor(row.confidence > 0.99 ? AppleDesignSystem.SystemPalette.purple : 
+                                       row.confidence > 0.95 ? AppleDesignSystem.SystemPalette.green : 
+                                       row.confidence > 0.90 ? AppleDesignSystem.SystemPalette.blue : AppleDesignSystem.SystemPalette.orange)
                 }
             }
             .width(min: 80, ideal: 100)
             
             TableColumn("Sample", value: \.sampleSize) { row in
                 Text("\(row.sampleSize)")
-                    .foregroundColor(row.sampleSize < 100 ? .orange : .primary)
+                    .foregroundColor(row.sampleSize < 100 ? AppleDesignSystem.SystemPalette.orange : .primary)
             }
             .width(min: 60, ideal: 80)
             
@@ -267,11 +269,11 @@ struct CorrelationTableView: View {
     
     func correlationColor(_ value: Double) -> Color {
         switch value {
-        case 0.95...1.0: return .purple
-        case 0.85..<0.95: return .green
-        case 0.7..<0.85: return .blue
-        case 0.5..<0.7: return .orange
-        default: return .red
+        case 0.95...1.0: return AppleDesignSystem.SystemPalette.purple
+        case 0.85..<0.95: return AppleDesignSystem.SystemPalette.green
+        case 0.7..<0.85: return AppleDesignSystem.SystemPalette.blue
+        case 0.5..<0.7: return AppleDesignSystem.SystemPalette.orange
+        default: return AppleDesignSystem.SystemPalette.red
         }
     }
 }
