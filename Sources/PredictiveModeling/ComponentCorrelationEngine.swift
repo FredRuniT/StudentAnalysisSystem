@@ -33,6 +33,36 @@ public actor ComponentCorrelationEngine {
         }
     }
     
+    /// Get correlations for a specific component from a pre-computed model
+    public nonisolated func getCorrelationsForComponent(
+        componentKey: String,
+        correlationMaps: [ComponentCorrelationMap],
+        threshold: Double = 0.3
+    ) -> [(targetComponent: String, correlation: Double, confidence: Double)] {
+        // Find the map for this component
+        guard let map = correlationMaps.first(where: { 
+            "\($0.sourceComponent.grade)_\($0.sourceComponent.subject)_\($0.sourceComponent.component)" == componentKey 
+        }) else {
+            return []
+        }
+        
+        // Extract correlations above threshold
+        var results: [(targetComponent: String, correlation: Double, confidence: Double)] = []
+        
+        for correlation in map.correlations {
+            if abs(correlation.correlation) >= threshold {
+                let targetKey = "Grade_\(correlation.target.grade)_\(correlation.target.subject)_\(correlation.target.component)"
+                results.append((
+                    targetComponent: targetKey,
+                    correlation: correlation.correlation,
+                    confidence: correlation.confidence
+                ))
+            }
+        }
+        
+        return results.sorted { abs($0.correlation) > abs($1.correlation) }
+    }
+    
     public func discoverAllCorrelations(
         studentData: [StudentLongitudinalData],
         minCorrelation: Double? = nil,

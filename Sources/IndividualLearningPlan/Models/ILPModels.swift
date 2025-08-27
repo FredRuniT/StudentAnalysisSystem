@@ -90,14 +90,10 @@ public struct BonusStandard: Codable, Sendable {
     }
 }
 
-// Missing types that need to be defined
-public enum ProficiencyLevel: String, Codable, Sendable {
-    case advanced = "Advanced"
-    case proficient = "Proficient"
-    case basic = "Basic"
-    case belowBasic = "Below Basic"
-    case minimal = "Minimal"
-}
+// Import the unified Mississippi proficiency levels
+import AnalysisCore
+
+// ProficiencyLevel is now defined in MississippiProficiencyLevels.swift as a type alias
 
 public struct PerformanceAnalysis: Codable, Sendable {
     public let overallScore: Double

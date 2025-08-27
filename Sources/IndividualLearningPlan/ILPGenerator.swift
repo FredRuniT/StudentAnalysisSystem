@@ -16,20 +16,89 @@ public actor ILPGenerator {
     private let correlationEngine: CorrelationAnalyzer
     private let warningSystem: EarlyWarningSystem
     private let configuration: SystemConfiguration
+    private let blueprintManager: BlueprintManager
+    private let progressionAnalyzer: GradeProgressionAnalyzer?
     
     public init(
         standardsRepository: StandardsRepository,
         correlationEngine: CorrelationAnalyzer,
         warningSystem: EarlyWarningSystem,
-        configuration: SystemConfiguration? = nil
+        configuration: SystemConfiguration? = nil,
+        blueprintManager: BlueprintManager? = nil,
+        componentCorrelationEngine: ComponentCorrelationEngine? = nil
     ) {
         self.standardsRepository = standardsRepository
         self.correlationEngine = correlationEngine
         self.warningSystem = warningSystem
         self.configuration = configuration ?? SystemConfiguration.default
+        self.blueprintManager = blueprintManager ?? BlueprintManager.shared
+        
+        // Initialize progression analyzer if we have correlation engine
+        if let componentEngine = componentCorrelationEngine {
+            self.progressionAnalyzer = GradeProgressionAnalyzer(
+                blueprintManager: self.blueprintManager,
+                correlationEngine: componentEngine
+            )
+        } else {
+            self.progressionAnalyzer = nil
+        }
     }
     
     // MARK: - Main ILP Generation Methods
+    
+    /// Generate enhanced ILP with blueprint integration and grade progression
+    public func generateEnhancedILP(
+        student: StudentAssessmentData,
+        correlationModel: ValidatedCorrelationModel,
+        longitudinalData: StudentLongitudinalData? = nil,
+        targetGrade: Int? = nil
+    ) async throws -> IndividualLearningPlan {
+        
+        // Load blueprints and standards if not already loaded
+        try await loadBlueprintData()
+        
+        // Analyze current performance
+        let performanceAnalysis = await analyzeStudentPerformance(student)
+        
+        // Generate grade progression plan if we have longitudinal data and progression analyzer
+        var progressionPlan: StudentProgressionPlan? = nil
+        if let longitudinalData = longitudinalData,
+           let analyzer = progressionAnalyzer {
+            let target = targetGrade ?? (student.grade + 1)
+            progressionPlan = analyzer.generateProgressionPlan(
+                student: longitudinalData,
+                currentGrade: student.grade,
+                targetGrade: target
+            )
+        }
+        
+        // Determine ILP type based on performance
+        if performanceAnalysis.proficiencyLevel == .advanced || 
+           performanceAnalysis.overallScore >= configuration.ilp.enrichmentThreshold {
+            return try await generateEnrichmentILPWithBlueprints(
+                student: student,
+                performanceAnalysis: performanceAnalysis,
+                correlationModel: correlationModel,
+                progressionPlan: progressionPlan
+            )
+        } else {
+            return try await generateRemediationILPWithBlueprints(
+                student: student,
+                performanceAnalysis: performanceAnalysis,
+                correlationModel: correlationModel,
+                progressionPlan: progressionPlan
+            )
+        }
+    }
+    
+    /// Load blueprint and standards data
+    private func loadBlueprintData() async throws {
+        // Load blueprints if not already loaded
+        if blueprintManager.getBlueprint(grade: 3, subject: "MATH") == nil {
+            try blueprintManager.loadAllBlueprints()
+            try blueprintManager.loadAllStandards()
+        }
+    }
     
     /// Generate ILP for any student - automatically detects if they need remediation or enrichment
     public func generateILP(
@@ -680,8 +749,8 @@ public actor ILPGenerator {
         switch score {
         case 85...100: return .advanced
         case 70..<85: return .proficient
-        case 50..<70: return .basic
-        case 35..<50: return .belowBasic
+        case 50..<70: return .passing
+        case 25..<50: return .basic
         default: return .minimal
         }
     }
@@ -692,8 +761,8 @@ public actor ILPGenerator {
         switch score {
         case 650...850: return .advanced     // PL5
         case 550..<650: return .proficient   // PL4
-        case 450..<550: return .basic        // PL3 (Passing)
-        case 350..<450: return .belowBasic   // PL2
+        case 450..<550: return .passing      // PL3 (Passing)
+        case 350..<450: return .basic        // PL2
         default: return .minimal              // PL1
         }
     }
@@ -702,9 +771,9 @@ public actor ILPGenerator {
         switch profLevel.uppercased() {
         case "PL5", "ADVANCED": return .advanced
         case "PL4", "PROFICIENT": return .proficient
-        case "PL3", "PASSING", "BASIC": return .basic
-        case "PL2", "BELOW BASIC": return .belowBasic
-        case "PL1", "MINIMAL": return .minimal
+        case "PL3", "PASSING": return .passing
+        case "PL2", "BASIC": return .basic
+        case "PL1", "MINIMAL", "BELOW BASIC": return .minimal
         default: return .minimal
         }
     }
@@ -841,7 +910,7 @@ public actor ILPGenerator {
     
     private func generateSuccessCriteria(_ level: ProficiencyLevel) -> [String] {
         switch level {
-        case .minimal, .belowBasic:
+        case .minimal:
             return [
                 "Demonstrates understanding of basic concepts",
                 "Completes guided practice with support",
@@ -850,15 +919,23 @@ public actor ILPGenerator {
         case .basic:
             return [
                 "Applies concepts with minimal support",
-                "Achieves 70% accuracy on assessments",
+                "Achieves 50% accuracy on assessments",
                 "Completes independent practice"
             ]
-        default:
+        case .passing:
             return [
                 "Masters grade-level standards",
+                "Achieves 70% accuracy on assessments",
+                "Applies knowledge to familiar situations"
+            ]
+        case .proficient:
+            return [
+                "Exceeds grade-level standards",
                 "Applies knowledge to new situations",
                 "Achieves 80% or higher on assessments"
             ]
+        case .advanced:
+            return generateAdvancedSuccessCriteria()
         }
     }
     
@@ -874,8 +951,9 @@ public actor ILPGenerator {
     
     private func calculateTimeframe(_ level: ProficiencyLevel) -> Int {
         switch level {
-        case .minimal, .belowBasic: return 12 // weeks
-        case .basic: return 8
+        case .minimal: return 12 // weeks
+        case .basic: return 10
+        case .passing: return 8
         case .proficient: return 6
         case .advanced: return 4
         }

@@ -122,23 +122,53 @@ Components follow pattern: `Grade_{grade}_{subject}_{component}_{provider}`
 - NWEA (2025) uses different component codes than QUESTAR (2023-2024)
 - System handles 1,117 unique components across all grades/subjects
 
+### Component to Reporting Category Mapping
+Test components map to Mississippi reporting categories:
+- D1, D2 → Operations & Algebraic Thinking (OA)
+- D3, D4 → Number & Operations Base Ten (NBT)
+- D5, D6 → Fractions (NF)
+- D7, D8 → Measurement & Data (MD)
+- D9, D0 → Geometry (G)
+- RC → Reading Comprehension
+- LA → Language Arts
+
 ### Correlation Processing
 - Calculates (1,117 × 1,116) ÷ 2 = 623,286 unique correlations
 - Uses Pearson correlation coefficient with confidence intervals
+- **IMPORTANT**: Confidence = 1 - p-value (NOT interval width)
 - Correlations > 0.7 indicate strong predictive relationships
 - Matrix is symmetric (A→B = B→A)
+- Significance indicators: ⭐ for p<0.01, ☆ for p<0.05
+
+### Blueprint Integration
+**NEW**: System now integrates Mississippi MAAP Test Blueprints:
+- Maps weak components to specific MS-CCRS standards
+- Extracts Knowledge, Understanding, and Skills expectations
+- Uses test weight percentages to prioritize interventions
+- Creates grade progression paths using correlation predictions
+- Example: Grade 3 D1OP weakness (35%) → Maps to 3.OA.1-9 standards → Predicts 95% correlation with Grade 5 struggles
+
+### Mississippi Proficiency Levels
+**CRITICAL**: Must use official Mississippi levels:
+- Level 1: Minimal
+- Level 2: Basic
+- Level 3: Passing
+- Level 4: Proficient
+- Level 5: Advanced
 
 ### Performance Considerations
 - Uses full dataset of 25,946 students for maximum model accuracy
-- Full dataset contains 25,946 students
 - MLXAccelerator provides GPU optimization for correlation calculations
 - DataFrameOptimizer batches operations to reduce memory usage
+- CorrelationTableView uses native macOS Table for efficient display of 600K+ correlations
 
 ## Data Locations
 - Input: `Data/MAAP_Test_Data/*.csv` (assessment data)
 - Standards: `Data/Standards/*.json` (Mississippi standards by grade)
 - Blueprints: `Data/MAAP_BluePrints/*.json` (test specifications)
 - Output: `Output/` directory (all generated reports and ILPs)
+  - **IMPORTANT**: Output folder is in .gitignore (files can exceed 100MB)
+  - Contains correlation_model.json with 600K+ correlations
 
 ## Platform Requirements
 - macOS 15.0+ / iOS 18.0+
@@ -157,3 +187,32 @@ Components follow pattern: `Grade_{grade}_{subject}_{component}_{provider}`
 - Reference Swift Package library products as dependencies (AnalysisCore, StatisticalEngine, etc.)
 - NOT include module source directories directly in app targets
 - See [XcodeGen Configuration Guide](Documentation/Build/XcodeGen-Configuration.md) for correct setup
+
+## Key Files and New Features
+
+### Blueprint Integration Files
+- `Sources/AnalysisCore/Models/Blueprint.swift` - Blueprint data models
+- `Sources/AnalysisCore/Services/BlueprintManager.swift` - Loads and manages blueprints
+- `Sources/PredictiveModeling/GradeProgressionAnalyzer.swift` - Grade progression analysis
+- `Sources/IndividualLearningPlan/ILPGenerator+Blueprint.swift` - Blueprint-enhanced ILP generation
+
+### UI Components
+- `Sources/StudentAnalysisSystem/Views/CorrelationTableView.swift` - Native macOS table for correlations
+- Shows all 623,286 correlations with sorting, filtering, and CSV export
+- Star indicators: ⭐ (p<0.01 highly significant), ☆ (p<0.05 significant)
+
+### Documentation
+- `Documentation/Features/Blueprint-Integration.md` - Blueprint system overview
+- `Documentation/Features/Blueprint-Usage-Guide.md` - Following Test Blueprints 101
+- `AGENT_HANDOFF.md` - Current issues and state for agent handoff
+
+## Known Issues and TODOs
+- ILPGenerator+Blueprint.swift has compilation errors (type mismatches, access levels)
+- Need to standardize on Mississippi's official proficiency levels
+- Some types like ValidatedCorrelationModel need to be created or mapped
+- InterventionType enum missing required values
+
+## Development Notes
+- Development machine: 128GB MacBook Pro
+- Processing machine: 192GB Mac Studio (for full dataset analysis)
+- Full analysis processes 25,946 students generating 623,286 correlations

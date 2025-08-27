@@ -1,0 +1,173 @@
+placement_map:
+  1A: Minimal
+  1B: Minimal
+  2A: Basic
+  2B: Basic
+  3A: Passing
+  3B: Passing
+  4: Proficient
+  5: Advanced
+
+proficiency_map:
+  1: 1A
+  2: 1B
+  3: 2A
+  4: 2B
+  5: 3A
+  6: 3B
+  7: 4
+  8: 5
+
+# Performance levels for each subject and grade
+performance_levels:
+  3_ELA:
+    1A: [301, 317, Minimal]
+    1B: [318, 334, Minimal]
+    2A: [335, 342, Basic]
+    2B: [343, 349, Basic]
+    3A: [350, 357, Passing]
+    3B: [358, 364, Passing]
+    4: [365, 386, Proficient]
+    5: [387, 399, Advanced]
+  4_ELA:
+    1A: [401, 414, Minimal]
+    1B: [415, 428, Minimal]
+    2A: [429, 439, Basic]
+    2B: [440, 449, Basic]
+    3A: [450, 457, Passing]
+    3B: [458, 464, Passing]
+    4: [465, 487, Proficient]
+    5: [488, 499, Advanced]
+  5_ELA:
+    1A: [501, 519, Minimal]
+    1B: [520, 538, Minimal]
+    2A: [539, 544, Basic]
+    2B: [545, 549, Basic]
+    3A: [550, 557, Passing]
+    3B: [558, 564, Passing]
+    4: [565, 581, Proficient]
+    5: [582, 599, Advanced]
+  6_ELA:
+    1A: [601, 618, Minimal]
+    1B: [619, 635, Minimal]
+    2A: [636, 642, Basic]
+    2B: [643, 649, Basic]
+    3A: [650, 657, Passing]
+    3B: [658, 664, Passing]
+    4: [665, 678, Proficient]
+    5: [679, 699, Advanced]
+  7_ELA:
+    1A: [701, 719, Minimal]
+    1B: [720, 737, Minimal]
+    2A: [738, 743, Basic]
+    2B: [744, 749, Basic]
+    3A: [750, 757, Passing]
+    3B: [758, 764, Passing]
+    4: [765, 775, Proficient]
+    5: [776, 799, Advanced]
+  8_ELA:
+    1A: [801, 819, Minimal]
+    1B: [820, 837, Minimal]
+    2A: [838, 843, Basic]
+    2B: [844, 849, Basic]
+    3A: [850, 857, Passing]
+    3B: [858, 864, Passing]
+    4: [865, 888, Proficient]
+    5: [889, 899, Advanced]
+  3_Math:
+    1A: [301, 316, Minimal]
+    1B: [317, 332, Minimal]
+    2A: [333, 341, Basic]
+    2B: [342, 349, Basic]
+    3A: [350, 357, Passing]
+    3B: [358, 364, Passing]
+    4: [365, 383, Proficient]
+    5: [384, 399, Advanced]
+  4_Math:
+    1A: [401, 418, Minimal]
+    1B: [419, 435, Minimal]
+    2A: [436, 442, Basic]
+    2B: [443, 449, Basic]
+    3A: [450, 457, Passing]
+    3B: [458, 464, Passing]
+    4: [465, 483, Proficient]
+    5: [484, 499, Advanced]
+  5_Math:
+    1A: [501, 520, Minimal]
+    1B: [521, 539, Minimal]
+    2A: [540, 544, Basic]
+    2B: [545, 549, Basic]
+    3A: [550, 557, Passing]
+    3B: [558, 564, Passing]
+    4: [565, 578, Proficient]
+    5: [579, 599, Advanced]
+  6_Math:
+    1A: [601, 618, Minimal]
+    1B: [619, 635, Minimal]
+    2A: [636, 642, Basic]
+    2B: [643, 649, Basic]
+    3A: [650, 657, Passing]
+    3B: [658, 664, Passing]
+    4: [665, 686, Proficient]
+    5: [687, 699, Advanced]
+  7_Math:
+    1A: [701, 718, Minimal]
+    1B: [719, 735, Minimal]
+    2A: [736, 742, Basic]
+    2B: [743, 749, Basic]
+    3A: [750, 757, Passing]
+    3B: [758, 764, Passing]
+    4: [765, 792, Proficient]
+    5: [793, 799, Advanced]
+  8_Math:
+    1A: [801, 819, Minimal]
+    1B: [820, 837, Minimal]
+    2A: [838, 843, Basic]
+    2B: [844, 849, Basic]
+    3A: [850, 857, Passing]
+    3B: [858, 864, Passing]
+    4: [865, 888, Proficient]
+    5: [889, 899, Advanced]
+  5_SCIENCE:
+    1: [500, 540, Minimal]
+    2: [541, 549, Basic]
+    3: [550, 564, Passing]
+    4: [565, 588, Proficient]
+    5: [589, 650, Advanced]
+  8_SCIENCE:
+    1: [800, 840, Minimal]
+    2: [841, 849, Basic]
+    3: [850, 864, Passing]
+    4: [865, 888, Proficient]
+    5: [889, 950, Advanced]
+  Biology:
+    1: [1000, 1037, Minimal]
+    2: [1038, 1049, Basic]
+    3: [1050, 1064, Passing]
+    4: [1065, 1094, Proficient]
+    5: [1095, 1180, Advanced]
+  US_History:
+    1: [1000, 1036, Minimal]
+    2: [1037, 1049, Basic]
+    3: [1050, 1064, Passing]
+    4: [1065, 1088, Proficient]
+    5: [1089, 1150, Advanced]
+  Algebra I:
+    1A: [1001, 1019, Minimal]
+    1B: [1020, 1038, Minimal]
+    2A: [1039, 1044, Basic]
+    2B: [1045, 1049, Basic]
+    3A: [1050, 1057, Passing]
+    3B: [1058, 1064, Passing]
+    4: [1065, 1087, Proficient]
+    5: [1088, 1099, Advanced]
+  English II:
+    1A: [1001, 1018, Minimal]
+    1B: [1019, 1036, Minimal]
+    2A: [1037, 1043, Basic]
+    # noinspection YAMLIncompatibleTypes
+    2B: [ 1044, 1049, Basic]
+    3A: [1050, 1057, Passing]
+    3B: [1058, 1064, Passing]
+    4: [1065, 1080, Proficient]
+    5: [1081, 1099, Advanced]

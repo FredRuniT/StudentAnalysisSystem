@@ -283,7 +283,7 @@ public actor ILPExporter {
     
     public func generateSummaryReport(_ plans: [IndividualLearningPlan]) async -> String {
         let strugglingCount = plans.filter { $0.performanceSummary.proficiencyLevel == .minimal || 
-                                           $0.performanceSummary.proficiencyLevel == .belowBasic }.count
+                                           $0.performanceSummary.proficiencyLevel == .basic }.count
         let proficientCount = plans.filter { $0.performanceSummary.proficiencyLevel == .proficient }.count
         let advancedCount = plans.filter { $0.performanceSummary.proficiencyLevel == .advanced }.count
         
