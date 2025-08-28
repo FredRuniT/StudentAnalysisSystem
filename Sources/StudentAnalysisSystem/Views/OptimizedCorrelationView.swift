@@ -414,6 +414,7 @@ struct OptimizedCorrelationView: View {
 }
 
 struct StatCard: View {
+    @EnvironmentObject var themeManager: ThemeManager
     let title: String
     let value: String
     let subtitle: String

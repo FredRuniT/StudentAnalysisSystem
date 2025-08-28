@@ -53,9 +53,9 @@ struct ContentView: View {
                     Label("Configuration", systemImage: "gearshape")
                         .tag(9)
                         .onTapGesture {
-        .accessibilityAddTraits(.isButton)
                             showingConfiguration = true
                         }
+                        .accessibilityAddTraits(.isButton)
                 }
             }
             .navigationTitle("Student Analysis System")
@@ -69,15 +69,15 @@ struct ContentView: View {
                 case 1:
                     EarlyWarningDashboardView()
                 case 2:
-                    PredictiveCorrelationView()
+                    CorrelationVisualizationView()
                 case 3:
-                    CorrelationNetworkView()
+                    PlaceholderView(title: "Network Visualization", description: "Coming soon - Correlation network visualization") 
                 case 4:
-                    ILPGeneratorView()
+                    PlaceholderView(title: "ILP Generator", description: "Coming soon - Individual Learning Plan generator")
                 case 5:
                     GradeProgressionView()
                 case 6:
-                    StudentReportsView()
+                    PlaceholderView(title: "Student Reports", description: "Coming soon - Individual student report generation")
                 case 7:
                     DataImportView()
                 case 8:
@@ -362,153 +362,7 @@ struct CorrelationAnalysisView: View {
     }
 }
 
-struct StudentReportsView: View {
-    @State private var selectedStudent: StudentAssessmentData?
-    @State private var searchText = ""
-    @State private var showingStudentProfile = false
-    
-    // Sample students for demonstration
-    let sampleStudents: [StudentAssessmentData] = [
-        SimplifiedStudent(
-            msis: "MS001234",
-            firstName: "Emily",
-            lastName: "Johnson",
-            grade: 5,
-            school: "Madison Elementary",
-            district: "Jackson Public Schools"
-        ).toStudentAssessmentData(),
-        SimplifiedStudent(
-            msis: "MS001235",
-            firstName: "Michael",
-            lastName: "Williams",
-            grade: 6,
-            school: "Madison Middle",
-            district: "Jackson Public Schools"
-        ).toStudentAssessmentData(),
-        SimplifiedStudent(
-            msis: "MS001236",
-            firstName: "Sarah",
-            lastName: "Brown",
-            grade: 4,
-            school: "Madison Elementary",
-            district: "Jackson Public Schools"
-        ).toStudentAssessmentData()
-    ]
-    
-    var filteredStudents: [StudentAssessmentData] {
-        if searchText.isEmpty {
-            return sampleStudents
-        }
-        return sampleStudents.filter { student in
-            student.firstName.localizedCaseInsensitiveContains(searchText) ||
-            student.lastName.localizedCaseInsensitiveContains(searchText) ||
-            student.msis.localizedCaseInsensitiveContains(searchText)
-        }
-    }
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            // Header
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("Student Reports")
-                        .font(.largeTitle)
-                        .bold()
-                    
-                    Text("Individual Learning Plans and progress reports")
-                        .font(AppleDesignSystem.Typography.headline)
-                        .foregroundStyle(.secondary)
-                }
-                
-                Spacer()
-                
-                // Search field
-                HStack {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundStyle(.secondary)
-                    TextField("Search students...", text: $searchText)
-                        .textFieldStyle(.plain)
-                }
-                .padding(AppleDesignSystem.Spacing.small)
-                .background(Color(NSColor.controlBackgroundColor))
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                .frame(width: 250)
-            }
-            .padding()
-            
-            // Student list
-            List(filteredStudents, id: \.msis) { student in
-                Button(action: {
-                    selectedStudent = student
-                    showingStudentProfile = true
-                }) {
-                    HStack {
-                        Image(systemName: "person.crop.circle")
-                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
-                            .imageScale(.large)
-                        
-                        VStack(alignment: .leading) {
-                            Text("\(student.firstName) \(student.lastName)")
-                                .font(AppleDesignSystem.Typography.headline)
-                                .foregroundStyle(.primary)
-                            
-                            HStack {
-                                Text("MSIS: \(student.msis)")
-                                Text("•")
-                                Text("Grade \(student.testGrade)")
-                                Text("•")
-                                Text(student.schoolName)
-                            }
-                            .font(AppleDesignSystem.Typography.caption)
-                            .foregroundStyle(.secondary)
-                        }
-                        
-                        Spacer()
-                        
-                        HStack(spacing: 12) {
-                            Button(action: {}) {
-                                Label("View Profile", systemImage: "person.text.rectangle")
-                            }
-                            .buttonStyle(.bordered)
-                            .controlSize(.small)
-                            
-                            Button(action: {}) {
-                                Label("Generate ILP", systemImage: "doc.badge.plus")
-                            }
-                            .buttonStyle(.borderedProminent)
-                            .controlSize(.small)
-                        }
-                    }
-                    .padding(.vertical, 8)
-                }
-                .buttonStyle(.plain)
-            }
-            
-            if filteredStudents.isEmpty {
-                ContentUnavailableView(
-                    "No Students Found",
-                    systemImage: "person.crop.circle.badge.questionmark",
-                    description: Text("Try adjusting your search criteria")
-                )
-            }
-        }
-        .sheet(isPresented: $showingStudentProfile) {
-            if let student = selectedStudent {
-                NavigationStack {
-                    StudentProfileView(student: student)
-                        .toolbar {
-                            ToolbarItem(placement: .cancellationAction) {
-                                Button("Done") {
-                                    showingStudentProfile = false
-                                }
-                            }
-                        }
-                }
-                .frame(minWidth: 900, minHeight: 700)
-            }
-        }
-    }
-}
+// StudentReportsView removed - using placeholder in ContentView instead
 
 struct DataImportView: View {
     var body: some View {
@@ -597,6 +451,32 @@ struct ConfigRow: View {
             Text(value)
                 .bold()
         }
+    }
+}
+
+// MARK: - Placeholder View
+struct PlaceholderView: View {
+    let title: String
+    let description: String
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Image(systemName: "gearshape.2")
+                .font(.system(size: 64))
+                .foregroundStyle(.secondary)
+            
+            Text(title)
+                .font(.largeTitle)
+                .bold()
+            
+            Text(description)
+                .font(.headline)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.background)
     }
 }
 

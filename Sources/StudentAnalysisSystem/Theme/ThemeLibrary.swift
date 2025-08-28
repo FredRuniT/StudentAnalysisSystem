@@ -45,8 +45,8 @@ struct ThemeLibrary {
             description: "Dark intelligence dashboard with monospace typography and tactical accents",
             className: "TacticalTheme()",
             preview: ThemePreview(
-                primaryColor: Color(hex: "#00FFFF"), // Cyan
-                secondaryColor: Color(hex: "#39FF14"), // Electric green
+                primaryColor: Color(hex: "#00FFFF") ?? .cyan, // Cyan
+                secondaryColor: Color(hex: "#39FF14") ?? .green, // Electric green
                 backgroundColor: Color.black,
                 fontStyle: .monospaced
             )

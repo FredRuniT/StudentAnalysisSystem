@@ -19,6 +19,30 @@ public struct IndividualLearningPlan: Codable, Sendable {
     public let predictedOutcomes: [PredictedRisk]
     public let timeline: Timeline
     
+    public init(
+        studentInfo: StudentInfo,
+        assessmentDate: Date,
+        performanceSummary: PerformanceAnalysis,
+        identifiedGaps: [WeakArea] = [],
+        targetStandards: [TargetStandard] = [],
+        learningObjectives: [ScaffoldedLearningObjective] = [],
+        interventionStrategies: [InterventionStrategy] = [],
+        additionalRecommendations: [BonusStandard] = [],
+        predictedOutcomes: [PredictedRisk] = [],
+        timeline: Timeline
+    ) {
+        self.studentInfo = studentInfo
+        self.assessmentDate = assessmentDate
+        self.performanceSummary = performanceSummary
+        self.identifiedGaps = identifiedGaps
+        self.targetStandards = targetStandards
+        self.learningObjectives = learningObjectives
+        self.interventionStrategies = interventionStrategies
+        self.additionalRecommendations = additionalRecommendations
+        self.predictedOutcomes = predictedOutcomes
+        self.timeline = timeline
+    }
+    
     public struct StudentInfo: Codable, Sendable {
         public let msis: String
         public let name: String
@@ -26,6 +50,22 @@ public struct IndividualLearningPlan: Codable, Sendable {
         public let school: String
         public let testDate: Date
         public let testType: String // Using String instead of TestProvider for Codable
+        
+        public init(
+            msis: String,
+            name: String,
+            grade: Int,
+            school: String,
+            testDate: Date,
+            testType: String
+        ) {
+            self.msis = msis
+            self.name = name
+            self.grade = grade
+            self.school = school
+            self.testDate = testDate
+            self.testType = testType
+        }
     }
 }
 
@@ -43,6 +83,30 @@ public struct ScaffoldedLearningObjective: Codable, Sendable {
     public let keywords: [String]
     public let successCriteria: [String]
     public let estimatedTimeframe: Int // in weeks
+    
+    public init(
+        standardId: String,
+        standardDescription: String,
+        currentLevel: ProficiencyLevel,
+        targetLevel: ProficiencyLevel,
+        knowledgeObjectives: [LearningTask] = [],
+        understandingObjectives: [LearningTask] = [],
+        skillsObjectives: [LearningTask] = [],
+        keywords: [String] = [],
+        successCriteria: [String] = [],
+        estimatedTimeframe: Int = 4
+    ) {
+        self.standardId = standardId
+        self.standardDescription = standardDescription
+        self.currentLevel = currentLevel
+        self.targetLevel = targetLevel
+        self.knowledgeObjectives = knowledgeObjectives
+        self.understandingObjectives = understandingObjectives
+        self.skillsObjectives = skillsObjectives
+        self.keywords = keywords
+        self.successCriteria = successCriteria
+        self.estimatedTimeframe = estimatedTimeframe
+    }
 }
 
 public struct LearningTask: Codable, Sendable {
@@ -51,6 +115,20 @@ public struct LearningTask: Codable, Sendable {
     public let estimatedSessions: Int
     public let assessmentType: String
     public let resources: [String]
+    
+    public init(
+        description: String,
+        complexity: ComplexityLevel = .foundational,
+        estimatedSessions: Int = 1,
+        assessmentType: String = "Formative",
+        resources: [String] = []
+    ) {
+        self.description = description
+        self.complexity = complexity
+        self.estimatedSessions = estimatedSessions
+        self.assessmentType = assessmentType
+        self.resources = resources
+    }
     
     public enum ComplexityLevel: String, Codable, Sendable {
         case foundational
@@ -68,6 +146,26 @@ public struct InterventionStrategy: Codable, Sendable {
     public let instructionalApproach: [String]
     public let materials: [String]
     public let progressMonitoring: String
+    
+    public init(
+        tier: InterventionTier,
+        frequency: String,
+        duration: String,
+        groupSize: String,
+        focus: [String],
+        instructionalApproach: [String],
+        materials: [String],
+        progressMonitoring: String
+    ) {
+        self.tier = tier
+        self.frequency = frequency
+        self.duration = duration
+        self.groupSize = groupSize
+        self.focus = focus
+        self.instructionalApproach = instructionalApproach
+        self.materials = materials
+        self.progressMonitoring = progressMonitoring
+    }
     
     public enum InterventionTier: Int, Codable, Sendable {
         case universal = 1  // Tier 1: All students
@@ -101,6 +199,20 @@ public struct PerformanceAnalysis: Codable, Sendable {
     public let componentScores: [String: Double]
     public let strengthAreas: [String]
     public let weakAreas: [String]
+    
+    public init(
+        overallScore: Double,
+        proficiencyLevel: ProficiencyLevel,
+        componentScores: [String: Double] = [:],
+        strengthAreas: [String] = [],
+        weakAreas: [String] = []
+    ) {
+        self.overallScore = overallScore
+        self.proficiencyLevel = proficiencyLevel
+        self.componentScores = componentScores
+        self.strengthAreas = strengthAreas
+        self.weakAreas = weakAreas
+    }
 }
 
 public struct WeakArea: Codable, Sendable, Equatable {
@@ -108,6 +220,18 @@ public struct WeakArea: Codable, Sendable, Equatable {
     public let score: Double
     public let gap: Double
     public let description: String
+    
+    public init(
+        component: String,
+        score: Double,
+        gap: Double,
+        description: String
+    ) {
+        self.component = component
+        self.score = score
+        self.gap = gap
+        self.description = description
+    }
 }
 
 public struct TargetStandard: Codable, Sendable {
@@ -128,9 +252,29 @@ public struct Timeline: Codable, Sendable {
     public let endDate: Date
     public let milestones: [Milestone]
     
+    public init(
+        startDate: Date,
+        endDate: Date,
+        milestones: [Milestone] = []
+    ) {
+        self.startDate = startDate
+        self.endDate = endDate
+        self.milestones = milestones
+    }
+    
     public struct Milestone: Codable, Sendable {
         public let date: Date
         public let description: String
         public let assessmentType: String
+        
+        public init(
+            date: Date,
+            description: String,
+            assessmentType: String
+        ) {
+            self.date = date
+            self.description = description
+            self.assessmentType = assessmentType
+        }
     }
 }

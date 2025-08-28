@@ -3,37 +3,39 @@ import SwiftUI
 // MARK: - Current Theme Access
 /// Provides easy access to the current theme throughout the app
 /// Usage: CurrentTheme.colors.primaryBackground
+@MainActor
 struct CurrentTheme {
-    @EnvironmentObject private static var themeManager = ThemeManager()
+    // Use a static reference instead of @EnvironmentObject for global access
+    private static let defaultTheme = AppleTheme()
     
     static var colors: ThemeColors {
-        themeManager.currentTheme.colors
+        defaultTheme.colors
     }
     
     static var typography: ThemeTypography {
-        themeManager.currentTheme.typography
+        defaultTheme.typography
     }
     
     static var layout: ThemeLayout {
-        themeManager.currentTheme.layout
+        defaultTheme.layout
     }
     
     static var corners: ThemeCorners {
-        themeManager.currentTheme.corners
+        defaultTheme.corners
     }
     
     static var shadows: ThemeShadows {
-        themeManager.currentTheme.shadows
+        defaultTheme.shadows
     }
     
     static var current: Theme {
-        themeManager.currentTheme
+        defaultTheme
     }
 }
 
 // MARK: - Environment Extension for Theme Access
 private struct CurrentThemeKey: EnvironmentKey {
-    static let defaultValue: Theme = AppleTheme()
+    nonisolated(unsafe) static let defaultValue: Theme = AppleTheme()
 }
 
 extension EnvironmentValues {
@@ -71,6 +73,7 @@ extension View {
 enum ThemeTextStyle {
     case primary, secondary, tertiary, success, error, warning, info
     
+    @MainActor
     var color: Color {
         switch self {
         case .primary: return CurrentTheme.colors.primaryText
@@ -88,6 +91,7 @@ enum ThemeTextStyle {
 enum ThemeButtonStyle {
     case primary, secondary
     
+    @MainActor
     var backgroundColor: Color {
         switch self {
         case .primary: return CurrentTheme.colors.buttonPrimary
@@ -95,6 +99,7 @@ enum ThemeButtonStyle {
         }
     }
     
+    @MainActor
     var foregroundColor: Color {
         switch self {
         case .primary: return CurrentTheme.colors.primaryBackground

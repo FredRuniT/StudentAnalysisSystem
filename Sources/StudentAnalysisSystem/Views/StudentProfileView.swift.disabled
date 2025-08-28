@@ -327,7 +327,7 @@ struct StudentProfileView: View {
                         Label("Export Options", systemImage: "square.and.arrow.up")
                     }
                     
-                    NavigationLink(destination: ILPDetailView(ilp: ilp)) {
+                    NavigationLink(destination: ILPDetailView(ilp: ilp.toBackendModel())) {
                         Label("View Full ILP", systemImage: "arrow.right.circle")
                     }
                     .buttonStyle(.borderedProminent)
@@ -743,12 +743,12 @@ class ILPViewModel: ObservableObject {
             
             switch format {
             case .markdown:
-                let content = try exporter.exportToMarkdown(backendILP)
+                let content = await exporter.exportToMarkdown(backendILP)
                 let fileURL = outputURL.appendingPathComponent("\(ilp.studentName)_ILP.md")
                 try content.write(to: fileURL, atomically: true, encoding: .utf8)
                 
             case .csv:
-                let content = try exporter.exportToCSV([backendILP])
+                let content = try await exporter.exportToCSV([backendILP])
                 let fileURL = outputURL.appendingPathComponent("\(ilp.studentName)_ILP.csv")
                 try content.write(to: fileURL, atomically: true, encoding: .utf8)
                 

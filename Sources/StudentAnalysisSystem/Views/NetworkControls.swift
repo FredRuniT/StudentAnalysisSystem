@@ -43,7 +43,7 @@ struct CorrelationThresholdControl: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Fine Tune: \(processor.correlationThreshold, specifier: "%.2f")")
                     .font(AppleDesignSystem.Typography.caption)
-                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                    .foregroundColor(CurrentTheme.colors.secondaryText)
                 
                 Slider(
                     value: $processor.correlationThreshold,
@@ -74,7 +74,7 @@ struct CorrelationThresholdControl: View {
             // Show current filter stats
             Text("Showing \(processor.filteredCorrelations.count) correlations")
                 .font(AppleDesignSystem.Typography.caption)
-                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                .foregroundColor(CurrentTheme.colors.secondaryText)
         }
         .padding(.vertical, 8)
         .themed()
@@ -143,11 +143,11 @@ struct GradeFilterControl: View {
             if processor.selectedGrades.isEmpty {
                 Text("All grades selected")
                     .font(AppleDesignSystem.Typography.caption)
-                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                    .foregroundColor(CurrentTheme.colors.secondaryText)
             } else {
                 Text("\(processor.selectedGrades.count) grade\(processor.selectedGrades.count == 1 ? "" : "s") selected")
                     .font(AppleDesignSystem.Typography.caption)
-                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                    .foregroundColor(CurrentTheme.colors.secondaryText)
             }
         }
         .padding(.vertical, 8)
@@ -222,11 +222,11 @@ struct SubjectFilterControl: View {
             if processor.selectedSubjects.isEmpty {
                 Text("All subjects selected")
                     .font(AppleDesignSystem.Typography.caption)
-                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                    .foregroundColor(CurrentTheme.colors.secondaryText)
             } else {
                 Text("\(processor.selectedSubjects.count) subject\(processor.selectedSubjects.count == 1 ? "" : "s") selected")
                     .font(AppleDesignSystem.Typography.caption)
-                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                    .foregroundColor(CurrentTheme.colors.secondaryText)
             }
         }
         .padding(.vertical, 8)
@@ -425,7 +425,7 @@ struct NodeDetailView: View {
                             Label(component.testProvider.rawValue, systemImage: "checkmark.seal")
                         }
                         .font(AppleDesignSystem.Typography.caption)
-                        .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                        .foregroundColor(CurrentTheme.colors.secondaryText)
                     }
                     
                     Divider()
@@ -463,7 +463,7 @@ struct NodeDetailView: View {
                         
                         if topCorrelations.isEmpty {
                             Text("No correlations available")
-                                .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                                .foregroundColor(CurrentTheme.colors.secondaryText)
                         } else {
                             ForEach(topCorrelations.prefix(10), id: \.id) { correlation in
                                 CorrelationRowView(correlation: correlation)
@@ -501,7 +501,7 @@ struct CorrelationRowView: View {
                     .font(.subheadline.weight(.medium))
                 Text(correlation.target.component)
                     .font(AppleDesignSystem.Typography.caption)
-                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                    .foregroundColor(CurrentTheme.colors.secondaryText)
             }
             
             Spacer()
@@ -517,7 +517,7 @@ struct CorrelationRowView: View {
                 
                 Text("n=\(correlation.sampleSize)")
                     .font(AppleDesignSystem.Typography.caption2)
-                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                    .foregroundColor(CurrentTheme.colors.secondaryText)
             }
         }
         .padding(.vertical, 4)

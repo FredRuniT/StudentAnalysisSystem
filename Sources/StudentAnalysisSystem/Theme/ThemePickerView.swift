@@ -208,11 +208,13 @@ struct ThemeSettingsSection: View {
             .buttonStyle(PlainButtonStyle())
         }
         .sheet(isPresented: $showingThemePicker) {
-            ThemePickerView(themeManager: themeManager)
+            ThemePickerView()
+                .environmentObject(themeManager)
         }
     }
 }
 
 #Preview {
-    ThemePickerView(themeManager: ThemeManager())
+    ThemePickerView()
+        .environmentObject(ThemeManager())
 }

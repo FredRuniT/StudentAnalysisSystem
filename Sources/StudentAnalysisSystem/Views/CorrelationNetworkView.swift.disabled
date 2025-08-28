@@ -66,7 +66,6 @@ public struct CorrelationNetworkView: View {
                                 )
                             )
                             .onTapGesture { location in
-        .accessibilityAddTraits(.isButton)
                                 handleCanvasTap(at: location, canvasSize: geometry.size)
                             }
                             .accessibilityAddTraits(.isButton)
@@ -229,12 +228,12 @@ public struct CorrelationNetworkView: View {
                 let dataLoader = CorrelationDataLoader()
                 let correlations = try await dataLoader.loadCorrelationData()
                 print("✅ Successfully loaded \(correlations.count) correlation maps from data loader")
-                await networkProcessor.loadCorrelationData(correlations)
+                networkProcessor.loadCorrelationData(correlations)
                 print("📊 Network processor has \(networkProcessor.networkNodes.count) nodes and \(networkProcessor.networkEdges.count) edges")
             } catch {
                 print("❌ Error loading correlation data: \(error)")
                 // Fallback to empty data
-                await networkProcessor.loadCorrelationData([])
+                networkProcessor.loadCorrelationData([])
                 print("🔄 Using fallback empty data")
             }
         }
@@ -285,9 +284,8 @@ private struct CorrelationNetworkCanvas: View {
     @State private var isAnimating = false
     
     var body: some View {
-        TimelineView(.animation(minimumInterval: 1.0/60.0)) { timeline in
-            Canvas { context, size in
-                updateFrameRate(timeline.date)
+        Canvas { context, size in
+                // updateFrameRate(Date()) // Temporarily disabled for build
                 
                 // Apply viewport transformations
                 let transform = CGAffineTransform.identity
@@ -323,7 +321,6 @@ private struct CorrelationNetworkCanvas: View {
                     startAnimation()
                 }
             }
-        }
     }
     
     private func updateFrameRate(_ currentTime: Date) {
@@ -373,7 +370,7 @@ private struct CorrelationNetworkCanvas: View {
     }
     
     private func drawNodes(context: GraphicsContext, canvasSize: CGSize) {
-        let visibleBounds = getVisibleBounds(canvasSize: canvasSize)
+        let _ = getVisibleBounds(canvasSize: canvasSize)
         // Debug: Only print once per render cycle to reduce console spam
         if networkProcessor.networkNodes.count > 0 {
             print("🎨 Drawing \(networkProcessor.networkNodes.count) nodes, canvas size: \(canvasSize)")

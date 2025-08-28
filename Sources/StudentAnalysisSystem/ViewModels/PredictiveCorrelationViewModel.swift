@@ -195,7 +195,7 @@ class PredictiveCorrelationViewModel: ObservableObject {
     
     func loadStudentPredictions(_ student: StudentAssessmentData) async {
         guard let model = correlationModel,
-              let engine = correlationEngine else { return }
+              let _ = correlationEngine else { return }
         
         self.selectedStudent = student
         

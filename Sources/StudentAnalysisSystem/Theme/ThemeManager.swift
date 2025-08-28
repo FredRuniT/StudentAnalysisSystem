@@ -3,7 +3,7 @@
 import SwiftUI
 
 // MARK: - Theme Manager
-class ThemeManager: ObservableObject {
+class ThemeManager: ObservableObject, @unchecked Sendable {
     @AppStorage("selectedThemeMode") private var themeModeString: String = "system" {
         didSet {
             updateThemeMode()
@@ -203,6 +203,13 @@ enum ThemeMode: String, CaseIterable {
         case .dark: return "moon.fill"
         }
     }
+}
+
+// MARK: - Theme Option (for Settings Package Bridge)
+enum ThemeOption: String {
+    case system = "system"
+    case light = "light"
+    case dark = "dark"
 }
 
 

@@ -417,6 +417,7 @@ struct CorrelationVisualizationView: View {
 }
 
 struct CorrelationStatCard: View {
+    @EnvironmentObject var themeManager: ThemeManager
     let title: String
     let value: String
     let subtitle: String

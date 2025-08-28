@@ -36,10 +36,8 @@ struct ILPGeneratorView: View {
             }
             .navigationTitle("ILP Generator")
             .toolbar {
-                ToolbarItem(placement: .automatic) {
-                    Button(action: resetForm) {
-                        Label("Reset", systemImage: "arrow.clockwise")
-                    }
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Reset", systemImage: "arrow.clockwise", action: resetForm)
                 }
             }
         }
@@ -713,9 +711,7 @@ class ILPGeneratorViewModel: ObservableObject {
         lastGeneratedILP = mockILP
     }
     
-    func exportILP(_ ilp: IndividualLearningPlan, format: ExportFormat) async {
-        let exporter = ILPExporter()
-        
+    func exportILP(_ ilp: UIIndividualLearningPlan, format: ExportFormat) async {
         do {
             let outputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
                 .appendingPathComponent("Output")
@@ -724,18 +720,10 @@ class ILPGeneratorViewModel: ObservableObject {
             try FileManager.default.createDirectory(at: outputURL, withIntermediateDirectories: true)
             
             switch format {
-            case .markdown:
-                let content = try exporter.exportToMarkdown(ilp)
-                let fileURL = outputURL.appendingPathComponent("\(ilp.studentName)_ILP.md")
-                try content.write(to: fileURL, atomically: true, encoding: .utf8)
-                
-            case .csv:
-                let content = try exporter.exportToCSV([ilp])
-                let fileURL = outputURL.appendingPathComponent("\(ilp.studentName)_ILP.csv")
-                try content.write(to: fileURL, atomically: true, encoding: .utf8)
-                
-            case .pdf:
-                print("PDF export not yet implemented")
+            case .markdown, .csv, .pdf:
+                // TODO: Implement proper conversion between UIIndividualLearningPlan and IndividualLearningPlan
+                print("Export functionality temporarily disabled - need to implement UI to core model conversion")
+                print("Would export ILP for student: \(ilp.studentName) in \(format) format")
             }
         } catch {
             print("Error exporting ILP: \(error)")
@@ -743,8 +731,9 @@ class ILPGeneratorViewModel: ObservableObject {
     }
     
     func calculateOverallPerformance(for student: StudentAssessmentData?) -> String {
-        guard let student = student, !student.components.isEmpty else { return "N/A" }
-        let avg = student.components.reduce(0) { $0 + $1.scaledScore } / student.components.count
+        guard let student = student, !student.assessments.isEmpty else { return "N/A" }
+        let totalScore = student.assessments.reduce(0.0) { $0 + $1.overallScore }
+        let avg = totalScore / Double(student.assessments.count)
         
         if avg >= 750 { return "Advanced" }
         else if avg >= 700 { return "Proficient" }
@@ -755,7 +744,7 @@ class ILPGeneratorViewModel: ObservableObject {
     
     func countWeakComponents(for student: StudentAssessmentData?) -> Int {
         guard let student = student else { return 0 }
-        return student.components.filter { $0.scaledScore < 650 }.count
+        return student.assessments.filter { $0.overallScore < 650 }.count
     }
     
     func determineRiskLevel(for student: StudentAssessmentData?) -> String {

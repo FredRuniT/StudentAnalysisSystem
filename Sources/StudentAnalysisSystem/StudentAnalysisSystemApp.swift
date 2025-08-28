@@ -2,9 +2,12 @@ import SwiftUI
 
 @main
 struct StudentAnalysisSystemApp: App {
+    @StateObject private var themeManager = ThemeManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(themeManager)
         }
         #if os(macOS)
         .windowStyle(.hiddenTitleBar)
@@ -14,6 +17,7 @@ struct StudentAnalysisSystemApp: App {
         #if os(macOS)
         Settings {
             ConfigurationView()
+                .environmentObject(themeManager)
         }
         #endif
     }

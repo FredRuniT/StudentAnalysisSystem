@@ -6,11 +6,56 @@ import SwiftUI
 
 // MARK: - Design Token Models
 struct DesignTokenFile: Codable {
-    let tokens: [String: Any]
+    let tokens: [String: TokenValue]
     
     init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        tokens = try container.decode([String: Any].self)
+        let container = try decoder.container(keyedBy: DynamicCodingKeys.self)
+        var tokensDict: [String: TokenValue] = [:]
+        
+        for key in container.allKeys {
+            if let colorToken = try? container.decode(ColorToken.self, forKey: key) {
+                tokensDict[key.stringValue] = .color(colorToken)
+            } else if let typographyToken = try? container.decode(TypographyToken.self, forKey: key) {
+                tokensDict[key.stringValue] = .typography(typographyToken)
+            } else {
+                // Skip unknown token types
+                continue
+            }
+        }
+        self.tokens = tokensDict
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: DynamicCodingKeys.self)
+        for (key, value) in tokens {
+            let codingKey = DynamicCodingKeys(stringValue: key)!
+            switch value {
+            case .color(let colorToken):
+                try container.encode(colorToken, forKey: codingKey)
+            case .typography(let typographyToken):
+                try container.encode(typographyToken, forKey: codingKey)
+            }
+        }
+    }
+}
+
+enum TokenValue: Codable {
+    case color(ColorToken)
+    case typography(TypographyToken)
+}
+
+struct DynamicCodingKeys: CodingKey {
+    var stringValue: String
+    var intValue: Int?
+    
+    init?(stringValue: String) {
+        self.stringValue = stringValue
+        self.intValue = nil
+    }
+    
+    init?(intValue: Int) {
+        self.stringValue = "\(intValue)"
+        self.intValue = intValue
     }
 }
 
