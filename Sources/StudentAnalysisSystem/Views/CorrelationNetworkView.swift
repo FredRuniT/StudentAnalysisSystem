@@ -1,0 +1,562 @@
+import AnalysisCore
+import AppKit
+import Foundation
+import ReportGeneration
+import SwiftUI
+
+#if canImport(AppKit)
+#endif
+
+/// Main correlation network visualization view
+@MainActor
+public struct CorrelationNetworkView: View {
+    @EnvironmentObject var themeManager: ThemeManager
+    @StateObject private var networkProcessor = CorrelationNetworkProcessor()
+    @StateObject private var forceSimulation = ForceDirectedLayout()
+    
+    // Viewport controls
+    @State private var viewportOffset: CGSize = .zero
+    @State private var viewportScale: CGFloat = 1.0
+    @State private var lastPanLocation: CGPoint = .zero
+    
+    // UI state
+    @State private var selectedNode: ComponentIdentifier?
+    @State private var showingLegend = true
+    @State private var showingFilters = true
+    @State private var showingNodeDetail = false
+    
+    // Performance tracking
+    @State private var frameRate: Double = 60.0
+    @State private var lastFrameTime = CACurrentMediaTime()
+    
+    public init() {}
+    
+    public var body: some View {
+        NavigationStack {
+            HStack(spacing: 0) {
+                // Filters sidebar
+                if showingFilters {
+                    filterSidebar
+                        .frame(width: 280)
+                        .background(Color.gray.opacity(0.1))
+                }
+                
+                // Main network visualization
+                VStack(spacing: 0) {
+                    // Toolbar
+                    networkToolbar
+                    
+                    // Canvas container with performance overlay
+                    GeometryReader { geometry in
+                        ZStack(alignment: .topTrailing) {
+                            // Main network canvas
+                            CorrelationNetworkCanvas(
+                                networkProcessor: networkProcessor,
+                                forceSimulation: forceSimulation,
+                                viewportOffset: $viewportOffset,
+                                viewportScale: $viewportScale,
+                                selectedNode: $selectedNode,
+                                frameRate: $frameRate
+                            )
+                            .clipped()
+                            .gesture(
+                                SimultaneousGesture(
+                                    panGesture,
+                                    zoomGesture
+                                )
+                            )
+                            .onTapGesture { location in
+                                handleCanvasTap(at: location, canvasSize: geometry.size)
+                            }
+                            .accessibilityAddTraits(.isButton)
+                            
+                            // Legend overlay
+                            if showingLegend {
+                                NetworkLegend()
+                                    .padding()
+                                    .background(Color.black.opacity(0.1))
+                                    .cornerRadius(8)
+                                    .padding()
+                            }
+                            
+                            // Performance indicator
+                            VStack(alignment: .trailing, spacing: 4) {
+                                Text("FPS: \(frameRate, specifier: "%.1f")")
+                                    .font(.system(.caption, design: .monospaced))
+                                    .foregroundColor(frameRate < 30 ? AppleDesignSystem.SystemPalette.red : frameRate < 45 ? AppleDesignSystem.SystemPalette.orange : AppleDesignSystem.SystemPalette.green)
+                                
+                                Text(networkProcessor.filterSummary)
+                                    .font(.system(.caption2, design: .monospaced))
+                                    .foregroundColor(themeManager.currentTheme.colors.secondaryText)
+                            }
+                            .padding(.trailing)
+                            .padding(.top, 8)
+                        }
+                    }
+                }
+            }
+        }
+        .navigationTitle("Correlation Network")
+        .onAppear {
+            loadCorrelationData()
+        }
+        .sheet(isPresented: $showingNodeDetail) {
+            if let selectedNode = selectedNode {
+                NodeDetailView(component: selectedNode, processor: networkProcessor)
+            }
+        }
+        .themed()
+    }
+    
+    // MARK: - Subviews
+    
+    private var filterSidebar: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Network Filters")
+                .font(AppleDesignSystem.Typography.headline)
+                .padding(.horizontal)
+            
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    // Correlation threshold
+                    CorrelationThresholdControl(processor: networkProcessor)
+                    
+                    // Grade filter
+                    GradeFilterControl(processor: networkProcessor)
+                    
+                    // Subject filter
+                    SubjectFilterControl(processor: networkProcessor)
+                    
+                    // Performance settings
+                    PerformanceSettingsControl(processor: networkProcessor)
+                }
+                .padding(.horizontal)
+            }
+            
+            Spacer()
+        }
+        .padding(.vertical)
+    }
+    
+    private var networkToolbar: some View {
+        HStack {
+            // Filter toggle
+            Button(action: { showingFilters.toggle() }) {
+                Image(systemName: "sidebar.left")
+            }
+            .help("Toggle Filters")
+            
+            Spacer()
+            
+            // View controls
+            HStack(spacing: 12) {
+                Button("Reset View") {
+                    resetViewport()
+                }
+                .disabled(viewportScale == 1.0 && viewportOffset == .zero)
+                
+                Button(action: { showingLegend.toggle() }) {
+                    Image(systemName: showingLegend ? "eye.slash" : "eye")
+                }
+                .help("Toggle Legend")
+                
+                if networkProcessor.isProcessing {
+                    ProgressView()
+                        .scaleEffect(0.8)
+                }
+            }
+        }
+        .padding()
+        .background(Color.gray.opacity(0.1))
+        .border(Color.gray.opacity(0.3), width: 0.5)
+    }
+    
+    // MARK: - Gestures
+    
+    private var panGesture: some Gesture {
+        DragGesture(coordinateSpace: .local)
+            .onChanged { value in
+                viewportOffset = CGSize(
+                    width: viewportOffset.width + value.translation.width - lastPanLocation.x,
+                    height: viewportOffset.height + value.translation.height - lastPanLocation.y
+                )
+                lastPanLocation = CGPoint(x: value.translation.width, y: value.translation.height)
+            }
+            .onEnded { _ in
+                lastPanLocation = .zero
+            }
+    }
+    
+    private var zoomGesture: some Gesture {
+        MagnificationGesture()
+            .onChanged { value in
+                let newScale = max(0.1, min(5.0, value))
+                viewportScale = newScale
+            }
+    }
+    
+    // MARK: - Actions
+    
+    private func handleCanvasTap(at location: CGPoint, canvasSize: CGSize) {
+        // Transform tap location to network coordinates
+        let networkLocation = transformToNetworkCoordinates(
+            screenPoint: location,
+            canvasSize: canvasSize
+        )
+        
+        // Find nearest node within hit radius
+        if let nearestNode = findNearestNode(to: networkLocation, within: 20.0) {
+            selectedNode = nearestNode.component
+            showingNodeDetail = true
+        } else {
+            selectedNode = nil
+        }
+    }
+    
+    private func resetViewport() {
+        withAnimation(.easeInOut(duration: 0.3)) {
+            viewportOffset = .zero
+            viewportScale = 1.0
+        }
+    }
+    
+    private func loadCorrelationData() {
+        Task {
+            print("🔄 Starting correlation data loading process...")
+            // Load correlation data directly from JSON like CorrelationVisualizationView does
+            let outputURL = URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/demo_correlation_model.json")
+            
+            if let data = try? Data(contentsOf: outputURL) {
+                print("✅ Loaded JSON data: \(data.count) bytes")
+                // Parse the JSON
+                if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                   let correlationsArray = json["correlations"] as? [[String: Any]] {
+                    print("✅ Found \(correlationsArray.count) correlations in JSON")
+                    
+                    // Convert to ComponentCorrelationMap format
+                    var correlationMaps: [ComponentCorrelationMap] = []
+                    
+                    for correlationEntry in correlationsArray {
+                        guard let sourceDict = correlationEntry["sourceComponent"] as? [String: Any],
+                              let grade = sourceDict["grade"] as? Int,
+                              let subject = sourceDict["subject"] as? String,
+                              let component = sourceDict["component"] as? String,
+                              let testProvider = sourceDict["testProvider"] as? String,
+                              let correlationsList = correlationEntry["correlations"] as? [[String: Any]] else {
+                            continue
+                        }
+                        
+                        let source = ComponentIdentifier(
+                            grade: grade,
+                            subject: subject,
+                            component: component,
+                            testProvider: TestProvider(rawValue: testProvider) ?? .questar
+                        )
+                        
+                        var componentCorrelations: [ComponentCorrelation] = []
+                        
+                        for correlationData in correlationsList {
+                            guard let targetDict = correlationData["target"] as? [String: Any],
+                                  let targetGrade = targetDict["grade"] as? Int,
+                                  let targetSubject = targetDict["subject"] as? String,
+                                  let targetComponent = targetDict["component"] as? String,
+                                  let targetProvider = targetDict["testProvider"] as? String,
+                                  let correlation = correlationData["correlation"] as? Double,
+                                  let confidence = correlationData["confidence"] as? Double,
+                                  let sampleSize = correlationData["sampleSize"] as? Int else {
+                                continue
+                            }
+                            
+                            let target = ComponentIdentifier(
+                                grade: targetGrade,
+                                subject: targetSubject,
+                                component: targetComponent,
+                                testProvider: TestProvider(rawValue: targetProvider) ?? .questar
+                            )
+                            
+                            let componentCorrelation = ComponentCorrelation(
+                                target: target,
+                                correlation: correlation,
+                                confidence: confidence,
+                                sampleSize: sampleSize
+                            )
+                            
+                            componentCorrelations.append(componentCorrelation)
+                        }
+                        
+                        if !componentCorrelations.isEmpty {
+                            let correlationMap = ComponentCorrelationMap(
+                                sourceComponent: source,
+                                correlations: componentCorrelations
+                            )
+                            correlationMaps.append(correlationMap)
+                        }
+                    }
+                    
+                    print("✅ Created \(correlationMaps.count) correlation maps")
+                    await MainActor.run {
+                        networkProcessor.loadCorrelationData(correlationMaps)
+                    }
+                } else {
+                    print("❌ Failed to parse JSON structure")
+                }
+            } else {
+                print("❌ Failed to load data from: \(outputURL.path)")
+                // Try the full correlation model as backup
+                let backupURL = URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json")
+                if let data = try? Data(contentsOf: backupURL) {
+                    print("✅ Loaded backup JSON data: \(data.count) bytes")
+                    // Same parsing logic...
+                }
+            }
+        }
+    }
+    
+    // MARK: - Coordinate Transformations
+    
+    private func transformToNetworkCoordinates(screenPoint: CGPoint, canvasSize: CGSize) -> CGPoint {
+        let centerX = canvasSize.width / 2
+        let centerY = canvasSize.height / 2
+        
+        let networkX = (screenPoint.x - centerX - viewportOffset.width) / viewportScale + centerX
+        let networkY = (screenPoint.y - centerY - viewportOffset.height) / viewportScale + centerY
+        
+        return CGPoint(x: networkX, y: networkY)
+    }
+    
+    private func findNearestNode(to point: CGPoint, within radius: Double) -> NetworkNode? {
+        var nearestNode: NetworkNode?
+        var minDistance = radius
+        
+        for node in networkProcessor.networkNodes {
+            let distance = sqrt(
+                pow(node.position.x - point.x, 2) + pow(node.position.y - point.y, 2)
+            )
+            if distance < minDistance {
+                minDistance = distance
+                nearestNode = node
+            }
+        }
+        
+        return nearestNode
+    }
+}
+
+// MARK: - Canvas View
+
+private struct CorrelationNetworkCanvas: View {
+    @ObservedObject var networkProcessor: CorrelationNetworkProcessor
+    @ObservedObject var forceSimulation: ForceDirectedLayout
+    
+    @Binding var viewportOffset: CGSize
+    @Binding var viewportScale: CGFloat
+    @Binding var selectedNode: ComponentIdentifier?
+    @Binding var frameRate: Double
+    
+    @State private var animationPhase = 0.0
+    @State private var isAnimating = false
+    @State private var animationTimer: Timer?
+    
+    var body: some View {
+        Canvas { context, size in
+                // updateFrameRate(Date()) // Temporarily disabled for build
+                
+                // Apply viewport transformations
+                let transform = CGAffineTransform.identity
+                    .translatedBy(x: size.width/2, y: size.height/2)
+                    .scaledBy(x: viewportScale, y: viewportScale)
+                    .translatedBy(x: viewportOffset.width/viewportScale, y: viewportOffset.height/viewportScale)
+                    .translatedBy(x: -size.width/2, y: -size.height/2)
+                
+                context.concatenate(transform)
+                
+                // Draw edges first (behind nodes)
+                drawEdges(context: context, canvasSize: size)
+                
+                // Draw nodes on top
+                drawNodes(context: context, canvasSize: size)
+                
+                // Draw selection highlight
+                if let selected = selectedNode {
+                    drawSelectionHighlight(context: context, selected: selected, canvasSize: size)
+                }
+            }
+            .onAppear {
+                startAnimation()
+            }
+            .onDisappear {
+                stopAnimation()
+            }
+            .onChange(of: networkProcessor.networkNodes.count) { oldValue, newValue in
+                if newValue > 0 && !isAnimating {
+                    forceSimulation.initializePositionsWithProcessor(processor: networkProcessor, canvasSize: CGSize(width: 800, height: 600))
+                    startAnimation()
+                }
+            }
+    }
+    
+    private func updateFrameRate(_ currentTime: Date) {
+        let currentTimeInterval = currentTime.timeIntervalSince1970
+        let deltaTime = currentTimeInterval - TimeInterval(CACurrentMediaTime())
+        frameRate = 1.0 / max(0.001, deltaTime)
+    }
+    
+    private func startAnimation() {
+        isAnimating = true
+        forceSimulation.reset() // Start the force simulation
+        // Use a timer to update physics outside of view updates
+        animationTimer?.invalidate()
+        animationTimer = Timer.scheduledTimer(withTimeInterval: 1.0/60.0, repeats: true) { _ in
+            Task { @MainActor in
+                if forceSimulation.isRunning {
+                    forceSimulation.stepWithProcessor(processor: networkProcessor, canvasSize: CGSize(width: 800, height: 600))
+                } else {
+                    stopAnimation()
+                }
+            }
+        }
+    }
+    
+    private func stopAnimation() {
+        isAnimating = false
+        animationTimer?.invalidate()
+        animationTimer = nil
+    }
+    
+    private func drawEdges(context: GraphicsContext, canvasSize: CGSize) {
+        let visibleBounds = getVisibleBounds(canvasSize: canvasSize)
+        
+        for edge in networkProcessor.networkEdges {
+            guard let sourceNode = networkProcessor.networkNodes.first(where: { $0.id == edge.source }),
+                  let targetNode = networkProcessor.networkNodes.first(where: { $0.id == edge.target }) else {
+                continue
+            }
+            
+            // Viewport culling
+            if !isEdgeVisible(source: sourceNode.position, target: targetNode.position, bounds: visibleBounds) {
+                continue
+            }
+            
+            // Create edge path
+            var path = Path()
+            path.move(to: sourceNode.position)
+            path.addLine(to: targetNode.position)
+            
+            // Set edge appearance based on strength
+            let color = Color(hex: edge.color) ?? .gray
+            let lineWidth = edge.lineWidth
+            let opacity = edge.opacity
+            
+            context.stroke(
+                path,
+                with: .color(color.opacity(opacity)),
+                style: StrokeStyle(lineWidth: lineWidth, lineCap: .round)
+            )
+        }
+    }
+    
+    private func drawNodes(context: GraphicsContext, canvasSize: CGSize) {
+        let _ = getVisibleBounds(canvasSize: canvasSize)
+        // Debug: Only print once per render cycle to reduce console spam
+        if networkProcessor.networkNodes.count > 0 {
+            print("🎨 Drawing \(networkProcessor.networkNodes.count) nodes, canvas size: \(canvasSize)")
+        }
+        
+        for node in networkProcessor.networkNodes {
+            // Always draw nodes initially (disable viewport culling for debugging)
+            // if !visibleBounds.contains(node.position) {
+            //     continue
+            // }
+            
+            let nodeSize = node.nodeSize
+            let nodeRect = CGRect(
+                x: node.position.x - nodeSize/2,
+                y: node.position.y - nodeSize/2,
+                width: nodeSize,
+                height: nodeSize
+            )
+            
+            let nodePath = Circle().path(in: nodeRect)
+            let nodeColor = Color(hex: node.subjectColor) ?? AppleDesignSystem.SystemPalette.blue
+            
+            // Draw node fill
+            context.fill(nodePath, with: .color(nodeColor))
+            
+            // Draw node border
+            context.stroke(
+                nodePath,
+                with: .color(.primary.opacity(0.8)),
+                style: StrokeStyle(lineWidth: 1.0)
+            )
+            
+            // Draw component label (only at higher zoom levels)
+            if viewportScale > 0.8 {
+                drawNodeLabel(context: context, node: node, rect: nodeRect)
+            }
+        }
+    }
+    
+    private func drawNodeLabel(context: GraphicsContext, node: NetworkNode, rect: CGRect) {
+        let label = node.component.component
+        let labelRect = CGRect(
+            x: rect.midX - 30,
+            y: rect.maxY + 2,
+            width: 60,
+            height: 12
+        )
+        
+        context.draw(
+            Text(label)
+                .font(.system(size: 9, weight: .medium))
+                .foregroundColor(AppleDesignSystem.SystemColors.label),
+            in: labelRect
+        )
+    }
+    
+    private func drawSelectionHighlight(context: GraphicsContext, selected: ComponentIdentifier, canvasSize: CGSize) {
+        guard let selectedNode = networkProcessor.networkNodes.first(where: { $0.id == selected }) else {
+            return
+        }
+        
+        let highlightSize = selectedNode.nodeSize + 8
+        let highlightRect = CGRect(
+            x: selectedNode.position.x - highlightSize/2,
+            y: selectedNode.position.y - highlightSize/2,
+            width: highlightSize,
+            height: highlightSize
+        )
+        
+        let highlightPath = Circle().path(in: highlightRect)
+        context.stroke(
+            highlightPath,
+            with: .color(.accentColor),
+            style: StrokeStyle(lineWidth: 3.0, dash: [5, 3])
+        )
+    }
+    
+    private func getVisibleBounds(canvasSize: CGSize) -> CGRect {
+        let margin = 50.0 // Add margin for smooth scrolling
+        return CGRect(
+            x: -viewportOffset.width/viewportScale - margin,
+            y: -viewportOffset.height/viewportScale - margin,
+            width: canvasSize.width/viewportScale + 2*margin,
+            height: canvasSize.height/viewportScale + 2*margin
+        )
+    }
+    
+    private func isEdgeVisible(source: CGPoint, target: CGPoint, bounds: CGRect) -> Bool {
+        return bounds.contains(source) || bounds.contains(target) ||
+               lineIntersectsRect(start: source, end: target, rect: bounds)
+    }
+    
+    private func lineIntersectsRect(start: CGPoint, end: CGPoint, rect: CGRect) -> Bool {
+        // Simple line-rectangle intersection test
+        let minX = min(start.x, end.x)
+        let maxX = max(start.x, end.x)
+        let minY = min(start.y, end.y)
+        let maxY = max(start.y, end.y)
+        
+        return !(maxX < rect.minX || minX > rect.maxX || maxY < rect.minY || minY > rect.maxY)
+    }
+}
+

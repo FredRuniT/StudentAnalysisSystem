@@ -8,23 +8,35 @@ struct ThemeLibrary {
     
     
     // MARK: - Theme Definition
+    /// ThemeDefinition represents...
     struct ThemeDefinition {
+        /// id property
         let id: String
+        /// name property
         let name: String
+        /// description property
         let description: String
+        /// className property
         let className: String
+        /// preview property
         let preview: ThemePreview
     }
     
     // MARK: - Theme Preview
+    /// ThemePreview represents...
     struct ThemePreview {
+        /// primaryColor property
         let primaryColor: Color
+        /// secondaryColor property
         let secondaryColor: Color
+        /// backgroundColor property
         let backgroundColor: Color
+        /// fontStyle property
         let fontStyle: Font.Design // .default, .monospaced, .serif, .rounded
     }
     
     // MARK: - Available Themes
+    /// themes property
     static let themes: [ThemeDefinition] = [
         ThemeDefinition(
             id: "apple",
@@ -46,7 +58,7 @@ struct ThemeLibrary {
             className: "TacticalTheme()",
             preview: ThemePreview(
                 primaryColor: Color(hex: "#00FFFF") ?? .cyan, // Cyan
-                secondaryColor: Color(hex: "#39FF14") ?? .green, // Electric green
+                secondaryColor: Color(hex: "#39FF14") ?? AppleDesignSystem.SystemPalette.green, // Electric green
                 backgroundColor: Color.black,
                 fontStyle: .monospaced
             )

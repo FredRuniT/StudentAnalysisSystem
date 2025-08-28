@@ -1,3 +1,9 @@
+import AnalysisCore
+import Foundation
+import IndividualLearningPlan
+import PredictiveModeling
+import ReportGeneration
+import StatisticalEngine
 //
 //  main.swift
 //  StudentAnalysisSystemMain
@@ -5,22 +11,19 @@
 //  Main executable for running the complete Student Analysis System
 //
 
-import Foundation
-import AnalysisCore
-import StatisticalEngine
-import PredictiveModeling
-import IndividualLearningPlan
-import ReportGeneration
 
 // MARK: - Main Application
 
 @main
+/// StudentAnalysisSystemMain represents...
 struct StudentAnalysisSystemMain {
+    /// main function description
     static func main() async {
         print("==========================================")
         print("   Student Analysis System - v1.0        ")
         print("==========================================\n")
         
+        /// analyzer property
         let analyzer = SystemAnalyzer()
         
         do {
@@ -29,16 +32,19 @@ struct StudentAnalysisSystemMain {
             
             // Step 1: Load Data
             print("Step 1: Loading student data...")
+            /// studentData property
             let studentData = try await analyzer.loadStudentData()
             print("✅ Loaded \(studentData.count) students' data\n")
             
             // Step 2: Run Statistical Analysis
             print("Step 2: Running statistical analysis...")
+            /// correlationModel property
             let correlationModel = try await analyzer.runStatisticalAnalysis(on: studentData)
             print("✅ Correlation analysis complete\n")
             
             // Step 3: Train Predictive Models
             print("Step 3: Training predictive models...")
+            /// warningSystem property
             let warningSystem = try await analyzer.trainPredictiveModels(with: studentData)
             print("✅ Early warning system trained\n")
             
@@ -46,11 +52,14 @@ struct StudentAnalysisSystemMain {
             print("Step 4: Generating Individual Learning Plans...")
             
             // Select sample students: struggling, average, and excelling
+            /// sampleStudents property
             let sampleStudents = selectSampleStudents(from: studentData)
+            /// generatedILPs property
             var generatedILPs = [IndividualLearningPlan]()
             
             for (index, student) in sampleStudents.enumerated() {
                 print("  Generating ILP \(index + 1)/\(sampleStudents.count)...")
+                /// ilp property
                 let ilp = try await analyzer.generateILP(
                     for: student,
                     using: correlationModel,
@@ -86,40 +95,53 @@ struct StudentAnalysisSystemMain {
         }
     }
     
+    /// selectSampleStudents function description
     static func selectSampleStudents(from data: [StudentLongitudinalData]) -> [StudentAssessmentData] {
+        /// sampleStudents property
         var sampleStudents = [StudentAssessmentData]()
         
         // Sort students by their most recent overall score
+        /// sortedStudents property
         let sortedStudents = data.sorted { student1, student2 in
+            /// score1 property
             let score1 = student1.assessments.last?.overallScore ?? 0
+            /// score2 property
             let score2 = student2.assessments.last?.overallScore ?? 0
             return score1 < score2
         }
         
         // Select struggling students (bottom 20%)
+        /// strugglingIndex property
         let strugglingIndex = Int(Double(sortedStudents.count) * 0.1)
         if strugglingIndex < sortedStudents.count {
+            /// struggling property
             let struggling = sortedStudents[strugglingIndex]
             sampleStudents.append(convertToAssessmentData(struggling))
         }
         
         // Select average students (middle)
+        /// averageIndex property
         let averageIndex = sortedStudents.count / 2
         if averageIndex < sortedStudents.count {
+            /// average property
             let average = sortedStudents[averageIndex]
             sampleStudents.append(convertToAssessmentData(average))
         }
         
         // Select excelling students (top 10%)
+        /// excellingIndex property
         let excellingIndex = Int(Double(sortedStudents.count) * 0.9)
         if excellingIndex < sortedStudents.count {
+            /// excelling property
             let excelling = sortedStudents[excellingIndex]
             sampleStudents.append(convertToAssessmentData(excelling))
         }
         
         // Add two more random samples
         if sortedStudents.count >= 5 {
+            /// random1 property
             let random1 = sortedStudents[Int.random(in: 0..<sortedStudents.count/3)]
+            /// random2 property
             let random2 = sortedStudents[Int.random(in: sortedStudents.count*2/3..<sortedStudents.count)]
             sampleStudents.append(convertToAssessmentData(random1))
             sampleStudents.append(convertToAssessmentData(random2))
@@ -128,7 +150,9 @@ struct StudentAnalysisSystemMain {
         return sampleStudents
     }
     
+    /// convertToAssessmentData function description
     static func convertToAssessmentData(_ student: StudentLongitudinalData) -> StudentAssessmentData {
+        /// lastAssessment property
         let lastAssessment = student.assessments.last
         return StudentAssessmentData(
             studentInfo: StudentAssessmentData.StudentInfo(
@@ -151,6 +175,7 @@ struct StudentAnalysisSystemMain {
         )
     }
     
+    /// printSummary function description
     static func printSummary(ilps: [IndividualLearningPlan]) {
         print("\n==========================================")
         print("             SUMMARY REPORT               ")
@@ -183,6 +208,7 @@ actor SystemAnalyzer {
     private let outputDirectory: URL
     
     init() {
+        /// currentDirectory property
         let currentDirectory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
         self.dataDirectory = currentDirectory.appendingPathComponent("Data")
         self.outputDirectory = currentDirectory.appendingPathComponent("Output")
@@ -193,13 +219,17 @@ actor SystemAnalyzer {
     
     // MARK: - Data Loading
     
+    /// loadStudentData function description
     func loadStudentData() async throws -> [StudentLongitudinalData] {
         print("  Loading from: \(dataDirectory.path)")
         
+        /// allStudents property
         var allStudents = [String: StudentLongitudinalData]()
         
         // Load MAAP test data files
+        /// testDataPath property
         let testDataPath = dataDirectory.appendingPathComponent("MAAP_Test_Data")
+        /// files property
         let files = try FileManager.default.contentsOfDirectory(at: testDataPath, includingPropertiesForKeys: nil)
             .filter { $0.pathExtension == "csv" }
         
@@ -207,19 +237,26 @@ actor SystemAnalyzer {
             print("  📄 Processing: \(file.lastPathComponent)")
             
             // Determine provider based on filename
+            /// isNWEA property
             let isNWEA = file.lastPathComponent.contains("2025")
             
             // Read CSV file into dataframe
+            /// fileReader property
             let fileReader = FileReader()
+            /// dataFrame property
             let dataFrame = try await fileReader.readAssessmentFile(from: file)
             
             // Parse the dataframe using appropriate parser
+            /// parser property
             let parser: any AssessmentParser = isNWEA ? NWEAParser() : QUESTARParser()
+            /// rawComponents property
             let rawComponents = await parser.parseComponents(from: dataFrame)
             
             // Filter out invalid grades (outside MAAP range 3-12)
+            /// validComponents property
             var validComponents: [AssessmentComponent] = []
             for component in rawComponents {
+                /// grade property
                 let grade = await component.grade
                 if grade >= 3 && grade <= 12 {
                     validComponents.append(component)
@@ -229,8 +266,10 @@ actor SystemAnalyzer {
             }
             
             // Group components by student ID
+            /// yearData property
             var yearData: [String: [AssessmentComponent]] = [:]
             for component in validComponents {
+                /// studentID property
                 let studentID = await component.studentID
                 yearData[studentID, default: []].append(component)
             }
@@ -238,16 +277,25 @@ actor SystemAnalyzer {
             // Convert AssessmentComponent to AssessmentRecord and merge
             for (studentID, components) in yearData {
                 // Convert components to assessment records
+                /// records property
                 var records: [StudentLongitudinalData.AssessmentRecord] = []
                 for component in components {
+                    /// scores property
                     let scores = await component.getAllScores()
+                    /// year property
                     let year = await component.year
+                    /// grade property
                     let grade = await component.grade
+                    /// season property
                     let season = await component.season
+                    /// subject property
                     let subject = await component.subject
+                    /// testType property
                     let testType = await component.testType
+                    /// profLevel property
                     let profLevel = await component.proficiencyLevel
                     
+                    /// record property
                     let record = StudentLongitudinalData.AssessmentRecord(
                         year: year,
                         grade: grade,
@@ -262,8 +310,10 @@ actor SystemAnalyzer {
                     records.append(record)
                 }
                 
+                /// existing property
                 if let existing = allStudents[studentID] {
                     // Create new instance with combined assessments
+                    /// combinedAssessments property
                     let combinedAssessments = existing.assessments + records
                     allStudents[studentID] = StudentLongitudinalData(
                         msis: studentID,
@@ -287,10 +337,13 @@ actor SystemAnalyzer {
     
     // MARK: - Statistical Analysis
     
+    /// runStatisticalAnalysis function description
     func runStatisticalAnalysis(on studentData: [StudentLongitudinalData]) async throws -> ValidatedCorrelationModel {
+        /// correlationAnalyzer property
         let correlationAnalyzer = CorrelationAnalyzer()
         
         // Extract all unique components
+        /// allComponents property
         var allComponents = Set<ComponentIdentifier>()
         for student in studentData {
             for assessment in student.assessments {
@@ -311,23 +364,29 @@ actor SystemAnalyzer {
         print("  Calculating correlations...")
         
         // Generate correlation matrix
+        /// matrix property
         let matrix = await correlationAnalyzer.generateCorrelationMatrix(
             components: Array(allComponents),
             studentData: studentData
         )
         
         // Create correlation maps
+        /// correlationMaps property
         var correlationMaps = [ComponentCorrelationMap]()
+        /// componentsArray property
         let componentsArray = Array(allComponents)
         
         for (sourceIndex, component) in componentsArray.enumerated() {
+            /// correlations property
             var correlations = [ComponentCorrelation]()
             
             for (targetIndex, targetComponent) in componentsArray.enumerated() where sourceIndex != targetIndex {
                 // Get correlation from matrix using indices
+                /// correlation property
                 if let correlation = matrix[sourceIndex, targetIndex] {
                     // Calculate actual confidence level (1 - p-value gives us confidence)
                     // For very small p-values, confidence approaches 1.0
+                    /// confidenceLevel property
                     let confidenceLevel = correlation.isSignificant ? (1.0 - correlation.pValue) : correlation.pValue
                     
                     correlations.append(
@@ -350,6 +409,7 @@ actor SystemAnalyzer {
         }
         
         // Create validation results with mock data for now
+        /// confusionMatrix property
         let confusionMatrix = ValidationResults.ConfusionMatrix(
             truePositives: 100,
             trueNegatives: 85,
@@ -357,6 +417,7 @@ actor SystemAnalyzer {
             falseNegatives: 5
         )
         
+        /// validationResults property
         let validationResults = ValidationResults(
             accuracy: 0.925,
             precision: 0.909,
@@ -375,8 +436,11 @@ actor SystemAnalyzer {
     
     // MARK: - Predictive Modeling
     
+    /// trainPredictiveModels function description
     func trainPredictiveModels(with studentData: [StudentLongitudinalData]) async throws -> EarlyWarningSystem {
+        /// correlationAnalyzer property
         let correlationAnalyzer = CorrelationAnalyzer()
+        /// warningSystem property
         let warningSystem = EarlyWarningSystem(correlationAnalyzer: correlationAnalyzer)
         
         print("  Training early warning system...")
@@ -393,6 +457,7 @@ actor SystemAnalyzer {
     
     // MARK: - ILP Generation
     
+    /// generateILP function description
     func generateILP(
         for student: StudentAssessmentData,
         using correlationModel: ValidatedCorrelationModel,
@@ -400,12 +465,15 @@ actor SystemAnalyzer {
     ) async throws -> IndividualLearningPlan {
         
         // Initialize repositories and engines
+        /// standardsRepo property
         let standardsRepo = StandardsRepository(
             standardsDirectory: dataDirectory.appendingPathComponent("Standards")
         )
         
+        /// correlationEngine property
         let correlationEngine = CorrelationAnalyzer()
         
+        /// ilpGenerator property
         let ilpGenerator = ILPGenerator(
             standardsRepository: standardsRepo,
             correlationEngine: correlationEngine,
@@ -413,6 +481,7 @@ actor SystemAnalyzer {
         )
         
         // Generate the ILP
+        /// ilp property
         let ilp = try await ilpGenerator.generateILP(
             student: student,
             correlationModel: correlationModel
@@ -423,61 +492,80 @@ actor SystemAnalyzer {
     
     // MARK: - Report Generation
     
+    /// generateReports function description
     func generateReports(
         ilps: [IndividualLearningPlan],
         correlationModel: ValidatedCorrelationModel,
         studentData: [StudentLongitudinalData]
     ) async throws {
         
+        /// exporter property
         let exporter = ILPExporter()
         
         // Generate summary report
         print("  Generating summary report...")
+        /// summaryReport property
         let summaryReport = await exporter.generateSummaryReport(ilps)
+        /// summaryPath property
         let summaryPath = outputDirectory.appendingPathComponent("Summary_Report.md")
         try summaryReport.write(to: summaryPath, atomically: true, encoding: .utf8)
         
         // Generate individual ILP reports
         print("  Generating individual ILP reports...")
         for ilp in ilps {
+            /// markdown property
             let markdown = await exporter.exportToMarkdown(ilp)
+            /// filename property
             let filename = "ILP_\(ilp.studentInfo.msis).md"
+            /// filepath property
             let filepath = outputDirectory.appendingPathComponent(filename)
             try markdown.write(to: filepath, atomically: true, encoding: .utf8)
             
             // Also save as HTML for better viewing
+            /// html property
             let html = await exporter.exportToHTML(ilp)
+            /// htmlFilename property
             let htmlFilename = "ILP_\(ilp.studentInfo.msis).html"
+            /// htmlFilepath property
             let htmlFilepath = outputDirectory.appendingPathComponent(htmlFilename)
             try html.write(to: htmlFilepath, atomically: true, encoding: .utf8)
         }
         
         // Generate CSV summary
         print("  Generating CSV export...")
+        /// csv property
         let csv = try await exporter.exportToCSV(ilps)
+        /// csvPath property
         let csvPath = outputDirectory.appendingPathComponent("ILP_Summary.csv")
         try csv.write(to: csvPath, atomically: true, encoding: .utf8)
         
         // Generate statistical analysis report
         print("  Generating statistical analysis report...")
+        /// statsReport property
         let statsReport = generateStatisticalReport(
             correlationModel: correlationModel,
             studentData: studentData
         )
+        /// statsPath property
         let statsPath = outputDirectory.appendingPathComponent("Statistical_Analysis.md")
         try statsReport.write(to: statsPath, atomically: true, encoding: .utf8)
     }
     
     // MARK: - Save Outputs
     
+    /// saveOutputs function description
     func saveOutputs(ilps: [IndividualLearningPlan], correlationModel: ValidatedCorrelationModel) async throws {
+        /// exporter property
         let exporter = ILPExporter()
         
         // Save all ILPs as JSON for future processing
         print("  Saving ILP data...")
         for ilp in ilps {
+            /// jsonData property
             let jsonData = try await exporter.exportToJSON(ilp)
+            /// filename property
             let filename = "ILP_\(ilp.studentInfo.msis).json"
+            /// filepath property
             let filepath = outputDirectory.appendingPathComponent("JSON").appendingPathComponent(filename)
             
             try FileManager.default.createDirectory(
@@ -489,9 +577,12 @@ actor SystemAnalyzer {
         
         // Save correlation model
         print("  Saving correlation model...")
+        /// encoder property
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
+        /// modelData property
         let modelData = try encoder.encode(correlationModel)
+        /// modelPath property
         let modelPath = outputDirectory.appendingPathComponent("correlation_model.json")
         try modelData.write(to: modelPath)
         
@@ -505,6 +596,7 @@ actor SystemAnalyzer {
         studentData: [StudentLongitudinalData]
     ) -> String {
         
+        /// report property
         var report = """
         # Statistical Analysis Report
         ## Generated: \(Date().formatted())
@@ -522,6 +614,7 @@ actor SystemAnalyzer {
         """
         
         // Find strongest correlations
+        /// strongestCorrelations property
         var strongestCorrelations = [(source: String, target: String, correlation: Double)]()
         
         for map in correlationModel.correlations {
@@ -548,10 +641,14 @@ actor SystemAnalyzer {
         """
         
         // Calculate performance distribution based on proficiency levels
+        /// scoreDistribution property
         var scoreDistribution = [String: Int]()
         for student in studentData {
+            /// lastAssessment property
             if let lastAssessment = student.assessments.last {
+                /// bucket property
                 let bucket: String
+                /// profLevel property
                 if let profLevel = lastAssessment.proficiencyLevel {
                     // Use actual proficiency level from data
                     switch profLevel.uppercased() {
@@ -562,6 +659,7 @@ actor SystemAnalyzer {
                     case "PL1", "MINIMAL": bucket = "Minimal (PL1)"
                     default: bucket = "Unknown"
                     }
+                /// score property
                 } else if let score = lastAssessment.overallScore {
                     // Fallback to scale score ranges for Mississippi MAAP
                     switch score {
@@ -580,6 +678,7 @@ actor SystemAnalyzer {
         }
         
         for (level, count) in scoreDistribution.sorted(by: { $0.key > $1.key }) {
+            /// percentage property
             let percentage = Double(count) / Double(studentData.count) * 100
             report += "- **\(level)**: \(count) students (\(String(format: "%.1f%%", percentage)))\n"
         }
@@ -591,16 +690,22 @@ actor SystemAnalyzer {
         """
         
         // Calculate growth for students with multiple years of data
+        /// growthData property
         var growthData = [Double]()
         for student in studentData where student.assessments.count >= 2 {
+            /// firstScore property
             guard let firstScore = student.assessments.first?.overallScore,
+                  /// lastScore property
                   let lastScore = student.assessments.last?.overallScore else { continue }
+            /// growth property
             let growth = lastScore - firstScore
             growthData.append(growth)
         }
         
         if !growthData.isEmpty {
+            /// averageGrowth property
             let averageGrowth = growthData.reduce(0, +) / Double(growthData.count)
+            /// positiveGrowth property
             let positiveGrowth = growthData.filter { $0 > 0 }.count
             
             report += """

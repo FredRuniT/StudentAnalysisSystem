@@ -1,20 +1,28 @@
 import Foundation
 
 public actor AssessmentComponent: Sendable {
+    /// studentID property
     public let studentID: String
+    /// year property
     public let year: Int
+    /// grade property
     public let grade: Int
+    /// testType property
     public let testType: TestProvider
+    /// subject property
     public let subject: String
+    /// season property
     public let season: String?
     
     // Component scores (RC1OP-RC5OP or D1OP-D8OP with OP/PP/PC variants)
     private var componentScores: [String: Double]
     
     // Proficiency level (PL1-PL5)
+    /// proficiencyLevel property
     public let proficiencyLevel: String?
     
     // Demographics and factors
+    /// demographics property
     public let demographics: StudentDemographics?
     
     public init(
@@ -39,28 +47,39 @@ public actor AssessmentComponent: Sendable {
         self.proficiencyLevel = proficiencyLevel
     }
     
+    /// getScore function description
     public func getScore(for component: String) -> Double? {
         componentScores[component]
     }
     
+    /// getAllScores function description
     public func getAllScores() -> [String: Double] {
         componentScores
     }
 }
 
+/// StudentDemographics represents...
 public struct StudentDemographics: Codable, Sendable {
+    /// iep property
     public let iep: Bool?
+    /// lep property
     public let lep: String? // N, Y, F
+    /// disability property
     public let disability: Int?
+    /// ethnicity property
     public let ethnicity: String?
+    /// gender property
     public let gender: String?
+    /// economicallyDisadvantaged property
     public let economicallyDisadvantaged: Bool?
 }
 
+/// TestProvider description
 public enum TestProvider: String, Codable, Sendable {
     case questar = "QUESTAR"
     case nwea = "NWEA"
     
+    /// componentPrefix property
     public var componentPrefix: String {
         switch self {
         case .questar: return "RC"
@@ -68,6 +87,7 @@ public enum TestProvider: String, Codable, Sendable {
         }
     }
     
+    /// maxComponents property
     public var maxComponents: Int {
         switch self {
         case .questar: return 5
@@ -77,10 +97,15 @@ public enum TestProvider: String, Codable, Sendable {
 }
 
 // Core type definitions
+/// ComponentIdentifier represents...
 public struct ComponentIdentifier: Hashable, Sendable, CustomStringConvertible, Codable {
+    /// grade property
     public let grade: Int
+    /// subject property
     public let subject: String
+    /// component property
     public let component: String
+    /// testProvider property
     public let testProvider: TestProvider
     
     public init(
@@ -95,10 +120,12 @@ public struct ComponentIdentifier: Hashable, Sendable, CustomStringConvertible, 
         self.testProvider = testProvider
     }
     
+    /// description property
     public var description: String {
         "Grade \(grade) \(subject) \(component)"
     }
     
+    /// toPair function description
     public func toPair() -> ComponentPair {
         ComponentPair(
             grade: grade,
@@ -110,11 +137,17 @@ public struct ComponentIdentifier: Hashable, Sendable, CustomStringConvertible, 
     }
 }
 
+/// ComponentPair represents...
 public struct ComponentPair: Sendable {
+    /// grade property
     public let grade: Int
+    /// year property
     public let year: Int?
+    /// subject property
     public let subject: String
+    /// component property
     public let component: String
+    /// testProvider property
     public let testProvider: TestProvider
     
     public init(
@@ -132,6 +165,7 @@ public struct ComponentPair: Sendable {
     }
 }
 
+/// RiskLevel description
 public enum RiskLevel: String, Sendable {
     case low = "Low"
     case moderate = "Moderate"

@@ -2,7 +2,9 @@ import AnalysisCore
 import IndividualLearningPlan
 import SwiftUI
 
+/// PredictiveCorrelationView represents...
 struct PredictiveCorrelationView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = PredictiveCorrelationViewModel()
     @State private var selectedCategory: String?
@@ -10,6 +12,7 @@ struct PredictiveCorrelationView: View {
     @State private var selectedCorrelationForILP: CorrelationPrediction?
     @State private var showingStudentSearch = false
     
+    /// body property
     var body: some View {
         NavigationSplitView {
             // Left sidebar: Categories
@@ -25,6 +28,7 @@ struct PredictiveCorrelationView: View {
                                 Text(category.name)
                                     .font(AppleDesignSystem.Typography.headline)
                                 
+                                /// correlations property
                                 if let correlations = viewModel.topCorrelationsByCategory[category.name],
                                    !correlations.isEmpty {
                                     Text("\(correlations.count) strong predictors")
@@ -35,7 +39,9 @@ struct PredictiveCorrelationView: View {
                             
                             Spacer()
                             
+                            /// correlations property
                             if let correlations = viewModel.topCorrelationsByCategory[category.name],
+                               /// strongest property
                                let strongest = correlations.first {
                                 Text("\(Int(abs(strongest.correlationStrength) * 100))%")
                                     .font(AppleDesignSystem.Typography.caption)
@@ -73,10 +79,12 @@ struct PredictiveCorrelationView: View {
             }
         } detail: {
             // Right side: Correlation details or ILP
+            /// ilp property
             if let ilp = viewModel.generatedILP {
                 ILPPreviewView(ilp: ilp, onDismiss: {
                     viewModel.generatedILP = nil
                 })
+            /// category property
             } else if let category = selectedCategory {
                 CategoryCorrelationDetailView(
                     category: category,
@@ -129,15 +137,21 @@ struct PredictiveCorrelationView: View {
 }
 
 // MARK: - Category Correlation Detail View
+/// CategoryCorrelationDetailView represents...
 struct CategoryCorrelationDetailView: View {
+    /// category property
     let category: String
+    /// viewModel property
     let viewModel: PredictiveCorrelationViewModel
+    /// onGenerateILP property
     let onGenerateILP: (CorrelationPrediction) -> Void
     
+    /// correlations property
     var correlations: [CorrelationPrediction] {
         viewModel.topCorrelationsByCategory[category] ?? []
     }
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             // Header
@@ -192,14 +206,19 @@ struct CategoryCorrelationDetailView: View {
 }
 
 // MARK: - Correlation Card
+/// CorrelationCard represents...
 struct CorrelationCard: View {
+    /// correlation property
     let correlation: CorrelationPrediction
+    /// viewModel property
     let viewModel: PredictiveCorrelationViewModel
+    /// onGenerateILP property
     let onGenerateILP: () -> Void
     
     @State private var isExpanded = false
     @State private var isHovering = false
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
@@ -335,11 +354,15 @@ struct CorrelationCard: View {
 }
 
 // MARK: - Student Prediction View
+/// StudentPredictionView represents...
 struct StudentPredictionView: View {
+    /// viewModel property
     let viewModel: PredictiveCorrelationViewModel
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
+            /// student property
             if let student = viewModel.selectedStudent {
                 // Student header
                 HStack {
@@ -356,6 +379,7 @@ struct StudentPredictionView: View {
                     
                     Button(action: {
                         Task {
+                            /// prediction property
                             if let prediction = viewModel.studentPredictions.first {
                                 // Generate ILP for the highest risk prediction
                                 // This would need to be implemented
@@ -392,9 +416,12 @@ struct StudentPredictionView: View {
 }
 
 // MARK: - Student Prediction Card
+/// StudentPredictionCard represents...
 struct StudentPredictionCard: View {
+    /// prediction property
     let prediction: FuturePrediction
     
+    /// body property
     var body: some View {
         HStack {
             // Risk indicator
@@ -446,10 +473,14 @@ struct StudentPredictionCard: View {
 }
 
 // MARK: - ILP Preview View
+/// ILPPreviewView represents...
 struct ILPPreviewView: View {
+    /// ilp property
     let ilp: IndividualLearningPlan
+    /// onDismiss property
     let onDismiss: () -> Void
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             // Header
@@ -458,7 +489,7 @@ struct ILPPreviewView: View {
                     Text("Generated Individual Learning Plan")
                         .font(.largeTitle)
                         .bold()
-                    Text("\(ilp.studentName) • Grade \(ilp.currentGrade)")
+                    Text("\(ilp.studentInfo.name) • Grade \(ilp.studentInfo.grade)")
                         .font(AppleDesignSystem.Typography.headline)
                         .foregroundStyle(.secondary)
                 }
@@ -489,10 +520,10 @@ struct ILPPreviewView: View {
                     // Performance summary
                     GroupBox("Performance Summary") {
                         VStack(alignment: .leading) {
-                            ForEach(ilp.performanceSummary, id: \.self) { summary in
-                                Text("• \(summary)")
-                                    .padding(.vertical, 2)
-                            }
+                            Text("Overall Score: \(ilp.performanceSummary.overallScore, specifier: "%.1f")")
+                                .padding(.vertical, 2)
+                            Text("Proficiency: \(ilp.performanceSummary.proficiencyLevel.rawValue)")
+                                .padding(.vertical, 2)
                         }
                         .padding(.vertical, 8)
                     }
@@ -576,11 +607,15 @@ struct ILPPreviewView: View {
 }
 
 // MARK: - Student Search View
+/// StudentSearchView represents...
 struct StudentSearchView: View {
+    /// viewModel property
     let viewModel: PredictiveCorrelationViewModel
+    /// dismiss property
     @Environment(\.dismiss) var dismiss
     @State private var searchText = ""
     
+    /// body property
     var body: some View {
         VStack {
             Text("Select Student for Analysis")
@@ -597,16 +632,17 @@ struct StudentSearchView: View {
                 ForEach(0..<5) { index in
                     Button(action: {
                         // In real implementation, this would select an actual student
+                        /// sampleStudent property
                         let sampleStudent = StudentAssessmentData(
-                            msis: "MS00\(index)",
-                            lastName: "Student",
-                            firstName: "Sample \(index + 1)",
-                            testGrade: 5 + index,
-                            testYear: 2025,
-                            schoolYear: "2024-2025",
-                            districtName: "Sample District",
-                            schoolName: "Sample School",
-                            components: []
+                            studentInfo: StudentAssessmentData.StudentInfo(
+                                msis: "MS00\(index)",
+                                name: "Sample Student \(index + 1)",
+                                school: "Sample School",
+                                district: "Sample District"
+                            ),
+                            year: 2025,
+                            grade: 5 + index,
+                            assessments: []
                         )
                         Task {
                             await viewModel.loadStudentPredictions(sampleStudent)
@@ -638,7 +674,9 @@ struct StudentSearchView: View {
 }
 
 // MARK: - Empty State View
+/// EmptyStateView represents...
 struct EmptyStateView: View {
+    /// body property
     var body: some View {
         ContentUnavailableView(
             "Select a Category",

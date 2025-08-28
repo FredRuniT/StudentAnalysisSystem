@@ -1,14 +1,24 @@
 import Foundation
 
+/// CorrelationResult represents...
 public struct CorrelationResult: Sendable {
+    /// source property
     public let source: ComponentPair
+    /// target property
     public let target: ComponentPair
+    /// pearsonR property
     public let pearsonR: Double
+    /// spearmanR property
     public let spearmanR: Double
+    /// rSquared property
     public let rSquared: Double
+    /// pValue property
     public let pValue: Double
+    /// sampleSize property
     public let sampleSize: Int
+    /// confidenceInterval property
     public let confidenceInterval: (lower: Double, upper: Double)
+    /// isSignificant property
     public let isSignificant: Bool
     
     public init(
@@ -33,7 +43,9 @@ public struct CorrelationResult: Sendable {
         self.isSignificant = isSignificant
     }
     
+    /// correlationStrength property
     public var correlationStrength: CorrelationStrength {
+        /// absR property
         let absR = abs(pearsonR)
         switch absR {
         case 0.8...1.0: return .veryStrong
@@ -44,6 +56,7 @@ public struct CorrelationResult: Sendable {
         }
     }
     
+    /// CorrelationStrength description
     public enum CorrelationStrength: String, Sendable {
         case veryStrong = "Very Strong"
         case strong = "Strong"
@@ -52,18 +65,22 @@ public struct CorrelationResult: Sendable {
         case negligible = "Negligible"
     }
     
+    /// direction property
     public var direction: CorrelationDirection {
         pearsonR > 0 ? .positive : .negative
     }
     
+    /// CorrelationDirection description
     public enum CorrelationDirection: String, Sendable {
         case positive = "Positive"
         case negative = "Negative"
     }
 }
 
+/// CorrelationMatrix represents...
 public struct CorrelationMatrix: Sendable {
     private var matrix: [[CorrelationResult?]]
+    /// size property
     public let size: Int
     
     public init(size: Int) {
@@ -76,10 +93,13 @@ public struct CorrelationMatrix: Sendable {
         set { matrix[row][column] = newValue }
     }
     
+    /// getStrongestCorrelations function description
     public func getStrongestCorrelations(threshold: Double = 0.6) -> [CorrelationResult] {
+        /// strong property
         var strong: [CorrelationResult] = []
         for row in 0..<size {
             for col in (row+1)..<size {
+                /// correlation property
                 if let correlation = matrix[row][col],
                    abs(correlation.pearsonR) >= threshold {
                     strong.append(correlation)

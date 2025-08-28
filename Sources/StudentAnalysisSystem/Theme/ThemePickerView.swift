@@ -1,10 +1,13 @@
 import SwiftUI
 
 // MARK: - Theme Picker View
+/// ThemePickerView represents...
 struct ThemePickerView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @Environment(\.dismiss) private var dismiss
     
+    /// body property
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
@@ -81,10 +84,14 @@ struct ThemePickerView: View {
 
 // MARK: - Theme Option Card
 private struct ThemeOptionCard: View {
+    /// theme property
     let theme: Theme
+    /// isSelected property
     let isSelected: Bool
+    /// onSelect property
     let onSelect: () -> Void
     
+    /// body property
     var body: some View {
         Button(action: onSelect) {
             HStack(spacing: 16) {
@@ -170,10 +177,13 @@ private struct ThemeOptionCard: View {
 }
 
 // MARK: - Theme Settings Section
+/// ThemeSettingsSection represents...
 struct ThemeSettingsSection: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @State private var showingThemePicker = false
     
+    /// body property
     var body: some View {
         Section("Appearance") {
             // Light/Dark mode selector

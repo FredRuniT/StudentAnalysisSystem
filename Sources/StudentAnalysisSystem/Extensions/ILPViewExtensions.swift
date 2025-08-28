@@ -1,0 +1,273 @@
+import AnalysisCore
+import Foundation
+import IndividualLearningPlan
+import SwiftUI
+//
+//  ILPViewExtensions.swift
+//  StudentAnalysisSystem
+//
+//  Extensions to bridge the gap between view expectations and backend models
+//
+
+
+// MARK: - IndividualLearningPlan View Extensions
+extension IndividualLearningPlan {
+    /// Convenience property for MSIS access
+    var studentMSIS: String {
+        studentInfo.msis
+    }
+    
+    /// Convenience property for current grade
+    var currentGrade: Int {
+        studentInfo.grade
+    }
+    
+    /// Convenience property for student name
+    var studentName: String {
+        studentInfo.name
+    }
+    
+    /// Created date (using assessment date)
+    var createdDate: Date {
+        assessmentDate
+    }
+    
+    /// Target completion date (end of timeline)
+    var targetCompletionDate: Date? {
+        timeline.endDate
+    }
+    
+    /// Maps identifiedGaps to focusAreas for view compatibility
+    var focusAreas: [WeakArea] {
+        identifiedGaps
+    }
+    
+    /// Derives plan type from performance level
+    var planType: PlanType {
+        switch performanceSummary.proficiencyLevel {
+        case .advanced, .proficient:
+            return .enrichment
+        case .minimal, .basic:
+            return .remediation
+        default:
+            return .auto
+        }
+    }
+    
+    /// Direct access to milestones
+    var milestones: [Timeline.Milestone] {
+        timeline.milestones
+    }
+}
+
+// MARK: - WeakArea View Extensions
+extension WeakArea: Identifiable {
+    /// id property
+    public var id: String {
+        "\(component)_\(score)"
+    }
+    
+    /// Maps gap to severity for view compatibility
+    var severity: Double {
+        gap
+    }
+    
+    /// Derives subject from component string
+    var subject: String {
+        if component.contains("MATH") {
+            return "Mathematics"
+        } else if component.contains("ELA") || component.contains("READING") {
+            return "English Language Arts"
+        } else if component.contains("SCIENCE") {
+            return "Science"
+        } else {
+            return "General"
+        }
+    }
+    
+    /// Components array for compatibility (just wraps the single component)
+    var components: [String] {
+        [component]
+    }
+}
+
+// MARK: - Timeline View Extensions
+extension Timeline {
+    /// Generate phases for UI visualization
+    var phases: [UIPhase] {
+        /// totalDuration property
+        let totalDuration = endDate.timeIntervalSince(startDate)
+        /// numberOfPhases property
+        let numberOfPhases = 4
+        /// phaseDuration property
+        let phaseDuration = totalDuration / Double(numberOfPhases)
+        
+        return (0..<numberOfPhases).map { index in
+            /// phaseStart property
+            let phaseStart = startDate.addingTimeInterval(Double(index) * phaseDuration)
+            /// phaseEnd property
+            let phaseEnd = startDate.addingTimeInterval(Double(index + 1) * phaseDuration)
+            
+            return UIPhase(
+                name: "Phase \(index + 1)",
+                startDate: phaseStart,
+                endDate: phaseEnd,
+                activities: determineActivitiesForPhase(index)
+            )
+        }
+    }
+    
+    private func determineActivitiesForPhase(_ phaseIndex: Int) -> [String] {
+        switch phaseIndex {
+        case 0:
+            return ["Initial Assessment", "Goal Setting", "Resource Gathering"]
+        case 1:
+            return ["Skill Building", "Practice Exercises", "Formative Assessments"]
+        case 2:
+            return ["Application Activities", "Progress Monitoring", "Adjustments"]
+        case 3:
+            return ["Mastery Practice", "Final Assessment", "Reflection"]
+        default:
+            return ["Learning Activities"]
+        }
+    }
+}
+
+// MARK: - ScaffoldedLearningObjective View Extensions  
+extension ScaffoldedLearningObjective: Identifiable {
+    /// id property
+    public var id: String {
+        standardId
+    }
+    
+    /// Provides standard property for view compatibility
+    var standard: String? {
+        standardId
+    }
+    
+    /// Description for view display
+    var description: String {
+        standardDescription
+    }
+    
+    /// Generates expectations for UI display
+    var expectations: UILearningExpectations {
+        UILearningExpectations(
+            knowledge: knowledgeObjectives.map { $0.description },
+            understanding: understandingObjectives.map { $0.description },
+            skills: skillsObjectives.map { $0.description }
+        )
+    }
+}
+
+// MARK: - Timeline.Milestone View Extensions
+extension Timeline.Milestone: Identifiable {
+    /// id property
+    public var id: String {
+        "\(date.timeIntervalSince1970)_\(description)"
+    }
+    
+    /// Title for display (uses description)
+    var title: String {
+        description
+    }
+    
+    /// Target date alias
+    var targetDate: Date {
+        date
+    }
+    
+    /// Provides assessment methods for UI display
+    var assessmentMethods: [String] {
+        [assessmentType]
+    }
+    
+    /// Generates criteria based on description
+    var criteria: [String] {
+        // Split description into criteria if it contains bullet points or semicolons
+        if description.contains(";") {
+            return description.split(separator: ";").map { String($0).trimmingCharacters(in: .whitespaces) }
+        } else if description.contains("•") {
+            return description.split(separator: "•").map { String($0).trimmingCharacters(in: .whitespaces) }
+        } else {
+            return [description]
+        }
+    }
+}
+
+// MARK: - PerformanceAnalysis View Extensions
+extension PerformanceAnalysis {
+    /// Check if performance summary has data
+    var isEmpty: Bool {
+        strengthAreas.isEmpty && weakAreas.isEmpty
+    }
+    
+    /// Generate summary strings for UI display
+    var summaryStrings: [String] {
+        /// summary property
+        var summary: [String] = []
+        summary.append("Overall Score: \(String(format: "%.1f", overallScore))")
+        summary.append("Proficiency Level: \(proficiencyLevel.rawValue)")
+        
+        if !strengthAreas.isEmpty {
+            summary.append("Strengths: \(strengthAreas.joined(separator: ", "))")
+        }
+        
+        if !weakAreas.isEmpty {
+            summary.append("Areas for Growth: \(weakAreas.joined(separator: ", "))")
+        }
+        
+        return summary
+    }
+}
+
+// MARK: - InterventionStrategy View Extensions
+extension InterventionStrategy: Identifiable {
+    /// id property
+    public var id: String {
+        "\(tier.rawValue)_\(frequency)_\(focus.joined())"
+    }
+}
+
+// MARK: - Helper Types
+// UIPhase is already defined in UILearningPlanModels.swift
+
+// MARK: - Type Aliases for View Compatibility
+typealias Milestone = Timeline.Milestone
+typealias LearningObjective = ScaffoldedLearningObjective
+typealias FocusArea = WeakArea
+
+// MARK: - Helper Functions for Views
+/// severityColor function description
+func severityColor(_ severity: Double) -> Color {
+    switch severity {
+    case 0.8...:
+        return AppleDesignSystem.SystemPalette.red
+    case 0.6..<0.8:
+        return AppleDesignSystem.SystemPalette.orange
+    case 0.4..<0.6:
+        return AppleDesignSystem.SystemPalette.yellow
+    default:
+        return AppleDesignSystem.SystemPalette.green
+    }
+}
+
+/// iconForSubject function description
+func iconForSubject(_ subject: String) -> String {
+    switch subject.lowercased() {
+    /// s property
+    case let s where s.contains("math"):
+        return "function"
+    /// s property
+    case let s where s.contains("ela") || s.contains("english") || s.contains("reading"):
+        return "text.book.closed"
+    /// s property
+    case let s where s.contains("science"):
+        return "atom"
+    /// s property
+    case let s where s.contains("history") || s.contains("social"):
+        return "globe.americas"
+    default:
+        return "book"
+    }
+}

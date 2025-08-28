@@ -2,7 +2,9 @@ import AnalysisCore
 import Charts
 import SwiftUI
 
+/// OptimizedCorrelationView represents...
 struct OptimizedCorrelationView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var dataLoader = CorrelationDataLoader()
     @State private var selectedVisualization = "Top Correlations"
@@ -11,10 +13,14 @@ struct OptimizedCorrelationView: View {
     @State private var minimumCorrelation: Double = 0.7
     @State private var showOnlySignificant = true
     
+    /// visualizationTypes property
     let visualizationTypes = ["Top Correlations", "Cross-Grade Patterns", "Predictive Pathways", "Matrix View"]
+    /// subjects property
     let subjects = ["All", "MATH", "ELA", "ENGLISH_II", "ALGEBRA I", "BIOLOGY", "U.S. HISTORY"]
+    /// gradeOptions property
     let gradeOptions = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     
+    /// body property
     var body: some View {
         GeometryReader { geometry in
             if dataLoader.isLoading {
@@ -41,6 +47,7 @@ struct OptimizedCorrelationView: View {
         .themed()
     }
     
+    /// loadingView property
     var loadingView: some View {
         VStack(spacing: 20) {
             ProgressView(value: dataLoader.loadingProgress) {
@@ -57,6 +64,7 @@ struct OptimizedCorrelationView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
+    /// headerView property
     var headerView: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Component Correlation Analysis")
@@ -83,6 +91,7 @@ struct OptimizedCorrelationView: View {
         .padding(.horizontal)
     }
     
+    /// controlsView property
     var controlsView: some View {
         HStack(spacing: 16) {
             // Visualization picker
@@ -128,7 +137,9 @@ struct OptimizedCorrelationView: View {
     }
     
     @ViewBuilder
+    /// mainVisualizationView property
     var mainVisualizationView: some View {
+        /// filteredData property
         let filteredData = dataLoader.filterCorrelations(
             subject: selectedSubject == "All" ? nil : selectedSubject,
             grade: selectedGradeFilter,
@@ -155,6 +166,7 @@ struct OptimizedCorrelationView: View {
         .padding(.horizontal)
     }
     
+    /// topCorrelationsChart function description
     func topCorrelationsChart(data: [CorrelationDataLoader.CorrelationPair]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Top \(min(data.count, 30)) Strongest Correlations")
@@ -181,6 +193,7 @@ struct OptimizedCorrelationView: View {
         }
     }
     
+    /// crossGradePatterns property
     var crossGradePatterns: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Cross-Grade Predictive Patterns")
@@ -236,6 +249,7 @@ struct OptimizedCorrelationView: View {
         }
     }
     
+    /// predictivePathways function description
     func predictivePathways(data: [CorrelationDataLoader.CorrelationPair]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Predictive Learning Pathways")
@@ -312,6 +326,7 @@ struct OptimizedCorrelationView: View {
         }
     }
     
+    /// matrixView function description
     func matrixView(data: [CorrelationDataLoader.CorrelationPair]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Correlation Matrix View")
@@ -325,15 +340,20 @@ struct OptimizedCorrelationView: View {
         }
     }
     
+    /// summaryStatisticsView property
     var summaryStatisticsView: some View {
+        /// filtered property
         let filtered = dataLoader.filterCorrelations(
             subject: selectedSubject == "All" ? nil : selectedSubject,
             grade: selectedGradeFilter,
             minCorrelation: minimumCorrelation
         )
         
+        /// strongCount property
         let strongCount = filtered.filter { $0.correlation > 0.7 }.count
+        /// veryStrongCount property
         let veryStrongCount = filtered.filter { $0.correlation > 0.85 }.count
+        /// perfectCount property
         let perfectCount = filtered.filter { $0.correlation > 0.95 }.count
         
         return HStack(spacing: 20) {
@@ -373,6 +393,7 @@ struct OptimizedCorrelationView: View {
     }
     
     // Helper functions
+    /// calculateChartHeight function description
     func calculateChartHeight(for visualization: String, geometry: GeometryProxy) -> CGFloat {
         switch visualization {
         case "Top Correlations":
@@ -388,6 +409,7 @@ struct OptimizedCorrelationView: View {
         }
     }
     
+    /// correlationCategory function description
     func correlationCategory(_ value: Double) -> String {
         switch value {
         case 0.9...1.0: return "Near Perfect"
@@ -397,6 +419,7 @@ struct OptimizedCorrelationView: View {
         }
     }
     
+    /// correlationColor function description
     func correlationColor(_ value: Double) -> Color {
         switch value {
         case 0.9...1.0: return AppleDesignSystem.SystemPalette.purple
@@ -406,19 +429,27 @@ struct OptimizedCorrelationView: View {
         }
     }
     
+    /// formatNumber function description
     func formatNumber(_ number: Int) -> String {
+        /// formatter property
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         return formatter.string(from: NSNumber(value: number)) ?? "\(number)"
     }
 }
 
+/// StatCard represents...
 struct StatCard: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
+    /// title property
     let title: String
+    /// value property
     let value: String
+    /// subtitle property
     let subtitle: String
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(title)

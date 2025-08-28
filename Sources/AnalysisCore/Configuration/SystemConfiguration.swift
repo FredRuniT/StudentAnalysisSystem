@@ -5,6 +5,7 @@ import Foundation
 public struct SystemConfiguration: Codable, Sendable {
     
     // MARK: - Correlation Analysis Parameters
+    /// CorrelationParameters represents...
     public struct CorrelationParameters: Codable, Sendable {
         /// Minimum correlation coefficient to consider significant
         public let minimumCorrelation: Double
@@ -47,6 +48,7 @@ public struct SystemConfiguration: Codable, Sendable {
     }
     
     // MARK: - Early Warning System Parameters
+    /// EarlyWarningParameters represents...
     public struct EarlyWarningParameters: Codable, Sendable {
         /// Risk threshold multiplier for critical warnings
         public let criticalRiskMultiplier: Double
@@ -79,6 +81,7 @@ public struct SystemConfiguration: Codable, Sendable {
     }
     
     // MARK: - Student Growth Parameters
+    /// GrowthParameters represents...
     public struct GrowthParameters: Codable, Sendable {
         /// Growth calculation method
         public enum GrowthMethod: String, Codable, Sendable {
@@ -109,8 +112,11 @@ public struct SystemConfiguration: Codable, Sendable {
         
         /// Growth percentile thresholds
         public struct GrowthPercentiles: Codable, Sendable {
+            /// low property
             public let low: Int       // Below this percentile = low growth
+            /// typical property
             public let typical: Int    // Below this percentile = typical growth  
+            /// high property
             public let high: Int       // At or above this percentile = high growth
             
             public init(low: Int = 35, typical: Int = 65, high: Int = 65) {
@@ -120,6 +126,7 @@ public struct SystemConfiguration: Codable, Sendable {
             }
         }
         
+        /// growthPercentiles property
         public let growthPercentiles: GrowthPercentiles
         
         public init(
@@ -142,15 +149,20 @@ public struct SystemConfiguration: Codable, Sendable {
     }
     
     // MARK: - ILP Generation Parameters
+    /// ILPParameters represents...
     public struct ILPParameters: Codable, Sendable {
         /// Score threshold for enrichment vs remediation
         public let enrichmentThreshold: Double
         
         /// Proficiency level thresholds
         public struct ProficiencyThresholds: Codable, Sendable {
+            /// minimal property
             public let minimal: Double
+            /// basic property
             public let basic: Double
+            /// proficient property
             public let proficient: Double
+            /// advanced property
             public let advanced: Double
             
             public init(
@@ -166,6 +178,7 @@ public struct SystemConfiguration: Codable, Sendable {
             }
         }
         
+        /// proficiencyThresholds property
         public let proficiencyThresholds: ProficiencyThresholds
         
         /// Maximum standards to include in ILP
@@ -198,6 +211,7 @@ public struct SystemConfiguration: Codable, Sendable {
     }
     
     // MARK: - Performance Parameters
+    /// PerformanceParameters represents...
     public struct PerformanceParameters: Codable, Sendable {
         /// Batch size for processing
         public let batchSize: Int
@@ -230,6 +244,7 @@ public struct SystemConfiguration: Codable, Sendable {
     }
     
     // MARK: - Validation Parameters
+    /// ValidationParameters represents...
     public struct ValidationParameters: Codable, Sendable {
         /// Cross-validation folds
         public let crossValidationFolds: Int
@@ -257,17 +272,26 @@ public struct SystemConfiguration: Codable, Sendable {
     }
     
     // MARK: - Main Configuration
+    /// correlation property
     public let correlation: CorrelationParameters
+    /// earlyWarning property
     public let earlyWarning: EarlyWarningParameters
+    /// growth property
     public let growth: GrowthParameters
+    /// ilp property
     public let ilp: ILPParameters
+    /// performance property
     public let performance: PerformanceParameters
+    /// validation property
     public let validation: ValidationParameters
     
     /// Metadata about configuration
     public struct Metadata: Codable, Sendable {
+        /// version property
         public let version: String
+        /// lastModified property
         public let lastModified: Date
+        /// description property
         public let description: String?
         
         public init(
@@ -281,6 +305,7 @@ public struct SystemConfiguration: Codable, Sendable {
         }
     }
     
+    /// metadata property
     public let metadata: Metadata
     
     // MARK: - Initialization
@@ -303,9 +328,11 @@ public struct SystemConfiguration: Codable, Sendable {
     }
     
     // MARK: - Default Configuration
+    /// Item property
     public static let `default` = SystemConfiguration()
     
     // MARK: - Updating
+    /// updating function description
     public func updating(
         correlation: CorrelationParameters? = nil,
         earlyWarning: EarlyWarningParameters? = nil,
@@ -338,6 +365,7 @@ public actor ConfigurationManager {
     }
     
     private static var defaultConfigurationPath: URL {
+        /// documentsPath property
         let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentsPath.appendingPathComponent("StudentAnalysisSystem/configuration.json")
     }
@@ -349,7 +377,9 @@ public actor ConfigurationManager {
             return
         }
         
+        /// data property
         let data = try Data(contentsOf: configurationPath)
+        /// decoder property
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         currentConfiguration = try decoder.decode(SystemConfiguration.self, from: data)
@@ -358,13 +388,16 @@ public actor ConfigurationManager {
     
     /// Save current configuration to file
     public func saveConfiguration() async throws {
+        /// encoder property
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         encoder.dateEncodingStrategy = .iso8601
         
+        /// data property
         let data = try encoder.encode(currentConfiguration)
         
         // Create directory if it doesn't exist
+        /// directory property
         let directory = configurationPath.deletingLastPathComponent()
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
         

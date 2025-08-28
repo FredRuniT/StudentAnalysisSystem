@@ -3,6 +3,7 @@
 import SwiftUI
 
 // MARK: - Theme Manager
+/// ThemeManager represents...
 class ThemeManager: ObservableObject, @unchecked Sendable {
     @AppStorage("selectedThemeMode") private var themeModeString: String = "system" {
         didSet {
@@ -16,8 +17,11 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
         }
     }
     
+    /// selectedThemeMode property
     @Published var selectedThemeMode: ThemeMode = .system
+    /// colorScheme property
     @Published var colorScheme: ColorScheme = .light
+    /// currentTheme property
     @Published var currentTheme: Theme = AppleTheme()
     
     // Bridge to settings package
@@ -29,10 +33,12 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
         TacticalTheme()
     ]
     
+    /// themes property
     var themes: [Theme] {
         availableThemes
     }
     
+    /// primaryColor property
     var primaryColor: Color {
         currentTheme.colors.brandPrimary
     }
@@ -50,6 +56,7 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
     }
     
     private func updateThemeMode() {
+        /// mode property
         if let mode = ThemeMode(rawValue: themeModeString) {
             selectedThemeMode = mode
             // Update the stored string to sync with settings
@@ -59,6 +66,7 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
     }
     
     private func updateSettingsTheme(_ mode: ThemeMode) {
+        /// themeOption property
         let themeOption: ThemeOption
         switch mode {
         case .system:
@@ -82,6 +90,7 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
     private func detectInitialColorScheme() {
         #if os(macOS)
         // Detect current macOS system appearance
+        /// isDarkMode property
         let isDarkMode = UserDefaults.standard.string(forKey: "AppleInterfaceStyle") == "Dark"
         colorScheme = isDarkMode ? .dark : .light
         #else
@@ -92,13 +101,16 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
     
     private func syncFromSettings() {
         // Load theme from settings package UserDefaults
+        /// themeString property
         if let themeString = UserDefaults.standard.string(forKey: "selectedTheme"),
+           /// themeOption property
            let themeOption = ThemeOption(rawValue: themeString) {
             syncFromSettingsTheme(themeOption)
         }
     }
     
     deinit {
+        /// observer property
         if let observer = settingsThemeObserver {
             NotificationCenter.default.removeObserver(observer)
         }
@@ -111,6 +123,7 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
             object: nil,
             queue: .main
         ) { [weak self] notification in
+            /// themeOption property
             if let themeOption = notification.object as? ThemeOption {
                 self?.syncFromSettingsTheme(themeOption)
             }
@@ -118,6 +131,7 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
     }
     
     private func syncFromSettingsTheme(_ themeOption: ThemeOption) {
+        /// themeMode property
         let themeMode: ThemeMode
         switch themeOption {
         case .system:
@@ -134,11 +148,13 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
         }
     }
     
+    /// updateColorScheme function description
     func updateColorScheme(_ colorScheme: ColorScheme) {
         self.colorScheme = colorScheme
         objectWillChange.send()
     }
     
+    /// setThemeMode function description
     func setThemeMode(_ mode: ThemeMode) {
         selectedThemeMode = mode
         themeModeString = mode.rawValue
@@ -148,25 +164,30 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
     
     // MARK: - Theme Selection
     private func updateSelectedTheme() {
+        /// theme property
         if let theme = availableThemes.first(where: { $0.id == selectedThemeId }) {
             currentTheme = theme
             objectWillChange.send()
         }
     }
     
+    /// setTheme function description
     func setTheme(_ theme: Theme) {
         currentTheme = theme
         selectedThemeId = theme.id
         objectWillChange.send()
     }
     
+    /// setTheme function description
     func setTheme(byId themeId: String) {
+        /// theme property
         if let theme = availableThemes.first(where: { $0.id == themeId }) {
             setTheme(theme)
         }
     }
     
     
+    /// preferredColorScheme function description
     func preferredColorScheme(for systemScheme: ColorScheme) -> ColorScheme? {
         switch selectedThemeMode {
         case .system:
@@ -181,13 +202,16 @@ class ThemeManager: ObservableObject, @unchecked Sendable {
 
 // MARK: - Notification Names
 extension Notification.Name {
+    /// themeDidChange property
     static let themeDidChange = Notification.Name("themeDidChange")
 }
 
 // MARK: - Theme Mode
+/// ThemeMode description
 enum ThemeMode: String, CaseIterable {
     case system, light, dark
     
+    /// name property
     var name: String {
         switch self {
         case .system: return "System"
@@ -196,6 +220,7 @@ enum ThemeMode: String, CaseIterable {
         }
     }
     
+    /// icon property
     var icon: String {
         switch self {
         case .system: return "iphone"
@@ -206,6 +231,7 @@ enum ThemeMode: String, CaseIterable {
 }
 
 // MARK: - Theme Option (for Settings Package Bridge)
+/// ThemeOption description
 enum ThemeOption: String {
     case system = "system"
     case light = "light"
@@ -215,10 +241,12 @@ enum ThemeOption: String {
 
 // MARK: - Environment Extension
 private struct ThemeManagerKey: EnvironmentKey {
+    /// defaultValue property
     static let defaultValue = ThemeManager()
 }
 
 extension EnvironmentValues {
+    /// themeManager property
     var themeManager: ThemeManager {
         get { self[ThemeManagerKey.self] }
         set { self[ThemeManagerKey.self] = newValue }
@@ -226,6 +254,7 @@ extension EnvironmentValues {
 }
 
 extension View {
+    /// withThemeManager function description
     func withThemeManager() -> some View {
         environmentObject(ThemeManager())
     }
@@ -240,9 +269,12 @@ extension View {
 
 // MARK: - Color Scheme Detector View
 private struct ColorSchemeDetectorView: View {
+    /// colorScheme property
     @Environment(\.colorScheme) var colorScheme
+    /// onChange property
     let onChange: (ColorScheme) -> Void
     
+    /// body property
     var body: some View {
         Color.clear
             .onAppear {

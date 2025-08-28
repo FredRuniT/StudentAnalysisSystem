@@ -1,3 +1,7 @@
+import AnalysisCore
+import Foundation
+import PredictiveModeling
+import StatisticalEngine
 //
 //  ILPGenerator+Blueprint.swift
 //  StudentAnalysisSystem
@@ -5,10 +9,6 @@
 //  Blueprint integration extension for ILP Generation
 //
 
-import Foundation
-import AnalysisCore
-import PredictiveModeling
-import StatisticalEngine
 
 extension ILPGenerator {
     
@@ -23,6 +23,7 @@ extension ILPGenerator {
     ) async throws -> IndividualLearningPlan {
         
         // Use progression plan if available
+        /// plan property
         if let plan = progressionPlan {
             return await generateILPFromProgressionPlan(
                 student: student,
@@ -33,9 +34,11 @@ extension ILPGenerator {
         }
         
         // Fallback to standard remediation with blueprint mapping
+        /// weakAreas property
         let weakAreas = identifyWeakAreas(performanceAnalysis)
         
         // Map weak areas to blueprint standards
+        /// targetStandardIds property
         let targetStandardIds = await mapWeakAreasToStandardsWithBlueprints(
             weakAreas,
             grade: student.grade,
@@ -43,6 +46,7 @@ extension ILPGenerator {
         )
         
         // Convert to TargetStandard format
+        /// targetStandards property
         let targetStandards = targetStandardIds.enumerated().map { index, standardId in
             TargetStandard(
                 standardId: standardId,
@@ -52,6 +56,7 @@ extension ILPGenerator {
         }
         
         // Generate objectives based on blueprint expectations  
+        /// learningObjectives property
         let learningObjectives = await generateBlueprintBasedObjectives(
             standards: targetStandardIds,
             studentLevel: performanceAnalysis.proficiencyLevel,
@@ -88,6 +93,7 @@ extension ILPGenerator {
     ) async throws -> IndividualLearningPlan {
         
         // Use progression plan if available
+        /// plan property
         if let plan = progressionPlan {
             return await generateILPFromProgressionPlan(
                 student: student,
@@ -98,7 +104,9 @@ extension ILPGenerator {
         }
         
         // Generate advanced objectives from next grade blueprints
+        /// nextGrade property
         let nextGrade = min(student.grade + 1, 12)
+        /// advancedStandardIds property
         let advancedStandardIds = await getNextGradeStandards(
             currentGrade: student.grade,
             nextGrade: nextGrade,
@@ -106,6 +114,7 @@ extension ILPGenerator {
         )
         
         // Convert to TargetStandard format
+        /// advancedStandards property
         let advancedStandards = advancedStandardIds.enumerated().map { index, standardId in
             TargetStandard(
                 standardId: standardId,
@@ -114,6 +123,7 @@ extension ILPGenerator {
             )
         }
         
+        /// enrichmentObjectives property
         let enrichmentObjectives = await generateEnrichmentObjectives(
             standards: advancedStandards,
             studentLevel: performanceAnalysis.proficiencyLevel
@@ -149,15 +159,18 @@ extension ILPGenerator {
     ) async -> IndividualLearningPlan {
         
         // Convert progression plan focuses to learning objectives
+        /// learningObjectives property
         var learningObjectives: [ScaffoldedLearningObjective] = []
         
         for focus in progressionPlan.learningFocuses {
             // Get standard details
+            /// standard property
             if let standard = blueprintManager.getStandard(
                 standardId: focus.standardId,
                 grade: progressionPlan.currentGrade,
                 subject: student.assessments.first?.subject ?? "MATH"
             ) {
+                /// objective property
                 let objective = ScaffoldedLearningObjective(
                     standardId: focus.standardId,
                     standardDescription: standard.standard.description,
@@ -178,6 +191,7 @@ extension ILPGenerator {
         }
         
         // Convert weak areas for ILP
+        /// identifiedGaps property
         let identifiedGaps = progressionPlan.weakAreas.map { weakArea in
             WeakArea(
                 component: weakArea.component,
@@ -188,6 +202,7 @@ extension ILPGenerator {
         }
         
         // Create intervention strategies based on action plan
+        /// interventions property
         let interventions = progressionPlan.actionPlan.phases.map { phase in
             InterventionStrategy(
                 tier: mapPhaseToInterventionTier(phase.name),
@@ -237,8 +252,10 @@ extension ILPGenerator {
         grade: Int,
         subject: String
     ) async -> [String] {
+        /// standards property
         var standards: Set<String> = []
         
+        /// blueprint property
         guard let blueprint = blueprintManager.getBlueprint(grade: grade, subject: subject) else {
             // Fallback to original method
             return await mapWeakAreasToStandards(weakAreas, grade: grade).map { $0.standardId }
@@ -246,11 +263,14 @@ extension ILPGenerator {
         
         for weakArea in weakAreas {
             // Extract component from weak area (format: "MATH_D1OP")
+            /// parts property
             let parts = weakArea.component.split(separator: "_")
             if parts.count >= 2 {
+                /// component property
                 let component = String(parts[1])
                 
                 // Find matching reporting category
+                /// category property
                 if let category = blueprintManager.getReportingCategory(
                     for: component,
                     grade: grade,
@@ -273,18 +293,22 @@ extension ILPGenerator {
         studentLevel: ProficiencyLevel,
         grade: Int
     ) async -> [ScaffoldedLearningObjective] {
+        /// objectives property
         var objectives: [ScaffoldedLearningObjective] = []
         
         for standardId in standards {
             // Extract subject from standard ID (e.g., "3.OA.1" -> Math)
+            /// subject property
             let subject = standardId.contains("RL") || standardId.contains("RI") ? "ELA" : "Mathematics"
             
+            /// standard property
             if let standard = blueprintManager.getStandard(
                 standardId: standardId,
                 grade: grade,
                 subject: subject
             ) {
                 // Create objective based on student's current level
+                /// objective property
                 let objective = ScaffoldedLearningObjective(
                     standardId: standardId,
                     standardDescription: standard.standard.description,
@@ -310,10 +334,12 @@ extension ILPGenerator {
         nextGrade: Int,
         subject: String
     ) async -> [String] {
+        /// blueprint property
         guard let blueprint = blueprintManager.getBlueprint(grade: nextGrade, subject: subject) else {
             return []
         }
         
+        /// standards property
         var standards: [String] = []
         
         // Get high-priority standards from next grade
@@ -341,6 +367,7 @@ extension ILPGenerator {
     }
     
     private func generateActivities(for standard: LearningStandard, level: ProficiencyLevel) -> [String] {
+        /// activities property
         var activities: [String] = []
         
         switch level {
@@ -379,6 +406,7 @@ extension ILPGenerator {
     }
     
     private func generateAssessmentMethod(for standard: LearningStandard) -> String {
+        /// hasSkills property
         let hasSkills = !standard.studentPerformance.categories.skills.items.isEmpty
         
         if hasSkills {
@@ -420,6 +448,7 @@ extension ILPGenerator {
     }
     
     private func extractMaterials(from focuses: [LearningFocus]) -> [String] {
+        /// materials property
         var materials: Set<String> = []
         
         for focus in focuses {
@@ -447,6 +476,7 @@ extension ILPGenerator {
     }
     
     private func generateRecommendations(from plan: StudentProgressionPlan) -> [String] {
+        /// recommendations property
         var recommendations: [String] = []
         
         // Add recommendations based on weak areas
@@ -493,10 +523,13 @@ extension ILPGenerator {
     }
     
     private func generateAssessmentDates(weeks: Int) -> [Date] {
+        /// dates property
         var dates: [Date] = []
+        /// assessmentInterval property
         let assessmentInterval = max(4, weeks / 4)  // Assess every 4 weeks or quarterly
         
         for week in stride(from: assessmentInterval, through: weeks, by: assessmentInterval) {
+            /// date property
             if let date = Calendar.current.date(byAdding: .weekOfYear, value: week, to: Date()) {
                 dates.append(date)
             }

@@ -1,11 +1,17 @@
-import Foundation
 import AnalysisCore
+import Foundation
 
+/// ValidationResults represents...
 public struct ValidationResults: Sendable, Codable {
+    /// accuracy property
     public let accuracy: Double
+    /// precision property
     public let precision: Double
+    /// recall property
     public let recall: Double
+    /// f1Score property
     public let f1Score: Double
+    /// confusionMatrix property
     public let confusionMatrix: ConfusionMatrix
     
     public init(
@@ -22,10 +28,15 @@ public struct ValidationResults: Sendable, Codable {
         self.confusionMatrix = confusionMatrix
     }
     
+    /// ConfusionMatrix represents...
     public struct ConfusionMatrix: Sendable, Codable {
+        /// truePositives property
         public let truePositives: Int
+        /// trueNegatives property
         public let trueNegatives: Int
+        /// falsePositives property
         public let falsePositives: Int
+        /// falseNegatives property
         public let falseNegatives: Int
         
         public init(
@@ -43,10 +54,15 @@ public struct ValidationResults: Sendable, Codable {
 }
 
 // Model that has been validated for use in production
+/// ValidatedCorrelationModel represents...
 public struct ValidatedCorrelationModel: Sendable, Codable {
+    /// correlations property
     public let correlations: [ComponentCorrelationMap]
+    /// validationResults property
     public let validationResults: ValidationResults
+    /// confidenceThreshold property
     public let confidenceThreshold: Double
+    /// trainedDate property
     public let trainedDate: Date
     
     public init(

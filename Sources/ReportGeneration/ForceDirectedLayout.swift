@@ -1,17 +1,25 @@
+import AnalysisCore
 import Foundation
 import SwiftUI
-import AnalysisCore
 
 /// Force-directed layout implementation using Fruchterman-Reingold algorithm
 @MainActor
+/// ForceDirectedLayout represents...
 public class ForceDirectedLayout: ObservableObject {
     // Physics parameters
+    /// temperature property
     @Published public var temperature: Double = 1.0
+    /// coolingRate property
     @Published public var coolingRate: Double = 0.95
+    /// minTemperature property
     @Published public var minTemperature: Double = 0.01
+    /// springLength property
     @Published public var springLength: Double = 100.0
+    /// springConstant property
     @Published public var springConstant: Double = 0.5
+    /// repulsionStrength property
     @Published public var repulsionStrength: Double = 500.0
+    /// damping property
     @Published public var damping: Double = 0.9
     
     // Simulation state
@@ -26,12 +34,17 @@ public class ForceDirectedLayout: ObservableObject {
     
     /// Initialize node positions randomly within canvas bounds
     public func initializePositions(nodes: inout [NetworkNode], canvasSize: CGSize) {
+        /// margin property
         let margin = 50.0
+        /// width property
         let width = canvasSize.width - 2 * margin
+        /// height property
         let height = canvasSize.height - 2 * margin
         
         for i in 0..<nodes.count {
+            /// x property
             let x = margin + Double.random(in: 0...1) * width
+            /// y property
             let y = margin + Double.random(in: 0...1) * height
             nodes[i].updatePosition(CGPoint(x: x, y: y))
             nodes[i].updateVelocity(.zero)
@@ -60,6 +73,7 @@ public class ForceDirectedLayout: ObservableObject {
         updateSpatialGrid(nodes: nodes)
         
         // Calculate forces for each node
+        /// forces property
         var forces = Array(repeating: CGPoint.zero, count: nodes.count)
         
         // Repulsive forces (all pairs)
@@ -89,6 +103,7 @@ public class ForceDirectedLayout: ObservableObject {
         
         updateSpatialGrid(nodes: nodes)
         
+        /// forces property
         var forces = Array(repeating: CGPoint.zero, count: nodes.count)
         
         // Repulsive forces
@@ -118,22 +133,31 @@ public class ForceDirectedLayout: ObservableObject {
     
     private func calculateRepulsiveForces(nodes: [NetworkNode], forces: inout [CGPoint]) {
         for i in 0..<nodes.count {
+            /// nodeA property
             let nodeA = nodes[i]
             
             // Use spatial grid for optimization if available
+            /// nearbyNodes property
             let nearbyNodes = spatialGrid?.getNearbyNodes(around: nodeA.position, radius: repulsionStrength * 2) ?? Array(0..<nodes.count)
             
             for j in nearbyNodes {
                 if i == j { continue }
                 
+                /// nodeB property
                 let nodeB = nodes[j]
+                /// dx property
                 let dx = nodeA.position.x - nodeB.position.x
+                /// dy property
                 let dy = nodeA.position.y - nodeB.position.y
+                /// distance property
                 let distance = sqrt(dx * dx + dy * dy)
                 
                 if distance > 0 && distance < repulsionStrength * 2 {
+                    /// force property
                     let force = repulsionStrength / max(1.0, distance * distance)
+                    /// normalizedDx property
                     let normalizedDx = dx / distance
+                    /// normalizedDy property
                     let normalizedDy = dy / distance
                     
                     forces[i].x += normalizedDx * force
@@ -145,30 +169,42 @@ public class ForceDirectedLayout: ObservableObject {
     
     private func calculateAttractiveForces(nodes: [NetworkNode], edges: [NetworkEdge], forces: inout [CGPoint]) {
         // Create node index lookup
+        /// nodeIndices property
         var nodeIndices: [ComponentIdentifier: Int] = [:]
         for (index, node) in nodes.enumerated() {
             nodeIndices[node.id] = index
         }
         
         for edge in edges {
+            /// sourceIndex property
             guard let sourceIndex = nodeIndices[edge.source],
+                  /// targetIndex property
                   let targetIndex = nodeIndices[edge.target] else {
                 continue
             }
             
+            /// sourceNode property
             let sourceNode = nodes[sourceIndex]
+            /// targetNode property
             let targetNode = nodes[targetIndex]
             
+            /// dx property
             let dx = targetNode.position.x - sourceNode.position.x
+            /// dy property
             let dy = targetNode.position.y - sourceNode.position.y
+            /// distance property
             let distance = sqrt(dx * dx + dy * dy)
             
             if distance > 0 {
                 // Spring force proportional to distance from ideal length
+                /// displacement property
                 let displacement = distance - springLength
+                /// force property
                 let force = springConstant * displacement * abs(edge.strength)
                 
+                /// normalizedDx property
                 let normalizedDx = dx / distance
+                /// normalizedDy property
                 let normalizedDy = dy / distance
                 
                 // Apply equal and opposite forces
@@ -181,9 +217,11 @@ public class ForceDirectedLayout: ObservableObject {
     }
     
     private func applyForces(nodes: inout [NetworkNode], forces: [CGPoint], canvasSize: CGSize) {
+        /// margin property
         let margin = 20.0
         
         for i in 0..<nodes.count {
+            /// velocity property
             var velocity = nodes[i].velocity
             
             // Apply force to velocity
@@ -195,7 +233,9 @@ public class ForceDirectedLayout: ObservableObject {
             velocity.y *= damping
             
             // Limit velocity based on temperature
+            /// maxVelocity property
             let maxVelocity = temperature * 10.0
+            /// velocityMagnitude property
             let velocityMagnitude = sqrt(velocity.x * velocity.x + velocity.y * velocity.y)
             if velocityMagnitude > maxVelocity {
                 velocity.x = (velocity.x / velocityMagnitude) * maxVelocity
@@ -203,6 +243,7 @@ public class ForceDirectedLayout: ObservableObject {
             }
             
             // Update position
+            /// newPosition property
             var newPosition = nodes[i].position
             newPosition.x += velocity.x * deltaTime
             newPosition.y += velocity.y * deltaTime
@@ -233,8 +274,11 @@ public class ForceDirectedLayout: ObservableObject {
     
     /// Initialize positions working with CorrelationNetworkProcessor
     public func initializePositionsWithProcessor(processor: CorrelationNetworkProcessor, canvasSize: CGSize) {
+        /// margin property
         let margin = 50.0
+        /// width property
         let width = canvasSize.width - 2 * margin
+        /// height property
         let height = canvasSize.height - 2 * margin
         
         // We need to work around the immutable networkNodes by calling a method on processor
@@ -249,7 +293,9 @@ public class ForceDirectedLayout: ObservableObject {
     /// Step simulation working with CorrelationNetworkProcessor
     public func stepWithProcessor(processor: CorrelationNetworkProcessor, canvasSize: CGSize) {
         guard isRunning && iteration < maxIterations && temperature > minTemperature else {
-            isRunning = false
+            Task { @MainActor in
+                isRunning = false
+            }
             return
         }
         
@@ -264,12 +310,14 @@ public class ForceDirectedLayout: ObservableObject {
             canvasSize: canvasSize
         )
         
-        // Cool the system
-        temperature *= coolingRate
-        iteration += 1
-        
-        if temperature <= minTemperature || iteration >= maxIterations {
-            isRunning = false
+        // Cool the system - defer updates to avoid publishing during view updates
+        Task { @MainActor in
+            temperature *= coolingRate
+            iteration += 1
+            
+            if temperature <= minTemperature || iteration >= maxIterations {
+                isRunning = false
+            }
         }
     }
 }
@@ -291,17 +339,22 @@ private class SpatialGrid {
         self.grid = Array(repeating: Array(repeating: Int(), count: 0), count: cols * rows)
     }
     
+    /// clear function description
     func clear() {
         for i in 0..<grid.count {
             grid[i].removeAll(keepingCapacity: true)
         }
     }
     
+    /// insert function description
     func insert(nodeIndex: Int, position: CGPoint) {
+        /// col property
         let col = Int((position.x - bounds.minX) / cellSize)
+        /// row property
         let row = Int((position.y - bounds.minY) / cellSize)
         
         if col >= 0 && col < cols && row >= 0 && row < rows {
+            /// index property
             let index = row * cols + col
             if index < grid.count {
                 grid[index].append(nodeIndex)
@@ -309,15 +362,21 @@ private class SpatialGrid {
         }
     }
     
+    /// getNearbyNodes function description
     func getNearbyNodes(around position: CGPoint, radius: Double) -> [Int] {
+        /// cellRadius property
         let cellRadius = Int(ceil(radius / cellSize))
+        /// centerCol property
         let centerCol = Int((position.x - bounds.minX) / cellSize)
+        /// centerRow property
         let centerRow = Int((position.y - bounds.minY) / cellSize)
         
+        /// nearbyNodes property
         var nearbyNodes: [Int] = []
         
         for row in max(0, centerRow - cellRadius)...min(rows - 1, centerRow + cellRadius) {
             for col in max(0, centerCol - cellRadius)...min(cols - 1, centerCol + cellRadius) {
+                /// index property
                 let index = row * cols + col
                 if index < grid.count {
                     nearbyNodes.append(contentsOf: grid[index])

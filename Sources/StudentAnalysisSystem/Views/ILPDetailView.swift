@@ -3,15 +3,20 @@ import Charts
 import IndividualLearningPlan
 import SwiftUI
 
+/// ILPDetailView represents...
 struct ILPDetailView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
+    /// ilp property
     let ilp: IndividualLearningPlan
     @State private var selectedTab = 0
     @State private var showingExportSheet = false
     @State private var selectedObjectiveCategory: String = "All"
     @State private var expandedMilestones: Set<String> = []
+    /// dismiss property
     @Environment(\.dismiss) var dismiss
     
+    /// body property
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
@@ -50,7 +55,6 @@ struct ILPDetailView: View {
                 }
             }
             .navigationTitle("Individual Learning Plan")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     HStack {
@@ -82,7 +86,7 @@ struct ILPDetailView: View {
         HStack(spacing: 20) {
             // Student info
             VStack(alignment: .leading, spacing: 8) {
-                Text(ilp.studentName)
+                Text(ilp.studentInfo.name)
                     .font(AppleDesignSystem.Typography.title2)
                     .bold()
                 
@@ -104,6 +108,7 @@ struct ILPDetailView: View {
                     .font(AppleDesignSystem.Typography.caption)
                     .foregroundStyle(.secondary)
                 
+                /// targetDate property
                 if let targetDate = ilp.targetCompletionDate {
                     Text("Target: \(targetDate, format: .dateTime.month().day().year())")
                         .font(AppleDesignSystem.Typography.caption)
@@ -125,19 +130,12 @@ struct ILPDetailView: View {
                     Label("Performance Summary", systemImage: "chart.bar.xaxis")
                         .font(AppleDesignSystem.Typography.headline)
                     
-                    if !ilp.performanceSummary.isEmpty {
-                        ForEach(ilp.performanceSummary, id: \.self) { summary in
-                            HStack(alignment: .top) {
-                                Image(systemName: "chevron.right.circle.fill")
-                                    .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
-                                    .imageScale(.small)
-                                Text(summary)
-                                    .font(AppleDesignSystem.Typography.subheadline)
-                            }
-                        }
-                    } else {
-                        Text("No performance summary available")
-                            .font(AppleDesignSystem.Typography.caption)
+                    // Performance summary display
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Overall Score: \(ilp.performanceSummary.overallScore, specifier: "%.1f")")
+                            .font(AppleDesignSystem.Typography.subheadline)
+                        Text("Proficiency: \(ilp.performanceSummary.proficiencyLevel.rawValue)")
+                            .font(AppleDesignSystem.Typography.subheadline)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -194,7 +192,7 @@ struct ILPDetailView: View {
                         
                         ILPStatCard(
                             title: "Timeline",
-                            value: "\(ilp.timeline?.phases.count ?? 0) phases",
+                            value: "\(ilp.timeline.phases.count) phases",
                             icon: "calendar",
                             color: AppleDesignSystem.SystemPalette.purple
                         )
@@ -248,7 +246,7 @@ struct ILPDetailView: View {
     
     private var interventionsTab: some View {
         VStack(alignment: .leading, spacing: 16) {
-            ForEach(ilp.interventionStrategies) { strategy in
+            ForEach(Array(ilp.interventionStrategies.enumerated()), id: \.offset) { index, strategy in
                 InterventionStrategyCard(strategy: strategy)
             }
             
@@ -268,8 +266,8 @@ struct ILPDetailView: View {
     private var milestonesTab: some View {
         VStack(alignment: .leading, spacing: 16) {
             // Timeline visualization
-            if !ilp.milestones.isEmpty {
-                TimelineView(milestones: ilp.milestones)
+            if !ilp.timeline.milestones.isEmpty {
+                TimelineView(milestones: ilp.timeline.milestones)
                     .frame(height: 100)
                     .padding(.horizontal)
             }
@@ -335,13 +333,12 @@ struct ILPDetailView: View {
             }
             
             // Evaluation Schedule
-            if let timeline = ilp.timeline {
-                GroupBox {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Label("Evaluation Schedule", systemImage: "calendar")
-                            .font(AppleDesignSystem.Typography.headline)
-                        
-                        ForEach(timeline.phases) { phase in
+            GroupBox {
+                VStack(alignment: .leading, spacing: 12) {
+                    Label("Evaluation Schedule", systemImage: "calendar")
+                        .font(AppleDesignSystem.Typography.headline)
+                    
+                    ForEach(ilp.timeline.phases) { phase in
                             HStack {
                                 Image(systemName: "calendar.badge.clock")
                                     .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
@@ -362,9 +359,8 @@ struct ILPDetailView: View {
                             }
                             .padding(.vertical, 4)
                         }
-                    }
-                    .padding()
                 }
+                .padding()
             }
         }
         .padding()
@@ -389,11 +385,14 @@ struct ILPDetailView: View {
     }
     
     private var objectiveCategories: [String] {
+        /// categories property
         var categories = Set<String>()
         categories.insert("All")
         
         for objective in ilp.learningObjectives {
+            /// standard property
             if let standard = objective.standard {
+                /// components property
                 let components = standard.split(separator: ".")
                 if !components.isEmpty {
                     categories.insert(String(components[0]))
@@ -410,6 +409,7 @@ struct ILPDetailView: View {
         }
         
         return ilp.learningObjectives.filter { objective in
+            /// standard property
             guard let standard = objective.standard else { return false }
             return standard.hasPrefix(selectedObjectiveCategory)
         }
@@ -423,22 +423,25 @@ struct ILPDetailView: View {
 
 // MARK: - Supporting Views
 
+/// FocusAreaDetailCard represents...
 struct FocusAreaDetailCard: View {
-    let area: FocusArea
+    /// area property
+    let area: WeakArea
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Circle()
-                    .fill(severityColor(area.severity))
+                    .fill(severityColor(area.gap))
                     .frame(width: 40, height: 40)
                     .overlay(
-                        Image(systemName: iconForSubject(area.subject))
+                        Image(systemName: "exclamationmark.triangle")
                             .foregroundStyle(.white)
                     )
                 
                 VStack(alignment: .leading) {
-                    Text(area.subject)
+                    Text(area.component)
                         .font(AppleDesignSystem.Typography.headline)
                     Text(area.description)
                         .font(AppleDesignSystem.Typography.caption)
@@ -502,12 +505,18 @@ struct FocusAreaDetailCard: View {
     }
 }
 
+/// ILPStatCard represents...
 struct ILPStatCard: View {
+    /// title property
     let title: String
+    /// value property
     let value: String
+    /// icon property
     let icon: String
+    /// color property
     let color: Color
     
+    /// body property
     var body: some View {
         VStack(spacing: 8) {
             Image(systemName: icon)
@@ -529,10 +538,13 @@ struct ILPStatCard: View {
     }
 }
 
+/// LearningObjectiveCard represents...
 struct LearningObjectiveCard: View {
+    /// objective property
     let objective: LearningObjective
     @State private var isExpanded = false
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -543,11 +555,9 @@ struct LearningObjectiveCard: View {
                     Text(objective.description)
                         .font(AppleDesignSystem.Typography.subheadline)
                     
-                    if let standard = objective.standard {
-                        Text("Standard: \(standard)")
-                            .font(AppleDesignSystem.Typography.caption)
-                            .foregroundStyle(.secondary)
-                    }
+                    Text("Standard: \(objective.standardId)")
+                        .font(AppleDesignSystem.Typography.caption)
+                        .foregroundStyle(.secondary)
                 }
                 
                 Spacer()
@@ -562,9 +572,11 @@ struct LearningObjectiveCard: View {
             if isExpanded {
                 Divider()
                 
-                if let expectations = objective.expectations {
-                    VStack(alignment: .leading, spacing: 8) {
-                        if let knowledge = expectations.knowledge, !knowledge.isEmpty {
+                /// expectations property
+                let expectations = objective.expectations
+                VStack(alignment: .leading, spacing: 8) {
+                    /// knowledge property
+                    if let knowledge = expectations.knowledge, !knowledge.isEmpty {
                             VStack(alignment: .leading) {
                                 Text("Knowledge")
                                     .font(AppleDesignSystem.Typography.caption)
@@ -576,6 +588,7 @@ struct LearningObjectiveCard: View {
                             }
                         }
                         
+                        /// understanding property
                         if let understanding = expectations.understanding, !understanding.isEmpty {
                             VStack(alignment: .leading) {
                                 Text("Understanding")
@@ -588,6 +601,7 @@ struct LearningObjectiveCard: View {
                             }
                         }
                         
+                        /// skills property
                         if let skills = expectations.skills, !skills.isEmpty {
                             VStack(alignment: .leading) {
                                 Text("Skills")
@@ -601,7 +615,6 @@ struct LearningObjectiveCard: View {
                         }
                     }
                     .padding(.leading, 20)
-                }
             }
         }
         .padding()
@@ -610,9 +623,12 @@ struct LearningObjectiveCard: View {
     }
 }
 
+/// InterventionStrategyCard represents...
 struct InterventionStrategyCard: View {
+    /// strategy property
     let strategy: InterventionStrategy
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -712,11 +728,16 @@ struct InterventionStrategyCard: View {
     }
 }
 
+/// MilestoneCard represents...
 struct MilestoneCard: View {
+    /// milestone property
     let milestone: Milestone
+    /// isExpanded property
     let isExpanded: Bool
+    /// onToggle property
     let onToggle: () -> Void
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -748,32 +769,11 @@ struct MilestoneCard: View {
                         .font(AppleDesignSystem.Typography.caption)
                         .bold()
                     
-                    ForEach(milestone.criteria, id: \.self) { criterion in
-                        HStack(alignment: .top) {
-                            Image(systemName: "checkmark.square")
-                                .foregroundStyle(.secondary)
-                                .imageScale(.small)
-                            Text(criterion)
-                                .font(AppleDesignSystem.Typography.caption)
-                        }
-                    }
+                    // Display milestone details
+                    Text("Assessment: \(milestone.assessmentType)")
+                        .font(AppleDesignSystem.Typography.caption)
+                        .foregroundStyle(.secondary)
                     
-                    if !milestone.assessmentMethods.isEmpty {
-                        Text("Assessment Methods:")
-                            .font(AppleDesignSystem.Typography.caption)
-                            .bold()
-                            .padding(.top, 4)
-                        
-                        ForEach(milestone.assessmentMethods, id: \.self) { method in
-                            HStack(alignment: .top) {
-                                Image(systemName: "doc.text.magnifyingglass")
-                                    .foregroundStyle(.secondary)
-                                    .imageScale(.small)
-                                Text(method)
-                                    .font(AppleDesignSystem.Typography.caption)
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -783,9 +783,12 @@ struct MilestoneCard: View {
     }
 }
 
+/// TimelineView represents...
 struct TimelineView: View {
+    /// milestones property
     let milestones: [Milestone]
     
+    /// body property
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -808,6 +811,7 @@ struct TimelineView: View {
                                 .font(AppleDesignSystem.Typography.caption2)
                                 .lineLimit(1)
         .truncationMode(.tail)
+        .truncationMode(.tail)
                             
                             Text(milestone.targetDate, format: .dateTime.month().day())
                                 .font(AppleDesignSystem.Typography.caption2)
@@ -822,10 +826,14 @@ struct TimelineView: View {
     }
 }
 
+/// ExportOptionsSheet represents...
 struct ExportOptionsSheet: View {
+    /// ilp property
     let ilp: IndividualLearningPlan
+    /// dismiss property
     @Environment(\.dismiss) var dismiss
     
+    /// body property
     var body: some View {
         VStack(spacing: 20) {
             Text("Export Options")

@@ -1,0 +1,769 @@
+import AnalysisCore
+import IndividualLearningPlan
+import SwiftUI
+
+struct ILPGeneratorView: View {
+    @EnvironmentObject var themeManager: ThemeManager
+    @StateObject private var viewModel = ILPGeneratorViewModel()
+    @State private var selectedStudent: StudentAssessmentData?
+    @State private var searchText = ""
+    @State private var planType: PlanType = .auto
+    @State private var useBlueprints = true
+    @State private var includeGradeProgression = true
+    @State private var showingStudentPicker = false
+    @State private var generatedILP: UIIndividualLearningPlan?
+    @State private var showingILPDetail = false
+    
+    var body: some View {
+        NavigationStack {
+            Form {
+                // Student Selection Section
+                studentSelectionSection
+                
+                // Plan Configuration Section
+                planConfigurationSection
+                
+                // Blueprint Options Section
+                blueprintOptionsSection
+                
+                // Generation Actions Section
+                generationActionsSection
+                
+                // Generated Plan Section (if available)
+                if generatedILP != nil {
+                    generatedPlanSection
+                }
+            }
+            .navigationTitle("ILP Generator")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Reset", systemImage: "arrow.clockwise", action: resetForm)
+                }
+            }
+        }
+        .sheet(isPresented: $showingStudentPicker) {
+            StudentPickerSheet(
+                selectedStudent: $selectedStudent,
+                searchText: $searchText
+            )
+            .frame(minWidth: 600, minHeight: 400)
+        }
+        .sheet(isPresented: $showingILPDetail) {
+            if let ilp = generatedILP {
+                ILPDetailView(ilp: ilp.toBackendModel())
+                    .frame(minWidth: 800, minHeight: 600)
+            }
+        }
+        .themed()
+    }
+    
+    // MARK: - Section Views
+    
+    private var studentSelectionSection: some View {
+        Section("Student Selection") {
+            HStack {
+                if let student = selectedStudent {
+                    // Selected student display
+                    HStack {
+                        Image(systemName: "person.crop.circle.fill")
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
+                            .imageScale(.large)
+                        
+                        VStack(alignment: .leading) {
+                            Text("\(student.firstName) \(student.lastName)")
+                                .font(AppleDesignSystem.Typography.headline)
+                            Text("MSIS: \(student.msis) • Grade \(student.testGrade)")
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: { selectedStudent = nil }) {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundStyle(.secondary)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    .padding()
+                    .background(Color(NSColor.controlBackgroundColor))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                } else {
+                    // No student selected
+                    Button(action: { showingStudentPicker = true }) {
+                        HStack {
+                            Image(systemName: "person.crop.circle.badge.plus")
+                                .imageScale(.large)
+                            Text("Select Student")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            
+            if selectedStudent != nil {
+                // Quick student stats
+                HStack(spacing: 20) {
+                    StudentStatCard(
+                        title: "Overall Performance",
+                        value: viewModel.calculateOverallPerformance(for: selectedStudent),
+                        icon: "chart.bar",
+                        color: AppleDesignSystem.SystemPalette.blue
+                    )
+                    
+                    StudentStatCard(
+                        title: "Weak Components",
+                        value: "\(viewModel.countWeakComponents(for: selectedStudent))",
+                        icon: "exclamationmark.triangle",
+                        color: AppleDesignSystem.SystemPalette.orange
+                    )
+                    
+                    StudentStatCard(
+                        title: "Risk Level",
+                        value: viewModel.determineRiskLevel(for: selectedStudent),
+                        icon: "gauge",
+                        color: viewModel.riskLevelColor(for: selectedStudent)
+                    )
+                }
+            }
+        }
+    }
+    
+    private var planConfigurationSection: some View {
+        Section("Plan Configuration") {
+            // Plan Type Selection
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Plan Type")
+                    .font(AppleDesignSystem.Typography.headline)
+                
+                Picker("Plan Type", selection: $planType) {
+                    HStack {
+                        Image(systemName: "wand.and.stars")
+                        Text("Auto-Detect")
+                    }.tag(PlanType.auto)
+                    
+                    HStack {
+                        Image(systemName: "arrow.up.circle")
+                        Text("Remediation")
+                    }.tag(PlanType.remediation)
+                    
+                    HStack {
+                        Image(systemName: "star.circle")
+                        Text("Enrichment")
+                    }.tag(PlanType.enrichment)
+                }
+                .pickerStyle(.radioGroup)
+                
+                // Plan type descriptions
+                Group {
+                    switch planType {
+                    case .auto:
+                        HStack {
+                            Image(systemName: "info.circle")
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
+                            Text("System will automatically determine the best plan type based on student performance")
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                    case .remediation:
+                        HStack {
+                            Image(systemName: "info.circle")
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
+                            Text("Focus on strengthening weak areas and closing learning gaps")
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                    case .enrichment:
+                        HStack {
+                            Image(systemName: "info.circle")
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                            Text("Provide advanced challenges and extension activities for high performers")
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                .padding(.leading, 20)
+            }
+        }
+    }
+    
+    private var blueprintOptionsSection: some View {
+        Section("Blueprint Options") {
+            VStack(alignment: .leading, spacing: 16) {
+                // Use Blueprints Toggle
+                Toggle(isOn: $useBlueprints) {
+                    HStack {
+                        Image(systemName: "doc.text.magnifyingglass")
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
+                        VStack(alignment: .leading) {
+                            Text("Use Mississippi Test Blueprints")
+                            Text("Maps weak components to specific MS-CCRS standards with K/U/S expectations")
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                .toggleStyle(.switch)
+                
+                // Grade Progression Toggle
+                Toggle(isOn: $includeGradeProgression) {
+                    HStack {
+                        Image(systemName: "chart.line.uptrend.xyaxis")
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.purple)
+                        VStack(alignment: .leading) {
+                            Text("Include Grade Progression Analysis")
+                            Text("Predicts future struggles based on 623,286 correlations")
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                .toggleStyle(.switch)
+                
+                if useBlueprints || includeGradeProgression {
+                    Divider()
+                    
+                    // Feature preview
+                    GroupBox {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Label("Features Enabled", systemImage: "checkmark.seal")
+                                .font(AppleDesignSystem.Typography.headline)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                            
+                            if useBlueprints {
+                                HStack {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                                        .imageScale(.small)
+                                    Text("Standards-aligned learning objectives")
+                                        .font(AppleDesignSystem.Typography.caption)
+                                }
+                                
+                                HStack {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                                        .imageScale(.small)
+                                    Text("Knowledge, Understanding, and Skills breakdown")
+                                        .font(AppleDesignSystem.Typography.caption)
+                                }
+                            }
+                            
+                            if includeGradeProgression {
+                                HStack {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                                        .imageScale(.small)
+                                    Text("Multi-year progression pathways")
+                                        .font(AppleDesignSystem.Typography.caption)
+                                }
+                                
+                                HStack {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                                        .imageScale(.small)
+                                    Text("Predictive correlation analysis")
+                                        .font(AppleDesignSystem.Typography.caption)
+                                }
+                            }
+                        }
+                        .padding()
+                    }
+                }
+            }
+        }
+    }
+    
+    private var generationActionsSection: some View {
+        Section {
+            VStack(spacing: 16) {
+                // Progress indicator
+                if viewModel.isGenerating {
+                    HStack {
+                        ProgressView()
+                            .progressViewStyle(.circular)
+                            .scaleEffect(0.8)
+                        
+                        Text("Generating Individual Learning Plan...")
+                            .font(AppleDesignSystem.Typography.subheadline)
+                            .foregroundStyle(.secondary)
+                        
+                        Spacer()
+                    }
+                    .padding()
+                    .background(Color(NSColor.controlBackgroundColor))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+                
+                // Generate button
+                Button(action: generateILP) {
+                    HStack {
+                        Image(systemName: "sparkles")
+                        Text("Generate Individual Learning Plan")
+                        Image(systemName: "sparkles")
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .disabled(selectedStudent == nil || viewModel.isGenerating)
+                
+                if selectedStudent == nil {
+                    HStack {
+                        Image(systemName: "exclamationmark.circle")
+                            .foregroundStyle(AppleDesignSystem.SystemPalette.orange)
+                        Text("Please select a student first")
+                            .font(AppleDesignSystem.Typography.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+        }
+    }
+    
+    private var generatedPlanSection: some View {
+        Section("Generated Plan") {
+            if let ilp = generatedILP {
+                VStack(alignment: .leading, spacing: 16) {
+                    // Plan header
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Label("ILP Generated Successfully", systemImage: "checkmark.seal.fill")
+                                .font(AppleDesignSystem.Typography.headline)
+                                .foregroundStyle(AppleDesignSystem.SystemPalette.green)
+                            
+                            Text("Created: \(ilp.createdDate, format: .dateTime)")
+                                .font(AppleDesignSystem.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        
+                        Spacer()
+                        
+                        // Export menu
+                        Menu {
+                            Button(action: { exportILP(format: .pdf) }) {
+                                Label("Export as PDF", systemImage: "doc.richtext")
+                            }
+                            Button(action: { exportILP(format: .markdown) }) {
+                                Label("Export as Markdown", systemImage: "doc.text")
+                            }
+                            Button(action: { exportILP(format: .csv) }) {
+                                Label("Export as CSV", systemImage: "tablecells")
+                            }
+                        } label: {
+                            Label("Export", systemImage: "square.and.arrow.up")
+                        }
+                    }
+                    
+                    Divider()
+                    
+                    // Plan preview
+                    VStack(alignment: .leading, spacing: 12) {
+                        // Performance summary
+                        if !ilp.performanceSummary.isEmpty {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Key Findings")
+                                    .font(AppleDesignSystem.Typography.headline)
+                                
+                                ForEach(ilp.performanceSummary.prefix(3), id: \.self) { summary in
+                                    HStack(alignment: .top) {
+                                        Image(systemName: "chevron.right.circle")
+                                            .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
+                                            .imageScale(.small)
+                                        Text(summary)
+                                            .font(AppleDesignSystem.Typography.caption)
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Focus areas
+                        if !ilp.focusAreas.isEmpty {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Focus Areas")
+                                    .font(AppleDesignSystem.Typography.headline)
+                                
+                                HStack(spacing: 12) {
+                                    ForEach(ilp.focusAreas.prefix(4)) { area in
+                                        FocusAreaCard(area: area)
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // View full ILP button
+                        Button(action: { showingILPDetail = true }) {
+                            HStack {
+                                Text("View Full ILP")
+                                Image(systemName: "arrow.right.circle")
+                            }
+                        }
+                        .buttonStyle(.borderedProminent)
+                    }
+                }
+            }
+        }
+    }
+    
+    // MARK: - Helper Methods
+    
+    private func generateILP() {
+        guard let student = selectedStudent else { return }
+        
+        Task {
+            await viewModel.generateILP(
+                for: student,
+                planType: planType,
+                useBlueprints: useBlueprints,
+                includeGradeProgression: includeGradeProgression
+            )
+            
+            await MainActor.run {
+                generatedILP = viewModel.lastGeneratedILP
+            }
+        }
+    }
+    
+    private func exportILP(format: ExportFormat) {
+        guard let ilp = generatedILP else { return }
+        
+        Task {
+            await viewModel.exportILP(ilp, format: format)
+        }
+    }
+    
+    private func resetForm() {
+        selectedStudent = nil
+        planType = .auto
+        useBlueprints = true
+        includeGradeProgression = true
+        generatedILP = nil
+        searchText = ""
+    }
+}
+
+// MARK: - Supporting Views
+
+struct StudentStatCard: View {
+    let title: String
+    let value: String
+    let icon: String
+    let color: Color
+    
+    var body: some View {
+        VStack(spacing: 4) {
+            Image(systemName: icon)
+                .foregroundStyle(color)
+                .imageScale(.large)
+            
+            Text(value)
+                .font(AppleDesignSystem.Typography.headline)
+                .foregroundStyle(color)
+            
+            Text(title)
+                .font(AppleDesignSystem.Typography.caption2)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity)
+        .padding()
+        .background(color.opacity(0.1))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+}
+
+struct FocusAreaCard: View {
+    let area: UIFocusArea
+    
+    var body: some View {
+        VStack(spacing: 4) {
+            Circle()
+                .fill(severityColor(area.severity))
+                .frame(width: 40, height: 40)
+                .overlay(
+                    Image(systemName: iconForSubject(area.subject))
+                        .foregroundStyle(.white)
+                )
+            
+            Text(area.subject)
+                .font(AppleDesignSystem.Typography.caption2)
+                .lineLimit(1)
+        .truncationMode(.tail)
+        }
+        .frame(maxWidth: .infinity)
+    }
+    
+    private func severityColor(_ severity: Double) -> Color {
+        switch severity {
+        case 0.8...: return AppleDesignSystem.SystemPalette.red
+        case 0.6..<0.8: return AppleDesignSystem.SystemPalette.orange
+        case 0.4..<0.6: return AppleDesignSystem.SystemPalette.yellow
+        default: return AppleDesignSystem.SystemPalette.green
+        }
+    }
+    
+    private func iconForSubject(_ subject: String) -> String {
+        if subject.lowercased().contains("math") {
+            return "function"
+        } else if subject.lowercased().contains("ela") || subject.lowercased().contains("english") {
+            return "text.book.closed"
+        } else {
+            return "book"
+        }
+    }
+}
+
+struct StudentPickerSheet: View {
+    @Binding var selectedStudent: StudentAssessmentData?
+    @Binding var searchText: String
+    @Environment(\.dismiss) var dismiss
+    
+    // Sample students for demonstration
+    let sampleStudents: [StudentAssessmentData] = [
+        SimplifiedStudent(
+            msis: "MS001234",
+            firstName: "Emily",
+            lastName: "Johnson",
+            grade: 5,
+            school: "Madison Elementary",
+            district: "Jackson Public Schools"
+        ).toStudentAssessmentData(),
+        SimplifiedStudent(
+            msis: "MS001235",
+            firstName: "Michael",
+            lastName: "Williams",
+            grade: 6,
+            school: "Madison Middle",
+            district: "Jackson Public Schools"
+        ).toStudentAssessmentData(),
+        SimplifiedStudent(
+            msis: "MS001236",
+            firstName: "Sarah",
+            lastName: "Brown",
+            grade: 4,
+            school: "Madison Elementary",
+            district: "Jackson Public Schools"
+        ).toStudentAssessmentData()
+    ]
+    
+    var filteredStudents: [StudentAssessmentData] {
+        if searchText.isEmpty {
+            return sampleStudents
+        }
+        return sampleStudents.filter { student in
+            student.firstName.localizedCaseInsensitiveContains(searchText) ||
+            student.lastName.localizedCaseInsensitiveContains(searchText) ||
+            student.msis.localizedCaseInsensitiveContains(searchText)
+        }
+    }
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            // Header
+            HStack {
+                Text("Select Student")
+                    .font(.largeTitle)
+                    .bold()
+                
+                Spacer()
+                
+                Button(action: { dismiss() }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(.secondary)
+                        .imageScale(.large)
+                }
+                .buttonStyle(.plain)
+            }
+            .padding()
+            
+            // Search bar
+            HStack {
+                Image(systemName: "magnifyingglass")
+                    .foregroundStyle(.secondary)
+                
+                TextField("Search by name or MSIS...", text: $searchText)
+                    .textFieldStyle(.plain)
+                
+                if !searchText.isEmpty {
+                    Button(action: { searchText = "" }) {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundStyle(.secondary)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(AppleDesignSystem.Spacing.small)
+            .background(Color(NSColor.controlBackgroundColor))
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .padding()
+            
+            // Student list
+            ScrollView {
+                LazyVStack(spacing: 8) {
+                    ForEach(filteredStudents, id: \.msis) { student in
+                        Button(action: {
+                            selectedStudent = student
+                            dismiss()
+                        }) {
+                            HStack {
+                                Image(systemName: "person.crop.circle")
+                                    .foregroundStyle(AppleDesignSystem.SystemPalette.blue)
+                                    .imageScale(.large)
+                                
+                                VStack(alignment: .leading) {
+                                    Text("\(student.firstName) \(student.lastName)")
+                                        .font(AppleDesignSystem.Typography.headline)
+                                        .foregroundStyle(.primary)
+                                    
+                                    HStack {
+                                        Text("MSIS: \(student.msis)")
+                                        Text("•")
+                                        Text("Grade \(student.testGrade)")
+                                        Text("•")
+                                        Text(student.schoolName)
+                                    }
+                                    .font(AppleDesignSystem.Typography.caption)
+                                    .foregroundStyle(.secondary)
+                                }
+                                
+                                Spacer()
+                                
+                                Image(systemName: "chevron.right")
+                                    .foregroundStyle(.secondary)
+                            }
+                            .padding()
+                            .background(Color(NSColor.controlBackgroundColor))
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding()
+            }
+            
+            if filteredStudents.isEmpty {
+                ContentUnavailableView(
+                    "No Students Found",
+                    systemImage: "person.crop.circle.badge.questionmark",
+                    description: Text("Try adjusting your search criteria")
+                )
+            }
+        }
+    }
+}
+
+// MARK: - View Model
+
+@MainActor
+class ILPGeneratorViewModel: ObservableObject {
+    @Published var isGenerating = false
+    @Published var lastGeneratedILP: UIIndividualLearningPlan?
+    
+    // NOTE: In production, this would be properly initialized with all dependencies
+    // For UI demonstration, we're creating a mock generator
+    
+    func generateILP(
+        for student: StudentAssessmentData,
+        planType: PlanType,
+        useBlueprints: Bool,
+        includeGradeProgression: Bool
+    ) async {
+        isGenerating = true
+        defer { isGenerating = false }
+        
+        // TODO: In production, properly initialize and use ILPGenerator
+        // For now, create a mock ILP for UI demonstration
+        
+        // Simulate processing delay
+        try? await Task.sleep(nanoseconds: 2_000_000_000) // 2 seconds
+        
+        // Create a mock ILP
+        let mockILP = UIIndividualLearningPlan(
+            studentMSIS: student.msis,
+            studentName: "\(student.firstName) \(student.lastName)",
+            currentGrade: student.testGrade,
+            targetGrade: student.testGrade + 1,
+            createdDate: Date(),
+            targetCompletionDate: Date().addingTimeInterval(86400 * 180), // 6 months
+            performanceSummary: [
+                "Student shows strength in reading comprehension",
+                "Needs support in mathematical operations",
+                "Recommended for targeted intervention in fractions"
+            ],
+            focusAreas: [
+                UIFocusArea(
+                    subject: "Mathematics",
+                    description: "Operations and Algebraic Thinking",
+                    components: ["D1OP", "D2OP"],
+                    severity: 0.7,
+                    standards: []
+                )
+            ],
+            learningObjectives: [],
+            milestones: [],
+            interventionStrategies: [],
+            timeline: nil,
+            planType: planType
+        )
+        
+        lastGeneratedILP = mockILP
+    }
+    
+    func exportILP(_ ilp: UIIndividualLearningPlan, format: ExportFormat) async {
+        do {
+            let outputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+                .appendingPathComponent("Output")
+                .appendingPathComponent("ILPs")
+            
+            try FileManager.default.createDirectory(at: outputURL, withIntermediateDirectories: true)
+            
+            switch format {
+            case .markdown, .csv, .pdf:
+                // TODO: Implement proper conversion between UIIndividualLearningPlan and IndividualLearningPlan
+                print("Export functionality temporarily disabled - need to implement UI to core model conversion")
+                print("Would export ILP for student: \(ilp.studentName) in \(format) format")
+            }
+        } catch {
+            print("Error exporting ILP: \(error)")
+        }
+    }
+    
+    func calculateOverallPerformance(for student: StudentAssessmentData?) -> String {
+        guard let student = student, !student.assessments.isEmpty else { return "N/A" }
+        let totalScore = student.assessments.reduce(0.0) { $0 + $1.overallScore }
+        let avg = totalScore / Double(student.assessments.count)
+        
+        if avg >= 750 { return "Advanced" }
+        else if avg >= 700 { return "Proficient" }
+        else if avg >= 650 { return "Passing" }
+        else if avg >= 600 { return "Basic" }
+        else { return "Minimal" }
+    }
+    
+    func countWeakComponents(for student: StudentAssessmentData?) -> Int {
+        guard let student = student else { return 0 }
+        return student.assessments.filter { $0.overallScore < 650 }.count
+    }
+    
+    func determineRiskLevel(for student: StudentAssessmentData?) -> String {
+        guard let student = student else { return "Unknown" }
+        let weakCount = countWeakComponents(for: student)
+        
+        if weakCount >= 5 { return "Critical" }
+        else if weakCount >= 3 { return "High" }
+        else if weakCount >= 1 { return "Moderate" }
+        else { return "Low" }
+    }
+    
+    func riskLevelColor(for student: StudentAssessmentData?) -> Color {
+        switch determineRiskLevel(for: student) {
+        case "Critical": return AppleDesignSystem.SystemPalette.red
+        case "High": return AppleDesignSystem.SystemPalette.orange
+        case "Moderate": return AppleDesignSystem.SystemPalette.yellow
+        case "Low": return AppleDesignSystem.SystemPalette.green
+        default: return .gray
+        }
+    }
+}

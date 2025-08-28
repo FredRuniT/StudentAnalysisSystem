@@ -11,11 +11,13 @@ public actor EnrichmentPlanGenerator {
     private let standardsRepository: StandardsRepository
     private let correlationModel: ValidatedCorrelationModel
     
+    /// generateEnrichmentPlan function description
     public func generateEnrichmentPlan(
         for candidate: AccelerationCandidate,
         pathway: AccelerationPathway
     ) async -> EnrichmentPlan {
         
+        /// currentGrade property
         let currentGrade = candidate.studentInfo.grade
         
         switch pathway.type {
@@ -50,12 +52,14 @@ public actor EnrichmentPlanGenerator {
         targetGrade: Int
     ) async -> EnrichmentPlan {
         // Get next grade level standards
+        /// advancedStandards property
         let advancedStandards = await standardsRepository.getStandardsForGrade(
             grade: String(targetGrade),
             subject: candidate.profile.primarySubject
         )
         
         // Create bridge activities from current mastery to advanced content
+        /// bridgeActivities property
         let bridgeActivities = await createBridgeActivities(
             from: candidate.profile.masteredComponents,
             to: advancedStandards
@@ -120,10 +124,12 @@ public actor EnrichmentPlanGenerator {
         candidate: AccelerationCandidate,
         depth: EnrichmentDepth
     ) async -> EnrichmentPlan {
+        /// objectives property
         var objectives: [EnrichmentObjective] = []
         
         // For each mastered component, go deeper
         for mastered in candidate.profile.masteredComponents {
+            /// extensions property
             let extensions = await generateExtensions(
                 for: mastered.component,
                 depth: depth
@@ -187,12 +193,14 @@ public actor EnrichmentPlanGenerator {
         pace: Double
     ) async -> EnrichmentPlan {
         // Get current grade standards
+        /// standards property
         let standards = await standardsRepository.getStandardsForGrade(
             grade: String(candidate.studentInfo.grade),
             subject: candidate.profile.primarySubject
         )
         
         // Group standards that can be taught together
+        /// compactedUnits property
         let compactedUnits = await createCompactedUnits(
             standards: standards,
             compressionRate: pace

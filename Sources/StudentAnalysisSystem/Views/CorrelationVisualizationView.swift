@@ -4,7 +4,9 @@ import ReportGeneration
 import StatisticalEngine
 import SwiftUI
 
+/// CorrelationVisualizationView represents...
 struct CorrelationVisualizationView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @State private var correlationData: ComponentCorrelationMap?
     @State private var selectedGradeFilter: Int?
@@ -16,30 +18,50 @@ struct CorrelationVisualizationView: View {
     @State private var isLoading = true
     @State private var selectedVisualization = "Top Correlations"
     
+    /// CorrelationPair represents...
     struct CorrelationPair: Identifiable {
+        /// id property
         let id = UUID()
+        /// source property
         let source: String
+        /// target property
         let target: String
+        /// correlation property
         let correlation: Double
+        /// confidence property
         let confidence: Double
+        /// sampleSize property
         let sampleSize: Int
+        /// sourceGrade property
         let sourceGrade: Int
+        /// targetGrade property
         let targetGrade: Int
     }
     
+    /// CrossGradeCorrelation represents...
     struct CrossGradeCorrelation: Identifiable {
+        /// id property
         let id = UUID()
+        /// earlyGrade property
         let earlyGrade: Int
+        /// laterGrade property
         let laterGrade: Int
+        /// component property
         let component: String
+        /// averageCorrelation property
         let averageCorrelation: Double
+        /// count property
         let count: Int
     }
     
+    /// visualizationTypes property
     let visualizationTypes = ["Top Correlations", "Cross-Grade Patterns", "Predictive Pathways", "Heatmap"]
+    /// subjects property
     let subjects = ["All", "MATH", "ELA", "ENGLISH_II", "ALGEBRA I", "BIOLOGY", "U.S. HISTORY"]
+    /// gradeOptions property
     let gradeOptions = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             headerView
@@ -57,6 +79,7 @@ struct CorrelationVisualizationView: View {
         .themed()
     }
     
+    /// headerView property
     var headerView: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Component Correlation Analysis")
@@ -70,6 +93,7 @@ struct CorrelationVisualizationView: View {
         .padding(.horizontal)
     }
     
+    /// controlsView property
     var controlsView: some View {
         HStack(spacing: 20) {
             Picker("Visualization", selection: $selectedVisualization) {
@@ -109,6 +133,7 @@ struct CorrelationVisualizationView: View {
         .padding(.horizontal)
     }
     
+    /// mainVisualizationView property
     var mainVisualizationView: some View {
         Group {
             switch selectedVisualization {
@@ -130,10 +155,15 @@ struct CorrelationVisualizationView: View {
         .padding(.horizontal)
     }
     
+    /// summaryStatisticsView property
     var summaryStatisticsView: some View {
+        /// strongCount property
         let strongCount = topCorrelations.filter { $0.correlation > 0.7 }.count
+        /// veryStrongCount property
         let veryStrongCount = topCorrelations.filter { $0.correlation > 0.85 }.count
+        /// crossGradeCount property
         let crossGradeCount = crossGradeCorrelations.count
+        /// avgConfidence property
         let avgConfidence = topCorrelations.isEmpty ? 0 : Int((topCorrelations.map { $0.confidence }.reduce(0, +) / Double(topCorrelations.count)) * 100)
         
         return HStack(spacing: 40) {
@@ -145,6 +175,7 @@ struct CorrelationVisualizationView: View {
         .padding(.horizontal)
     }
     
+    /// topCorrelationsView property
     var topCorrelationsView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Strongest Component Correlations")
@@ -173,6 +204,7 @@ struct CorrelationVisualizationView: View {
         }
     }
     
+    /// crossGradePatternsView property
     var crossGradePatternsView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Cross-Grade Predictive Patterns")
@@ -196,6 +228,7 @@ struct CorrelationVisualizationView: View {
                 .chartXAxis {
                     AxisMarks(values: .automatic) { value in
                         AxisValueLabel {
+                            /// grade property
                             if let grade = value.as(Int.self) {
                                 Text("Grade \(grade)")
                             }
@@ -211,6 +244,7 @@ struct CorrelationVisualizationView: View {
         }
     }
     
+    /// predictivePathwaysView property
     var predictivePathwaysView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Predictive Learning Pathways")
@@ -284,6 +318,7 @@ struct CorrelationVisualizationView: View {
         }
     }
     
+    /// correlationHeatmapView property
     var correlationHeatmapView: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Correlation Heatmap")
@@ -300,6 +335,7 @@ struct CorrelationVisualizationView: View {
         }
     }
     
+    /// correlationColor function description
     func correlationColor(for value: Double) -> Color {
         switch value {
         case 0.85...1.0:
@@ -313,14 +349,19 @@ struct CorrelationVisualizationView: View {
         }
     }
     
+    /// loadCorrelationData function description
     func loadCorrelationData() {
         Task {
             // Load correlation data from the JSON file
+            /// outputURL property
             let outputURL = URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json")
             
+            /// data property
             if let data = try? Data(contentsOf: outputURL) {
                 // Parse the JSON - we'll extract top correlations
+                /// json property
                 if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                   /// correlations property
                    let correlations = json["correlations"] as? [[String: Any]] {
                     
                     await MainActor.run {
@@ -332,32 +373,51 @@ struct CorrelationVisualizationView: View {
         }
     }
     
+    /// parseCorrelations function description
     func parseCorrelations(_ correlationsData: [[String: Any]]) {
+        /// pairs property
         var pairs: [CorrelationPair] = []
+        /// crossGrade property
         var crossGrade: [CrossGradeCorrelation] = []
         
         for correlationEntry in correlationsData.prefix(100) { // Process first 100 for performance
+            /// source property
             guard let source = correlationEntry["sourceComponent"] as? [String: Any],
+                  /// correlationsList property
                   let correlationsList = correlationEntry["correlations"] as? [[String: Any]] else { continue }
             
+            /// sourceGrade property
             let sourceGrade = source["grade"] as? Int ?? 0
+            /// sourceSubject property
             let sourceSubject = source["subject"] as? String ?? ""
+            /// sourceComponent property
             let sourceComponent = source["component"] as? String ?? ""
+            /// _ property
             let _ = source["testProvider"] as? String ?? ""
+            /// sourceName property
             let sourceName = "G\(sourceGrade)_\(sourceSubject)_\(sourceComponent)"
             
             for correlation in correlationsList {
+                /// target property
                 guard let target = correlation["target"] as? [String: Any],
+                      /// correlationValue property
                       let correlationValue = correlation["correlation"] as? Double,
+                      /// confidence property
                       let confidence = correlation["confidence"] as? Double,
+                      /// sampleSize property
                       let sampleSize = correlation["sampleSize"] as? Int,
                       correlationValue > minimumCorrelation else { continue }
                 
+                /// targetGrade property
                 let targetGrade = target["grade"] as? Int ?? 0
+                /// targetSubject property
                 let targetSubject = target["subject"] as? String ?? ""
+                /// targetComponent property
                 let targetComponent = target["component"] as? String ?? ""
+                /// targetName property
                 let targetName = "G\(targetGrade)_\(targetSubject)_\(targetComponent)"
                 
+                /// pair property
                 let pair = CorrelationPair(
                     source: sourceName,
                     target: targetName,
@@ -371,13 +431,16 @@ struct CorrelationVisualizationView: View {
                 
                 // Track cross-grade correlations
                 if targetGrade > sourceGrade && correlationValue > 0.7 {
+                    /// existing property
                     if let existing = crossGrade.firstIndex(where: { 
                         $0.earlyGrade == sourceGrade && 
                         $0.laterGrade == targetGrade && 
                         $0.component == sourceSubject 
                     }) {
                         // Update existing
+                        /// updated property
                         let updated = crossGrade[existing]
+                        /// newAvg property
                         let newAvg = (updated.averageCorrelation * Double(updated.count) + correlationValue) / Double(updated.count + 1)
                         crossGrade[existing] = CrossGradeCorrelation(
                             earlyGrade: sourceGrade,
@@ -404,24 +467,33 @@ struct CorrelationVisualizationView: View {
         crossGradeCorrelations = crossGrade.sorted { $0.averageCorrelation > $1.averageCorrelation }
     }
     
+    /// filterData function description
     func filterData() {
         // Re-filter based on current settings
         loadCorrelationData()
     }
     
+    /// formatNumber function description
     func formatNumber(_ number: Int) -> String {
+        /// formatter property
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         return formatter.string(from: NSNumber(value: number)) ?? "\(number)"
     }
 }
 
+/// CorrelationStatCard represents...
 struct CorrelationStatCard: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
+    /// title property
     let title: String
+    /// value property
     let value: String
+    /// subtitle property
     let subtitle: String
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)

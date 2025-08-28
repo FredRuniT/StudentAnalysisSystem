@@ -3,7 +3,9 @@ import SwiftUI
 
 /// Singleton service providing easy access to configuration throughout the application
 @MainActor
+/// ConfigurationService represents...
 public class ConfigurationService: ObservableObject {
+    /// shared property
     public static let shared = ConfigurationService()
     
     @Published public private(set) var appConfig: AppConfiguration
@@ -162,7 +164,9 @@ public class ConfigurationService: ObservableObject {
 }
 
 // MARK: - ViewModifier for easy injection
+/// WithConfiguration represents...
 public struct WithConfiguration: ViewModifier {
+    /// body function description
     public func body(content: Content) -> some View {
         content
             .environmentObject(ConfigurationService.shared)

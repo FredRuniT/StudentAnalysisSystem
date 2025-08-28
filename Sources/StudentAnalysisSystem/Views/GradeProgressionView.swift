@@ -4,7 +4,9 @@ import PredictiveModeling
 import StatisticalEngine
 import SwiftUI
 
+/// GradeProgressionView represents...
 struct GradeProgressionView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = GradeProgressionViewModel()
     @State private var startGrade = 3
@@ -18,6 +20,7 @@ struct GradeProgressionView: View {
         startGrade...endGrade
     }
     
+    /// body property
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
@@ -56,6 +59,7 @@ struct GradeProgressionView: View {
             }
         }
         .sheet(isPresented: $showingCorrelationDetail) {
+            /// correlation property
             if let correlation = selectedCorrelation {
                 CorrelationDetailSheet(correlation: correlation)
                     .frame(minWidth: 600, minHeight: 400)
@@ -168,6 +172,7 @@ struct GradeProgressionView: View {
                     Text("Student Context")
                         .font(AppleDesignSystem.Typography.headline)
                     
+                    /// student property
                     if let student = selectedStudent {
                         HStack {
                             Image(systemName: "person.crop.circle")
@@ -204,7 +209,9 @@ struct GradeProgressionView: View {
     
     private var progressionVisualizationPanel: some View {
         VStack {
+            /// component property
             if let component = selectedComponent {
+                /// progressions property
                 if let progressions = viewModel.gradeProgressions[component], !progressions.isEmpty {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 20) {
@@ -271,12 +278,18 @@ struct GradeProgressionView: View {
 
 // MARK: - Supporting Views
 
+/// ComponentRow represents...
 struct ComponentRow: View {
+    /// component property
     let component: String
+    /// isSelected property
     let isSelected: Bool
+    /// correlationCount property
     let correlationCount: Int
+    /// onSelect property
     let onSelect: () -> Void
     
+    /// body property
     var body: some View {
         Button(action: onSelect) {
             HStack {
@@ -308,6 +321,7 @@ struct ComponentRow: View {
     }
     
     private func extractComponentName(_ fullName: String) -> String {
+        /// parts property
         let parts = fullName.split(separator: "_")
         if parts.count >= 4 {
             return "\(parts[2]) - \(parts[3])"
@@ -316,11 +330,16 @@ struct ComponentRow: View {
     }
 }
 
+/// ProgressionChart represents...
 struct ProgressionChart: View {
+    /// progressions property
     let progressions: [ProgressionCorrelation]
+    /// gradeRange property
     let gradeRange: ClosedRange<Int>
+    /// onSelectCorrelation property
     let onSelectCorrelation: (ProgressionCorrelation) -> Void
     
+    /// body property
     var body: some View {
         Chart {
             ForEach(progressions) { progression in
@@ -363,6 +382,7 @@ struct ProgressionChart: View {
         .chartYScale(domain: 0...1)
         .chartXAxis {
             AxisMarks(preset: .aligned) { value in
+                /// grade property
                 if let grade = value.as(Int.self) {
                     AxisValueLabel {
                         Text("Grade \(grade)")
@@ -372,6 +392,7 @@ struct ProgressionChart: View {
         }
         .chartYAxis {
             AxisMarks(position: .leading) { value in
+                /// strength property
                 if let strength = value.as(Double.self) {
                     AxisValueLabel {
                         Text("\(Int(strength * 100))%")
@@ -396,10 +417,14 @@ struct ProgressionChart: View {
     }
 }
 
+/// ProgressionCorrelationCard represents...
 struct ProgressionCorrelationCard: View {
+    /// progression property
     let progression: ProgressionCorrelation
+    /// onViewDetail property
     let onViewDetail: () -> Void
     
+    /// body property
     var body: some View {
         HStack {
             // Correlation strength indicator
@@ -473,10 +498,14 @@ struct ProgressionCorrelationCard: View {
     }
 }
 
+/// CorrelationDetailSheet represents...
 struct CorrelationDetailSheet: View {
+    /// correlation property
     let correlation: ProgressionCorrelation
+    /// dismiss property
     @Environment(\.dismiss) var dismiss
     
+    /// body property
     var body: some View {
         VStack(spacing: 20) {
             // Header
@@ -607,27 +636,37 @@ struct CorrelationDetailSheet: View {
 // MARK: - View Model
 
 @MainActor
+/// GradeProgressionViewModel represents...
 class GradeProgressionViewModel: ObservableObject {
+    /// gradeProgressions property
     @Published var gradeProgressions: [String: [ProgressionCorrelation]] = [:]
+    /// availableComponents property
     @Published var availableComponents: [String] = []
+    /// correlationCounts property
     @Published var correlationCounts: [String: Int] = [:]
+    /// isLoading property
     @Published var isLoading = false
+    /// minimumCorrelationStrength property
     @Published var minimumCorrelationStrength: Double = 0.7
     
     private var allCorrelations: ValidatedCorrelationModel?
     
+    /// loadCorrelations function description
     func loadCorrelations() {
         isLoading = true
         
         Task {
             do {
                 // Load correlation model
+                /// outputURL property
                 let outputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
                     .appendingPathComponent("Output")
                     .appendingPathComponent("correlation_model.json")
                 
                 if FileManager.default.fileExists(atPath: outputURL.path) {
+                    /// data property
                     let data = try Data(contentsOf: outputURL)
+                    /// decoder property
                     let decoder = JSONDecoder()
                     decoder.dateDecodingStrategy = .iso8601
                     allCorrelations = try decoder.decode(ValidatedCorrelationModel.self, from: data)
@@ -642,22 +681,28 @@ class GradeProgressionViewModel: ObservableObject {
         }
     }
     
+    /// refreshData function description
     func refreshData() {
         loadCorrelations()
     }
     
     private func extractAvailableComponents() {
+        /// model property
         guard let model = allCorrelations else { return }
         
+        /// components property
         var components = Set<String>()
+        /// counts property
         var counts: [String: Int] = [:]
         
         for correlationMap in model.correlations {
+            /// sourceKey property
             let sourceKey = "\(correlationMap.sourceComponent.grade)_\(correlationMap.sourceComponent.subject)_\(correlationMap.sourceComponent.component)"
             components.insert(sourceKey)
             counts[sourceKey, default: 0] += 1
             
             for correlation in correlationMap.correlations {
+                /// targetKey property
                 let targetKey = "\(correlation.target.grade)_\(correlation.target.subject)_\(correlation.target.component)"
                 components.insert(targetKey)
                 counts[targetKey, default: 0] += 1
@@ -667,7 +712,9 @@ class GradeProgressionViewModel: ObservableObject {
         availableComponents = Array(components)
             .filter { $0.contains("Grade_") }
             .sorted { component1, component2 in
+                /// grade1 property
                 let grade1 = extractGrade(from: component1)
+                /// grade2 property
                 let grade2 = extractGrade(from: component2)
                 if grade1 != grade2 {
                     return grade1 < grade2
@@ -678,27 +725,37 @@ class GradeProgressionViewModel: ObservableObject {
         correlationCounts = counts
     }
     
+    /// loadProgressionForComponent function description
     func loadProgressionForComponent(_ component: String, gradeRange: ClosedRange<Int>) {
+        /// model property
         guard let model = allCorrelations else { return }
         
+        /// progressions property
         var progressions: [ProgressionCorrelation] = []
         
         // Find all correlations involving this component
         for correlationMap in model.correlations {
+            /// sourceKey property
             let sourceKey = "\(correlationMap.sourceComponent.grade)_\(correlationMap.sourceComponent.subject)_\(correlationMap.sourceComponent.component)"
             
             for correlation in correlationMap.correlations {
+                /// targetKey property
                 let targetKey = "\(correlation.target.grade)_\(correlation.target.subject)_\(correlation.target.component)"
                 
                 if (sourceKey.contains(component) || targetKey.contains(component)) && 
                    abs(correlation.correlation) >= minimumCorrelationStrength {
+                    /// fromComponent property
                     let fromComponent = sourceKey
+                    /// toComponent property
                     let toComponent = targetKey
+                    /// fromGrade property
                     let fromGrade = extractGrade(from: fromComponent)
+                    /// toGrade property
                     let toGrade = extractGrade(from: toComponent)
                     
                     // Check if within grade range
                     if gradeRange.contains(fromGrade) && gradeRange.contains(toGrade) && fromGrade != toGrade {
+                        /// progression property
                         let progression = ProgressionCorrelation(
                             id: "\(sourceKey)_to_\(targetKey)",
                             fromComponent: extractComponentName(fromComponent),
@@ -725,7 +782,9 @@ class GradeProgressionViewModel: ObservableObject {
     }
     
     private func extractGrade(from component: String) -> Int {
+        /// parts property
         let parts = component.split(separator: "_")
+        /// grade property
         if parts.count > 1, let grade = Int(parts[1]) {
             return grade
         }
@@ -733,6 +792,7 @@ class GradeProgressionViewModel: ObservableObject {
     }
     
     private func extractComponentName(_ fullName: String) -> String {
+        /// parts property
         let parts = fullName.split(separator: "_")
         if parts.count >= 4 {
             return String(parts[3])
@@ -741,9 +801,13 @@ class GradeProgressionViewModel: ObservableObject {
     }
     
     private func generateInterpretation(from: String, to: String, strength: Double) -> String {
+        /// percentage property
         let percentage = Int(abs(strength) * 100)
+        /// fromGrade property
         let fromGrade = extractGrade(from: from)
+        /// toGrade property
         let toGrade = extractGrade(from: to)
+        /// yearDiff property
         let yearDiff = abs(toGrade - fromGrade)
         
         if strength > 0.8 {
@@ -758,15 +822,26 @@ class GradeProgressionViewModel: ObservableObject {
 
 // MARK: - Models
 
+/// ProgressionCorrelation represents...
 struct ProgressionCorrelation: Identifiable {
+    /// id property
     let id: String
+    /// fromComponent property
     let fromComponent: String
+    /// toComponent property
     let toComponent: String
+    /// fromGrade property
     let fromGrade: Int
+    /// toGrade property
     let toGrade: Int
+    /// correlationStrength property
     let correlationStrength: Double
+    /// confidence property
     let confidence: Double
+    /// pValue property
     let pValue: Double
+    /// sampleSize property
     let sampleSize: Int
+    /// interpretation property
     let interpretation: String
 }

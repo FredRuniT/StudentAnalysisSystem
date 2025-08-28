@@ -2,7 +2,9 @@ import AnalysisCore
 import IndividualLearningPlan
 import SwiftUI
 
+/// ILPGeneratorView represents...
 struct ILPGeneratorView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = ILPGeneratorViewModel()
     @State private var selectedStudent: StudentAssessmentData?
@@ -14,6 +16,7 @@ struct ILPGeneratorView: View {
     @State private var generatedILP: UIIndividualLearningPlan?
     @State private var showingILPDetail = false
     
+    /// body property
     var body: some View {
         NavigationStack {
             Form {
@@ -49,8 +52,9 @@ struct ILPGeneratorView: View {
             .frame(minWidth: 600, minHeight: 400)
         }
         .sheet(isPresented: $showingILPDetail) {
+            /// ilp property
             if let ilp = generatedILP {
-                ILPDetailView(ilp: ilp)
+                ILPDetailView(ilp: ilp.toBackendModel())
                     .frame(minWidth: 800, minHeight: 600)
             }
         }
@@ -62,6 +66,7 @@ struct ILPGeneratorView: View {
     private var studentSelectionSection: some View {
         Section("Student Selection") {
             HStack {
+                /// student property
                 if let student = selectedStudent {
                     // Selected student display
                     HStack {
@@ -326,6 +331,7 @@ struct ILPGeneratorView: View {
     
     private var generatedPlanSection: some View {
         Section("Generated Plan") {
+            /// ilp property
             if let ilp = generatedILP {
                 VStack(alignment: .leading, spacing: 16) {
                     // Plan header
@@ -411,6 +417,7 @@ struct ILPGeneratorView: View {
     // MARK: - Helper Methods
     
     private func generateILP() {
+        /// student property
         guard let student = selectedStudent else { return }
         
         Task {
@@ -428,6 +435,7 @@ struct ILPGeneratorView: View {
     }
     
     private func exportILP(format: ExportFormat) {
+        /// ilp property
         guard let ilp = generatedILP else { return }
         
         Task {
@@ -447,12 +455,18 @@ struct ILPGeneratorView: View {
 
 // MARK: - Supporting Views
 
+/// StudentStatCard represents...
 struct StudentStatCard: View {
+    /// title property
     let title: String
+    /// value property
     let value: String
+    /// icon property
     let icon: String
+    /// color property
     let color: Color
     
+    /// body property
     var body: some View {
         VStack(spacing: 4) {
             Image(systemName: icon)
@@ -474,9 +488,12 @@ struct StudentStatCard: View {
     }
 }
 
+/// FocusAreaCard represents...
 struct FocusAreaCard: View {
+    /// area property
     let area: UIFocusArea
     
+    /// body property
     var body: some View {
         VStack(spacing: 4) {
             Circle()
@@ -490,6 +507,7 @@ struct FocusAreaCard: View {
             Text(area.subject)
                 .font(AppleDesignSystem.Typography.caption2)
                 .lineLimit(1)
+        .truncationMode(.tail)
         .truncationMode(.tail)
         }
         .frame(maxWidth: .infinity)
@@ -515,12 +533,17 @@ struct FocusAreaCard: View {
     }
 }
 
+/// StudentPickerSheet represents...
 struct StudentPickerSheet: View {
+    /// selectedStudent property
     @Binding var selectedStudent: StudentAssessmentData?
+    /// searchText property
     @Binding var searchText: String
+    /// dismiss property
     @Environment(\.dismiss) var dismiss
     
     // Sample students for demonstration
+    /// sampleStudents property
     let sampleStudents: [StudentAssessmentData] = [
         SimplifiedStudent(
             msis: "MS001234",
@@ -548,6 +571,7 @@ struct StudentPickerSheet: View {
         ).toStudentAssessmentData()
     ]
     
+    /// filteredStudents property
     var filteredStudents: [StudentAssessmentData] {
         if searchText.isEmpty {
             return sampleStudents
@@ -559,6 +583,7 @@ struct StudentPickerSheet: View {
         }
     }
     
+    /// body property
     var body: some View {
         VStack(spacing: 0) {
             // Header
@@ -657,13 +682,17 @@ struct StudentPickerSheet: View {
 // MARK: - View Model
 
 @MainActor
+/// ILPGeneratorViewModel represents...
 class ILPGeneratorViewModel: ObservableObject {
+    /// isGenerating property
     @Published var isGenerating = false
+    /// lastGeneratedILP property
     @Published var lastGeneratedILP: UIIndividualLearningPlan?
     
     // NOTE: In production, this would be properly initialized with all dependencies
     // For UI demonstration, we're creating a mock generator
     
+    /// generateILP function description
     func generateILP(
         for student: StudentAssessmentData,
         planType: PlanType,
@@ -680,6 +709,7 @@ class ILPGeneratorViewModel: ObservableObject {
         try? await Task.sleep(nanoseconds: 2_000_000_000) // 2 seconds
         
         // Create a mock ILP
+        /// mockILP property
         let mockILP = UIIndividualLearningPlan(
             studentMSIS: student.msis,
             studentName: "\(student.firstName) \(student.lastName)",
@@ -711,8 +741,10 @@ class ILPGeneratorViewModel: ObservableObject {
         lastGeneratedILP = mockILP
     }
     
+    /// exportILP function description
     func exportILP(_ ilp: UIIndividualLearningPlan, format: ExportFormat) async {
         do {
+            /// outputURL property
             let outputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
                 .appendingPathComponent("Output")
                 .appendingPathComponent("ILPs")
@@ -730,9 +762,13 @@ class ILPGeneratorViewModel: ObservableObject {
         }
     }
     
+    /// calculateOverallPerformance function description
     func calculateOverallPerformance(for student: StudentAssessmentData?) -> String {
+        /// student property
         guard let student = student, !student.assessments.isEmpty else { return "N/A" }
+        /// totalScore property
         let totalScore = student.assessments.reduce(0.0) { $0 + $1.overallScore }
+        /// avg property
         let avg = totalScore / Double(student.assessments.count)
         
         if avg >= 750 { return "Advanced" }
@@ -742,13 +778,18 @@ class ILPGeneratorViewModel: ObservableObject {
         else { return "Minimal" }
     }
     
+    /// countWeakComponents function description
     func countWeakComponents(for student: StudentAssessmentData?) -> Int {
+        /// student property
         guard let student = student else { return 0 }
         return student.assessments.filter { $0.overallScore < 650 }.count
     }
     
+    /// determineRiskLevel function description
     func determineRiskLevel(for student: StudentAssessmentData?) -> String {
+        /// student property
         guard let student = student else { return "Unknown" }
+        /// weakCount property
         let weakCount = countWeakComponents(for: student)
         
         if weakCount >= 5 { return "Critical" }
@@ -757,6 +798,7 @@ class ILPGeneratorViewModel: ObservableObject {
         else { return "Low" }
     }
     
+    /// riskLevelColor function description
     func riskLevelColor(for student: StudentAssessmentData?) -> Color {
         switch determineRiskLevel(for: student) {
         case "Critical": return AppleDesignSystem.SystemPalette.red

@@ -1,13 +1,17 @@
 import AppKit
-
 import SwiftUI
+
 #if os(macOS)
 #endif
 
+/// ThemedView represents...
 struct ThemedView: ViewModifier {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
+    /// systemColorScheme property
     @Environment(\.colorScheme) var systemColorScheme
 
+    /// body function description
     func body(content: Content) -> some View {
         content
             .preferredColorScheme(preferredColorScheme)
@@ -32,6 +36,7 @@ struct ThemedView: ViewModifier {
 }
 
 extension View {
+    /// themed function description
     func themed() -> some View {
         modifier(ThemedView())
     }
@@ -195,9 +200,12 @@ extension ShapeStyle where Self == Color {
 }
 
 // MARK: - Vibrancy Helper
+/// VibrantForeground represents...
 struct VibrantForeground: ViewModifier {
+    /// isProminent property
     let isProminent: Bool
     
+    /// body function description
     func body(content: Content) -> some View {
         content
             .foregroundColor(isProminent ? AppleDesignSystem.Materials.label : AppleDesignSystem.Materials.secondaryLabel)

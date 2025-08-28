@@ -89,9 +89,13 @@ public struct MississippiProficiencyLevels {
     
     /// Score range for a specific proficiency level
     public struct ScoreRange: Codable, Sendable {
+        /// minScore property
         public let minScore: Int
+        /// maxScore property
         public let maxScore: Int
+        /// level property
         public let level: Level
+        /// subLevel property
         public let subLevel: SubLevel?
         
         public init(minScore: Int, maxScore: Int, level: Level, subLevel: SubLevel? = nil) {
@@ -109,8 +113,11 @@ public struct MississippiProficiencyLevels {
     
     /// Performance levels for a specific grade and subject
     public struct GradeSubjectLevels: Codable, Sendable {
+        /// grade property
         public let grade: Int
+        /// subject property
         public let subject: String
+        /// scoreRanges property
         public let scoreRanges: [ScoreRange]
         
         public init(grade: Int, subject: String, scoreRanges: [ScoreRange]) {
@@ -121,13 +128,16 @@ public struct MississippiProficiencyLevels {
         
         /// Get proficiency level for a given score
         public func getProficiencyLevel(for score: Int) -> (level: Level, subLevel: SubLevel?) {
+            /// range property
             guard let range = scoreRanges.first(where: { $0.contains(score) }) else {
                 // Default to minimal if score is below all ranges
+                /// lowestRange property
                 if let lowestRange = scoreRanges.min(by: { $0.minScore < $1.minScore }),
                    score < lowestRange.minScore {
                     return (.minimal, .oneA)
                 }
                 // Default to advanced if score is above all ranges
+                /// highestRange property
                 if let highestRange = scoreRanges.max(by: { $0.maxScore < $1.maxScore }),
                    score > highestRange.maxScore {
                     return (.advanced, .five)
@@ -141,6 +151,7 @@ public struct MississippiProficiencyLevels {
     
     /// All performance level data
     private static let performanceLevels: [String: GradeSubjectLevels] = {
+        /// levels property
         var levels: [String: GradeSubjectLevels] = [:]
         
         // Grade 3 ELA
@@ -350,22 +361,28 @@ public struct MississippiProficiencyLevels {
     /// Get proficiency level for a specific score, grade, and subject
     public static func getProficiencyLevel(score: Int, grade: Int, subject: String) -> (level: Level, subLevel: SubLevel?) {
         // Try exact match first
+        /// key property
         let key = "\(grade)_\(subject.uppercased())"
+        /// gradeSubjectLevel property
         if let gradeSubjectLevel = performanceLevels[key] {
             return gradeSubjectLevel.getProficiencyLevel(for: score)
         }
         
         // Try without grade for high school subjects
+        /// gradeSubjectLevel property
         if let gradeSubjectLevel = performanceLevels[subject] {
             return gradeSubjectLevel.getProficiencyLevel(for: score)
         }
         
         // Try alternate subject names
+        /// alternateSubject property
         let alternateSubject = subject.replacingOccurrences(of: "MATH", with: "Math")
             .replacingOccurrences(of: "math", with: "Math")
             .replacingOccurrences(of: "ela", with: "ELA")
         
+        /// alternateKey property
         let alternateKey = "\(grade)_\(alternateSubject)"
+        /// gradeSubjectLevel property
         if let gradeSubjectLevel = performanceLevels[alternateKey] {
             return gradeSubjectLevel.getProficiencyLevel(for: score)
         }

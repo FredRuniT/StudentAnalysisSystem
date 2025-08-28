@@ -69,6 +69,7 @@ extension UIIndividualLearningPlan {
     
     private func createPerformanceAnalysis() -> PerformanceAnalysis {
         // Extract basic performance data from summary
+        /// overallScore property
         let overallScore = 75.0 // Default placeholder
         return PerformanceAnalysis(
             overallScore: overallScore,
@@ -80,7 +81,9 @@ extension UIIndividualLearningPlan {
     }
     
     private func createBackendTimeline() -> Timeline {
+        /// startDate property
         let startDate = createdDate
+        /// endDate property
         let endDate = targetCompletionDate ?? Calendar.current.date(byAdding: .month, value: 9, to: startDate) ?? startDate
         
         return Timeline(
@@ -93,6 +96,7 @@ extension UIIndividualLearningPlan {
 
 // MARK: - WeakArea / FocusArea Adapters
 extension WeakArea {
+    /// toUIModel function description
     public func toUIModel() -> UIFocusArea {
         return UIFocusArea(
             subject: extractSubject(from: component),
@@ -115,6 +119,7 @@ extension WeakArea {
 }
 
 extension UIFocusArea {
+    /// toBackendModel function description
     public func toBackendModel() -> WeakArea {
         return WeakArea(
             component: components.first ?? "Unknown", // Use first component or default
@@ -127,7 +132,9 @@ extension UIFocusArea {
 
 // MARK: - Learning Objective Adapters
 extension ScaffoldedLearningObjective {
+    /// toUIModel function description
     public func toUIModel() -> UILearningObjective {
+        /// expectations property
         let expectations = UILearningExpectations(
             knowledge: knowledgeObjectives.map { $0.description },
             understanding: understandingObjectives.map { $0.description },
@@ -143,6 +150,7 @@ extension ScaffoldedLearningObjective {
 }
 
 extension UILearningObjective {
+    /// toBackendModel function description
     public func toBackendModel() -> ScaffoldedLearningObjective {
         return ScaffoldedLearningObjective(
             standardId: standard ?? "UI-Generated",
@@ -173,6 +181,7 @@ extension UILearningObjective {
 
 // MARK: - Milestone Adapters
 extension Timeline.Milestone {
+    /// toUIModel function description
     public func toUIModel() -> UIMilestone {
         return UIMilestone(
             title: description,
@@ -184,6 +193,7 @@ extension Timeline.Milestone {
 }
 
 extension UIMilestone {
+    /// toBackendModel function description
     public func toBackendModel() -> Timeline.Milestone {
         return Timeline.Milestone(
             date: targetDate,
@@ -195,7 +205,9 @@ extension UIMilestone {
 
 // MARK: - Intervention Strategy Adapters
 extension InterventionStrategy {
+    /// toUIModel function description
     public func toUIModel() -> UIInterventionStrategy {
+        /// interventionType property
         let interventionType: UIInterventionType = {
             switch tier {
             case .universal:
@@ -218,7 +230,9 @@ extension InterventionStrategy {
 }
 
 extension UIInterventionStrategy {
+    /// toBackendModel function description
     public func toBackendModel() -> InterventionStrategy {
+        /// tier property
         let tier: InterventionStrategy.InterventionTier = {
             switch type {
             case .regularSupport:
@@ -231,6 +245,7 @@ extension UIInterventionStrategy {
         }()
         
         // Create InterventionStrategy with proper struct initialization
+        /// strategy property
         let strategy = InterventionStrategy(
             tier: tier,
             frequency: frequency,
@@ -247,21 +262,29 @@ extension UIInterventionStrategy {
 
 // MARK: - Timeline Adapters
 extension Timeline {
+    /// toUIModel function description
     public func toUIModel() -> UITimeline {
+        /// phases property
         let phases = createPhases()
         return UITimeline(phases: phases)
     }
     
     private func createPhases() -> [UIPhase] {
+        /// totalDuration property
         let totalDuration = endDate.timeIntervalSince(startDate)
+        /// phaseDuration property
         let phaseDuration = totalDuration / 4.0 // 4 phases
         
+        /// phases property
         var phases: [UIPhase] = []
         
         for i in 0..<4 {
+            /// phaseStart property
             let phaseStart = startDate.addingTimeInterval(Double(i) * phaseDuration)
+            /// phaseEnd property
             let phaseEnd = startDate.addingTimeInterval(Double(i + 1) * phaseDuration)
             
+            /// phase property
             let phase = UIPhase(
                 name: "Phase \(i + 1)",
                 startDate: phaseStart,
@@ -276,13 +299,21 @@ extension Timeline {
 }
 
 // MARK: - AssessmentComponent Adapters for UI
+/// UIAssessmentComponent represents...
 public struct UIAssessmentComponent: Sendable {
+    /// identifier property
     public let identifier: String
+    /// score property
     public let score: Double
+    /// scaledScore property
     public let scaledScore: Double // UI expects this property
+    /// componentKey property
     public let componentKey: String // UI expects this property
+    /// grade property
     public let grade: Int
+    /// subject property
     public let subject: String
+    /// testProvider property
     public let testProvider: String
     
     public init(
@@ -305,9 +336,13 @@ public struct UIAssessmentComponent: Sendable {
 extension AssessmentComponent {
     /// Convert actor-based AssessmentComponent to UI-friendly struct
     public func toUIModel() async -> [UIAssessmentComponent] {
+        /// scores property
         let scores = await getAllScores()
+        /// componentGrade property
         let componentGrade = await grade
+        /// componentSubject property
         let componentSubject = await subject
+        /// componentTestProvider property
         let componentTestProvider = await testType.rawValue
         
         return scores.map { key, value in
@@ -342,6 +377,7 @@ extension StudentAssessmentData {
 
 // MARK: - Export Format Disambiguation
 extension UILearningPlanModels {
+    /// ExportFormat description
     public enum ExportFormat {
         case pdf
         case markdown
@@ -350,6 +386,7 @@ extension UILearningPlanModels {
 }
 
 // MARK: - Helper Type for Export Format Disambiguation
+/// UILearningPlanModels description
 public enum UILearningPlanModels {
     // This namespace helps disambiguate ExportFormat
 }

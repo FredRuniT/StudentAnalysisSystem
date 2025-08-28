@@ -5,12 +5,19 @@ import Foundation
 public struct AppConfiguration: Codable, Sendable {
     
     // MARK: - Test Provider Configuration
+    /// TestProvider represents...
     public struct TestProvider: Codable, Sendable {
+        /// name property
         public let name: String
+        /// identifier property
         public let identifier: String
+        /// componentPattern property
         public let componentPattern: String
+        /// columnMappings property
         public let columnMappings: [String: String]
+        /// gradePrefix property
         public let gradePrefix: String
+        /// subjectCodes property
         public let subjectCodes: [String: String]
         
         public init(
@@ -31,11 +38,17 @@ public struct AppConfiguration: Codable, Sendable {
     }
     
     // MARK: - Proficiency Level Configuration
+    /// ProficiencyLevels represents...
     public struct ProficiencyLevels: Codable, Sendable {
+        /// LevelRange represents...
         public struct LevelRange: Codable, Sendable {
+            /// name property
             public let name: String
+            /// displayName property
             public let displayName: String
+            /// range property
             public let range: ClosedRange<Double>
+            /// color property
             public let color: String
             
             public init(name: String, displayName: String, range: ClosedRange<Double>, color: String) {
@@ -46,6 +59,7 @@ public struct AppConfiguration: Codable, Sendable {
             }
         }
         
+        /// levels property
         public let levels: [LevelRange]
         
         public init(levels: [LevelRange]) {
@@ -63,8 +77,11 @@ public struct AppConfiguration: Codable, Sendable {
     }
     
     // MARK: - Grade Configuration
+    /// GradeConfiguration represents...
     public struct GradeConfiguration: Codable, Sendable {
+        /// supportedRange property
         public let supportedRange: ClosedRange<Int>
+        /// displayNames property
         public let displayNames: [Int: String]
         
         public init(
@@ -77,11 +94,17 @@ public struct AppConfiguration: Codable, Sendable {
     }
     
     // MARK: - Data Directory Configuration
+    /// DataDirectories represents...
     public struct DataDirectories: Codable, Sendable {
+        /// baseDirectory property
         public let baseDirectory: String
+        /// assessmentDataPath property
         public let assessmentDataPath: String
+        /// standardsPath property
         public let standardsPath: String
+        /// blueprintsPath property
         public let blueprintsPath: String
+        /// outputPath property
         public let outputPath: String
         
         public init(
@@ -100,9 +123,13 @@ public struct AppConfiguration: Codable, Sendable {
     }
     
     // MARK: - Component Mapping Configuration
+    /// ComponentMappings represents...
     public struct ComponentMappings: Codable, Sendable {
+        /// reportingCategories property
         public let reportingCategories: [String: String]
+        /// componentPatterns property
         public let componentPatterns: [String: String]
+        /// subjectMappings property
         public let subjectMappings: [String: String]
         
         public init(
@@ -144,10 +171,15 @@ public struct AppConfiguration: Codable, Sendable {
     }
     
     // MARK: - School Year Configuration
+    /// SchoolYearConfiguration represents...
     public struct SchoolYearConfiguration: Codable, Sendable {
+        /// currentYear property
         public let currentYear: String
+        /// format property
         public let format: String
+        /// startMonth property
         public let startMonth: Int
+        /// endMonth property
         public let endMonth: Int
         
         public init(
@@ -164,15 +196,25 @@ public struct AppConfiguration: Codable, Sendable {
     }
     
     // MARK: - Main Configuration Properties
+    /// applicationName property
     public let applicationName: String
+    /// testProviders property
     public let testProviders: [TestProvider]
+    /// activeProvider property
     public let activeProvider: String
+    /// gradeConfiguration property
     public let gradeConfiguration: GradeConfiguration
+    /// proficiencyLevels property
     public let proficiencyLevels: ProficiencyLevels
+    /// dataDirectories property
     public let dataDirectories: DataDirectories
+    /// componentMappings property
     public let componentMappings: ComponentMappings
+    /// schoolYear property
     public let schoolYear: SchoolYearConfiguration
+    /// correlationThreshold property
     public let correlationThreshold: Double
+    /// confidenceThreshold property
     public let confidenceThreshold: Double
     
     // MARK: - Initialization
@@ -201,6 +243,7 @@ public struct AppConfiguration: Codable, Sendable {
     }
     
     // MARK: - Default Test Providers
+    /// defaultTestProviders property
     public static let defaultTestProviders: [TestProvider] = [
         TestProvider(
             name: "Mississippi Academic Assessment Program",
@@ -253,22 +296,28 @@ public struct AppConfiguration: Codable, Sendable {
     ]
     
     // MARK: - Default Configuration
+    /// Item property
     public static let `default` = AppConfiguration()
     
     // MARK: - Convenience Methods
+    /// activeTestProvider property
     public var activeTestProvider: TestProvider? {
         return testProviders.first { $0.identifier == activeProvider }
     }
     
+    /// supportedGrades function description
     public func supportedGrades() -> [Int] {
         return Array(gradeConfiguration.supportedRange)
     }
     
+    /// proficiencyLevel function description
     public func proficiencyLevel(for score: Double) -> ProficiencyLevels.LevelRange? {
         return proficiencyLevels.levels.first { $0.range.contains(score) }
     }
     
+    /// reportingCategory function description
     public func reportingCategory(for component: String) -> String? {
+        /// prefix property
         let prefix = String(component.prefix(2))
         return componentMappings.reportingCategories[prefix]
     }
@@ -276,6 +325,7 @@ public struct AppConfiguration: Codable, Sendable {
 
 // MARK: - App Configuration Manager
 @MainActor
+/// AppConfigurationManager represents...
 public class AppConfigurationManager: ObservableObject {
     @Published public private(set) var configuration: AppConfiguration
     private let configurationPath: URL
@@ -286,6 +336,7 @@ public class AppConfigurationManager: ObservableObject {
     }
     
     private static var defaultConfigurationPath: URL {
+        /// documentsPath property
         let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentsPath.appendingPathComponent("StudentAnalysisSystem/app_configuration.json")
     }
@@ -297,7 +348,9 @@ public class AppConfigurationManager: ObservableObject {
             return
         }
         
+        /// data property
         let data = try Data(contentsOf: configurationPath)
+        /// decoder property
         let decoder = JSONDecoder()
         configuration = try decoder.decode(AppConfiguration.self, from: data)
         print("App configuration loaded from \(configurationPath.path)")
@@ -305,12 +358,15 @@ public class AppConfigurationManager: ObservableObject {
     
     /// Save current configuration to file
     public func saveConfiguration() async throws {
+        /// encoder property
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         
+        /// data property
         let data = try encoder.encode(configuration)
         
         // Create directory if it doesn't exist
+        /// directory property
         let directory = configurationPath.deletingLastPathComponent()
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
         
@@ -326,6 +382,7 @@ public class AppConfigurationManager: ObservableObject {
     
     /// Update active test provider
     public func setActiveProvider(_ providerId: String) async throws {
+        /// updatedConfig property
         let updatedConfig = AppConfiguration(
             applicationName: configuration.applicationName,
             testProviders: configuration.testProviders,

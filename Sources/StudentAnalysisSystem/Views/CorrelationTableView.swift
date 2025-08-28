@@ -4,7 +4,9 @@ import StatisticalEngine
 import SwiftUI
 import UniformTypeIdentifiers
 
+/// CorrelationTableView represents...
 struct CorrelationTableView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @StateObject private var viewModel = CorrelationTableViewModel()
     @State private var sortOrder = [KeyPathComparator(\CorrelationTableViewModel.CorrelationRow.correlation, order: .reverse)]
@@ -13,6 +15,7 @@ struct CorrelationTableView: View {
     @State private var showExportOptions = false
     @State private var showImportOptions = false
     
+    /// body property
     var body: some View {
         VStack(spacing: 0) {
             // Header with statistics
@@ -52,6 +55,7 @@ struct CorrelationTableView: View {
         .themed()
     }
     
+    /// headerView property
     var headerView: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
@@ -92,6 +96,7 @@ struct CorrelationTableView: View {
         }
     }
     
+    /// loadingView property
     var loadingView: some View {
         VStack(spacing: 20) {
             ProgressView(value: viewModel.loadingProgress) {
@@ -113,6 +118,7 @@ struct CorrelationTableView: View {
         .padding()
     }
     
+    /// tableContent property
     var tableContent: some View {
         Table(viewModel.filteredRows, selection: $selection, sortOrder: $sortOrder) {
             TableColumn("Source", value: \.sourceFullName) { row in
@@ -190,6 +196,7 @@ struct CorrelationTableView: View {
     }
     
     @ToolbarContentBuilder
+    /// toolbarContent property
     var toolbarContent: some ToolbarContent {
         ToolbarItemGroup(placement: .primaryAction) {
             // Filter controls
@@ -250,6 +257,7 @@ struct CorrelationTableView: View {
     }
     
     @ViewBuilder
+    /// contextMenuContent function description
     func contextMenuContent(for items: Set<CorrelationTableViewModel.CorrelationRow.ID>) -> some View {
         Button("Copy") {
             viewModel.copyToClipboard(items: items)
@@ -267,6 +275,7 @@ struct CorrelationTableView: View {
         }
     }
     
+    /// correlationColor function description
     func correlationColor(_ value: Double) -> Color {
         switch value {
         case 0.95...1.0: return AppleDesignSystem.SystemPalette.purple
@@ -280,62 +289,96 @@ struct CorrelationTableView: View {
 
 // View Model
 @MainActor
+/// CorrelationTableViewModel represents...
 class CorrelationTableViewModel: ObservableObject {
+    /// allRows property
     @Published var allRows: [CorrelationRow] = []
+    /// filteredRows property
     @Published var filteredRows: [CorrelationRow] = []
+    /// isLoading property
     @Published var isLoading = true
+    /// loadingProgress property
     @Published var loadingProgress: Double = 0.0
+    /// loadingMessage property
     @Published var loadingMessage = "Initializing..."
+    /// loadedCorrelations property
     @Published var loadedCorrelations = 0
+    /// isProcessingCSV property
     @Published var isProcessingCSV = false
     
     // Filters
+    /// minimumCorrelation property
     @Published var minimumCorrelation: Double = 0.0
+    /// selectedGrade property
     @Published var selectedGrade: Int?
+    /// selectedSubject property
     @Published var selectedSubject: String?
+    /// showCrossGradeOnly property
     @Published var showCrossGradeOnly = false
+    /// availableSubjects property
     @Published var availableSubjects: [String] = []
     
     // Statistics
+    /// averageCorrelation property
     @Published var averageCorrelation: Double = 0.0
+    /// strongCorrelations property
     @Published var strongCorrelations = 0
+    /// crossGradeCount property
     @Published var crossGradeCount = 0
     
     // Export
+    /// exportDocument property
     @Published var exportDocument: CSVDocument?
     
     private var loadingTask: Task<Void, Never>?
     
+    /// CorrelationRow represents...
     struct CorrelationRow: Identifiable, Equatable {
+        /// id property
         let id = UUID()
+        /// sourceGrade property
         let sourceGrade: Int
+        /// sourceSubject property
         let sourceSubject: String
+        /// sourceComponent property
         let sourceComponent: String
+        /// targetGrade property
         let targetGrade: Int
+        /// targetSubject property
         let targetSubject: String
+        /// targetComponent property
         let targetComponent: String
+        /// correlation property
         let correlation: Double
+        /// confidence property
         let confidence: Double
+        /// sampleSize property
         let sampleSize: Int
+        /// provider property
         let provider: String
         
+        /// sourceFullName property
         var sourceFullName: String {
             "Grade \(sourceGrade) \(sourceSubject) \(sourceComponent)"
         }
         
+        /// targetFullName property
         var targetFullName: String {
             "Grade \(targetGrade) \(targetSubject) \(targetComponent)"
         }
         
+        /// exportString property
         var exportString: String {
             "\(sourceGrade),\(sourceSubject),\(sourceComponent),\(targetGrade),\(targetSubject),\(targetComponent),\(correlation),\(confidence),\(sampleSize),\(provider)"
         }
         
+        /// isCrossGrade property
         var isCrossGrade: Bool {
             targetGrade != sourceGrade
         }
     }
     
+    /// loadAllCorrelations function description
     func loadAllCorrelations() async {
         loadingTask = Task {
             isLoading = true
@@ -353,16 +396,19 @@ class CorrelationTableViewModel: ObservableObject {
     
     private func loadFromJSON() async {
         // Try multiple possible locations for the correlation data
+        /// possiblePaths property
         let possiblePaths = [
             // Demo file for immediate testing (smaller, realistic data)
-            URL(fileURLWithPath: "/Users/schoolday/Code_Repositories/StudentAnalysisSystem/Output/demo_correlation_model.json"),
+            URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/demo_correlation_model.json"),
             // Full correlation model (backup)
-            URL(fileURLWithPath: "/Users/schoolday/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json"),
+            URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/correlation_model.json"),
             // Relative to current working directory
             URL(fileURLWithPath: FileManager.default.currentDirectoryPath).appendingPathComponent("Output/demo_correlation_model.json")
         ]
         
+        /// jsonURL property
         var jsonURL: URL?
+        /// foundPath property
         var foundPath: String = "No valid paths found"
         
         for path in possiblePaths {
@@ -373,6 +419,7 @@ class CorrelationTableViewModel: ObservableObject {
             }
         }
         
+        /// validURL property
         guard let validURL = jsonURL else {
             loadingMessage = "Correlation file not found. Searched: \(possiblePaths.map { $0.path }.joined(separator: ", "))"
             isLoading = false
@@ -381,47 +428,67 @@ class CorrelationTableViewModel: ObservableObject {
         
         do {
             loadingMessage = "Reading JSON data from: \(foundPath)..."
+            /// data property
             let data = try Data(contentsOf: validURL)
             
             loadingMessage = "Parsing correlations..."
             loadingProgress = 0.1
             
+            /// json property
             let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+            /// correlationsArray property
             guard let correlationsArray = json?["correlations"] as? [[String: Any]] else {
                 loadingMessage = "Invalid JSON structure"
                 isLoading = false
                 return
             }
             
+            /// rows property
             var rows: [CorrelationRow] = []
+            /// total property
             let total = correlationsArray.count
+            /// subjects property
             var subjects = Set<String>()
             
             for (index, entry) in correlationsArray.enumerated() {
                 autoreleasepool {
+                    /// sourceDict property
                     guard let sourceDict = entry["sourceComponent"] as? [String: Any],
+                          /// correlationsList property
                           let correlationsList = entry["correlations"] as? [[String: Any]] else { return }
                     
+                    /// sourceGrade property
                     let sourceGrade = sourceDict["grade"] as? Int ?? 0
+                    /// sourceSubject property
                     let sourceSubject = sourceDict["subject"] as? String ?? ""
+                    /// sourceComponent property
                     let sourceComponent = sourceDict["component"] as? String ?? ""
+                    /// sourceProvider property
                     let sourceProvider = sourceDict["testProvider"] as? String ?? ""
                     
                     subjects.insert(sourceSubject)
                     
                     for corrDict in correlationsList {
+                        /// targetDict property
                         guard let targetDict = corrDict["target"] as? [String: Any],
+                              /// correlationValue property
                               let correlationValue = corrDict["correlation"] as? Double,
+                              /// confidence property
                               let confidence = corrDict["confidence"] as? Double,
+                              /// sampleSize property
                               let sampleSize = corrDict["sampleSize"] as? Int,
                               correlationValue > 0.3 else { continue }
                         
+                        /// targetGrade property
                         let targetGrade = targetDict["grade"] as? Int ?? 0
+                        /// targetSubject property
                         let targetSubject = targetDict["subject"] as? String ?? ""
+                        /// targetComponent property
                         let targetComponent = targetDict["component"] as? String ?? ""
                         
                         subjects.insert(targetSubject)
                         
+                        /// row property
                         let row = CorrelationRow(
                             sourceGrade: sourceGrade,
                             sourceSubject: sourceSubject,
@@ -439,6 +506,7 @@ class CorrelationTableViewModel: ObservableObject {
                     }
                     
                     if index % 100 == 0 {
+                        /// progress property
                         let progress = Double(index) / Double(total)
                         Task { @MainActor in
                             self.loadingProgress = progress
@@ -465,32 +533,48 @@ class CorrelationTableViewModel: ObservableObject {
         loadingMessage = "Loading CSV data..."
         
         do {
+            /// content property
             let content = try String(contentsOf: url, encoding: .utf8)
+            /// lines property
             let lines = content.components(separatedBy: .newlines)
             
+            /// rows property
             var rows: [CorrelationRow] = []
+            /// subjects property
             var subjects = Set<String>()
             
             for (index, line) in lines.enumerated() {
                 if index == 0 { continue } // Skip header
+                /// components property
                 let components = line.components(separatedBy: ",")
                 
                 guard components.count >= 10 else { continue }
                 
+                /// sourceGrade property
                 let sourceGrade = Int(components[0]) ?? 0
+                /// sourceSubject property
                 let sourceSubject = components[1]
+                /// sourceComponent property
                 let sourceComponent = components[2]
+                /// targetGrade property
                 let targetGrade = Int(components[3]) ?? 0
+                /// targetSubject property
                 let targetSubject = components[4]
+                /// targetComponent property
                 let targetComponent = components[5]
+                /// correlation property
                 let correlation = Double(components[6]) ?? 0.0
+                /// confidence property
                 let confidence = Double(components[7]) ?? 0.0
+                /// sampleSize property
                 let sampleSize = Int(components[8]) ?? 0
+                /// provider property
                 let provider = components[9]
                 
                 subjects.insert(sourceSubject)
                 subjects.insert(targetSubject)
                 
+                /// row property
                 let row = CorrelationRow(
                     sourceGrade: sourceGrade,
                     sourceSubject: sourceSubject,
@@ -507,6 +591,7 @@ class CorrelationTableViewModel: ObservableObject {
                 rows.append(row)
                 
                 if index % 1000 == 0 {
+                    /// progress property
                     let progress = Double(index) / Double(lines.count)
                     loadingProgress = progress
                     loadingMessage = "Loading... \(Int(progress * 100))%"
@@ -524,11 +609,14 @@ class CorrelationTableViewModel: ObservableObject {
         }
     }
     
+    /// convertToCSV function description
     func convertToCSV() async {
         isProcessingCSV = true
         
+        /// csvURL property
         let csvURL = URL(fileURLWithPath: "/Users/fredrickburns/Code_Repositories/StudentAnalysisSystem/Output/correlations.csv")
         
+        /// csvContent property
         var csvContent = "SourceGrade,SourceSubject,SourceComponent,TargetGrade,TargetSubject,TargetComponent,Correlation,Confidence,SampleSize,Provider\n"
         
         for row in allRows {
@@ -545,10 +633,12 @@ class CorrelationTableViewModel: ObservableObject {
         isProcessingCSV = false
     }
     
+    /// sort function description
     func sort(using sortOrder: [KeyPathComparator<CorrelationRow>]) {
         filteredRows.sort(using: sortOrder)
     }
     
+    /// filterRows function description
     func filterRows(searchText: String) {
         if searchText.isEmpty {
             applyFilters()
@@ -562,17 +652,21 @@ class CorrelationTableViewModel: ObservableObject {
         }
     }
     
+    /// applyFilters function description
     func applyFilters() {
+        /// filtered property
         var filtered = allRows
         
         if minimumCorrelation > 0 {
             filtered = filtered.filter { $0.correlation >= minimumCorrelation }
         }
         
+        /// grade property
         if let grade = selectedGrade {
             filtered = filtered.filter { $0.sourceGrade == grade || $0.targetGrade == grade }
         }
         
+        /// subject property
         if let subject = selectedSubject {
             filtered = filtered.filter { $0.sourceSubject == subject || $0.targetSubject == subject }
         }
@@ -585,6 +679,7 @@ class CorrelationTableViewModel: ObservableObject {
         updateStatistics()
     }
     
+    /// updateStatistics function description
     func updateStatistics() {
         if !filteredRows.isEmpty {
             averageCorrelation = filteredRows.map(\.correlation).reduce(0, +) / Double(filteredRows.count)
@@ -593,57 +688,75 @@ class CorrelationTableViewModel: ObservableObject {
         }
     }
     
+    /// cancelLoading function description
     func cancelLoading() {
         loadingTask?.cancel()
         isLoading = false
     }
     
+    /// copyToClipboard function description
     func copyToClipboard(items: Set<UUID>) {
+        /// rows property
         let rows = filteredRows.filter { items.contains($0.id) }
+        /// text property
         let text = rows.map(\.exportString).joined(separator: "\n")
         NSPasteboard.general.clearContents()
         NSPasteboard.general.setString(text, forType: .string)
     }
     
+    /// prepareExport function description
     func prepareExport(selection: Set<UUID>) {
+        /// rows property
         let rows = selection.isEmpty ? filteredRows : filteredRows.filter { selection.contains($0.id) }
+        /// csvContent property
         var csvContent = "SourceGrade,SourceSubject,SourceComponent,TargetGrade,TargetSubject,TargetComponent,Correlation,Confidence,SampleSize,Provider\n"
         csvContent += rows.map(\.exportString).joined(separator: "\n")
         exportDocument = CSVDocument(text: csvContent)
     }
     
+    /// handleExportResult function description
     func handleExportResult(_ result: Result<URL, Error>) {
         switch result {
+        /// url property
         case .success(let url):
             loadingMessage = "Exported to \(url.lastPathComponent)"
+        /// error property
         case .failure(let error):
             loadingMessage = "Export failed: \(error.localizedDescription)"
         }
     }
     
+    /// handleFileImport function description
     func handleFileImport(_ result: Result<[URL], Error>) async {
         switch result {
+        /// urls property
         case .success(let urls):
+            /// url property
             guard let url = urls.first else { return }
             if url.pathExtension == "csv" {
                 await loadFromCSV(url: url)
             } else {
                 loadingMessage = "Unsupported file format"
             }
+        /// error property
         case .failure(let error):
             loadingMessage = "Import failed: \(error.localizedDescription)"
         }
     }
     
+    /// showPredictivePath function description
     func showPredictivePath(for items: Set<UUID>) {
         // TODO: Implement predictive path visualization
     }
 }
 
 // CSV Document for export
+/// CSVDocument represents...
 struct CSVDocument: FileDocument {
+    /// readableContentTypes property
     static var readableContentTypes: [UTType] { [.commaSeparatedText] }
     
+    /// text property
     var text: String
     
     init(text: String) {
@@ -651,14 +764,18 @@ struct CSVDocument: FileDocument {
     }
     
     init(configuration: ReadConfiguration) throws {
+        /// data property
         guard let data = configuration.file.regularFileContents,
+              /// text property
               let text = String(data: data, encoding: .utf8) else {
             throw CocoaError(.fileReadCorruptFile)
         }
         self.text = text
     }
     
+    /// fileWrapper function description
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+        /// data property
         let data = text.data(using: .utf8)!
         return FileWrapper(regularFileWithContents: data)
     }

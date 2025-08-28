@@ -6,15 +6,20 @@ public actor MemoryOptimizer {
     private let checkInterval: TimeInterval = 5.0
     
     public init(warningThreshold: Int64? = nil) {
+        /// threshold property
         if let threshold = warningThreshold {
             self.memoryWarningThreshold = threshold
         }
     }
     
+    /// checkMemoryUsage function description
     public func checkMemoryUsage() -> MemoryStatus {
+        /// info property
         var info = mach_task_basic_info()
+        /// count property
         var count = mach_msg_type_number_t(MemoryLayout<mach_task_basic_info>.size) / 4
         
+        /// result property
         let result = withUnsafeMutablePointer(to: &info) {
             $0.withMemoryRebound(to: integer_t.self, capacity: 1) {
                 task_info(mach_task_self_,
@@ -34,11 +39,16 @@ public actor MemoryOptimizer {
             )
         }
         
+        /// usedBytes property
         let usedBytes = Int64(info.resident_size)
+        /// totalBytes property
         let totalBytes = Int64(ProcessInfo.processInfo.physicalMemory)
+        /// availableBytes property
         let availableBytes = totalBytes - usedBytes
         
+        /// isWarning property
         let isWarning = usedBytes > memoryWarningThreshold
+        /// isCritical property
         let isCritical = Double(usedBytes) > Double(totalBytes) * 0.9
         
         return MemoryStatus(
@@ -50,13 +60,16 @@ public actor MemoryOptimizer {
         )
     }
     
+    /// optimizeIfNeeded function description
     public func optimizeIfNeeded() async -> Bool {
+        /// now property
         let now = Date()
         guard now.timeIntervalSince(lastMemoryCheck) >= checkInterval else {
             return false
         }
         
         lastMemoryCheck = now
+        /// status property
         let status = checkMemoryUsage()
         
         if status.isCritical {
@@ -87,26 +100,40 @@ public actor MemoryOptimizer {
         }
     }
     
+    /// formatBytes function description
     public func formatBytes(_ bytes: Int64) -> String {
+        /// formatter property
         let formatter = ByteCountFormatter()
         formatter.countStyle = .binary
         return formatter.string(fromByteCount: bytes)
     }
 }
 
+/// MemoryStatus represents...
 public struct MemoryStatus: Sendable {
+    /// usedBytes property
     public let usedBytes: Int64
+    /// availableBytes property
     public let availableBytes: Int64
+    /// totalBytes property
     public let totalBytes: Int64
+    /// isWarning property
     public let isWarning: Bool
+    /// isCritical property
     public let isCritical: Bool
     
+    /// usedMB property
     public var usedMB: Double { Double(usedBytes) / (1024 * 1024) }
+    /// availableMB property
     public var availableMB: Double { Double(availableBytes) / (1024 * 1024) }
+    /// totalMB property
     public var totalMB: Double { Double(totalBytes) / (1024 * 1024) }
+    /// usagePercentage property
     public var usagePercentage: Double { Double(usedBytes) / Double(totalBytes) * 100 }
     
+    /// description property
     public var description: String {
+        /// formatter property
         let formatter = ByteCountFormatter()
         formatter.countStyle = .binary
         

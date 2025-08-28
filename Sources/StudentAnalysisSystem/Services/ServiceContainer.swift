@@ -13,7 +13,9 @@ import StatisticalEngine
 
 /// Central service container for dependency injection
 @MainActor
+/// ServiceContainer represents...
 public class ServiceContainer: ObservableObject {
+    /// shared property
     public static let shared = ServiceContainer()
     
     // Core Services
@@ -44,9 +46,13 @@ public class ServiceContainer: ObservableObject {
     private(set) lazy var dataLoader = DataLoader()
     
     // State Management
+    /// isInitialized property
     @Published public var isInitialized = false
+    /// initializationError property
     @Published public var initializationError: Error?
+    /// correlationModel property
     @Published public var correlationModel: ValidatedCorrelationModel?
+    /// students property
     @Published public var students: [StudentAssessmentData] = []
     
     private init() {}
@@ -75,6 +81,7 @@ public class ServiceContainer: ObservableObject {
     
     /// Load correlation model from output directory
     private func loadCorrelationModel() async {
+        /// outputURL property
         let outputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
             .appendingPathComponent("Output")
             .appendingPathComponent("correlation_model.json")
@@ -87,7 +94,9 @@ public class ServiceContainer: ObservableObject {
         }
         
         do {
+            /// data property
             let data = try Data(contentsOf: outputURL)
+            /// decoder property
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
             correlationModel = try decoder.decode(ValidatedCorrelationModel.self, from: data)
@@ -109,6 +118,7 @@ public class ServiceContainer: ObservableObject {
     /// Create mock correlation model for development
     private func createMockCorrelationModel() -> ValidatedCorrelationModel {
         // Create sample correlations for demo
+        /// sourceComponent property
         let sourceComponent = ComponentIdentifier(
             grade: 4,
             subject: "MATH",
@@ -116,6 +126,7 @@ public class ServiceContainer: ObservableObject {
             testProvider: .nwea
         )
         
+        /// targetComponent1 property
         let targetComponent1 = ComponentIdentifier(
             grade: 5,
             subject: "MATH",
@@ -123,6 +134,7 @@ public class ServiceContainer: ObservableObject {
             testProvider: .nwea
         )
         
+        /// targetComponent2 property
         let targetComponent2 = ComponentIdentifier(
             grade: 5,
             subject: "MATH",
@@ -130,6 +142,7 @@ public class ServiceContainer: ObservableObject {
             testProvider: .nwea
         )
         
+        /// sampleCorrelations property
         let sampleCorrelations = [
             ComponentCorrelationMap(
                 sourceComponent: sourceComponent,
@@ -150,6 +163,7 @@ public class ServiceContainer: ObservableObject {
             )
         ]
         
+        /// validationResults property
         let validationResults = ValidationResults(
             accuracy: 0.92,
             precision: 0.89,
@@ -236,7 +250,9 @@ public class DataLoader {
     
     /// Load correlation model from JSON
     public func loadCorrelationModel(from url: URL) async throws -> ValidatedCorrelationModel? {
+        /// data property
         let data = try Data(contentsOf: url)
+        /// decoder property
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         return try decoder.decode(ValidatedCorrelationModel.self, from: data)

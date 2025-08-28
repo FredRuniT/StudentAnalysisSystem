@@ -13,7 +13,9 @@ public actor ILPExporter {
     
     // MARK: - JSON Export
     
+    /// exportToJSON function description
     public func exportToJSON(_ plan: IndividualLearningPlan) async throws -> Data {
+        /// encoder property
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         encoder.dateEncodingStrategy = .iso8601
@@ -22,7 +24,9 @@ public actor ILPExporter {
     
     // MARK: - Markdown Export
     
+    /// exportToMarkdown function description
     public func exportToMarkdown(_ plan: IndividualLearningPlan) async -> String {
+        /// markdown property
         var markdown = """
         # Individual Learning Plan
         ## Student: \(plan.studentInfo.name) (MSIS: \(plan.studentInfo.msis))
@@ -177,14 +181,20 @@ public actor ILPExporter {
     
     // MARK: - CSV Export
     
+    /// exportToCSV function description
     public func exportToCSV(_ plans: [IndividualLearningPlan]) async throws -> String {
+        /// csv property
         var csv = "MSIS,Name,Grade,Assessment_Date,Overall_Score,Proficiency_Level,Priority_Standards,Intervention_Tier,Risk_Level,Timeline_Duration\n"
         
         for plan in plans {
+            /// priorityStandards property
             let priorityStandards = plan.targetStandards.prefix(3).map(\.standardId).joined(separator: ";")
+            /// highestTier property
             let highestTier = plan.interventionStrategies.map(\.tier.rawValue).max() ?? 1
+            /// riskLevel property
             let riskLevel = plan.predictedOutcomes.first?.riskLevel ?? "Unknown"
             
+            /// timelineDuration property
             let timelineDuration = calculateTimelineDuration(plan.timeline)
             
             csv += "\"\(plan.studentInfo.msis)\","
@@ -204,6 +214,7 @@ public actor ILPExporter {
     
     // MARK: - HTML Export (for better formatting)
     
+    /// exportToHTML function description
     public func exportToHTML(_ plan: IndividualLearningPlan) async -> String {
         return """
         <!DOCTYPE html>
@@ -227,6 +238,7 @@ public actor ILPExporter {
         </head>
         <body>
             <h1>Individual Learning Plan</h1>
+            /// Item description
             <div class="info-box">
                 <strong>Student:</strong> \(plan.studentInfo.name) (MSIS: \(plan.studentInfo.msis))<br>
                 <strong>Grade:</strong> \(plan.studentInfo.grade)<br>
@@ -236,11 +248,13 @@ public actor ILPExporter {
             </div>
             
             <h2>Performance Analysis</h2>
+            /// Item description
             <h3 class="strength">Strengths</h3>
             <ul>
                 \(plan.performanceSummary.strengthAreas.map { "<li>\($0)</li>" }.joined())
             </ul>
             
+            /// Item description
             <h3 class="weakness">Areas for Improvement</h3>
             <ul>
                 \(plan.identifiedGaps.map { "<li><strong>\($0.component)</strong>: Gap of \(String(format: "%.1f", $0.gap)) points</li>" }.joined())
@@ -269,6 +283,7 @@ public actor ILPExporter {
             </table>
             
             <h2>Timeline</h2>
+            /// Item description
             <div class="timeline">
                 <strong>Duration:</strong> \(calculateTimelineDuration(plan.timeline))<br>
                 <strong>Start:</strong> \(plan.timeline.startDate.formatted(date: .abbreviated, time: .omitted))<br>
@@ -281,13 +296,19 @@ public actor ILPExporter {
     
     // MARK: - Summary Report for Multiple Students
     
+    /// generateSummaryReport function description
     public func generateSummaryReport(_ plans: [IndividualLearningPlan]) async -> String {
+        /// strugglingCount property
         let strugglingCount = plans.filter { $0.performanceSummary.proficiencyLevel == .minimal || 
                                            $0.performanceSummary.proficiencyLevel == .basic }.count
+        /// proficientCount property
         let proficientCount = plans.filter { $0.performanceSummary.proficiencyLevel == .proficient }.count
+        /// advancedCount property
         let advancedCount = plans.filter { $0.performanceSummary.proficiencyLevel == .advanced }.count
         
+        /// tier3Count property
         let tier3Count = plans.filter { $0.interventionStrategies.contains { $0.tier == .intensive } }.count
+        /// tier2Count property
         let tier2Count = plans.filter { $0.interventionStrategies.contains { $0.tier == .strategic } }.count
         
         return """
@@ -329,27 +350,34 @@ public actor ILPExporter {
     // MARK: - Helper Functions
     
     private func calculateTimelineDuration(_ timeline: Timeline) -> String {
+        /// calendar property
         let calendar = Calendar.current
+        /// components property
         let components = calendar.dateComponents([.weekOfYear], from: timeline.startDate, to: timeline.endDate)
+        /// weeks property
         let weeks = components.weekOfYear ?? 0
         return "\(weeks) weeks"
     }
     
     private func identifyCommonGaps(from plans: [IndividualLearningPlan]) -> String {
+        /// gapCounts property
         var gapCounts = [String: Int]()
         
         for plan in plans {
             for gap in plan.identifiedGaps {
+                /// component property
                 let component = gap.component
                 gapCounts[component, default: 0] += 1
             }
         }
         
+        /// sortedGaps property
         let sortedGaps = gapCounts.sorted { $0.value > $1.value }.prefix(5)
         return sortedGaps.map { "- \($0.key): \($0.value) students" }.joined(separator: "\n")
     }
     
     private func identifyCommonStrengths(from plans: [IndividualLearningPlan]) -> String {
+        /// strengthCounts property
         var strengthCounts = [String: Int]()
         
         for plan in plans {
@@ -358,29 +386,37 @@ public actor ILPExporter {
             }
         }
         
+        /// sortedStrengths property
         let sortedStrengths = strengthCounts.sorted { $0.value > $1.value }.prefix(5)
         return sortedStrengths.map { "- \($0.key): \($0.value) students" }.joined(separator: "\n")
     }
     
     private func calculateStaffNeeds(_ plans: [IndividualLearningPlan]) -> String {
+        /// tier3Count property
         let tier3Count = plans.filter { $0.interventionStrategies.contains { $0.tier == .intensive } }.count
+        /// tier2Count property
         let tier2Count = plans.filter { $0.interventionStrategies.contains { $0.tier == .strategic } }.count
         
         // Rough calculation: 1 specialist per 5 tier 3 students, 1 per 10 tier 2 students
+        /// specialistsNeeded property
         let specialistsNeeded = Int(ceil(Double(tier3Count) / 5.0 + Double(tier2Count) / 10.0))
         return "\(specialistsNeeded) specialists"
     }
     
     private func calculateSessionNeeds(_ plans: [IndividualLearningPlan]) -> Int {
+        /// totalSessions property
         var totalSessions = 0
         
         for plan in plans {
             for strategy in plan.interventionStrategies {
                 switch strategy.frequency.lowercased() {
+                /// freq property
                 case let freq where freq.contains("daily"):
                     totalSessions += 5
+                /// freq property
                 case let freq where freq.contains("3x"):
                     totalSessions += 3
+                /// freq property
                 case let freq where freq.contains("2x"):
                     totalSessions += 2
                 default:

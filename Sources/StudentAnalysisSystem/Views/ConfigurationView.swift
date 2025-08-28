@@ -1,11 +1,13 @@
 import AnalysisCore
 import SwiftUI
 
+/// ConfigurationView represents...
 struct ConfigurationView: View {
     @StateObject private var viewModel = ConfigurationViewModel()
     @State private var selectedTab = 0
     @Environment(\.dismiss) private var dismiss
     
+    /// body property
     var body: some View {
         NavigationStack {
             TabView(selection: $selectedTab) {
@@ -77,9 +79,12 @@ struct ConfigurationView: View {
 }
 
 // MARK: - Correlation Settings View
+/// CorrelationSettingsView represents...
 struct CorrelationSettingsView: View {
+    /// config property
     @Binding var config: SystemConfiguration.CorrelationParameters
     
+    /// body property
     var body: some View {
         Form {
             Section {
@@ -175,10 +180,13 @@ struct CorrelationSettingsView: View {
 }
 
 // MARK: - Early Warning Settings View
+/// EarlyWarningSettingsView represents...
 struct EarlyWarningSettingsView: View {
+    /// config property
     @Binding var config: SystemConfiguration.EarlyWarningParameters
     @State private var showingPercentileEditor = false
     
+    /// body property
     var body: some View {
         Form {
             Section {
@@ -258,9 +266,12 @@ struct EarlyWarningSettingsView: View {
 }
 
 // MARK: - Growth Settings View
+/// GrowthSettingsView represents...
 struct GrowthSettingsView: View {
+    /// config property
     @Binding var config: SystemConfiguration.GrowthParameters
     
+    /// body property
     var body: some View {
         Form {
             Section {
@@ -356,9 +367,12 @@ struct GrowthSettingsView: View {
 }
 
 // MARK: - ILP Settings View
+/// ILPSettingsView represents...
 struct ILPSettingsView: View {
+    /// config property
     @Binding var config: SystemConfiguration.ILPParameters
     
+    /// body property
     var body: some View {
         Form {
             Section {
@@ -430,9 +444,12 @@ struct ILPSettingsView: View {
 }
 
 // MARK: - Performance Settings View
+/// PerformanceSettingsView represents...
 struct PerformanceSettingsView: View {
+    /// config property
     @Binding var config: SystemConfiguration.PerformanceParameters
     
+    /// body property
     var body: some View {
         Form {
             Section {
@@ -496,11 +513,14 @@ struct PerformanceSettingsView: View {
 }
 
 // MARK: - Percentile Editor View
+/// PercentileEditorView represents...
 struct PercentileEditorView: View {
+    /// percentiles property
     @Binding var percentiles: [Int]
     @State private var newPercentile = ""
     @Environment(\.dismiss) private var dismiss
     
+    /// body property
     var body: some View {
         NavigationStack {
             List {
@@ -514,8 +534,10 @@ struct PercentileEditorView: View {
                         }
                     }
                     .onDelete { indices in
+                        /// sorted property
                         let sorted = percentiles.sorted()
                         for index in indices.sorted(by: >) {
+                            /// removeIndex property
                             if let removeIndex = percentiles.firstIndex(of: sorted[index]) {
                                 percentiles.remove(at: removeIndex)
                             }
@@ -533,6 +555,7 @@ struct PercentileEditorView: View {
                             #endif
                         
                         Button("Add") {
+                            /// value property
                             if let value = Int(newPercentile),
                                value >= 1 && value <= 99,
                                !percentiles.contains(value) {
@@ -560,6 +583,7 @@ struct PercentileEditorView: View {
 
 // MARK: - Extensions for updating immutable structs
 extension SystemConfiguration.CorrelationParameters {
+    /// updating function description
     func updating(
         minimumCorrelation: Double? = nil,
         strongCorrelationThreshold: Double? = nil,
@@ -582,6 +606,7 @@ extension SystemConfiguration.CorrelationParameters {
 }
 
 extension SystemConfiguration.EarlyWarningParameters {
+    /// updating function description
     func updating(
         criticalRiskMultiplier: Double? = nil,
         thresholdPercentiles: [Int]? = nil,
@@ -600,6 +625,7 @@ extension SystemConfiguration.EarlyWarningParameters {
 }
 
 extension SystemConfiguration.GrowthParameters {
+    /// updating function description
     func updating(
         growthMethod: GrowthMethod? = nil,
         adequateGrowthThreshold: Double? = nil,
@@ -622,6 +648,7 @@ extension SystemConfiguration.GrowthParameters {
 }
 
 extension SystemConfiguration.ILPParameters {
+    /// updating function description
     func updating(
         enrichmentThreshold: Double? = nil,
         proficiencyThresholds: ProficiencyThresholds? = nil,
@@ -642,6 +669,7 @@ extension SystemConfiguration.ILPParameters {
 }
 
 extension SystemConfiguration.PerformanceParameters {
+    /// updating function description
     func updating(
         batchSize: Int? = nil,
         enableParallelProcessing: Bool? = nil,

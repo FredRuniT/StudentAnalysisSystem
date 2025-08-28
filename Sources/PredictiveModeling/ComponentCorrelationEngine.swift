@@ -1,5 +1,5 @@
-import Foundation
 import AnalysisCore
+import Foundation
 import StatisticalEngine
 
 public actor ComponentCorrelationEngine {
@@ -13,22 +13,36 @@ public actor ComponentCorrelationEngine {
         self.configuration = configuration ?? SystemConfiguration.default
     }
     
+    /// ComponentCorrelationMap represents...
     public struct ComponentCorrelationMap: Sendable, Codable {
+        /// sourceComponent property
         public let sourceComponent: ComponentIdentifier
+        /// correlations property
         public let correlations: [TargetCorrelation]
+        /// strongestPath property
         public let strongestPath: CorrelationPath?
         
+        /// TargetCorrelation represents...
         public struct TargetCorrelation: Sendable, Codable {
+            /// target property
             public let target: ComponentIdentifier
+            /// correlation property
             public let correlation: Double
+            /// confidence property
             public let confidence: Double
+            /// sampleSize property
             public let sampleSize: Int
+            /// timeGap property
             public let timeGap: Int // Years between assessments
         }
         
+        /// CorrelationPath represents...
         public struct CorrelationPath: Sendable, Codable {
+            /// components property
             public let components: [ComponentIdentifier]
+            /// cumulativeCorrelation property
             public let cumulativeCorrelation: Double
+            /// pathway property
             public let pathway: String
         }
     }
@@ -40,6 +54,7 @@ public actor ComponentCorrelationEngine {
         threshold: Double = 0.3
     ) -> [(targetComponent: String, correlation: Double, confidence: Double)] {
         // Find the map for this component
+        /// map property
         guard let map = correlationMaps.first(where: { 
             "\($0.sourceComponent.grade)_\($0.sourceComponent.subject)_\($0.sourceComponent.component)" == componentKey 
         }) else {
@@ -47,10 +62,12 @@ public actor ComponentCorrelationEngine {
         }
         
         // Extract correlations above threshold
+        /// results property
         var results: [(targetComponent: String, correlation: Double, confidence: Double)] = []
         
         for correlation in map.correlations {
             if abs(correlation.correlation) >= threshold {
+                /// targetKey property
                 let targetKey = "Grade_\(correlation.target.grade)_\(correlation.target.subject)_\(correlation.target.component)"
                 results.append((
                     targetComponent: targetKey,
@@ -63,17 +80,22 @@ public actor ComponentCorrelationEngine {
         return results.sorted { abs($0.correlation) > abs($1.correlation) }
     }
     
+    /// discoverAllCorrelations function description
     public func discoverAllCorrelations(
         studentData: [StudentLongitudinalData],
         minCorrelation: Double? = nil,
         minSampleSize: Int? = nil
     ) async throws -> [ComponentCorrelationMap] {
         // Use configuration values if not provided
+        /// minCorr property
         let minCorr = minCorrelation ?? configuration.correlation.minimumCorrelation
+        /// minSample property
         let minSample = minSampleSize ?? configuration.correlation.minimumSampleSize
         
         // Extract all unique components
+        /// allComponents property
         let allComponents = extractAllComponents(from: studentData)
+        /// correlationMaps property
         var correlationMaps: [ComponentCorrelationMap] = []
         
         // Process each component as a source
@@ -91,6 +113,7 @@ public actor ComponentCorrelationEngine {
             }
             
             for await map in group {
+                /// map property
                 if let map = map {
                     correlationMaps.append(map)
                 }
@@ -107,6 +130,7 @@ public actor ComponentCorrelationEngine {
         minCorrelation: Double,
         minSampleSize: Int
     ) async -> ComponentCorrelationMap? {
+        /// targetCorrelations property
         var targetCorrelations: [ComponentCorrelationMap.TargetCorrelation] = []
         
         for target in allComponents {
@@ -114,6 +138,7 @@ public actor ComponentCorrelationEngine {
             guard target != source && target.grade >= source.grade else { continue }
             
             // Calculate correlation
+            /// correlation property
             let correlation = await correlationAnalyzer.calculateComponentCorrelations(
                 source: source.toPair(),
                 target: target.toPair(),
@@ -124,9 +149,12 @@ public actor ComponentCorrelationEngine {
             if abs(correlation.pearsonR) >= minCorrelation && 
                correlation.sampleSize >= minSampleSize {
                 // Calculate confidence with NaN protection
+                /// confidence property
                 let confidence = {
+                    /// pValue property
                     let pValue = correlation.pValue
                     guard !pValue.isNaN && !pValue.isInfinite else { return 0.0 }
+                    /// result property
                     let result = 1.0 - pValue
                     return result.isNaN || result.isInfinite ? 0.0 : max(0.0, min(1.0, result))
                 }()
@@ -146,6 +174,7 @@ public actor ComponentCorrelationEngine {
         guard !targetCorrelations.isEmpty else { return nil }
         
         // Find strongest correlation path
+        /// strongestPath property
         let strongestPath = findStrongestPath(
             from: source,
             correlations: targetCorrelations
@@ -162,10 +191,12 @@ public actor ComponentCorrelationEngine {
         from source: ComponentIdentifier,
         correlations: [ComponentCorrelationMap.TargetCorrelation]
     ) -> ComponentCorrelationMap.CorrelationPath? {
+        /// strongest property
         guard let strongest = correlations.max(by: { abs($0.correlation) < abs($1.correlation) }) else {
             return nil
         }
         
+        /// pathway property
         let pathway = "\(source.description) → \(strongest.target.description)"
         
         return ComponentCorrelationMap.CorrelationPath(
@@ -176,6 +207,7 @@ public actor ComponentCorrelationEngine {
     }
     
     private func extractAllComponents(from studentData: [StudentLongitudinalData]) -> [ComponentIdentifier] {
+        /// components property
         var components = Set<ComponentIdentifier>()
         
         for student in studentData {
@@ -200,6 +232,7 @@ public actor ComponentCorrelationEngine {
 // ComponentIdentifier is defined in AnalysisCore
 // Extension to add toPair functionality
 extension ComponentIdentifier {
+    /// toPair function description
     public func toPair() -> ComponentPair {
         ComponentPair(
             grade: grade,

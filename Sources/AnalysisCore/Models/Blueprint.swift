@@ -4,9 +4,13 @@ import Foundation
 
 /// Represents a MAAP test blueprint for a specific grade and subject
 public struct Blueprint: Codable, Equatable {
+    /// schoolYear property
     public let schoolYear: String
+    /// subject property
     public let subject: String  // Changed from Subject enum to String
+    /// programName property
     public let programName: String
+    /// reportingCategories property
     public let reportingCategories: [ReportingCategory]
     
     private enum CodingKeys: String, CodingKey {
@@ -26,9 +30,13 @@ public struct Blueprint: Codable, Equatable {
 
 /// Represents a reporting category within a blueprint
 public struct ReportingCategory: Codable, Equatable {
+    /// name property
     public let name: String
+    /// code property
     public let code: String
+    /// standards property
     public let standards: [StandardReference]
+    /// percentageRange property
     public let percentageRange: [Double]
     
     private enum CodingKeys: String, CodingKey {
@@ -54,8 +62,11 @@ public struct ReportingCategory: Codable, Equatable {
 
 /// Reference to specific standards within a reporting category
 public struct StandardReference: Codable, Equatable {
+    /// code property
     public let code: String
+    /// numbers property
     public let numbers: [Int]
+    /// isModeling property
     public let isModeling: Bool
     
     private enum CodingKeys: String, CodingKey {
@@ -86,11 +97,17 @@ public typealias LearningStandard = ScaffoldingDocument
 
 /// Represents the progression path from one grade to the next
 public struct GradeProgression {
+    /// currentGrade property
     public let currentGrade: Int
+    /// nextGrade property
     public let nextGrade: Int
+    /// subject property
     public let subject: String  // Changed from Subject enum to String
+    /// prerequisiteStandards property
     public let prerequisiteStandards: [String]  // Standards that must be mastered
+    /// targetStandards property
     public let targetStandards: [String]        // Standards to prepare for
+    /// bridgeStandards property
     public let bridgeStandards: [String]        // Standards that connect grades
     
     public init(currentGrade: Int, nextGrade: Int, subject: String,
@@ -107,10 +124,15 @@ public struct GradeProgression {
 
 /// Maps component performance to specific learning needs
 public struct ComponentLearningMap {
+    /// component property
     public let component: String
+    /// reportingCategory property
     public let reportingCategory: String
+    /// relatedStandards property
     public let relatedStandards: [String]
+    /// performanceLevel property
     public let performanceLevel: PerformanceLevel
+    /// recommendedFocus property
     public let recommendedFocus: [LearningFocus]
     
     public init(component: String, reportingCategory: String, 
@@ -126,10 +148,15 @@ public struct ComponentLearningMap {
 
 /// Specific learning focus based on student performance
 public struct LearningFocus {
+    /// standardId property
     public let standardId: String
+    /// focusArea property
     public let focusArea: FocusArea
+    /// specificSkills property
     public let specificSkills: [String]
+    /// suggestedActivities property
     public let suggestedActivities: [String]
+    /// estimatedTimeWeeks property
     public let estimatedTimeWeeks: Int
     
     public init(standardId: String, focusArea: FocusArea, 

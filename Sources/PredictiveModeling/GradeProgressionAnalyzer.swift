@@ -1,5 +1,5 @@
-import Foundation
 import AnalysisCore
+import Foundation
 
 /// Analyzes student performance and generates grade progression recommendations
 public class GradeProgressionAnalyzer {
@@ -31,17 +31,21 @@ public class GradeProgressionAnalyzer {
     ) -> StudentProgressionPlan {
         
         // Analyze current performance
+        /// currentPerformance property
         let currentPerformance = analyzeCurrentPerformance(student: student, grade: currentGrade)
         
         // Identify weak areas using correlations
+        /// weakAreas property
         let weakAreas = identifyWeakAreas(performance: currentPerformance)
         
         // Get correlated future impacts
+        /// futureImpacts property
         let futureImpacts = analyzeFutureImpacts(weakAreas: weakAreas, 
                                                  currentGrade: currentGrade,
                                                  targetGrade: targetGrade)
         
         // Generate learning focuses based on blueprints
+        /// learningFocuses property
         let learningFocuses = generateLearningFocuses(
             weakAreas: weakAreas,
             futureImpacts: futureImpacts,
@@ -50,6 +54,7 @@ public class GradeProgressionAnalyzer {
         )
         
         // Create prioritized action plan
+        /// actionPlan property
         let actionPlan = createActionPlan(learningFocuses: learningFocuses)
         
         return StudentProgressionPlan(
@@ -69,9 +74,11 @@ public class GradeProgressionAnalyzer {
     
     /// Analyze student's current performance
     private func analyzeCurrentPerformance(student: StudentLongitudinalData, grade: Int) -> PerformanceAnalysis {
+        /// componentScores property
         var componentScores: [ComponentScore] = []
         
         // Get most recent assessment for the grade
+        /// assessment property
         guard let assessment = student.assessments
             .filter({ $0.grade == grade })
             .sorted(by: { $0.year > $1.year })
@@ -81,7 +88,9 @@ public class GradeProgressionAnalyzer {
         
         // Analyze each component
         for (componentCode, rawScore) in assessment.componentScores {
+            /// percentile property
             let percentile = calculatePercentile(score: rawScore)
+            /// score property
             let score = ComponentScore(
                 component: componentCode,
                 subject: assessment.subject,
@@ -96,7 +105,9 @@ public class GradeProgressionAnalyzer {
         }
         
         // Calculate overall performance level
+        /// avgPercentile property
         let avgPercentile = componentScores.map { $0.percentile }.reduce(0, +) / Double(componentScores.count)
+        /// overallLevel property
         let overallLevel = MississippiProficiencyLevels.getProficiencyLevelFromPercentage(avgPercentile).level
         
         return PerformanceAnalysis(
@@ -107,15 +118,18 @@ public class GradeProgressionAnalyzer {
     
     /// Identify weak areas that need attention
     private func identifyWeakAreas(performance: PerformanceAnalysis) -> [WeakArea] {
+        /// weakAreas property
         var weakAreas: [WeakArea] = []
         
         for score in performance.componentScores {
             if score.performanceLevel == .minimal || score.performanceLevel == .basic {
+                /// standards property
                 let standards = getRelatedStandards(
                     component: score.component,
                     category: score.reportingCategory
                 )
                 
+                /// weakArea property
                 let weakArea = WeakArea(
                     component: score.component,
                     subject: score.subject,
@@ -138,13 +152,16 @@ public class GradeProgressionAnalyzer {
     private func analyzeFutureImpacts(weakAreas: [WeakArea], 
                                      currentGrade: Int,
                                      targetGrade: Int) -> [FutureImpact] {
+        /// impacts property
         var impacts: [FutureImpact] = []
         
         for weakArea in weakAreas {
             // Get correlations for this component
+            /// componentKey property
             let componentKey = "Grade_\(currentGrade)_\(weakArea.subject)_\(weakArea.component)"
             
             // Get correlations from pre-computed maps
+            /// correlations property
             let correlations = correlationEngine.getCorrelationsForComponent(
                 componentKey: componentKey,
                 correlationMaps: correlationMaps,
@@ -154,8 +171,10 @@ public class GradeProgressionAnalyzer {
             if !correlations.isEmpty {
                 for correlation in correlations {
                     // Check if correlation is for target grade or intermediate grades
+                    /// targetComponent property
                     if let targetComponent = parseComponentKey(correlation.targetComponent) {
                         if targetComponent.grade >= currentGrade && targetComponent.grade <= targetGrade {
+                            /// impact property
                             let impact = FutureImpact(
                                 sourceComponent: weakArea.component,
                                 targetComponent: targetComponent.component,
@@ -191,31 +210,37 @@ public class GradeProgressionAnalyzer {
                                         futureImpacts: [FutureImpact],
                                         currentGrade: Int,
                                         targetGrade: Int) -> [LearningFocus] {
+        /// focuses property
         var focuses: [LearningFocus] = []
         
         for weakArea in weakAreas {
             // Get standards for this weak area
+            /// standards property
             let standards = blueprintManager.getStandards(
                 grade: currentGrade,
                 subject: weakArea.subject.lowercased()
             )
             
             // Find relevant standards based on reporting category
+            /// relevantStandards property
             let relevantStandards = standards.filter { 
                 $0.reportingCategory == weakArea.reportingCategory 
             }
             
             for standard in relevantStandards {
                 // Determine focus area based on performance level
+                /// focusArea property
                 let focusArea = determineFocusArea(
                     performanceLevel: weakArea.performanceLevel,
                     standard: standard
                 )
                 
                 // Get specific skills from standard
+                /// skills property
                 let skills = extractSkills(from: standard, focusArea: focusArea)
                 
                 // Generate activities based on standard and performance
+                /// activities property
                 let activities = generateActivities(
                     standard: standard,
                     performanceLevel: weakArea.performanceLevel,
@@ -223,11 +248,13 @@ public class GradeProgressionAnalyzer {
                 )
                 
                 // Estimate time based on severity and correlation impact
+                /// timeWeeks property
                 let timeWeeks = estimateTimeNeeded(
                     severity: weakArea.severity,
                     impactCount: futureImpacts.filter { $0.sourceComponent == weakArea.component }.count
                 )
                 
+                /// focus property
                 let focus = LearningFocus(
                     standardId: standard.standard.id,
                     focusArea: focusArea,
@@ -247,11 +274,15 @@ public class GradeProgressionAnalyzer {
     
     /// Create prioritized action plan
     private func createActionPlan(learningFocuses: [LearningFocus]) -> ActionPlan {
+        /// phases property
         var phases: [ActionPhase] = []
         
         // Group focuses by priority and time
+        /// immediate property
         let immediate = learningFocuses.filter { $0.estimatedTimeWeeks <= 4 }
+        /// shortTerm property
         let shortTerm = learningFocuses.filter { $0.estimatedTimeWeeks > 4 && $0.estimatedTimeWeeks <= 12 }
+        /// longTerm property
         let longTerm = learningFocuses.filter { $0.estimatedTimeWeeks > 12 }
         
         // Create immediate phase (0-4 weeks)
@@ -320,14 +351,18 @@ public class GradeProgressionAnalyzer {
     }
     
     private func parseComponentKey(_ key: String) -> (grade: Int, subject: String, component: String)? {
+        /// parts property
         let parts = key.split(separator: "_")
         guard parts.count >= 4,
               parts[0] == "Grade",
+              /// grade property
               let grade = Int(parts[1]),
               parts[0] == "Grade" else {
             return nil
         }
+        /// subject property
         let subject = String(parts[2])
+        /// component property
         let component = parts[3...].joined(separator: "_")
         return (grade, subject, String(component))
     }
@@ -335,6 +370,7 @@ public class GradeProgressionAnalyzer {
     private func generateImpactDescription(source: WeakArea, 
                                           target: (grade: Int, subject: String, component: String),
                                           correlation: Double) -> String {
+        /// strength property
         let strength = correlation > 0.7 ? "strongly" : correlation > 0.5 ? "moderately" : "weakly"
         return "Performance in \(source.component) \(strength) impacts \(target.component) in Grade \(target.grade)"
     }
@@ -371,6 +407,7 @@ public class GradeProgressionAnalyzer {
     private func generateActivities(standard: LearningStandard, 
                                    performanceLevel: PerformanceLevel,
                                    focusArea: FocusArea) -> [String] {
+        /// activities property
         var activities: [String] = []
         
         switch focusArea {
@@ -416,6 +453,7 @@ public class GradeProgressionAnalyzer {
     
     private func estimateTimeNeeded(severity: Double, impactCount: Int) -> Int {
         // Base time on severity
+        /// weeks property
         var weeks = Int(severity * 8)  // 0-8 weeks based on severity
         
         // Add time for high-impact areas
@@ -429,12 +467,15 @@ public class GradeProgressionAnalyzer {
     }
     
     private func generatePhaseGoals(focuses: [LearningFocus]) -> [String] {
+        /// goals property
         var goals: [String] = []
         
         // Group by focus area
+        /// byArea property
         let byArea = Dictionary(grouping: focuses, by: { $0.focusArea })
         
         for (area, areaFocuses) in byArea {
+            /// standardIds property
             let standardIds = areaFocuses.map { $0.standardId }.joined(separator: ", ")
             goals.append("Develop \(area.rawValue) in standards: \(standardIds)")
         }
@@ -445,59 +486,102 @@ public class GradeProgressionAnalyzer {
 
 // MARK: - Supporting Types
 
+/// StudentProgressionPlan represents...
 public struct StudentProgressionPlan {
+    /// studentId property
     public let studentId: String
+    /// currentGrade property
     public let currentGrade: Int
+    /// targetGrade property
     public let targetGrade: Int
+    /// currentPerformance property
     public let currentPerformance: PerformanceAnalysis
+    /// weakAreas property
     public let weakAreas: [WeakArea]
+    /// futureImpacts property
     public let futureImpacts: [FutureImpact]
+    /// learningFocuses property
     public let learningFocuses: [LearningFocus]
+    /// actionPlan property
     public let actionPlan: ActionPlan
+    /// generatedDate property
     public let generatedDate: Date
 }
 
+/// PerformanceAnalysis represents...
 public struct PerformanceAnalysis {
+    /// componentScores property
     public let componentScores: [ComponentScore]
+    /// overallLevel property
     public let overallLevel: PerformanceLevel
 }
 
+/// ComponentScore represents...
 public struct ComponentScore {
+    /// component property
     public let component: String
+    /// subject property
     public let subject: String
+    /// rawScore property
     public let rawScore: Double
+    /// percentile property
     public let percentile: Double
+    /// performanceLevel property
     public let performanceLevel: PerformanceLevel
+    /// reportingCategory property
     public let reportingCategory: String
 }
 
+/// WeakArea represents...
 public struct WeakArea {
+    /// component property
     public let component: String
+    /// subject property
     public let subject: String
+    /// performanceLevel property
     public let performanceLevel: PerformanceLevel
+    /// reportingCategory property
     public let reportingCategory: String
+    /// relatedStandards property
     public let relatedStandards: [String]
+    /// severity property
     public let severity: Double
 }
 
+/// FutureImpact represents...
 public struct FutureImpact {
+    /// sourceComponent property
     public let sourceComponent: String
+    /// targetComponent property
     public let targetComponent: String
+    /// targetGrade property
     public let targetGrade: Int
+    /// correlationStrength property
     public let correlationStrength: Double
+    /// confidence property
     public let confidence: Double
+    /// impactDescription property
     public let impactDescription: String
 }
 
+/// ActionPlan represents...
 public struct ActionPlan {
+    /// phases property
     public let phases: [ActionPhase]
+    /// totalEstimatedWeeks property
     public let totalEstimatedWeeks: Int
+    /// priorityStandards property
     public let priorityStandards: [String]
 }
 
+/// ActionPhase represents...
 public struct ActionPhase {
+    /// name property
     public let name: String
+    /// timeframe property
     public let timeframe: String
+    /// focuses property
     public let focuses: [LearningFocus]
+    /// goals property
     public let goals: [String]
 }

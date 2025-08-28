@@ -3,6 +3,7 @@ import SwiftUI
 #if os(macOS)
 #endif
 
+/// AppleDesignSystem represents...
 struct AppleDesignSystem {
     // MARK: - System Colors (Apple Human Interface Guidelines)
     /// Use these semantic colors for UI structure - they automatically adapt to light/dark mode
@@ -15,60 +16,87 @@ struct AppleDesignSystem {
         static let secondaryLabel = Color.secondary
         /// Tertiary text color for supplementary content
         #if os(macOS)
+        /// tertiaryLabel property
         static let tertiaryLabel = Color(NSColor.tertiaryLabelColor)
+        /// quaternaryLabel property
         static let quaternaryLabel = Color(NSColor.quaternaryLabelColor)
         #else
+        /// tertiaryLabel property
         static let tertiaryLabel = Color(UIColor.tertiaryLabel)
+        /// quaternaryLabel property
         static let quaternaryLabel = Color(UIColor.quaternaryLabel)
         #endif
         
         // MARK: - Background Colors
         /// Primary background color
         #if os(macOS)
+        /// background property
         static let background = Color(NSColor.windowBackgroundColor)
+        /// secondaryBackground property
         static let secondaryBackground = Color(NSColor.controlBackgroundColor)
+        /// tertiaryBackground property
         static let tertiaryBackground = Color(NSColor.underPageBackgroundColor)
         #else
+        /// background property
         static let background = Color(UIColor.systemBackground)
+        /// secondaryBackground property
         static let secondaryBackground = Color(UIColor.secondarySystemBackground)
+        /// tertiaryBackground property
         static let tertiaryBackground = Color(UIColor.tertiarySystemBackground)
         #endif
         
         // MARK: - System UI Colors
         /// System accent color (adapts to user preference)
         #if os(macOS)
+        /// accent property
         static let accent = Color(NSColor.controlAccentColor)
         #else
+        /// accent property
         static let accent = Color.accentColor
         #endif
         
         /// Separator lines
         #if os(macOS)
+        /// separator property
         static let separator = Color(NSColor.separatorColor)
         #else
+        /// separator property
         static let separator = Color(UIColor.separator)
         #endif
         
         // MARK: - Fill Colors
         /// Fill colors for UI elements
         #if os(macOS)
+        /// fill property
         static let fill = Color(NSColor.controlColor)
+        /// secondaryFill property
         static let secondaryFill = Color(NSColor.controlBackgroundColor)
+        /// tertiaryFill property
         static let tertiaryFill = Color(NSColor.tertiarySystemFill)
+        /// quaternaryFill property
         static let quaternaryFill = Color(NSColor.quaternarySystemFill)
+        /// quaternarySystemFill property
         static let quaternarySystemFill = Color(NSColor.quaternarySystemFill)
         #else
+        /// fill property
         static let fill = Color(UIColor.systemFill)
+        /// secondaryFill property
         static let secondaryFill = Color(UIColor.secondarySystemFill)
+        /// tertiaryFill property
         static let tertiaryFill = Color(UIColor.tertiarySystemFill)
+        /// quaternaryFill property
         static let quaternaryFill = Color(UIColor.quaternarySystemFill)
+        /// quaternarySystemFill property
         static let quaternarySystemFill = Color(UIColor.quaternarySystemFill)
         #endif
         
         // MARK: - Grouped Background Colors (iOS)
         #if !os(macOS)
+        /// groupedBackground property
         static let groupedBackground = Color(UIColor.systemGroupedBackground)
+        /// secondaryGroupedBackground property
         static let secondaryGroupedBackground = Color(UIColor.secondarySystemGroupedBackground)
+        /// tertiaryGroupedBackground property
         static let tertiaryGroupedBackground = Color(UIColor.tertiarySystemGroupedBackground)
         #endif
     }
@@ -76,22 +104,37 @@ struct AppleDesignSystem {
     // MARK: - Apple System Color Palette
     /// Standard Apple color palette - use these for semantic meaning and consistent design
     struct SystemPalette {
+        /// red property
         static let red = Color.red
+        /// orange property
         static let orange = Color.orange
+        /// yellow property
         static let yellow = Color.yellow
+        /// green property
         static let green = Color.green
+        /// mint property
         static let mint = Color.mint
+        /// teal property
         static let teal = Color.teal
+        /// cyan property
         static let cyan = Color.cyan
+        /// blue property
         static let blue = Color.blue
+        /// indigo property
         static let indigo = Color.indigo
+        /// purple property
         static let purple = Color.purple
+        /// pink property
         static let pink = Color.pink
+        /// brown property
         static let brown = Color.brown
         
         // Semantic usage colors
+        /// success property
         static let success = Color.green
+        /// error property
         static let error = Color.red
+        /// warning property
         static let warning = Color.orange
     }
     
@@ -107,8 +150,11 @@ struct AppleDesignSystem {
         static let tertiary = Color("TertiaryColor")
         
         // Legacy compatibility - prefer SystemPalette for semantic colors
+        /// success property
         static let success = Color("SuccessColor")
+        /// error property
         static let error = Color("ErrorColor")
+        /// warning property
         static let warning = Color("WarningColor")
     }
     
@@ -116,9 +162,13 @@ struct AppleDesignSystem {
     /// Pre-configured colors for common UI components following Apple HIG
     struct ComponentColors {
         // MARK: - Text
+        /// primaryText property
         static let primaryText = SystemColors.label
+        /// secondaryText property
         static let secondaryText = SystemColors.secondaryLabel
+        /// tertiaryText property
         static let tertiaryText = SystemColors.tertiaryLabel
+        /// placeholderText property
         static var placeholderText: Color {
             #if os(macOS)
             return Color(NSColor.placeholderTextColor)
@@ -128,10 +178,13 @@ struct AppleDesignSystem {
         }
         
         // MARK: - Cards
+        /// cardBackground property
         static let cardBackground = SystemColors.secondaryBackground
+        /// cardBorder property
         static let cardBorder = SystemColors.separator
         
         // MARK: - Input Fields
+        /// inputBackground property
         static var inputBackground: Color {
             #if os(macOS)
             return Color(NSColor.textBackgroundColor)
@@ -139,64 +192,99 @@ struct AppleDesignSystem {
             return SystemColors.background
             #endif
         }
+        /// inputBorder property
         static let inputBorder = SystemColors.separator
         
         // MARK: - Buttons
         /// Primary button - uses brand color
         static let primaryButtonBackground = BrandColors.primary
+        /// primaryButtonText property
         static let primaryButtonText = Color.white
         
         /// Secondary button - uses system colors
         static let secondaryButtonBackground = SystemColors.secondaryBackground
+        /// secondaryButtonText property
         static let secondaryButtonText = SystemColors.label
         
         // MARK: - Navigation
+        /// tabBarBackground property
         static let tabBarBackground = SystemColors.background
+        /// tabBarSelected property
         static let tabBarSelected = SystemColors.accent
+        /// tabBarUnselected property
         static let tabBarUnselected = SystemColors.secondaryLabel
     }
     
     // MARK: - Typography
+    /// Typography represents...
     struct Typography {
+        /// largeTitle property
         static let largeTitle = Font.largeTitle
+        /// title property
         static let title = Font.title
+        /// title2 property
         static let title2 = Font.title2
+        /// title3 property
         static let title3 = Font.title3
+        /// headline property
         static let headline = Font.headline
+        /// subheadline property
         static let subheadline = Font.subheadline
+        /// body property
         static let body = Font.body
+        /// callout property
         static let callout = Font.callout
+        /// caption property
         static let caption = Font.caption
+        /// caption2 property
         static let caption2 = Font.caption2
+        /// footnote property
         static let footnote = Font.footnote
     }
     
     // MARK: - Spacing
+    /// Spacing represents...
     struct Spacing {
+        /// xs property
         static let xs: CGFloat = 4
+        /// small property
         static let small: CGFloat = 8
+        /// medium property
         static let medium: CGFloat = 16
+        /// large property
         static let large: CGFloat = 24
+        /// xl property
         static let xl: CGFloat = 32
+        /// xxl property
         static let xxl: CGFloat = 48
     }
     
     // MARK: - Corner Radius
+    /// Corners represents...
     struct Corners {
+        /// small property
         static let small: CGFloat = 6
+        /// medium property
         static let medium: CGFloat = 12
+        /// large property
         static let large: CGFloat = 20
+        /// xl property
         static let xl: CGFloat = 28
     }
     
     // MARK: - Shadows
+    /// Shadows represents...
     struct Shadows {
+        /// small property
         static let small = Color.black.opacity(0.1)
+        /// medium property
         static let medium = Color.black.opacity(0.2)
+        /// large property
         static let large = Color.black.opacity(0.3)
     }
     
     // MARK: - Form Layout (Design Tokens)
+    /// Forms represents...
     struct Forms {
         /// Standard height for form fields (text fields, pickers, etc.) - from design tokens
         static let fieldHeight: CGFloat = 24
@@ -212,6 +300,7 @@ struct AppleDesignSystem {
     
     #if os(macOS)
     // MARK: - Material Design System
+    /// Materials represents...
     struct Materials {
         // MARK: - Material Colors
         /// Primary label color that adapts to materials
@@ -324,12 +413,15 @@ struct AppleDesignSystem {
             self.state = state
         }
         
+        /// makeNSView function description
         func makeNSView(context: Context) -> NSVisualEffectView {
+            /// view property
             let view = NSVisualEffectView()
             view.autoresizingMask = [.width, .height]
             return view
         }
         
+        /// updateNSView function description
         func updateNSView(_ nsView: NSVisualEffectView, context: Context) {
             nsView.material = material
             nsView.blendingMode = blendingMode
@@ -352,6 +444,7 @@ struct AppleDesignSystem {
         case underPageBackground
         case hudWindow
         
+        /// nsMaterial property
         var nsMaterial: NSVisualEffectView.Material {
             switch self {
             case .sidebar: return .sidebar
@@ -379,6 +472,7 @@ struct AppleDesignSystem {
         
         /// SwiftUI material representation
         @available(macOS 12.0, *)
+        /// swiftUIMaterial property
         var swiftUIMaterial: Material {
             switch self {
             case .ultraThin: return .ultraThinMaterial
@@ -389,6 +483,7 @@ struct AppleDesignSystem {
             }
         }
         
+        /// displayName property
         var displayName: String {
             switch self {
             case .ultraThin: return "Ultra Thin"
@@ -410,36 +505,42 @@ extension View {
     // MARK: - Thickness-Based Materials (SwiftUI)
     /// Applies an ultra-thin material background
     @available(macOS 12.0, *)
+    /// ultraThinMaterial function description
     func ultraThinMaterial() -> some View {
         self.background(.ultraThinMaterial)
     }
     
     /// Applies a thin material background
     @available(macOS 12.0, *)
+    /// thinMaterial function description
     func thinMaterial() -> some View {
         self.background(.thinMaterial)
     }
     
     /// Applies a regular material background
     @available(macOS 12.0, *)
+    /// regularMaterial function description
     func regularMaterial() -> some View {
         self.background(.regularMaterial)
     }
     
     /// Applies a thick material background
     @available(macOS 12.0, *)
+    /// thickMaterial function description
     func thickMaterial() -> some View {
         self.background(.thickMaterial)
     }
     
     /// Applies an ultra-thick material background
     @available(macOS 12.0, *)
+    /// ultraThickMaterial function description
     func ultraThickMaterial() -> some View {
         self.background(.ultraThickMaterial)
     }
     
     /// Applies a material background using the thickness enum
     @available(macOS 12.0, *)
+    /// materialBackground function description
     func materialBackground(_ thickness: AppleDesignSystem.MaterialThickness) -> some View {
         self.background(thickness.swiftUIMaterial)
     }
@@ -502,7 +603,9 @@ extension View {
 }
 
 // MARK: - Custom Text Field Styles
+/// StandardFormTextFieldStyle represents...
 struct StandardFormTextFieldStyle: TextFieldStyle {
+    /// _body function description
     func _body(configuration: TextField<Self._Label>) -> some View {
         ZStack {
             // Background with corner radius
@@ -524,7 +627,9 @@ struct StandardFormTextFieldStyle: TextFieldStyle {
     }
 }
 
+/// MultilineFormTextFieldStyle represents...
 struct MultilineFormTextFieldStyle: TextFieldStyle {
+    /// _body function description
     func _body(configuration: TextField<Self._Label>) -> some View {
         ZStack {
             // Background with corner radius
@@ -547,7 +652,9 @@ struct MultilineFormTextFieldStyle: TextFieldStyle {
 }
 
 
+/// CardMultilineFormTextFieldStyle represents...
 struct CardMultilineFormTextFieldStyle: TextFieldStyle {
+    /// _body function description
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding(AppleDesignSystem.Forms.fieldPadding)

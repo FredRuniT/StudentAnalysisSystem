@@ -6,7 +6,9 @@ import SwiftUI
 #if canImport(AppKit)
 #endif
 
+/// ContentView represents...
 struct ContentView: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
     @State private var selectedTab = 0
     @State private var showingConfiguration = false
@@ -14,6 +16,7 @@ struct ContentView: View {
     @State private var analysisProgress = 0.0
     @State private var statusMessage = "Ready to analyze"
     
+    /// body property
     var body: some View {
         NavigationSplitView {
             // Sidebar
@@ -25,7 +28,7 @@ struct ContentView: View {
                     Label("Early Warning", systemImage: "exclamationmark.triangle.fill")
                         .tag(1)
                     
-                    Label("Predictive Analysis", systemImage: "chart.scatter")
+                    Label("Predictive Analysis", systemImage: "chart.line.uptrend.xyaxis.circle")
                         .tag(2)
                     
                     Label("Network Visualization", systemImage: "circle.hexagongrid.fill")
@@ -62,22 +65,23 @@ struct ContentView: View {
             .navigationSplitViewColumnWidth(min: 200, ideal: 250)
         } detail: {
             // Detail View
-            Group {
+            // Use ZStack to avoid Group type inference issues
+            ZStack {
                 switch selectedTab {
                 case 0:
                     DashboardView()
                 case 1:
                     EarlyWarningDashboardView()
                 case 2:
-                    CorrelationVisualizationView()
+                    CorrelationVisualizationView() // Use working view
                 case 3:
-                    PlaceholderView(title: "Network Visualization", description: "Coming soon - Correlation network visualization") 
+                    CorrelationNetworkView() // Network visualization with Canvas
                 case 4:
-                    PlaceholderView(title: "ILP Generator", description: "Coming soon - Individual Learning Plan generator")
+                    PlaceholderView(title: "ILP Generator", description: "Individual Learning Plan generator - fixing compilation issues")
                 case 5:
                     GradeProgressionView()
                 case 6:
-                    PlaceholderView(title: "Student Reports", description: "Coming soon - Individual student report generation")
+                    PlaceholderView(title: "Student Reports", description: "Student profile reports - fixing compilation issues")
                 case 7:
                     DataImportView()
                 case 8:
@@ -98,7 +102,9 @@ struct ContentView: View {
 }
 
 // MARK: - Dashboard View
+/// DashboardView represents...
 struct DashboardView: View {
+    /// body property
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
@@ -172,10 +178,12 @@ struct DashboardView: View {
 }
 
 // MARK: - Early Warning Dashboard
+/// EarlyWarningDashboardView represents...
 struct EarlyWarningDashboardView: View {
     @State private var selectedGrade = 3
     @State private var riskLevel = "All"
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading) {
             // Header with filters
@@ -230,12 +238,18 @@ struct EarlyWarningDashboardView: View {
 }
 
 // MARK: - Supporting Views
+/// MetricCard represents...
 struct MetricCard: View {
+    /// title property
     let title: String
+    /// value property
     let value: String
+    /// icon property
     let icon: String
+    /// color property
     let color: Color
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -260,9 +274,12 @@ struct MetricCard: View {
     }
 }
 
+/// ChartCard represents...
 struct ChartCard: View {
+    /// title property
     let title: String
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading) {
             Text(title)
@@ -284,11 +301,16 @@ struct ChartCard: View {
     }
 }
 
+/// RiskCard represents...
 struct RiskCard: View {
+    /// level property
     let level: String
+    /// count property
     let count: Int
+    /// color property
     let color: Color
     
+    /// body property
     var body: some View {
         VStack(spacing: 8) {
             HStack {
@@ -314,7 +336,9 @@ struct RiskCard: View {
     }
 }
 
+/// StudentRiskRow represents...
 struct StudentRiskRow: View {
+    /// body property
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -346,7 +370,9 @@ struct StudentRiskRow: View {
 }
 
 // MARK: - Placeholder Views
+/// CorrelationAnalysisView represents...
 struct CorrelationAnalysisView: View {
+    /// body property
     var body: some View {
         VStack {
             Text("Correlation Analysis")
@@ -364,7 +390,9 @@ struct CorrelationAnalysisView: View {
 
 // StudentReportsView removed - using placeholder in ContentView instead
 
+/// DataImportView represents...
 struct DataImportView: View {
+    /// body property
     var body: some View {
         VStack {
             Text("Data Import")
@@ -380,7 +408,9 @@ struct DataImportView: View {
     }
 }
 
+/// DataOverviewView represents...
 struct DataOverviewView: View {
+    /// body property
     var body: some View {
         VStack {
             Text("Data Overview")
@@ -396,9 +426,11 @@ struct DataOverviewView: View {
     }
 }
 
+/// ConfigurationOverviewView represents...
 struct ConfigurationOverviewView: View {
     @State private var showingFullConfig = false
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
@@ -439,10 +471,14 @@ struct ConfigurationOverviewView: View {
     }
 }
 
+/// ConfigRow represents...
 struct ConfigRow: View {
+    /// label property
     let label: String
+    /// value property
     let value: String
     
+    /// body property
     var body: some View {
         HStack {
             Text(label)
@@ -455,10 +491,14 @@ struct ConfigRow: View {
 }
 
 // MARK: - Placeholder View
+/// PlaceholderView represents...
 struct PlaceholderView: View {
+    /// title property
     let title: String
+    /// description property
     let description: String
     
+    /// body property
     var body: some View {
         VStack(spacing: 20) {
             Image(systemName: "gearshape.2")
@@ -470,7 +510,7 @@ struct PlaceholderView: View {
                 .bold()
             
             Text(description)
-                .font(.headline)
+                .font(AppleDesignSystem.Typography.headline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)

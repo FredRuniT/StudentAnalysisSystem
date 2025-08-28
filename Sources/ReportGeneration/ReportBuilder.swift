@@ -1,5 +1,5 @@
-import Foundation
 import AnalysisCore
+import Foundation
 import StatisticalEngine
 
 public actor ReportBuilder {
@@ -10,6 +10,7 @@ public actor ReportBuilder {
         self.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
     }
     
+    /// generateComprehensiveReport function description
     public func generateComprehensiveReport(
         analysisResults: AnalysisResults,
         format: ReportFormat
@@ -25,6 +26,7 @@ public actor ReportBuilder {
     }
     
     private func generateTextReport(_ results: AnalysisResults) async -> String {
+        /// report property
         var report = String(repeating: "=", count: 80) + "\n"
         report += "STUDENT ANALYSIS SYSTEM - COMPREHENSIVE REPORT\n"
         report += "Generated: \(dateFormatter.string(from: Date()))\n"
@@ -62,6 +64,7 @@ public actor ReportBuilder {
         report += "\n"
         
         // Validation Results
+        /// validation property
         if let validation = results.validationMetrics {
             report += "MODEL VALIDATION\n"
             report += String(repeating: "-", count: 40) + "\n"
@@ -78,6 +81,7 @@ public actor ReportBuilder {
     }
     
     private func generateMarkdownReport(_ results: AnalysisResults) async -> String {
+        /// markdown property
         var markdown = """
         # Student Analysis System Report
         
@@ -119,6 +123,7 @@ public actor ReportBuilder {
                              correlation.sampleSize)
         }
         
+        /// validation property
         if let validation = results.validationMetrics {
             markdown += """
             
@@ -163,9 +168,13 @@ public actor ReportBuilder {
             
             <h2>Summary</h2>
             <div>
+                /// Item description
                 <span class="metric">\(results.totalStudents)</span> Students Analyzed<br>
+                /// Item description
                 <span class="metric">\(results.significantCorrelations)</span> Significant Correlations<br>
+                /// Item description
                 <span class="metric">\(results.interventionCount)</span> Need Intervention<br>
+                /// Item description
                 <span class="metric">\(results.accelerationCount)</span> Ready for Acceleration
             </div>
             
@@ -194,27 +203,43 @@ public actor ReportBuilder {
     }
 }
 
+/// ReportFormat description
 public enum ReportFormat {
     case text
     case markdown
     case html
 }
 
+/// AnalysisResults represents...
 public struct AnalysisResults {
+    /// totalStudents property
     public let totalStudents: Int
+    /// multiYearStudents property
     public let multiYearStudents: Int
+    /// significantCorrelations property
     public let significantCorrelations: Int
+    /// interventionCount property
     public let interventionCount: Int
+    /// accelerationCount property
     public let accelerationCount: Int
+    /// keyFindings property
     public let keyFindings: [String]
+    /// topCorrelations property
     public let topCorrelations: [CorrelationSummary]
+    /// validationMetrics property
     public let validationMetrics: ValidationResults?
     
+    /// CorrelationSummary represents...
     public struct CorrelationSummary {
+        /// source property
         public let source: String
+        /// target property
         public let target: String
+        /// value property
         public let value: Double
+        /// pValue property
         public let pValue: Double
+        /// sampleSize property
         public let sampleSize: Int
     }
 }

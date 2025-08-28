@@ -1,7 +1,7 @@
-import Foundation
 import AnalysisCore
-import StatisticalEngine
+import Foundation
 import MLX
+import StatisticalEngine
 
 public actor EarlyWarningSystem {
     private let correlationAnalyzer: CorrelationAnalyzer
@@ -15,10 +15,12 @@ public actor EarlyWarningSystem {
         self.configuration = configuration ?? SystemConfiguration.default
     }
     
+    /// trainWarningSystem function description
     public func trainWarningSystem(
         trainingData: [StudentLongitudinalData]
     ) async throws {
         // Identify students who struggled in later years
+        /// outcomeData property
         let outcomeData = categorizeStudentOutcomes(trainingData)
         
         // Find component thresholds that predict poor outcomes
@@ -28,17 +30,23 @@ public actor EarlyWarningSystem {
         )
     }
     
+    /// generateWarnings function description
     public func generateWarnings(
         for student: StudentSingleYearData
     ) async -> EarlyWarningReport {
+        /// warnings property
         var warnings: [Warning] = []
+        /// risks property
         var risks: [RiskFactor] = []
         
         // Check each component against trained thresholds
         for threshold in warningThresholds {
+            /// componentKey property
             let componentKey = "\(threshold.component.subject)_\(threshold.component.component)"
+            /// score property
             if let score = student.getComponentScore(componentKey) {
                 if score < threshold.riskThreshold {
+                    /// warning property
                     let warning = Warning(
                         level: score < threshold.riskThreshold * configuration.earlyWarning.criticalRiskMultiplier ? .critical : .high,
                         message: "Component \(threshold.component.description) score (\(score)) is below critical threshold",
@@ -48,6 +56,7 @@ public actor EarlyWarningSystem {
                     warnings.append(warning)
                     
                     // Calculate risk level
+                    /// riskLevel property
                     let riskLevel = calculateRiskLevel(
                         score: score,
                         threshold: threshold
@@ -58,6 +67,7 @@ public actor EarlyWarningSystem {
         }
         
         // Generate interventions based on warnings
+        /// interventions property
         let interventions = await generateInterventions(warnings: warnings)
         
         return EarlyWarningReport(
@@ -75,9 +85,11 @@ public actor EarlyWarningSystem {
         studentData: [StudentLongitudinalData],
         outcomes: StudentOutcomes
     ) async -> [ComponentThreshold] {
+        /// thresholds property
         var thresholds: [ComponentThreshold] = []
         
         // Get all unique components from the data
+        /// allComponents property
         let allComponents = extractAllComponents(from: studentData)
         
         await withTaskGroup(of: ComponentThreshold?.self) { group in
@@ -92,6 +104,7 @@ public actor EarlyWarningSystem {
             }
             
             for await threshold in group {
+                /// threshold property
                 if let threshold = threshold {
                     thresholds.append(threshold)
                 }
@@ -108,34 +121,46 @@ public actor EarlyWarningSystem {
         outcomes: StudentOutcomes
     ) async -> ComponentThreshold? {
         // Use MLX for efficient computation
+        /// scores property
         let scores = extractComponentScores(component, from: studentData)
+        /// outcomeLabels property
         let outcomeLabels = mapToOutcomeLabels(scores, outcomes)
         
         guard scores.count >= configuration.earlyWarning.minimumStudentsForThreshold else { return nil }
         
         return await Task.detached(priority: .userInitiated) { [self] in
+            /// scoresArray property
             let scoresArray = scores.map { Float($0.value) }
+            /// _ property
             let _ = outcomeLabels.map { Float($0 ? 1.0 : 0.0) }
             // MLX arrays for future use when MLX API is available
             // let mlxScores = MLXArray(scoresArray)
             // let mlxOutcomes = MLXArray(outcomesArray)
             
             // Find optimal threshold using ROC analysis
+            /// bestThreshold property
             var bestThreshold = 0.0
+            /// bestF1Score property
             var bestF1Score = 0.0
             
+            /// percentiles property
             let percentiles = configuration.earlyWarning.thresholdPercentiles
             
             for percentile in percentiles {
                 // Calculate percentile threshold
+                /// sortedScores property
                 let sortedScores = scoresArray.sorted()
+                /// index property
                 let index = Int(Float(sortedScores.count) * Float(percentile) / 100.0)
+                /// threshold property
                 let threshold = sortedScores[min(index, sortedScores.count - 1)]
                 
                 // Calculate performance metrics
+                /// predictions property
                 let predictions = scoresArray.map { score in
                     score < threshold ? 1.0 : 0.0
                 }
+                /// f1Score property
                 let f1Score = await self.calculateF1Score(
                     predictions: predictions,
                     actual: outcomeLabels
@@ -148,6 +173,7 @@ public actor EarlyWarningSystem {
             }
             
             // Validate on holdout set
+            /// validation property
             let validation = await self.validateThreshold(
                 threshold: bestThreshold,
                 component: component,
@@ -165,13 +191,21 @@ public actor EarlyWarningSystem {
     }
 }
 
+/// EarlyWarningReport represents...
 public struct EarlyWarningReport: Sendable {
+    /// studentID property
     public let studentID: String
+    /// assessmentYear property
     public let assessmentYear: Int
+    /// assessmentGrade property
     public let assessmentGrade: Int
+    /// warnings property
     public let warnings: [Warning]
+    /// riskFactors property
     public let riskFactors: [RiskFactor]
+    /// recommendedInterventions property
     public let recommendedInterventions: [Intervention]
+    /// overallRiskLevel property
     public let overallRiskLevel: RiskLevel
     
     public init(
@@ -197,6 +231,7 @@ public struct EarlyWarningReport: Sendable {
 extension EarlyWarningSystem {
     
     private func generateRecommendations(for component: ComponentIdentifier) -> [String] {
+        /// recommendations property
         var recommendations = [String]()
         
         // Generate component-specific recommendations
@@ -220,7 +255,9 @@ extension EarlyWarningSystem {
         score: Double,
         threshold: ComponentThreshold
     ) -> RiskFactor {
+        /// gap property
         let gap = threshold.riskThreshold - score
+        /// severity property
         let severity: RiskLevel
         
         if gap > threshold.riskThreshold * 0.3 {
@@ -244,7 +281,9 @@ extension EarlyWarningSystem {
     private func calculateOverallRisk(_ risks: [RiskFactor]) -> RiskLevel {
         guard !risks.isEmpty else { return .low }
         
+        /// criticalCount property
         let criticalCount = risks.filter { $0.severity == .critical }.count
+        /// highCount property
         let highCount = risks.filter { $0.severity == .high }.count
         
         if criticalCount >= 2 || (criticalCount == 1 && highCount >= 2) {
@@ -259,11 +298,14 @@ extension EarlyWarningSystem {
     }
     
     private func generateInterventions(warnings: [Warning]) async -> [Intervention] {
+        /// interventions property
         var interventions = [Intervention]()
+        /// componentGroups property
         var componentGroups = [String: [Warning]]()
         
         // Group warnings by subject area
         for warning in warnings {
+            /// subject property
             let subject = warning.message.contains("ELA") || warning.message.contains("English") ? "ELA" : "Math"
             componentGroups[subject, default: []].append(warning)
         }
@@ -322,6 +364,7 @@ extension EarlyWarningSystem {
     }
     
     private func extractAllComponents(from studentData: [StudentLongitudinalData]) -> [ComponentIdentifier] {
+        /// components property
         var components = Set<ComponentIdentifier>()
         
         for student in studentData {
@@ -348,12 +391,14 @@ extension EarlyWarningSystem {
         _ component: ComponentIdentifier,
         from studentData: [StudentLongitudinalData]
     ) -> [(studentID: String, value: Double)] {
+        /// scores property
         var scores = [(studentID: String, value: Double)]()
         
         for student in studentData {
             for assessment in student.assessments {
                 if assessment.grade == component.grade &&
                    assessment.subject == component.subject,
+                   /// score property
                    let score = assessment.componentScores[component.component] {
                     scores.append((student.msis, score))
                     break // Only take first matching assessment per student
@@ -376,21 +421,27 @@ extension EarlyWarningSystem {
     private func categorizeStudentOutcomes(
         _ trainingData: [StudentLongitudinalData]
     ) -> StudentOutcomes {
+        /// proficientStudents property
         var proficientStudents = Set<String>()
+        /// strugglingStudents property
         var strugglingStudents = Set<String>()
         
         for student in trainingData {
             // Look at their most recent assessments
+            /// recentAssessments property
             let recentAssessments = student.assessments.suffix(2)
             
+            /// isProficient property
             var isProficient = true
             for assessment in recentAssessments {
+                /// profLevel property
                 if let profLevel = assessment.proficiencyLevel {
                     if profLevel.lowercased().contains("below") || 
                        profLevel.lowercased().contains("minimal") {
                         isProficient = false
                         break
                     }
+                /// pass property
                 } else if let pass = assessment.pass, !pass {
                     isProficient = false
                     break
@@ -416,9 +467,11 @@ extension EarlyWarningSystem {
     ) -> Double {
         guard predictions.count == actual.count else { return 0 }
         
+        /// tp property
         var tp = 0, fp = 0, fn = 0
         
         for (pred, act) in zip(predictions, actual) {
+            /// predicted property
             let predicted = pred > 0.5
             if predicted && act {
                 tp += 1
@@ -429,7 +482,9 @@ extension EarlyWarningSystem {
             }
         }
         
+        /// precision property
         let precision = Double(tp) / Double(max(tp + fp, 1))
+        /// recall property
         let recall = Double(tp) / Double(max(tp + fn, 1))
         
         if precision + recall == 0 { return 0 }
@@ -452,11 +507,17 @@ extension EarlyWarningSystem {
     }
 }
 
+/// ValidationResult represents...
 public struct ValidationResult: Sendable {
+    /// accuracy property
     public let accuracy: Double
+    /// precision property
     public let precision: Double
+    /// recall property
     public let recall: Double
+    /// f1Score property
     public let f1Score: Double
+    /// description property
     public let description: String
     
     public init(

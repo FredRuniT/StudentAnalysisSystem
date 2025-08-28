@@ -3,7 +3,9 @@ import Combine
 import SwiftUI
 
 @MainActor
+/// ConfigurationViewModel represents...
 class ConfigurationViewModel: ObservableObject {
+    /// configuration property
     @Published var configuration: SystemConfiguration
     private let configurationManager: ConfigurationManager
     private let configurationURL: URL
@@ -14,6 +16,7 @@ class ConfigurationViewModel: ObservableObject {
         self.configurationManager = ConfigurationManager()
         
         // Set configuration path
+        /// documentsPath property
         let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         self.configurationURL = documentsPath.appendingPathComponent("StudentAnalysisSystem/configuration.json")
         
@@ -23,6 +26,7 @@ class ConfigurationViewModel: ObservableObject {
         }
     }
     
+    /// loadConfiguration function description
     func loadConfiguration() async {
         do {
             try await configurationManager.loadConfiguration()
@@ -34,6 +38,7 @@ class ConfigurationViewModel: ObservableObject {
         }
     }
     
+    /// saveConfiguration function description
     func saveConfiguration() async {
         do {
             try await configurationManager.updateConfiguration(configuration)
@@ -43,6 +48,7 @@ class ConfigurationViewModel: ObservableObject {
         }
     }
     
+    /// resetToDefaults function description
     func resetToDefaults() async {
         do {
             try await configurationManager.resetToDefault()
@@ -52,17 +58,23 @@ class ConfigurationViewModel: ObservableObject {
         }
     }
     
+    /// exportConfiguration function description
     func exportConfiguration(to url: URL) throws {
+        /// encoder property
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         encoder.dateEncodingStrategy = .iso8601
         
+        /// data property
         let data = try encoder.encode(configuration)
         try data.write(to: url)
     }
     
+    /// importConfiguration function description
     func importConfiguration(from url: URL) throws {
+        /// data property
         let data = try Data(contentsOf: url)
+        /// decoder property
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         

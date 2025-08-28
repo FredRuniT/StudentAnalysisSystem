@@ -3,20 +3,35 @@ import Foundation
 // MARK: - Simplified UI Models for ILP Display
 // These are simplified versions of the full ILP models for UI purposes
 
+/// UIIndividualLearningPlan represents...
 public struct UIIndividualLearningPlan: Identifiable, Sendable {
+    /// id property
     public let id: UUID
+    /// studentMSIS property
     public let studentMSIS: String
+    /// studentName property
     public let studentName: String
+    /// currentGrade property
     public let currentGrade: Int
+    /// targetGrade property
     public let targetGrade: Int
+    /// createdDate property
     public let createdDate: Date
+    /// targetCompletionDate property
     public let targetCompletionDate: Date?
+    /// performanceSummary property
     public let performanceSummary: [String]
+    /// focusAreas property
     public let focusAreas: [UIFocusArea]
+    /// learningObjectives property
     public let learningObjectives: [UILearningObjective]
+    /// milestones property
     public let milestones: [UIMilestone]
+    /// interventionStrategies property
     public let interventionStrategies: [UIInterventionStrategy]
+    /// timeline property
     public let timeline: UITimeline?
+    /// planType property
     public let planType: PlanType
     
     public init(
@@ -52,12 +67,19 @@ public struct UIIndividualLearningPlan: Identifiable, Sendable {
     }
 }
 
+/// UIFocusArea represents...
 public struct UIFocusArea: Identifiable, Sendable {
+    /// id property
     public let id: String
+    /// subject property
     public let subject: String
+    /// description property
     public let description: String
+    /// components property
     public let components: [String]
+    /// severity property
     public let severity: Double
+    /// standards property
     public let standards: [String]
     
     public init(
@@ -77,10 +99,15 @@ public struct UIFocusArea: Identifiable, Sendable {
     }
 }
 
+/// UILearningObjective represents...
 public struct UILearningObjective: Identifiable, Sendable {
+    /// id property
     public let id = UUID()
+    /// description property
     public let description: String
+    /// standard property
     public let standard: String?
+    /// expectations property
     public let expectations: UILearningExpectations?
     
     public init(
@@ -94,9 +121,13 @@ public struct UILearningObjective: Identifiable, Sendable {
     }
 }
 
+/// UILearningExpectations represents...
 public struct UILearningExpectations: Sendable {
+    /// knowledge property
     public let knowledge: [String]?
+    /// understanding property
     public let understanding: [String]?
+    /// skills property
     public let skills: [String]?
     
     public init(
@@ -110,11 +141,17 @@ public struct UILearningExpectations: Sendable {
     }
 }
 
+/// UIMilestone represents...
 public struct UIMilestone: Identifiable, Sendable {
+    /// id property
     public let id = UUID().uuidString
+    /// title property
     public let title: String
+    /// targetDate property
     public let targetDate: Date
+    /// criteria property
     public let criteria: [String]
+    /// assessmentMethods property
     public let assessmentMethods: [String]
     
     public init(
@@ -130,12 +167,19 @@ public struct UIMilestone: Identifiable, Sendable {
     }
 }
 
+/// UIInterventionStrategy represents...
 public struct UIInterventionStrategy: Identifiable, Sendable {
+    /// id property
     public let id = UUID()
+    /// title property
     public let title: String
+    /// description property
     public let description: String
+    /// type property
     public let type: UIInterventionType
+    /// frequency property
     public let frequency: String
+    /// activities property
     public let activities: [String]
     
     public init(
@@ -153,13 +197,16 @@ public struct UIInterventionStrategy: Identifiable, Sendable {
     }
 }
 
+/// UIInterventionType description
 public enum UIInterventionType: String, CaseIterable, Sendable {
     case intensiveSupport = "Intensive Support"
     case targetedIntervention = "Targeted Intervention"
     case regularSupport = "Regular Support"
 }
 
+/// UITimeline represents...
 public struct UITimeline: Sendable {
+    /// phases property
     public let phases: [UIPhase]
     
     public init(phases: [UIPhase]) {
@@ -167,11 +214,17 @@ public struct UITimeline: Sendable {
     }
 }
 
+/// UIPhase represents...
 public struct UIPhase: Identifiable, Sendable {
+    /// id property
     public let id = UUID()
+    /// name property
     public let name: String
+    /// startDate property
     public let startDate: Date
+    /// endDate property
     public let endDate: Date
+    /// activities property
     public let activities: [String]
     
     public init(
@@ -188,6 +241,7 @@ public struct UIPhase: Identifiable, Sendable {
 }
 
 // MARK: - Export Format
+/// ExportFormat description
 public enum ExportFormat {
     case pdf
     case markdown

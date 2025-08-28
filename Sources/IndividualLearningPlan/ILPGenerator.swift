@@ -1,3 +1,8 @@
+import AnalysisCore
+import Foundation
+import MLX
+import PredictiveModeling
+import StatisticalEngine
 //
 //  ILPGenerator.swift
 //  StudentAnalysisSystem
@@ -5,17 +10,13 @@
 //  Created by Fredrick Burns on 8/26/25.
 //
 
-import Foundation
-import MLX
-import AnalysisCore
-import StatisticalEngine
-import PredictiveModeling
 
 public actor ILPGenerator {
     private let standardsRepository: StandardsRepository
     private let correlationEngine: CorrelationAnalyzer
     private let warningSystem: EarlyWarningSystem
     private let configuration: SystemConfiguration
+    /// blueprintManager property
     internal let blueprintManager: BlueprintManager
     private let progressionAnalyzer: GradeProgressionAnalyzer?
     
@@ -34,6 +35,7 @@ public actor ILPGenerator {
         self.blueprintManager = blueprintManager ?? BlueprintManager.shared
         
         // Initialize progression analyzer if we have correlation engine
+        /// componentEngine property
         if let componentEngine = componentCorrelationEngine {
             self.progressionAnalyzer = GradeProgressionAnalyzer(
                 blueprintManager: self.blueprintManager,
@@ -58,12 +60,17 @@ public actor ILPGenerator {
         try await loadBlueprintData()
         
         // Analyze current performance
+        /// performanceAnalysis property
         let performanceAnalysis = await analyzeStudentPerformance(student)
         
         // Generate grade progression plan if we have longitudinal data and progression analyzer
+        /// progressionPlan property
         var progressionPlan: StudentProgressionPlan? = nil
+        /// longitudinalData property
         if let longitudinalData = longitudinalData,
+           /// analyzer property
            let analyzer = progressionAnalyzer {
+            /// target property
             let target = targetGrade ?? (student.grade + 1)
             progressionPlan = analyzer.generateProgressionPlan(
                 student: longitudinalData,
@@ -74,11 +81,13 @@ public actor ILPGenerator {
         
         // Determine ILP type based on performance
         // Create validated correlation model for ILP generation
+        /// emptyCorrelationMap property
         let emptyCorrelationMap = ComponentCorrelationMap(
             sourceComponent: ComponentIdentifier(grade: student.grade, subject: "MATH", component: "TEMP", testProvider: .nwea), 
             correlations: []
         )
         
+        /// fallbackValidationResults property
         let fallbackValidationResults = ValidationResults(
             accuracy: 0.0,
             precision: 0.0,
@@ -92,6 +101,7 @@ public actor ILPGenerator {
             )
         )
         
+        /// emptyValidatedModel property
         let emptyValidatedModel = ValidatedCorrelationModel(
             correlations: [emptyCorrelationMap],
             validationResults: fallbackValidationResults,
@@ -126,6 +136,7 @@ public actor ILPGenerator {
     ) async throws -> IndividualLearningPlan {
         
         // Analyze current performance
+        /// performanceAnalysis property
         let performanceAnalysis = await analyzeStudentPerformance(student)
         
         // Determine if student needs remediation or enrichment
@@ -155,30 +166,36 @@ public actor ILPGenerator {
     ) async throws -> IndividualLearningPlan {
         
         // Identify weak areas
+        /// weakAreas property
         let weakAreas = identifyWeakAreas(performanceAnalysis)
         
         // Map to standards
+        /// targetStandards property
         let targetStandards = await mapWeakAreasToStandards(weakAreas, grade: student.grade)
         
         // Predict future risks
+        /// predictedRisks property
         let predictedRisks = await predictFutureRisks(
             performanceAnalysis,
             correlationModel
         )
         
         // Generate scaffolded objectives
+        /// learningObjectives property
         let learningObjectives = await generateScaffoldedObjectives(
             standards: targetStandards,
             studentLevel: performanceAnalysis.proficiencyLevel
         )
         
         // Create intervention strategies
+        /// interventions property
         let interventions = createRemediationStrategies(
             objectives: learningObjectives,
             risks: predictedRisks
         )
         
         // Add prerequisite standards
+        /// bonusStandards property
         let bonusStandards = await recommendPrerequisiteStandards(
             weakAreas: weakAreas,
             grade: student.grade
@@ -210,33 +227,39 @@ public actor ILPGenerator {
     ) async throws -> IndividualLearningPlan {
         
         // Identify strength areas for acceleration
+        /// strengthAreas property
         let strengthAreas = identifyStrengthAreas(performanceAnalysis)
         
         // Map to advanced/next-grade standards
+        /// targetStandards property
         let targetStandards = await mapStrengthsToAdvancedStandards(
             strengthAreas,
             currentGrade: student.grade
         )
         
         // Predict areas of future excellence
+        /// predictedExcellence property
         let predictedExcellence = await predictFutureExcellence(
             performanceAnalysis,
             correlationModel
         )
         
         // Generate enrichment objectives
+        /// learningObjectives property
         let learningObjectives = await generateEnrichmentObjectives(
             standards: targetStandards,
             studentLevel: performanceAnalysis.proficiencyLevel
         )
         
         // Create acceleration strategies
+        /// interventions property
         let interventions = createAccelerationStrategies(
             objectives: learningObjectives,
             predictions: predictedExcellence
         )
         
         // Add cross-curricular and advanced standards
+        /// bonusStandards property
         let bonusStandards = await recommendEnrichmentStandards(
             strengthAreas: strengthAreas,
             correlationModel: correlationModel,
@@ -268,10 +291,13 @@ public actor ILPGenerator {
     ) async -> PerformanceAnalysis {
         
         // Calculate overall score and determine proficiency
+        /// overallScore property
         let overallScore = student.assessments.map { $0.overallScore }.reduce(0, +) / Double(student.assessments.count)
         
         // Use actual proficiency level from data if available, otherwise determine from score
+        /// proficiencyLevel property
         let proficiencyLevel: ProficiencyLevel
+        /// firstProfLevel property
         if let firstProfLevel = student.assessments.first?.proficiencyLevel {
             proficiencyLevel = mapProficiencyLevel(firstProfLevel)
         } else {
@@ -279,12 +305,16 @@ public actor ILPGenerator {
         }
         
         // Analyze component scores
+        /// componentScores property
         var componentScores = [String: Double]()
+        /// strengthAreas property
         var strengthAreas = [String]()
+        /// weakAreas property
         var weakAreas = [String]()
         
         for assessment in student.assessments {
             for (component, score) in assessment.componentScores {
+                /// key property
                 let key = "\(assessment.subject)_\(component)"
                 componentScores[key] = score
                 
@@ -307,11 +337,15 @@ public actor ILPGenerator {
     
     // MARK: - Gap and Strength Identification
     
+    /// identifyWeakAreas function description
     internal func identifyWeakAreas(_ analysis: PerformanceAnalysis) -> [WeakArea] {
+        /// weakAreas property
         var weakAreas = [WeakArea]()
         
         for area in analysis.weakAreas {
+            /// score property
             let score = analysis.componentScores[area] ?? 0
+            /// gap property
             let gap = 70 - score // Gap from proficiency
             
             weakAreas.append(
@@ -328,9 +362,11 @@ public actor ILPGenerator {
     }
     
     private func identifyStrengthAreas(_ analysis: PerformanceAnalysis) -> [StrengthArea] {
+        /// strengthAreas property
         var strengthAreas = [StrengthArea]()
         
         for area in analysis.strengthAreas {
+            /// score property
             let score = analysis.componentScores[area] ?? 0
             
             strengthAreas.append(
@@ -348,10 +384,13 @@ public actor ILPGenerator {
     
     // MARK: - Standards Mapping
     
+    /// mapWeakAreasToStandards function description
     internal func mapWeakAreasToStandards(_ weakAreas: [WeakArea], grade: Int) async -> [TargetStandard] {
+        /// targetStandards property
         var targetStandards = [TargetStandard]()
         
         for area in weakAreas {
+            /// standards property
             let standards = await standardsRepository.getStandardsForComponent(
                 component: extractComponentName(from: area.component),
                 grade: String(grade),
@@ -376,11 +415,14 @@ public actor ILPGenerator {
         _ strengthAreas: [StrengthArea],
         currentGrade: Int
     ) async -> [TargetStandard] {
+        /// targetStandards property
         var targetStandards = [TargetStandard]()
+        /// nextGrade property
         let nextGrade = currentGrade + 1
         
         for area in strengthAreas where area.readyForAcceleration {
             // Get next grade standards
+            /// standards property
             let standards = await standardsRepository.getStandardsForComponent(
                 component: extractComponentName(from: area.component),
                 grade: String(nextGrade),
@@ -407,16 +449,19 @@ public actor ILPGenerator {
         _ performance: PerformanceAnalysis,
         _ model: ValidatedCorrelationModel
     ) async -> [PredictedRisk] {
+        /// risks property
         var risks = [PredictedRisk]()
         
         for weakArea in performance.weakAreas {
             // Find correlations showing future impact
+            /// correlatedAreas property
             let correlatedAreas = findCorrelatedAreas(
                 component: weakArea,
                 in: model.correlations
             )
             
             for correlation in correlatedAreas {
+                /// riskLevel property
                 let riskLevel: String
                 if correlation.confidence > 0.7 && performance.componentScores[weakArea]! < 40 {
                     riskLevel = "High"
@@ -447,9 +492,11 @@ public actor ILPGenerator {
         _ performance: PerformanceAnalysis,
         _ model: ValidatedCorrelationModel
     ) async -> [PredictedRisk] {
+        /// predictions property
         var predictions = [PredictedRisk]()
         
         for strengthArea in performance.strengthAreas {
+            /// correlatedAreas property
             let correlatedAreas = findCorrelatedAreas(
                 component: strengthArea,
                 in: model.correlations
@@ -480,13 +527,16 @@ public actor ILPGenerator {
         standards: [TargetStandard],
         studentLevel: ProficiencyLevel
     ) async -> [ScaffoldedLearningObjective] {
+        /// objectives property
         var objectives = [ScaffoldedLearningObjective]()
         
         for standard in standards {
+            /// scaffolded property
             let scaffolded = await standardsRepository.getScaffoldedStandard(
                 standardId: standard.standardId
             )
             
+            /// scaffolded property
             guard let scaffolded = scaffolded else { continue }
             
             objectives.append(
@@ -508,17 +558,21 @@ public actor ILPGenerator {
         return objectives
     }
     
+    /// generateEnrichmentObjectives function description
     internal func generateEnrichmentObjectives(
         standards: [TargetStandard],
         studentLevel: ProficiencyLevel
     ) async -> [ScaffoldedLearningObjective] {
+        /// objectives property
         var objectives = [ScaffoldedLearningObjective]()
         
         for standard in standards {
+            /// scaffolded property
             let scaffolded = await standardsRepository.getScaffoldedStandard(
                 standardId: standard.standardId
             )
             
+            /// scaffolded property
             guard let scaffolded = scaffolded else { continue }
             
             objectives.append(
@@ -542,12 +596,15 @@ public actor ILPGenerator {
     
     // MARK: - Intervention Strategies
     
+    /// createRemediationStrategies function description
     internal func createRemediationStrategies(
         objectives: [ScaffoldedLearningObjective],
         risks: [PredictedRisk]
     ) -> [InterventionStrategy] {
+        /// strategies property
         var strategies = [InterventionStrategy]()
         
+        /// highRiskCount property
         let highRiskCount = risks.filter { $0.riskLevel == "High" }.count
         
         if highRiskCount > 2 {
@@ -599,6 +656,7 @@ public actor ILPGenerator {
     ) -> [InterventionStrategy] {
         return [
             InterventionStrategy(
+                /// Item description
                 tier: .universal, // Enrichment within regular class
                 frequency: "Daily with extended projects",
                 duration: "Variable - self-paced",
@@ -617,12 +675,14 @@ public actor ILPGenerator {
         ]
     }
     
+    /// createEnrichmentStrategies function description
     internal func createEnrichmentStrategies(
         objectives: [ScaffoldedLearningObjective],
         strengthAreas: [String]
     ) -> [InterventionStrategy] {
         return [
             InterventionStrategy(
+                /// Item description
                 tier: .universal, // Enrichment within regular class
                 frequency: "Daily with advanced activities",
                 duration: "Variable - self-paced",
@@ -647,9 +707,11 @@ public actor ILPGenerator {
         weakAreas: [WeakArea],
         grade: Int
     ) async -> [BonusStandard] {
+        /// bonusStandards property
         var bonusStandards = [BonusStandard]()
         
         for area in weakAreas.prefix(3) {
+            /// prerequisites property
             let prerequisites = await standardsRepository.getPrerequisiteStandards(
                 for: extractComponentName(from: area.component),
                 grade: String(grade)
@@ -675,10 +737,12 @@ public actor ILPGenerator {
         correlationModel: ValidatedCorrelationModel,
         grade: Int
     ) async -> [BonusStandard] {
+        /// bonusStandards property
         var bonusStandards = [BonusStandard]()
         
         for area in strengthAreas.prefix(3) {
             // Add cross-curricular connections
+            /// relatedStandards property
             let relatedStandards = await findCrossCurricularStandards(
                 component: area.component,
                 grade: grade
@@ -701,13 +765,17 @@ public actor ILPGenerator {
     
     // MARK: - Timeline Generation
     
+    /// generateTimeline function description
     internal func generateTimeline(
         startDate: Date,
         objectives: [ScaffoldedLearningObjective],
         type: TimelineType
     ) -> Timeline {
+        /// calendar property
         let calendar = Calendar.current
+        /// milestones property
         var milestones = [Timeline.Milestone]()
+        /// currentDate property
         var currentDate = startDate
         
         // Initial assessment
@@ -751,6 +819,7 @@ public actor ILPGenerator {
         }
         
         // Final assessment
+        /// endDate property
         let endDate = calendar.date(
             byAdding: .weekOfMonth,
             value: 1,
@@ -776,6 +845,7 @@ public actor ILPGenerator {
     
     // MARK: - Helper Functions
     
+    /// createStudentInfo function description
     internal func createStudentInfo(from student: StudentAssessmentData) -> IndividualLearningPlan.StudentInfo {
         return IndividualLearningPlan.StudentInfo(
             msis: student.studentInfo.msis,
@@ -837,6 +907,7 @@ public actor ILPGenerator {
         component: String,
         in correlations: [ComponentCorrelationMap]
     ) -> [(targetComponent: String, confidence: Double)] {
+        /// results property
         var results = [(String, Double)]()
         
         for map in correlations {
@@ -1045,12 +1116,17 @@ public actor ILPGenerator {
     // MARK: - Supporting Types
     
     private struct StrengthArea: Equatable {
+        /// component property
         let component: String
+        /// score property
         let score: Double
+        /// percentile property
         let percentile: Double
+        /// readyForAcceleration property
         let readyForAcceleration: Bool
     }
     
+    /// TimelineType description
     public enum TimelineType: String, Sendable {
         case remediation
         case enrichment

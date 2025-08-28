@@ -4,8 +4,11 @@ import SwiftUI
 
 // MARK: - Correlation Threshold Control
 
+/// CorrelationThresholdControl represents...
 struct CorrelationThresholdControl: View {
+    /// themeManager property
     @EnvironmentObject var themeManager: ThemeManager
+    /// processor property
     @ObservedObject var processor: CorrelationNetworkProcessor
     
     private let thresholdOptions: [Double] = [0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0]
@@ -20,6 +23,7 @@ struct CorrelationThresholdControl: View {
         }
     }
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Correlation Threshold")
@@ -83,11 +87,14 @@ struct CorrelationThresholdControl: View {
 
 // MARK: - Grade Filter Control
 
+/// GradeFilterControl represents...
 struct GradeFilterControl: View {
+    /// processor property
     @ObservedObject var processor: CorrelationNetworkProcessor
     
     private let availableGrades = [3, 4, 5, 6, 7, 8]
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -116,6 +123,7 @@ struct GradeFilterControl: View {
                     Button(action: {
                         Task {
                             await MainActor.run {
+                                /// newSelection property
                                 var newSelection = processor.selectedGrades
                                 if newSelection.contains(grade) {
                                     newSelection.remove(grade)
@@ -156,11 +164,14 @@ struct GradeFilterControl: View {
 
 // MARK: - Subject Filter Control
 
+/// SubjectFilterControl represents...
 struct SubjectFilterControl: View {
+    /// processor property
     @ObservedObject var processor: CorrelationNetworkProcessor
     
     private let availableSubjects = ["ELA", "MATH", "SCIENCE"]
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -190,6 +201,7 @@ struct SubjectFilterControl: View {
                         Button(action: {
                             Task {
                                 await MainActor.run {
+                                    /// newSelection property
                                     var newSelection = processor.selectedSubjects
                                     if newSelection.contains(subject) {
                                         newSelection.remove(subject)
@@ -244,9 +256,12 @@ struct SubjectFilterControl: View {
 
 // MARK: - Performance Settings Control
 
+/// PerformanceSettingsControl represents...
 struct PerformanceSettingsControl: View {
+    /// processor property
     @ObservedObject var processor: CorrelationNetworkProcessor
     
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Performance Settings")
@@ -311,7 +326,9 @@ struct PerformanceSettingsControl: View {
 
 // MARK: - Network Legend
 
+/// NetworkLegend represents...
 struct NetworkLegend: View {
+    /// body property
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Legend")
@@ -404,12 +421,16 @@ struct NetworkLegend: View {
 
 // MARK: - Node Detail View
 
+/// NodeDetailView represents...
 struct NodeDetailView: View {
+    /// component property
     let component: ComponentIdentifier
+    /// processor property
     let processor: CorrelationNetworkProcessor
     
     @Environment(\.dismiss) private var dismiss
     
+    /// body property
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -431,6 +452,7 @@ struct NodeDetailView: View {
                     Divider()
                     
                     // Correlation statistics
+                    /// node property
                     if let node = processor.networkNodes.first(where: { $0.id == component }) {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("Network Statistics")
@@ -459,6 +481,7 @@ struct NodeDetailView: View {
                         Text("Strongest Correlations")
                             .font(AppleDesignSystem.Typography.headline)
                         
+                        /// topCorrelations property
                         let topCorrelations = getTopCorrelations(for: component)
                         
                         if topCorrelations.isEmpty {
@@ -491,9 +514,12 @@ struct NodeDetailView: View {
     }
 }
 
+/// CorrelationRowView represents...
 struct CorrelationRowView: View {
+    /// correlation property
     let correlation: FilteredCorrelationResult
     
+    /// body property
     var body: some View {
         HStack {
             VStack(alignment: .leading) {

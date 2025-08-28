@@ -5,13 +5,21 @@ import Foundation
 
 /// Enhanced correlation model with confidence metrics for blueprint integration
 @available(iOS 15.0, macOS 12.0, *)
+/// EnhancedCorrelationModel represents...
 public struct EnhancedCorrelationModel: Codable, Sendable, Equatable {
+    /// base property
     public let base: CorrelationData
+    /// sampleSize property
     public let sampleSize: Int
+    /// confidenceInterval property
     public let confidenceInterval: ConfidenceInterval
+    /// pValue property
     public let pValue: Double
+    /// isStatisticallySignificant property
     public let isStatisticallySignificant: Bool
+    /// significance property
     public let significance: SignificanceLevel
+    /// validationMetrics property
     public let validationMetrics: ValidationMetrics
     
     public init(
@@ -33,11 +41,17 @@ public struct EnhancedCorrelationModel: Codable, Sendable, Equatable {
 
 /// Correlation data structure
 public struct CorrelationData: Codable, Sendable, Equatable {
+    /// fromComponent property
     public let fromComponent: String
+    /// toComponent property
     public let toComponent: String
+    /// correlation property
     public let correlation: Double
+    /// fromGrade property
     public let fromGrade: Int
+    /// toGrade property
     public let toGrade: Int
+    /// subject property
     public let subject: String
     
     public init(
@@ -59,8 +73,11 @@ public struct CorrelationData: Codable, Sendable, Equatable {
 
 /// Confidence interval for correlation
 public struct ConfidenceInterval: Codable, Sendable, Equatable {
+    /// lower property
     public let lower: Double
+    /// upper property
     public let upper: Double
+    /// level property
     public let level: Double // 0.95 for 95% confidence
     
     public init(lower: Double, upper: Double, level: Double = 0.95) {
@@ -89,9 +106,13 @@ public enum SignificanceLevel: String, Codable, Sendable {
 
 /// Validation metrics for correlation model
 public struct ValidationMetrics: Codable, Sendable, Equatable {
+    /// r2Score property
     public let r2Score: Double
+    /// rmse property
     public let rmse: Double
+    /// mae property
     public let mae: Double
+    /// crossValidationScore property
     public let crossValidationScore: Double
     
     public init(r2Score: Double, rmse: Double, mae: Double, crossValidationScore: Double) {
@@ -106,15 +127,25 @@ public struct ValidationMetrics: Codable, Sendable, Equatable {
 
 /// A specific, measurable learning objective tied to standards
 @available(iOS 15.0, macOS 12.0, *)
+/// LearningObjective represents...
 public struct LearningObjective: Codable, Sendable, Equatable, Identifiable {
+    /// id property
     public let id: UUID
+    /// standardId property
     public let standardId: String
+    /// description property
     public let description: String
+    /// targetLevel property
     public let targetLevel: ProficiencyLevel
+    /// focusArea property
     public let focusArea: FocusArea
+    /// activities property
     public let activities: [String]
+    /// timeEstimate property
     public let timeEstimate: String
+    /// assessmentCriteria property
     public let assessmentCriteria: [String]
+    /// resources property
     public let resources: [String]
     
     public init(
@@ -191,16 +222,26 @@ public struct LearningObjective: Codable, Sendable, Equatable, Identifiable {
 
 /// Predicted outcome based on correlation analysis
 @available(iOS 15.0, macOS 12.0, *)
+/// PredictedOutcome represents...
 public struct PredictedOutcome: Codable, Sendable, Equatable, Identifiable {
+    /// id property
     public let id: UUID
+    /// component property
     public let component: String
+    /// futureGrade property
     public let futureGrade: Int
+    /// correlationStrength property
     public let correlationStrength: Double
+    /// impact property
     public let impact: ImpactLevel
+    /// probability property
     public let probability: Double
+    /// timeframe property
     public let timeframe: String
+    /// preventionStrategy property
     public let preventionStrategy: String?
     
+    /// ImpactLevel description
     public enum ImpactLevel: String, Codable, Sendable {
         case critical = "Critical"
         case high = "High"
@@ -241,16 +282,26 @@ public struct PredictedOutcome: Codable, Sendable, Equatable, Identifiable {
 
 /// A checkpoint for measuring progress (aligned with 9-week periods)
 @available(iOS 15.0, macOS 12.0, *)
+/// Milestone represents...
 public struct Milestone: Codable, Sendable, Equatable, Identifiable {
+    /// id property
     public let id: UUID
+    /// title property
     public let title: String
+    /// targetDate property
     public let targetDate: Date
+    /// phase property
     public let phase: InterventionPhase
+    /// successCriteria property
     public let successCriteria: [String]
+    /// evaluationType property
     public let evaluationType: EvaluationType
+    /// reportCardPeriod property
     public let reportCardPeriod: Int // 1-4 for quarters
+    /// expectedProgress property
     public let expectedProgress: Double // Percentage
     
+    /// InterventionPhase description
     public enum InterventionPhase: String, Codable, Sendable, CaseIterable {
         case immediate = "Immediate Intervention"
         case shortTerm = "Short-term Development"
@@ -258,6 +309,7 @@ public struct Milestone: Codable, Sendable, Equatable, Identifiable {
         case maintenance = "Maintenance"
     }
     
+    /// EvaluationType description
     public enum EvaluationType: String, Codable, Sendable {
         case formative = "Formative Assessment"
         case summative = "Summative Assessment"
@@ -293,13 +345,19 @@ public struct Milestone: Codable, Sendable, Equatable, Identifiable {
         startDate: Date,
         objectives: [LearningObjective]
     ) -> Milestone {
+        /// calendar property
         let calendar = Calendar.current
+        /// targetDate property
         let targetDate = calendar.date(byAdding: .weekOfYear, value: weekNumber, to: startDate) ?? startDate
+        /// reportCardPeriod property
         let reportCardPeriod = (weekNumber / 9) + 1
         
+        /// title property
         let title = "Week \(weekNumber) - \(phase.rawValue)"
+        /// successCriteria property
         let successCriteria = objectives.prefix(3).map { $0.assessmentCriteria.first ?? "" }
         
+        /// expectedProgress property
         let expectedProgress: Double = {
             switch phase {
             case .immediate: return 0.25
@@ -326,19 +384,32 @@ public struct Milestone: Codable, Sendable, Equatable, Identifiable {
 
 /// Evaluation of student progress at a milestone
 @available(iOS 15.0, macOS 12.0, *)
+/// ProgressEvaluation represents...
 public struct ProgressEvaluation: Codable, Sendable, Equatable, Identifiable {
+    /// id property
     public let id: UUID
+    /// milestoneId property
     public let milestoneId: UUID
+    /// evaluationDate property
     public let evaluationDate: Date
+    /// evaluator property
     public let evaluator: String
+    /// evaluatorRole property
     public let evaluatorRole: EvaluatorRole
+    /// scores property
     public let scores: [String: Double] // Component -> Score
+    /// overallProgress property
     public let overallProgress: Double
+    /// currentLevel property
     public let currentLevel: ProficiencyLevel
+    /// notes property
     public let notes: String
+    /// attachments property
     public let attachments: [String] // File paths or URLs
+    /// nextSteps property
     public let nextSteps: [String]
     
+    /// EvaluatorRole description
     public enum EvaluatorRole: String, Codable, Sendable {
         case teacher = "Teacher"
         case parent = "Parent"

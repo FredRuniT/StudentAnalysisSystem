@@ -1,9 +1,11 @@
 import SwiftUI
 
 @main
+/// StudentAnalysisSystemApp represents...
 struct StudentAnalysisSystemApp: App {
     @StateObject private var themeManager = ThemeManager()
     
+    /// body property
     var body: some Scene {
         WindowGroup {
             ContentView()
